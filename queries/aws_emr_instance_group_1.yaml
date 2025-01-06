@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EMR Instance Groups to fetch details about each instance group within an EMR cluster.
-ID: aws_emr_instance_group_1
-IntegrationType:
+id: aws_emr_instance_group_1
+type: query
+title: Find AWS EMR Instance Groups within a Cluster
+description: Allows users to query AWS EMR Instance Groups to fetch details about each instance group within an EMR cluster.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       id,
       arn,
@@ -16,11 +13,10 @@ Query:
       state
     FROM
       aws_emr_instance_group;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EMR
-Title: Find AWS EMR Instance Groups within a Cluster
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EMR

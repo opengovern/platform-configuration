@@ -1,13 +1,10 @@
-Description: Allows users to query AWS KMS aliases and retrieve information about their associated keys, including the key ID, alias name, and alias ARN.
-ID: aws_kms_alias_1
-IntegrationType:
+id: aws_kms_alias_1
+type: query
+title: Find all AWS KMS alias details including keys
+description: Allows users to query AWS KMS aliases and retrieve information about their associated keys, including the key ID, alias name, and alias ARN.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       alias_name,
       title,
@@ -16,13 +13,12 @@ Query:
       creation_date
     FROM
       aws_kms_alias;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Key Management Service (KMS)
-Title: Find all AWS KMS alias details including keys
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Key Management Service (KMS)

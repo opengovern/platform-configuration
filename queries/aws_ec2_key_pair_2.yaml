@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EC2 Key Pairs, providing information about key pairs which are used to securely log into EC2 instances.
-ID: aws_ec2_key_pair_2
-IntegrationType:
+id: aws_ec2_key_pair_2
+type: query
+title: List all AWS EC2 Key Pairs to Securely Log Into EC2 Instances
+description: Allows users to query AWS EC2 Key Pairs, providing information about key pairs which are used to securely log into EC2 instances.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       key_name,
       tags
@@ -15,11 +12,10 @@ Query:
       aws_ec2_key_pair
     WHERE
       NOT tags :: JSONB ? 'owner';
-Tags:
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2 Key Pairs
-Title: List all AWS EC2 Key Pairs to Securely Log Into EC2 Instances
+tags:
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2 Key Pairs

@@ -1,26 +1,22 @@
-Description: Allows users to query AWS WAF RateBasedRule to retrieve information about rate-based security rules that AWS Web Application Firewall (WAF) uses.
-ID: aws_waf_rate_based_rule_1
-IntegrationType:
+id: aws_waf_rate_based_rule_1
+type: query
+title: Find AWS WAF RateBasedRule info using SQL query
+description: Allows users to query AWS WAF RateBasedRule to retrieve information about rate-based security rules that AWS Web Application Firewall (WAF) uses.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       rule_id,
       metric_name
     FROM
       aws_waf_rate_based_rule;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_network_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Web Application Firewall
-Title: Find AWS WAF RateBasedRule info using SQL query
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_network_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Web Application Firewall

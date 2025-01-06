@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Glue Security Configurations and gain insights into the security configurations of Glue resources.
-ID: aws_glue_security_configuration_2
-IntegrationType:
+id: aws_glue_security_configuration_2
+type: query
+title: Find AWS Glue Security Configurations with Encryption
+description: Allows users to query AWS Glue Security Configurations and gain insights into the security configurations of Glue resources.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       cloud_watch_encryption ->> 'CloudWatchEncryptionMode' AS encryption_mode,
@@ -16,13 +13,12 @@ Query:
       aws_glue_security_configuration
     WHERE
       cloud_watch_encryption ->> 'CloudWatchEncryptionMode' != 'DISABLED';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_data_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Glue Security
-Title: Find AWS Glue Security Configurations with Encryption
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_data_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Glue Security

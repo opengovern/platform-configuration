@@ -1,13 +1,10 @@
-Description: Allows users to query AWS WAF Regional WebACL to get information about AWS WAF Regional WebACLs.
-ID: aws_wafregional_web_acl_2
-IntegrationType:
+id: aws_wafregional_web_acl_2
+type: query
+title: List all AWS WAF Regional WebACLs information
+description: Allows users to query AWS WAF Regional WebACL to get information about AWS WAF Regional WebACLs.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       web_acl_id,
@@ -19,13 +16,12 @@ Query:
     FROM
       aws_wafregional_web_acl,
       JSONB_ARRAY_ELEMENTS(rules) AS r;
-Tags:
-  cloud_network_security:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - WAF Regional
-Title: List all AWS WAF Regional WebACLs information
+tags:
+    cloud_network_security:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - WAF Regional

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS SSM Managed Instance Compliance data, providing details on compliance status, compliance type, and related metadata.
-ID: aws_ssm_managed_instance_compliance_4
-IntegrationType:
+id: aws_ssm_managed_instance_compliance_4
+type: query
+title: List all AWS SSM Managed Instance Compliance Details
+description: Allows users to query AWS SSM Managed Instance Compliance data, providing details on compliance status, compliance type, and related metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       c.resource_id AS instance_id,
       id,
@@ -17,13 +14,12 @@ Query:
       aws_ssm_managed_instance_compliance c
     WHERE
       i.instance_id = c.resource_id;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - SSM
-Title: List all AWS SSM Managed Instance Compliance Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - SSM

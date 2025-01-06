@@ -1,13 +1,10 @@
-Description: Allows users to query API Gateway APIs and retrieve detailed information about each API, including its ID, name, protocol type, and more.
-ID: aws_api_gatewayv2_api_1
-IntegrationType:
+id: aws_api_gatewayv2_api_1
+type: query
+title: List all Details of AWS API Gateway APIs
+description: Allows users to query API Gateway APIs and retrieve detailed information about each API, including its ID, name, protocol type, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       api_id,
@@ -17,13 +14,12 @@ Query:
       route_selection_expression
     FROM
       aws_api_gatewayv2_api;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - API Gateway
-Title: List all Details of AWS API Gateway APIs
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - API Gateway

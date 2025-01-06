@@ -1,13 +1,10 @@
-Description: Enables users to query AWS RDS DB Engine Versions to retrieve detailed information on various database engine versions supported by Amazon RDS.
-ID: aws_rds_db_engine_version_2
-IntegrationType:
+id: aws_rds_db_engine_version_2
+type: query
+title: List all AWS RDS DB Engine Versions Supporting Read Replicas
+description: Enables users to query AWS RDS DB Engine Versions to retrieve detailed information on various database engine versions supported by Amazon RDS.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       engine,
       engine_version,
@@ -16,11 +13,10 @@ Query:
       aws_rds_db_engine_version
     WHERE
       supports_read_replica;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - RDS
-Title: List all AWS RDS DB Engine Versions Supporting Read Replicas
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - RDS

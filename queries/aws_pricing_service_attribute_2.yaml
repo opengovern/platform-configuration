@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Pricing Service Attributes to gain insights into product attributes and their respective prices.
-ID: aws_pricing_service_attribute_2
-IntegrationType:
+id: aws_pricing_service_attribute_2
+type: query
+title: List all AWS Pricing Service Attributes
+description: Allows users to query AWS Pricing Service Attributes to gain insights into product attributes and their respective prices.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       service_code,
       attribute_name,
@@ -16,13 +13,12 @@ Query:
       aws_pricing_service_attribute
     WHERE
       service_code = 'AWSBackup';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_finops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Pricing Service
-Title: List all AWS Pricing Service Attributes
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_finops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Pricing Service

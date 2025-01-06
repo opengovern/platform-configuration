@@ -1,13 +1,10 @@
-Description: Allows users to query AWS SageMaker Training Jobs to retrieve information about individual training jobs.
-ID: aws_sagemaker_training_job_2
-IntegrationType:
+id: aws_sagemaker_training_job_2
+type: query
+title: List AWS SageMaker Training Jobs via SQL
+description: Allows users to query AWS SageMaker Training Jobs to retrieve information about individual training jobs.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       arn,
@@ -17,13 +14,12 @@ Query:
       resource_config ->> 'VolumeSizeInGB' AS volume_size
     FROM
       aws_sagemaker_training_job;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_data_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - SageMaker
-Title: List AWS SageMaker Training Jobs via SQL
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_data_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - SageMaker

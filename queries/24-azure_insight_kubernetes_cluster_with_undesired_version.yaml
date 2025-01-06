@@ -1,14 +1,10 @@
-Description: List clusters with an undesirable version (older than 1.20.5)
-ID: azure_insight_kubernetes_cluster_with_undesired_version
-IntegrationType:
+id: azure_insight_kubernetes_cluster_with_undesired_version
+type: query
+title: Legacy Kubernetes Clusters
+description: List clusters with an undesirable version (older than 1.20.5)
+integration_type:
   - azure_subscription
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - azure_kubernetes_cluster
-  Parameters: []
-  PrimaryTable: azure_kubernetes_cluster
-  QueryToExecute: |
+query: |
     SELECT
       name,
       id,
@@ -22,13 +18,12 @@ Query:
       azure_kubernetes_cluster
     WHERE
       kubernetes_version < '1.24';
-Tags:
-  category:
-    - Security
-    - Technical Debt
-    - Resiliency
-  persona:
-    - Executive
-    - Product
-    - FinOps
-Title: Legacy Kubernetes Clusters
+tags:
+    category:
+      - Security
+      - Technical Debt
+      - Resiliency
+    persona:
+      - Executive
+      - Product
+      - FinOps

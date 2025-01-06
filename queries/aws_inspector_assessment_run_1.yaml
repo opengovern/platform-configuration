@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Inspector Assessment Runs to get detailed information about each assessment run, including its state, duration, findings, and more.
-ID: aws_inspector_assessment_run_1
-IntegrationType:
+id: aws_inspector_assessment_run_1
+type: query
+title: List all AWS Inspector Assessment Runs and Details
+description: Allows users to query AWS Inspector Assessment Runs to get detailed information about each assessment run, including its state, duration, findings, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       arn,
@@ -17,11 +14,10 @@ Query:
       region
     FROM
       aws_inspector_assessment_run;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Inspector
-Title: List all AWS Inspector Assessment Runs and Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Inspector

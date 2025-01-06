@@ -1,24 +1,20 @@
-Description: Allows users to query AWS Pinpoint Applications to gather information about the applications, such as application ID, name, and creation date. The table also provides details about the application's settings and limits.
-ID: aws_pinpoint_app_2
-IntegrationType:
+id: aws_pinpoint_app_2
+type: query
+title: Find AWS Pinpoint Applications and Details
+description: Allows users to query AWS Pinpoint Applications to gather information about the applications, such as application ID, name, and creation date. The table also provides details about the application's settings and limits.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       id,
       quiet_time -> 'Start' AS start_time,
       quiet_time -> 'End' AS end_time
     FROM
       aws_pinpoint_app;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Pinpoint
-Title: Find AWS Pinpoint Applications and Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Pinpoint

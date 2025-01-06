@@ -1,13 +1,10 @@
-Description: Allows users to query EC2 Availability Zones in AWS, providing details such as zone ID, name, region, and state.
-ID: aws_availability_zone_1
-IntegrationType:
+id: aws_availability_zone_1
+type: query
+title: List all EC2 Availability Zones with Details
+description: Allows users to query EC2 Availability Zones in AWS, providing details such as zone ID, name, region, and state.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       zone_id,
@@ -16,11 +13,10 @@ Query:
       region_name
     FROM
       aws_availability_zone;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2
-Title: List all EC2 Availability Zones with Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2

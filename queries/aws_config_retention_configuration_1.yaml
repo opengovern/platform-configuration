@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Config Retention Configuration for information about the retention period that AWS Config uses to retain your configuration items.
-ID: aws_config_retention_configuration_1
-IntegrationType:
+id: aws_config_retention_configuration_1
+type: query
+title: List AWS Config Retention Configuration Details
+description: Allows users to query AWS Config Retention Configuration for information about the retention period that AWS Config uses to retain your configuration items.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       retention_period_in_days,
@@ -15,11 +12,10 @@ Query:
       region
     FROM
       aws_config_retention_configuration;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Config
-Title: List AWS Config Retention Configuration Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Config

@@ -1,13 +1,10 @@
-Description: Allows users to query Kinesis Video Streams to obtain metadata about each stream, including the stream's ARN, creation time, status, and other information.
-ID: aws_kinesis_video_stream_1
-IntegrationType:
+id: aws_kinesis_video_stream_1
+type: query
+title: List metadata for AWS Kinesis Video Streams
+description: Allows users to query Kinesis Video Streams to obtain metadata about each stream, including the stream's ARN, creation time, status, and other information.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       stream_name,
       stream_arn,
@@ -16,13 +13,12 @@ Query:
       region
     FROM
       aws_kinesis_video_stream;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Kinesis Video Streams
-Title: List metadata for AWS Kinesis Video Streams
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Kinesis Video Streams

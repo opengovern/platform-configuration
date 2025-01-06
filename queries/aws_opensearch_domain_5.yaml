@@ -1,13 +1,10 @@
-Description: Allows users to query AWS OpenSearch Service Domains for detailed information on their configuration, status, and associated resources.
-ID: aws_opensearch_domain_5
-IntegrationType:
+id: aws_opensearch_domain_5
+type: query
+title: List all AWS OpenSearch Service Domains and Configurations
+description: Allows users to query AWS OpenSearch Service Domains for detailed information on their configuration, status, and associated resources.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       domain_name,
       domain_id,
@@ -15,13 +12,12 @@ Query:
       cluster_config ->> 'InstanceCount' AS instance_count
     FROM
       aws_opensearch_domain;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - OpenSearch Service
-Title: List all AWS OpenSearch Service Domains and Configurations
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - OpenSearch Service

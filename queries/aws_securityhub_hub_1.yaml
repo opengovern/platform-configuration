@@ -1,13 +1,10 @@
-Description: Allows users to query Security Hub to retrieve information about the Hub resources.
-ID: aws_securityhub_hub_1
-IntegrationType:
+id: aws_securityhub_hub_1
+type: query
+title: Find AWS Security Hub Resources Information
+description: Allows users to query Security Hub to retrieve information about the Hub resources.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       hub_arn,
       auto_enable_controls,
@@ -15,13 +12,12 @@ Query:
       region
     FROM
       aws_securityhub_hub;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Security Hub
-Title: Find AWS Security Hub Resources Information
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Security Hub

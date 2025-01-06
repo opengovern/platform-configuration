@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Elastic Block Store (EBS) volumes for detailed information about their configuration, status, and associated tags.
-ID: aws_ebs_volume_5
-IntegrationType:
+id: aws_ebs_volume_5
+type: query
+title: List all AWS EBS Volumes and Configuration Details
+description: Allows users to query AWS Elastic Block Store (EBS) volumes for detailed information about their configuration, status, and associated tags.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       volume_type,
       COUNT(volume_type) AS count
@@ -15,13 +12,12 @@ Query:
       aws_ebs_volume
     GROUP BY
       volume_type;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Elastic Block Store
-Title: List all AWS EBS Volumes and Configuration Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Elastic Block Store

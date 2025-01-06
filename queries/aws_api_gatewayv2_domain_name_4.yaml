@@ -1,13 +1,10 @@
-Description: Allows users to query AWS API Gateway Domain Names and provides information about each domain name within the AWS API Gateway Service. This table can be used to query domain name details, including associated API mappings, security policy, and associated tags.
-ID: aws_api_gatewayv2_domain_name_4
-IntegrationType:
+id: aws_api_gatewayv2_domain_name_4
+type: query
+title: Find all AWS API Gateway Domain Names and Their Details
+description: Allows users to query AWS API Gateway Domain Names and provides information about each domain name within the AWS API Gateway Service. This table can be used to query domain name details, including associated API mappings, security policy, and associated tags.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       domain_name,
       mutual_tls_authentication ->> 'TruststoreUri' AS truststore_uri,
@@ -15,13 +12,12 @@ Query:
       mutual_tls_authentication ->> 'TruststoreWarnings' AS truststore_warnings
     FROM
       aws_api_gatewayv2_domain_name;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_network_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - API Gateway
-Title: Find all AWS API Gateway Domain Names and Their Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_network_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - API Gateway

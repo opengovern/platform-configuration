@@ -1,25 +1,21 @@
-Description: Allows users to query AWS SSO Admin Instance, providing information about each AWS SSO instance in your AWS account.
-ID: aws_ssoadmin_instance_1
-IntegrationType:
+id: aws_ssoadmin_instance_1
+type: query
+title: Find All AWS SSO Admin Instances and Identity Stores
+description: Allows users to query AWS SSO Admin Instance, providing information about each AWS SSO instance in your AWS account.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       arn,
       identity_store_id
     FROM
       aws_ssoadmin_instance
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS SSO Admin
-Title: Find All AWS SSO Admin Instances and Identity Stores
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS SSO Admin

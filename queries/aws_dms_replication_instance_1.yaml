@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Database Migration Service Replication Instances and provides information about each replication instance in an AWS DMS (Database Migration Service).
-ID: aws_dms_replication_instance_1
-IntegrationType:
+id: aws_dms_replication_instance_1
+type: query
+title: List all AWS DMS Replication Instances
+description: Allows users to query AWS Database Migration Service Replication Instances and provides information about each replication instance in an AWS DMS (Database Migration Service).
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       replication_instance_identifier,
       arn,
@@ -18,11 +15,10 @@ Query:
       region
     FROM
       aws_dms_replication_instance;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Database Migration Service
-Title: List all AWS DMS Replication Instances
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Database Migration Service

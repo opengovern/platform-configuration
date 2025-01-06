@@ -1,13 +1,10 @@
-Description: Allows users to query AWS S3 Multi-Region Access Points to retrieve information about their configuration, status, and associated policies.
-ID: aws_s3_multi_region_access_point_2
-IntegrationType:
+id: aws_s3_multi_region_access_point_2
+type: query
+title: Find AWS S3 Multi-Region Access Points configuration and status
+description: Allows users to query AWS S3 Multi-Region Access Points to retrieve information about their configuration, status, and associated policies.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       public_access_block ->> 'BlockPublicAcls' AS block_public_acls,
@@ -21,11 +18,10 @@ Query:
       AND public_access_block ->> 'BlockPublicPolicy'::text = 'true'
       AND public_access_block ->> 'IgnorePublicAcls'::text = 'true'
       AND public_access_block ->> 'RestrictPublicBuckets'::text = 'true';
-Tags:
-  cloud_data_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - S3
-Title: Find AWS S3 Multi-Region Access Points configuration and status
+tags:
+    cloud_data_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - S3

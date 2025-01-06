@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Glue Crawlers and retrieve essential information about the crawler's configuration, status, and associated metadata.
-ID: aws_glue_crawler_2
-IntegrationType:
+id: aws_glue_crawler_2
+type: query
+title: List all AWS Glue Crawlers and Retrieve their Metadata
+description: Allows users to query AWS Glue Crawlers and retrieve essential information about the crawler's configuration, status, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       state,
@@ -19,13 +16,12 @@ Query:
       aws_glue_crawler
     WHERE
       state = 'RUNNING';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Glue
-Title: List all AWS Glue Crawlers and Retrieve their Metadata
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Glue

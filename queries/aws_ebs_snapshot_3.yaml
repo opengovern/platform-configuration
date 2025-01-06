@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EBS snapshots, providing detailed information about each snapshot's configuration, status, and associated metadata.
-ID: aws_ebs_snapshot_3
-IntegrationType:
+id: aws_ebs_snapshot_3
+type: query
+title: List all AWS EBS snapshots with details
+description: Allows users to query AWS EBS snapshots, providing detailed information about each snapshot's configuration, status, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       snapshot_id,
       volume_id,
@@ -16,13 +13,12 @@ Query:
       aws_ebs_snapshot
     CROSS JOIN
       jsonb_array_elements(create_volume_permissions) AS perm;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Elastic Block Store
-Title: List all AWS EBS snapshots with details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Elastic Block Store

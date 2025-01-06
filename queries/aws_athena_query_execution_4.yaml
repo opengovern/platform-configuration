@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Athena Query Executions to retrieve detailed information about each individual query execution.
-ID: aws_athena_query_execution_4
-IntegrationType:
+id: aws_athena_query_execution_4
+type: query
+title: Find top AWS Athena query executions
+description: Allows users to query AWS Athena Query Executions to retrieve detailed information about each individual query execution.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       database,
       COUNT(id) AS nb_query
@@ -18,11 +15,10 @@ Query:
     ORDER BY
       nb_query
     LIMIT 5;
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Athena
-Title: Find top AWS Athena query executions
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Athena

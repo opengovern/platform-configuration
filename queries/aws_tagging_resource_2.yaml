@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Resource Tagging API to get details about resources and their associated tags.
-ID: aws_tagging_resource_2
-IntegrationType:
+id: aws_tagging_resource_2
+type: query
+title: List all AWS Resource Tagging API details with SQL
+description: Allows users to query AWS Resource Tagging API to get details about resources and their associated tags.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       arn,
@@ -17,11 +14,10 @@ Query:
       aws_tagging_resource
     WHERE
       compliance_status;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Resource Tagging API
-Title: List all AWS Resource Tagging API details with SQL
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Resource Tagging API

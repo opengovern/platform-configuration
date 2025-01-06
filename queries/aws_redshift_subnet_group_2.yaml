@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Redshift Subnet Groups and get detailed information about each subnet group, including its name, description, VPC ID, subnet IDs, and status.
-ID: aws_redshift_subnet_group_2
-IntegrationType:
+id: aws_redshift_subnet_group_2
+type: query
+title: Find AWS Redshift Subnet Group Details and Status
+description: Allows users to query AWS Redshift Subnet Groups and get detailed information about each subnet group, including its name, description, VPC ID, subnet IDs, and status.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       cluster_subnet_group_name,
       subnet -> 'SubnetAvailabilityZone' ->> 'Name' AS subnet_availability_zone,
@@ -17,13 +14,12 @@ Query:
     FROM
       aws_redshift_subnet_group,
       jsonb_array_elements(subnets) AS subnet;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_network_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Redshift
-Title: Find AWS Redshift Subnet Group Details and Status
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_network_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Redshift

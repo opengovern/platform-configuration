@@ -1,13 +1,10 @@
-Description: Allows users to query AWS WAFv2 Regex Pattern Set data, providing details about the regex pattern sets used in AWS WAFv2 to filter web requests.
-ID: aws_wafv2_regex_pattern_set_2
-IntegrationType:
+id: aws_wafv2_regex_pattern_set_2
+type: query
+title: Find AWS WAFv2 Regex Pattern Sets in CloudFront
+description: Allows users to query AWS WAFv2 Regex Pattern Set data, providing details about the regex pattern sets used in AWS WAFv2 to filter web requests.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       description,
@@ -20,13 +17,12 @@ Query:
       aws_wafv2_regex_pattern_set
     WHERE
       scope = 'CLOUDFRONT';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_network_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS WAFv2
-Title: Find AWS WAFv2 Regex Pattern Sets in CloudFront
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_network_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS WAFv2

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CloudWatch MetricDataPoints to fetch detailed information about the data points for a defined metric.
-ID: aws_cloudwatch_metric_data_point_2
-IntegrationType:
+id: aws_cloudwatch_metric_data_point_2
+type: query
+title: Find AWS CloudWatch MetricDataPoints details
+description: Allows users to query AWS CloudWatch MetricDataPoints to fetch detailed information about the data points for a defined metric.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       id,
       label,
@@ -22,11 +19,10 @@ Query:
       AND expression = 'SUM(METRICS(''error''))'
     ORDER BY
       timestamp;
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CloudWatch
-Title: Find AWS CloudWatch MetricDataPoints details
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CloudWatch

@@ -1,13 +1,10 @@
-Description: Allows users to query IAM Roles to gain insights into their permissions, trust policies, and associated metadata.
-ID: aws_iam_role_10
-IntegrationType:
+id: aws_iam_role_10
+type: query
+title: Find all AWS Identity and Access Management (IAM) Roles
+description: Allows users to query IAM Roles to gain insights into their permissions, trust policies, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       iam.arn AS resource,
       iam.description,
@@ -30,11 +27,10 @@ Query:
       AND (pstatement -> 'Principal' -> 'Federated')::TEXT LIKE '%token.actions.githubusercontent.com%'
     ORDER BY
       status ASC
-Tags:
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - IAM Roles
-Title: Find all AWS Identity and Access Management (IAM) Roles
+tags:
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - IAM Roles

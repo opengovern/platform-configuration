@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Simple Queue Service (SQS) to retrieve detailed information about each queue.
-ID: aws_sqs_queue_7
-IntegrationType:
+id: aws_sqs_queue_7
+type: query
+title: List all AWS SQS queues with details
+description: Allows users to query AWS Simple Queue Service (SQS) to retrieve detailed information about each queue.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       title,
       fifo_queue
@@ -15,13 +12,12 @@ Query:
       aws_sqs_queue
     WHERE
       fifo_queue;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Simple Queue Service (SQS)
-Title: List all AWS SQS queues with details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Simple Queue Service (SQS)

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EC2 Gateway Load Balancer details, including its configuration, state, type, and associated tags.
-ID: aws_ec2_gateway_load_balancer_2
-IntegrationType:
+id: aws_ec2_gateway_load_balancer_2
+type: query
+title: List all AWS EC2 Gateway Load Balancer Details
+description: Allows users to query AWS EC2 Gateway Load Balancer details, including its configuration, state, type, and associated tags.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       az ->> 'LoadBalancerAddresses' AS load_balancer_addresses,
@@ -17,13 +14,12 @@ Query:
     FROM
       aws_ec2_gateway_load_balancer,
       jsonb_array_elements(availability_zones) AS az;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2 Gateway Load Balancer
-Title: List all AWS EC2 Gateway Load Balancer Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2 Gateway Load Balancer

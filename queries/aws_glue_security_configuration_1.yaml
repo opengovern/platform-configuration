@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Glue Security Configurations and gain insights into the security configurations of Glue resources.
-ID: aws_glue_security_configuration_1
-IntegrationType:
+id: aws_glue_security_configuration_1
+type: query
+title: Find AWS Glue Security Configurations and Insights
+description: Allows users to query AWS Glue Security Configurations and gain insights into the security configurations of Glue resources.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       created_time_stamp,
@@ -16,15 +13,14 @@ Query:
       s3_encryption
     FROM
       aws_glue_security_configuration;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_data_security:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Glue
-Title: Find AWS Glue Security Configurations and Insights
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_data_security:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Glue

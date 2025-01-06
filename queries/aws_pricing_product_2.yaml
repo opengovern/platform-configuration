@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Pricing Product details such as the product's description, pricing details, and associated attributes.
-ID: aws_pricing_product_2
-IntegrationType:
+id: aws_pricing_product_2
+type: query
+title: List AWS Pricing Product Details by Service Code and Filters
+description: Allows users to query AWS Pricing Product details such as the product's description, pricing details, and associated attributes.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       term,
       purchase_option,
@@ -31,11 +28,10 @@ Query:
       "databaseEngine": "MySQL",
       "deploymentOption": "Single-AZ"
     }'::jsonb;
-Tags:
-  cloud_finops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Pricing Product
-Title: List AWS Pricing Product Details by Service Code and Filters
+tags:
+    cloud_finops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Pricing Product

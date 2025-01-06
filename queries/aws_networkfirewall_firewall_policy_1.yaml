@@ -1,13 +1,10 @@
-Description: "Retrieves detailed information on AWS Network Firewall policies, including status, region, and associated tags, to help manage and secure network firewall configurations."
-ID: aws_networkfirewall_firewall_policy_1
-IntegrationType:
+id: aws_networkfirewall_firewall_policy_1
+type: query
+title: AWS Network Firewall Policies Overview
+description: Retrieves detailed information on AWS Network Firewall policies, including status, region, and associated tags, to help manage and secure network firewall configurations.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       arn,
       name,
@@ -17,13 +14,12 @@ Query:
       tags
     FROM
       aws_networkfirewall_firewall_policy;
-Tags:
-  cloud_asset_management:
-    - 'true'
-  cloud_network_security:
-    - 'true'
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Network Firewall
-Title: "AWS Network Firewall Policies Overview"
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_network_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Network Firewall

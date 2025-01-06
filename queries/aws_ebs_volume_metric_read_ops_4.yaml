@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EBS Volume read operations metrics.
-ID: aws_ebs_volume_metric_read_ops_4
-IntegrationType:
+id: aws_ebs_volume_metric_read_ops_4
+type: query
+title: List All AWS EBS Volume Read Operations Metrics
+description: Allows users to query AWS EBS Volume read operations metrics.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT 
       r.volume_id,
       r.timestamp,
@@ -29,11 +26,10 @@ Query:
     ORDER BY
       r.volume_id,
       r.timestamp;
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EBS
-Title: List All AWS EBS Volume Read Operations Metrics
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EBS

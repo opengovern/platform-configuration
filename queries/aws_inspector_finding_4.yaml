@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Inspector Findings to obtain detailed information about the Amazon Inspector findings that are generated during the assessment of the target applications.
-ID: aws_inspector_finding_4
-IntegrationType:
+id: aws_inspector_finding_4
+type: query
+title: List AWS Inspector Findings from the Past 10 Days
+description: Allows users to query AWS Inspector Findings to obtain detailed information about the Amazon Inspector findings that are generated during the assessment of the target applications.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       title,
       id,
@@ -17,11 +14,10 @@ Query:
       aws_inspector_finding
     WHERE
       created_at >= NOW() - INTERVAL '10' DAY;
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Amazon Inspector
-Title: List AWS Inspector Findings from the Past 10 Days
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Amazon Inspector

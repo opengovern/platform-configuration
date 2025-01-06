@@ -1,13 +1,10 @@
-Description: Allows users to query AWS API Gateway Stages for information related to deployment, API, and stage details.
-ID: aws_api_gateway_stage_2
-IntegrationType:
+id: aws_api_gateway_stage_2
+type: query
+title: List all AWS API Gateway stages with cache enabled
+description: Allows users to query AWS API Gateway Stages for information related to deployment, API, and stage details.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       rest_api_id,
@@ -17,13 +14,12 @@ Query:
       aws_api_gateway_stage
     WHERE
       cache_cluster_enabled;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - API Gateway
-Title: List all AWS API Gateway stages with cache enabled
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - API Gateway

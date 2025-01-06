@@ -1,13 +1,10 @@
-Description: Allows users to query AWS WAF Regional Rules for detailed information about each rule, including its ID, metric name, name, and the predicates associated with it.
-ID: aws_wafregional_rule_2
-IntegrationType:
+id: aws_wafregional_rule_2
+type: query
+title: List all AWS WAF Regional Rules with Details
+description: Allows users to query AWS WAF Regional Rules for detailed information about each rule, including its ID, metric name, name, and the predicates associated with it.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       rule_id,
@@ -17,11 +14,10 @@ Query:
     FROM
       aws_wafregional_rule,
       jsonb_array_elements(predicates) AS p;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - WAF
-Title: List all AWS WAF Regional Rules with Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - WAF

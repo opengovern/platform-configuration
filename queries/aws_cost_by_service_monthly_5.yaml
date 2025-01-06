@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Cost Explorer Service for monthly cost breakdown by service. This table provides details such as the service name, the cost associated with it, and the currency code.
-ID: aws_cost_by_service_monthly_5
-IntegrationType:
+id: aws_cost_by_service_monthly_5
+type: query
+title: List all AWS monthly cost breakdowns by service
+description: Allows users to query AWS Cost Explorer Service for monthly cost breakdown by service. This table provides details such as the service name, the cost associated with it, and the currency code.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     WITH ranked_costs AS (
       SELECT
         service,
@@ -20,15 +17,14 @@ Query:
     SELECT * 
     FROM ranked_costs 
     WHERE rank = 1;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_finops:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Cost Explorer
-Title: List all AWS monthly cost breakdowns by service
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_finops:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Cost Explorer

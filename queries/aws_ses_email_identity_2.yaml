@@ -1,13 +1,10 @@
-Description: Allows users to query AWS SES Email Identity to retrieve information about the email identities (domains and email addresses) that you have verified with Amazon SES.
-ID: aws_ses_email_identity_2
-IntegrationType:
+id: aws_ses_email_identity_2
+type: query
+title: List AWS SES Email Identities and Their Verification Status
+description: Allows users to query AWS SES Email Identity to retrieve information about the email identities (domains and email addresses) that you have verified with Amazon SES.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       identity,
       region,
@@ -16,13 +13,12 @@ Query:
       aws_ses_email_identity
     WHERE
       verification_status = 'Failed';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - SES
-Title: List AWS SES Email Identities and Their Verification Status
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - SES

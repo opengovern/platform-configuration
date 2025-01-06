@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EC2 Instance Availability and retrieve detailed information about the availability of EC2 instances in each AWS region.
-ID: aws_ec2_instance_availability_1
-IntegrationType:
+id: aws_ec2_instance_availability_1
+type: query
+title: List all AWS EC2 Instance Availability by Region
+description: Allows users to query AWS EC2 Instance Availability and retrieve detailed information about the availability of EC2 instances in each AWS region.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       instance_type,
       location
@@ -15,13 +12,12 @@ Query:
       aws_ec2_instance_availability
     WHERE
       location = 'us-east-1';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2
-Title: List all AWS EC2 Instance Availability by Region
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2

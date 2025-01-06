@@ -1,13 +1,10 @@
-Description: Allows users to query AWS API Gateway Stages for information related to deployment, API, and stage details.
-ID: aws_api_gateway_stage_1
-IntegrationType:
+id: aws_api_gateway_stage_1
+type: query
+title: Find AWS API Gateway Stages and Deployment Details
+description: Allows users to query AWS API Gateway Stages for information related to deployment, API, and stage details.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       rest_api_id,
       COUNT(name) AS stage_count
@@ -15,11 +12,10 @@ Query:
       aws_api_gateway_stage
     GROUP BY
       rest_api_id;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - API Gateway
-Title: Find AWS API Gateway Stages and Deployment Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - API Gateway

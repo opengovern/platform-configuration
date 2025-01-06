@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EC2 Load Balancer Listener data, which provides information about listeners for an Application Load Balancer or Network Load Balancer.
-ID: aws_ec2_load_balancer_listener_2
-IntegrationType:
+id: aws_ec2_load_balancer_listener_2
+type: query
+title: List all AWS EC2 Load Balancer Listeners
+description: Allows users to query AWS EC2 Load Balancer Listener data, which provides information about listeners for an Application Load Balancer or Network Load Balancer.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       title,
       arn,
@@ -20,11 +17,10 @@ Query:
       aws_ec2_load_balancer_listener
     CROSS JOIN
       jsonb_array_elements(default_actions) AS action;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2
-Title: List all AWS EC2 Load Balancer Listeners
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2

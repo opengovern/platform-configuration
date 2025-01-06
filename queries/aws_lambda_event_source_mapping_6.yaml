@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Lambda Event Source Mappings, providing a detailed view of each mapping configuration.
-ID: aws_lambda_event_source_mapping_6
-IntegrationType:
+id: aws_lambda_event_source_mapping_6
+type: query
+title: List all AWS Lambda Event Source Mappings and Configs
+description: Allows users to query AWS Lambda Event Source Mappings, providing a detailed view of each mapping configuration.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       uuid,
       function_name,
@@ -15,13 +12,12 @@ Query:
       destination_config ->> 'OnSuccess' AS on_success
     FROM
       aws_lambda_event_source_mapping;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Lambda
-Title: List all AWS Lambda Event Source Mappings and Configs
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Lambda

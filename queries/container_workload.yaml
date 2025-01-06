@@ -1,14 +1,11 @@
-Description: ""
-ID: container_workload
-IntegrationType:
+id: container_workload
+type: query
+title: Container Workload
+description: ''
+integration_type:
   - aws_cloud_account
   - azure_subscription
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT 
       CASE
         WHEN resource_type LIKE 'aws::%' THEN 'AWS'
@@ -33,11 +30,10 @@ Query:
         'microsoft.containerservice/managedclusters', 
         'microsoft.app/containerapps'
       )
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws and azure
-  cloud_service:
-    - Container Workload
-Title: Container Workload
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws and azure
+    cloud_service:
+      - Container Workload

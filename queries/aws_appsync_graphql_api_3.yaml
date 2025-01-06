@@ -1,13 +1,10 @@
-Description: Allows users to query AppSync GraphQL APIs to retrieve detailed information about each individual GraphQL API.
-ID: aws_appsync_graphql_api_3
-IntegrationType:
+id: aws_appsync_graphql_api_3
+type: query
+title: Find AWS AppSync GraphQL API Details
+description: Allows users to query AppSync GraphQL APIs to retrieve detailed information about each individual GraphQL API.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       api_id,
@@ -17,11 +14,10 @@ Query:
       log_config ->> 'ExcludeVerboseContent' AS exclude_verbose_content
     FROM
       aws_appsync_graphql_api;
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AppSync
-Title: Find AWS AppSync GraphQL API Details
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AppSync

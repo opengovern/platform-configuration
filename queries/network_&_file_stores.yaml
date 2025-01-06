@@ -1,14 +1,11 @@
-Description: ""
-ID: network_&_file_stores
-IntegrationType:
+id: network_&_file_stores
+type: query
+title: Network & File Stores
+description: ''
+integration_type:
   - aws_cloud_account
   - azure_subscription
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       CASE
         WHEN resource_type LIKE 'aws::%' THEN 'AWS'
@@ -27,9 +24,8 @@ Query:
       platform_integrations c ON r.integration_id = c.integration_id
     WHERE
       resource_type IN ('aws::fsx::filesystem', 'aws::efs::filesystem')
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-Title: Network & File Stores
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws

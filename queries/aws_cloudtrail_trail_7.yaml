@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CloudTrail Trails for information about the AWS CloudTrail service's trail records. This includes trail configuration details, status, and associated metadata.
-ID: aws_cloudtrail_trail_7
-IntegrationType:
+id: aws_cloudtrail_trail_7
+type: query
+title: List AWS CloudTrail Trails with Multi-Region Configuration
+description: Allows users to query AWS CloudTrail Trails for information about the AWS CloudTrail service's trail records. This includes trail configuration details, status, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       arn,
@@ -18,11 +15,10 @@ Query:
     WHERE
       is_multi_region_trail
       AND home_region <> region;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CloudTrail
-Title: List AWS CloudTrail Trails with Multi-Region Configuration
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CloudTrail

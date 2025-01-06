@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Global Accelerator's accelerators.
-ID: aws_globalaccelerator_accelerator_2
-IntegrationType:
+id: aws_globalaccelerator_accelerator_2
+type: query
+title: Find all AWS Global Accelerator accelerators
+description: Allows users to query AWS Global Accelerator's accelerators.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       created_time,
@@ -20,13 +17,12 @@ Query:
     FROM
       aws_globalaccelerator_accelerator,
       jsonb_array_elements(ip_sets -> 0 -> 'IpAddresses') AS anycast_ip;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Global Accelerator
-Title: Find all AWS Global Accelerator accelerators
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Global Accelerator

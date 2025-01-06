@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EC2 Capacity Reservations to provide information about the reservations within AWS Elastic Compute Cloud (EC2).
-ID: aws_ec2_capacity_reservation_2
-IntegrationType:
+id: aws_ec2_capacity_reservation_2
+type: query
+title: Find AWS EC2 Capacity Reservations with SQL Query
+description: Allows users to query AWS EC2 Capacity Reservations to provide information about the reservations within AWS Elastic Compute Cloud (EC2).
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       capacity_reservation_id,
       capacity_reservation_arn,
@@ -17,13 +14,12 @@ Query:
       aws_ec2_capacity_reservation
     WHERE
       state = 'expired';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2
-Title: Find AWS EC2 Capacity Reservations with SQL Query
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2

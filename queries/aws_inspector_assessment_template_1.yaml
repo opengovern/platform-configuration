@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Inspector Assessment Templates to gain insights into each template's configuration, including ARN, duration, rules package ARNs, and user attributes for findings.
-ID: aws_inspector_assessment_template_1
-IntegrationType:
+id: aws_inspector_assessment_template_1
+type: query
+title: Find AWS Inspector Assessment Templates
+description: Allows users to query AWS Inspector Assessment Templates to gain insights into each template's configuration, including ARN, duration, rules package ARNs, and user attributes for findings.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       arn,
@@ -17,13 +14,12 @@ Query:
       region
     FROM
       aws_inspector_assessment_template;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Inspector
-Title: Find AWS Inspector Assessment Templates
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Inspector

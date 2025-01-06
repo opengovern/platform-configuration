@@ -1,14 +1,10 @@
-Description: This insight returns all legacy application gateways.
-ID: azure_insight_legacy_application_gateway
-IntegrationType:
+id: azure_insight_legacy_application_gateway
+type: query
+title: Legacy Application Gateways
+description: This insight returns all legacy application gateways.
+integration_type:
   - azure_subscription
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - azure_application_gateway
-  Parameters: []
-  PrimaryTable: azure_application_gateway
-  QueryToExecute: |
+query: |
     SELECT 
       name, 
       id, 
@@ -21,11 +17,10 @@ Query:
     WHERE 
       NOT sku IS NULL 
       AND sku->>'tier' = 'Standard_v2';
-Tags:
-  category:
-    - Technical Debt
-  persona:
-    - Executive
-    - Product
-    - FinOps
-Title: Legacy Application Gateways
+tags:
+    category:
+      - Technical Debt
+    persona:
+      - Executive
+      - Product
+      - FinOps

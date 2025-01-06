@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EC2 Auto Scaling Groups and access detailed information about each group's configuration, instances, policies, and more.
-ID: aws_ec2_autoscaling_group_3
-IntegrationType:
+id: aws_ec2_autoscaling_group_3
+type: query
+title: List all AWS EC2 Auto Scaling Groups and Details
+description: Allows users to query AWS EC2 Auto Scaling Groups and access detailed information about each group's configuration, instances, policies, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name AS autoscaling_group_name,
       ins_detail ->> 'InstanceId' AS instance_id,
@@ -21,13 +18,12 @@ Query:
     FROM
       aws_ec2_autoscaling_group,
       jsonb_array_elements(instances) AS ins_detail;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2 Auto Scaling
-Title: List all AWS EC2 Auto Scaling Groups and Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2 Auto Scaling

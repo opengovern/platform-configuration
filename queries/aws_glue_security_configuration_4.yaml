@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Glue Security Configurations and gain insights into the security configurations of Glue resources.
-ID: aws_glue_security_configuration_4
-IntegrationType:
+id: aws_glue_security_configuration_4
+type: query
+title: Find AWS Glue Security Configurations
+description: Allows users to query AWS Glue Security Configurations and gain insights into the security configurations of Glue resources.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       e ->> 'S3EncryptionMode' AS encryption_mode,
@@ -17,13 +14,12 @@ Query:
       jsonb_array_elements(s3_encryption) e
     WHERE
       e ->> 'S3EncryptionMode' != 'DISABLED';
-Tags:
-  cloud_data_security:
-    - "true"
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Glue
-Title: Find AWS Glue Security Configurations
+tags:
+    cloud_data_security:
+      - 'true'
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Glue

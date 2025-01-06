@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CodeBuild Build to retrieve information about AWS CodeBuild projects' builds.
-ID: aws_codebuild_build_2
-IntegrationType:
+id: aws_codebuild_build_2
+type: query
+title: List AWS CodeBuild Build details with encryption key
+description: Allows users to query AWS CodeBuild Build to retrieve information about AWS CodeBuild projects' builds.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       arn,
       id,
@@ -16,11 +13,10 @@ Query:
       aws_codebuild_build
     WHERE
       encryption_key IS NOT NULL;
-Tags:
-  cloud_data_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CodeBuild
-Title: List AWS CodeBuild Build details with encryption key
+tags:
+    cloud_data_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CodeBuild

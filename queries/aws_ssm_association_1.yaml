@@ -1,13 +1,10 @@
-Description: Allows users to query AWS SSM Associations for detailed information about the AWS Systems Manager associations, including their status, targets, and parameters.
-ID: aws_ssm_association_1
-IntegrationType:
+id: aws_ssm_association_1
+type: query
+title: Find AWS SSM Association Details including Parameters
+description: Allows users to query AWS SSM Associations for detailed information about the AWS Systems Manager associations, including their status, targets, and parameters.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       association_id,
       association_name,
@@ -19,13 +16,12 @@ Query:
       region
     FROM
       aws_ssm_association;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Systems Manager
-Title: Find AWS SSM Association Details including Parameters
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Systems Manager

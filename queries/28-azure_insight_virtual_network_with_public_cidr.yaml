@@ -1,14 +1,10 @@
-Description: List Virtual Networks with public CIDR blocks
-ID: azure_insight_virtual_network_with_public_cidr
-IntegrationType:
+id: azure_insight_virtual_network_with_public_cidr
+type: query
+title: vNets with Public IP Range
+description: List Virtual Networks with public CIDR blocks
+integration_type:
   - azure_subscription
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - azure_virtual_network
-  Parameters: []
-  PrimaryTable: azure_virtual_network
-  QueryToExecute: |
+query: |
     SELECT
       name,
       cidr_block,
@@ -25,10 +21,9 @@ Query:
       NOT cidr_block::cidr <<= '10.0.0.0/16'
       AND NOT cidr_block::cidr <<= '192.168.0.0/16'
       AND NOT cidr_block::cidr <<= '172.16.0.0/12';
-Tags:
-  category:
-    - Security
-    - Technical Debt
-    - Resiliency
-    - Resiliency
-Title: vNets with Public IP Range
+tags:
+    category:
+      - Security
+      - Technical Debt
+      - Resiliency
+      - Resiliency

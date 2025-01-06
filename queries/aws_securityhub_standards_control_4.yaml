@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Security Hub Standards Control data including details about each security standard control available in an AWS account.
-ID: aws_securityhub_standards_control_4
-IntegrationType:
+id: aws_securityhub_standards_control_4
+type: query
+title: Find AWS Security Hub Standards Control with High Severity
+description: Allows users to query AWS Security Hub Standards Control data including details about each security standard control available in an AWS account.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       control_id,
       control_status,
@@ -16,13 +13,12 @@ Query:
       aws_securityhub_standards_control
     WHERE
       severity_rating = 'HIGH';
-Tags:
-  cloud_data_security:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Security Hub
-Title: Find AWS Security Hub Standards Control with High Severity
+tags:
+    cloud_data_security:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Security Hub

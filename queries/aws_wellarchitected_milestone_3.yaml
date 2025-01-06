@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Well-Architected Tool Milestones for detailed information about the milestones of a workload.
-ID: aws_wellarchitected_milestone_3
-IntegrationType:
+id: aws_wellarchitected_milestone_3
+type: query
+title: Query AWS Well-Architected Tool Milestones in Detail
+description: Allows users to query AWS Well-Architected Tool Milestones for detailed information about the milestones of a workload.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       m.milestone_name,
       m.milestone_number,
@@ -21,13 +18,12 @@ Query:
       aws_wellarchitected_milestone m
     WHERE
       w.workload_id = m.workload_id;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Well-Architected Tool
-Title: Query AWS Well-Architected Tool Milestones in Detail
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Well-Architected Tool

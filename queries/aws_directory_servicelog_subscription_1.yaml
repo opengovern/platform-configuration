@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Directory Service Log Subscription to obtain detailed information about each log subscription associated with the AWS Directory Service.
-ID: aws_directory_servicelog_subscription_1
-IntegrationType:
+id: aws_directory_servicelog_subscription_1
+type: query
+title: List all AWS Directory Service Log Subscriptions
+description: Allows users to query AWS Directory Service Log Subscription to obtain detailed information about each log subscription associated with the AWS Directory Service.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       log_group_name,
       partition,
@@ -16,11 +13,10 @@ Query:
       title
     FROM
       aws_directory_service_log_subscription;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Directory Service
-Title: List all AWS Directory Service Log Subscriptions
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Directory Service

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Amplify Apps to retrieve detailed information about each application, including its name, ARN, creation date, default domain, and more.
-ID: aws_amplify_app_7
-IntegrationType:
+id: aws_amplify_app_7
+type: query
+title: List all AWS Amplify Apps with Auto Build enabled
+description: Allows users to query AWS Amplify Apps to retrieve detailed information about each application, including its name, ARN, creation date, default domain, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       app_id,
       name,
@@ -17,13 +14,12 @@ Query:
       aws_amplify_app
     WHERE
       enable_branch_auto_build = TRUE;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Amplify
-Title: List all AWS Amplify Apps with Auto Build enabled
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Amplify

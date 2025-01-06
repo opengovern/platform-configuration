@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Lambda Functions, providing information about each function's configuration, including runtime, code size, timeout, and associated tags.
-ID: aws_lambda_function_7
-IntegrationType:
+id: aws_lambda_function_7
+type: query
+title: Find all AWS Lambda Functions with Missing DLQ
+description: Allows users to query AWS Lambda Functions, providing information about each function's configuration, including runtime, code size, timeout, and associated tags.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       arn,
       dead_letter_config_target_arn
@@ -15,11 +12,10 @@ Query:
       aws_lambda_function
     WHERE
       dead_letter_config_target_arn IS NULL;
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Lambda
-Title: Find all AWS Lambda Functions with Missing DLQ
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Lambda

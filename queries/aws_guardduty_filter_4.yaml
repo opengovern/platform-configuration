@@ -1,13 +1,10 @@
-Description: Allows users to query AWS GuardDuty Filters to retrieve information about existing filters, their conditions, actions, and associated metadata.
-ID: aws_guardduty_filter_4
-IntegrationType:
+id: aws_guardduty_filter_4
+type: query
+title: Find AWS GuardDuty Filter Information using SQL
+description: Allows users to query AWS GuardDuty Filters to retrieve information about existing filters, their conditions, actions, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       jsonb_pretty(finding_criteria) AS finding_criteria
@@ -15,11 +12,10 @@ Query:
       aws_guardduty_filter
     WHERE
       name = 'filter-1';
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - GuardDuty
-Title: Find AWS GuardDuty Filter Information using SQL
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - GuardDuty

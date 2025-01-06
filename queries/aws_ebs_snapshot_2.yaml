@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EBS snapshots, providing detailed information about each snapshot's configuration, status, and associated metadata.
-ID: aws_ebs_snapshot_2
-IntegrationType:
+id: aws_ebs_snapshot_2
+type: query
+title: Find AWS EBS Snapshots with User and Group Details
+description: Allows users to query AWS EBS snapshots, providing detailed information about each snapshot's configuration, status, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       snapshot_id,
       arn,
@@ -20,11 +17,10 @@ Query:
       jsonb_array_elements(create_volume_permissions) AS perm
     WHERE
       perm ->> 'Group' = 'all';
-Tags:
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Elastic Block Store
-Title: Find AWS EBS Snapshots with User and Group Details
+tags:
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Elastic Block Store

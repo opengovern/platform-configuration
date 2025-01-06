@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EC2 Managed Prefix Lists, providing information about IP address ranges (CIDRs), permissions, and associated metadata.
-ID: aws_ec2_managed_prefix_list_6
-IntegrationType:
+id: aws_ec2_managed_prefix_list_6
+type: query
+title: Find AWS EC2 Managed Prefix Lists with permissions
+description: Allows users to query AWS EC2 Managed Prefix Lists, providing information about IP address ranges (CIDRs), permissions, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       id,
@@ -18,11 +15,10 @@ Query:
       aws_ec2_managed_prefix_list
     WHERE
       owner_id = '632901234528';
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2
-Title: Find AWS EC2 Managed Prefix Lists with permissions
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2

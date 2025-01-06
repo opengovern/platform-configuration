@@ -1,13 +1,10 @@
-Description: Allows users to query AWS KMS Key Rotation data including the rotation schedule, type, and associated key details.
-ID: aws_kms_key_rotation_4
-IntegrationType:
+id: aws_kms_key_rotation_4
+type: query
+title: List AWS KMS Key Rotation Schedules and Types
+description: Allows users to query AWS KMS Key Rotation data including the rotation schedule, type, and associated key details.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       rotation_type,
       COUNT(key_id) AS count
@@ -15,15 +12,14 @@ Query:
       aws_kms_key_rotation
     GROUP BY
       rotation_type;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_data_security:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - KMS
-Title: List AWS KMS Key Rotation Schedules and Types
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_data_security:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - KMS

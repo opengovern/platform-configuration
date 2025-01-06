@@ -1,13 +1,10 @@
-Description: Allows users to query AWS RDS DB Subnet Groups to retrieve information about each DB subnet group configured in an AWS account.
-ID: aws_rds_db_subnet_group_2
-IntegrationType:
+id: aws_rds_db_subnet_group_2
+type: query
+title: List all AWS RDS DB Subnet Groups Information
+description: Allows users to query AWS RDS DB Subnet Groups to retrieve information about each DB subnet group configured in an AWS account.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       subnet -> 'SubnetAvailabilityZone' ->> 'Name' AS subnet_availability_zone,
@@ -18,11 +15,10 @@ Query:
       aws_rds_db_subnet_group
     CROSS JOIN
       jsonb_array_elements(subnets) AS subnet;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - RDS
-Title: List all AWS RDS DB Subnet Groups Information
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - RDS

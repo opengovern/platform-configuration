@@ -1,13 +1,10 @@
-Description: Allows users to query Amazon Neptune DB clusters for comprehensive information about their configuration, status, and other relevant details.
-ID: aws_neptune_db_cluster_1
-IntegrationType:
+id: aws_neptune_db_cluster_1
+type: query
+title: List all configurations and status of Neptune DB Clusters
+description: Allows users to query Amazon Neptune DB clusters for comprehensive information about their configuration, status, and other relevant details.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       db_cluster_identifier,
       allocated_storage,
@@ -16,13 +13,12 @@ Query:
       aws_neptune_db_cluster
     WHERE
       kms_key_id IS NULL;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Amazon Neptune
-Title: List all configurations and status of Neptune DB Clusters
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Amazon Neptune

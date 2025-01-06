@@ -1,9 +1,7 @@
-ID: docker_base_images
-Title: All Base Images
-Description: List of all Base Images across Dockerfiles in GitHub
-Query:
-  Engine: CloudQL-v0.0.1
-  QueryToExecute: |
+id: docker_base_images
+title: All Base Images
+description: List of all Base Images across Dockerfiles in GitHub
+query: |
     SELECT 
         image,
         COUNT(*) AS dockerfile_count
@@ -18,4 +16,4 @@ Query:
         image
     ORDER BY 
         dockerfile_count DESC;
-Tags: []
+tags: []

@@ -1,13 +1,10 @@
-Description: Enables users to query AWS DMS Replication Tasks to retrieve detailed information on data migration activities between source and target databases.
-ID: aws_dms_replication_task_7
-IntegrationType:
+id: aws_dms_replication_task_7
+type: query
+title: List all AWS DMS Replication Task Details
+description: Enables users to query AWS DMS Replication Tasks to retrieve detailed information on data migration activities between source and target databases.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       endpoint_type,
       COUNT(*) AS task_count
@@ -15,15 +12,14 @@ Query:
       aws_dms_replication_task
     GROUP BY
       endpoint_type;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_data_security:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - DMS
-Title: List all AWS DMS Replication Task Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_data_security:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - DMS

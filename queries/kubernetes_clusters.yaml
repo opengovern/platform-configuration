@@ -1,14 +1,11 @@
-Description: ""
-ID: kubernetes_clusters
-IntegrationType:
+id: kubernetes_clusters
+type: query
+title: List All Kubernetes Clusters with Details
+description: ''
+integration_type:
   - aws_cloud_account
   - azure_subscription
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT 
       c.name AS cloud_account_name,
       c.provider_id AS _discovered_provider_id,
@@ -27,9 +24,9 @@ Query:
         platform_resources r
       WHERE 
         resource_type = 'aws::eks::cluster')
-    
+
       UNION
-    
+
       (SELECT 
         'Azure' AS provider,
         r.resource_name AS vm_name,
@@ -43,16 +40,15 @@ Query:
         platform_resources r 
       WHERE 
         resource_type = 'microsoft.containerservice/managedclusters')
-    
+
     ) AS t 
     INNER JOIN platform_integrations c 
     ON t._platform_integration_id = c.integration_id
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-    - azure
-  cloud_service:
-    - Kubernetes
-Title: List All Kubernetes Clusters with Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+      - azure
+    cloud_service:
+      - Kubernetes

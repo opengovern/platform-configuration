@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EKS Node Group data, providing information about each node group within an AWS Elastic Kubernetes Service (EKS) cluster.
-ID: aws_eks_node_group_1
-IntegrationType:
+id: aws_eks_node_group_1
+type: query
+title: List all node groups in AWS EKS clusters using SQL
+description: Allows users to query AWS EKS Node Group data, providing information about each node group within an AWS Elastic Kubernetes Service (EKS) cluster.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       nodegroup_name,
       arn,
@@ -16,13 +13,12 @@ Query:
       status
     FROM
       aws_eks_node_group;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EKS
-Title: List all node groups in AWS EKS clusters using SQL
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EKS

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CodeBuild Build to retrieve information about AWS CodeBuild projects' builds.
-ID: aws_codebuild_build_1
-IntegrationType:
+id: aws_codebuild_build_1
+type: query
+title: List all AWS CodeBuild Build Information
+description: Allows users to query AWS CodeBuild Build to retrieve information about AWS CodeBuild projects' builds.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       arn,
       id,
@@ -20,13 +17,12 @@ Query:
       region
     FROM
       aws_codebuild_build;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CodeBuild
-Title: List all AWS CodeBuild Build Information
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CodeBuild

@@ -1,14 +1,10 @@
-Description: List of lambda functions which are not encrypted with CMK
-ID: aws_insight_lambda_function_not_cmk_encrypted
-IntegrationType:
+id: aws_insight_lambda_function_not_cmk_encrypted
+type: query
+title: Unencrypted Lambda
+description: List of lambda functions which are not encrypted with CMK
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - aws_lambda_function
-  Parameters: []
-  PrimaryTable: aws_lambda_function
-  QueryToExecute: |
+query: |
     SELECT
       name,
       kms_key_arn,
@@ -19,7 +15,6 @@ Query:
       aws_lambda_function
     WHERE
       kms_key_arn IS NULL;
-Tags:
-  category:
-    - Security
-Title: Unencrypted Lambda
+tags:
+    category:
+      - Security

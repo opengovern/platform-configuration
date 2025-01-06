@@ -1,14 +1,10 @@
-Description: List classic Load Balancers without logging
-ID: aws_insight_loadbalancer_classic_no_logging
-IntegrationType:
+id: aws_insight_loadbalancer_classic_no_logging
+type: query
+title: Classic Load Balancers without logging
+description: List classic Load Balancers without logging
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - aws_ec2_classic_load_balancer
-  Parameters: []
-  PrimaryTable: aws_ec2_classic_load_balancer
-  QueryToExecute: |
+query: |
     SELECT
       name,
       access_log_enabled,
@@ -19,10 +15,9 @@ Query:
       aws_ec2_classic_load_balancer
     WHERE
       access_log_enabled = 'false';
-Tags:
-  category:
-    - Technical Debt
-  persona:
-    - Security
-    - DevOps
-Title: Classic Load Balancers without logging
+tags:
+    category:
+      - Technical Debt
+    persona:
+      - Security
+      - DevOps

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Systems Manager Parameter Store to retrieve information about parameters, their types, values, and associated metadata.
-ID: aws_ssm_parameter_1
-IntegrationType:
+id: aws_ssm_parameter_1
+type: query
+title: Find AWS Systems Manager Parameters and Metadata
+description: Allows users to query AWS Systems Manager Parameter Store to retrieve information about parameters, their types, values, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       type,
@@ -16,11 +13,10 @@ Query:
       region
     FROM
       aws_ssm_parameter;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Systems Manager Parameter Store
-Title: Find AWS Systems Manager Parameters and Metadata
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Systems Manager Parameter Store

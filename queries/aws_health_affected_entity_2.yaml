@@ -1,13 +1,10 @@
-Description: Allows users to query Affected Entities in AWS Health. The `aws_health_affected_entity` table provides comprehensive details about each entity affected by AWS Health events. It can be utilized to gain insights into the health status of AWS resources, allowing for proactive monitoring and maintenance.
-ID: aws_health_affected_entity_2
-IntegrationType:
+id: aws_health_affected_entity_2
+type: query
+title: List all AWS Health Affected Entities
+description: Allows users to query Affected Entities in AWS Health. The `aws_health_affected_entity` table provides comprehensive details about each entity affected by AWS Health events. It can be utilized to gain insights into the health status of AWS resources, allowing for proactive monitoring and maintenance.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       arn,
       entity_url,
@@ -19,13 +16,12 @@ Query:
       aws_health_affected_entity
     WHERE
       status_code = 'UNIMPAIRED';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Health
-Title: List all AWS Health Affected Entities
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Health

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EMR Block Public Access Configuration to retrieve details about the block public access configurations for EMR clusters.
-ID: aws_emr_block_public_access_configuration_4
-IntegrationType:
+id: aws_emr_block_public_access_configuration_4
+type: query
+title: Find AWS EMR Block Public Access Configuration Details
+description: Allows users to query AWS EMR Block Public Access Configuration to retrieve details about the block public access configurations for EMR clusters.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       created_by_arn,
       creation_date
@@ -15,11 +12,10 @@ Query:
       aws_emr_block_public_access_configuration
     WHERE
       DATE_PART('day', NOW() - creation_date) < 90;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EMR
-Title: Find AWS EMR Block Public Access Configuration Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EMR

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Backup Frameworks and retrieve comprehensive data about each backup plan, including its unique ARN, version, creation and deletion dates, and more.
-ID: aws_backup_framework_1
-IntegrationType:
+id: aws_backup_framework_1
+type: query
+title: List AWS Backup Frameworks with Comprehensive Details
+description: Allows users to query AWS Backup Frameworks and retrieve comprehensive data about each backup plan, including its unique ARN, version, creation and deletion dates, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       account_id,
       arn,
@@ -22,13 +19,12 @@ Query:
       tags
     FROM
       aws_backup_framework;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Backup
-Title: List AWS Backup Frameworks with Comprehensive Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Backup

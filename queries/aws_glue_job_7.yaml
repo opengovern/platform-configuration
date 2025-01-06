@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Glue Jobs to retrieve detailed information related to job properties, execution, and status.
-ID: aws_glue_job_7
-IntegrationType:
+id: aws_glue_job_7
+type: query
+title: List all AWS Glue Jobs with Continuous CloudWatch Logs Disabled
+description: Allows users to query AWS Glue Jobs to retrieve detailed information related to job properties, execution, and status.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       title,
       arn,
@@ -18,11 +15,10 @@ Query:
       aws_glue_job
     WHERE
       default_arguments ->> '--enable-continuous-cloudwatch-log' = 'false';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Glue
-Title: List all AWS Glue Jobs with Continuous CloudWatch Logs Disabled
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Glue

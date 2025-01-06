@@ -1,13 +1,10 @@
-Description: Allows users to query AWS IoT Fleet Metrics to gain insights into each fleet metric's configuration, including ARN, creation date, and aggregation information.
-ID: aws_iot_fleet_metric_3
-IntegrationType:
+id: aws_iot_fleet_metric_3
+type: query
+title: List all AWS IoT Fleet Metrics with Details from Last 30 Days
+description: Allows users to query AWS IoT Fleet Metrics to gain insights into each fleet metric's configuration, including ARN, creation date, and aggregation information.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       metric_name,
       index_name,
@@ -19,13 +16,12 @@ Query:
       aws_iot_fleet_metric
     WHERE
       last_modified_date >= NOW() - INTERVAL '30 days';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS IoT Fleet Metrics
-Title: List all AWS IoT Fleet Metrics with Details from Last 30 Days
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS IoT Fleet Metrics

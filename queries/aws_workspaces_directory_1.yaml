@@ -1,13 +1,10 @@
-Description: Allows users to query AWS WorkSpaces Directory information to retrieve details such as directory ID, directory type, workspace creation properties, and more.
-ID: aws_workspaces_directory_1
-IntegrationType:
+id: aws_workspaces_directory_1
+type: query
+title: Find AWS WorkSpaces Directory Information Details
+description: Allows users to query AWS WorkSpaces Directory information to retrieve details such as directory ID, directory type, workspace creation properties, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       directory_id,
@@ -18,13 +15,12 @@ Query:
       state
     FROM
       aws_workspaces_directory;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS WorkSpaces
-Title: Find AWS WorkSpaces Directory Information Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS WorkSpaces

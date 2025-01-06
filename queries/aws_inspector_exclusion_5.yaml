@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Inspector Exclusions and retrieve data about AWS Inspector Exclusions, including their ARNs, descriptions, and recommendations.
-ID: aws_inspector_exclusion_5
-IntegrationType:
+id: aws_inspector_exclusion_5
+type: query
+title: List AWS Inspector Exclusions with ARNs and Recommendations
+description: Allows users to query AWS Inspector Exclusions and retrieve data about AWS Inspector Exclusions, including their ARNs, descriptions, and recommendations.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT 
       e.arn, 
       e.title, 
@@ -21,11 +18,10 @@ Query:
       e.assessment_run_arn = r.arn 
     AND 
       r.assessment_template_arn = t.arn;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Inspector
-Title: List AWS Inspector Exclusions with ARNs and Recommendations
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Inspector

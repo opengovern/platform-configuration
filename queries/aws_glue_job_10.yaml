@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Glue Jobs to retrieve detailed information related to job properties, execution, and status.
-ID: aws_glue_job_10
-IntegrationType:
+id: aws_glue_job_10
+type: query
+title: Find AWS Glue Jobs Missing Encryption Type
+description: Allows users to query AWS Glue Jobs to retrieve detailed information related to job properties, execution, and status.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       title,
       arn,
@@ -19,11 +16,10 @@ Query:
       aws_glue_job
     WHERE
       default_arguments ->> '--encryption-type' IS NULL;
-Tags:
-  cloud_data_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Glue
-Title: Find AWS Glue Jobs Missing Encryption Type
+tags:
+    cloud_data_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Glue

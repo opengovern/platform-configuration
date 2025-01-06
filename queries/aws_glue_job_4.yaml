@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Glue Jobs to retrieve detailed information related to job properties, execution, and status.
-ID: aws_glue_job_4
-IntegrationType:
+id: aws_glue_job_4
+type: query
+title: Find all AWS Glue Jobs with Query Execution Detail
+description: Allows users to query AWS Glue Jobs to retrieve detailed information related to job properties, execution, and status.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       j.title,
       j.arn,
@@ -24,13 +21,12 @@ Query:
     WHERE
       cloud_watch_encryption IS NULL
       OR cloud_watch_encryption ->> 'CloudWatchEncryptionMode' = 'DISABLED';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Glue
-Title: Find all AWS Glue Jobs with Query Execution Detail
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Glue

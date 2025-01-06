@@ -1,13 +1,10 @@
-Description: Allows users to query AWS SSM Patch Baseline data to retrieve information about each patch baseline in your AWS account.
-ID: aws_ssm_patch_baseline_1
-IntegrationType:
+id: aws_ssm_patch_baseline_1
+type: query
+title: List all AWS SSM Patch Baselines with Details
+description: Allows users to query AWS SSM Patch Baseline data to retrieve information about each patch baseline in your AWS account.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       baseline_id,
       name,
@@ -17,11 +14,10 @@ Query:
       region
     FROM
       aws_ssm_patch_baseline;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - SSM Patch
-Title: List all AWS SSM Patch Baselines with Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - SSM Patch

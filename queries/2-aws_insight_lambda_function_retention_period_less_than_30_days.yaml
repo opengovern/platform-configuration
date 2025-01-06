@@ -1,16 +1,10 @@
-Description: List of Lambda functions whose retention period is less than 30 days
-ID: aws_insight_lambda_function_retention_period_less_than_30_days
-Title: Lambda Functions with Retention Under 30 Days
-IntegrationType:
+id: aws_insight_lambda_function_retention_period_less_than_30_days
+type: query
+title: Lambda Functions with Retention Under 30 Days
+description: List of Lambda functions whose retention period is less than 30 days
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - aws_lambda_function
-    - aws_cloudwatch_log_group
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       fn.name,
       lg.name,
@@ -29,7 +23,7 @@ Query:
       )
     WHERE
       lg.retention_in_days < 30
-Tags:
-  category:
-    - Technical Debt
-    - Resiliency
+tags:
+    category:
+      - Technical Debt
+      - Resiliency

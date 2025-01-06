@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CloudWatch Log Subscription Filters, providing information about each subscription filter associated with the specified log group.
-ID: aws_cloudwatch_log_subscription_filter_1
-IntegrationType:
+id: aws_cloudwatch_log_subscription_filter_1
+type: query
+title: List AWS CloudWatch Log Subscription Filters
+description: Allows users to query AWS CloudWatch Log Subscription Filters, providing information about each subscription filter associated with the specified log group.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       log_group_name,
@@ -16,11 +13,10 @@ Query:
       destination_arn
     FROM
       aws_cloudwatch_log_subscription_filter;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CloudWatch
-Title: List AWS CloudWatch Log Subscription Filters
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CloudWatch

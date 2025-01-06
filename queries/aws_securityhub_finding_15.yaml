@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Security Hub Findings to gather information about security issues identified within AWS resources. This includes details such as the severity, status, and description of the finding, the resources affected, and any remediation steps recommended.
-ID: aws_securityhub_finding_15
-IntegrationType:
+id: aws_securityhub_finding_15
+type: query
+title: List AWS Security Hub Findings by Resource Type
+description: Allows users to query AWS Security Hub Findings to gather information about security issues identified within AWS resources. This includes details such as the severity, status, and description of the finding, the resources affected, and any remediation steps recommended.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       r ->> 'Type' AS resource_type,
       COUNT(r ->> 'Type')
@@ -18,13 +15,12 @@ Query:
       r ->> 'Type'
     ORDER BY
       COUNT DESC;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_network_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Security Hub
-Title: List AWS Security Hub Findings by Resource Type
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_network_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Security Hub

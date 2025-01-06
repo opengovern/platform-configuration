@@ -1,13 +1,10 @@
-Description: Allows users to query AWS API Gateway Rest APIs to retrieve information about API Gateway REST APIs in an AWS account.
-ID: aws_api_gateway_rest_api_1
-IntegrationType:
+id: aws_api_gateway_rest_api_1
+type: query
+title: List all AWS API Gateway REST APIs with details
+description: Allows users to query AWS API Gateway Rest APIs to retrieve information about API Gateway REST APIs in an AWS account.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       api_id,
@@ -16,13 +13,12 @@ Query:
       binary_media_types
     FROM
       aws_api_gateway_rest_api;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - API Gateway
-Title: List all AWS API Gateway REST APIs with details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - API Gateway

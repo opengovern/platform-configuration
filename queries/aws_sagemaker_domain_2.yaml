@@ -1,13 +1,10 @@
-Description: Allows users to query AWS SageMaker Domains to retrieve data about AWS SageMaker Studio domains, including domain details, status, and associated metadata.
-ID: aws_sagemaker_domain_2
-IntegrationType:
+id: aws_sagemaker_domain_2
+type: query
+title: List all AWS SageMaker Studio Domain Details and Status
+description: Allows users to query AWS SageMaker Domains to retrieve data about AWS SageMaker Studio domains, including domain details, status, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       creation_time,
@@ -17,13 +14,12 @@ Query:
       aws_sagemaker_domain
     WHERE
       kms_key_id IS NULL;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_data_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - SageMaker
-Title: List all AWS SageMaker Studio Domain Details and Status
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_data_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - SageMaker

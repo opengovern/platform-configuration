@@ -1,24 +1,20 @@
-Description: Allows users to query AWS Organizations Root to retrieve detailed information on AWS Organizations Root account. This table can be utilized to gain insights on organizations root account.
-ID: aws_organizations_root_1
-IntegrationType:
+id: aws_organizations_root_1
+type: query
+title: Find AWS Organization Root Account Detailed Info
+description: Allows users to query AWS Organizations Root to retrieve detailed information on AWS Organizations Root account. This table can be utilized to gain insights on organizations root account.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       id,
       arn
     FROM
       aws_organizations_root;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Organizations
-Title: Find AWS Organization Root Account Detailed Info
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Organizations

@@ -1,26 +1,22 @@
-Description: Allows users to query AWS Lambda Alias, providing detailed information about each alias associated with AWS Lambda functions.
-ID: aws_lambda_alias_4
-IntegrationType:
+id: aws_lambda_alias_4
+type: query
+title: List all AWS Lambda Aliases and Configuration
+description: Allows users to query AWS Lambda Alias, providing detailed information about each alias associated with AWS Lambda functions.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       function_name,
       JSONB_PRETTY(url_config) AS url_config
     FROM
       aws_lambda_alias;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Lambda
-Title: List all AWS Lambda Aliases and Configuration
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Lambda

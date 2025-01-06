@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Backup Selections to obtain detailed information about the backup selection resources within AWS Backup service.
-ID: aws_backup_selection_2
-IntegrationType:
+id: aws_backup_selection_2
+type: query
+title: List all AWS Backup Selection Details
+description: Allows users to query AWS Backup Selections to obtain detailed information about the backup selection resources within AWS Backup service.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     WITH filtered_data AS (
       SELECT
         backup_plan_id,
@@ -24,11 +21,10 @@ Query:
     FROM
       aws_ebs_volume AS v
       JOIN filtered_data t ON t.assigned_resource ?| ARRAY[v.arn];
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Backup
-Title: List all AWS Backup Selection Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Backup

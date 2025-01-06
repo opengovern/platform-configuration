@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Redshift Clusters and retrieve comprehensive information about each cluster, including its configuration, status, performance, and security settings.
-ID: aws_redshift_cluster_1
-IntegrationType:
+id: aws_redshift_cluster_1
+type: query
+title: List all AWS Redshift Clusters including Configurations
+description: Allows users to query AWS Redshift Clusters and retrieve comprehensive information about each cluster, including its configuration, status, performance, and security settings.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       cluster_identifier,
       arn,
@@ -15,13 +12,12 @@ Query:
       region
     FROM
       aws_redshift_cluster;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Redshift
-Title: List all AWS Redshift Clusters including Configurations
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Redshift

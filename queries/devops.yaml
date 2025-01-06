@@ -1,14 +1,11 @@
-Description: ""
-ID: devops
-IntegrationType:
+id: devops
+type: query
+title: DevOps
+description: ''
+integration_type:
   - aws_cloud_account
   - azure_subscription
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT 
       CASE
         WHEN resource_type LIKE 'aws::%' THEN 'AWS'
@@ -27,13 +24,12 @@ Query:
       ON r.integration_id = c.integration_id
     WHERE 
       resource_type IN ('aws::codecommit::repository', 'aws::codedeploy::deploymentgroup')
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-    - azure
-  cloud_service:
-    - Codecommit
-    - Codedeploy
-Title: DevOps
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+      - azure
+    cloud_service:
+      - Codecommit
+      - Codedeploy

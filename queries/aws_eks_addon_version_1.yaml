@@ -1,24 +1,20 @@
-Description: Allows users to query AWS EKS Add-On Versions.
-ID: aws_eks_addon_version_1
-IntegrationType:
+id: aws_eks_addon_version_1
+type: query
+title: List AWS EKS Add-On Versions
+description: Allows users to query AWS EKS Add-On Versions.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       addon_name,
       addon_version,
       type
     FROM
       aws_eks_addon_version;
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EKS
-Title: List AWS EKS Add-On Versions
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EKS

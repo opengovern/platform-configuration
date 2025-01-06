@@ -1,13 +1,10 @@
-Description: Allows users to query AWS IAM OpenID Connect Providers and retrieve details about the OpenID Connect (OIDC) identity providers in their AWS account.
-ID: aws_iam_open_id_connect_provider_2
-IntegrationType:
+id: aws_iam_open_id_connect_provider_2
+type: query
+title: List all AWS IAM OpenID Connect Providers in Account
+description: Allows users to query AWS IAM OpenID Connect Providers and retrieve details about the OpenID Connect (OIDC) identity providers in their AWS account.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       arn,
       create_date,
@@ -21,13 +18,12 @@ Query:
       create_date <= (CURRENT_DATE - INTERVAL '90' DAY)
     ORDER BY
       create_date;
-Tags:
-  cloud_identity_security:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - IAM
-Title: List all AWS IAM OpenID Connect Providers in Account
+tags:
+    cloud_identity_security:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - IAM

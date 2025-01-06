@@ -1,14 +1,10 @@
-Description: AWS Account whose root user has an access key enabled.
-ID: aws_insight_account_with_root_access_key
-IntegrationType:
+id: aws_insight_account_with_root_access_key
+type: query
+title: AWS Account with Root Access Key Enabled
+description: AWS Account whose root user has an access key enabled.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - aws_iam_credential_report
-  Parameters: []
-  PrimaryTable: aws_iam_credential_report
-  QueryToExecute: |
+query: |
     SELECT 
       user_arn, 
       account_id, 
@@ -19,12 +15,11 @@ Query:
     WHERE 
       user_name = '<root_account>' 
       AND (access_key_1_active = TRUE OR access_key_2_active = TRUE)
-Tags:
-  category:
-    - Security
-  persona:
-    - DevOps
-    - Security
-    - Executive
-    - Product
-Title: AWS Account with Root Access Key Enabled
+tags:
+    category:
+      - Security
+    persona:
+      - DevOps
+      - Security
+      - Executive
+      - Product

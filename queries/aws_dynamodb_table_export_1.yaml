@@ -1,13 +1,10 @@
-Description: Allows users to query AWS DynamoDB Table Exports, providing detailed information on the exports of DynamoDB tables including the export time, status, and the exported data format.
-ID: aws_dynamodb_table_export_1
-IntegrationType:
+id: aws_dynamodb_table_export_1
+type: query
+title: List all details of AWS DynamoDB Table Exports
+description: Allows users to query AWS DynamoDB Table Exports, providing detailed information on the exports of DynamoDB tables including the export time, status, and the exported data format.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       arn,
       end_time,
@@ -16,11 +13,10 @@ Query:
       s3_bucket
     FROM
       aws_dynamodb_table_export;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - DynamoDB
-Title: List all details of AWS DynamoDB Table Exports
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - DynamoDB

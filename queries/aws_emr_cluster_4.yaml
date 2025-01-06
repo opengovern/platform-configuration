@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Elastic MapReduce Cluster data.
-ID: aws_emr_cluster_4
-IntegrationType:
+id: aws_emr_cluster_4
+type: query
+title: Find AWS Elastic MapReduce Cluster Data
+description: Allows users to query AWS Elastic MapReduce Cluster data.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       cluster_arn,
@@ -16,11 +13,10 @@ Query:
     FROM
       aws_emr_cluster,
       jsonb_array_elements(applications) AS a;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Elastic MapReduce
-Title: Find AWS Elastic MapReduce Cluster Data
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Elastic MapReduce

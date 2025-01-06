@@ -1,14 +1,10 @@
-Description: List all Classic Load Balancer. Link here.
-ID: aws_insight_ec2_classic_load_balancer
-IntegrationType:
+id: aws_insight_ec2_classic_load_balancer
+type: query
+title: Classic Load Balancers
+description: List all Classic Load Balancer. Link here.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - aws_ec2_classic_load_balancer
-  Parameters: []
-  PrimaryTable: aws_ec2_classic_load_balancer
-  QueryToExecute: |
+query: |
     SELECT 
       NAME, 
       ARN, 
@@ -17,13 +13,12 @@ Query:
       PLATFORM_RESOURCE_ID 
     FROM 
       AWS_EC2_CLASSIC_LOAD_BALANCER
-Tags:
-  category:
-    - Security
-    - Technical Debt
-    - Resiliency
-  persona:
-    - Executive
-    - Product
-    - FinOps
-Title: Classic Load Balancers
+tags:
+    category:
+      - Security
+      - Technical Debt
+      - Resiliency
+    persona:
+      - Executive
+      - Product
+      - FinOps

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EC2 Transit Gateway VPC Attachments for details such as the attachment state, creation time, and more.
-ID: aws_ec2_transit_gateway_vpc_attachment_1
-IntegrationType:
+id: aws_ec2_transit_gateway_vpc_attachment_1
+type: query
+title: List all AWS EC2 Transit Gateway VPC Attachments
+description: Allows users to query AWS EC2 Transit Gateway VPC Attachments for details such as the attachment state, creation time, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       transit_gateway_attachment_id,
       transit_gateway_id,
@@ -17,13 +14,12 @@ Query:
       association_state
     FROM
       aws_ec2_transit_gateway_vpc_attachment;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2
-Title: List all AWS EC2 Transit Gateway VPC Attachments
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2

@@ -1,26 +1,22 @@
-Description: Allows users to query AWS S3 buckets for detailed information about their configuration, policies, and permissions.
-ID: aws_s3_bucket_13
-IntegrationType:
+id: aws_s3_bucket_13
+type: query
+title: Find all AWS S3 Buckets Configuration and Permissions
+description: Allows users to query AWS S3 buckets for detailed information about their configuration, policies, and permissions.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       b.name,
       r ->> 'ObjectOwnership' AS object_ownership
     FROM
       aws_s3_bucket AS b,
       jsonb_array_elements(object_ownership_controls -> 'Rules') AS r;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - S3
-Title: Find all AWS S3 Buckets Configuration and Permissions
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - S3

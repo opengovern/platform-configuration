@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Cost Explorer Service daily usage type to fetch detailed data about AWS service usage and costs.
-ID: aws_cost_by_service_usage_type_daily_3
-IntegrationType:
+id: aws_cost_by_service_usage_type_daily_3
+type: query
+title: Top 10 AWS Services by Daily Cost & Usage
+description: Allows users to query AWS Cost Explorer Service daily usage type to fetch detailed data about AWS service usage and costs.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       service,
       usage_type,
@@ -21,5 +18,4 @@ Query:
     ORDER BY
       average DESC
     LIMIT 10;
-Tags: {}
-Title: 'Top 10 AWS Services by Daily Cost & Usage'
+tags: {}

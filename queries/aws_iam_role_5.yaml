@@ -1,13 +1,10 @@
-Description: Allows users to query IAM Roles to gain insights into their permissions, trust policies, and associated metadata.
-ID: aws_iam_role_5
-IntegrationType:
+id: aws_iam_role_5
+type: query
+title: Find AWS IAM Roles and Policies Permissions Metadata
+description: Allows users to query IAM Roles to gain insights into their permissions, trust policies, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       r.name AS role_name,
       p.name AS policy_name,
@@ -26,11 +23,10 @@ Query:
         action LIKE '%*%'
         OR action LIKE '%?%'
       );
-Tags:
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Identity and Access Management
-Title: Find AWS IAM Roles and Policies Permissions Metadata
+tags:
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Identity and Access Management

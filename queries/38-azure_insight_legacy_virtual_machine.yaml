@@ -1,14 +1,10 @@
-Description: This insight identifies virtual machines that are running on legacy hardware.
-ID: azure_insight_legacy_virtual_machine
-IntegrationType:
+id: azure_insight_legacy_virtual_machine
+type: query
+title: Legacy Virtual Machine
+description: This insight identifies virtual machines that are running on legacy hardware.
+integration_type:
   - azure_subscription
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - azure_application_gateway
-  Parameters: []
-  PrimaryTable: azure_application_gateway
-  QueryToExecute: |
+query: |
     SELECT
       name,
       power_state,
@@ -95,11 +91,10 @@ Query:
         'Standard_ND24s',
         'Standard_ND24rs'
       );
-Tags:
-  category:
-    - Technical Debt
-  persona:
-    - Executive
-    - Product
-    - FinOps
-Title: Legacy Virtual Machine
+tags:
+    category:
+      - Technical Debt
+    persona:
+      - Executive
+      - Product
+      - FinOps

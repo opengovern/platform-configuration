@@ -1,9 +1,7 @@
-ID: inactive_expired_keys
-Title: Inactive and Expired API Keys
-Description: List of all inactive and expired API Keys from AWS, Azure, and Cloudflare platforms.
-Query:
-  Engine: CloudQL-v0.0.1
-  QueryToExecute: |
+id: inactive_expired_keys
+title: Inactive and Expired API Keys
+description: List of all inactive and expired API Keys from AWS, Azure, and Cloudflare platforms.
+query: |
     WITH 
     -- CTE for inactive AWS keys
     inactive_aws_keys AS (
@@ -124,7 +122,7 @@ Query:
         Integration
     FROM 
         expired_cloudflare_tokens
-Tags:
+tags:
   category:
     - Security
   subject:

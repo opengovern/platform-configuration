@@ -1,13 +1,10 @@
-Description: Enables users to query AWS RDS DB Engine Versions to retrieve detailed information on various database engine versions supported by Amazon RDS.
-ID: aws_rds_db_engine_version_1
-IntegrationType:
+id: aws_rds_db_engine_version_1
+type: query
+title: Find all AWS RDS DB Engine Versions with SQL
+description: Enables users to query AWS RDS DB Engine Versions to retrieve detailed information on various database engine versions supported by Amazon RDS.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
         engine,
         engine_version,
@@ -16,11 +13,10 @@ Query:
         major_engine_version
     FROM
         aws_rds_db_engine_version;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Amazon RDS
-Title: Find all AWS RDS DB Engine Versions with SQL
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Amazon RDS

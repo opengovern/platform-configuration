@@ -1,13 +1,10 @@
-Description: "Fetches AWS Network Firewall policies with details on stateless fragment default actions and rule group references, supporting security management and firewall configuration review."
-ID: aws_networkfirewall_firewall_policy_6
-IntegrationType:
+id: aws_networkfirewall_firewall_policy_6
+type: query
+title: AWS Network Firewall Policies with Stateless Fragment Actions
+description: Fetches AWS Network Firewall policies with details on stateless fragment default actions and rule group references, supporting security management and firewall configuration review.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       arn,
       name AS firewall_policy_name,
@@ -16,11 +13,10 @@ Query:
       firewall_policy -> 'StatelessRuleGroupReferences' AS stateless_rule_group_references
     FROM
       aws_networkfirewall_firewall_policy;
-Tags:
-  cloud_asset_management:
-    - 'true'
-  cloud_network_security:
-    - 'true'
-  cloud_provider:
-    - aws
-Title: "AWS Network Firewall Policies with Stateless Fragment Actions"
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_network_security:
+      - 'true'
+    cloud_provider:
+      - aws

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CloudFront Distributions to gain insights into their configuration, status, and associated metadata.
-ID: aws_cloudfront_distribution_2
-IntegrationType:
+id: aws_cloudfront_distribution_2
+type: query
+title: Find Disabled AWS CloudFront Distribution Logging
+description: Allows users to query AWS CloudFront Distributions to gain insights into their configuration, status, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       id,
       logging ->> 'Bucket' AS bucket,
@@ -17,13 +14,12 @@ Query:
       aws_cloudfront_distribution
     WHERE
       logging ->> 'Enabled' = 'false';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CloudFront
-Title: Find Disabled AWS CloudFront Distribution Logging
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CloudFront

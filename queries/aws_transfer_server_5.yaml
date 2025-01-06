@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Transfer for SFTP Servers and retrieve detailed information about SFTP servers in their AWS account.
-ID: aws_transfer_server_5
-IntegrationType:
+id: aws_transfer_server_5
+type: query
+title: Find all AWS Transfer SFTP Servers and Details
+description: Allows users to query AWS Transfer for SFTP Servers and retrieve detailed information about SFTP servers in their AWS account.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       server_id,
       domain,
@@ -16,11 +13,10 @@ Query:
       structured_log_destinations
     FROM
       aws_transfer_server;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Transfer for SFTP
-Title: Find all AWS Transfer SFTP Servers and Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Transfer for SFTP

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Lambda Versions to fetch detailed information about each version of a specific AWS Lambda function.
-ID: aws_lambda_version_1
-IntegrationType:
+id: aws_lambda_version_1
+type: query
+title: Find AWS Lambda Versions and Details
+description: Allows users to query AWS Lambda Versions to fetch detailed information about each version of a specific AWS Lambda function.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       function_name,
       version,
@@ -15,13 +12,12 @@ Query:
       handler
     FROM
       aws_lambda_version;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Lambda
-Title: Find AWS Lambda Versions and Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Lambda

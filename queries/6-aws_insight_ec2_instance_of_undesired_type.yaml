@@ -1,14 +1,10 @@
-Description: List of Instances which are not of the desired type.
-ID: aws_insight_ec2_instance_of_undesired_type
-IntegrationType:
+id: aws_insight_ec2_instance_of_undesired_type
+type: query
+title: Legacy Instance Types
+description: List of Instances which are not of the desired type.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - aws_ec2_instance
-  Parameters: []
-  PrimaryTable: aws_ec2_instance
-  QueryToExecute: |
+query: |
     SELECT
       instance_id,
       arn,
@@ -33,11 +29,10 @@ Query:
         'hs1.%', 
         't1.%'
       ]);
-Tags:
-  category:
-    - Technical Debt
-  persona:
-    - Executive
-    - Product
-    - FinOps
-Title: Legacy Instance Types
+tags:
+    category:
+      - Technical Debt
+    persona:
+      - Executive
+      - Product
+      - FinOps

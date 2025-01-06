@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CodeBuild Build to retrieve information about AWS CodeBuild projects'' builds.
-ID: aws_codebuild_build_9
-IntegrationType:
+id: aws_codebuild_build_9
+type: query
+title: List AWS CodeBuild Build Phases and Durations
+description: Allows users to query AWS CodeBuild Build to retrieve information about AWS CodeBuild projects'' builds.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       id,
       p ->> 'EndTime' AS end_time,
@@ -19,11 +16,10 @@ Query:
     FROM
       aws_codebuild_build,
       jsonb_array_elements(phases) AS p;
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CodeBuild
-Title: List AWS CodeBuild Build Phases and Durations
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CodeBuild

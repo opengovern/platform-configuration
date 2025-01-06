@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CloudTrail Trails for information about the AWS CloudTrail service's trail records. This includes trail configuration details, status, and associated metadata.
-ID: aws_cloudtrail_trail_3
-IntegrationType:
+id: aws_cloudtrail_trail_3
+type: query
+title: Find AWS CloudTrail Trail and Public S3 Bucket Info
+description: Allows users to query AWS CloudTrail Trails for information about the AWS CloudTrail service's trail records. This includes trail configuration details, status, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       trail.name AS trail_name,
       bucket.name AS bucket_name,
@@ -18,13 +15,12 @@ Query:
         ON trail.s3_bucket_name = bucket.name
     WHERE
       bucket.bucket_policy_is_public;
-Tags:
-  cloud_network_security:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CloudTrail
-Title: Find AWS CloudTrail Trail and Public S3 Bucket Info
+tags:
+    cloud_network_security:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CloudTrail

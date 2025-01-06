@@ -1,14 +1,10 @@
-Description: List of availability sets which does not use managed disks configuration
-ID: azure_insight_compute_availability_set_without_managed_disk_configuration
-IntegrationType:
+id: azure_insight_compute_availability_set_without_managed_disk_configuration
+type: query
+title: AV Sets with Legacy Disks
+description: List of availability sets which does not use managed disks configuration
+integration_type:
   - azure_subscription
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - azure_compute_availability_set
-  Parameters: []
-  PrimaryTable: azure_compute_availability_set
-  QueryToExecute: |
+query: |
     SELECT
       name,
       sku_name,
@@ -19,10 +15,9 @@ Query:
       azure_compute_availability_set
     WHERE
       sku_name = 'Classic';
-Tags:
-  category:
-    - Security
-    - Technical Debt
-    - Resiliency
-    - Cost Management
-Title: AV Sets with Legacy Disks
+tags:
+    category:
+      - Security
+      - Technical Debt
+      - Resiliency
+      - Cost Management

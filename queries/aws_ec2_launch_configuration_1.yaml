@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EC2 Launch Configurations to gain insights into their configurations, metadata, and associated instances.
-ID: aws_ec2_launch_configuration_1
-IntegrationType:
+id: aws_ec2_launch_configuration_1
+type: query
+title: List all AWS EC2 Launch Configurations and Metadata
+description: Allows users to query AWS EC2 Launch Configurations to gain insights into their configurations, metadata, and associated instances.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       created_time,
@@ -19,11 +16,10 @@ Query:
       key_name
     FROM
       aws_ec2_launch_configuration;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2
-Title: List all AWS EC2 Launch Configurations and Metadata
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2

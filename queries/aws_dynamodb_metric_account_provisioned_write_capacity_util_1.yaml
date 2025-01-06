@@ -1,13 +1,10 @@
-Description: Allows users to query AWS DynamoDB Metrics for account provisioned write capacity utilization.
-ID: aws_dynamodb_metric_account_provisioned_write_capacity_util_1
-IntegrationType:
+id: aws_dynamodb_metric_account_provisioned_write_capacity_util_1
+type: query
+title: List AWS DynamoDB Metrics for Write Capacity Utilization
+description: Allows users to query AWS DynamoDB Metrics for account provisioned write capacity utilization.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       account_id,
       timestamp,
@@ -20,11 +17,10 @@ Query:
       aws_dynamodb_metric_account_provisioned_write_capacity_util
     ORDER BY
       timestamp;
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - DynamoDB
-Title: List AWS DynamoDB Metrics for Write Capacity Utilization
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - DynamoDB

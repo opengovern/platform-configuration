@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EMR Instances for detailed information about the status, configuration, and other metadata of each instance.
-ID: aws_emr_instance_4
-IntegrationType:
+id: aws_emr_instance_4
+type: query
+title: Query AWS EMR Instances and Detailed Metadata
+description: Allows users to query AWS EMR Instances for detailed information about the status, configuration, and other metadata of each instance.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       id,
       ec2_instance_id,
@@ -19,13 +16,12 @@ Query:
       jsonb_array_elements(ebs_volumes) AS v
     WHERE
       ei.id = 'ci-ULCFS2ZN0FK7';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EMR
-Title: Query AWS EMR Instances and Detailed Metadata
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EMR

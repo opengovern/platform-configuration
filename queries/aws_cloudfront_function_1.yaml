@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CloudFront Functions to retrieve detailed information about each function, including its ARN, stage, status, and more.
-ID: aws_cloudfront_function_1
-IntegrationType:
+id: aws_cloudfront_function_1
+type: query
+title: List all AWS CloudFront Functions with details
+description: Allows users to query AWS CloudFront Functions to retrieve detailed information about each function, including its ARN, stage, status, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       status,
@@ -16,11 +13,10 @@ Query:
       function_config
     FROM
       aws_cloudfront_function;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CloudFront
-Title: List all AWS CloudFront Functions with details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CloudFront

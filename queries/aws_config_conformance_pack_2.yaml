@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Config Conformance Packs to fetch information about the AWS Config conformance packs deployed on an AWS account.
-ID: aws_config_conformance_pack_2
-IntegrationType:
+id: aws_config_conformance_pack_2
+type: query
+title: List all AWS Config Conformance Packs Info
+description: Allows users to query AWS Config Conformance Packs to fetch information about the AWS Config conformance packs deployed on an AWS account.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       conformance_pack_id,
@@ -15,13 +12,12 @@ Query:
       delivery_s3_key_prefix
     FROM
       aws_config_conformance_pack;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Config
-Title: List all AWS Config Conformance Packs Info
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Config

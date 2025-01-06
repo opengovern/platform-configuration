@@ -1,14 +1,10 @@
-Description: List Lambda Functions which are using unsupported engines
-ID: aws_insight_lambda_function_with_unsupported_engine
-IntegrationType:
+id: aws_insight_lambda_function_with_unsupported_engine
+type: query
+title: List Lambda Functions with unsupported engines
+description: List Lambda Functions which are using unsupported engines
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - aws_lambda_function
-  Parameters: []
-  PrimaryTable: aws_lambda_function
-  QueryToExecute: |
+query: |
     SELECT 
       name,
       runtime,
@@ -41,12 +37,11 @@ Query:
         'provided.al2',
         'provided'
       );
-Tags:
-  category:
-    - Technical Debt
-    - Resiliency
-  persona:
-    - Executive
-    - Product
-    - FinOps
-Title: List Lambda Functions with unsupported engines
+tags:
+    category:
+      - Technical Debt
+      - Resiliency
+    persona:
+      - Executive
+      - Product
+      - FinOps

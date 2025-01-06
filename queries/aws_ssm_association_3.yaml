@@ -1,13 +1,10 @@
-Description: Allows users to query AWS SSM Associations for detailed information about the AWS Systems Manager associations, including their status, targets, and parameters.
-ID: aws_ssm_association_3
-IntegrationType:
+id: aws_ssm_association_3
+type: query
+title: List AWS SSM Associations with Status and Targets
+description: Allows users to query AWS SSM Associations for detailed information about the AWS Systems Manager associations, including their status, targets, and parameters.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       association.association_id AS association_id,
       target ->> 'Key' AS target_key,
@@ -19,11 +16,10 @@ Query:
       jsonb_array_elements_text(target -> 'Values') AS instances
     WHERE
       target ->> 'Key' = 'InstanceIds';
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Systems Manager
-Title: List AWS SSM Associations with Status and Targets
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Systems Manager

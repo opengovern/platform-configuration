@@ -1,13 +1,10 @@
-Description: Allows users to query Amazon DocumentDB Clusters for detailed information about their configuration, status, and associated metadata.
-ID: aws_docdb_cluster_2
-IntegrationType:
+id: aws_docdb_cluster_2
+type: query
+title: Find Amazon DocumentDB Cluster Configuration and Status
+description: Allows users to query Amazon DocumentDB Clusters for detailed information about their configuration, status, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       db_cluster_identifier,
       status,
@@ -18,13 +15,12 @@ Query:
       aws_docdb_cluster
     WHERE
       NOT storage_encrypted;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Amazon DocumentDB
-Title: Find Amazon DocumentDB Cluster Configuration and Status
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Amazon DocumentDB

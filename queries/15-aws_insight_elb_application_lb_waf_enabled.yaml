@@ -1,14 +1,10 @@
-Description: List all ELB with no WAF.
-ID: aws_insight_elb_application_lb_waf_enabled
-IntegrationType:
+id: aws_insight_elb_application_lb_waf_enabled
+type: query
+title: Load Balancers with no WAF
+description: List all ELB with no WAF.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - aws_ec2_application_load_balancer
-  Parameters: []
-  PrimaryTable: aws_ec2_application_load_balancer
-  QueryToExecute: |
+query: |
     SELECT
       arn AS resource,
       account_id,
@@ -25,8 +21,7 @@ Query:
       region
     FROM
       aws_ec2_application_load_balancer;
-Tags:
-  category:
-    - Security
-    - Technical Debt
-Title: Load Balancers with no WAF
+tags:
+    category:
+      - Security
+      - Technical Debt

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Identity Store Groups to obtain information about the identity and attributes of groups in AWS.
-ID: aws_identitystore_group_2
-IntegrationType:
+id: aws_identitystore_group_2
+type: query
+title: Find AWS Identity Store Groups Information
+description: Allows users to query AWS Identity Store Groups to obtain information about the identity and attributes of groups in AWS.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       id,
       name
@@ -16,11 +13,10 @@ Query:
     WHERE
       identity_store_id = 'd-1234567890'
       AND name = 'test';
-Tags:
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Identity Store
-Title: Find AWS Identity Store Groups Information
+tags:
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Identity Store

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS RDS DB Event Subscriptions to retrieve information about all event subscriptions for RDS DB instances.
-ID: aws_rds_db_event_subscription_1
-IntegrationType:
+id: aws_rds_db_event_subscription_1
+type: query
+title: List all AWS RDS DB Event Subscriptions Information
+description: Allows users to query AWS RDS DB Event Subscriptions to retrieve information about all event subscriptions for RDS DB instances.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       cust_subscription_id,
       customer_aws_id,
@@ -16,13 +13,12 @@ Query:
       enabled
     FROM
       aws_rds_db_event_subscription;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - RDS
-Title: List all AWS RDS DB Event Subscriptions Information
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - RDS

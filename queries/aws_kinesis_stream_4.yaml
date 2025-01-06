@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Kinesis Stream data, including stream name, status, creation time, and associated tags.
-ID: aws_kinesis_stream_4
-IntegrationType:
+id: aws_kinesis_stream_4
+type: query
+title: List AWS Kinesis Stream details including name, status, and tags
+description: Allows users to query AWS Kinesis Stream data, including stream name, status, creation time, and associated tags.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       stream_name,
       stream_arn,
@@ -19,11 +16,10 @@ Query:
       aws_kinesis_stream
     WHERE
       encryption_type = 'NONE';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Kinesis Stream
-Title: List AWS Kinesis Stream details including name, status, and tags
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Kinesis Stream

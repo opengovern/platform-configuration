@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Timestream tables, providing detailed information on table configurations, statuses, and retention properties.
-ID: aws_timestreamwrite_table_1
-IntegrationType:
+id: aws_timestreamwrite_table_1
+type: query
+title: List all AWS Timestream Tables with Configurations and Statuses
+description: Allows users to query AWS Timestream tables, providing detailed information on table configurations, statuses, and retention properties.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       table_name,
       arn,
@@ -17,11 +14,10 @@ Query:
       region
     FROM
       aws_timestreamwrite_table;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Timestream
-Title: List all AWS Timestream Tables with Configurations and Statuses
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Timestream

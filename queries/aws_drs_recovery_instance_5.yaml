@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Disaster Recovery Service Recovery Instances to retrieve information about recovery instances, including instance type, recovery instance ARN, and associated tags.
-ID: aws_drs_recovery_instance_5
-IntegrationType:
+id: aws_drs_recovery_instance_5
+type: query
+title: List all AWS Disaster Recovery Service Recovery Instances
+description: Allows users to query AWS Disaster Recovery Service Recovery Instances to retrieve information about recovery instances, including instance type, recovery instance ARN, and associated tags.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       recovery_instance_id,
       arn,
@@ -20,11 +17,10 @@ Query:
       aws_drs_recovery_instance
     WHERE
       NOT is_drill;
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Disaster Recovery Service
-Title: List all AWS Disaster Recovery Service Recovery Instances
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Disaster Recovery Service

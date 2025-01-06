@@ -1,14 +1,11 @@
-Description: ""
-ID: database_workload
-IntegrationType:
+id: database_workload
+type: query
+title: List Database Workloads and Cloud Provider Information
+description: ''
+integration_type:
   - aws_cloud_account
   - azure_subscription
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       CASE
         WHEN resource_type LIKE 'aws::%' THEN 'AWS'
@@ -44,12 +41,11 @@ Query:
         'microsoft.dbformysql/servers', 
         'microsoft.sql/managedinstances'
       )
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-    - azure
-  cloud_service:
-    - Database
-Title: List Database Workloads and Cloud Provider Information
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+      - azure
+    cloud_service:
+      - Database

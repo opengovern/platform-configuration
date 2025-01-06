@@ -1,13 +1,10 @@
-Description: Allows users to query AWS VPC Flow Logs and retrieve information about the IP traffic going to and from network interfaces in their VPC.
-ID: aws_vpc_flow_log_event_5
-IntegrationType:
+id: aws_vpc_flow_log_event_5
+type: query
+title: Find AWS VPC Flow Log Events and IP Traffic Details
+description: Allows users to query AWS VPC Flow Logs and retrieve information about the IP traffic going to and from network interfaces in their VPC.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       log_group_name,
       log_stream_name,
@@ -28,13 +25,12 @@ Query:
       AND timestamp >= NOW() - INTERVAL '1 hour'
     ORDER BY
       timestamp;
-Tags:
-  cloud_network_security:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - VPC Flow Logs
-Title: Find AWS VPC Flow Log Events and IP Traffic Details
+tags:
+    cloud_network_security:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - VPC Flow Logs

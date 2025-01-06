@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EC2 Load Balancer Listener Rules, providing detailed information on rule actions, conditions, and priority.
-ID: aws_ec2_load_balancer_listener_rule_5
-IntegrationType:
+id: aws_ec2_load_balancer_listener_rule_5
+type: query
+title: List all AWS EC2 Load Balancer Listener Rules
+description: Allows users to query AWS EC2 Load Balancer Listener Rules, providing detailed information on rule actions, conditions, and priority.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       r.arn,
       r.listener_arn,
@@ -23,13 +20,12 @@ Query:
     JOIN
       aws_ec2_load_balancer_listener AS l
       ON r.listener_arn = l.arn;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2
-Title: List all AWS EC2 Load Balancer Listener Rules
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2

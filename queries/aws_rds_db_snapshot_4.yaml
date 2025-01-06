@@ -1,13 +1,10 @@
-Description: Allows users to query Amazon RDS DB Snapshots for information regarding manual and automatic snapshots of an Amazon RDS DB instance.
-ID: aws_rds_db_snapshot_4
-IntegrationType:
+id: aws_rds_db_snapshot_4
+type: query
+title: List Amazon RDS DB Snapshots Information
+description: Allows users to query Amazon RDS DB Snapshots for information regarding manual and automatic snapshots of an Amazon RDS DB instance.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       db_snapshot_identifier,
       db_instance_identifier,
@@ -17,11 +14,10 @@ Query:
       storage_type
     FROM
       aws_rds_db_snapshot;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - RDS
-Title: List Amazon RDS DB Snapshots Information
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - RDS

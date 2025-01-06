@@ -1,13 +1,10 @@
-Description: Allows users to query AWS ElastiCache Replication Groups to retrieve information related to their configuration, status, and associated resources.
-ID: aws_elasticache_replication_group_1
-IntegrationType:
+id: aws_elasticache_replication_group_1
+type: query
+title: List all AWS ElastiCache Replication Groups with SQL
+description: Allows users to query AWS ElastiCache Replication Groups to retrieve information related to their configuration, status, and associated resources.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       replication_group_id,
       description,
@@ -17,11 +14,10 @@ Query:
       automatic_failover
     FROM
       aws_elasticache_replication_group;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - ElastiCache
-Title: List all AWS ElastiCache Replication Groups with SQL
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - ElastiCache

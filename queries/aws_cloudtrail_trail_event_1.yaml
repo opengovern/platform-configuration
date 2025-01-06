@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CloudTrail Events, providing information about each trail event within AWS CloudTrail. The table can be used to retrieve details such as the event time, event name, resources involved, and much more.
-ID: aws_cloudtrail_trail_event_1
-IntegrationType:
+id: aws_cloudtrail_trail_event_1
+type: query
+title: Find AWS CloudTrail Events with Details in Table Format
+description: Allows users to query AWS CloudTrail Events, providing information about each trail event within AWS CloudTrail. The table can be used to retrieve details such as the event time, event name, resources involved, and much more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       event_name,
       event_source,
@@ -21,15 +18,14 @@ Query:
     WHERE
       log_group_name = 'aws-cloudtrail-log-group-name'
       AND timestamp >= NOW() - INTERVAL '5 minutes';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_network_security:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CloudTrail
-Title: Find AWS CloudTrail Events with Details in Table Format
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_network_security:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CloudTrail

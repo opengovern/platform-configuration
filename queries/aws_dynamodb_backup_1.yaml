@@ -1,24 +1,20 @@
-Description: Allows users to query DynamoDB Backup details such as backup ARN, backup creation date, backup size, backup status, and more.
-ID: aws_dynamodb_backup_1
-IntegrationType:
+id: aws_dynamodb_backup_1
+type: query
+title: List all DynamoDB Backup details with SQL query
+description: Allows users to query DynamoDB Backup details such as backup ARN, backup creation date, backup size, backup status, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       table_name,
       table_id
     FROM
       aws_dynamodb_backup;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - DynamoDB
-Title: List all DynamoDB Backup details with SQL query
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - DynamoDB

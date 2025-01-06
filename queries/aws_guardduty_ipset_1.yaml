@@ -1,13 +1,10 @@
-Description: Allows users to query AWS GuardDuty IPSet to retrieve information about the IPSet, such as the detector ID, IPSet ID, name, format, location, and status.
-ID: aws_guardduty_ipset_1
-IntegrationType:
+id: aws_guardduty_ipset_1
+type: query
+title: Find AWS GuardDuty IPSets with Details
+description: Allows users to query AWS GuardDuty IPSet to retrieve information about the IPSet, such as the detector ID, IPSet ID, name, format, location, and status.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       detector_id,
       ipset_id,
@@ -16,13 +13,12 @@ Query:
       location
     FROM
       aws_guardduty_ipset;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_data_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - GuardDuty
-Title: Find AWS GuardDuty IPSets with Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_data_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - GuardDuty

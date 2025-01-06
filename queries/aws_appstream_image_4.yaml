@@ -1,13 +1,10 @@
-Description: Allows users to query AWS AppStream Images to gain insights into their properties, states, and associated metadata.
-ID: aws_appstream_image_4
-IntegrationType:
+id: aws_appstream_image_4
+type: query
+title: List all AWS AppStream Image properties and states
+description: Allows users to query AWS AppStream Images to gain insights into their properties, states, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       created_time,
@@ -19,13 +16,12 @@ Query:
       aws_appstream_image
     WHERE
       image_builder_supported;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AppStream
-Title: List all AWS AppStream Image properties and states
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AppStream

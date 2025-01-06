@@ -1,13 +1,10 @@
-Description: Allows users to query AWS IAM Group data such as group name, path, and ARN. This table provides information about IAM groups within AWS Identity and Access Management (IAM).
-ID: aws_iam_group_4
-IntegrationType:
+id: aws_iam_group_4
+type: query
+title: Find all AWS IAM Group information like name and path
+description: Allows users to query AWS IAM Group data such as group name, path, and ARN. This table provides information about IAM groups within AWS Identity and Access Management (IAM).
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name AS group_name,
       inline_policies
@@ -15,11 +12,10 @@ Query:
       aws_iam_group
     WHERE
       inline_policies IS NOT NULL;
-Tags:
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - IAM
-Title: Find all AWS IAM Group information like name and path
+tags:
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - IAM

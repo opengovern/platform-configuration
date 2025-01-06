@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Step Functions State Machine Execution data, including execution status, start and end times, and associated state machine details.
-ID: aws_sfn_state_machine_execution_1
-IntegrationType:
+id: aws_sfn_state_machine_execution_1
+type: query
+title: List all AWS Step Functions Execution details
+description: Allows users to query AWS Step Functions State Machine Execution data, including execution status, start and end times, and associated state machine details.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       execution_arn,
@@ -15,13 +12,12 @@ Query:
       state_machine_arn
     FROM
       aws_sfn_state_machine_execution;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Step Functions
-Title: List all AWS Step Functions Execution details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Step Functions

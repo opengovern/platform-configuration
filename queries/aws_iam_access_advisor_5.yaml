@@ -1,13 +1,10 @@
-Description: Allows users to query AWS IAM Access Advisor to retrieve information about the service last accessed data for IAM entities (users, groups, and roles).
-ID: aws_iam_access_advisor_5
-IntegrationType:
+id: aws_iam_access_advisor_5
+type: query
+title: Find All AWS IAM Access Advisor Last Access Data
+description: Allows users to query AWS IAM Access Advisor to retrieve information about the service last accessed data for IAM entities (users, groups, and roles).
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT 
       principal_arn,
       service_name,
@@ -26,11 +23,10 @@ Query:
       AND service_namespace = 's3'
     ORDER BY 
       age ASC;
-Tags:
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - IAM Access Advisor
-Title: Find All AWS IAM Access Advisor Last Access Data
+tags:
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - IAM Access Advisor

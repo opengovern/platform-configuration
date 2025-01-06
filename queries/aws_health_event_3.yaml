@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Health Events to retrieve information about events that affect your AWS services and accounts.
-ID: aws_health_event_3
-IntegrationType:
+id: aws_health_event_3
+type: query
+title: Find AWS Health Events Affecting Services and Accounts
+description: Allows users to query AWS Health Events to retrieve information about events that affect your AWS services and accounts.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       arn,
       start_time,
@@ -21,11 +18,10 @@ Query:
       aws_health_event
     WHERE
       service = 'EC2';
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Health Events
-Title: Find AWS Health Events Affecting Services and Accounts
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Health Events

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Route 53 Resolver Rule to obtain data on DNS resolver rules configured in an AWS account.
-ID: aws_route53_resolver_rule_3
-IntegrationType:
+id: aws_route53_resolver_rule_3
+type: query
+title: Find AWS Route 53 Resolver Rule Data in AWS Account
+description: Allows users to query AWS Route 53 Resolver Rule to obtain data on DNS resolver rules configured in an AWS account.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       p ->> 'Ip' AS ip,
@@ -15,11 +12,10 @@ Query:
     FROM
       aws_route53_resolver_rule,
       JSONB_ARRAY_ELEMENTS(target_ips) AS p;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Route 53
-Title: Find AWS Route 53 Resolver Rule Data in AWS Account
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Route 53

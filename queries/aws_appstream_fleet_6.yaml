@@ -1,13 +1,10 @@
-Description: Allows users to query AWS AppStream Fleets for detailed information about each fleet, including its state, instance type, and associated stack details.
-ID: aws_appstream_fleet_6
-IntegrationType:
+id: aws_appstream_fleet_6
+type: query
+title: List AWS AppStream Fleet details including state and type
+description: Allows users to query AWS AppStream Fleets for detailed information about each fleet, including its state, instance type, and associated stack details.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       arn,
@@ -17,13 +14,12 @@ Query:
       compute_capacity_status ->> 'Running' AS running
     FROM
       aws_appstream_fleet;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS AppStream
-Title: List AWS AppStream Fleet details including state and type
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS AppStream

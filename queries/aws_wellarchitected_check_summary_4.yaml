@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Well-Architected Tool Check Summary for detailed information about the checks for all workloads. This table provides insights into the state of your workloads, highlighting potential risks and areas for improvement.
-ID: aws_wellarchitected_check_summary_4
-IntegrationType:
+id: aws_wellarchitected_check_summary_4
+type: query
+title: Query AWS Well-Architected Tool Check Summaries
+description: Allows users to query AWS Well-Architected Tool Check Summary for detailed information about the checks for all workloads. This table provides insights into the state of your workloads, highlighting potential risks and areas for improvement.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       workload_id,
       id,
@@ -21,11 +18,10 @@ Query:
       question_id
     FROM
       aws_wellarchitected_check_summary;
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Well-Architected Tool
-Title: Query AWS Well-Architected Tool Check Summaries
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Well-Architected Tool

@@ -1,13 +1,10 @@
-Description: Allows users to query Lens Review Improvements in the AWS Well-Architected Framework.
-ID: aws_wellarchitected_lens_review_improvement_1
-IntegrationType:
+id: aws_wellarchitected_lens_review_improvement_1
+type: query
+title: List AWS Well-Architected Framework Lens Review Improvements
+description: Allows users to query Lens Review Improvements in the AWS Well-Architected Framework.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       lens_alias,
       lens_arn,
@@ -18,13 +15,12 @@ Query:
       question_title
     FROM
       aws_wellarchitected_lens_review_improvement;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Well-Architected Framework
-Title: List AWS Well-Architected Framework Lens Review Improvements
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Well-Architected Framework

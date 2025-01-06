@@ -1,14 +1,10 @@
-Description: List storage accounts with encryption in transit disabled
-ID: azure_insight_storage_account_with_disabled_encryption_in_transit
-IntegrationType:
+id: azure_insight_storage_account_with_disabled_encryption_in_transit
+type: query
+title: Storage Accounts No Unencrypted Transit
+description: List storage accounts with encryption in transit disabled
+integration_type:
   - azure_subscription
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - azure_storage_account
-  Parameters: []
-  PrimaryTable: azure_storage_account
-  QueryToExecute: |
+query: |
     SELECT
       name,
       enable_https_traffic_only,
@@ -19,9 +15,8 @@ Query:
       azure_storage_account
     WHERE
       NOT enable_https_traffic_only;
-Tags:
-  category:
-    - Security
-    - Technical Debt
-    - Resiliency
-Title: Storage Accounts No Unencrypted Transit
+tags:
+    category:
+      - Security
+      - Technical Debt
+      - Resiliency

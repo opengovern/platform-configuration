@@ -1,13 +1,10 @@
-Description: Allows users to query Redshift Snapshots, providing details about each snapshot's configuration, status, and associated metadata.
-ID: aws_redshift_snapshot_6
-IntegrationType:
+id: aws_redshift_snapshot_6
+type: query
+title: List all AWS Redshift Snapshots with details
+description: Allows users to query Redshift Snapshots, providing details about each snapshot's configuration, status, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       snapshot_identifier,
       p ->> 'AccountId' AS account_id,
@@ -15,11 +12,10 @@ Query:
     FROM
       aws_redshift_snapshot,
       jsonb_array_elements(accounts_with_restore_access) AS p;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Redshift
-Title: List all AWS Redshift Snapshots with details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Redshift

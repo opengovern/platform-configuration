@@ -1,13 +1,10 @@
-Description: Allows users to query AWS MediaStore Container information, including ARN, creation time, status, and access logging details.
-ID: aws_media_store_container_4
-IntegrationType:
+id: aws_media_store_container_4
+type: query
+title: Find AWS MediaStore Container Info with Access Logging
+description: Allows users to query AWS MediaStore Container information, including ARN, creation time, status, and access logging details.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       arn,
@@ -16,13 +13,12 @@ Query:
       aws_media_store_container
     WHERE
       access_logging_enabled;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - MediaStore
-Title: Find AWS MediaStore Container Info with Access Logging
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - MediaStore

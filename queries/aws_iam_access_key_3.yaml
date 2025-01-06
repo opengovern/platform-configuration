@@ -1,13 +1,10 @@
-Description: Allows users to query IAM Access Keys in AWS to obtain details about the access keys associated with an IAM user. This includes the access key ID, status, creation date, and more.
-ID: aws_iam_access_key_3
-IntegrationType:
+id: aws_iam_access_key_3
+type: query
+title: List all AWS IAM Access Keys with User Details
+description: Allows users to query IAM Access Keys in AWS to obtain details about the access keys associated with an IAM user. This includes the access key ID, status, creation date, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       user_name,
       COUNT(access_key_id) AS access_key_count
@@ -15,13 +12,12 @@ Query:
       aws_iam_access_key
     GROUP BY
       user_name;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - IAM Access Keys
-Title: List all AWS IAM Access Keys with User Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - IAM Access Keys

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EC2 Gateway Load Balancer details, including its configuration, state, type, and associated tags.
-ID: aws_ec2_gateway_load_balancer_5
-IntegrationType:
+id: aws_ec2_gateway_load_balancer_5
+type: query
+title: Find AWS EC2 Gateway Load Balancer Configuration Details
+description: Allows users to query AWS EC2 Gateway Load Balancer details, including its configuration, state, type, and associated tags.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       lb ->> 'Key' AS load_balancing_cross_zone_key,
@@ -18,11 +15,10 @@ Query:
     WHERE
       lb ->> 'Key' = 'load_balancing.cross_zone.enabled'
       AND lb ->> 'Value' = 'true';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2 Gateway Load Balancer
-Title: Find AWS EC2 Gateway Load Balancer Configuration Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2 Gateway Load Balancer

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Route 53 Resolver Endpoints, providing detailed information about each endpoint, including its ID, direction, IP addresses, and status, among other details.
-ID: aws_route53_resolver_endpoint_2
-IntegrationType:
+id: aws_route53_resolver_endpoint_2
+type: query
+title: List AWS Route 53 Resolver Endpoints with Details
+description: Allows users to query AWS Route 53 Resolver Endpoints, providing detailed information about each endpoint, including its ID, direction, IP addresses, and status, among other details.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       id,
@@ -18,11 +15,10 @@ Query:
       aws_route53_resolver_endpoint
     WHERE
       id = 'rslvr-out-ebb7db0b7498463eb';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Route 53
-Title: List AWS Route 53 Resolver Endpoints with Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Route 53

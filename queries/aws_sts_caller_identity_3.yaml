@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Security Token Service Caller Identity to retrieve details about the IAM user or role whose credentials are used to call the operation.
-ID: aws_sts_caller_identity_3
-IntegrationType:
+id: aws_sts_caller_identity_3
+type: query
+title: Find AWS Security Token Service Caller Identity Details
+description: Allows users to query AWS Security Token Service Caller Identity to retrieve details about the IAM user or role whose credentials are used to call the operation.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       caller_identity.arn,
       caller_identity.user_id,
@@ -22,13 +19,12 @@ Query:
     WHERE
       caller_identity.user_id = u.user_id
       AND caller_identity.arn LIKE '%federated%';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Security Token Service
-Title: Find AWS Security Token Service Caller Identity Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Security Token Service

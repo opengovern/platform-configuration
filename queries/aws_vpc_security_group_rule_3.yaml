@@ -1,13 +1,10 @@
-Description: Allows users to query AWS VPC Security Group Rule, providing detailed information about security group rules within Amazon Virtual Private Cloud (VPC).
-ID: aws_vpc_security_group_rule_3
-IntegrationType:
+id: aws_vpc_security_group_rule_3
+type: query
+title: List all AWS VPC Security Group Rules
+description: Allows users to query AWS VPC Security Group Rule, providing detailed information about security group rules within Amazon Virtual Private Cloud (VPC).
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       r.security_group_rule_id,
       r.ip_protocol,
@@ -22,13 +19,12 @@ Query:
       aws_vpc_security_group AS sg
     WHERE
       r.group_id = sg.group_id;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_network_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Amazon Virtual Private Cloud
-Title: List all AWS VPC Security Group Rules
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_network_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Amazon Virtual Private Cloud

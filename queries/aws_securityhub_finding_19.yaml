@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Security Hub Findings to gather information about security issues identified within AWS resources. This includes details such as the severity, status, and description of the finding, the resources affected, and any remediation steps recommended.
-ID: aws_securityhub_finding_19
-IntegrationType:
+id: aws_securityhub_finding_19
+type: query
+title: Find AWS Security Hub Findings in Production Environment
+description: Allows users to query AWS Security Hub Findings to gather information about security issues identified within AWS resources. This includes details such as the severity, status, and description of the finding, the resources affected, and any remediation steps recommended.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       DISTINCT r ->> 'Id' AS resource_arn,
       r ->> 'Type' AS resource_type,
@@ -19,13 +16,12 @@ Query:
       jsonb_array_elements(resources) AS r
     WHERE
       r -> 'Tags' ->> 'Environment' = 'PROD';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Security Hub
-Title: Find AWS Security Hub Findings in Production Environment
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Security Hub

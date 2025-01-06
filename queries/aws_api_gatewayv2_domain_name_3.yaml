@@ -1,13 +1,10 @@
-Description: Allows users to query AWS API Gateway Domain Names and provides information about each domain name within the AWS API Gateway Service. This table can be used to query domain name details, including associated API mappings, security policy, and associated tags.
-ID: aws_api_gatewayv2_domain_name_3
-IntegrationType:
+id: aws_api_gatewayv2_domain_name_3
+type: query
+title: List all AWS API Gateway Domain Names and Details
+description: Allows users to query AWS API Gateway Domain Names and provides information about each domain name within the AWS API Gateway Service. This table can be used to query domain name details, including associated API mappings, security policy, and associated tags.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       domain_name,
       config ->> 'EndpointType' AS endpoint_type,
@@ -24,15 +21,14 @@ Query:
       aws_api_gatewayv2_domain_name
     CROSS JOIN
       jsonb_array_elements(domain_name_configurations) AS config;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_network_security:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - API Gateway
-Title: List all AWS API Gateway Domain Names and Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_network_security:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - API Gateway

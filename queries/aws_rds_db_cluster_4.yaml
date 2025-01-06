@@ -1,13 +1,10 @@
-Description: Allows users to query AWS RDS DB Clusters and retrieve valuable information about the status, configuration, and security settings of each DB cluster.
-ID: aws_rds_db_cluster_4
-IntegrationType:
+id: aws_rds_db_cluster_4
+type: query
+title: List all AWS RDS DB Clusters status and settings
+description: Allows users to query AWS RDS DB Clusters and retrieve valuable information about the status, configuration, and security settings of each DB cluster.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT 
       db_cluster_identifier,
       member ->> 'DBClusterParameterGroupStatus' AS db_cluster_parameter_group_status,
@@ -18,13 +15,12 @@ Query:
       aws_rds_db_cluster
     CROSS JOIN 
       jsonb_array_elements(members) AS member;
-Tags:
-  cloud_data_security:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - RDS
-Title: List all AWS RDS DB Clusters status and settings
+tags:
+    cloud_data_security:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - RDS

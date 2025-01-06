@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Security Hub Insights to retrieve information about the insights in AWS Security Hub. This includes details such as insight ARN, name, filters, group by attributes, and more.
-ID: aws_securityhub_insight_7
-IntegrationType:
+id: aws_securityhub_insight_7
+type: query
+title: Find All AWS Security Hub Insights with SQL Query
+description: Allows users to query AWS Security Hub Insights to retrieve information about the insights in AWS Security Hub. This includes details such as insight ARN, name, filters, group by attributes, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       arn,
@@ -16,13 +13,12 @@ Query:
       aws_securityhub_insight
     WHERE
       filters ->> 'ComplianceStatus' = '{"Comparison": "EQUALS", "Value": "FAILED"}'
-Tags:
-  cloud_identity_security:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Security Hub
-Title: Find All AWS Security Hub Insights with SQL Query
+tags:
+    cloud_identity_security:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Security Hub

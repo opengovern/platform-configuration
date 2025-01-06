@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Data Replication Service Jobs and retrieve key job details such as job ID, job status, creation time, and more.
-ID: aws_drs_job_3
-IntegrationType:
+id: aws_drs_job_3
+type: query
+title: List AWS Data Replication Service Job Details
+description: Allows users to query AWS Data Replication Service Jobs and retrieve key job details such as job ID, job status, creation time, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       title,
       arn,
@@ -20,13 +17,12 @@ Query:
       aws_drs_job
     WHERE
       creation_date_time >= NOW() - INTERVAL '30' DAY;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Data Replication Service
-Title: List AWS Data Replication Service Job Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Data Replication Service

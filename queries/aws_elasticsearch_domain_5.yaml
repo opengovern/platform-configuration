@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Elasticsearch Service Domains for detailed information related to the configuration, status, and access policies of the Elasticsearch domains.
-ID: aws_elasticsearch_domain_5
-IntegrationType:
+id: aws_elasticsearch_domain_5
+type: query
+title: Find AWS Elasticsearch Domain Configuration and Status
+description: Allows users to query AWS Elasticsearch Service Domains for detailed information related to the configuration, status, and access policies of the Elasticsearch domains.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       domain_name,
       domain_id,
@@ -15,13 +12,12 @@ Query:
       elasticsearch_cluster_config ->> 'InstanceCount' AS instance_count
     FROM
       aws_elasticsearch_domain;
-Tags:
-  cloud_identity_security:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Elasticsearch Service
-Title: Find AWS Elasticsearch Domain Configuration and Status
+tags:
+    cloud_identity_security:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Elasticsearch Service

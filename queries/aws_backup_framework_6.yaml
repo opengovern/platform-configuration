@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Backup Frameworks and retrieve comprehensive data about each backup plan, including its unique ARN, version, creation and deletion dates, and more.
-ID: aws_backup_framework_6
-IntegrationType:
+id: aws_backup_framework_6
+type: query
+title: Find AWS Backup Frameworks with Compliance Status
+description: Allows users to query AWS Backup Frameworks and retrieve comprehensive data about each backup plan, including its unique ARN, version, creation and deletion dates, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       rule_name,
       compliance_result -> 'Compliance' ->> 'ComplianceType' AS compliance_type
@@ -37,13 +34,12 @@ Query:
       jsonb_array_elements(compliance_by_config_rule) AS compliance_result
     WHERE
       compliance_result -> 'Compliance' ->> 'ComplianceType' = 'COMPLIANT';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Backup
-Title: Find AWS Backup Frameworks with Compliance Status
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Backup

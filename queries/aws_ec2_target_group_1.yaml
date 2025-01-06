@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EC2 Target Groups and provides information about each Target Group within an AWS account.
-ID: aws_ec2_target_group_1
-IntegrationType:
+id: aws_ec2_target_group_1
+type: query
+title: Find EC2 Target Groups in AWS Account
+description: Allows users to query AWS EC2 Target Groups and provides information about each Target Group within an AWS account.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       target_group_name,
       target_type,
@@ -15,11 +12,10 @@ Query:
       vpc_id
     FROM
       aws_ec2_target_group;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2
-Title: Find EC2 Target Groups in AWS Account
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2

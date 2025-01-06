@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Glue Development Endpoints to retrieve detailed information about individual endpoints, their configurations, and related metadata.
-ID: aws_glue_dev_endpoint_6
-IntegrationType:
+id: aws_glue_dev_endpoint_6
+type: query
+title: Find AWS Glue Development Endpoints Configurations and Metadata
+description: Allows users to query AWS Glue Development Endpoints to retrieve detailed information about individual endpoints, their configurations, and related metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       e.endpoint_name,
       SPLIT_PART(j, '/', 3) AS extra_jars_s3_bucket,
@@ -24,11 +21,10 @@ Query:
       b.name = SPLIT_PART(j, '/', 3)
     AND
       e.endpoint_name = 'test34';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Glue
-Title: Find AWS Glue Development Endpoints Configurations and Metadata
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Glue

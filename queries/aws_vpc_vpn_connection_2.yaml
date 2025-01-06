@@ -1,13 +1,10 @@
-Description: Allows users to query VPN connections in an AWS VPC.
-ID: aws_vpc_vpn_connection_2
-IntegrationType:
+id: aws_vpc_vpn_connection_2
+type: query
+title: Find VPN Connections in AWS VPC
+description: Allows users to query VPN connections in an AWS VPC.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       vpn_connection_id,
       options -> 'EnableAcceleration' AS enable_acceleration,
@@ -20,13 +17,12 @@ Query:
       options ->> 'TunnelOptions' AS tunnel_options
     FROM
       aws_vpc_vpn_connection;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_network_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - VPC VPN
-Title: Find VPN Connections in AWS VPC
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_network_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - VPC VPN

@@ -1,13 +1,10 @@
-Description: Allows users to query Classic Load Balancers within Amazon EC2.
-ID: aws_ec2_classic_load_balancer_2
-IntegrationType:
+id: aws_ec2_classic_load_balancer_2
+type: query
+title: List all disabled access logs on EC2 Classic Load Balancers
+description: Allows users to query Classic Load Balancers within Amazon EC2.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       access_log_enabled
@@ -15,11 +12,10 @@ Query:
       aws_ec2_classic_load_balancer
     WHERE
       access_log_enabled = 'false';
-Tags:
-  cloud_network_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2 Classic Load Balancer
-Title: List all disabled access logs on EC2 Classic Load Balancers
+tags:
+    cloud_network_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2 Classic Load Balancer

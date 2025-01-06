@@ -1,13 +1,10 @@
-Description: Allows users to query AWS WAFv2 IPSet information, including IP addresses, IP address version, and associated metadata.
-ID: aws_wafv2_ip_set_2
-IntegrationType:
+id: aws_wafv2_ip_set_2
+type: query
+title: List all AWS WAFv2 IPSet Information with Metadata
+description: Allows users to query AWS WAFv2 IPSet information, including IP addresses, IP address version, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       description,
@@ -21,11 +18,10 @@ Query:
       aws_wafv2_ip_set
     WHERE
       scope = 'CLOUDFRONT';
-Tags:
-  cloud_network_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - WAFv2
-Title: List all AWS WAFv2 IPSet Information with Metadata
+tags:
+    cloud_network_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - WAFv2

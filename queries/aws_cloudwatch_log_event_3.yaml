@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CloudWatch Log Events to retrieve information about log events from a specified log group. Users can utilize this table to monitor and troubleshoot systems and applications using their existing log data.
-ID: aws_cloudwatch_log_event_3
-IntegrationType:
+id: aws_cloudwatch_log_event_3
+type: query
+title: Find AWS CloudWatch Log Events to Monitor Systems
+description: Allows users to query AWS CloudWatch Log Events to retrieve information about log events from a specified log group. Users can utilize this table to monitor and troubleshoot systems and applications using their existing log data.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       log_group_name,
       log_stream_name,
@@ -21,13 +18,12 @@ Query:
       log_group_name = 'cloudwatch-log-event-group-name'
       AND filter = '{$.eventName="DescribeVpcs"}'
       AND timestamp >= NOW() - INTERVAL '1 hour';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CloudWatch
-Title: Find AWS CloudWatch Log Events to Monitor Systems
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CloudWatch

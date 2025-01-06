@@ -1,13 +1,10 @@
-Description: Allows users to query Lens Shares in AWS Well-Architected Tool, providing details about shared lenses including the share ARN, share status, and the AWS account ID of the lens owner.
-ID: aws_wellarchitected_lens_share_3
-IntegrationType:
+id: aws_wellarchitected_lens_share_3
+type: query
+title: List all AWS Well-Architected Tool Lens Shares
+description: Allows users to query Lens Shares in AWS Well-Architected Tool, providing details about shared lenses including the share ARN, share status, and the AWS account ID of the lens owner.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       lens_name,
       lens_alias,
@@ -19,11 +16,10 @@ Query:
       aws_wellarchitected_lens_share
     WHERE
       status = 'PENDING';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Well-Architected Tool
-Title: List all AWS Well-Architected Tool Lens Shares
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Well-Architected Tool

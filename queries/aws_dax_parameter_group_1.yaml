@@ -1,24 +1,20 @@
-Description: Allows users to query AWS DynamoDB Accelerator (DAX) Parameter Groups, providing details such as parameter group name, ARN, description, and parameter settings.
-ID: aws_dax_parameter_group_1
-IntegrationType:
+id: aws_dax_parameter_group_1
+type: query
+title: List AWS DAX Parameter Groups and Details
+description: Allows users to query AWS DynamoDB Accelerator (DAX) Parameter Groups, providing details such as parameter group name, ARN, description, and parameter settings.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       parameter_group_name,
       description,
       region
     FROM
       aws_dax_parameter_group;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - DynamoDB Accelerator (DAX)
-Title: List AWS DAX Parameter Groups and Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - DynamoDB Accelerator (DAX)

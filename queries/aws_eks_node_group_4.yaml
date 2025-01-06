@@ -1,26 +1,22 @@
-Description: Allows users to query AWS EKS Node Group data, providing information about each node group within an AWS Elastic Kubernetes Service (EKS) cluster.
-ID: aws_eks_node_group_4
-IntegrationType:
+id: aws_eks_node_group_4
+type: query
+title: List all AWS EKS Node Groups with Template Info
+description: Allows users to query AWS EKS Node Group data, providing information about each node group within an AWS Elastic Kubernetes Service (EKS) cluster.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       nodegroup_name,
       cluster_name,
       JSONB_PRETTY(launch_template) AS launch_template
     FROM
       aws_eks_node_group;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EKS
-Title: List all AWS EKS Node Groups with Template Info
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EKS

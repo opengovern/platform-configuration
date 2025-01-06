@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CloudTrail Trails for information about the AWS CloudTrail service's trail records. This includes trail configuration details, status, and associated metadata.
-ID: aws_cloudtrail_trail_2
-IntegrationType:
+id: aws_cloudtrail_trail_2
+type: query
+title: List all AWS CloudTrail Trails with Trail Records
+description: Allows users to query AWS CloudTrail Trails for information about the AWS CloudTrail service's trail records. This includes trail configuration details, status, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       kms_key_id
@@ -15,13 +12,12 @@ Query:
       aws_cloudtrail_trail
     WHERE
       kms_key_id IS NULL;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CloudTrail
-Title: List all AWS CloudTrail Trails with Trail Records
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CloudTrail

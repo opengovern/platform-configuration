@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Security Hub Findings to gather information about security issues identified within AWS resources. This includes details such as the severity, status, and description of the finding, the resources affected, and any remediation steps recommended.
-ID: aws_securityhub_finding_3
-IntegrationType:
+id: aws_securityhub_finding_3
+type: query
+title: List all AWS Security Hub Findings and Severity
+description: Allows users to query AWS Security Hub Findings to gather information about security issues identified within AWS resources. This includes details such as the severity, status, and description of the finding, the resources affected, and any remediation steps recommended.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       severity ->> 'Original' AS severity_original,
       COUNT(severity ->> 'Original')
@@ -17,13 +14,12 @@ Query:
       severity ->> 'Original'
     ORDER BY
       severity ->> 'Original';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Security Hub
-Title: List all AWS Security Hub Findings and Severity
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Security Hub

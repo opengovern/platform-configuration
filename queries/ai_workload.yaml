@@ -1,14 +1,11 @@
-Description: AI Workload
-ID: ai_workload
-IntegrationType:
+id: ai_workload
+type: query
+title: AI Workload
+description: AI Workload
+integration_type:
   - aws_cloud_account
   - azure_subscription
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT 
       CASE
         WHEN resource_type LIKE 'aws::%' THEN 'AWS'
@@ -27,16 +24,15 @@ Query:
       ON r.integration_id = c.integration_id
     WHERE 
       resource_type IN ('microsoft.cognitiveservices/accounts')
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-    - azure
-  cloud_service:
-    - Cognitive Services
-  platform_queries_bookmark:
-    - "true"
-Title: AI Workload
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+      - azure
+    cloud_service:
+      - Cognitive Services
+    platform_queries_bookmark:
+      - 'true'

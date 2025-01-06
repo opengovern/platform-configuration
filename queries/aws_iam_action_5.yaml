@@ -1,13 +1,10 @@
-Description: Allows users to query IAM Actions in AWS Identity and Access Management (IAM).
-ID: aws_iam_action_5
-IntegrationType:
+id: aws_iam_action_5
+type: query
+title: Find AWS IAM Actions in AWS Identity and Access Management
+description: Allows users to query IAM Actions in AWS Identity and Access Management (IAM).
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       f.name,
       f.role,
@@ -28,13 +25,12 @@ Query:
       AND pol_arn = p.arn
       AND stmt ->> 'Effect' = 'Allow'
       AND f.name = 'hellopython';
-Tags:
-  cloud_identity_security:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Identity and Access Management
-Title: Find AWS IAM Actions in AWS Identity and Access Management
+tags:
+    cloud_identity_security:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Identity and Access Management

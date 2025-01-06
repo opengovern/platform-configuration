@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Cost Explorer to obtain cost allocation tags and associated costs.
-ID: aws_cost_by_tag_2
-IntegrationType:
+id: aws_cost_by_tag_2
+type: query
+title: Find AWS Cost Explorer Tag Allocations and Costs
+description: Allows users to query AWS Cost Explorer to obtain cost allocation tags and associated costs.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       tag_key_1,
       tag_value_1,
@@ -22,9 +19,8 @@ Query:
       tag_key_1 = 'Name'
     GROUP BY
       tag_key_1, tag_value_1;
-Tags:
-  cloud_finops:
-    - "true"
-  cloud_provider:
-    - aws
-Title: Find AWS Cost Explorer Tag Allocations and Costs
+tags:
+    cloud_finops:
+      - 'true'
+    cloud_provider:
+      - aws

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Neptune DB Cluster Snapshots for comprehensive details about their configurations, status, and associated metadata.
-ID: aws_neptune_db_cluster_snapshot_4
-IntegrationType:
+id: aws_neptune_db_cluster_snapshot_4
+type: query
+title: Find all AWS Neptune DB Cluster Snapshot details
+description: Allows users to query AWS Neptune DB Cluster Snapshots for comprehensive details about their configurations, status, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       db_cluster_snapshot_identifier,
       engine,
@@ -17,11 +14,10 @@ Query:
       jsonb_array_elements(db_cluster_snapshot_attributes) AS cluster_snapshot
     WHERE
       cluster_snapshot -> 'AttributeValues' = '["all"]'
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Neptune DB
-Title: Find all AWS Neptune DB Cluster Snapshot details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Neptune DB

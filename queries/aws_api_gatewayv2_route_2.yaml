@@ -1,13 +1,10 @@
-Description: Allows users to query AWS API Gateway V2 Routes and obtain detailed information about each route, including the route key, route response selection expression, and target.
-ID: aws_api_gatewayv2_route_2
-IntegrationType:
+id: aws_api_gatewayv2_route_2
+type: query
+title: List all AWS API Gateway V2 Routes including details
+description: Allows users to query AWS API Gateway V2 Routes and obtain detailed information about each route, including the route key, route response selection expression, and target.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       route_key,
       api_id,
@@ -16,11 +13,10 @@ Query:
       aws_api_gatewayv2_route
     WHERE
       api_id = 'w5n71b2m85';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - API Gateway V2
-Title: List all AWS API Gateway V2 Routes including details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - API Gateway V2

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Elastic Beanstalk Environments to gain insights into their configuration, status, health, related applications, and other metadata.
-ID: aws_elastic_beanstalk_environment_6
-IntegrationType:
+id: aws_elastic_beanstalk_environment_6
+type: query
+title: List all AWS Elastic Beanstalk Environments with Metadata
+description: Allows users to query AWS Elastic Beanstalk Environments to gain insights into their configuration, status, health, related applications, and other metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       environment_name,
       application_name,
@@ -25,13 +22,12 @@ Query:
     FROM
       aws_elastic_beanstalk_environment,
       jsonb_array_elements(configuration_settings) AS c;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Elastic Beanstalk
-Title: List all AWS Elastic Beanstalk Environments with Metadata
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Elastic Beanstalk
