@@ -1,3 +1,4 @@
+
 id: azure_mandatory_sql_subscription_resource_group_mandatory
 title: Resource groups should have mandatory tags
 description: Check if Resource groups have mandatory tags.
@@ -5,7 +6,7 @@ integration_type:
   - azure_subscription
 parameters:
   - key: azureMandatoryTags
-    value: '["name","environment"]'
+    value: $global.mandatory_tags
 policy:
   language: sql
   primary_resource: azure_resource_group
@@ -16,8 +17,9 @@ policy:
         platform_resource_id,
         id,
         title,
-        tags ?& '{{.azureMandatoryTags}}'::text[] AS has_mandatory_tags,
-        TO_JSONB('{{.azureMandatoryTags}}'::text[]) - ARRAY(
+        -- Use the $global.mandatory_tags reference in the SQL
+        tags ?& $global.mandatory_tags::text[] AS has_mandatory_tags,
+        TO_JSONB($global.mandatory_tags::text[]) - ARRAY(
           SELECT jsonb_object_keys(tags)
         ) AS missing_tags,
         subscription_id
@@ -37,7 +39,8 @@ policy:
         ELSE title || ' is missing tags: ' || array_to_string(
           ARRAY(
             SELECT jsonb_array_elements_text(missing_tags)
-          ), ', ') || '.'
+          ), ', '
+        ) || '.'
       END AS reason,
       subscription_id
     FROM
