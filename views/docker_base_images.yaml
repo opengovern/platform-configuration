@@ -16,4 +16,4 @@ query: |
         image
     ORDER BY 
         dockerfile_count DESC;
-tags: []
+tags: {}
