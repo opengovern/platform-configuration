@@ -1,6 +1,7 @@
 id: docker_base_images
 title: All Base Images
 description: List of all Base Images across Dockerfiles in GitHub
+type: view
 query: |
     SELECT 
         image,
