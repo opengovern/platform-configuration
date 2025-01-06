@@ -1,6 +1,7 @@
 id: inactive_expired_keys
 title: Inactive and Expired API Keys
 description: List of all inactive and expired API Keys from AWS, Azure, and Cloudflare platforms.
+type: view
 query: |
     WITH 
     -- CTE for inactive AWS keys
