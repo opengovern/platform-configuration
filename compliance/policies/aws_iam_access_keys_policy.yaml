@@ -1,0 +1,26 @@
+id: aws_iam_access_keys_policy
+title: AWS IAM Access Key Policy
+description: Specifies the maximum age for IAM Access Keys
+language: sql
+integration_type:
+  - aws_cloud_account
+primary_resource: aws_iam_access_key
+definition: |
+  SELECT
+    access_key_id AS resource,
+    platform_integration_id AS platform_integration_id,
+    platform_resource_id AS platform_resource_id,
+    CASE
+      WHEN status <> 'Active' THEN 'skip'
+      WHEN create_date + ('{{.awsIamAccessKeyAge}}' || ' days')::interval < NOW() THEN 'alarm'
+      ELSE 'ok'
+    END AS status,
+    CASE
+      WHEN status <> 'Active' THEN 'key is not activated'
+      WHEN create_date + ('{{.awsIamAccessKeyAge}}' || ' days')::interval < NOW() THEN 'key is too old'
+      ELSE 'key is not old yet'
+    END AS reason,
+    region,
+    account_id
+  FROM
+    aws_iam_access_key v
