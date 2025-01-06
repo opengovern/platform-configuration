@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EC2 Instance Type data, including details about instance type name, current generation, vCPU, memory, storage, and network performance.
-ID: aws_ec2_instance_type_5
-IntegrationType:
+id: aws_ec2_instance_type_5
+type: query
+title: List all AWS EC2 Instance Types with Free Tier Eligibility
+description: Allows users to query AWS EC2 Instance Type data, including details about instance type name, current generation, vCPU, memory, storage, and network performance.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       instance_type,
       free_tier_eligible
@@ -15,11 +12,10 @@ Query:
       aws_ec2_instance_type
     WHERE
       free_tier_eligible;
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2
-Title: List all AWS EC2 Instance Types with Free Tier Eligibility
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Directory Service Certificates to gather information about the certificates associated with AWS Managed Microsoft AD and Simple AD directories.
-ID: aws_directory_service_certificate_7
-IntegrationType:
+id: aws_directory_service_certificate_7
+type: query
+title: Find AWS Directory Service Certificates older than 1 year
+description: Allows users to query AWS Directory Service Certificates to gather information about the certificates associated with AWS Managed Microsoft AD and Simple AD directories.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       common_name,
       directory_id,
@@ -18,13 +15,12 @@ Query:
     WHERE
       registered_date_time <= NOW() - INTERVAL '1 year'
       AND state NOT LIKE 'Deregister%';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Directory Service
-Title: Find AWS Directory Service Certificates older than 1 year
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Directory Service

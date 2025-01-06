@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Managed Streaming for Apache Kafka (MSK) clusters.
-ID: aws_msk_cluster_3
-IntegrationType:
+id: aws_msk_cluster_3
+type: query
+title: Find AWS MSK Clusters and Their Details
+description: Allows users to query AWS Managed Streaming for Apache Kafka (MSK) clusters.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       arn,
       cluster_name,
@@ -17,13 +14,12 @@ Query:
       aws_msk_cluster
     WHERE
       provisioned -> 'BrokerNodeGroupInfo' -> 'ConnectivityInfo' -> 'PublicAccess' ->> 'Type' <> 'DISABLED';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Managed Streaming for Apache Kafka (MSK)
-Title: Find AWS MSK Clusters and Their Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Managed Streaming for Apache Kafka (MSK)

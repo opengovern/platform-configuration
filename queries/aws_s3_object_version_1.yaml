@@ -1,13 +1,10 @@
-Description: Allows querying information about versions of objects stored in Amazon S3 buckets. This table provides details such as bucket name, delimiter, encoding type, version ID marker, prefix, whether the results are truncated, common prefixes, delete markers, and version information.
-ID: aws_s3_object_version_1
-IntegrationType:
+id: aws_s3_object_version_1
+type: query
+title: List all AWS S3 Object Versions in Bucket
+description: Allows querying information about versions of objects stored in Amazon S3 buckets. This table provides details such as bucket name, delimiter, encoding type, version ID marker, prefix, whether the results are truncated, common prefixes, delete markers, and version information.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       bucket_name,
       key,
@@ -19,11 +16,10 @@ Query:
       aws_s3_object_version
     WHERE
       bucket_name = 'testbucket';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Amazon S3
-Title: List all AWS S3 Object Versions in Bucket
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Amazon S3

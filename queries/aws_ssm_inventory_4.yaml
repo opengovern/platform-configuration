@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Systems Manager Inventory, providing information about managed instances in AWS Systems Manager.
-ID: aws_ssm_inventory_4
-IntegrationType:
+id: aws_ssm_inventory_4
+type: query
+title: Find all AWS Systems Manager managed instances inventory
+description: Allows users to query AWS Systems Manager Inventory, providing information about managed instances in AWS Systems Manager.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       id,
       type_name,
@@ -18,13 +15,12 @@ Query:
       aws_ssm_inventory
     WHERE
       capture_time >= NOW() - INTERVAL '10' DAY;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Systems Manager
-Title: Find all AWS Systems Manager managed instances inventory
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Systems Manager

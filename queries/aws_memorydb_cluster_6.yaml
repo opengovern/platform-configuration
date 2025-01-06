@@ -1,13 +1,10 @@
-Description: Allows users to query AWS MemoryDB clusters, providing detailed information on cluster configurations and statuses.
-ID: aws_memorydb_cluster_6
-IntegrationType:
+id: aws_memorydb_cluster_6
+type: query
+title: Find AWS MemoryDB Cluster Configurations and Statuses
+description: Allows users to query AWS MemoryDB clusters, providing detailed information on cluster configurations and statuses.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       arn,
@@ -16,13 +13,12 @@ Query:
       aws_memorydb_cluster
     WHERE
       node_type = 'db.r6gd.xlarge';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - MemoryDB
-Title: Find AWS MemoryDB Cluster Configurations and Statuses
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - MemoryDB

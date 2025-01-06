@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Glue Jobs to retrieve detailed information related to job properties, execution, and status.
-ID: aws_glue_job_2
-IntegrationType:
+id: aws_glue_job_2
+type: query
+title: Find AWS Glue Jobs and Their Detailed Job Properties
+description: Allows users to query AWS Glue Jobs to retrieve detailed information related to job properties, execution, and status.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       title,
       arn,
@@ -17,13 +14,12 @@ Query:
       aws_glue_job
     WHERE
       connections IS NOT NULL;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Glue
-Title: Find AWS Glue Jobs and Their Detailed Job Properties
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Glue

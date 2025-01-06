@@ -1,26 +1,22 @@
-Description: Allows users to query AWS Lambda Functions, providing information about each function's configuration, including runtime, code size, timeout, and associated tags.
-ID: aws_lambda_function_9
-IntegrationType:
+id: aws_lambda_function_9
+type: query
+title: List all AWS Lambda Function Configurations
+description: Allows users to query AWS Lambda Functions, providing information about each function's configuration, including runtime, code size, timeout, and associated tags.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       arn,
       JSONB_PRETTY(url_config) AS url_config
     FROM
       aws_lambda_function;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Lambda Function
-Title: List all AWS Lambda Function Configurations
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Lambda Function

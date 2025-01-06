@@ -1,13 +1,10 @@
-Description: Allows users to query AWS DAX Subnet Group details, such as the subnet group name, description, VPC ID, and the subnets in the group.
-ID: aws_dax_subnet_group_1
-IntegrationType:
+id: aws_dax_subnet_group_1
+type: query
+title: List AWS DAX Subnet Group Details
+description: Allows users to query AWS DAX Subnet Group details, such as the subnet group name, description, VPC ID, and the subnets in the group.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       subnet_group_name,
       description,
@@ -16,11 +13,10 @@ Query:
       region
     FROM
       aws_dax_subnet_group;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS DAX
-Title: List AWS DAX Subnet Group Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS DAX

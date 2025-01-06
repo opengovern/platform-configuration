@@ -1,14 +1,10 @@
-Description: VMs with restricts remote access from internet
-ID: azure_insight_compute_vm_remote_access_restricted_all_ports
-IntegrationType:
+id: azure_insight_compute_vm_remote_access_restricted_all_ports
+type: query
+title: VMs with restricts remote access from internet
+description: VMs with restricts remote access from internet
+integration_type:
   - azure_subscription
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - azure_compute_disk
-  Parameters: []
-  PrimaryTable: azure_compute_disk
-  QueryToExecute: |
+query: |
     WITH network_sg AS (
       SELECT
         DISTINCT name AS sg_name,
@@ -43,7 +39,6 @@ Query:
       azure_compute_virtual_machine AS vm
       LEFT JOIN network_sg AS sg ON sg.network_interfaces @> vm.network_interfaces
       JOIN azure_subscription AS sub ON sub.subscription_id = vm.subscription_id
-Tags:
-  category:
-    - Security
-Title: VMs with restricts remote access from internet
+tags:
+    category:
+      - Security

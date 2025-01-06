@@ -1,13 +1,10 @@
-Description: Allows users to query ElastiCache Redis Metrics on an hourly basis, providing data on list-based commands executed in the ElastiCache Redis environment.
-ID: aws_elasticache_redis_metric_list_based_cmds_hourly_2
-IntegrationType:
+id: aws_elasticache_redis_metric_list_based_cmds_hourly_2
+type: query
+title: List All Hourly AWS ElastiCache Redis List-based Metrics
+description: Allows users to query ElastiCache Redis Metrics on an hourly basis, providing data on list-based commands executed in the ElastiCache Redis environment.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       cache_cluster_id,
       timestamp,
@@ -22,13 +19,12 @@ Query:
     ORDER BY
       cache_cluster_id,
       timestamp;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - ElastiCache Redis
-Title: List All Hourly AWS ElastiCache Redis List-based Metrics
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - ElastiCache Redis

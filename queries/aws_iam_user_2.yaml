@@ -1,13 +1,10 @@
-Description: Allows users to query AWS IAM User data, providing details such as user ID, name, path, creation date, and more. This table is useful for security audits, policy enforcement, and operational troubleshooting.
-ID: aws_iam_user_2
-IntegrationType:
+id: aws_iam_user_2
+type: query
+title: Find AWS IAM User Data for Security Audits & Enforcement
+description: Allows users to query AWS IAM User data, providing details such as user ID, name, path, creation date, and more. This table is useful for security audits, policy enforcement, and operational troubleshooting.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name AS user_name,
       iam_group ->> 'GroupName' AS group_name,
@@ -16,15 +13,14 @@ Query:
     FROM
       aws_iam_user
       CROSS JOIN jsonb_array_elements(groups) AS iam_group;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_identity_security:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - IAM
-Title: Find AWS IAM User Data for Security Audits & Enforcement
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_identity_security:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - IAM

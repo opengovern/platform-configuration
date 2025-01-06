@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CloudFront Distributions to gain insights into their configuration, status, and associated metadata.
-ID: aws_cloudfront_distribution_5
-IntegrationType:
+id: aws_cloudfront_distribution_5
+type: query
+title: Query AWS CloudFront Distributions and Insights
+description: Allows users to query AWS CloudFront Distributions to gain insights into their configuration, status, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       id,
       arn,
@@ -20,13 +17,12 @@ Query:
       jsonb_array_elements(origins) AS p
     WHERE
       p -> 'CustomOriginConfig' ->> 'OriginProtocolPolicy' = 'https-only';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_network_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CloudFront
-Title: Query AWS CloudFront Distributions and Insights
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_network_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CloudFront

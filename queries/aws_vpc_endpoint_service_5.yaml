@@ -1,13 +1,10 @@
-Description: Allows users to query AWS VPC Endpoint Services to retrieve detailed information about each service, including service name, service type, and whether or not the service is private.
-ID: aws_vpc_endpoint_service_5
-IntegrationType:
+id: aws_vpc_endpoint_service_5
+type: query
+title: List all Non-Policy Supported AWS VPC Endpoint Services
+description: Allows users to query AWS VPC Endpoint Services to retrieve detailed information about each service, including service name, service type, and whether or not the service is private.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       service_name,
       service_id,
@@ -16,11 +13,10 @@ Query:
       aws_vpc_endpoint_service
     WHERE
       NOT vpc_endpoint_policy_supported;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - VPC Endpoint Service
-Title: List all Non-Policy Supported AWS VPC Endpoint Services
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - VPC Endpoint Service

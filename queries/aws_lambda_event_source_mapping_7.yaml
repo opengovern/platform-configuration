@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Lambda Event Source Mappings, providing a detailed view of each mapping configuration.
-ID: aws_lambda_event_source_mapping_7
-IntegrationType:
+id: aws_lambda_event_source_mapping_7
+type: query
+title: Find AWS Lambda Event Source Mappings Configurations
+description: Allows users to query AWS Lambda Event Source Mappings, providing a detailed view of each mapping configuration.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       uuid,
       arn,
@@ -19,11 +16,10 @@ Query:
       jsonb_array_elements(filter_criteria -> 'Filters') AS filter
     WHERE
       filter ->> 'Pattern' LIKE '{ "Metadata" : [ 1, 2 ] }';
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Lambda
-Title: Find AWS Lambda Event Source Mappings Configurations
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Lambda

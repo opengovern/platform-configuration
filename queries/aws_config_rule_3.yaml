@@ -1,13 +1,10 @@
-Description: Allows users to query Config Rules in AWS Config service. It provides information about each Config Rule, including its name, ARN, description, scope, and compliance status.
-ID: aws_config_rule_3
-IntegrationType:
+id: aws_config_rule_3
+type: query
+title: Find AWS Config Rules for S3 Buckets by Name
+description: Allows users to query Config Rules in AWS Config service. It provides information about each Config Rule, including its name, ARN, description, scope, and compliance status.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       rule_id,
@@ -16,13 +13,12 @@ Query:
       aws_config_rule
     WHERE
       name LIKE '%s3-bucket%';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Config
-Title: Find AWS Config Rules for S3 Buckets by Name
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Config

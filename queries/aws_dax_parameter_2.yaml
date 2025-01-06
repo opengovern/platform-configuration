@@ -1,13 +1,10 @@
-Description: Allows users to query AWS DAX Parameter Groups to retrieve information about their configuration settings.
-ID: aws_dax_parameter_2
-IntegrationType:
+id: aws_dax_parameter_2
+type: query
+title: List AWS DAX Parameter Groups and Their Settings
+description: Allows users to query AWS DAX Parameter Groups to retrieve information about their configuration settings.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       parameter_group_name,
       region,
@@ -17,13 +14,12 @@ Query:
     GROUP BY
       parameter_group_name,
       region;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - DAX
-Title: List AWS DAX Parameter Groups and Their Settings
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - DAX

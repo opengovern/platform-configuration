@@ -1,13 +1,10 @@
-Description: Allows users to query IAM Policy Attachments in AWS to gather information about the relationship between IAM policies and their associated entities (users, groups, and roles).
-ID: aws_iam_policy_attachment_3
-IntegrationType:
+id: aws_iam_policy_attachment_3
+type: query
+title: Find Relationships Between AWS IAM Policies and Entities
+description: Allows users to query IAM Policy Attachments in AWS to gather information about the relationship between IAM policies and their associated entities (users, groups, and roles).
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT 
       name AS policy_name, 
       policy_arn, 
@@ -20,13 +17,12 @@ Query:
     WHERE 
       name = 'AdministratorAccess' 
       AND a.is_attached;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - IAM Policy
-Title: Find Relationships Between AWS IAM Policies and Entities
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - IAM Policy

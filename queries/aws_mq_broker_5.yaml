@@ -1,13 +1,10 @@
-Description: Allows users to query AWS MQ Brokers.
-ID: aws_mq_broker_5
-IntegrationType:
+id: aws_mq_broker_5
+type: query
+title: Find all AWS MQ Brokers with Maintenance Window Info
+description: Allows users to query AWS MQ Brokers.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       arn,
       broker_name,
@@ -16,11 +13,10 @@ Query:
       maintenance_window_start_time -> 'TimeZone' AS time_zone
     FROM
       aws_mq_broker;
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - MQ
-Title: Find all AWS MQ Brokers with Maintenance Window Info
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - MQ

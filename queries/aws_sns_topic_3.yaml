@@ -1,13 +1,10 @@
-Description: Allows users to query AWS SNS Topics to gather information about each topic, including its name, owner, ARN, and other related data.
-ID: aws_sns_topic_3
-IntegrationType:
+id: aws_sns_topic_3
+type: query
+title: List all AWS SNS Topics and their details
+description: Allows users to query AWS SNS Topics to gather information about each topic, including its name, owner, ARN, and other related data.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       title,
       tags
@@ -15,11 +12,10 @@ Query:
       aws_sns_topic
     WHERE
       NOT tags :: JSONB ? 'owner';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - SNS
-Title: List all AWS SNS Topics and their details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - SNS

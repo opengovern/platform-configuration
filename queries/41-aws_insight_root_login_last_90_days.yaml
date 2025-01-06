@@ -1,14 +1,10 @@
-Description: AWS accounts whose root user has logged in within the last 90 days
-ID: aws_insight_root_login_last_90_days
-IntegrationType:
+id: aws_insight_root_login_last_90_days
+type: query
+title: AWS accounts with root login in the last 90 days
+description: AWS accounts whose root user has logged in within the last 90 days
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - aws_iam_credential_report
-  Parameters: []
-  PrimaryTable: aws_iam_credential_report
-  QueryToExecute: |
+query: |
     SELECT 
       user_arn, 
       password_last_used, 
@@ -20,12 +16,11 @@ Query:
     WHERE 
       user_name = '<root_account>' 
       AND (CURRENT_DATE - DATE(password_last_used)) > 90
-Tags:
-  category:
-    - Security
-  persona:
-    - DevOps
-    - Security
-    - Executive
-    - Product
-Title: AWS accounts with root login in the last 90 days
+tags:
+    category:
+      - Security
+    persona:
+      - DevOps
+      - Security
+      - Executive
+      - Product

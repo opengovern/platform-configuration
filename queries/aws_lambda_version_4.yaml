@@ -1,25 +1,21 @@
-Description: Allows users to query AWS Lambda Versions to fetch detailed information about each version of a specific AWS Lambda function.
-ID: aws_lambda_version_4
-IntegrationType:
+id: aws_lambda_version_4
+type: query
+title: Query AWS Lambda Versions for Detailed Information
+description: Allows users to query AWS Lambda Versions to fetch detailed information about each version of a specific AWS Lambda function.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       jsonb_pretty(policy) AS policy,
       jsonb_pretty(policy_std) AS policy_std
     FROM
       aws_lambda_version;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Lambda
-Title: Query AWS Lambda Versions for Detailed Information
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Lambda

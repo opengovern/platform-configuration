@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Audit Manager Evidence Folders to get comprehensive details about the evidence folders in the AWS Audit Manager service.
-ID: aws_auditmanager_evidence_folder_1
-IntegrationType:
+id: aws_auditmanager_evidence_folder_1
+type: query
+title: List all AWS Audit Manager Evidence Folders
+description: Allows users to query AWS Audit Manager Evidence Folders to get comprehensive details about the evidence folders in the AWS Audit Manager service.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       id,
@@ -18,11 +15,10 @@ Query:
       total_evidence
     FROM
       aws_auditmanager_evidence_folder;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Audit Manager
-Title: List all AWS Audit Manager Evidence Folders
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Audit Manager

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Network Firewalls for detailed information about each firewall's properties and settings.
-ID: aws_networkfirewall_firewall_6
-IntegrationType:
+id: aws_networkfirewall_firewall_6
+type: query
+title: List AWS Network Firewall properties and settings
+description: Allows users to query AWS Network Firewalls for detailed information about each firewall's properties and settings.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       f.arn,
       f.name,
@@ -22,15 +19,14 @@ Query:
       aws_vpc_subnet vs
     WHERE
       vs.subnet_id = s ->> 'SubnetId';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_network_security:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Network Firewall
-Title: List AWS Network Firewall properties and settings
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_network_security:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Network Firewall

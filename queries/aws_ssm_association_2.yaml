@@ -1,13 +1,10 @@
-Description: Allows users to query AWS SSM Associations for detailed information about the AWS Systems Manager associations, including their status, targets, and parameters.
-ID: aws_ssm_association_2
-IntegrationType:
+id: aws_ssm_association_2
+type: query
+title: List all AWS SSM Associations with Failed Status
+description: Allows users to query AWS SSM Associations for detailed information about the AWS Systems Manager associations, including their status, targets, and parameters.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       association_id,
       overview ->> 'AssociationStatusAggregatedCount' AS association_status_aggregated_count,
@@ -17,11 +14,10 @@ Query:
       aws_ssm_association
     WHERE
       overview ->> 'Status' = 'Failed';
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Systems Manager
-Title: List all AWS SSM Associations with Failed Status
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Systems Manager

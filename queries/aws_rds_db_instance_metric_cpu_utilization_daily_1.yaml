@@ -1,13 +1,10 @@
-Description: Allows users to query AWS RDS DB Instances to retrieve daily CPU utilization metrics.
-ID: aws_rds_db_instance_metric_cpu_utilization_daily_1
-IntegrationType:
+id: aws_rds_db_instance_metric_cpu_utilization_daily_1
+type: query
+title: List all AWS RDS DB Instances and daily CPU usage metrics
+description: Allows users to query AWS RDS DB Instances to retrieve daily CPU utilization metrics.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       db_instance_identifier,
       timestamp,
@@ -20,11 +17,10 @@ Query:
     ORDER BY
       db_instance_identifier,
       timestamp;
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - RDS
-Title: List all AWS RDS DB Instances and daily CPU usage metrics
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - RDS

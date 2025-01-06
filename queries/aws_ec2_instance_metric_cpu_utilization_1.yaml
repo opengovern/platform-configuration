@@ -1,13 +1,10 @@
-Description: Allows users to query EC2 Instance CPU Utilization metrics from AWS CloudWatch.
-ID: aws_ec2_instance_metric_cpu_utilization_1
-IntegrationType:
+id: aws_ec2_instance_metric_cpu_utilization_1
+type: query
+title: Find AWS EC2 Instance CPU Utilization Metrics
+description: Allows users to query EC2 Instance CPU Utilization metrics from AWS CloudWatch.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       instance_id,
       timestamp,
@@ -20,11 +17,10 @@ Query:
     ORDER BY
       instance_id,
       timestamp;
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2
-Title: Find AWS EC2 Instance CPU Utilization Metrics
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2

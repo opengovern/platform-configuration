@@ -1,13 +1,10 @@
-Description: Allows users to query AWS VPC Subnets and obtain detailed information about each subnet, including its configuration, associated VPC, availability zone, and CIDR block.
-ID: aws_vpc_subnet_3
-IntegrationType:
+id: aws_vpc_subnet_3
+type: query
+title: Find AWS VPC Subnets Information including CIDR Blocks
+description: Allows users to query AWS VPC Subnets and obtain detailed information about each subnet, including its configuration, associated VPC, availability zone, and CIDR block.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       subnet_id,
       cidr_block,
@@ -15,13 +12,12 @@ Query:
       POWER(2, 32 - MASKLEN(cidr_block :: cidr)) - 1 AS raw_size
     FROM
       aws_vpc_subnet;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_network_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - VPC
-Title: Find AWS VPC Subnets Information including CIDR Blocks
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_network_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - VPC

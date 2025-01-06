@@ -1,13 +1,10 @@
-Description: Allows users to query AWS SageMaker Notebook Instances to gather information about their configuration, status, and other related details.
-ID: aws_sagemaker_notebook_instance_4
-IntegrationType:
+id: aws_sagemaker_notebook_instance_4
+type: query
+title: Find AWS SageMaker Notebook Instances by Configuration
+description: Allows users to query AWS SageMaker Notebook Instances to gather information about their configuration, status, and other related details.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       root_access
@@ -15,13 +12,12 @@ Query:
       aws_sagemaker_notebook_instance
     WHERE
       root_access = 'Enabled';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - SageMaker
-Title: Find AWS SageMaker Notebook Instances by Configuration
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - SageMaker

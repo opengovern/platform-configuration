@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Certificate Manager certificates. This table provides information about each certificate, including the domain name, status, issuer, and more. It can be used to monitor certificate details, validity, and expiration data.
-ID: aws_acm_certificate_3
-IntegrationType:
+id: aws_acm_certificate_3
+type: query
+title: Find all AWS Certificate Manager certificates details
+description: Allows users to query AWS Certificate Manager certificates. This table provides information about each certificate, including the domain name, status, issuer, and more. It can be used to monitor certificate details, validity, and expiration data.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       certificate_arn,
       domain_name,
@@ -16,13 +13,12 @@ Query:
       aws_acm_certificate
     WHERE
       certificate_transparency_logging_preference <> 'ENABLED';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Certificate Manager
-Title: Find all AWS Certificate Manager certificates details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Certificate Manager

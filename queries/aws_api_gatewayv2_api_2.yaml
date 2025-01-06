@@ -1,13 +1,10 @@
-Description: Allows users to query API Gateway APIs and retrieve detailed information about each API, including its ID, name, protocol type, and more.
-ID: aws_api_gatewayv2_api_2
-IntegrationType:
+id: aws_api_gatewayv2_api_2
+type: query
+title: List all API Gateway APIs with name, ID, and protocol
+description: Allows users to query API Gateway APIs and retrieve detailed information about each API, including its ID, name, protocol type, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       api_id,
@@ -16,11 +13,10 @@ Query:
       aws_api_gatewayv2_api
     WHERE
       protocol_type = 'WEBSOCKET';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - API Gateway
-Title: List all API Gateway APIs with name, ID, and protocol
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - API Gateway

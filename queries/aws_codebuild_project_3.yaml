@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CodeBuild Projects and retrieve comprehensive information about each project.
-ID: aws_codebuild_project_3
-IntegrationType:
+id: aws_codebuild_project_3
+type: query
+title: List all AWS CodeBuild Projects and their details
+description: Allows users to query AWS CodeBuild Projects and retrieve comprehensive information about each project.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       description,
@@ -16,13 +13,12 @@ Query:
       aws_codebuild_project
     WHERE
       vpc_config IS NULL;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CodeBuild
-Title: List all AWS CodeBuild Projects and their details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CodeBuild

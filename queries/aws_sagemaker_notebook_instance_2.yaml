@@ -1,13 +1,10 @@
-Description: Allows users to query AWS SageMaker Notebook Instances to gather information about their configuration, status, and other related details.
-ID: aws_sagemaker_notebook_instance_2
-IntegrationType:
+id: aws_sagemaker_notebook_instance_2
+type: query
+title: List all AWS SageMaker Notebook Instance details
+description: Allows users to query AWS SageMaker Notebook Instances to gather information about their configuration, status, and other related details.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       kms_key_id
@@ -15,13 +12,12 @@ Query:
       aws_sagemaker_notebook_instance
     WHERE
       kms_key_id IS NULL;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS SageMaker
-Title: List all AWS SageMaker Notebook Instance details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS SageMaker

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS VPC Elastic IP Addresses
-ID: aws_vpc_eip_1
-IntegrationType:
+id: aws_vpc_eip_1
+type: query
+title: Find all AWS VPC Elastic IP Addresses
+description: Allows users to query AWS VPC Elastic IP Addresses
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       public_ip,
       domain,
@@ -16,13 +13,12 @@ Query:
       aws_vpc_eip
     WHERE
       association_id IS NULL;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_network_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Amazon VPC
-Title: Find all AWS VPC Elastic IP Addresses
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_network_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Amazon VPC

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Lambda Functions, providing information about each function's configuration, including runtime, code size, timeout, and associated tags.
-ID: aws_lambda_function_6
-IntegrationType:
+id: aws_lambda_function_6
+type: query
+title: Find AWS Lambda Functions and IAM Actions
+description: Allows users to query AWS Lambda Functions, providing information about each function's configuration, including runtime, code size, timeout, and associated tags.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       f.name,
       f.role,
@@ -28,13 +25,12 @@ Query:
       AND pol_arn = p.arn
       AND stmt ->> 'Effect' = 'Allow'
       AND f.name = 'hellopython';
-Tags:
-  cloud_identity_security:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Lambda Function
-Title: Find AWS Lambda Functions and IAM Actions
+tags:
+    cloud_identity_security:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Lambda Function

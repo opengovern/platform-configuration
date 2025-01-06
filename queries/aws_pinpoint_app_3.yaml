@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Pinpoint Applications to gather information about the applications, such as application ID, name, and creation date. The table also provides details about the application's settings and limits.
-ID: aws_pinpoint_app_3
-IntegrationType:
+id: aws_pinpoint_app_3
+type: query
+title: Find all AWS Pinpoint App details and settings
+description: Allows users to query AWS Pinpoint Applications to gather information about the applications, such as application ID, name, and creation date. The table also provides details about the application's settings and limits.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       id,
       campaign_hook -> 'LambdaFunctionName' AS lambda_function_name,
@@ -15,11 +12,10 @@ Query:
       campaign_hook -> 'WebUrl' AS web_url
     FROM
       aws_pinpoint_app;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Pinpoint
-Title: Find all AWS Pinpoint App details and settings
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Pinpoint

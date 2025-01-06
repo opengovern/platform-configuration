@@ -1,13 +1,10 @@
-Description: Allows users to query AWS RDS DB Instances for detailed information about the configuration, status, and other metadata associated with each database instance.
-ID: aws_rds_db_instance_9
-IntegrationType:
+id: aws_rds_db_instance_9
+type: query
+title: List all AWS RDS DB Instances with Detailed Information
+description: Allows users to query AWS RDS DB Instances for detailed information about the configuration, status, and other metadata associated with each database instance.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       actions ->> 'ResourceIdentifier' AS db_instance_identifier,
       details ->> 'Action' AS action,
@@ -19,11 +16,10 @@ Query:
       aws_rds_db_instance,
       jsonb_array_elements(pending_maintenance_actions) AS actions,
       jsonb_array_elements(actions -> 'PendingMaintenanceActionDetails') AS details;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - RDS
-Title: List all AWS RDS DB Instances with Detailed Information
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - RDS

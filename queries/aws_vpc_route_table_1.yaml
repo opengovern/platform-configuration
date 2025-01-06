@@ -1,13 +1,10 @@
-Description: Allows users to query AWS VPC Route Tables and obtain detailed information about each route table, including its associations, routes, and tags.
-ID: aws_vpc_route_table_1
-IntegrationType:
+id: aws_vpc_route_table_1
+type: query
+title: Find all AWS VPC Route Tables and their Details
+description: Allows users to query AWS VPC Route Tables and obtain detailed information about each route table, including its associations, routes, and tags.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       vpc_id,
       COUNT(route_table_id) AS route_table_count
@@ -15,11 +12,10 @@ Query:
       aws_vpc_route_table
     GROUP BY
       vpc_id;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - VPC Route Tables
-Title: Find all AWS VPC Route Tables and their Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - VPC Route Tables

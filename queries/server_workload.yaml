@@ -1,14 +1,11 @@
-Description: List Cloud VM Workloads for AWS and Azure
-ID: server_workload
-IntegrationType:
+id: server_workload
+type: query
+title: List Cloud VM Workloads for AWS and Azure
+description: List Cloud VM Workloads for AWS and Azure
+integration_type:
   - aws_cloud_account
   - azure_subscription
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       c.name AS cloud_account_name,
       c.provider_id AS _discovered_provider_id,
@@ -32,9 +29,9 @@ Query:
         WHERE
           resource_type = 'aws::ec2::instance'
       )
-    
+
       UNION
-    
+
       (
         SELECT
           'Azure' AS provider,
@@ -55,13 +52,12 @@ Query:
       )
     ) AS t
     INNER JOIN platform_integrations c ON t._platform_integration_id = c.integration_id
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-    - azure
-  cloud_service:
-    - EC2
-    - Virtual Machines
-Title: List Cloud VM Workloads for AWS and Azure
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+      - azure
+    cloud_service:
+      - EC2
+      - Virtual Machines

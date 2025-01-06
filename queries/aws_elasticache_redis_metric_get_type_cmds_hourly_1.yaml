@@ -1,13 +1,10 @@
-Description: Allows users to query ElastiCache Redis Metrics on an hourly basis. This includes information on GET type commands executed in the selected ElastiCache Redis cluster during the last hour.
-ID: aws_elasticache_redis_metric_get_type_cmds_hourly_1
-IntegrationType:
+id: aws_elasticache_redis_metric_get_type_cmds_hourly_1
+type: query
+title: List all ElastiCache Redis Metrics on GET Commands Hourly
+description: Allows users to query ElastiCache Redis Metrics on an hourly basis. This includes information on GET type commands executed in the selected ElastiCache Redis cluster during the last hour.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       cache_cluster_id,
       timestamp,
@@ -20,11 +17,10 @@ Query:
     ORDER BY
       cache_cluster_id,
       timestamp;
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - ElastiCache
-Title: List all ElastiCache Redis Metrics on GET Commands Hourly
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - ElastiCache

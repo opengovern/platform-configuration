@@ -1,14 +1,11 @@
-Description: Load Balancers
-ID: load_balancers
-IntegrationType:
+id: load_balancers
+type: query
+title: Load Balancers
+description: Load Balancers
+integration_type:
   - aws_cloud_account
   - azure_subscription
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       CASE
         WHEN resource_type LIKE 'aws::%' THEN 'AWS'
@@ -32,14 +29,13 @@ Query:
       resource_type IN ('aws::elasticloadbalancing::loadbalancer', 
                         'microsoft.network/loadbalancers', 
                         'microsoft.network/applicationgateways')
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-    - azure
-  cloud_service:
-    - Elastic Load Balancing
-    - Azure Load Balancer
-    - Azure Application Gateway
-Title: Load Balancers
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+      - azure
+    cloud_service:
+      - Elastic Load Balancing
+      - Azure Load Balancer
+      - Azure Application Gateway

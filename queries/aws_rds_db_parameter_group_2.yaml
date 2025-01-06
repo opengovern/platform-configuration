@@ -1,13 +1,10 @@
-Description: Allows users to query AWS RDS DB Parameter Groups, providing information about the configurations that control the behavior of the databases that they are associated with.
-ID: aws_rds_db_parameter_group_2
-IntegrationType:
+id: aws_rds_db_parameter_group_2
+type: query
+title: List all AWS RDS DB Parameter Groups configurations
+description: Allows users to query AWS RDS DB Parameter Groups, providing information about the configurations that control the behavior of the databases that they are associated with.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       db_parameter_group_family,
@@ -23,13 +20,12 @@ Query:
       aws_rds_db_parameter_group
     CROSS JOIN
       jsonb_array_elements(parameters) AS pg;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - RDS
-Title: List all AWS RDS DB Parameter Groups configurations
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - RDS

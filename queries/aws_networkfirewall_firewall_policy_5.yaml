@@ -1,13 +1,10 @@
-Description: "Retrieves AWS Network Firewall policies with details on stateless default actions and rule group references, aiding in configuration management and security reviews."
-ID: aws_networkfirewall_firewall_policy_5
-IntegrationType:
+id: aws_networkfirewall_firewall_policy_5
+type: query
+title: AWS Network Firewall Policy with Stateless Actions
+description: Retrieves AWS Network Firewall policies with details on stateless default actions and rule group references, aiding in configuration management and security reviews.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       arn,
       name AS firewall_policy_name,
@@ -16,13 +13,12 @@ Query:
       firewall_policy -> 'StatelessRuleGroupReferences' AS stateless_rule_group_references
     FROM
       aws_networkfirewall_firewall_policy;
-Tags:
-  cloud_asset_management:
-    - 'true'
-  cloud_network_security:
-    - 'true'
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Network Firewall
-Title: "AWS Network Firewall Policy with Stateless Actions"
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_network_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Network Firewall

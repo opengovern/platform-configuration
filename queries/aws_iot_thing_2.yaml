@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Internet of Things to retrieve detailed information about the virtual model of a physical device within an AWS account.
-ID: aws_iot_thing_2
-IntegrationType:
+id: aws_iot_thing_2
+type: query
+title: Find AWS IoT details for virtual device models
+description: Allows users to query AWS Internet of Things to retrieve detailed information about the virtual model of a physical device within an AWS account.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       thing_name,
       thing_id,
@@ -18,11 +15,10 @@ Query:
       aws_iot_thing
     WHERE
       attribute_name = 'foo';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS IoT
-Title: Find AWS IoT details for virtual device models
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS IoT

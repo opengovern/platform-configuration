@@ -1,13 +1,10 @@
-Description: Allows users to query AWS RDS DB Option Groups and provides information about the option groups within Amazon Relational Database Service (RDS).
-ID: aws_rds_db_option_group_1
-IntegrationType:
+id: aws_rds_db_option_group_1
+type: query
+title: List all AWS RDS DB Option Groups with details
+description: Allows users to query AWS RDS DB Option Groups and provides information about the option groups within Amazon Relational Database Service (RDS).
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       description,
@@ -16,11 +13,10 @@ Query:
       vpc_id
     FROM
       aws_rds_db_option_group;
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Amazon Relational Database Service
-Title: List all AWS RDS DB Option Groups with details
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Amazon Relational Database Service

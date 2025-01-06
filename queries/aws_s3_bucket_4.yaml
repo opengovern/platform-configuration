@@ -1,13 +1,10 @@
-Description: Allows users to query AWS S3 buckets for detailed information about their configuration, policies, and permissions.
-ID: aws_s3_bucket_4
-IntegrationType:
+id: aws_s3_bucket_4
+type: query
+title: Find AWS S3 Buckets with Public Access Details
+description: Allows users to query AWS S3 buckets for detailed information about their configuration, policies, and permissions.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       block_public_acls,
@@ -21,13 +18,12 @@ Query:
       OR NOT block_public_policy
       OR NOT ignore_public_acls
       OR NOT restrict_public_buckets;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - S3
-Title: Find AWS S3 Buckets with Public Access Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - S3

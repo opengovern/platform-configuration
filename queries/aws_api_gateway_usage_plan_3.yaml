@@ -1,13 +1,10 @@
-Description: Allows users to query AWS API Gateway Usage Plans in order to retrieve information about the usage plans configured in the AWS API Gateway service.
-ID: aws_api_gateway_usage_plan_3
-IntegrationType:
+id: aws_api_gateway_usage_plan_3
+type: query
+title: Find AWS API Gateway Usage Plans Details via SQL
+description: Allows users to query AWS API Gateway Usage Plans in order to retrieve information about the usage plans configured in the AWS API Gateway service.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       id,
@@ -16,13 +13,12 @@ Query:
       aws_api_gateway_usage_plan
     WHERE
       throttle IS NULL;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - API Gateway
-Title: Find AWS API Gateway Usage Plans Details via SQL
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - API Gateway

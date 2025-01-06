@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Serverless Application Repository Applications to fetch details like application name, status, author, description, labels, license URL, creation time, and more.
-ID: aws_serverlessapplicationrepository_application_1
-IntegrationType:
+id: aws_serverlessapplicationrepository_application_1
+type: query
+title: List AWS Serverless Application Repository Applications
+description: Allows users to query AWS Serverless Application Repository Applications to fetch details like application name, status, author, description, labels, license URL, creation time, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       arn,
@@ -16,11 +13,10 @@ Query:
       description
     FROM
       aws_serverlessapplicationrepository_application;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Serverless Application Repository
-Title: List AWS Serverless Application Repository Applications
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Serverless Application Repository

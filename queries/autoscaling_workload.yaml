@@ -1,16 +1,11 @@
-Description: List All Autoscaling Groups and VM Scale Sets
-ID: autoscaling_workload
-IntegrationType:
+id: autoscaling_workload
+type: query
+title: List All Autoscaling Groups and VM Scale Sets
+description: List All Autoscaling Groups and VM Scale Sets
+integration_type:
   - aws_cloud_account
   - azure_subscription
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - platform_resources
-    - platform_integrations
-  Parameters: []
-  PrimaryTable: platform_resources
-  QueryToExecute: |
+query: |
     SELECT
       CASE
         WHEN resource_type LIKE 'aws::%' THEN 'AWS'
@@ -29,16 +24,15 @@ Query:
       platform_integrations c ON r.integration_id = c.integration_id
     WHERE
       resource_type IN ('aws::autoscaling::autoscalinggroup', 'microsoft.compute/virtualmachinescalesets')
-Tags:
-  platform_queries_bookmark:
-    - "true"
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-    - azure
-  cloud_service:
-    - Auto Scaling and VM Scale Set
-Title: List All Autoscaling Groups and VM Scale Sets
+tags:
+    platform_queries_bookmark:
+      - 'true'
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+      - azure
+    cloud_service:
+      - Auto Scaling and VM Scale Set

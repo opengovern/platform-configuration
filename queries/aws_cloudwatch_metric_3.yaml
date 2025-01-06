@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CloudWatch Metrics to gather information about the performance of their AWS resources and applications.
-ID: aws_cloudwatch_metric_3
-IntegrationType:
+id: aws_cloudwatch_metric_3
+type: query
+title: List all AWS CloudWatch metrics for EBS VolumeReadOps
+description: Allows users to query AWS CloudWatch Metrics to gather information about the performance of their AWS resources and applications.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT 
       metric_name,
       namespace,
@@ -17,11 +14,10 @@ Query:
     WHERE 
       namespace = 'AWS/EBS' 
       AND metric_name = 'VolumeReadOps';
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CloudWatch
-Title: List all AWS CloudWatch metrics for EBS VolumeReadOps
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CloudWatch

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EKS Add-Ons to retrieve information about add-ons associated with each Amazon EKS cluster.
-ID: aws_eks_addon_3
-IntegrationType:
+id: aws_eks_addon_3
+type: query
+title: List all Add-Ons Associated with Each Amazon EKS Cluster
+description: Allows users to query AWS EKS Add-Ons to retrieve information about add-ons associated with each Amazon EKS cluster.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       cluster_name,
       COUNT(addon_name) AS addon_count
@@ -15,13 +12,12 @@ Query:
       aws_eks_addon
     GROUP BY
       cluster_name;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Amazon EKS
-Title: List all Add-Ons Associated with Each Amazon EKS Cluster
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Amazon EKS

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EC2 Target Groups and provides information about each Target Group within an AWS account.
-ID: aws_ec2_target_group_2
-IntegrationType:
+id: aws_ec2_target_group_2
+type: query
+title: Find AWS EC2 Target Groups with Health Check Info
+description: Allows users to query AWS EC2 Target Groups and provides information about each Target Group within an AWS account.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       health_check_enabled,
       protocol,
@@ -22,11 +19,10 @@ Query:
       health_check_timeout_seconds
     FROM
       aws_ec2_target_group;
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2
-Title: Find AWS EC2 Target Groups with Health Check Info
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2

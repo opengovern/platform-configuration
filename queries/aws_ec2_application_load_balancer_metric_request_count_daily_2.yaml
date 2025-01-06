@@ -1,13 +1,10 @@
-Description: Allows users to query daily request count metrics of the AWS EC2 Application Load Balancer.
-ID: aws_ec2_application_load_balancer_metric_request_count_daily_2
-IntegrationType:
+id: aws_ec2_application_load_balancer_metric_request_count_daily_2
+type: query
+title: List all daily request count metrics for AWS EC2 Application Load Balancer
+description: Allows users to query daily request count metrics of the AWS EC2 Application Load Balancer.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       metric_name,
@@ -24,11 +21,10 @@ Query:
     ORDER BY
       name,
       timestamp;
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2 Application Load Balancer
-Title: List all daily request count metrics for AWS EC2 Application Load Balancer
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2 Application Load Balancer

@@ -1,14 +1,10 @@
-Description: List Function Apps with unsupported runtime
-ID: azure_insight_functionapp_with_unsupported_runtime
-IntegrationType:
+id: azure_insight_functionapp_with_unsupported_runtime
+type: query
+title: Function Apps with unsupported runtime
+description: List Function Apps with unsupported runtime
+integration_type:
   - azure_subscription
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - azure_app_service_function_app
-  Parameters: []
-  PrimaryTable: azure_app_service_function_app
-  QueryToExecute: |
+query: |
     SELECT 
       id, 
       language_runtime_type, 
@@ -74,7 +70,6 @@ Query:
           )
         )
       );
-Tags:
-  category:
-    - Technical Debt
-Title: Function Apps with unsupported runtime
+tags:
+    category:
+      - Technical Debt

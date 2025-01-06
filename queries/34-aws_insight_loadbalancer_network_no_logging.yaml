@@ -1,14 +1,10 @@
-Description: List network Load Balancers without logging
-ID: aws_insight_loadbalancer_network_no_logging
-IntegrationType:
+id: aws_insight_loadbalancer_network_no_logging
+type: query
+title: Network Load Balancers without logging
+description: List network Load Balancers without logging
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - aws_ec2_network_load_balancer
-  Parameters: []
-  PrimaryTable: aws_ec2_network_load_balancer
-  QueryToExecute: |
+query: |
     SELECT
       name,
       lb ->> 'Key' AS logging_key,
@@ -22,10 +18,9 @@ Query:
     WHERE
       lb ->> 'Key' = 'access_logs.s3.enabled'
       AND lb ->> 'Value' = 'false';
-Tags:
-  category:
-    - Technical Debt
-  persona:
-    - Security
-    - DevOps
-Title: Network Load Balancers without logging
+tags:
+    category:
+      - Technical Debt
+    persona:
+      - Security
+      - DevOps

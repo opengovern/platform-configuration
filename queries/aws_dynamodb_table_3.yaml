@@ -1,13 +1,10 @@
-Description: Allows users to query AWS DynamoDB Tables and retrieve detailed information about their configuration, status, and associated attributes.
-ID: aws_dynamodb_table_3
-IntegrationType:
+id: aws_dynamodb_table_3
+type: query
+title: List all AWS DynamoDB Tables and retrieve their status
+description: Allows users to query AWS DynamoDB Tables and retrieve detailed information about their configuration, status, and associated attributes.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       point_in_time_recovery_description ->> 'EarliestRestorableDateTime' AS earliest_restorable_date_time,
@@ -15,11 +12,10 @@ Query:
       point_in_time_recovery_description ->> 'PointInTimeRecoveryStatus' AS point_in_time_recovery_status
     FROM
       aws_dynamodb_table;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - DynamoDB
-Title: List all AWS DynamoDB Tables and retrieve their status
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - DynamoDB

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS VPC Network ACLs to retrieve detailed information about network access control lists in a specific AWS VPC.
-ID: aws_vpc_network_acl_2
-IntegrationType:
+id: aws_vpc_network_acl_2
+type: query
+title: Find AWS VPC Network ACLs in a Specific VPC
+description: Allows users to query AWS VPC Network ACLs to retrieve detailed information about network access control lists in a specific AWS VPC.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       network_acl_id,
       vpc_id,
@@ -16,13 +13,12 @@ Query:
       aws_vpc_network_acl
     WHERE
       is_default = TRUE;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_network_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - VPC Network ACL
-Title: Find AWS VPC Network ACLs in a Specific VPC
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_network_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - VPC Network ACL

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS SSO Managed Policy Attachments, providing information about the managed policy attachments of AWS SSO permission sets.
-ID: aws_ssoadmin_managed_policy_attachment_1
-IntegrationType:
+id: aws_ssoadmin_managed_policy_attachment_1
+type: query
+title: List All AWS SSO Managed Policy Attachments
+description: Allows users to query AWS SSO Managed Policy Attachments, providing information about the managed policy attachments of AWS SSO permission sets.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       mpa.managed_policy_arn,
       mpa.name
@@ -17,13 +14,12 @@ Query:
       aws_ssoadmin_permission_set AS ps
     ON
       mpa.permission_set_arn = ps.arn;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS SSO
-Title: List All AWS SSO Managed Policy Attachments
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS SSO

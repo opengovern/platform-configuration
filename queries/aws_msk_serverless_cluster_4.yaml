@@ -1,13 +1,10 @@
-Description: Allows users to query AWS MSK Serverless Clusters to retrieve detailed information about each cluster.
-ID: aws_msk_serverless_cluster_4
-IntegrationType:
+id: aws_msk_serverless_cluster_4
+type: query
+title: Find all AWS MSK Serverless Cluster details
+description: Allows users to query AWS MSK Serverless Clusters to retrieve detailed information about each cluster.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       arn,
       cluster_name,
@@ -17,13 +14,12 @@ Query:
     FROM
       aws_msk_serverless_cluster,
       jsonb_array_elements(serverless -> 'VpcConfigs') AS vpc
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Managed Streaming for Kafka (MSK) Serverless
-Title: Find all AWS MSK Serverless Cluster details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Managed Streaming for Kafka (MSK) Serverless

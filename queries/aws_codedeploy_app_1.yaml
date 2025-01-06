@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CodeDeploy Applications to return detailed information about each application, including application name, ID, and associated deployment groups.
-ID: aws_codedeploy_app_1
-IntegrationType:
+id: aws_codedeploy_app_1
+type: query
+title: List AWS CodeDeploy Apps with Details
+description: Allows users to query AWS CodeDeploy Applications to return detailed information about each application, including application name, ID, and associated deployment groups.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       arn,
       application_id,
@@ -17,11 +14,10 @@ Query:
       region
     FROM
       aws_codedeploy_app;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CodeDeploy
-Title: List AWS CodeDeploy Apps with Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CodeDeploy

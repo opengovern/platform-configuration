@@ -1,13 +1,10 @@
-Description: Allows users to query AWS AppConfig Applications to gather detailed information about each application, including its name, description, associated environments, and more.
-ID: aws_appconfig_application_1
-IntegrationType:
+id: aws_appconfig_application_1
+type: query
+title: Find AWS AppConfig Application Details
+description: Allows users to query AWS AppConfig Applications to gather detailed information about each application, including its name, description, associated environments, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       arn,
       id,
@@ -16,11 +13,10 @@ Query:
       tags
     FROM
       aws_appconfig_application;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AppConfig
-Title: Find AWS AppConfig Application Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AppConfig

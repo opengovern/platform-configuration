@@ -1,13 +1,10 @@
-Description: Allows users to query AWS WAFv2 Regex Pattern Set data, providing details about the regex pattern sets used in AWS WAFv2 to filter web requests.
-ID: aws_wafv2_regex_pattern_set_1
-IntegrationType:
+id: aws_wafv2_regex_pattern_set_1
+type: query
+title: List all AWS WAFv2 Regex Pattern Sets in Steampipe
+description: Allows users to query AWS WAFv2 Regex Pattern Set data, providing details about the regex pattern sets used in AWS WAFv2 to filter web requests.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       description,
@@ -18,11 +15,10 @@ Query:
       region
     FROM
       aws_wafv2_regex_pattern_set;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - WAFv2
-Title: List all AWS WAFv2 Regex Pattern Sets in Steampipe
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - WAFv2

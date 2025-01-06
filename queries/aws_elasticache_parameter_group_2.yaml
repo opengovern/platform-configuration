@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Elasticache Parameter Groups, providing detailed information about each group's configurations, parameters, and associated metadata.
-ID: aws_elasticache_parameter_group_2
-IntegrationType:
+id: aws_elasticache_parameter_group_2
+type: query
+title: Find AWS Elasticache Parameter Groups and Configurations
+description: Allows users to query AWS Elasticache Parameter Groups, providing detailed information about each group's configurations, parameters, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       cache_parameter_group_family,
       COUNT(*) AS count
@@ -17,11 +14,10 @@ Query:
       cache_parameter_group_family NOT IN ('redis5.0', 'memcached1.5')
     GROUP BY
       cache_parameter_group_family;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Elasticache
-Title: Find AWS Elasticache Parameter Groups and Configurations
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Elasticache

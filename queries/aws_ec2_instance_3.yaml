@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EC2 Instances for comprehensive data on each instance, including instance type, state, tags, and more.
-ID: aws_ec2_instance_3
-IntegrationType:
+id: aws_ec2_instance_3
+type: query
+title: List all AWS EC2 Instances with Types and Counts
+description: Allows users to query AWS EC2 Instances for comprehensive data on each instance, including instance type, state, tags, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       instance_type,
       COUNT(instance_type) AS count
@@ -15,11 +12,10 @@ Query:
       aws_ec2_instance
     GROUP BY
       instance_type;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2
-Title: List all AWS EC2 Instances with Types and Counts
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2

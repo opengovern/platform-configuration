@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Well-Architected Tool Notifications for detailed information about each notification.
-ID: aws_wellarchitected_notification_3
-IntegrationType:
+id: aws_wellarchitected_notification_3
+type: query
+title: Find AWS Well-Architected Tool Notification Details
+description: Allows users to query AWS Well-Architected Tool Notifications for detailed information about each notification.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       workload_name,
       lens_alias,
@@ -18,11 +15,10 @@ Query:
       aws_wellarchitected_notification
     WHERE
       workload_id = '123451c59cebcd4612f1f858bf75566';
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Well-Architected Tool
-Title: Find AWS Well-Architected Tool Notification Details
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Well-Architected Tool

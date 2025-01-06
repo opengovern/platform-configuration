@@ -1,15 +1,10 @@
-Description: AWS Accounts with CloudTrail disabled
-ID: aws_insight_accounts_without_cloudtrail
-IntegrationType:
+id: aws_insight_accounts_without_cloudtrail
+type: query
+title: AWS Accounts without CloudTrail
+description: AWS Accounts with CloudTrail disabled
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - platform_integrations
-    - aws_cloudtrail_trail
-  Parameters: []
-  PrimaryTable: platform_integrations
-  QueryToExecute: |
+query: |
     SELECT 
       provider_id AS account_id, 
       integration_id AS platform_account_id 
@@ -22,12 +17,11 @@ Query:
         SELECT DISTINCT account_id 
         FROM aws_cloudtrail_trail
       )
-Tags:
-  category:
-    - Security
-  persona:
-    - DevOps
-    - Security
-    - Executive
-    - Product
-Title: AWS Accounts without CloudTrail
+tags:
+    category:
+      - Security
+    persona:
+      - DevOps
+      - Security
+      - Executive
+      - Product

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Directory Service Certificates to gather information about the certificates associated with AWS Managed Microsoft AD and Simple AD directories.
-ID: aws_directory_service_certificate_3
-IntegrationType:
+id: aws_directory_service_certificate_3
+type: query
+title: Find AWS Directory Service Certificates with Specific States
+description: Allows users to query AWS Directory Service Certificates to gather information about the certificates associated with AWS Managed Microsoft AD and Simple AD directories.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       common_name,
       directory_id,
@@ -17,11 +14,10 @@ Query:
       aws_directory_service_certificate
     WHERE
       state = 'Deregistered';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Directory Service
-Title: Find AWS Directory Service Certificates with Specific States
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Directory Service

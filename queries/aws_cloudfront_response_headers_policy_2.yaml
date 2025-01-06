@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CloudFront Response Headers Policies, providing information about the policy configurations that determine the headers CloudFront includes in HTTP responses.
-ID: aws_cloudfront_response_headers_policy_2
-IntegrationType:
+id: aws_cloudfront_response_headers_policy_2
+type: query
+title: Find AWS CloudFront Response Headers Policies
+description: Allows users to query AWS CloudFront Response Headers Policies, providing information about the policy configurations that determine the headers CloudFront includes in HTTP responses.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       id,
@@ -18,11 +15,10 @@ Query:
       aws_cloudfront_response_headers_policy
     WHERE
       type = 'custom';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CloudFront
-Title: Find AWS CloudFront Response Headers Policies
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CloudFront

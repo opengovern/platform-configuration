@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EFS Mount Targets for detailed information about each mount target's configuration, status, and associated resources.
-ID: aws_efs_mount_target_2
-IntegrationType:
+id: aws_efs_mount_target_2
+type: query
+title: Find AWS EFS Mount Targets Configuration and Status
+description: Allows users to query AWS EFS Mount Targets for detailed information about each mount target's configuration, status, and associated resources.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       mount_target_id,
       network_interface_id,
@@ -15,11 +12,10 @@ Query:
       vpc_id
     FROM
       aws_efs_mount_target;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EFS Mount Targets
-Title: Find AWS EFS Mount Targets Configuration and Status
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EFS Mount Targets

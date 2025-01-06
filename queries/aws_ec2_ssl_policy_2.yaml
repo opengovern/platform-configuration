@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EC2 SSL Policies to retrieve detailed information about SSL policies used in AWS EC2 Load Balancers.
-ID: aws_ec2_ssl_policy_2
-IntegrationType:
+id: aws_ec2_ssl_policy_2
+type: query
+title: Find AWS EC2 SSL Policies Used in Load Balancers
+description: Allows users to query AWS EC2 SSL Policies to retrieve detailed information about SSL policies used in AWS EC2 Load Balancers.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       arn,
       ssl_policy
@@ -19,13 +16,12 @@ Query:
       listener.ssl_policy = ssl_policy.Name
     WHERE
       ssl_policy.ciphers @> '[{"Name":"DES-CBC3-SHA"}]';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_data_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2
-Title: Find AWS EC2 SSL Policies Used in Load Balancers
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_data_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2

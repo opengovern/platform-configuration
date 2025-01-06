@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Database Migration Service Source Servers for detailed information about the replication servers used in database migrations.
-ID: aws_drs_source_server_1
-IntegrationType:
+id: aws_drs_source_server_1
+type: query
+title: List all AWS Database Migration Service Source Servers
+description: Allows users to query AWS Database Migration Service Source Servers for detailed information about the replication servers used in database migrations.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       arn,
       last_launch_result,
@@ -15,13 +12,12 @@ Query:
       title
     FROM
       aws_drs_source_server;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Database Migration Service
-Title: List all AWS Database Migration Service Source Servers
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Database Migration Service

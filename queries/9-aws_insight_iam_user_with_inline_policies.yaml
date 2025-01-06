@@ -1,14 +1,10 @@
-Description: List users that have inline policies
-ID: aws_insight_iam_user_with_inline_policies
-IntegrationType:
+id: aws_insight_iam_user_with_inline_policies
+type: query
+title: Users with Inline Policies
+description: List users that have inline policies
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - aws_iam_user
-  Parameters: []
-  PrimaryTable: aws_iam_user
-  QueryToExecute: |
+query: |
     SELECT
       name AS user_name,
       inline_policies,
@@ -19,8 +15,7 @@ Query:
       aws_iam_user
     WHERE
       inline_policies IS NOT NULL;
-Tags:
-  category:
-    - Security
-    - Technical Debt
-Title: Users with Inline Policies
+tags:
+    category:
+      - Security
+      - Technical Debt

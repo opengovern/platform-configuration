@@ -1,13 +1,10 @@
-Description: Allows users to query AWS ECS Task Definitions to gain insights into the configuration of running tasks in an ECS service. The table provides details such as task definition ARN, family, network mode, revision, status, and more.
-ID: aws_ecs_task_definition_3
-IntegrationType:
+id: aws_ecs_task_definition_3
+type: query
+title: List all AWS ECS Task Definitions with Privileged Containers
+description: Allows users to query AWS ECS Task Definitions to gain insights into the configuration of running tasks in an ECS service. The table provides details such as task definition ARN, family, network mode, revision, status, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       task_definition_arn,
       cd ->> 'Privileged' AS privileged,
@@ -17,11 +14,10 @@ Query:
       jsonb_array_elements(container_definitions) AS cd
     WHERE
       cd ->> 'Privileged' = 'true';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - ECS
-Title: List all AWS ECS Task Definitions with Privileged Containers
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - ECS

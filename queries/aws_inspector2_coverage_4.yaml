@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Inspector Coverage data that provides details on the assessment targets and the assessment templates that are associated with the AWS Inspector service.
-ID: aws_inspector2_coverage_4
-IntegrationType:
+id: aws_inspector2_coverage_4
+type: query
+title: List AWS Inspector Coverage Data on Assessment Targets
+description: Allows users to query AWS Inspector Coverage data that provides details on the assessment targets and the assessment templates that are associated with the AWS Inspector service.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       source_account_id,
       scan_type,
@@ -20,13 +17,12 @@ Query:
       aws_inspector2_coverage
     WHERE
       ec2_instance_tags = '{"foo": "bar", "foo1": "bar1"}';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_data_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Inspector
-Title: List AWS Inspector Coverage Data on Assessment Targets
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_data_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Inspector

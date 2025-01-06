@@ -1,13 +1,10 @@
-Description: Allows users to query IAM Roles to gain insights into their permissions, trust policies, and associated metadata.
-ID: aws_iam_role_3
-IntegrationType:
+id: aws_iam_role_3
+type: query
+title: Find AWS IAM Roles and Their Associated Metadata
+description: Allows users to query IAM Roles to gain insights into their permissions, trust policies, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       description,
@@ -15,13 +12,12 @@ Query:
       permissions_boundary_type
     FROM
       aws_iam_role;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - IAM
-Title: Find AWS IAM Roles and Their Associated Metadata
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - IAM

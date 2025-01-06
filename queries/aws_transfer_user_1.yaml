@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Transfer for users in a server, equivalent to list/describe user functions.
-ID: aws_transfer_user_1
-IntegrationType:
+id: aws_transfer_user_1
+type: query
+title: List all Users in AWS Transfer Server
+description: Allows users to query AWS Transfer for users in a server, equivalent to list/describe user functions.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       arn,
       server_id,
@@ -16,13 +13,12 @@ Query:
       aws_transfer_user
     WHERE
       server_id = "s-xxxxxxxxxxxxxxxxx";
-Tags:
-  cloud_identity_security:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Transfer
-Title: List all Users in AWS Transfer Server
+tags:
+    cloud_identity_security:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Transfer

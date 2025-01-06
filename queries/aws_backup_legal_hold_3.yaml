@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Backup Legal Hold to obtain information about the legal hold settings of AWS backup resources.
-ID: aws_backup_legal_hold_3
-IntegrationType:
+id: aws_backup_legal_hold_3
+type: query
+title: List all AWS Backup Legal Hold settings
+description: Allows users to query AWS Backup Legal Hold to obtain information about the legal hold settings of AWS backup resources.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       title,
       legal_hold_id,
@@ -17,11 +14,10 @@ Query:
       recovery_point_selection ->> 'ResourceIdentifiers' AS resource_identifiers
     FROM
       aws_backup_legal_hold;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Backup
-Title: List all AWS Backup Legal Hold settings
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Backup

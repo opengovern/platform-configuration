@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Pinpoint Applications to gather information about the applications, such as application ID, name, and creation date. The table also provides details about the application's settings and limits.
-ID: aws_pinpoint_app_4
-IntegrationType:
+id: aws_pinpoint_app_4
+type: query
+title: List AWS Pinpoint Application Details and Limits
+description: Allows users to query AWS Pinpoint Applications to gather information about the applications, such as application ID, name, and creation date. The table also provides details about the application's settings and limits.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       id,
       limits -> 'Daily' AS daily,
@@ -17,11 +14,10 @@ Query:
       limits -> 'MessagesPerSecond' AS messages_per_second
     FROM
       aws_pinpoint_app;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Pinpoint
-Title: List AWS Pinpoint Application Details and Limits
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Pinpoint

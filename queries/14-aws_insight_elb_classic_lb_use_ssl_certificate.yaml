@@ -1,14 +1,10 @@
-Description: List all Load Balancers without SSL
-ID: aws_insight_elb_classic_lb_use_ssl_certificate
-IntegrationType:
+id: aws_insight_elb_classic_lb_use_ssl_certificate
+type: query
+title: Load Balancers with no SSL
+description: List all Load Balancers without SSL
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - aws_ec2_classic_load_balancer
-  Parameters: []
-  PrimaryTable: aws_ec2_classic_load_balancer
-  QueryToExecute: |
+query: |
     WITH detailed_classic_listeners AS (
       SELECT
         name
@@ -36,8 +32,7 @@ Query:
     FROM
       aws_ec2_classic_load_balancer AS a
     LEFT JOIN detailed_classic_listeners AS b ON a.name = b.name;
-Tags:
-  category:
-    - Security
-    - Technical Debt
-Title: Load Balancers with no SSL
+tags:
+    category:
+      - Security
+      - Technical Debt

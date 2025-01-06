@@ -1,13 +1,10 @@
-Description: Allows users to query Route 53 DNS records within Amazon Web Services. The `aws_route53_record` table in Steampipe provides information about DNS records within AWS Route 53. This table allows DevOps engineers to query record-specific details, including type, name, TTL, and associated metadata. Users can utilize this table to gather insights on DNS records, such as record types, verification of TTL values, and more.
-ID: aws_route53_record_6
-IntegrationType:
+id: aws_route53_record_6
+type: query
+title: List all DNS records in AWS Route 53 using SQL
+description: Allows users to query Route 53 DNS records within Amazon Web Services. The `aws_route53_record` table in Steampipe provides information about DNS records within AWS Route 53. This table allows DevOps engineers to query record-specific details, including type, name, TTL, and associated metadata. Users can utilize this table to gather insights on DNS records, such as record types, verification of TTL values, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       type,
@@ -22,11 +19,10 @@ Query:
       geo_location IS NOT NULL
     ORDER BY
       name;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - DNS
-Title: List all DNS records in AWS Route 53 using SQL
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - DNS

@@ -1,13 +1,10 @@
-Description: Allows users to query Amazon EFS Access Points, providing detailed information about each access point's configuration, including the file system it is associated with, its access point ID, and other related metadata.
-ID: aws_efs_access_point_1
-IntegrationType:
+id: aws_efs_access_point_1
+type: query
+title: List all Amazon EFS Access Points Configurations
+description: Allows users to query Amazon EFS Access Points, providing detailed information about each access point's configuration, including the file system it is associated with, its access point ID, and other related metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       access_point_id,
@@ -18,13 +15,12 @@ Query:
       root_directory
     FROM
       aws_efs_access_point;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Amazon EFS
-Title: List all Amazon EFS Access Points Configurations
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Amazon EFS

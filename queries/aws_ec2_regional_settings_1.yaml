@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EC2 regional settings, including default EBS encryption and default EBS encryption KMS key.
-ID: aws_ec2_regional_settings_1
-IntegrationType:
+id: aws_ec2_regional_settings_1
+type: query
+title: List AWS EC2 Regional Settings including EBS Encryption
+description: Allows users to query AWS EC2 regional settings, including default EBS encryption and default EBS encryption KMS key.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       default_ebs_encryption_enabled,
       default_ebs_encryption_key,
@@ -15,13 +12,12 @@ Query:
       region
     FROM
       aws_ec2_regional_settings;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_data_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2
-Title: List AWS EC2 Regional Settings including EBS Encryption
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_data_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2

@@ -1,14 +1,10 @@
-Description: List failed load balancers
-ID: azure_insight_lb_failed
-IntegrationType:
+id: azure_insight_lb_failed
+type: query
+title: Unhealthy Load Balancers
+description: List failed load balancers
+integration_type:
   - azure_subscription
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - azure_lb
-  Parameters: []
-  PrimaryTable: azure_lb
-  QueryToExecute: |
+query: |
     SELECT
       id,
       name,
@@ -21,10 +17,9 @@ Query:
       azure_lb
     WHERE
       provisioning_state = 'Failed';
-Tags:
-  category:
-    - Security
-    - Technical Debt
-    - Resiliency
-    - Cost Management
-Title: Unhealthy Load Balancers
+tags:
+    category:
+      - Security
+      - Technical Debt
+      - Resiliency
+      - Cost Management

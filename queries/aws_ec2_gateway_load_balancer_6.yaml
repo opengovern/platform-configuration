@@ -1,25 +1,21 @@
-Description: Allows users to query AWS EC2 Gateway Load Balancer details, including its configuration, state, type, and associated tags.
-ID: aws_ec2_gateway_load_balancer_6
-IntegrationType:
+id: aws_ec2_gateway_load_balancer_6
+type: query
+title: Find AWS EC2 Gateway Load Balancer Details
+description: Allows users to query AWS EC2 Gateway Load Balancer details, including its configuration, state, type, and associated tags.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       JSONB_ARRAY_ELEMENTS_TEXT(security_groups) AS attached_security_group
     FROM
       aws_ec2_gateway_load_balancer;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2 Gateway Load Balancer
-Title: Find AWS EC2 Gateway Load Balancer Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2 Gateway Load Balancer

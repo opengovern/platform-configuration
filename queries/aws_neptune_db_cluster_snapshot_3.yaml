@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Neptune DB Cluster Snapshots for comprehensive details about their configurations, status, and associated metadata.
-ID: aws_neptune_db_cluster_snapshot_3
-IntegrationType:
+id: aws_neptune_db_cluster_snapshot_3
+type: query
+title: List all AWS Neptune DB Cluster Snapshots and Counts
+description: Allows users to query AWS Neptune DB Cluster Snapshots for comprehensive details about their configurations, status, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       db_cluster_identifier,
       COUNT(db_cluster_snapshot_identifier) AS snapshot_count
@@ -15,13 +12,12 @@ Query:
       aws_neptune_db_cluster_snapshot
     GROUP BY
       db_cluster_identifier;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Neptune
-Title: List all AWS Neptune DB Cluster Snapshots and Counts
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Neptune

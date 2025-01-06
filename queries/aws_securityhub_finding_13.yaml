@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Security Hub Findings to gather information about security issues identified within AWS resources. This includes details such as the severity, status, and description of the finding, the resources affected, and any remediation steps recommended.
-ID: aws_securityhub_finding_13
-IntegrationType:
+id: aws_securityhub_finding_13
+type: query
+title: Find AWS Security Hub Findings and their Details
+description: Allows users to query AWS Security Hub Findings to gather information about security issues identified within AWS resources. This includes details such as the severity, status, and description of the finding, the resources affected, and any remediation steps recommended.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       title,
       v ->> 'Id' AS vulnerabilitie_id,
@@ -25,15 +22,14 @@ Query:
       jsonb_array_elements(vulnerabilities) AS v
     WHERE
       title = 'EC2 instance involved in SSH brute force attacks.';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_identity_security:
-    - "true"
-  cloud_network_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Security Hub
-Title: Find AWS Security Hub Findings and their Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_identity_security:
+      - 'true'
+    cloud_network_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Security Hub

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Security Hub Insights to retrieve information about the insights in AWS Security Hub. This includes details such as insight ARN, name, filters, group by attributes, and more.
-ID: aws_securityhub_insight_1
-IntegrationType:
+id: aws_securityhub_insight_1
+type: query
+title: Find Insights in AWS Security Hub with SQL
+description: Allows users to query AWS Security Hub Insights to retrieve information about the insights in AWS Security Hub. This includes details such as insight ARN, name, filters, group by attributes, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       arn,
@@ -15,11 +12,10 @@ Query:
       region
     FROM
       aws_securityhub_insight;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Security Hub
-Title: Find Insights in AWS Security Hub with SQL
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Security Hub

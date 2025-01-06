@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Inspector Findings to obtain detailed information about the Amazon Inspector findings that are generated during the assessment of the target applications.
-ID: aws_inspector_finding_1
-IntegrationType:
+id: aws_inspector_finding_1
+type: query
+title: Find all AWS Inspector Findings details
+description: Allows users to query AWS Inspector Findings to obtain detailed information about the Amazon Inspector findings that are generated during the assessment of the target applications.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       id,
       arn,
@@ -17,13 +14,12 @@ Query:
       severity
     FROM
       aws_inspector_finding;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Amazon Inspector
-Title: Find all AWS Inspector Findings details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Amazon Inspector

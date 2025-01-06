@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Cloud Map Service Discovery Namespace to retrieve details about the namespaces in AWS Cloud Map.
-ID: aws_service_discovery_namespace_1
-IntegrationType:
+id: aws_service_discovery_namespace_1
+type: query
+title: Find AWS Cloud Map Service Discovery Namespaces
+description: Allows users to query AWS Cloud Map Service Discovery Namespace to retrieve details about the namespaces in AWS Cloud Map.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       id,
@@ -16,11 +13,10 @@ Query:
       region
     FROM
       aws_service_discovery_namespace;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Cloud Map
-Title: Find AWS Cloud Map Service Discovery Namespaces
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Cloud Map

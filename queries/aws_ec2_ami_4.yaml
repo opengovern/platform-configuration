@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EC2 AMIs (Amazon Machine Images) to retrieve detailed information about each AMI available in the AWS account.
-ID: aws_ec2_ami_4
-IntegrationType:
+id: aws_ec2_ami_4
+type: query
+title: List all AWS EC2 AMIs with Detailed Information
+description: Allows users to query AWS EC2 AMIs (Amazon Machine Images) to retrieve detailed information about each AMI available in the AWS account.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       image_id,
@@ -20,13 +17,12 @@ Query:
       aws_ec2_ami
     CROSS JOIN
       jsonb_array_elements(block_device_mappings) AS mapping;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_data_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2 AMI
-Title: List all AWS EC2 AMIs with Detailed Information
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_data_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2 AMI

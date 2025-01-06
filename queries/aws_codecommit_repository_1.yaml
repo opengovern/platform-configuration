@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CodeCommit repositories and retrieve data such as repository name, ARN, description, clone URL, last modified date, and other related details.
-ID: aws_codecommit_repository_1
-IntegrationType:
+id: aws_codecommit_repository_1
+type: query
+title: List AWS CodeCommit Repositories with Details
+description: Allows users to query AWS CodeCommit repositories and retrieve data such as repository name, ARN, description, clone URL, last modified date, and other related details.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       repository_name,
       repository_id,
@@ -16,13 +13,12 @@ Query:
       region
     FROM
       aws_codecommit_repository;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CodeCommit
-Title: List AWS CodeCommit Repositories with Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CodeCommit

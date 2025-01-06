@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Backup Frameworks and retrieve comprehensive data about each backup plan, including its unique ARN, version, creation and deletion dates, and more.
-ID: aws_backup_framework_3
-IntegrationType:
+id: aws_backup_framework_3
+type: query
+title: List AWS Backup Frameworks and Detailed Plans
+description: Allows users to query AWS Backup Frameworks and retrieve comprehensive data about each backup plan, including its unique ARN, version, creation and deletion dates, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       framework_name
     FROM
@@ -15,11 +12,10 @@ Query:
       jsonb_array_elements(framework_controls) AS controls
     WHERE
       controls ->> 'ControlName' = 'BACKUP_RESOURCES_PROTECTED_BY_BACKUP_VAULT_LOCK';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Backup
-Title: List AWS Backup Frameworks and Detailed Plans
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Backup

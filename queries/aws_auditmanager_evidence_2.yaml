@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Audit Manager Evidence, providing detailed information about evidence resources associated with assessments in AWS Audit Manager.
-ID: aws_auditmanager_evidence_2
-IntegrationType:
+id: aws_auditmanager_evidence_2
+type: query
+title: List all evidence resources in AWS Audit Manager
+description: Allows users to query AWS Audit Manager Evidence, providing detailed information about evidence resources associated with assessments in AWS Audit Manager.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       evidence_folder_id,
       COUNT(id) AS evidence_count
@@ -15,15 +12,14 @@ Query:
       aws_auditmanager_evidence
     GROUP BY
       evidence_folder_id;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_identity_security:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Audit Manager
-Title: List all evidence resources in AWS Audit Manager
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_identity_security:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Audit Manager

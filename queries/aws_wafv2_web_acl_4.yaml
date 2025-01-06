@@ -1,13 +1,10 @@
-Description: Allows users to query AWS WAFv2 WebACLs to retrieve and manage information about WebACL resources within AWS WAFv2.
-ID: aws_wafv2_web_acl_4
-IntegrationType:
+id: aws_wafv2_web_acl_4
+type: query
+title: List AWS WAFv2 WebACLs and Manage Information
+description: Allows users to query AWS WAFv2 WebACLs to retrieve and manage information about WebACL resources within AWS WAFv2.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       id,
@@ -27,15 +24,14 @@ Query:
     FROM
       aws_wafv2_web_acl,
       jsonb_array_elements(rules) AS r;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_identity_security:
-    - "true"
-  cloud_network_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS WAFv2
-Title: List AWS WAFv2 WebACLs and Manage Information
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_identity_security:
+      - 'true'
+    cloud_network_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS WAFv2

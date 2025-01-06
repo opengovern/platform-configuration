@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Elastic Beanstalk Environments to gain insights into their configuration, status, health, related applications, and other metadata.
-ID: aws_elastic_beanstalk_environment_3
-IntegrationType:
+id: aws_elastic_beanstalk_environment_3
+type: query
+title: Find AWS Elastic Beanstalk Environments with Health Status Red
+description: Allows users to query AWS Elastic Beanstalk Environments to gain insights into their configuration, status, health, related applications, and other metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       environment_name,
       application_name,
@@ -17,13 +14,12 @@ Query:
       aws_elastic_beanstalk_environment
     WHERE
       health = 'Red';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Elastic Beanstalk
-Title: Find AWS Elastic Beanstalk Environments with Health Status Red
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Elastic Beanstalk

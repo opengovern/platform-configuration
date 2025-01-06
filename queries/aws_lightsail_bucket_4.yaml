@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Lightsail Buckets and retrieve detailed information such as bucket configuration, access rules, tags, and more.
-ID: aws_lightsail_bucket_4
-IntegrationType:
+id: aws_lightsail_bucket_4
+type: query
+title: Find AWS Lightsail Buckets with Configuration Details
+description: Allows users to query AWS Lightsail Buckets and retrieve detailed information such as bucket configuration, access rules, tags, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       created_at
@@ -15,11 +12,10 @@ Query:
       aws_lightsail_bucket
     WHERE
       created_at >= (CURRENT_DATE - INTERVAL '30' DAY);
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Lightsail
-Title: Find AWS Lightsail Buckets with Configuration Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Lightsail

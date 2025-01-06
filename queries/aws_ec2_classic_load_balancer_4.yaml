@@ -1,13 +1,10 @@
-Description: Allows users to query Classic Load Balancers within Amazon EC2.
-ID: aws_ec2_classic_load_balancer_4
-IntegrationType:
+id: aws_ec2_classic_load_balancer_4
+type: query
+title: Find all Load Balancers in AWS EC2 Classic
+description: Allows users to query Classic Load Balancers within Amazon EC2.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       listener_description -> 'Listener' ->> 'InstancePort' AS instance_port,
@@ -19,11 +16,10 @@ Query:
     FROM
       aws_ec2_classic_load_balancer
     CROSS JOIN jsonb_array_elements(listener_descriptions) AS listener_description;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2
-Title: Find all Load Balancers in AWS EC2 Classic
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2

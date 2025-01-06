@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Glue Databases for detailed information about their Glue Catalog Databases.
-ID: aws_glue_catalog_database_1
-IntegrationType:
+id: aws_glue_catalog_database_1
+type: query
+title: List All AWS Glue Catalog Databases with Details
+description: Allows users to query AWS Glue Databases for detailed information about their Glue Catalog Databases.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       catalog_id,
@@ -17,11 +14,10 @@ Query:
       create_table_default_permissions
     FROM
       aws_glue_catalog_database;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Glue
-Title: List All AWS Glue Catalog Databases with Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Glue

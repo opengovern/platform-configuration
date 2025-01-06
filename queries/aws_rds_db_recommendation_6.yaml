@@ -1,13 +1,10 @@
-Description: Allows users to query AWS RDS DB Recommendations and retrieve valuable information about each recommendation's status, impact, and suggested actions.
-ID: aws_rds_db_recommendation_6
-IntegrationType:
+id: aws_rds_db_recommendation_6
+type: query
+title: Find AWS RDS DB Recommendations and Their Statuses
+description: Allows users to query AWS RDS DB Recommendations and retrieve valuable information about each recommendation's status, impact, and suggested actions.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       recommendation_id,
       issue_details -> 'PerformanceIssueDetails' ->> 'Analysis' AS analysis,
@@ -18,11 +15,10 @@ Query:
       aws_rds_db_recommendation
     WHERE
       issue_details IS NOT NULL;
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - RDS DB Recommendation
-Title: Find AWS RDS DB Recommendations and Their Statuses
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - RDS DB Recommendation

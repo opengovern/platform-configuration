@@ -1,11 +1,10 @@
-ID: object_storages_view
-Title: Object Stores
-Description: List of all Blob Stores in AWS & Azure
-Query:
-  Engine: CloudQL-v0.0.1
-  QueryToExecute: |
+id: object_storages_view
+type: view
+title: Object Stores
+description: List of all Blob Stores in AWS & Azure
+query: |
     SELECT name AS name, account_id AS provider_account_id, region AS region FROM aws_s3_bucket UNION
     SELECT storage_account_name AS name, subscription_id AS provider_account_id, region AS region FROM azure_storage_blob;
-Tags:
+tags:
   category:
     - Security

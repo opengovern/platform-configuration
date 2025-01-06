@@ -1,13 +1,10 @@
-Description: Allows users to query AWS VPC Flow Logs, providing detailed information about IP traffic going to and from network interfaces in a VPC.
-ID: aws_vpc_flow_log_2
-IntegrationType:
+id: aws_vpc_flow_log_2
+type: query
+title: Find Failed Logs in AWS VPC Flow
+description: Allows users to query AWS VPC Flow Logs, providing detailed information about IP traffic going to and from network interfaces in a VPC.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       flow_log_id,
       resource_id,
@@ -17,13 +14,12 @@ Query:
       aws_vpc_flow_log
     WHERE
       deliver_logs_status = 'FAILED';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_network_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - VPC Flow Logs
-Title: Find Failed Logs in AWS VPC Flow
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_network_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - VPC Flow Logs

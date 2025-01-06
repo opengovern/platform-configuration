@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Database Migration Service Source Servers for detailed information about the replication servers used in database migrations.
-ID: aws_drs_source_server_6
-IntegrationType:
+id: aws_drs_source_server_6
+type: query
+title: Find Failed AWS Database Migration Source Servers
+description: Allows users to query AWS Database Migration Service Source Servers for detailed information about the replication servers used in database migrations.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       title,
       arn,
@@ -17,11 +14,10 @@ Query:
       aws_drs_source_server
     WHERE
       last_launch_result = 'FAILED';
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Database Migration Service
-Title: Find Failed AWS Database Migration Source Servers
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Database Migration Service

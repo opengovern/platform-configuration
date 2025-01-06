@@ -1,13 +1,10 @@
-Description: Allows users to query Amazon RDS DB Snapshots for information regarding manual and automatic snapshots of an Amazon RDS DB instance.
-ID: aws_rds_db_snapshot_3
-IntegrationType:
+id: aws_rds_db_snapshot_3
+type: query
+title: Find Information on Amazon RDS DB Snapshots
+description: Allows users to query Amazon RDS DB Snapshots for information regarding manual and automatic snapshots of an Amazon RDS DB instance.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT 
       db_snapshot_identifier,
       encrypted
@@ -15,13 +12,12 @@ Query:
       aws_rds_db_snapshot
     WHERE 
       NOT encrypted;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_data_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Amazon RDS
-Title: Find Information on Amazon RDS DB Snapshots
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_data_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Amazon RDS

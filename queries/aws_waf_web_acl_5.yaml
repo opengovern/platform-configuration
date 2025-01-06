@@ -1,13 +1,10 @@
-Description: Allows users to query AWS WAF WebACLs to retrieve information about their configuration, rules, and associated metadata.
-ID: aws_waf_web_acl_5
-IntegrationType:
+id: aws_waf_web_acl_5
+type: query
+title: Find AWS WAF WebACL Configuration and Metadata
+description: Allows users to query AWS WAF WebACLs to retrieve information about their configuration, rules, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       web_acl_id,
@@ -17,11 +14,10 @@ Query:
       aws_waf_web_acl
     WHERE
       logging_configuration IS NULL;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS WAF
-Title: Find AWS WAF WebACL Configuration and Metadata
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS WAF

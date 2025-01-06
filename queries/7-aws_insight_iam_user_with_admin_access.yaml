@@ -1,14 +1,10 @@
-Description: List all the users having Administrator access
-ID: aws_insight_iam_user_with_admin_access
-IntegrationType:
+id: aws_insight_iam_user_with_admin_access
+type: query
+title: Admin Users
+description: List all the users having Administrator access
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - aws_iam_user
-  Parameters: []
-  PrimaryTable: aws_iam_user
-  QueryToExecute: |
+query: |
     SELECT
       name AS user_name,
       SPLIT_PART(attachments, '/', 2) AS attached_policies,
@@ -20,7 +16,6 @@ Query:
       CROSS JOIN jsonb_array_elements_text(attached_policy_arns) AS attachments
     WHERE
       SPLIT_PART(attachments, '/', 2) = 'AdministratorAccess';
-Tags:
-  category:
-    - Security
-Title: Admin Users
+tags:
+    category:
+      - Security

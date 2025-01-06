@@ -1,13 +1,10 @@
-Description: Allows users to query AWS SNS Topics to gather information about each topic, including its name, owner, ARN, and other related data.
-ID: aws_sns_topic_1
-IntegrationType:
+id: aws_sns_topic_1
+type: query
+title: Find AWS SNS Topics and Their Information
+description: Allows users to query AWS SNS Topics to gather information about each topic, including its name, owner, ARN, and other related data.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       title,
       kms_master_key_id
@@ -15,11 +12,10 @@ Query:
       aws_sns_topic
     WHERE
       kms_master_key_id IS NULL;
-Tags:
-  cloud_data_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - SNS
-Title: Find AWS SNS Topics and Their Information
+tags:
+    cloud_data_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - SNS

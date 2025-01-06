@@ -1,26 +1,22 @@
-Description: Allows users to query AWS S3 Multi-Region Access Points to retrieve information about their configuration, status, and associated policies.
-ID: aws_s3_multi_region_access_point_1
-IntegrationType:
+id: aws_s3_multi_region_access_point_1
+type: query
+title: List all AWS S3 Multi-Region Access Points configuration and status
+description: Allows users to query AWS S3 Multi-Region Access Points to retrieve information about their configuration, status, and associated policies.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       alias,
       status,
       created_at
     FROM
       aws_s3_multi_region_access_point;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - S3 Multi-Region Access Point
-Title: List all AWS S3 Multi-Region Access Points configuration and status
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - S3 Multi-Region Access Point

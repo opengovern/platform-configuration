@@ -1,14 +1,10 @@
-Description: RDS instances that are not using the supported instance types
-ID: aws_insight_legacy_rds_instances
-IntegrationType:
+id: aws_insight_legacy_rds_instances
+type: query
+title: Legacy RDS Instances
+description: RDS instances that are not using the supported instance types
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - aws_rds_db_instance
-  Parameters: []
-  PrimaryTable: aws_rds_db_instance
-  QueryToExecute: |
+query: |
     SELECT db_instance_identifier,
            arn,
            status,
@@ -18,11 +14,10 @@ Query:
            platform_resource_id
     FROM aws_rds_db_instance
     WHERE class LIKE ANY(ARRAY['db.m1.%', 'db.m2.%', 'db.r3.%'])
-Tags:
-  category:
-    - Technical Debt
-  persona:
-    - Executive
-    - Product
-    - FinOps
-Title: Legacy RDS Instances
+tags:
+    category:
+      - Technical Debt
+    persona:
+      - Executive
+      - Product
+      - FinOps

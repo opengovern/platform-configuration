@@ -1,13 +1,10 @@
-Description: Allows users to query AWS MemoryDB clusters, providing detailed information on cluster configurations and statuses.
-ID: aws_memorydb_cluster_7
-IntegrationType:
+id: aws_memorydb_cluster_7
+type: query
+title: Find all AWS MemoryDB Cluster Configurations and Statuses
+description: Allows users to query AWS MemoryDB clusters, providing detailed information on cluster configurations and statuses.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       arn,
@@ -15,11 +12,10 @@ Query:
       shards
     FROM
       aws_memorydb_cluster;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - MemoryDB
-Title: Find all AWS MemoryDB Cluster Configurations and Statuses
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - MemoryDB

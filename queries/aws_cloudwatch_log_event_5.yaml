@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CloudWatch Log Events to retrieve information about log events from a specified log group. Users can utilize this table to monitor and troubleshoot systems and applications using their existing log data.
-ID: aws_cloudwatch_log_event_5
-IntegrationType:
+id: aws_cloudwatch_log_event_5
+type: query
+title: Find All AWS CloudWatch Log Events for Security Groups
+description: Allows users to query AWS CloudWatch Log Events to retrieve information about log events from a specified log group. Users can utilize this table to monitor and troubleshoot systems and applications using their existing log data.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       log_group_name,
       log_stream_name,
@@ -22,13 +19,12 @@ Query:
       AND filter = '{($.eventName = AuthorizeSecurityGroupIngress) || ($.eventName = AuthorizeSecurityGroupEgress) || ($.eventName = RevokeSecurityGroupIngress) || ($.eventName = RevokeSecurityGroupEgress) || ($.eventName = CreateSecurityGroup) || ($.eventName = DeleteSecurityGroup)}'
       AND region = 'us-east-1'
       AND timestamp >= NOW() - INTERVAL '1 hour';
-Tags:
-  cloud_network_security:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CloudWatch
-Title: Find All AWS CloudWatch Log Events for Security Groups
+tags:
+    cloud_network_security:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CloudWatch

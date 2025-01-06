@@ -1,13 +1,10 @@
-Description: Allows users to query AWS IAM Server Certificates
-ID: aws_iam_server_certificate_2
-IntegrationType:
+id: aws_iam_server_certificate_2
+type: query
+title: Find AWS IAM Server Certificates with Expiry Info
+description: Allows users to query AWS IAM Server Certificates
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT 
       name,
       arn,
@@ -16,11 +13,10 @@ Query:
       aws_iam_server_certificate
     WHERE 
       expiration < NOW()::timestamp;
-Tags:
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - IAM
-Title: Find AWS IAM Server Certificates with Expiry Info
+tags:
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - IAM

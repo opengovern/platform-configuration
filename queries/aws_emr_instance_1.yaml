@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EMR Instances for detailed information about the status, configuration, and other metadata of each instance.
-ID: aws_emr_instance_1
-IntegrationType:
+id: aws_emr_instance_1
+type: query
+title: Find all AWS EMR Instances for status and configuration
+description: Allows users to query AWS EMR Instances for detailed information about the status, configuration, and other metadata of each instance.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       id,
       cluster_id,
@@ -17,13 +14,12 @@ Query:
       private_ip_address
     FROM
       aws_emr_instance;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EMR
-Title: Find all AWS EMR Instances for status and configuration
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EMR

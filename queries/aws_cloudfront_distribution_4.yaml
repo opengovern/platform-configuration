@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CloudFront Distributions to gain insights into their configuration, status, and associated metadata.
-ID: aws_cloudfront_distribution_4
-IntegrationType:
+id: aws_cloudfront_distribution_4
+type: query
+title: Find details of AWS CloudFront Distributions with SQL
+description: Allows users to query AWS CloudFront Distributions to gain insights into their configuration, status, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       id,
       arn,
@@ -17,15 +14,14 @@ Query:
       aws_cloudfront_distribution
     WHERE
       default_cache_behavior ->> 'FieldLevelEncryptionId' <> '';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_data_security:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CloudFront
-Title: Find details of AWS CloudFront Distributions with SQL
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_data_security:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CloudFront

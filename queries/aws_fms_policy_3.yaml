@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Firewall Manager Policies using SQL. This table provides information about each AWS Firewall Manager (FMS) policy in an AWS account. It can be used to gain insights into policy details such as the policy name, ID, resource type, security service type, and more.
-ID: aws_fms_policy_3
-IntegrationType:
+id: aws_fms_policy_3
+type: query
+title: List all AWS Firewall Manager Policies and Details
+description: Allows users to query AWS Firewall Manager Policies using SQL. This table provides information about each AWS Firewall Manager (FMS) policy in an AWS account. It can be used to gain insights into policy details such as the policy name, ID, resource type, security service type, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       policy_name,
       resource_type,
@@ -17,11 +14,10 @@ Query:
     GROUP BY
       policy_name,
       resource_type;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS Firewall Manager
-Title: List all AWS Firewall Manager Policies and Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS Firewall Manager

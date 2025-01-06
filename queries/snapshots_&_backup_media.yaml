@@ -1,14 +1,11 @@
-Description: Snapshots and Backup Resources by Cloud Account
-ID: snapshots_&_backup_media
-IntegrationType:
+id: snapshots_&_backup_media
+type: query
+title: Snapshots and Backup Resources by Cloud Account
+description: Snapshots and Backup Resources by Cloud Account
+integration_type:
   - aws_cloud_account
   - azure_subscription
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT 
       CASE
         WHEN resource_type LIKE 'aws::%' THEN 'AWS'
@@ -27,14 +24,13 @@ Query:
       platform_integrations c ON r.integration_id = c.integration_id
     WHERE 
       resource_type IN ('aws::ec2::image', 'aws::elasticache::cluster', 'aws::rds::dbsnapshot')
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-    - azure
-  cloud_service:
-    - EC2
-    - Elasticache
-    - RDS
-Title: Snapshots and Backup Resources by Cloud Account
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+      - azure
+    cloud_service:
+      - EC2
+      - Elasticache
+      - RDS

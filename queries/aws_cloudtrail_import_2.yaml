@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CloudTrail imports to extract data about imported trail files such as the file name, import time, hash value, and more.
-ID: aws_cloudtrail_import_2
-IntegrationType:
+id: aws_cloudtrail_import_2
+type: query
+title: List AWS CloudTrail Imports and Their Details
+description: Allows users to query AWS CloudTrail imports to extract data about imported trail files such as the file name, import time, hash value, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       import_id,
       created_timestamp,
@@ -16,11 +13,10 @@ Query:
       aws_cloudtrail_import
     WHERE
       import_status <> 'COMPLETED';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CloudTrail
-Title: List AWS CloudTrail Imports and Their Details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CloudTrail

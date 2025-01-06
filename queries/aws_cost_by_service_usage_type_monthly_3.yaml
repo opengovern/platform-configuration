@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Cost Explorer Service to get detailed cost data per service and usage type on a monthly basis.
-ID: aws_cost_by_service_usage_type_monthly_3
-IntegrationType:
+id: aws_cost_by_service_usage_type_monthly_3
+type: query
+title: Find AWS Cost by Service and Usage Type Monthly
+description: Allows users to query AWS Cost Explorer Service to get detailed cost data per service and usage type on a monthly basis.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       service,
       usage_type,
@@ -21,11 +18,10 @@ Query:
     ORDER BY
       average DESC
     LIMIT 10;
-Tags:
-  cloud_finops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Cost Explorer
-Title: Find AWS Cost by Service and Usage Type Monthly
+tags:
+    cloud_finops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Cost Explorer

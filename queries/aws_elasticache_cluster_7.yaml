@@ -1,13 +1,10 @@
-Description: Allows users to query Amazon ElastiCache Cluster data, providing information about each ElastiCache Cluster within the AWS account.
-ID: aws_elasticache_cluster_7
-IntegrationType:
+id: aws_elasticache_cluster_7
+type: query
+title: List all information about each ElastiCache Cluster
+description: Allows users to query Amazon ElastiCache Cluster data, providing information about each ElastiCache Cluster within the AWS account.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       cache_cluster_id,
       cache_node_type,
@@ -17,13 +14,12 @@ Query:
       aws_elasticache_cluster
     WHERE
       snapshot_retention_limit IS NULL;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - ElastiCache
-Title: List all information about each ElastiCache Cluster
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - ElastiCache

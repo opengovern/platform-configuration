@@ -1,13 +1,10 @@
-Description: Allows users to query AWS RDS DBInstance Metrics for a comprehensive view of the number of database connections.
-ID: aws_rds_db_instance_metric_connections_1
-IntegrationType:
+id: aws_rds_db_instance_metric_connections_1
+type: query
+title: Find AWS RDS DBInstance Metrics for Database Connections
+description: Allows users to query AWS RDS DBInstance Metrics for a comprehensive view of the number of database connections.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       db_instance_identifier,
       timestamp,
@@ -20,13 +17,12 @@ Query:
     ORDER BY
       db_instance_identifier,
       timestamp;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - RDS
-Title: Find AWS RDS DBInstance Metrics for Database Connections
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - RDS

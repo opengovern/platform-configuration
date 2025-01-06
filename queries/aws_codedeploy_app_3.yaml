@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CodeDeploy Applications to return detailed information about each application, including application name, ID, and associated deployment groups.
-ID: aws_codedeploy_app_3
-IntegrationType:
+id: aws_codedeploy_app_3
+type: query
+title: List all AWS CodeDeploy Apps Linked to GitHub
+description: Allows users to query AWS CodeDeploy Applications to return detailed information about each application, including application name, ID, and associated deployment groups.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       arn,
       application_id,
@@ -18,11 +15,10 @@ Query:
       aws_codedeploy_app
     WHERE
       linked_to_github;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CodeDeploy
-Title: List all AWS CodeDeploy Apps Linked to GitHub
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CodeDeploy

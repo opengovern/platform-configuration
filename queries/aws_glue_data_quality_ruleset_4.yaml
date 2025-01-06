@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Glue Data Quality Ruleset to obtain information about the rulesets used for data quality checks in AWS Glue.
-ID: aws_glue_data_quality_ruleset_4
-IntegrationType:
+id: aws_glue_data_quality_ruleset_4
+type: query
+title: List all Glue Data Quality Rulesets in AWS
+description: Allows users to query AWS Glue Data Quality Ruleset to obtain information about the rulesets used for data quality checks in AWS Glue.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       r.name,
       r.database_name,
@@ -21,13 +18,12 @@ Query:
       r.database_name = d.name
     AND
       r.name = 'ruleset1';
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_data_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Glue
-Title: List all Glue Data Quality Rulesets in AWS
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_data_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Glue

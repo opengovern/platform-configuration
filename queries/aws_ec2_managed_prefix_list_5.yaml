@@ -1,13 +1,10 @@
-Description: Allows users to query AWS EC2 Managed Prefix Lists, providing information about IP address ranges (CIDRs), permissions, and associated metadata.
-ID: aws_ec2_managed_prefix_list_5
-IntegrationType:
+id: aws_ec2_managed_prefix_list_5
+type: query
+title: List all AWS EC2 Managed Prefix Lists with details
+description: Allows users to query AWS EC2 Managed Prefix Lists, providing information about IP address ranges (CIDRs), permissions, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       id,
@@ -18,13 +15,12 @@ Query:
       aws_ec2_managed_prefix_list
     WHERE
       name IN ('testPrefix', 'com.amazonaws.us-east-2.dynamodb');
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_network_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - EC2
-Title: List all AWS EC2 Managed Prefix Lists with details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_network_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - EC2

@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Well-Architected Tool Workloads to retrieve and manage workload data, including workload names, ARNs, risk counts, and improvement statuses.
-ID: aws_wellarchitected_workload_4
-IntegrationType:
+id: aws_wellarchitected_workload_4
+type: query
+title: Find all AWS Well-Architected Tool Workloads
+description: Allows users to query AWS Well-Architected Tool Workloads to retrieve and manage workload data, including workload names, ARNs, risk counts, and improvement statuses.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       workload_name,
       workload_id,
@@ -16,11 +13,10 @@ Query:
       aws_wellarchitected_workload
     WHERE
       NOT is_review_owner_update_acknowledged;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Well-Architected Tool
-Title: Find all AWS Well-Architected Tool Workloads
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Well-Architected Tool

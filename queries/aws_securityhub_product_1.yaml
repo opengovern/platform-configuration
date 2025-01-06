@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Security Hub Product details for comprehensive security and compliance insights.
-ID: aws_securityhub_product_1
-IntegrationType:
+id: aws_securityhub_product_1
+type: query
+title: Find AWS Security Hub Product Details for Security Insights
+description: Allows users to query AWS Security Hub Product details for comprehensive security and compliance insights.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       product_arn,
@@ -15,11 +12,10 @@ Query:
       description
     FROM
       aws_securityhub_product;
-Tags:
-  cloud_identity_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Security Hub
-Title: Find AWS Security Hub Product Details for Security Insights
+tags:
+    cloud_identity_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Security Hub

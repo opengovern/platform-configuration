@@ -1,13 +1,10 @@
-Description: Allows users to query AWS ECS Clusters to retrieve detailed information about each cluster's configuration, status, and associated resources.
-ID: aws_ecs_cluster_1
-IntegrationType:
+id: aws_ecs_cluster_1
+type: query
+title: List AWS ECS Clusters and Their Configuration Status
+description: Allows users to query AWS ECS Clusters to retrieve detailed information about each cluster's configuration, status, and associated resources.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       cluster_arn,
       cluster_name,
@@ -17,11 +14,10 @@ Query:
       status
     FROM
       aws_ecs_cluster;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - ECS
-Title: List AWS ECS Clusters and Their Configuration Status
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - ECS

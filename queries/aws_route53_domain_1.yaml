@@ -1,24 +1,20 @@
-Description: Allows users to query AWS Route 53 Domains for detailed information about domain names, including their status, expiration date, and associated tags.
-ID: aws_route53_domain_1
-IntegrationType:
+id: aws_route53_domain_1
+type: query
+title: Find all AWS Route 53 Domains Information
+description: Allows users to query AWS Route 53 Domains for detailed information about domain names, including their status, expiration date, and associated tags.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       domain_name,
       auto_renew,
       expiration_date
     FROM
       aws_route53_domain;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Route 53
-Title: Find all AWS Route 53 Domains Information
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Route 53

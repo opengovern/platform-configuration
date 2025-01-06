@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Redshift Event Subscriptions, providing insights into the subscription's configuration, status, and associated Redshift clusters.
-ID: aws_redshift_event_subscription_1
-IntegrationType:
+id: aws_redshift_event_subscription_1
+type: query
+title: List All AWS Redshift Event Subscription Configurations
+description: Allows users to query AWS Redshift Event Subscriptions, providing insights into the subscription's configuration, status, and associated Redshift clusters.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       cust_subscription_id,
       customer_aws_id,
@@ -16,13 +13,12 @@ Query:
       subscription_creation_time
     FROM
       aws_redshift_event_subscription;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Redshift
-Title: List All AWS Redshift Event Subscription Configurations
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Redshift

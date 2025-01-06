@@ -1,13 +1,10 @@
-Description: Allows users to query VPC Peering Connections in Amazon Virtual Private Cloud (VPC).
-ID: aws_vpc_peering_connection_1
-IntegrationType:
+id: aws_vpc_peering_connection_1
+type: query
+title: List AWS VPC Peering Connections using SQL
+description: Allows users to query VPC Peering Connections in Amazon Virtual Private Cloud (VPC).
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       id,
       accepter_owner_id,
@@ -19,11 +16,10 @@ Query:
       requester_vpc_id
     FROM
       aws_vpc_peering_connection;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Amazon Virtual Private Cloud
-Title: List AWS VPC Peering Connections using SQL
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Amazon Virtual Private Cloud

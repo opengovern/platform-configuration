@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CloudWatch Metric Statistics Data Point to obtain detailed metrics data.
-ID: aws_cloudwatch_metric_statistic_data_point_3
-IntegrationType:
+id: aws_cloudwatch_metric_statistic_data_point_3
+type: query
+title: Find AWS CloudWatch Metric Statistic Data Points
+description: Allows users to query AWS CloudWatch Metric Statistics Data Point to obtain detailed metrics data.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       jsonb_pretty(dimensions) AS dimensions,
       timestamp,
@@ -25,13 +22,12 @@ Query:
       ]'
     ORDER BY
       timestamp;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CloudWatch
-Title: Find AWS CloudWatch Metric Statistic Data Points
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CloudWatch

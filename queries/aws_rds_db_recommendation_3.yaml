@@ -1,13 +1,10 @@
-Description: Allows users to query AWS RDS DB Recommendations and retrieve valuable information about each recommendation's status, impact, and suggested actions.
-ID: aws_rds_db_recommendation_3
-IntegrationType:
+id: aws_rds_db_recommendation_3
+type: query
+title: Find All Recommendations and Actions for AWS RDS DB
+description: Allows users to query AWS RDS DB Recommendations and retrieve valuable information about each recommendation's status, impact, and suggested actions.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       recommendation_id,
       title,
@@ -15,11 +12,10 @@ Query:
       recommended_actions
     FROM
       aws_rds_db_recommendation;
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - RDS
-Title: Find All Recommendations and Actions for AWS RDS DB
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - RDS

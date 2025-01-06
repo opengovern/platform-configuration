@@ -1,13 +1,10 @@
-Description: A Trusted Advisor check is a specific evaluation or assessment performed by Trusted Advisor in different categories. These checks cover various areas, including cost optimization, security, performance, and fault tolerance. Each check examines a specific aspect of your AWS resources and provides recommendations for improvement.
-ID: aws_trusted_advisor_check_summary_3
-IntegrationType:
+id: aws_trusted_advisor_check_summary_3
+type: query
+title: List Trusted Advisor Check Summaries for AWS
+description: A Trusted Advisor check is a specific evaluation or assessment performed by Trusted Advisor in different categories. These checks cover various areas, including cost optimization, security, performance, and fault tolerance. Each check examines a specific aspect of your AWS resources and provides recommendations for improvement.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       check_id,
@@ -20,11 +17,10 @@ Query:
       language = 'en'
     AND
       timestamp >= NOW() - INTERVAL '5 day';
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Trusted Advisor
-Title: List Trusted Advisor Check Summaries for AWS
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Trusted Advisor

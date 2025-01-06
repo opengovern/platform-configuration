@@ -1,13 +1,10 @@
-Description: Allows users to query AWS CloudFront Distributions to gain insights into their configuration, status, and associated metadata.
-ID: aws_cloudfront_distribution_3
-IntegrationType:
+id: aws_cloudfront_distribution_3
+type: query
+title: List all AWS CloudFront Distributions and Their Configurations
+description: Allows users to query AWS CloudFront Distributions to gain insights into their configuration, status, and associated metadata.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       id,
       arn,
@@ -17,11 +14,10 @@ Query:
       aws_cloudfront_distribution
     WHERE
       is_ipv6_enabled = 'false';
-Tags:
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - CloudFront
-Title: List all AWS CloudFront Distributions and Their Configurations
+tags:
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - CloudFront

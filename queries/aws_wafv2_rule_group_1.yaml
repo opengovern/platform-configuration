@@ -1,13 +1,10 @@
-Description: Allows users to query AWS WAFv2 Rule Groups and gather information such as the group's ARN, capacity, description, rules, visibility configuration, and more.
-ID: aws_wafv2_rule_group_1
-IntegrationType:
+id: aws_wafv2_rule_group_1
+type: query
+title: List all AWS WAFv2 Rule Groups and their details
+description: Allows users to query AWS WAFv2 Rule Groups and gather information such as the group's ARN, capacity, description, rules, visibility configuration, and more.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       name,
       description,
@@ -19,13 +16,12 @@ Query:
       region
     FROM
       aws_wafv2_rule_group;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - AWS WAFv2
-Title: List all AWS WAFv2 Rule Groups and their details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - AWS WAFv2

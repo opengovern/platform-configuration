@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Security Lake Subscriber data, providing information about each subscriber's details in the AWS Security Lake service. This includes subscriber status, endpoint type, and subscription creation time.
-ID: aws_securitylake_subscriber_4
-IntegrationType:
+id: aws_securitylake_subscriber_4
+type: query
+title: Find all subscribers in AWS Security Lake with details
+description: Allows users to query AWS Security Lake Subscriber data, providing information about each subscriber's details in the AWS Security Lake service. This includes subscriber status, endpoint type, and subscription creation time.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       s.subscriber_name,
       s.subscription_id,
@@ -20,13 +17,12 @@ Query:
       aws_s3_bucket AS b
     WHERE
       s.s3_bucket_arn = b.arn;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_data_security:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Security Lake
-Title: Find all subscribers in AWS Security Lake with details
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_data_security:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Security Lake

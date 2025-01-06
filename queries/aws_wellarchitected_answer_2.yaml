@@ -1,13 +1,10 @@
-Description: Allows users to query AWS Well-Architected Tool Answer data, including information about the workloads, lens, and questions associated with each answer.
-ID: aws_wellarchitected_answer_2
-IntegrationType:
+id: aws_wellarchitected_answer_2
+type: query
+title: List all AWS Well-Architected Tool Answers by Workload and Pillar
+description: Allows users to query AWS Well-Architected Tool Answer data, including information about the workloads, lens, and questions associated with each answer.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables: []
-  Parameters: []
-  PrimaryTable: null
-  QueryToExecute: |
+query: |
     SELECT
       a.workload_id,
       a.pillar_id,
@@ -17,13 +14,12 @@ Query:
     GROUP BY
       a.workload_id,
       a.pillar_id;
-Tags:
-  cloud_asset_management:
-    - "true"
-  cloud_ops:
-    - "true"
-  cloud_provider:
-    - aws
-  cloud_service:
-    - Well-Architected Tool
-Title: List all AWS Well-Architected Tool Answers by Workload and Pillar
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Well-Architected Tool

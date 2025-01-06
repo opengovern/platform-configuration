@@ -1,14 +1,10 @@
-Description: EKS clusters running anything other than 1.27, 1.26, 1.25, 1.24, 1.23
-ID: aws_insight_deprecated_eks
-IntegrationType:
+id: aws_insight_deprecated_eks
+type: query
+title: Deprecated EKS clusters
+description: EKS clusters running anything other than 1.27, 1.26, 1.25, 1.24, 1.23
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - aws_eks_cluster
-  Parameters: []
-  PrimaryTable: aws_eks_cluster
-  QueryToExecute: |
+query: |
     SELECT 
       name, 
       arn, 
@@ -24,11 +20,10 @@ Query:
       AND version != '1.25' 
       AND version != '1.24' 
       AND version != '1.23'
-Tags:
-  category:
-    - Technical Debt
-  persona:
-    - Executive
-    - Product
-    - FinOps
-Title: Deprecated EKS clusters
+tags:
+    category:
+      - Technical Debt
+    persona:
+      - Executive
+      - Product
+      - FinOps

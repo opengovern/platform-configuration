@@ -1,14 +1,10 @@
-Description: List application Load Balancers without logging
-ID: aws_insight_loadbalancer_application_no_logging
-IntegrationType:
+id: aws_insight_loadbalancer_application_no_logging
+type: query
+title: Application Load Balancers without logging
+description: List application Load Balancers without logging
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - aws_ec2_application_load_balancer
-  Parameters: []
-  PrimaryTable: aws_ec2_application_load_balancer
-  QueryToExecute: |
+query: |
     SELECT
       name,
       lb ->> 'Key' AS logging_key,
@@ -23,10 +19,9 @@ Query:
     WHERE
       lb ->> 'Key' = 'access_logs.s3.enabled'
       AND lb ->> 'Value' = 'false';
-Tags:
-  category:
-    - Technical Debt
-  persona:
-    - Security
-    - DevOps
-Title: Application Load Balancers without logging
+tags:
+    category:
+      - Technical Debt
+    persona:
+      - Security
+      - DevOps

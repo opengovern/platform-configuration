@@ -1,14 +1,10 @@
-Description: AWS Account with more than 1 SAML provider
-ID: aws_insight_account_with_many_saml_providers
-IntegrationType:
+id: aws_insight_account_with_many_saml_providers
+type: query
+title: AWS Account with many SAML providers
+description: AWS Account with more than 1 SAML provider
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: CloudQL-v0.0.1
-  ListOfTables:
-    - aws_iam_credential_report
-  Parameters: []
-  PrimaryTable: aws_iam_credential_report
-  QueryToExecute: |
+query: |
     SELECT
       account_id,
       platform_account_id,
@@ -38,12 +34,11 @@ Query:
     ) AS final
     WHERE saml_provider_count > 1
     GROUP BY account_id, platform_account_id
-Tags:
-  category:
-    - Security
-  persona:
-    - DevOps
-    - Security
-    - Executive
-    - Product
-Title: AWS Account with many SAML providers
+tags:
+    category:
+      - Security
+    persona:
+      - DevOps
+      - Security
+      - Executive
+      - Product
