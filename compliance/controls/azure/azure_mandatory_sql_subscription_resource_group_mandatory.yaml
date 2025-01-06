@@ -5,7 +5,7 @@ integration_type:
   - azure_subscription
 parameters:
   - key: azureMandatoryTags
-    default: '["name","environment"]'
+    value: '["name","environment"]'
 policy:
   language: sql
   primary_resource: azure_resource_group
