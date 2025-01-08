@@ -3,13 +3,6 @@ parameters:
   - key: awsRdsBaselineRestorableTimeInHrs
     value: 72
 
-  # A key with some controls (not global)
-  - key: awsMandatoryTags
-    value: '{"name", "env"}'
-    controls:
-      - "ControlC"
-      - "ControlD"
-
   - key: awsMandatoryTags
     value: '{"name", "env"}'
 
