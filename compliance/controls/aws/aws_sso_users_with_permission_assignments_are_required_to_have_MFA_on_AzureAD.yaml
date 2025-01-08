@@ -1,6 +1,6 @@
 id: aws_sso_users_with_permission_assignments_are_required_to_have_MFA_on_AzureAD
-title: AWS SSO Users with Permission Assignments are required to have MFA on AzureAD
-description: AWS SSO Users with Permission Assignments are required to have MFA on AzureAD
+title: AWS SSO Users with Permissions Require MFA
+description: AWS SSO Users with Permission Assignments are required to have MFA configured in IdP (EntraID)
 integration_type:
   - aws_cloud_account
   - azure_subscription
