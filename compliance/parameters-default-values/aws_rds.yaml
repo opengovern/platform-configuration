@@ -1,0 +1,19 @@
+parameters:
+  # A key with no controls (global)
+  - key: awsRdsBaselineRestorableTimeInHrs
+    value: 72
+
+  # A key with some controls (not global)
+  - key: awsMandatoryTags
+    value: '{"name", "env"}'
+    controls:
+      - "ControlC"
+      - "ControlD"
+
+  # Another key with no controls (global)
+  - key: awsIamUserKeyRotateDays
+    value: 90
+
+  # Another key with no controls (global)
+  - key: awsIamServerCertificateAge
+    value: 90
