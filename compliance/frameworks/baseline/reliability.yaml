@@ -78,7 +78,7 @@ framework:
                 - "Baseline"
           controls:
             - aws_use_aws_backup_service_in_use_for_amazon_rds
-            - aws_rds_automated_backups_enabled
+            - aws_rds_automated_backups_enabled_test
             - aws_backtrack
             - aws_aurora_database_instance_accessibility
             - aws_dynamodb_instances_have_backup_with_lifecyclepolicy_above_35_days

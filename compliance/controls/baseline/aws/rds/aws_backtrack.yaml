@@ -23,7 +23,7 @@ policy:
           region,
           account_id
         FROM
-          aws_rds_db_cluster
+          aws_rds_db_cluster_error
         WHERE
           engine = 'aurora-mysql' OR engine = 'aurora-postgresql'
 severity: low
