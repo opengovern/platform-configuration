@@ -1,5 +1,5 @@
 id: aws_backtrack
-title: Backtrack
+title: Amazon Aurora Backtrack is required for Production Clusters
 description: Enable Amazon Aurora Backtrack.
 integration_type:
   - aws_cloud_account
