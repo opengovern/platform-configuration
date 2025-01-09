@@ -26,7 +26,7 @@ framework:
             - "Baseline"
       control-group:
         - id: aws_baseline_reliability_infrastructure
-          title: "AWS Reliability - Infrastructure"
+          title: "Infrastructure"
           description: "Ensures AWS infrastructure follows best practices for reliability."
           section-code: "aws_baseline_reliability_infrastructure"
           metadata:
@@ -49,7 +49,7 @@ framework:
             - aws_check_for_amazon_ecs_service_placement_strategy
 
         - id: aws_baseline_reliability_monitoring
-          title: "AWS Reliability - Monitoring & Alerts"
+          title: "Monitoring & Alerts"
           description: "Ensures AWS monitoring systems are in place to detect and respond to reliability events."
           section-code: "aws_baseline_reliability_monitoring"
           metadata:
@@ -67,7 +67,7 @@ framework:
             - aws_kubernetes_cluster_version
 
         - id: aws_baseline_reliability_backup
-          title: "AWS Reliability - Backup & Recovery"
+          title: "Backup & Recovery"
           description: "Ensures backups and recovery systems are in place for AWS services."
           section-code: "aws_baseline_reliability_backup"
           metadata:
@@ -104,7 +104,7 @@ framework:
             - "Baseline"
       control-group:
         - id: azure_baseline_reliability_infrastructure
-          title: "Azure Reliability - Infrastructure"
+          title: "Infrastructure"
           description: "Ensures Azure infrastructure follows best practices for reliability."
           section-code: "azure_baseline_reliability_infrastructure"
           metadata:
@@ -124,7 +124,7 @@ framework:
             - azure_check_for_guest_level_diagnostics_for_virtual_machines
 
         - id: azure_baseline_reliability_backup
-          title: "Azure Reliability - Backup & Recovery"
+          title: "Backup & Recovery"
           description: "Ensures backups and recovery systems are in place for Azure services."
           section-code: "azure_baseline_reliability_backup"
           metadata:
@@ -143,7 +143,7 @@ framework:
             - azure_enable_auto_failover_groups
 
         - id: azure_baseline_reliability_monitoring
-          title: "Azure Reliability - Monitoring & Alerts"
+          title: "Monitoring & Alerts"
           description: "Ensures Azure monitoring systems are in place to detect and respond to reliability events."
           section-code: "azure_baseline_reliability_monitoring"
           metadata:
