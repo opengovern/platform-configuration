@@ -1,0 +1,23 @@
+id: all_docker_base_images
+type: query
+title: Docker Base Images
+description: Get all Docker base images
+integration_type:
+  - github_account
+query: |
+  SELECT image AS "Base Image",
+         COUNT(*) AS "Count"
+  FROM (
+    SELECT DISTINCT sha,
+           jsonb_array_elements_text(images) AS image
+    FROM github_artifact_dockerfile
+  ) AS expanded
+  GROUP BY image
+  ORDER BY "Count" DESC;
+tags:
+  cloud_provider:
+    - github
+  cloud_service:
+    - DevOps
+  platform_queries_bookmark:
+    - 'true'
