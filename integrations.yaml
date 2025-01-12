@@ -656,14 +656,14 @@ plugins:
 
   - id: 44
     integration_type: "Tailscale"
-    name: "GitHub"
+    name: "Tailscale"
     tier: "Community"
     tags:
       usage:
         - "VPN"
         - "Code Security"
     description: "Gain visibility in to Tailscale"
-    icon: "github.svg"
+    icon: "tailscale.svg"
     availability: "GA"
     source_code: "https://github.com/opengovern/og-describer-tailscale"
     package_type: "plugin"
