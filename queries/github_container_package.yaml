@@ -18,4 +18,11 @@ query: |
         OR name = ANY(STRING_TO_ARRAY('{{.github_package}}', ','))
       )
       LIMIT {{.limit_of_packages}};
-tags: {}
+tags: 
+  cloud_provider:
+    - github
+  cloud_service:
+    - DevOps
+  platform_queries_bookmark:
+    - 'true'
+
