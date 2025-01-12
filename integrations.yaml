@@ -1,0 +1,689 @@
+type: integrations
+plugins:
+  - id: 1
+    integration_type: "aws_cloud_account"
+    name: "Amazon Web Services (AWS)"
+    tier: "Community"
+    tags:
+      usage:
+        - "Public Cloud"
+    description: "Get visibility into 400+ cloud assets."
+    icon: "aws.svg"
+    availability: "GA"
+    source_code: "https://github.com/opengovern/og-describer-aws"
+    package_type: "classic"
+    artifact_details:
+      package_url: "ghcr.io/opengovern/og-describer-aws"
+      package_tag: "local-latest"
+
+  - id: 2
+    integration_type: "azure_subscription"
+    name: "Microsoft Azure Subscription"
+    tier: "Community"
+    tags:
+      usage:
+        - "Public Cloud"
+    description: "Inventory 150+ cloud assets and subs."
+    icon: "azure.svg"
+    availability: "GA"
+    source_code: "https://github.com/opengovern/og-describer-azure"
+    package_type: "classic"
+    artifact_details:
+      package_url: "ghcr.io/opengovern/og-describer-azure"
+      package_tag: "local-latest"
+
+  - id: 3
+    integration_type: "entraid_directory"
+    name: "Microsoft EntraID Directory"
+    tier: "Community"
+    tags:
+      usage:
+        - "Identity Providers"
+    description: "Discover Users, Identities, Apps, Accounts."
+    icon: "entraid.svg"
+    availability: "GA"
+    source_code: "https://github.com/opengovern/og-describer-entraid"
+    package_type: "classic"
+    artifact_details:
+      package_url: "ghcr.io/opengovern/og-describer-entraid"
+      package_tag: "local-latest"
+
+  - id: 4
+    integration_type: "github_account"
+    name: "GitHub"
+    tier: "Community"
+    tags:
+      usage:
+        - "DevOps"
+        - "Code Security"
+    description: "Gain visibility into Repos, Deployments, PRs."
+    icon: "github.svg"
+    availability: "GA"
+    source_code: "https://github.com/opengovern/og-describer-github"
+    package_type: "plugin"
+    artifact_details:
+      package_url: "ghcr.io/opengovern/og-describer-github"
+      package_tag: "local-latest"
+
+  - id: 5
+    integration_type: "digitalocean_team"
+    name: "DigitalOcean"
+    tier: "Community"
+    tags:
+      usage:
+        - "Public Cloud"
+    description: "Manage DigitalOcean resources and droplets."
+    icon: "digitalocean.svg"
+    availability: "GA"
+    source_code: "https://github.com/opengovern/og-describer-digitalocean"
+    package_type: "classic"
+    artifact_details:
+      package_url: "ghcr.io/opengovern/og-describer-digitalocean"
+      package_tag: "local-latest"
+
+  - id: 6
+    integration_type: "cloudflare_account"
+    name: "Cloudflare"
+    tier: "Community"
+    tags:
+      usage:
+        - "Web Security"
+    description: "Gain visibility into DNS, WAFs, Firewall Rules."
+    icon: "cloudflare.svg"
+    availability: "GA"
+    source_code: "https://github.com/opengovern/og-describer-cloudflare"
+    package_type: "classic"
+    artifact_details:
+      package_url: "ghcr.io/opengovern/og-describer-cloudflare"
+      package_tag: "local-latest"
+
+  - id: 7
+    integration_type: "openai_integration"
+    name: "OpenAI"
+    tier: "Community"
+    tags:
+      usage:
+        - "AI Services"
+    description: "Integrate OpenAI for language models and AI."
+    icon: "openai.svg"
+    availability: "GA"
+    source_code: "https://github.com/opengovern/og-describer-openai"
+    package_type: "classic"
+    artifact_details:
+      package_url: "ghcr.io/opengovern/og-describer-openai"
+      package_tag: "local-latest"
+
+  - id: 8
+    integration_type: "linode_account"
+    name: "Linode (Akamai)"
+    tier: "Community"
+    tags:
+      usage:
+        - "Public Cloud"
+    description: "Connect Linode to manage cloud accounts."
+    icon: "linode.svg"
+    availability: "GA"
+    source_code: "https://github.com/opengovern/og-describer-linode"
+    package_type: "classic"
+    artifact_details:
+      package_url: "ghcr.io/opengovern/og-describer-linode"
+      package_tag: "local-latest"
+
+  - id: 9
+    integration_type: "cohereai_project"
+    name: "CohereAI"
+    tier: "Community"
+    tags:
+      usage:
+        - "AI Services"
+    description: "Integrate Cohere AI for language models and AI."
+    icon: "cohereai.svg"
+    availability: "GA"
+    source_code: "https://github.com/opengovern/og-describer-cohereai"
+    package_type: "classic"
+    artifact_details:
+      package_url: "ghcr.io/opengovern/og-describer-cohereai"
+      package_tag: "local-latest"
+
+  - id: 10
+    integration_type: "google_workspace_account"
+    name: "Google Workspace"
+    tier: "Community"
+    tags:
+      usage:
+        - "Identity Providers"
+        - "Collaboration"
+    description: "Inventory and govern Identities, Users, Groups."
+    icon: "gcp.svg"
+    availability: "GA"
+    source_code: "https://github.com/opengovern/og-describer-googleworkspace"
+    package_type: "classic"
+    artifact_details:
+      package_url: "ghcr.io/opengovern/og-describer-googleworkspace"
+      package_tag: "local-latest"
+
+  - id: 11
+    integration_type: "oci_repository"
+    name: "OCI Repository"
+    tier: "Premium"
+    tags: {}
+    description: "Get visibility into your images."
+    icon: "oci.svg"
+    availability: "PREVIEW"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 12
+    integration_type: "render_account"
+    name: "Render"
+    tier: "Community"
+    tags:
+      usage:
+        - "DevOps"
+    description: " Manage Render resources and deployments."
+    icon: "render.svg"
+    availability: "GA"
+    source_code: "https://github.com/opengovern/og-describer-render"
+    package_type: "classic"
+    artifact_details:
+      package_url: "ghcr.io/opengovern/og-describer-render"
+      package_tag: "local-latest"
+
+  - id: 13
+    integration_type: "doppler_account"
+    name: "Doppler"
+    tier: "Community"
+    tags:
+      usage:
+        - "Secrets Management"
+    description: "Manage and sync env variables and secrets."
+    icon: "doppler.svg"
+    availability: "GA"
+    source_code: "https://github.com/opengovern/og-describer-doppler"
+    package_type: "classic"
+    artifact_details:
+      package_url: "ghcr.io/opengovern/og-describer-doppler"
+      package_tag: "local-latest"
+
+  - id: 14
+    integration_type: "slack_account"
+    name: "Slack"
+    tier: "Premium"
+    tags:
+      usage:
+        - "Communication"
+        - "Collaboration"
+    description: "Connect Slack to manage channels and messages."
+    icon: "slack.svg"
+    availability: "PREVIEW"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 15
+    integration_type: "jira_cloud"
+    name: "Atlassian JIRA Cloud"
+    tier: "Premium"
+    tags:
+      usage:
+        - "General"
+    description: "Connect to JIRA for tickets, projects."
+    icon: "jira.svg"
+    availability: "Planned for Dec 2024"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 16
+    integration_type: "chainguard_dev_account"
+    name: "Chainguard.dev"
+    tier: "Premium"
+    tags:
+      usage:
+        - "Code Security"
+    description: "Integrate Chainguard for code security."
+    icon: "Chainguard_dev.svg"
+    availability: "Planned for Dec 2024"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 17
+    integration_type: "godaddy_account"
+    name: "GoDaddy"
+    tier: "Premium"
+    tags:
+      usage:
+        - "General"
+    description: "Discover certificates, domains, and statuses."
+    icon: ""
+    availability: "Planned for Dec 2024"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 18
+    integration_type: "servicenow_account"
+    name: "ServiceNow"
+    tier: "Premium"
+    tags:
+      usage:
+        - "General"
+    description: "Connect CMDBs, Incidents, Tickets."
+    icon: "servicenow.png"
+    availability: "Planned for Dec 2024"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 19
+    integration_type: "okta_account"
+    name: "Okta"
+    tier: "Premium"
+    tags:
+      usage:
+        - "Identity Providers"
+        - "Identity Security"
+    description: "Discover Okta Users & Identities."
+    icon: "okta.svg"
+    availability: "Planned for Dec 2024"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 20
+    integration_type: "aws_costs"
+    name: "Amazon Web Services (AWS) Costs"
+    tier: "Premium"
+    tags:
+      usage:
+        - "Cost Management"
+        - "Cloud Security"
+    description: "Monitor AWS cloud costs and usage."
+    icon: "aws_costs.svg"
+    availability: "Planned for Dec 2024"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 21
+    integration_type: "azure_costs"
+    name: "Microsoft Azure Costs"
+    tier: "Premium"
+    tags:
+      usage:
+        - "Cost Management"
+        - "Cloud Security"
+    description: "Monitor Azure cloud costs and usage."
+    icon: "azure_costs.svg"
+    availability: "Planned for Dec 2024"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 22
+    integration_type: "semgrep_account"
+    name: "Semgrep"
+    tier: "Premium"
+    tags:
+      usage:
+        - "Code Security"
+    description: "Integrate Semgrep for code and security."
+    icon: "semgrep.svg"
+    availability: "Planned for Dec 2024"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 23
+    integration_type: "huggingface_account"
+    name: "HuggingFace"
+    tier: "Premium"
+    tags:
+      usage:
+        - "AI Services"
+    description: "Access ML models and AI via HuggingFace."
+    icon: "huggingface.svg"
+    availability: "Planned for Jan 2025"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 24
+    integration_type: "kubernetes"
+    name: "Kubernetes"
+    tier: "Community"
+    tags:
+      usage:
+        - "DevOps"
+        - "Containers"
+    description: "Gain visibility into Kubernetes objects."
+    icon: "kubernetes.svg"
+    availability: "Planned for Jan 2025"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 25
+    integration_type: "jamf_account"
+    name: "Jamf"
+    tier: "Premium"
+    tags:
+      usage:
+        - "Device Management"
+    description: "See devices, configurations, policies."
+    icon: ""
+    availability: "Planned for Jan 2025"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 26
+    integration_type: "jumpcloud_account"
+    name: "JumpCloud"
+    tier: "Premium"
+    tags:
+      usage:
+        - "Identity Providers"
+        - "Device Management"
+    description: "Manage users, devices with JumpCloud."
+    icon: "jumpcloud.svg"
+    availability: "Planned for Jan 2025"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 25
+    integration_type: "gitlab_account"
+    name: "GitLab"
+    tier: "Community"
+    tags:
+      usage:
+        - "DevOps"
+        - "Code Security"
+    description: "Gain visibility into Projects, MRs, Issues."
+    icon: "gitlab.svg"
+    availability: "Planned for Jan 2025"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 27
+    integration_type: "oracle_cloud_account"
+    name: "Oracle Cloud"
+    tier: "Premium"
+    tags:
+      usage:
+        - "Public Cloud"
+    description: "Integrate Oracle Cloud, manage resources."
+    icon: "oracle_cloud.svg"
+    availability: "Planned for Jan 2025"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 28
+    integration_type: "teleport_account"
+    name: "Teleport"
+    tier: "Premium"
+    tags:
+      usage:
+        - "Identity Security"
+        - "Access Management"
+    description: "Manage infrastructure access via Teleport."
+    icon: "teleport.svg"
+    availability: "Planned for Jan 2025"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 29
+    integration_type: "monday_com_account"
+    name: "Monday.com"
+    tier: "Premium"
+    tags:
+      usage:
+        - "Project Management"
+    description: "Manage projects, tasks via Monday.com."
+    icon: "monday_com.svg"
+    availability: "Planned for Jan 2025"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 30
+    integration_type: "rubrik_account"
+    name: "Rubrik"
+    tier: "Premium"
+    tags:
+      usage:
+        - "Data Security"
+    description: "Discover Hosts, Clusters, Databases."
+    icon: ""
+    availability: "Planned for Jan 2025"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 31
+    integration_type: "commvault_account"
+    name: "CommVault"
+    tier: "Premium"
+    tags:
+      usage:
+        - "Data Security"
+    description: "Track protected Databases, File Shares."
+    icon: ""
+    availability: "Planned for Jan 2025"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 32
+    integration_type: "bitbucket_cloud"
+    name: "Bitbucket Cloud"
+    tier: "Premium"
+    tags:
+      usage:
+        - "DevOps"
+        - "Other"
+    description: "Discover Code Repos, Pipelines, Runners."
+    icon: "bitbucket.svg"
+    availability: "Planned for Jan 2025"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 33
+    integration_type: "veracode_account"
+    name: "Veracode"
+    tier: "Premium"
+    tags:
+      usage:
+        - "Code Security"
+    description: "Inventory governed repos, scans, findings."
+    icon: ""
+    availability: "Planned for Feb 2025"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 34
+    integration_type: "splunk_enterprise_security"
+    name: "Splunk Enterprise Security"
+    tier: "Premium"
+    tags:
+      usage:
+        - "Cloud Security"
+    description: "Gain insights into workloads, apps, threats."
+    icon: "cisco.svg"
+    availability: "Planned for Feb 2025"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 35
+    integration_type: "microsoft_sentinel"
+    name: "Microsoft Sentinel"
+    tier: "Premium"
+    tags:
+      usage:
+        - "SIEM"
+    description: "Discover Alerts, Incidents, Entities."
+    icon: ""
+    availability: "Planned for Feb 2025"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 36
+    integration_type: "rapid7_insightidr"
+    name: "Rapid7 InsightIDR"
+    tier: "Premium"
+    tags:
+      usage:
+        - "SIEM"
+    description: "Discover assets, alerts, configuration."
+    icon: ""
+    availability: "Planned for Feb 2025"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 37
+    integration_type: "datadog_cloud_siem"
+    name: "Datadog Cloud SIEM"
+    tier: "Premium"
+    tags:
+      usage:
+        - "Cloud Security"
+        - "SIEM"
+    description: "Discover security threats in cloud environments."
+    icon: "datadog.svg"
+    availability: "Planned for Feb 2025"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 38
+    integration_type: "intruder_io"
+    name: "IntruderIO"
+    tier: "Premium"
+    tags:
+      usage:
+        - "Web Security"
+        - "Application Security"
+    description: "Discover vulnerabilities for network."
+    icon: ""
+    availability: "Planned for Feb 2025"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 39
+    integration_type: "cobalt_io"
+    name: "CobaltIO"
+    tier: "Premium"
+    tags:
+      usage:
+        - "Web Security"
+    description: "See Assets, Findings, Scans, Events."
+    icon: ""
+    availability: "Planned for Feb 2025"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 40
+    integration_type: "appdynamics_saas"
+    name: "Cisco AppDynamics (SaaS)"
+    tier: "Premium"
+    tags:
+      usage:
+        - "Monitoring"
+        - "DevOps"
+    description: "Inventory, Apps, nodes, Tiers, Health Rules."
+    icon: "cisco.svg"
+    availability: "Planned for Feb 2025"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 41
+    integration_type: "cisco_duo"
+    name: "Cisco Duo"
+    tier: "Premium"
+    tags:
+      usage:
+        - "Identity Providers"
+        - "Identity Security"
+    description: "Track MFA, Identities, Policies."
+    icon: "cisco.svg"
+    availability: "Planned for Feb 2025"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 42
+    integration_type: "cisco_meraki"
+    name: "Cisco Meraki"
+    tier: "Premium"
+    tags:
+      usage:
+        - "Network Management"
+    description: "Inventory Networks, Gateways, Radios."
+    icon: "cisco.svg"
+    availability: "Planned for Feb 2025"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 43
+    integration_type: "fly_io_account"
+    name: "Fly.io"
+    tier: "Premium"
+    tags:
+      usage:
+        - "DevOps"
+        - "Cloud Services"
+    description: "Deploy and manage applications with Fly.io."
+    icon: "fly_io.svg"
+    availability: "Planned for Dec 2024"
+    source_code: ""
+    package_type: "classic"
+    artifact_details: {}
+
+  - id: 44
+    integration_type: "Tailscale"
+    name: "GitHub"
+    tier: "Community"
+    tags:
+      usage:
+        - "VPN"
+        - "Code Security"
+    description: "Gain visibility in to Tailscale"
+    icon: "github.svg"
+    availability: "GA"
+    source_code: "https://github.com/opengovern/og-describer-tailscale"
+    package_type: "plugin"
+    artifact_details:
+      package_url: "ghcr.io/opengovern/og-describer-tailscale"
+      package_tag: "local-latest"
+
+  - id: 45
+    integration_type: "github_cloud"
+    name: "GitHub Cloud"
+    tier: "Community"
+    tags:
+      usage:
+        - "DevOps"
+        - "Code Security"
+    description: "Gain visibility into Repos, Deployments, PRs."
+    icon: "github.svg"
+    availability: "GA"
+    source_code: "https://github.com/opengovern/og-describer-github"
+    package_type: "plugin"
+    artifact_details:
+      package_url: "ghcr.io/opengovern/og-describer-github"
+      package_tag: "local-latest"
