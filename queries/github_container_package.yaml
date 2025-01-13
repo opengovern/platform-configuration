@@ -4,6 +4,11 @@ title: Find Container Packages to be utilized in tasks
 description: Find Container Packages in GitHub for tasks
 integration_type:
   - github_account
+parameters:
+  - key: github_package
+    value: '*'
+  - key: limit_of_packages
+    value: '100'
 query: |
     SELECT
       id,
@@ -14,10 +19,10 @@ query: |
       github_container_package
     WHERE
       (
-        COALESCE('{{.github_package}}', '*') = '*'
+        COALESCE(NULLIF('{{.github_package}}', '<no value>'), '*') = '*'
         OR name = ANY(STRING_TO_ARRAY('{{.github_package}}', ','))
       )
-      LIMIT {{.limit_of_packages}};
+    LIMIT COALESCE(NULLIF('{{.limit_of_packages}}', '<no value>'), '100')::INTEGER;
 tags: 
   cloud_provider:
     - github
