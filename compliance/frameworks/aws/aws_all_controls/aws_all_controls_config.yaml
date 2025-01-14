@@ -1,9 +1,14 @@
-ID: aws_all_controls_config
-Title: Config
-Description: This section contains recommendations for configuring Config resources.
-SectionCode: config
-Children: []
-Controls:
-    - aws_config_configuration_recorder_no_failed_deliver_logs
-    - aws_config_enabled_all_regions
-Tags: {}
+control-group:
+  id: aws_all_controls_config
+  title: Config
+  description: This section contains recommendations for configuring Config resources.
+  section-code: config
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - aws_config_configuration_recorder_no_failed_deliver_logs
+  - aws_config_enabled_all_regions

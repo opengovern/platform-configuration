@@ -1,20 +1,25 @@
-ID: aws_ffiec_d_3_dc_th_b_1
-Title: D3.DC.Th.B.1
-Description: Independent testing (including penetration testing and vulnerability scanning) is conducted according to the risk assessment for external-facing systems and the internal network.
-SectionCode: th_b_1
-Children: []
-Controls:
-    - aws_guardduty_enabled
-    - aws_securityhub_enabled
-    - aws_ssm_managed_instance_compliance_patch_compliant
-Tags:
-    category:
-        - Compliance
-    ffiec:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_ffiec_d_3_dc_th_b_1
+  title: D3.DC.Th.B.1
+  description: Independent testing (including penetration testing and vulnerability scanning) is conducted according to the risk assessment for external-facing systems and the internal network.
+  section-code: th_b_1
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      ffiec:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_guardduty_enabled
+  - aws_securityhub_enabled
+  - aws_ssm_managed_instance_compliance_patch_compliant

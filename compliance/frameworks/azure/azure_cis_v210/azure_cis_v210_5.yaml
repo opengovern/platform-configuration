@@ -1,12 +1,18 @@
-ID: azure_cis_v210_5
-Title: Logging and Monitoring
-Description: ""
-SectionCode: "5"
-Children:
-    - azure_cis_v210_5_1
-    - azure_cis_v210_5_2
-    - azure_cis_v210_5_3
-    - azure_cis_v210_5_5
-Controls:
-    - azure_cis_v210_5_4
-Tags: {}
+control-group:
+  id: azure_cis_v210_5
+  title: Logging and Monitoring
+  description: Logging and Monitoring
+  section-code: "5"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  control-group:
+  - id: azure_cis_v210_5_1
+  - id: azure_cis_v210_5_2
+  - id: azure_cis_v210_5_3
+  - id: azure_cis_v210_5_5
+  controls:
+  - azure_cis_v210_5_4

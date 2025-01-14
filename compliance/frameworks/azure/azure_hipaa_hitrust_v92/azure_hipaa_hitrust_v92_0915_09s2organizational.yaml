@@ -1,18 +1,23 @@
-ID: azure_hipaa_hitrust_v92_0915_09s2organizational
-Title: 09s2Organizational.2-09.s 09.08 Exchange of Information
-Description: The organization limits the use of organization-controlled portable storage media by authorized individuals on external information systems.
-SectionCode: azure_hipaa_hitrust_v92_0915_09s2organizational
-Children: []
-Controls:
-    - azure_appservice_api_app_client_certificates_on
-Tags:
-    category:
-        - Compliance
-    hipaa_hitrust_v92:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure/AppService
-    type:
-        - Benchmark
+control-group:
+  id: azure_hipaa_hitrust_v92_0915_09s2organizational
+  title: 09s2Organizational.2-09.s 09.08 Exchange of Information
+  description: The organization limits the use of organization-controlled portable storage media by authorized individuals on external information systems.
+  section-code: azure_hipaa_hitrust_v92_0915_09s2organizational
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      hipaa_hitrust_v92:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure/AppService
+      type:
+      - Benchmark
+  controls:
+  - azure_appservice_api_app_client_certificates_on

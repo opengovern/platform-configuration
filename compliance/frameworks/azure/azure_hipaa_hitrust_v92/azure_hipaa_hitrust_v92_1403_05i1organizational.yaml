@@ -1,18 +1,23 @@
-ID: azure_hipaa_hitrust_v92_1403_05i1organizational
-Title: Access granted to external parties is limited to the minimum necessary and granted only for the duration required
-Description: ""
-SectionCode: azure_hipaa_hitrust_v92_1403_05i1organizational
-Children: []
-Controls:
-    - azure_appservice_api_app_use_https
-Tags:
-    category:
-        - Compliance
-    hipaa_hitrust_v92:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure/AppService
-    type:
-        - Benchmark
+control-group:
+  id: azure_hipaa_hitrust_v92_1403_05i1organizational
+  title: Access granted to external parties is limited to the minimum necessary and granted only for the duration required
+  description: Access granted to external parties is limited to the minimum necessary and granted only for the duration required
+  section-code: azure_hipaa_hitrust_v92_1403_05i1organizational
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      hipaa_hitrust_v92:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure/AppService
+      type:
+      - Benchmark
+  controls:
+  - azure_appservice_api_app_use_https

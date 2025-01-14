@@ -1,18 +1,23 @@
-ID: aws_gxp_eu_annex_11_project_phase_4_2
-Title: Validation - Documentation Change Control
-Description: Validation documentation should include change control records (if applicable) and reports on any deviations observed during the validation process.
-SectionCode: "2"
-Children: []
-Controls:
-    - aws_cloudtrail_trail_enabled
-Tags:
-    category:
-        - Compliance
-    gxp_eu_annex_11:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_gxp_eu_annex_11_project_phase_4_2
+  title: Validation - Documentation Change Control
+  description: Validation documentation should include change control records (if applicable) and reports on any deviations observed during the validation process.
+  section-code: "2"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      gxp_eu_annex_11:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_cloudtrail_trail_enabled

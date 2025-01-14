@@ -1,19 +1,24 @@
-ID: aws_cis_controls_v8_ig1_6_5
-Title: Require MFA for Administrative Access
-Description: Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a third-party provider.
-SectionCode: "5"
-Children: []
-Controls:
-    - aws_iam_root_user_mfa_enabled
-    - aws_iam_user_console_access_mfa_enabled
-Tags:
-    category:
-        - Compliance
-    cis_controls_v8_ig1:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_cis_controls_v8_ig1_6_5
+  title: Require MFA for Administrative Access
+  description: Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a third-party provider.
+  section-code: "5"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cis_controls_v8_ig1:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_iam_root_user_mfa_enabled
+  - aws_iam_user_console_access_mfa_enabled

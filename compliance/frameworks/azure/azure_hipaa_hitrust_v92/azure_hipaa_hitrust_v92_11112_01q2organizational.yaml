@@ -1,18 +1,23 @@
-ID: azure_hipaa_hitrust_v92_11112_01q2organizational
-Title: 01q2Organizational.67-01.q 01.05 Operating System Access Control
-Description: The information system employs replay-resistant authentication mechanisms such as nonce, one-time passwords, or time stamps to secure network access for privileged accounts; and, for hardware token-based authentication, employs mechanisms that satisfy minimum token requirements discussed in NIST SP 800-63-2, Electronic Authentication Guideline.
-SectionCode: azure_hipaa_hitrust_v92_11112_01q2organizational
-Children: []
-Controls:
-    - azure_iam_subscription_owner_max_3
-Tags:
-    category:
-        - Compliance
-    hipaa_hitrust_v92:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure/IAM
-    type:
-        - Benchmark
+control-group:
+  id: azure_hipaa_hitrust_v92_11112_01q2organizational
+  title: 01q2Organizational.67-01.q 01.05 Operating System Access Control
+  description: The information system employs replay-resistant authentication mechanisms such as nonce, one-time passwords, or time stamps to secure network access for privileged accounts; and, for hardware token-based authentication, employs mechanisms that satisfy minimum token requirements discussed in NIST SP 800-63-2, Electronic Authentication Guideline.
+  section-code: azure_hipaa_hitrust_v92_11112_01q2organizational
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      hipaa_hitrust_v92:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure/IAM
+      type:
+      - Benchmark
+  controls:
+  - azure_iam_subscription_owner_max_3

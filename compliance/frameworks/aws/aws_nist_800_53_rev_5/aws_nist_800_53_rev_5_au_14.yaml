@@ -1,20 +1,25 @@
-ID: aws_nist_800_53_rev_5_au_14
-Title: Session Audit (AU-14)
-Description: Capture, record and log user sessions. Remotely view all content related to a user session that starts at system start-up.
-SectionCode: "14"
-Children:
-    - aws_nist_800_53_rev_5_au_14_3
-    - aws_nist_800_53_rev_5_au_14_a
-    - aws_nist_800_53_rev_5_au_14_b
-Controls: []
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_au_14
+  title: Session Audit (AU-14)
+  description: Capture, record and log user sessions. Remotely view all content related to a user session that starts at system start-up.
+  section-code: "14"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_nist_800_53_rev_5_au_14_3
+  - id: aws_nist_800_53_rev_5_au_14_a
+  - id: aws_nist_800_53_rev_5_au_14_b

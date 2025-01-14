@@ -1,8 +1,13 @@
-ID: aws_foundational_security_fsx
-Title: FSx
-Description: ""
-SectionCode: fsx
-Children: []
-Controls:
-    - aws_foundational_security_fsx_1
-Tags: {}
+control-group:
+  id: aws_foundational_security_fsx
+  title: FSx
+  description: FSx
+  section-code: fsx
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - aws_foundational_security_fsx_1

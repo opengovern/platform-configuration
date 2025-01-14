@@ -1,24 +1,29 @@
-ID: aws_foundational_security_apigateway
-Title: API Gateway
-Description: ""
-SectionCode: apigateway
-Children: []
-Controls:
-    - aws_foundational_security_apigateway_1
-    - aws_foundational_security_apigateway_2
-    - aws_foundational_security_apigateway_3
-    - aws_foundational_security_apigateway_4
-    - aws_foundational_security_apigateway_5
-    - aws_foundational_security_apigateway_8
-    - aws_foundational_security_apigateway_9
-Tags:
-    aws_foundational_security:
-        - "true"
-    category:
-        - Compliance
-    plugin:
-        - aws
-    service:
-        - AWS/APIGateway
-    type:
-        - Benchmark
+control-group:
+  id: aws_foundational_security_apigateway
+  title: API Gateway
+  description: API Gateway
+  section-code: apigateway
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      aws_foundational_security:
+      - "true"
+      category:
+      - Compliance
+      plugin:
+      - aws
+      service:
+      - AWS/APIGateway
+      type:
+      - Benchmark
+  controls:
+  - aws_foundational_security_apigateway_1
+  - aws_foundational_security_apigateway_2
+  - aws_foundational_security_apigateway_3
+  - aws_foundational_security_apigateway_4
+  - aws_foundational_security_apigateway_5
+  - aws_foundational_security_apigateway_8
+  - aws_foundational_security_apigateway_9

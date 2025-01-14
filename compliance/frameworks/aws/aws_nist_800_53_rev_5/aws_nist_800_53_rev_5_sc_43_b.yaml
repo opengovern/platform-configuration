@@ -1,18 +1,23 @@
-ID: aws_nist_800_53_rev_5_sc_43_b
-Title: SC-43(b)
-Description: Authorize, monitor, and control the use of such components within the system.
-SectionCode: b
-Children: []
-Controls:
-    - aws_guardduty_enabled
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS/GuardDuty
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_sc_43_b
+  title: SC-43(b)
+  description: Authorize, monitor, and control the use of such components within the system.
+  section-code: b
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS/GuardDuty
+      type:
+      - Benchmark
+  controls:
+  - aws_guardduty_enabled

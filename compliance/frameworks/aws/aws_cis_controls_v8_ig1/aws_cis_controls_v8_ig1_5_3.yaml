@@ -1,18 +1,23 @@
-ID: aws_cis_controls_v8_ig1_5_3
-Title: Disable Dormant Accounts
-Description: Delete or disable any dormant accounts after a period of 45 days of inactivity, where supported.
-SectionCode: "3"
-Children: []
-Controls:
-    - aws_iam_user_unused_credentials_90
-Tags:
-    category:
-        - Compliance
-    cis_controls_v8_ig1:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_cis_controls_v8_ig1_5_3
+  title: Disable Dormant Accounts
+  description: Delete or disable any dormant accounts after a period of 45 days of inactivity, where supported.
+  section-code: "3"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cis_controls_v8_ig1:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_iam_user_unused_credentials_90

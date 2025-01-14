@@ -1,8 +1,13 @@
-ID: aws_all_controls_securityhub
-Title: Security Hub
-Description: This section contains recommendations for configuring Security Hub resources.
-SectionCode: securityhub
-Children: []
-Controls:
-    - aws_securityhub_enabled
-Tags: {}
+control-group:
+  id: aws_all_controls_securityhub
+  title: Security Hub
+  description: This section contains recommendations for configuring Security Hub resources.
+  section-code: securityhub
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - aws_securityhub_enabled

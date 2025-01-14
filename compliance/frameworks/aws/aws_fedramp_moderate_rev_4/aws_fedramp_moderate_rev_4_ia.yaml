@@ -1,19 +1,24 @@
-ID: aws_fedramp_moderate_rev_4_ia
-Title: benchmark.nist_800_53_rev_4_ia.title
-Description: benchmark.nist_800_53_rev_4_ia.description
-SectionCode: ia
-Children:
-    - aws_fedramp_moderate_rev_4_ia_2
-    - aws_fedramp_moderate_rev_4_ia_5
-Controls: []
-Tags:
-    category:
-        - Compliance
-    fedramp_moderate_rev_4:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_fedramp_moderate_rev_4_ia
+  title: benchmark.nist_800_53_rev_4_ia.title
+  description: benchmark.nist_800_53_rev_4_ia.description
+  section-code: ia
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      fedramp_moderate_rev_4:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_fedramp_moderate_rev_4_ia_2
+  - id: aws_fedramp_moderate_rev_4_ia_5

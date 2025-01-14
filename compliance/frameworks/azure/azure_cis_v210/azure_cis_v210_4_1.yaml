@@ -1,10 +1,15 @@
-ID: azure_cis_v210_4_1
-Title: SQL Server - Auditing
-Description: ""
-SectionCode: "1"
-Children: []
-Controls:
-    - azure_cis_v210_4_1_2
-    - azure_cis_v210_4_1_4
-    - azure_cis_v210_4_1_5
-Tags: {}
+control-group:
+  id: azure_cis_v210_4_1
+  title: SQL Server - Auditing
+  description: SQL Server - Auditing
+  section-code: "1"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - azure_cis_v210_4_1_2
+  - azure_cis_v210_4_1_4
+  - azure_cis_v210_4_1_5

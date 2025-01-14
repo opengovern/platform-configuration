@@ -1,18 +1,23 @@
-ID: azure_hipaa_hitrust_v92_1174_01j1organizational
-Title: The organization protects wireless access to systems containing sensitive information by authenticating both users and devices
-Description: ""
-SectionCode: azure_hipaa_hitrust_v92_1174_01j1organizational
-Children: []
-Controls:
-    - azure_iam_user_with_read_permission_on_subscription_mfa_enabled
-Tags:
-    category:
-        - Compliance
-    hipaa_hitrust_v92:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure/IAM
-    type:
-        - Benchmark
+control-group:
+  id: azure_hipaa_hitrust_v92_1174_01j1organizational
+  title: The organization protects wireless access to systems containing sensitive information by authenticating both users and devices
+  description: The organization protects wireless access to systems containing sensitive information by authenticating both users and devices
+  section-code: azure_hipaa_hitrust_v92_1174_01j1organizational
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      hipaa_hitrust_v92:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure/IAM
+      type:
+      - Benchmark
+  controls:
+  - azure_iam_user_with_read_permission_on_subscription_mfa_enabled

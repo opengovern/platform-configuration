@@ -1,19 +1,24 @@
-ID: aws_ffiec_d_3_dc_an_b_5
-Title: D3.DC.An.B.5
-Description: Elevated privileges are monitored.
-SectionCode: an_b_5
-Children: []
-Controls:
-    - aws_cloudtrail_trail_enabled
-    - aws_cloudtrail_trail_integrated_with_logs
-Tags:
-    category:
-        - Compliance
-    ffiec:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_ffiec_d_3_dc_an_b_5
+  title: D3.DC.An.B.5
+  description: Elevated privileges are monitored.
+  section-code: an_b_5
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      ffiec:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_cloudtrail_trail_enabled
+  - aws_cloudtrail_trail_integrated_with_logs

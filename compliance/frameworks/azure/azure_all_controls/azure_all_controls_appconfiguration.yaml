@@ -1,10 +1,15 @@
-ID: azure_all_controls_appconfiguration
-Title: App Configuration
-Description: This section contains recommendations for configuring App Configuration resources.
-SectionCode: appconfiguration
-Children: []
-Controls:
-    - azure_app_configuration_encryption_enabled
-    - azure_app_configuration_private_link_used
-    - azure_app_configuration_sku_standard
-Tags: {}
+control-group:
+  id: azure_all_controls_appconfiguration
+  title: App Configuration
+  description: This section contains recommendations for configuring App Configuration resources.
+  section-code: appconfiguration
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - azure_app_configuration_encryption_enabled
+  - azure_app_configuration_private_link_used
+  - azure_app_configuration_sku_standard

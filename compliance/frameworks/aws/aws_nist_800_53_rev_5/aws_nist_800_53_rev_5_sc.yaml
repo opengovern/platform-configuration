@@ -1,30 +1,35 @@
-ID: aws_nist_800_53_rev_5_sc
-Title: System and Communications Protection (SC)
-Description: The SC control family is responsible for systems and communications protection procedures. This includes boundary protection, protection of information at rest, collaborative computing devices, cryptographic protection, denial of service protection, and many others.
-SectionCode: sc
-Children:
-    - aws_nist_800_53_rev_5_sc_5
-    - aws_nist_800_53_rev_5_sc_6
-    - aws_nist_800_53_rev_5_sc_7
-    - aws_nist_800_53_rev_5_sc_8
-    - aws_nist_800_53_rev_5_sc_12
-    - aws_nist_800_53_rev_5_sc_13
-    - aws_nist_800_53_rev_5_sc_16
-    - aws_nist_800_53_rev_5_sc_22
-    - aws_nist_800_53_rev_5_sc_23
-    - aws_nist_800_53_rev_5_sc_25
-    - aws_nist_800_53_rev_5_sc_28
-    - aws_nist_800_53_rev_5_sc_36
-    - aws_nist_800_53_rev_5_sc_43
-Controls: []
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_sc
+  title: System and Communications Protection (SC)
+  description: The SC control family is responsible for systems and communications protection procedures. This includes boundary protection, protection of information at rest, collaborative computing devices, cryptographic protection, denial of service protection, and many others.
+  section-code: sc
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_nist_800_53_rev_5_sc_5
+  - id: aws_nist_800_53_rev_5_sc_6
+  - id: aws_nist_800_53_rev_5_sc_7
+  - id: aws_nist_800_53_rev_5_sc_8
+  - id: aws_nist_800_53_rev_5_sc_12
+  - id: aws_nist_800_53_rev_5_sc_13
+  - id: aws_nist_800_53_rev_5_sc_16
+  - id: aws_nist_800_53_rev_5_sc_22
+  - id: aws_nist_800_53_rev_5_sc_23
+  - id: aws_nist_800_53_rev_5_sc_25
+  - id: aws_nist_800_53_rev_5_sc_28
+  - id: aws_nist_800_53_rev_5_sc_36
+  - id: aws_nist_800_53_rev_5_sc_43

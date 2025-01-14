@@ -1,20 +1,25 @@
-ID: aws_foundational_security_eks
-Title: EKS
-Description: ""
-SectionCode: eks
-Children: []
-Controls:
-    - aws_foundational_security_eks_1
-    - aws_foundational_security_eks_2
-    - aws_foundational_security_eks_8
-Tags:
-    aws_foundational_security:
-        - "true"
-    category:
-        - Compliance
-    plugin:
-        - aws
-    service:
-        - AWS/EKS
-    type:
-        - Benchmark
+control-group:
+  id: aws_foundational_security_eks
+  title: EKS
+  description: EKS
+  section-code: eks
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      aws_foundational_security:
+      - "true"
+      category:
+      - Compliance
+      plugin:
+      - aws
+      service:
+      - AWS/EKS
+      type:
+      - Benchmark
+  controls:
+  - aws_foundational_security_eks_1
+  - aws_foundational_security_eks_2
+  - aws_foundational_security_eks_8

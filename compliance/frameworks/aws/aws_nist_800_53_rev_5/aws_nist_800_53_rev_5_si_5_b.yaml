@@ -1,19 +1,24 @@
-ID: aws_nist_800_53_rev_5_si_5_b
-Title: SI-5(b)
-Description: Generate internal security alerts, advisories, and directives as deemed necessary.
-SectionCode: b
-Children: []
-Controls:
-    - aws_cloudwatch_alarm_action_enabled
-    - aws_guardduty_enabled
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_si_5_b
+  title: SI-5(b)
+  description: Generate internal security alerts, advisories, and directives as deemed necessary.
+  section-code: b
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_cloudwatch_alarm_action_enabled
+  - aws_guardduty_enabled

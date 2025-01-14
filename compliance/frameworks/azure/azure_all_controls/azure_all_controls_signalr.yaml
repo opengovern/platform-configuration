@@ -1,9 +1,14 @@
-ID: azure_all_controls_signalr
-Title: SignalR Service
-Description: This section contains recommendations for configuring SignalR Service resources.
-SectionCode: signalr
-Children: []
-Controls:
-    - azure_signalr_service_no_free_tier_sku
-    - azure_signalr_service_private_link_used
-Tags: {}
+control-group:
+  id: azure_all_controls_signalr
+  title: SignalR Service
+  description: This section contains recommendations for configuring SignalR Service resources.
+  section-code: signalr
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - azure_signalr_service_no_free_tier_sku
+  - azure_signalr_service_private_link_used

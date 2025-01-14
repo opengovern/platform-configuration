@@ -1,18 +1,23 @@
-ID: aws_ffiec_d_3_dc_ev_b_2
-Title: D3.DC.Ev.B.2
-Description: Mechanisms (e.g., antivirus alerts, log event alerts) are in place to alert management to potential attacks.
-SectionCode: ev_b_2
-Children: []
-Controls:
-    - aws_guardduty_enabled
-Tags:
-    category:
-        - Compliance
-    ffiec:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_ffiec_d_3_dc_ev_b_2
+  title: D3.DC.Ev.B.2
+  description: Mechanisms (e.g., antivirus alerts, log event alerts) are in place to alert management to potential attacks.
+  section-code: ev_b_2
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      ffiec:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_guardduty_enabled

@@ -1,12 +1,17 @@
-ID: aws_rbi_itf_nbfc_8
-Title: Recommendations for NBFCs with asset size below ₹ 500 crore
-Description: It is recommended that smaller NBFCs may start with developing basic IT systems mainly for maintaining the database. NBFCs having asset size below ₹ 500 crore shall have a Board approved Information Technology policy/Information system policy.
-SectionCode: "8"
-Children:
-    - aws_rbi_itf_nbfc_8_1
-    - aws_rbi_itf_nbfc_8_I
-    - aws_rbi_itf_nbfc_8_II
-    - aws_rbi_itf_nbfc_8_III
-    - aws_rbi_itf_nbfc_8_IX
-Controls: []
-Tags: {}
+control-group:
+  id: aws_rbi_itf_nbfc_8
+  title: Recommendations for NBFCs with asset size below ₹ 500 crore
+  description: It is recommended that smaller NBFCs may start with developing basic IT systems mainly for maintaining the database. NBFCs having asset size below ₹ 500 crore shall have a Board approved Information Technology policy/Information system policy.
+  section-code: "8"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  control-group:
+  - id: aws_rbi_itf_nbfc_8_1
+  - id: aws_rbi_itf_nbfc_8_I
+  - id: aws_rbi_itf_nbfc_8_II
+  - id: aws_rbi_itf_nbfc_8_III
+  - id: aws_rbi_itf_nbfc_8_IX

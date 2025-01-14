@@ -1,8 +1,13 @@
-ID: azure_rbi_itf_nbfc_v2017_it_information_and_cyber_security
-Title: Information and Cyber Security
-Description: ""
-SectionCode: it_information_and_cyber_security
-Children:
-    - azure_rbi_itf_nbfc_v2017_it_information_and_cyber_security_3
-Controls: []
-Tags: {}
+control-group:
+  id: azure_rbi_itf_nbfc_v2017_it_information_and_cyber_security
+  title: Information and Cyber Security
+  description: Information and Cyber Security
+  section-code: it_information_and_cyber_security
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  control-group:
+  - id: azure_rbi_itf_nbfc_v2017_it_information_and_cyber_security_3

@@ -1,17 +1,21 @@
-ID: aws_foundational_security_guardduty
-Title: GuardDuty
-Description: ""
-SectionCode: guardduty
-Children: []
-Controls: null
-Tags:
-    aws_foundational_security:
-        - "true"
-    category:
-        - Compliance
-    plugin:
-        - aws
-    service:
-        - AWS/GuardDuty
-    type:
-        - Benchmark
+control-group:
+  id: aws_foundational_security_guardduty
+  title: GuardDuty
+  description: GuardDuty
+  section-code: guardduty
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      aws_foundational_security:
+      - "true"
+      category:
+      - Compliance
+      plugin:
+      - aws
+      service:
+      - AWS/GuardDuty
+      type:
+      - Benchmark

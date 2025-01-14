@@ -1,21 +1,26 @@
-ID: aws_foundational_security_efs
-Title: EFS
-Description: ""
-SectionCode: efs
-Children: []
-Controls:
-    - aws_foundational_security_efs_1
-    - aws_foundational_security_efs_2
-    - aws_foundational_security_efs_3
-    - aws_foundational_security_efs_4
-Tags:
-    aws_foundational_security:
-        - "true"
-    category:
-        - Compliance
-    plugin:
-        - aws
-    service:
-        - AWS/EFS
-    type:
-        - Benchmark
+control-group:
+  id: aws_foundational_security_efs
+  title: EFS
+  description: EFS
+  section-code: efs
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      aws_foundational_security:
+      - "true"
+      category:
+      - Compliance
+      plugin:
+      - aws
+      service:
+      - AWS/EFS
+      type:
+      - Benchmark
+  controls:
+  - aws_foundational_security_efs_1
+  - aws_foundational_security_efs_2
+  - aws_foundational_security_efs_3
+  - aws_foundational_security_efs_4

@@ -1,21 +1,26 @@
-ID: aws_foundational_security_dms
-Title: DMS
-Description: ""
-SectionCode: dms
-Children: []
-Controls:
-    - aws_foundational_security_dms_1
-    - aws_foundational_security_dms_6
-    - aws_foundational_security_dms_8
-    - aws_foundational_security_dms_9
-Tags:
-    aws_foundational_security:
-        - "true"
-    category:
-        - Compliance
-    plugin:
-        - aws
-    service:
-        - AWS/DMS
-    type:
-        - Benchmark
+control-group:
+  id: aws_foundational_security_dms
+  title: DMS
+  description: DMS
+  section-code: dms
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      aws_foundational_security:
+      - "true"
+      category:
+      - Compliance
+      plugin:
+      - aws
+      service:
+      - AWS/DMS
+      type:
+      - Benchmark
+  controls:
+  - aws_foundational_security_dms_1
+  - aws_foundational_security_dms_6
+  - aws_foundational_security_dms_8
+  - aws_foundational_security_dms_9

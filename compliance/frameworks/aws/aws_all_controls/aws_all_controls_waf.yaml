@@ -1,15 +1,20 @@
-ID: aws_all_controls_waf
-Title: WAF
-Description: This section contains recommendations for configuring WAF resources.
-SectionCode: waf
-Children: []
-Controls:
-    - aws_waf_regional_rule_condition_attached
-    - aws_waf_regional_rule_group_rule_attached
-    - aws_waf_regional_web_acl_rule_attached
-    - aws_waf_rule_condition_attached
-    - aws_waf_rule_group_rule_attached
-    - aws_waf_web_acl_logging_enabled
-    - aws_waf_web_acl_resource_associated
-    - aws_waf_web_acl_rule_attached
-Tags: {}
+control-group:
+  id: aws_all_controls_waf
+  title: WAF
+  description: This section contains recommendations for configuring WAF resources.
+  section-code: waf
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - aws_waf_regional_rule_condition_attached
+  - aws_waf_regional_rule_group_rule_attached
+  - aws_waf_regional_web_acl_rule_attached
+  - aws_waf_rule_condition_attached
+  - aws_waf_rule_group_rule_attached
+  - aws_waf_web_acl_logging_enabled
+  - aws_waf_web_acl_resource_associated
+  - aws_waf_web_acl_rule_attached

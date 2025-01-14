@@ -1,18 +1,23 @@
-ID: azure_pci_dss_v321_requirement_4
-Title: Requirement 4 - Encrypt transmission of cardholder data across open, public networks
-Description: Cyber criminals may be able to intercept transmissions of cardholder data over open, public networks so it is important to prevent their ability to view this data. Encryption is one technology that can be used to render transmitted data unreadable by any unauthorized person.
-SectionCode: requirement_4
-Children:
-    - azure_pci_dss_v321_requirement_4_1
-Controls: []
-Tags:
-    category:
-        - Compliance
-    pci_dss_v321:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure
-    type:
-        - Benchmark
+control-group:
+  id: azure_pci_dss_v321_requirement_4
+  title: Requirement 4 - Encrypt transmission of cardholder data across open, public networks
+  description: Cyber criminals may be able to intercept transmissions of cardholder data over open, public networks so it is important to prevent their ability to view this data. Encryption is one technology that can be used to render transmitted data unreadable by any unauthorized person.
+  section-code: requirement_4
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      pci_dss_v321:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure
+      type:
+      - Benchmark
+  control-group:
+  - id: azure_pci_dss_v321_requirement_4_1

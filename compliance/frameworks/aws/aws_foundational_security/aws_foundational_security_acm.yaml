@@ -1,19 +1,24 @@
-ID: aws_foundational_security_acm
-Title: ACM
-Description: ""
-SectionCode: acm
-Children: []
-Controls:
-    - aws_foundational_security_acm_1
-    - aws_foundational_security_acm_2
-Tags:
-    aws_foundational_security:
-        - "true"
-    category:
-        - Compliance
-    plugin:
-        - aws
-    service:
-        - AWS/ACM
-    type:
-        - Benchmark
+control-group:
+  id: aws_foundational_security_acm
+  title: ACM
+  description: ACM
+  section-code: acm
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      aws_foundational_security:
+      - "true"
+      category:
+      - Compliance
+      plugin:
+      - aws
+      service:
+      - AWS/ACM
+      type:
+      - Benchmark
+  controls:
+  - aws_foundational_security_acm_1
+  - aws_foundational_security_acm_2

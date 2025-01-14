@@ -1,19 +1,24 @@
-ID: aws_foundational_security_kms
-Title: KMS
-Description: ""
-SectionCode: kms
-Children: []
-Controls:
-    - aws_foundational_security_kms_1
-    - aws_foundational_security_kms_3
-Tags:
-    aws_foundational_security:
-        - "true"
-    category:
-        - Compliance
-    plugin:
-        - aws
-    service:
-        - AWS/KMS
-    type:
-        - Benchmark
+control-group:
+  id: aws_foundational_security_kms
+  title: KMS
+  description: KMS
+  section-code: kms
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      aws_foundational_security:
+      - "true"
+      category:
+      - Compliance
+      plugin:
+      - aws
+      service:
+      - AWS/KMS
+      type:
+      - Benchmark
+  controls:
+  - aws_foundational_security_kms_1
+  - aws_foundational_security_kms_3

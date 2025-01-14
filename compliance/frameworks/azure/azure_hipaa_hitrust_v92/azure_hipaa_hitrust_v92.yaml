@@ -1,0 +1,47 @@
+framework:
+  id: azure_hipaa_hitrust_v92
+  title: HIPAA HITRUST 9.2
+  description: The HIPAA HITRUST 9.2 provides a combined set of predefined compliance and security best-practice checks for Health Insurance Portability and Accountability Act.
+  section-code: azure_hipaa_hitrust_v92
+  metadata:
+    defaults:
+      auto-assign: false
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      hipaa_hitrust_v92:
+      - "true"
+      platform_benchmark_type:
+      - compliance
+      platform_category:
+      - Laws & Regulations
+      - Frameworks
+      - Privacy
+      plugin:
+      - azure
+      service:
+      - Azure
+      type:
+      - Benchmark
+  control-group:
+  - id: azure_hipaa_hitrust_v92_privilege_management
+  - id: azure_hipaa_hitrust_v92_user_authentication_for_external_connections
+  - id: azure_hipaa_hitrust_v92_user_identification_and_authentication
+  - id: azure_hipaa_hitrust_v92_endpoint_protection
+  - id: azure_hipaa_hitrust_v92_portable_media_security
+  - id: azure_hipaa_hitrust_v92_identification_of_risks_related_to_external_parties
+  - id: azure_hipaa_hitrust_v92_configuration_management
+  - id: azure_hipaa_hitrust_v92_vulnerability_management
+  - id: azure_hipaa_hitrust_v92_network_protection
+  - id: azure_hipaa_hitrust_v92_back_up
+  - id: azure_hipaa_hitrust_v92_network_controls
+  - id: azure_hipaa_hitrust_v92_on_line_transactions
+  - id: azure_hipaa_hitrust_v92_transmission_protection
+  - id: azure_hipaa_hitrust_v92_control_of_operational_software
+  - id: azure_hipaa_hitrust_v92_access_control
+  - id: azure_hipaa_hitrust_v92_audit_logging_and_monitoring
+  - id: azure_hipaa_hitrust_v92_education_training_and_awareness
+  - id: azure_hipaa_hitrust_v92_third_party_assurance
+  - id: azure_hipaa_hitrust_v92_business_continuity_and_disaster_recovery

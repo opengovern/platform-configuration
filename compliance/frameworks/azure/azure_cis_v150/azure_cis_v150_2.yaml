@@ -1,27 +1,33 @@
-ID: azure_cis_v150_2
-Title: Microsoft Defender for Cloud
-Description: ""
-SectionCode: "2"
-Children:
-    - azure_cis_v150_2_1
-    - azure_cis_v150_2_2
-    - azure_cis_v150_2_3
-    - azure_cis_v150_2_4
-Controls:
-    - azure_cis_v150_2_5
-    - azure_cis_v150_2_6
-Tags:
-    category:
-        - Compliance
-    cis:
-        - "true"
-    cis_section_id:
-        - "2"
-    cis_version:
-        - v1.5.0
-    plugin:
-        - azure
-    service:
-        - Azure/SecurityCenter
-    type:
-        - Benchmark
+control-group:
+  id: azure_cis_v150_2
+  title: Microsoft Defender for Cloud
+  description: Microsoft Defender for Cloud
+  section-code: "2"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cis:
+      - "true"
+      cis_section_id:
+      - "2"
+      cis_version:
+      - v1.5.0
+      plugin:
+      - azure
+      service:
+      - Azure/SecurityCenter
+      type:
+      - Benchmark
+  control-group:
+  - id: azure_cis_v150_2_1
+  - id: azure_cis_v150_2_2
+  - id: azure_cis_v150_2_3
+  - id: azure_cis_v150_2_4
+  controls:
+  - azure_cis_v150_2_5
+  - azure_cis_v150_2_6

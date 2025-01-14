@@ -1,23 +1,28 @@
-ID: aws_foundational_security_networkfirewall
-Title: Network Firewall
-Description: ""
-SectionCode: networkfirewall
-Children: []
-Controls:
-    - aws_foundational_security_networkfirewall_2
-    - aws_foundational_security_networkfirewall_3
-    - aws_foundational_security_networkfirewall_4
-    - aws_foundational_security_networkfirewall_5
-    - aws_foundational_security_networkfirewall_6
-    - aws_foundational_security_networkfirewall_9
-Tags:
-    aws_foundational_security:
-        - "true"
-    category:
-        - Compliance
-    plugin:
-        - aws
-    service:
-        - AWS/NetworkFirewall
-    type:
-        - Benchmark
+control-group:
+  id: aws_foundational_security_networkfirewall
+  title: Network Firewall
+  description: Network Firewall
+  section-code: networkfirewall
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      aws_foundational_security:
+      - "true"
+      category:
+      - Compliance
+      plugin:
+      - aws
+      service:
+      - AWS/NetworkFirewall
+      type:
+      - Benchmark
+  controls:
+  - aws_foundational_security_networkfirewall_2
+  - aws_foundational_security_networkfirewall_3
+  - aws_foundational_security_networkfirewall_4
+  - aws_foundational_security_networkfirewall_5
+  - aws_foundational_security_networkfirewall_6
+  - aws_foundational_security_networkfirewall_9

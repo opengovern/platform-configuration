@@ -1,18 +1,23 @@
-ID: azure_hipaa_hitrust_v92_11210_01q2organizational
-Title: Electronic signatures and handwritten signatures executed to electronic records shall be linked to their respective electronic records
-Description: ""
-SectionCode: azure_hipaa_hitrust_v92_11210_01q2organizational
-Children: []
-Controls:
-    - azure_compute_vm_administrators_group_with_specified_members_windows
-Tags:
-    category:
-        - Compliance
-    hipaa_hitrust_v92:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure/Compute
-    type:
-        - Benchmark
+control-group:
+  id: azure_hipaa_hitrust_v92_11210_01q2organizational
+  title: Electronic signatures and handwritten signatures executed to electronic records shall be linked to their respective electronic records
+  description: Electronic signatures and handwritten signatures executed to electronic records shall be linked to their respective electronic records
+  section-code: azure_hipaa_hitrust_v92_11210_01q2organizational
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      hipaa_hitrust_v92:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure/Compute
+      type:
+      - Benchmark
+  controls:
+  - azure_compute_vm_administrators_group_with_specified_members_windows

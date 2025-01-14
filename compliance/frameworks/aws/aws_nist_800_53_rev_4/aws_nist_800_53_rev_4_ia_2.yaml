@@ -1,21 +1,27 @@
-ID: aws_nist_800_53_rev_4_ia_2
-Title: Identification and Authentication (Organizational users) (IA-2)
-Description: The information system uniquely identifies and authenticates organizational users (or processes acting on behalf of organizational users).
-SectionCode: "2"
-Children:
-    - aws_nist_800_53_rev_4_ia_2_1
-    - aws_nist_800_53_rev_4_ia_2_2
-    - aws_nist_800_53_rev_4_ia_2_11
-Controls:
-    - aws_iam_account_password_policy_strong_min_reuse_24
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_4:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_4_ia_2
+  title: Identification and Authentication (Organizational users) (IA-2)
+  description: The information system uniquely identifies and authenticates organizational users (or processes acting on behalf of organizational users).
+  section-code: "2"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_4:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_nist_800_53_rev_4_ia_2_1
+  - id: aws_nist_800_53_rev_4_ia_2_2
+  - id: aws_nist_800_53_rev_4_ia_2_11
+  controls:
+  - aws_iam_account_password_policy_strong_min_reuse_24

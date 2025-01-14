@@ -1,18 +1,23 @@
-ID: aws_cisa_cyber_essentials_your_data_3
-Title: Your Data-3
-Description: Domain name system protection.
-SectionCode: "3"
-Children: []
-Controls:
-    - aws_elb_application_lb_waf_enabled
-Tags:
-    category:
-        - Compliance
-    cisa_cyber_essentials:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_cisa_cyber_essentials_your_data_3
+  title: Your Data-3
+  description: Domain name system protection.
+  section-code: "3"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cisa_cyber_essentials:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_elb_application_lb_waf_enabled

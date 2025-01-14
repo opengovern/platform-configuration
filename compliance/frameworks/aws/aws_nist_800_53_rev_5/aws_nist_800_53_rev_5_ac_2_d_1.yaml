@@ -1,18 +1,23 @@
-ID: aws_nist_800_53_rev_5_ac_2_d_1
-Title: AC-2(d)(1)
-Description: 'd. Specify: 1. Authorized users of the system;personnel termination and transfer processes.'
-SectionCode: d_1
-Children: []
-Controls:
-    - aws_iam_account_password_policy_min_length_14
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS/IAM
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_ac_2_d_1
+  title: AC-2(d)(1)
+  description: "d. Specify: 1. Authorized users of the system;personnel termination and transfer processes."
+  section-code: d_1
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS/IAM
+      type:
+      - Benchmark
+  controls:
+  - aws_iam_account_password_policy_min_length_14

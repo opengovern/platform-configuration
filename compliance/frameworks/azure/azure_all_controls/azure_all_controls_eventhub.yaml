@@ -1,11 +1,16 @@
-ID: azure_all_controls_eventhub
-Title: Event Hub
-Description: This section contains recommendations for configuring Event Hub resources.
-SectionCode: eventhub
-Children: []
-Controls:
-    - azure_eventhub_namespace_cmk_encryption_enabled
-    - azure_eventhub_namespace_logging_enabled
-    - azure_eventhub_namespace_private_link_used
-    - azure_eventhub_namespace_use_virtual_service_endpoint
-Tags: {}
+control-group:
+  id: azure_all_controls_eventhub
+  title: Event Hub
+  description: This section contains recommendations for configuring Event Hub resources.
+  section-code: eventhub
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - azure_eventhub_namespace_cmk_encryption_enabled
+  - azure_eventhub_namespace_logging_enabled
+  - azure_eventhub_namespace_private_link_used
+  - azure_eventhub_namespace_use_virtual_service_endpoint

@@ -1,21 +1,26 @@
-ID: aws_cisa_cyber_essentials_your_surroundings_2
-Title: Your Surroundings-2
-Description: Leverage multi-factor authentication for all users, starting with privileged, administrative and remote access users.
-SectionCode: "2"
-Children: []
-Controls:
-    - aws_iam_root_user_hardware_mfa_enabled
-    - aws_iam_root_user_mfa_enabled
-    - aws_iam_user_console_access_mfa_enabled
-    - aws_iam_user_mfa_enabled
-Tags:
-    category:
-        - Compliance
-    cisa_cyber_essentials:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_cisa_cyber_essentials_your_surroundings_2
+  title: Your Surroundings-2
+  description: Leverage multi-factor authentication for all users, starting with privileged, administrative and remote access users.
+  section-code: "2"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cisa_cyber_essentials:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_iam_root_user_hardware_mfa_enabled
+  - aws_iam_root_user_mfa_enabled
+  - aws_iam_user_console_access_mfa_enabled
+  - aws_iam_user_mfa_enabled

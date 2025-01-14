@@ -1,14 +1,19 @@
-ID: azure_all_controls_cosmosdb
-Title: Cosmos DB
-Description: This section contains recommendations for configuring CosmosDB resources.
-SectionCode: cosmosdb
-Children: []
-Controls:
-    - azure_cosmosdb_account_encryption_at_rest_using_cmk
-    - azure_cosmosdb_account_key_based_metadata_write_access_disabled
-    - azure_cosmosdb_account_uses_aad_and_rbac
-    - azure_cosmosdb_account_uses_private_link
-    - azure_cosmosdb_account_virtual_network_filter_enabled
-    - azure_cosmosdb_account_with_firewall_rules
-    - azure_cosmosdb_use_virtual_service_endpoint
-Tags: {}
+control-group:
+  id: azure_all_controls_cosmosdb
+  title: Cosmos DB
+  description: This section contains recommendations for configuring CosmosDB resources.
+  section-code: cosmosdb
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - azure_cosmosdb_account_encryption_at_rest_using_cmk
+  - azure_cosmosdb_account_key_based_metadata_write_access_disabled
+  - azure_cosmosdb_account_uses_aad_and_rbac
+  - azure_cosmosdb_account_uses_private_link
+  - azure_cosmosdb_account_virtual_network_filter_enabled
+  - azure_cosmosdb_account_with_firewall_rules
+  - azure_cosmosdb_use_virtual_service_endpoint

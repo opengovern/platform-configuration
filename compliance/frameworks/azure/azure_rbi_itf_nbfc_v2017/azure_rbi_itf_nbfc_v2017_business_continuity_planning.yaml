@@ -1,8 +1,13 @@
-ID: azure_rbi_itf_nbfc_v2017_business_continuity_planning
-Title: Business Continuity Planning
-Description: ""
-SectionCode: business_continuity_planning
-Children:
-    - azure_rbi_itf_nbfc_v2017_business_continuity_planning_6
-Controls: []
-Tags: {}
+control-group:
+  id: azure_rbi_itf_nbfc_v2017_business_continuity_planning
+  title: Business Continuity Planning
+  description: Business Continuity Planning
+  section-code: business_continuity_planning
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  control-group:
+  - id: azure_rbi_itf_nbfc_v2017_business_continuity_planning_6

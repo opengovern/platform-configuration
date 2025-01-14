@@ -1,24 +1,29 @@
-ID: aws_nist_800_53_rev_5_au_3
-Title: Content of Audit Records (AU-3)
-Description: The information system generates audit records containing information that establishes what type of event occurred, when the event occurred, where the event occurred, the source of the event, the outcome of the event, and the identity of any individuals or subjects associated with the event.
-SectionCode: "3"
-Children:
-    - aws_nist_800_53_rev_5_au_3_1
-    - aws_nist_800_53_rev_5_au_3_a
-    - aws_nist_800_53_rev_5_au_3_b
-    - aws_nist_800_53_rev_5_au_3_c
-    - aws_nist_800_53_rev_5_au_3_d
-    - aws_nist_800_53_rev_5_au_3_e
-    - aws_nist_800_53_rev_5_au_3_f
-Controls: []
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_au_3
+  title: Content of Audit Records (AU-3)
+  description: The information system generates audit records containing information that establishes what type of event occurred, when the event occurred, where the event occurred, the source of the event, the outcome of the event, and the identity of any individuals or subjects associated with the event.
+  section-code: "3"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_nist_800_53_rev_5_au_3_1
+  - id: aws_nist_800_53_rev_5_au_3_a
+  - id: aws_nist_800_53_rev_5_au_3_b
+  - id: aws_nist_800_53_rev_5_au_3_c
+  - id: aws_nist_800_53_rev_5_au_3_d
+  - id: aws_nist_800_53_rev_5_au_3_e
+  - id: aws_nist_800_53_rev_5_au_3_f

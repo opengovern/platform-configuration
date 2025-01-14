@@ -1,18 +1,23 @@
-ID: aws_nist_800_53_rev_5_ia_4_b
-Title: IA-4(b)
-Description: 'Manage system identifiers by: b. Selecting an identifier that identifies an individual, group, role, service, or device.'
-SectionCode: b
-Children: []
-Controls:
-    - aws_iam_root_user_no_access_keys
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS/IAM
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_ia_4_b
+  title: IA-4(b)
+  description: "Manage system identifiers by: b. Selecting an identifier that identifies an individual, group, role, service, or device."
+  section-code: b
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS/IAM
+      type:
+      - Benchmark
+  controls:
+  - aws_iam_root_user_no_access_keys

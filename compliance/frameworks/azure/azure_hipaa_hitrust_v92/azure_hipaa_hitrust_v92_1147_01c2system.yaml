@@ -1,18 +1,23 @@
-ID: azure_hipaa_hitrust_v92_1147_01c2system
-Title: 01c2System.456-01.c 01.02 Authorized Access to Information Systems
-Description: Elevated privileges are assigned to a different user ID from those used for normal business use, all users access privileged services in a single role, and such privileged access is minimized.
-SectionCode: azure_hipaa_hitrust_v92_1147_01c2system
-Children: []
-Controls:
-    - azure_iam_deprecated_account_with_owner_roles
-Tags:
-    category:
-        - Compliance
-    hipaa_hitrust_v92:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure/ActiveDirectory
-    type:
-        - Benchmark
+control-group:
+  id: azure_hipaa_hitrust_v92_1147_01c2system
+  title: 01c2System.456-01.c 01.02 Authorized Access to Information Systems
+  description: Elevated privileges are assigned to a different user ID from those used for normal business use, all users access privileged services in a single role, and such privileged access is minimized.
+  section-code: azure_hipaa_hitrust_v92_1147_01c2system
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      hipaa_hitrust_v92:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure/ActiveDirectory
+      type:
+      - Benchmark
+  controls:
+  - azure_iam_deprecated_account_with_owner_roles

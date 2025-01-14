@@ -1,9 +1,14 @@
-ID: aws_acsc_essential_eight_ml_1_6_2
-Title: 'ACSC-EE-ML1-6.2: Patch operating systems ML1'
-Description: A vulnerability scanner with an up-to-date vulnerability database is used for vulnerability scanning activities.
-SectionCode: "2"
-Children: []
-Controls:
-    - aws_1test
-    - aws_ecr_repository_image_scan_on_push_enabled
-Tags: {}
+control-group:
+  id: aws_acsc_essential_eight_ml_1_6_2
+  title: "ACSC-EE-ML1-6.2: Patch operating systems ML1"
+  description: A vulnerability scanner with an up-to-date vulnerability database is used for vulnerability scanning activities.
+  section-code: "2"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - aws_1test
+  - aws_ecr_repository_image_scan_on_push_enabled

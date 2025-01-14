@@ -1,8 +1,13 @@
-ID: azure_all_controls_automation
-Title: Automation
-Description: This section contains recommendations for configuring Automation resources.
-SectionCode: automation
-Children: []
-Controls:
-    - azure_automation_account_variable_encryption_enabled
-Tags: {}
+control-group:
+  id: azure_all_controls_automation
+  title: Automation
+  description: This section contains recommendations for configuring Automation resources.
+  section-code: automation
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - azure_automation_account_variable_encryption_enabled

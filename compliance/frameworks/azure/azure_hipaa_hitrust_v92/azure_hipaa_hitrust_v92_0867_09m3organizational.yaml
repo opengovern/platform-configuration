@@ -1,18 +1,23 @@
-ID: azure_hipaa_hitrust_v92_0867_09m3organizational
-Title: Wireless access points are placed in secure areas and shut down when not in use (e.g. nights, weekends)
-Description: Ensure the protection of information in networks and protection of the supporting network infrastructure.
-SectionCode: azure_hipaa_hitrust_v92_0867_09m3organizational
-Children: []
-Controls:
-    - azure_storage_account_use_virtual_service_endpoint
-Tags:
-    category:
-        - Compliance
-    hipaa_hitrust_v92:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure/Storage
-    type:
-        - Benchmark
+control-group:
+  id: azure_hipaa_hitrust_v92_0867_09m3organizational
+  title: Wireless access points are placed in secure areas and shut down when not in use (e.g. nights, weekends)
+  description: Ensure the protection of information in networks and protection of the supporting network infrastructure.
+  section-code: azure_hipaa_hitrust_v92_0867_09m3organizational
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      hipaa_hitrust_v92:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure/Storage
+      type:
+      - Benchmark
+  controls:
+  - azure_storage_account_use_virtual_service_endpoint

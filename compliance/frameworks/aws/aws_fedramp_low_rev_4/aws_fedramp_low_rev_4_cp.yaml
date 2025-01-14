@@ -1,19 +1,24 @@
-ID: aws_fedramp_low_rev_4_cp
-Title: benchmark.nist_800_53_rev_4_cp.title
-Description: benchmark.nist_800_53_rev_4_cp.description
-SectionCode: cp
-Children:
-    - aws_fedramp_low_rev_4_cp_9
-    - aws_fedramp_low_rev_4_cp_10
-Controls: []
-Tags:
-    category:
-        - Compliance
-    fedramp_low_rev_4:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_fedramp_low_rev_4_cp
+  title: benchmark.nist_800_53_rev_4_cp.title
+  description: benchmark.nist_800_53_rev_4_cp.description
+  section-code: cp
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      fedramp_low_rev_4:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_fedramp_low_rev_4_cp_9
+  - id: aws_fedramp_low_rev_4_cp_10

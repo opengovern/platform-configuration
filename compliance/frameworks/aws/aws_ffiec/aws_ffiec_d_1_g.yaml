@@ -1,18 +1,23 @@
-ID: aws_ffiec_d_1_g
-Title: Governance (G)
-Description: Governance includes oversight, strategies, policies, and IT asset management to implement an effective governance of the cybersecurity program.
-SectionCode: g
-Children:
-    - aws_ffiec_d_1_g_it_b_1
-Controls: []
-Tags:
-    category:
-        - Compliance
-    ffiec:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_ffiec_d_1_g
+  title: Governance (G)
+  description: Governance includes oversight, strategies, policies, and IT asset management to implement an effective governance of the cybersecurity program.
+  section-code: g
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      ffiec:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_ffiec_d_1_g_it_b_1

@@ -1,8 +1,13 @@
-ID: azure_all_controls_datalakeanalytics
-Title: Data Lake Analytics
-Description: This section contains recommendations for configuring Data Lake Analytics resources.
-SectionCode: datalakeanalytics
-Children: []
-Controls:
-    - azure_datalake_analytics_account_logging_enabled
-Tags: {}
+control-group:
+  id: azure_all_controls_datalakeanalytics
+  title: Data Lake Analytics
+  description: This section contains recommendations for configuring Data Lake Analytics resources.
+  section-code: datalakeanalytics
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - azure_datalake_analytics_account_logging_enabled

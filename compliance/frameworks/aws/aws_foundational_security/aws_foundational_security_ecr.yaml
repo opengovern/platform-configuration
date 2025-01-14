@@ -1,20 +1,25 @@
-ID: aws_foundational_security_ecr
-Title: Elastic Container Registry
-Description: ""
-SectionCode: ecr
-Children: []
-Controls:
-    - aws_foundational_security_ecr_1
-    - aws_foundational_security_ecr_2
-    - aws_foundational_security_ecr_3
-Tags:
-    aws_foundational_security:
-        - "true"
-    category:
-        - Compliance
-    plugin:
-        - aws
-    service:
-        - AWS/ECR
-    type:
-        - Benchmark
+control-group:
+  id: aws_foundational_security_ecr
+  title: Elastic Container Registry
+  description: Elastic Container Registry
+  section-code: ecr
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      aws_foundational_security:
+      - "true"
+      category:
+      - Compliance
+      plugin:
+      - aws
+      service:
+      - AWS/ECR
+      type:
+      - Benchmark
+  controls:
+  - aws_foundational_security_ecr_1
+  - aws_foundational_security_ecr_2
+  - aws_foundational_security_ecr_3

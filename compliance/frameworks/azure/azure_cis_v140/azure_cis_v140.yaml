@@ -1,0 +1,37 @@
+framework:
+  id: azure_cis_v140
+  title: CIS v1.4.0
+  description: The CIS Microsoft Azure Foundations Security Benchmark provides prescriptive guidance for establishing a secure baseline configuration for Microsoft Azure.
+  section-code: azure_cis_v140
+  metadata:
+    defaults:
+      auto-assign: false
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cis:
+      - "true"
+      cis_version:
+      - v1.4.0
+      platform_benchmark_type:
+      - compliance
+      platform_category:
+      - Best Practices
+      plugin:
+      - azure
+      service:
+      - Azure
+      type:
+      - Benchmark
+  control-group:
+  - id: azure_cis_v140_1
+  - id: azure_cis_v140_2
+  - id: azure_cis_v140_3
+  - id: azure_cis_v140_4
+  - id: azure_cis_v140_5
+  - id: azure_cis_v140_6
+  - id: azure_cis_v140_7
+  - id: azure_cis_v140_8
+  - id: azure_cis_v140_9

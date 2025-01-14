@@ -1,20 +1,25 @@
-ID: aws_fedramp_moderate_rev_4_sa_3_a
-Title: SA-3(a)
-Description: 'The organization: a. Manages the information system using [Assignment: organization-defined system development life cycle] that incorporates information security considerations.'
-SectionCode: a
-Children: []
-Controls:
-    - aws_codebuild_project_plaintext_env_variables_no_sensitive_aws_values
-    - aws_codebuild_project_source_repo_oauth_configured
-    - aws_ec2_instance_ssm_managed
-Tags:
-    category:
-        - Compliance
-    fedramp_moderate_rev_4:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_fedramp_moderate_rev_4_sa_3_a
+  title: SA-3(a)
+  description: "The organization: a. Manages the information system using [Assignment: organization-defined system development life cycle] that incorporates information security considerations."
+  section-code: a
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      fedramp_moderate_rev_4:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_codebuild_project_plaintext_env_variables_no_sensitive_aws_values
+  - aws_codebuild_project_source_repo_oauth_configured
+  - aws_ec2_instance_ssm_managed

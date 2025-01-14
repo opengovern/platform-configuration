@@ -1,18 +1,23 @@
-ID: azure_hipaa_hitrust_v92_0866_09m3organizational
-Title: 09m3Organizational.1516-09.m 09.06 Network Security Management
-Description: The organization describes the groups, roles, and responsibilities for the logical management of network components and ensures coordination of and consistency in the elements of the network infrastructure.
-SectionCode: azure_hipaa_hitrust_v92_0866_09m3organizational
-Children: []
-Controls:
-    - azure_storage_account_default_network_access_rule_denied
-Tags:
-    category:
-        - Compliance
-    hipaa_hitrust_v92:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure/Storage
-    type:
-        - Benchmark
+control-group:
+  id: azure_hipaa_hitrust_v92_0866_09m3organizational
+  title: 09m3Organizational.1516-09.m 09.06 Network Security Management
+  description: The organization describes the groups, roles, and responsibilities for the logical management of network components and ensures coordination of and consistency in the elements of the network infrastructure.
+  section-code: azure_hipaa_hitrust_v92_0866_09m3organizational
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      hipaa_hitrust_v92:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure/Storage
+      type:
+      - Benchmark
+  controls:
+  - azure_storage_account_default_network_access_rule_denied

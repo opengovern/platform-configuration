@@ -1,8 +1,13 @@
-ID: azure_all_controls_machinelearning
-Title: Machine Learning
-Description: This section contains recommendations for configuring Machine Learning resources.
-SectionCode: machinelearning
-Children: []
-Controls:
-    - azure_machine_learning_workspace_encrypted_with_cmk
-Tags: {}
+control-group:
+  id: azure_all_controls_machinelearning
+  title: Machine Learning
+  description: This section contains recommendations for configuring Machine Learning resources.
+  section-code: machinelearning
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - azure_machine_learning_workspace_encrypted_with_cmk

@@ -1,0 +1,37 @@
+framework:
+  id: aws_nist_800_53_rev_4
+  title: NIST 800-53 Revision 4
+  description: NIST 800-53 is a regulatory standard that defines the minimum baseline of security controls for all U.S. federal information systems except those related to national security.
+  section-code: aws_nist_800_53_rev_4
+  metadata:
+    defaults:
+      auto-assign: false
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_4:
+      - "true"
+      platform_benchmark_type:
+      - compliance
+      platform_category:
+      - Frameworks
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_nist_800_53_rev_4_ac
+  - id: aws_nist_800_53_rev_4_au
+  - id: aws_nist_800_53_rev_4_ca
+  - id: aws_nist_800_53_rev_4_cm
+  - id: aws_nist_800_53_rev_4_cp
+  - id: aws_nist_800_53_rev_4_ia
+  - id: aws_nist_800_53_rev_4_ir
+  - id: aws_nist_800_53_rev_4_ra
+  - id: aws_nist_800_53_rev_4_sa
+  - id: aws_nist_800_53_rev_4_sc
+  - id: aws_nist_800_53_rev_4_si

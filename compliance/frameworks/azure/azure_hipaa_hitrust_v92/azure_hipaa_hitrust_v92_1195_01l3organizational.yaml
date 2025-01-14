@@ -1,18 +1,23 @@
-ID: azure_hipaa_hitrust_v92_1195_01l3organizational
-Title: 01l3Organizational.1-01.l 01.04 Network Access Control
-Description: The organization reviews the information system within every three hundred and sixty-five (365) days to identify and disables unnecessary and non-secure functions, ports, protocols, and/or services.
-SectionCode: azure_hipaa_hitrust_v92_1195_01l3organizational
-Children: []
-Controls:
-    - azure_appservice_function_app_remote_debugging_disabled
-Tags:
-    category:
-        - Compliance
-    hipaa_hitrust_v92:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure/AppService
-    type:
-        - Benchmark
+control-group:
+  id: azure_hipaa_hitrust_v92_1195_01l3organizational
+  title: 01l3Organizational.1-01.l 01.04 Network Access Control
+  description: The organization reviews the information system within every three hundred and sixty-five (365) days to identify and disables unnecessary and non-secure functions, ports, protocols, and/or services.
+  section-code: azure_hipaa_hitrust_v92_1195_01l3organizational
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      hipaa_hitrust_v92:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure/AppService
+      type:
+      - Benchmark
+  controls:
+  - azure_appservice_function_app_remote_debugging_disabled

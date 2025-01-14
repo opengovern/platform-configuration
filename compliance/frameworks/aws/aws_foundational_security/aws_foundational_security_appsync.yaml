@@ -1,8 +1,13 @@
-ID: aws_foundational_security_appsync
-Title: AppSync
-Description: ""
-SectionCode: appsync
-Children: []
-Controls:
-    - aws_foundational_security_appsync_2
-Tags: {}
+control-group:
+  id: aws_foundational_security_appsync
+  title: AppSync
+  description: AppSync
+  section-code: appsync
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - aws_foundational_security_appsync_2

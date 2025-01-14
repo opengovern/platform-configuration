@@ -1,20 +1,25 @@
-ID: aws_cisa_cyber_essentials_booting_up_things_to_do_first_3
-Title: 'Booting Up: Things to Do First-3'
-Description: Enable automatic updates whenever possible. Replace unsupported operating systems, applications and hardware. Test and deploy patches quickly.
-SectionCode: "3"
-Children: []
-Controls:
-    - aws_rds_db_instance_automatic_minor_version_upgrade_enabled
-    - aws_redshift_cluster_maintenance_settings_check
-    - aws_ssm_managed_instance_compliance_patch_compliant
-Tags:
-    category:
-        - Compliance
-    cisa_cyber_essentials:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_cisa_cyber_essentials_booting_up_things_to_do_first_3
+  title: "Booting Up: Things to Do First-3"
+  description: Enable automatic updates whenever possible. Replace unsupported operating systems, applications and hardware. Test and deploy patches quickly.
+  section-code: "3"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cisa_cyber_essentials:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_rds_db_instance_automatic_minor_version_upgrade_enabled
+  - aws_redshift_cluster_maintenance_settings_check
+  - aws_ssm_managed_instance_compliance_patch_compliant

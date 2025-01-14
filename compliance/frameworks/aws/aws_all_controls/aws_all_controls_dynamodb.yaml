@@ -1,14 +1,19 @@
-ID: aws_all_controls_dynamodb
-Title: DynamoDB
-Description: This section contains recommendations for configuring DynamoDB resources.
-SectionCode: dynamodb
-Children: []
-Controls:
-    - aws_dynamodb_table_auto_scaling_enabled
-    - aws_dynamodb_table_deletion_protection_enabled
-    - aws_dynamodb_table_encrypted_with_kms
-    - aws_dynamodb_table_encryption_enabled
-    - aws_dynamodb_table_in_backup_plan
-    - aws_dynamodb_table_point_in_time_recovery_enabled
-    - aws_dynamodb_table_protected_by_backup_plan
-Tags: {}
+control-group:
+  id: aws_all_controls_dynamodb
+  title: DynamoDB
+  description: This section contains recommendations for configuring DynamoDB resources.
+  section-code: dynamodb
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - aws_dynamodb_table_auto_scaling_enabled
+  - aws_dynamodb_table_deletion_protection_enabled
+  - aws_dynamodb_table_encrypted_with_kms
+  - aws_dynamodb_table_encryption_enabled
+  - aws_dynamodb_table_in_backup_plan
+  - aws_dynamodb_table_point_in_time_recovery_enabled
+  - aws_dynamodb_table_protected_by_backup_plan

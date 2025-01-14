@@ -1,19 +1,24 @@
-ID: aws_cisa_cyber_essentials_your_crisis_response_2
-Title: Your Crisis Response-2
-Description: Lead development of an internal reporting structure to detect, communicate and contain attacks.
-SectionCode: "2"
-Children: []
-Controls:
-    - aws_guardduty_enabled
-    - aws_securityhub_enabled
-Tags:
-    category:
-        - Compliance
-    cisa_cyber_essentials:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_cisa_cyber_essentials_your_crisis_response_2
+  title: Your Crisis Response-2
+  description: Lead development of an internal reporting structure to detect, communicate and contain attacks.
+  section-code: "2"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cisa_cyber_essentials:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_guardduty_enabled
+  - aws_securityhub_enabled

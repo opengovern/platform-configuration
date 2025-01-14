@@ -1,24 +1,29 @@
-ID: azure_cis_v200_2
-Title: Microsoft Defender
-Description: ""
-SectionCode: "2"
-Children:
-    - azure_cis_v200_2_1
-    - azure_cis_v200_2_2
-    - azure_cis_v200_2_3
-Controls: []
-Tags:
-    category:
-        - Compliance
-    cis:
-        - "true"
-    cis_section_id:
-        - "2"
-    cis_version:
-        - v2.0.0
-    plugin:
-        - azure
-    service:
-        - Azure/SecurityCenter
-    type:
-        - Benchmark
+control-group:
+  id: azure_cis_v200_2
+  title: Microsoft Defender
+  description: Microsoft Defender
+  section-code: "2"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cis:
+      - "true"
+      cis_section_id:
+      - "2"
+      cis_version:
+      - v2.0.0
+      plugin:
+      - azure
+      service:
+      - Azure/SecurityCenter
+      type:
+      - Benchmark
+  control-group:
+  - id: azure_cis_v200_2_1
+  - id: azure_cis_v200_2_2
+  - id: azure_cis_v200_2_3

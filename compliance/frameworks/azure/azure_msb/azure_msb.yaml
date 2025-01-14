@@ -1,0 +1,34 @@
+framework:
+  id: azure_msb
+  title: Azure MSB
+  description: Azure MSB
+  section-code: azure_msb_main
+  metadata:
+    defaults:
+      auto-assign: true
+      enabled: true
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      platform_benchmark_type:
+      - compliance
+      platform_category:
+      - Best Practices
+      plugin:
+      - azure
+      service:
+      - Azure
+      type:
+      - Benchmark
+  control-group:
+  - id: azure_cis_v200_2
+  - id: azure_cis_v200_3
+  - id: azure_cis_v200_4
+  - id: azure_msb_5
+  - id: azure_cis_v200_6
+  - id: azure_cis_v200_7
+  - id: azure_cis_v200_8
+  - id: azure_cis_v200_9
+  - id: azure_cis_v200_10
+  - id: azure_msb_ask

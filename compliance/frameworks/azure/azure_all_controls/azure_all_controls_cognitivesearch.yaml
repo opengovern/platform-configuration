@@ -1,13 +1,18 @@
-ID: azure_all_controls_cognitivesearch
-Title: Cognitive Search
-Description: This section contains recommendations for configuring Cognitive Search resources.
-SectionCode: cognitivesearch
-Children: []
-Controls:
-    - azure_search_service_logging_enabled
-    - azure_search_service_public_network_access_disabled
-    - azure_search_service_replica_count_3
-    - azure_search_service_uses_managed_identity
-    - azure_search_service_uses_private_link
-    - azure_search_service_uses_sku_supporting_private_link
-Tags: {}
+control-group:
+  id: azure_all_controls_cognitivesearch
+  title: Cognitive Search
+  description: This section contains recommendations for configuring Cognitive Search resources.
+  section-code: cognitivesearch
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - azure_search_service_logging_enabled
+  - azure_search_service_public_network_access_disabled
+  - azure_search_service_replica_count_3
+  - azure_search_service_uses_managed_identity
+  - azure_search_service_uses_private_link
+  - azure_search_service_uses_sku_supporting_private_link

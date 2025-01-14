@@ -1,19 +1,24 @@
-ID: aws_foundational_security_lambda
-Title: Lambda
-Description: ""
-SectionCode: lambda
-Children: []
-Controls:
-    - aws_foundational_security_lambda_1
-    - aws_foundational_security_lambda_2
-Tags:
-    aws_foundational_security:
-        - "true"
-    category:
-        - Compliance
-    plugin:
-        - aws
-    service:
-        - AWS/Lambda
-    type:
-        - Benchmark
+control-group:
+  id: aws_foundational_security_lambda
+  title: Lambda
+  description: Lambda
+  section-code: lambda
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      aws_foundational_security:
+      - "true"
+      category:
+      - Compliance
+      plugin:
+      - aws
+      service:
+      - AWS/Lambda
+      type:
+      - Benchmark
+  controls:
+  - aws_foundational_security_lambda_1
+  - aws_foundational_security_lambda_2

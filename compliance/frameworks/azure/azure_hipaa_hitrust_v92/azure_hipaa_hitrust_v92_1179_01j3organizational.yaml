@@ -1,18 +1,23 @@
-ID: azure_hipaa_hitrust_v92_1179_01j3organizational
-Title: 01j3Organizational.1-01.j 01.04 Network Access Control
-Description: The information system monitors and controls remote access methods.
-SectionCode: azure_hipaa_hitrust_v92_1179_01j3organizational
-Children: []
-Controls:
-    - azure_compute_vm_jit_access_protected
-Tags:
-    category:
-        - Compliance
-    hipaa_hitrust_v92:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure/Compute
-    type:
-        - Benchmark
+control-group:
+  id: azure_hipaa_hitrust_v92_1179_01j3organizational
+  title: 01j3Organizational.1-01.j 01.04 Network Access Control
+  description: The information system monitors and controls remote access methods.
+  section-code: azure_hipaa_hitrust_v92_1179_01j3organizational
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      hipaa_hitrust_v92:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure/Compute
+      type:
+      - Benchmark
+  controls:
+  - azure_compute_vm_jit_access_protected

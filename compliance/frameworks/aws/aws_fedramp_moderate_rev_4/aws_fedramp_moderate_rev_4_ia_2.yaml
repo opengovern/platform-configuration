@@ -1,20 +1,26 @@
-ID: aws_fedramp_moderate_rev_4_ia_2
-Title: benchmark.nist_800_53_rev_4_ia_2.title
-Description: benchmark.nist_800_53_rev_4_ia_2.description
-SectionCode: "2"
-Children:
-    - aws_fedramp_moderate_rev_4_ia_2_1
-Controls:
-    - aws_iam_account_password_policy_min_length_14
-    - aws_iam_root_user_no_access_keys
-Tags:
-    category:
-        - Compliance
-    fedramp_moderate_rev_4:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS/IAM
-    type:
-        - Benchmark
+control-group:
+  id: aws_fedramp_moderate_rev_4_ia_2
+  title: benchmark.nist_800_53_rev_4_ia_2.title
+  description: benchmark.nist_800_53_rev_4_ia_2.description
+  section-code: "2"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      fedramp_moderate_rev_4:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS/IAM
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_fedramp_moderate_rev_4_ia_2_1
+  controls:
+  - aws_iam_account_password_policy_min_length_14
+  - aws_iam_root_user_no_access_keys

@@ -1,20 +1,25 @@
-ID: aws_ffiec_d_2
-Title: Threat Intelligence and Collaboration (Domain 2)
-Description: Threat intelligence and collaboration includes processes to effectively discover, analyze, and understand cyber threats, with the capability to share information internally and with appropriate third parties.
-SectionCode: d_2
-Children:
-    - aws_ffiec_d_2_is
-    - aws_ffiec_d_2_ma
-    - aws_ffiec_d_2_ti
-Controls: []
-Tags:
-    category:
-        - Compliance
-    ffiec:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_ffiec_d_2
+  title: Threat Intelligence and Collaboration (Domain 2)
+  description: Threat intelligence and collaboration includes processes to effectively discover, analyze, and understand cyber threats, with the capability to share information internally and with appropriate third parties.
+  section-code: d_2
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      ffiec:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_ffiec_d_2_is
+  - id: aws_ffiec_d_2_ma
+  - id: aws_ffiec_d_2_ti

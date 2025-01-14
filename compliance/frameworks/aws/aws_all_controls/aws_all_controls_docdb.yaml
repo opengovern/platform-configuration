@@ -1,12 +1,17 @@
-ID: aws_all_controls_docdb
-Title: DocumentDB
-Description: This section contains recommendations for configuring DocumentDB resources.
-SectionCode: docdb
-Children: []
-Controls:
-    - aws_docdb_cluster_backup_retention_period_7_days
-    - aws_docdb_cluster_deletion_protection_enabled
-    - aws_docdb_cluster_encryption_at_rest_enabled
-    - aws_docdb_cluster_instance_encryption_at_rest_enabled
-    - aws_docdb_cluster_instance_logging_enabled
-Tags: {}
+control-group:
+  id: aws_all_controls_docdb
+  title: DocumentDB
+  description: This section contains recommendations for configuring DocumentDB resources.
+  section-code: docdb
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - aws_docdb_cluster_backup_retention_period_7_days
+  - aws_docdb_cluster_deletion_protection_enabled
+  - aws_docdb_cluster_encryption_at_rest_enabled
+  - aws_docdb_cluster_instance_encryption_at_rest_enabled
+  - aws_docdb_cluster_instance_logging_enabled

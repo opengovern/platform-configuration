@@ -1,18 +1,23 @@
-ID: aws_nist_800_53_rev_5_ma_4_1
-Title: MA-4(1) Logging And Review
-Description: 'a. Log [Assignment: organization-defined audit events] for nonlocal maintenance and diagnostic sessions; and b. Review the audit records of the maintenance and diagnostic sessions to detect anomalous behavior.'
-SectionCode: "1"
-Children:
-    - aws_nist_800_53_rev_5_ma_4_1_a
-Controls: []
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_ma_4_1
+  title: MA-4(1) Logging And Review
+  description: "a.\u2003Log [Assignment: organization-defined audit events] for nonlocal maintenance and diagnostic sessions; and b.\u2003Review the audit records of the maintenance and diagnostic sessions to detect anomalous behavior."
+  section-code: "1"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_nist_800_53_rev_5_ma_4_1_a

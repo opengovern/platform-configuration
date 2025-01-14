@@ -1,11 +1,16 @@
-ID: azure_cis_v210_1_1
-Title: Security Defaults
-Description: ""
-SectionCode: "1"
-Children: []
-Controls:
-    - azure_cis_v210_1_1_1
-    - azure_cis_v210_1_1_2
-    - azure_cis_v210_1_1_3
-    - azure_cis_v210_1_1_4
-Tags: {}
+control-group:
+  id: azure_cis_v210_1_1
+  title: Security Defaults
+  description: Security Defaults
+  section-code: "1"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - azure_cis_v210_1_1_1
+  - azure_cis_v210_1_1_2
+  - azure_cis_v210_1_1_3
+  - azure_cis_v210_1_1_4

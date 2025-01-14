@@ -1,18 +1,23 @@
-ID: aws_nist_800_53_rev_5_ia_5_18_b
-Title: IA-5(18)(b)
-Description: 'Protect the passwords using [Assignment: organization-defined controls].'
-SectionCode: b
-Children: []
-Controls:
-    - aws_iam_account_password_policy_min_length_14
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS/IAM
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_ia_5_18_b
+  title: IA-5(18)(b)
+  description: "Protect the passwords using [Assignment: organization-defined controls]."
+  section-code: b
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS/IAM
+      type:
+      - Benchmark
+  controls:
+  - aws_iam_account_password_policy_min_length_14

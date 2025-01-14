@@ -1,22 +1,27 @@
-ID: aws_cis_v140_2_2
-Title: Elastic Compute Cloud (EC2)
-Description: ""
-SectionCode: "2"
-Children: []
-Controls:
-    - aws_cis_v140_2_2_1
-Tags:
-    category:
-        - Compliance
-    cis:
-        - "true"
-    cis_section_id:
-        - "2.1"
-    cis_version:
-        - v1.4.0
-    plugin:
-        - aws
-    service:
-        - AWS/EBS
-    type:
-        - Benchmark
+control-group:
+  id: aws_cis_v140_2_2
+  title: Elastic Compute Cloud (EC2)
+  description: Elastic Compute Cloud (EC2)
+  section-code: "2"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cis:
+      - "true"
+      cis_section_id:
+      - "2.1"
+      cis_version:
+      - v1.4.0
+      plugin:
+      - aws
+      service:
+      - AWS/EBS
+      type:
+      - Benchmark
+  controls:
+  - aws_cis_v140_2_2_1

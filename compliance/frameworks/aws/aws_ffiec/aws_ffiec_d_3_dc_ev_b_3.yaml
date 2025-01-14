@@ -1,21 +1,26 @@
-ID: aws_ffiec_d_3_dc_ev_b_3
-Title: D3.DC.Ev.B.3
-Description: Processes are in place to monitor for the presence of unauthorized users, devices, connections, and software.
-SectionCode: ev_b_3
-Children: []
-Controls:
-    - aws_cloudtrail_trail_enabled
-    - aws_guardduty_enabled
-    - aws_securityhub_enabled
-    - aws_vpc_flow_logs_enabled
-Tags:
-    category:
-        - Compliance
-    ffiec:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_ffiec_d_3_dc_ev_b_3
+  title: D3.DC.Ev.B.3
+  description: Processes are in place to monitor for the presence of unauthorized users, devices, connections, and software.
+  section-code: ev_b_3
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      ffiec:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_cloudtrail_trail_enabled
+  - aws_guardduty_enabled
+  - aws_securityhub_enabled
+  - aws_vpc_flow_logs_enabled

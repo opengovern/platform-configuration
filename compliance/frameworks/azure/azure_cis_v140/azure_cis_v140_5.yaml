@@ -1,24 +1,30 @@
-ID: azure_cis_v140_5
-Title: Logging and Monitoring
-Description: ""
-SectionCode: "5"
-Children:
-    - azure_cis_v140_5_1
-    - azure_cis_v140_5_2
-Controls:
-    - azure_cis_v140_5_3
-Tags:
-    category:
-        - Compliance
-    cis:
-        - "true"
-    cis_section_id:
-        - "5"
-    cis_version:
-        - v1.4.0
-    plugin:
-        - azure
-    service:
-        - Azure
-    type:
-        - Benchmark
+control-group:
+  id: azure_cis_v140_5
+  title: Logging and Monitoring
+  description: Logging and Monitoring
+  section-code: "5"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cis:
+      - "true"
+      cis_section_id:
+      - "5"
+      cis_version:
+      - v1.4.0
+      plugin:
+      - azure
+      service:
+      - Azure
+      type:
+      - Benchmark
+  control-group:
+  - id: azure_cis_v140_5_1
+  - id: azure_cis_v140_5_2
+  controls:
+  - azure_cis_v140_5_3

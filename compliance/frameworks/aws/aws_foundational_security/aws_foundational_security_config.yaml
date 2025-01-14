@@ -1,18 +1,23 @@
-ID: aws_foundational_security_config
-Title: Config
-Description: ""
-SectionCode: config
-Children: []
-Controls:
-    - aws_foundational_security_config_1
-Tags:
-    aws_foundational_security:
-        - "true"
-    category:
-        - Compliance
-    plugin:
-        - aws
-    service:
-        - AWS/Config
-    type:
-        - Benchmark
+control-group:
+  id: aws_foundational_security_config
+  title: Config
+  description: Config
+  section-code: config
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      aws_foundational_security:
+      - "true"
+      category:
+      - Compliance
+      plugin:
+      - aws
+      service:
+      - AWS/Config
+      type:
+      - Benchmark
+  controls:
+  - aws_foundational_security_config_1

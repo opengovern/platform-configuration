@@ -1,21 +1,26 @@
-ID: aws_gxp_21_cfr_part_11_11_300_d
-Title: 300(d) Use of transaction safeguards to prevent unauthorized use of passwords and/or identification codes, and to detect and report in an immediate and urgent manner any attempts at their unauthorized use to the system security unit, and, as appropriate, to organizational management
-Description: 'Persons who use electronic signatures based upon use of identification codes in combination with passwords shall employ controls to ensure their security and integrity. Such controls shall include: (d) Use of transaction safeguards to prevent unauthorized use of passwords and/or identification codes, and to detect and report in an immediate and urgent manner any attempts at their unauthorized use to the system security unit, and, as appropriate, to organizational management.'
-SectionCode: d
-Children: []
-Controls:
-    - aws_cloudtrail_trail_enabled
-    - aws_cloudtrail_trail_integrated_with_logs
-    - aws_guardduty_enabled
-    - aws_securityhub_enabled
-Tags:
-    category:
-        - Compliance
-    gxp_21_cfr_part_11:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_gxp_21_cfr_part_11_11_300_d
+  title: 300(d) Use of transaction safeguards to prevent unauthorized use of passwords and/or identification codes, and to detect and report in an immediate and urgent manner any attempts at their unauthorized use to the system security unit, and, as appropriate, to organizational management
+  description: "Persons who use electronic signatures based upon use of identification codes in combination with passwords shall employ controls to ensure their security and integrity. Such controls shall include: (d) Use of transaction safeguards to prevent unauthorized use of passwords and/or identification codes, and to detect and report in an immediate and urgent manner any attempts at their unauthorized use to the system security unit, and, as appropriate, to organizational management."
+  section-code: d
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      gxp_21_cfr_part_11:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_cloudtrail_trail_enabled
+  - aws_cloudtrail_trail_integrated_with_logs
+  - aws_guardduty_enabled
+  - aws_securityhub_enabled

@@ -1,9 +1,14 @@
-ID: azure_cis_v210_4_4
-Title: MySQL Database
-Description: ""
-SectionCode: "4"
-Children: []
-Controls:
-    - azure_cis_v210_4_4_1
-    - azure_cis_v210_4_4_2
-Tags: {}
+control-group:
+  id: azure_cis_v210_4_4
+  title: MySQL Database
+  description: MySQL Database
+  section-code: "4"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - azure_cis_v210_4_4_1
+  - azure_cis_v210_4_4_2

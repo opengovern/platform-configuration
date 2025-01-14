@@ -1,18 +1,23 @@
-ID: aws_nist_800_53_rev_5_au_9_7
-Title: AU-9(7) Store On Component With Different Operation Systems
-Description: Store audit information on a component running a different operating system than the system or component being audited.
-SectionCode: "7"
-Children: []
-Controls:
-    - aws_cloudtrail_trail_integrated_with_logs
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_au_9_7
+  title: AU-9(7) Store On Component With Different Operation Systems
+  description: Store audit information on a component running a different operating system than the system or component being audited.
+  section-code: "7"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_cloudtrail_trail_integrated_with_logs

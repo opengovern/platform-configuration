@@ -1,20 +1,25 @@
-ID: aws_nist_800_53_rev_5_ac_5_b
-Title: AC-5(b)
-Description: Define system access authorizations to support separation of duties.
-SectionCode: b
-Children: []
-Controls:
-    - aws_ecs_task_definition_user_for_host_mode_check
-    - aws_iam_all_policy_no_service_wild_card
-    - aws_iam_policy_no_star_star
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_ac_5_b
+  title: AC-5(b)
+  description: Define system access authorizations to support separation of duties.
+  section-code: b
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_ecs_task_definition_user_for_host_mode_check
+  - aws_iam_all_policy_no_service_wild_card
+  - aws_iam_policy_no_star_star

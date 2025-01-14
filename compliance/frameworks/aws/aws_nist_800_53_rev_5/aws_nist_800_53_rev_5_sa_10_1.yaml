@@ -1,18 +1,23 @@
-ID: aws_nist_800_53_rev_5_sa_10_1
-Title: SA-10(1) Software And Firmware Integrity Verification
-Description: Require the developer of the system, system component, or system service to enable integrity verification of software and firmware components.
-SectionCode: "1"
-Children: []
-Controls:
-    - aws_cloudtrail_trail_validation_enabled
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS/CloudTrail
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_sa_10_1
+  title: SA-10(1) Software And Firmware Integrity Verification
+  description: Require the developer of the system, system component, or system service to enable integrity verification of software and firmware components.
+  section-code: "1"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS/CloudTrail
+      type:
+      - Benchmark
+  controls:
+  - aws_cloudtrail_trail_validation_enabled

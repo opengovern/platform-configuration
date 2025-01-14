@@ -1,10 +1,15 @@
-ID: azure_rbi_itf_nbfc_v2017_it_operations_4_4_a
-Title: IT Operations-4.4.a
-Description: ""
-SectionCode: a
-Children: []
-Controls:
-    - azure_compute_vm_vulnerability_assessment_solution_enabled
-    - azure_securitycenter_azure_defender_on_for_appservice
-    - azure_securitycenter_azure_defender_on_for_sqldb
-Tags: {}
+control-group:
+  id: azure_rbi_itf_nbfc_v2017_it_operations_4_4_a
+  title: IT Operations-4.4.a
+  description: IT Operations-4.4.a
+  section-code: a
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - azure_compute_vm_vulnerability_assessment_solution_enabled
+  - azure_securitycenter_azure_defender_on_for_appservice
+  - azure_securitycenter_azure_defender_on_for_sqldb

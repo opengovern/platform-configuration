@@ -1,23 +1,28 @@
-ID: azure_cis_v200_4_1
-Title: SQL Server - Auditing
-Description: ""
-SectionCode: "1"
-Children: []
-Controls:
-    - azure_cis_v200_4_1_2
-    - azure_cis_v200_4_1_4
-Tags:
-    category:
-        - Compliance
-    cis:
-        - "true"
-    cis_section_id:
-        - "4.1"
-    cis_version:
-        - v2.0.0
-    plugin:
-        - azure
-    service:
-        - Azure/SQL
-    type:
-        - Benchmark
+control-group:
+  id: azure_cis_v200_4_1
+  title: SQL Server - Auditing
+  description: SQL Server - Auditing
+  section-code: "1"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cis:
+      - "true"
+      cis_section_id:
+      - "4.1"
+      cis_version:
+      - v2.0.0
+      plugin:
+      - azure
+      service:
+      - Azure/SQL
+      type:
+      - Benchmark
+  controls:
+  - azure_cis_v200_4_1_2
+  - azure_cis_v200_4_1_4

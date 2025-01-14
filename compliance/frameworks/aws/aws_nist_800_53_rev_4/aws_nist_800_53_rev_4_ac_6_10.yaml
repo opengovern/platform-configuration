@@ -1,18 +1,23 @@
-ID: aws_nist_800_53_rev_4_ac_6_10
-Title: AC-6(10) Prohibit Non-Privileged Users From Executing Privileged Functions
-Description: The information system prevents non-privileged users from executing privileged functions to include disabling, circumventing, or altering implemented security safeguards/countermeasures.
-SectionCode: "10"
-Children: []
-Controls:
-    - aws_iam_root_user_no_access_keys
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_4:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS/IAM
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_4_ac_6_10
+  title: AC-6(10) Prohibit Non-Privileged Users From Executing Privileged Functions
+  description: The information system prevents non-privileged users from executing privileged functions to include disabling, circumventing, or altering implemented security safeguards/countermeasures.
+  section-code: "10"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_4:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS/IAM
+      type:
+      - Benchmark
+  controls:
+  - aws_iam_root_user_no_access_keys

@@ -1,8 +1,13 @@
-ID: aws_all_controls_lightsail
-Title: Lightsail
-Description: This section contains recommendations for configuring Lightsail resources.
-SectionCode: lightsail
-Children: []
-Controls:
-    - aws_lightsail_instance_ipv6_networking_disabled
-Tags: {}
+control-group:
+  id: aws_all_controls_lightsail
+  title: Lightsail
+  description: This section contains recommendations for configuring Lightsail resources.
+  section-code: lightsail
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - aws_lightsail_instance_ipv6_networking_disabled
