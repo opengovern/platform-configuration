@@ -1,20 +1,25 @@
-ID: testing_cost_controls
-Title: Cost Controls
-Description: Cost Controls
-SectionCode: testing_cost_controls
-Children: []
-Controls:
-    - aws_guardduty_enabled
-Tags:
-    category:
-        - Compliance
-    platform_benchmark_type:
-        - compliance
-    platform_category:
-        - Best Practices
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: testing_cost_controls
+  title: Cost Controls
+  description: Cost Controls
+  section-code: testing_cost_controls
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      platform_benchmark_type:
+      - compliance
+      platform_category:
+      - Best Practices
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_guardduty_enabled

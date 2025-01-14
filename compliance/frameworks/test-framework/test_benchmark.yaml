@@ -1,12 +1,12 @@
-control-group:
-  id: testing_aws_tagging
-  title: AWS Tagging
-  description: AWS Tagging
-  section-code: testing_aws_tagging
+framework:
+  id: test_benchmark
+  title: Testing
+  description: Testing Benchmark
+  section-code: tagging
   metadata:
     defaults:
-      auto-assign: null
-      enabled: false
+      auto-assign: false
+      enabled: true
       tracks-drift-events: false
     tags:
       category:
@@ -17,9 +17,12 @@ control-group:
       - Best Practices
       plugin:
       - aws
+      - azure
       service:
       - AWS
+      - Azure
       type:
       - Benchmark
-  controls:
-  - aws_guardduty_enabled
+  control-group:
+  - id: testing_aws_tagging
+  - id: testing_cost_controls
