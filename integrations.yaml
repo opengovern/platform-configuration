@@ -62,8 +62,7 @@ plugins:
     source_code: "https://github.com/opengovern/og-describer-github"
     package_type: "plugin"
     artifact_details:
-      package_url: "ghcr.io/opengovern/og-describer-github"
-      package_tag: "local-latest"
+      package_url: "https://github.com/opengovern/og-describer-github/releases/download/v0.43.1/github-output.zip"
 
   - id: 5
     integration_type: "digitalocean_team"
@@ -669,21 +668,4 @@ plugins:
     package_type: "plugin"
     artifact_details:
       package_url: "ghcr.io/opengovern/og-describer-tailscale"
-      package_tag: "local-latest"
-
-  - id: 45
-    integration_type: "github_cloud"
-    name: "GitHub Cloud"
-    tier: "Community"
-    tags:
-      usage:
-        - "DevOps"
-        - "Code Security"
-    description: "Gain visibility into Repos, Deployments, PRs."
-    icon: "github.svg"
-    availability: "GA"
-    source_code: "https://github.com/opengovern/og-describer-github"
-    package_type: "plugin"
-    artifact_details:
-      package_url: "ghcr.io/opengovern/og-describer-github"
       package_tag: "local-latest"
