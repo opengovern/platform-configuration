@@ -1,18 +1,23 @@
-ID: azure_hipaa_hitrust_v92_11109_01q1organizational
-Title: 01q1Organizational.57-01.q 01.05 Operating System Access Control
-Description: The organization ensures that redundant user IDs are not issued to other users and that all users are uniquely identified and authenticated for both local and remote access to information systems.
-SectionCode: azure_hipaa_hitrust_v92_11109_01q1organizational
-Children: []
-Controls:
-    - azure_iam_user_with_owner_permission_on_subscription_mfa_enabled
-Tags:
-    category:
-        - Compliance
-    hipaa_hitrust_v92:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure/IAM
-    type:
-        - Benchmark
+control-group:
+  id: azure_hipaa_hitrust_v92_11109_01q1organizational
+  title: 01q1Organizational.57-01.q 01.05 Operating System Access Control
+  description: The organization ensures that redundant user IDs are not issued to other users and that all users are uniquely identified and authenticated for both local and remote access to information systems.
+  section-code: azure_hipaa_hitrust_v92_11109_01q1organizational
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      hipaa_hitrust_v92:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure/IAM
+      type:
+      - Benchmark
+  controls:
+  - azure_iam_user_with_owner_permission_on_subscription_mfa_enabled

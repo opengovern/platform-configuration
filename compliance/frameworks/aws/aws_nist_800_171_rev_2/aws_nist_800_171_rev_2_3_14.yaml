@@ -1,23 +1,28 @@
-ID: aws_nist_800_171_rev_2_3_14
-Title: System and Information integrity
-Description: The SI control family correlates to controls that protect system and information integrity. These include flaw remediation, malicious code protection, information system monitoring, security alerts, software and firmware integrity, and spam protection.
-SectionCode: "3_14"
-Children:
-    - aws_nist_800_171_rev_2_3_14_1
-    - aws_nist_800_171_rev_2_3_14_2
-    - aws_nist_800_171_rev_2_3_14_3
-    - aws_nist_800_171_rev_2_3_14_4
-    - aws_nist_800_171_rev_2_3_14_6
-    - aws_nist_800_171_rev_2_3_14_7
-Controls: []
-Tags:
-    category:
-        - Compliance
-    nist_800_171_rev_2:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_171_rev_2_3_14
+  title: System and Information integrity
+  description: The SI control family correlates to controls that protect system and information integrity. These include flaw remediation, malicious code protection, information system monitoring, security alerts, software and firmware integrity, and spam protection.
+  section-code: "3_14"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_171_rev_2:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_nist_800_171_rev_2_3_14_1
+  - id: aws_nist_800_171_rev_2_3_14_2
+  - id: aws_nist_800_171_rev_2_3_14_3
+  - id: aws_nist_800_171_rev_2_3_14_4
+  - id: aws_nist_800_171_rev_2_3_14_6
+  - id: aws_nist_800_171_rev_2_3_14_7

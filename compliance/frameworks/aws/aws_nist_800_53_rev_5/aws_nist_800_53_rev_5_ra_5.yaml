@@ -1,19 +1,24 @@
-ID: aws_nist_800_53_rev_5_ra_5
-Title: Vulnerability Monitoring And Scanning (RA-5)
-Description: 'Employ the following advanced automation and analytics capabilities to predict and identify risks to [Assignment: organization-defined systems or system components]: [Assignment: organization-defined advanced automation and analytics capabilities].'
-SectionCode: "5"
-Children:
-    - aws_nist_800_53_rev_5_ra_5_4
-    - aws_nist_800_53_rev_5_ra_5_a
-Controls: []
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS/GuardDuty
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_ra_5
+  title: Vulnerability Monitoring And Scanning (RA-5)
+  description: "Employ the following advanced automation and analytics capabilities to predict and identify risks to [Assignment: organization-defined systems or system components]: [Assignment: organization-defined advanced automation and analytics capabilities]."
+  section-code: "5"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS/GuardDuty
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_nist_800_53_rev_5_ra_5_4
+  - id: aws_nist_800_53_rev_5_ra_5_a

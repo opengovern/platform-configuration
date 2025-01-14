@@ -1,20 +1,25 @@
-ID: aws_fedramp_moderate_rev_4_sc_12
-Title: benchmark.nist_800_53_rev_4_sc_12.title
-Description: benchmark.nist_800_53_rev_4_sc_12.description
-SectionCode: "12"
-Children: []
-Controls:
-    - aws_acm_certificate_expires_30_days
-    - aws_kms_cmk_rotation_enabled
-    - aws_kms_key_not_pending_deletion
-Tags:
-    category:
-        - Compliance
-    fedramp_moderate_rev_4:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_fedramp_moderate_rev_4_sc_12
+  title: benchmark.nist_800_53_rev_4_sc_12.title
+  description: benchmark.nist_800_53_rev_4_sc_12.description
+  section-code: "12"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      fedramp_moderate_rev_4:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_acm_certificate_expires_30_days
+  - aws_kms_cmk_rotation_enabled
+  - aws_kms_key_not_pending_deletion

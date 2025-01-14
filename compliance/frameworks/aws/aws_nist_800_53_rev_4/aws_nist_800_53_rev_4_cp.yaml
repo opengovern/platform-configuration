@@ -1,19 +1,24 @@
-ID: aws_nist_800_53_rev_4_cp
-Title: Contingency Planning (CP)
-Description: The CP control family includes controls specific to an organization's contingency plan if a cybersecurity event should occur. This includes controls like contingency plan testing, updating, training, and backups, and system reconstitution.
-SectionCode: cp
-Children:
-    - aws_nist_800_53_rev_4_cp_9
-    - aws_nist_800_53_rev_4_cp_10
-Controls: []
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_4:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_4_cp
+  title: Contingency Planning (CP)
+  description: The CP control family includes controls specific to an organization's contingency plan if a cybersecurity event should occur. This includes controls like contingency plan testing, updating, training, and backups, and system reconstitution.
+  section-code: cp
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_4:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_nist_800_53_rev_4_cp_9
+  - id: aws_nist_800_53_rev_4_cp_10

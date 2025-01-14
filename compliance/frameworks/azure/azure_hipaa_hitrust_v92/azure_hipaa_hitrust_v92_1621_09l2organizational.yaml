@@ -1,18 +1,23 @@
-ID: azure_hipaa_hitrust_v92_1621_09l2organizational
-Title: 09l2Organizational.1-09.l 09.05 Information Back-Up
-Description: Automated tools are used to track all backups.
-SectionCode: azure_hipaa_hitrust_v92_1621_09l2organizational
-Children: []
-Controls:
-    - azure_sql_database_long_term_geo_redundant_backup_enabled
-Tags:
-    category:
-        - Compliance
-    hipaa_hitrust_v92:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure/SQL
-    type:
-        - Benchmark
+control-group:
+  id: azure_hipaa_hitrust_v92_1621_09l2organizational
+  title: 09l2Organizational.1-09.l 09.05 Information Back-Up
+  description: Automated tools are used to track all backups.
+  section-code: azure_hipaa_hitrust_v92_1621_09l2organizational
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      hipaa_hitrust_v92:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure/SQL
+      type:
+      - Benchmark
+  controls:
+  - azure_sql_database_long_term_geo_redundant_backup_enabled

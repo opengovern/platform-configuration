@@ -1,18 +1,23 @@
-ID: aws_fedramp_moderate_rev_4_ia_5_7
-Title: benchmark.nist_800_53_rev_4_ia_5_7.title
-Description: benchmark.nist_800_53_rev_4_ia_5_7.description
-SectionCode: "7"
-Children: []
-Controls:
-    - aws_codebuild_project_plaintext_env_variables_no_sensitive_aws_values
-Tags:
-    category:
-        - Compliance
-    fedramp_moderate_rev_4:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS/CodeBuild
-    type:
-        - Benchmark
+control-group:
+  id: aws_fedramp_moderate_rev_4_ia_5_7
+  title: benchmark.nist_800_53_rev_4_ia_5_7.title
+  description: benchmark.nist_800_53_rev_4_ia_5_7.description
+  section-code: "7"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      fedramp_moderate_rev_4:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS/CodeBuild
+      type:
+      - Benchmark
+  controls:
+  - aws_codebuild_project_plaintext_env_variables_no_sensitive_aws_values

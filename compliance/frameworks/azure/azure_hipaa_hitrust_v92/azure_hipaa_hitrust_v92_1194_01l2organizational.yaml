@@ -1,18 +1,23 @@
-ID: azure_hipaa_hitrust_v92_1194_01l2organizational
-Title: 01l2Organizational.2-01.l 01.04 Network Access Control
-Description: Ports, services, and similar applications installed on a computer or network systems, which are not specifically required for business functionality, are disabled or removed.
-SectionCode: azure_hipaa_hitrust_v92_1194_01l2organizational
-Children: []
-Controls:
-    - azure_appservice_api_app_remote_debugging_disabled
-Tags:
-    category:
-        - Compliance
-    hipaa_hitrust_v92:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure/AppService
-    type:
-        - Benchmark
+control-group:
+  id: azure_hipaa_hitrust_v92_1194_01l2organizational
+  title: 01l2Organizational.2-01.l 01.04 Network Access Control
+  description: Ports, services, and similar applications installed on a computer or network systems, which are not specifically required for business functionality, are disabled or removed.
+  section-code: azure_hipaa_hitrust_v92_1194_01l2organizational
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      hipaa_hitrust_v92:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure/AppService
+      type:
+      - Benchmark
+  controls:
+  - azure_appservice_api_app_remote_debugging_disabled

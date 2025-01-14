@@ -1,18 +1,23 @@
-ID: azure_hipaa_hitrust_v92_1699_09l1organizational
-Title: Workforce members roles and responsibilities in the data backup process are identified and communicated to the workforce; in particular, Bring Your Own Device (BYOD) users are required to perform backups of organizational and/or client data on their devices
-Description: ""
-SectionCode: azure_hipaa_hitrust_v92_1699_09l1organizational
-Children: []
-Controls:
-    - azure_compute_vm_azure_backup_enabled
-Tags:
-    category:
-        - Compliance
-    hipaa_hitrust_v92:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure/Compute
-    type:
-        - Benchmark
+control-group:
+  id: azure_hipaa_hitrust_v92_1699_09l1organizational
+  title: Workforce members roles and responsibilities in the data backup process are identified and communicated to the workforce; in particular, Bring Your Own Device (BYOD) users are required to perform backups of organizational and/or client data on their devices
+  description: Workforce members roles and responsibilities in the data backup process are identified and communicated to the workforce; in particular, Bring Your Own Device (BYOD) users are required to perform backups of organizational and/or client data on their devices
+  section-code: azure_hipaa_hitrust_v92_1699_09l1organizational
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      hipaa_hitrust_v92:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure/Compute
+      type:
+      - Benchmark
+  controls:
+  - azure_compute_vm_azure_backup_enabled

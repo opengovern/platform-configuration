@@ -1,8 +1,13 @@
-ID: aws_all_controls_eventbridge
-Title: EventBridge
-Description: This section contains recommendations for configuring EventBridge resources.
-SectionCode: eventbridge
-Children: []
-Controls:
-    - aws_eventbridge_custom_bus_resource_based_policy_attached
-Tags: {}
+control-group:
+  id: aws_all_controls_eventbridge
+  title: EventBridge
+  description: This section contains recommendations for configuring EventBridge resources.
+  section-code: eventbridge
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - aws_eventbridge_custom_bus_resource_based_policy_attached

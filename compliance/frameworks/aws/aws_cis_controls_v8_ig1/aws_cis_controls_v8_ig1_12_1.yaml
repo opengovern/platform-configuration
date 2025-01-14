@@ -1,19 +1,24 @@
-ID: aws_cis_controls_v8_ig1_12_1
-Title: Ensure Network Infrastructure is Up-to-Date
-Description: Ensure network infrastructure is kept up-to-date. Example implementations include running the latest stable release of software and/or using currently supported network-as-a-service (NaaS) offerings. Review software versions monthly, or more frequently, to verify software support.
-SectionCode: "1"
-Children: []
-Controls:
-    - aws_ec2_instance_ssm_managed
-    - aws_ssm_managed_instance_compliance_patch_compliant
-Tags:
-    category:
-        - Compliance
-    cis_controls_v8_ig1:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_cis_controls_v8_ig1_12_1
+  title: Ensure Network Infrastructure is Up-to-Date
+  description: Ensure network infrastructure is kept up-to-date. Example implementations include running the latest stable release of software and/or using currently supported network-as-a-service (NaaS) offerings. Review software versions monthly, or more frequently, to verify software support.
+  section-code: "1"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cis_controls_v8_ig1:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_ec2_instance_ssm_managed
+  - aws_ssm_managed_instance_compliance_patch_compliant

@@ -1,19 +1,24 @@
-ID: aws_cis_controls_v8_ig1_1
-Title: Inventory and Control of Enterprise Assets
-Description: Actively manage (inventory, track, and correct) all enterprise assets (end-user devices, including portable and mobile; network devices; non-computing/Internet of Things (IoT) devices; and servers) connected to the infrastructure physically, virtually, remotely, and those within cloud environments, to accurately know the totality of assets that need to be monitored and protected within the enterprise. This will also support identifying unauthorized and unmanaged assets to remove or remediate.
-SectionCode: "1"
-Children:
-    - aws_cis_controls_v8_ig1_1_1
-    - aws_cis_controls_v8_ig1_1_2
-Controls: []
-Tags:
-    category:
-        - Compliance
-    cis_controls_v8_ig1:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_cis_controls_v8_ig1_1
+  title: Inventory and Control of Enterprise Assets
+  description: Actively manage (inventory, track, and correct) all enterprise assets (end-user devices, including portable and mobile; network devices; non-computing/Internet of Things (IoT) devices; and servers) connected to the infrastructure physically, virtually, remotely, and those within cloud environments, to accurately know the totality of assets that need to be monitored and protected within the enterprise. This will also support identifying unauthorized and unmanaged assets to remove or remediate.
+  section-code: "1"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cis_controls_v8_ig1:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_cis_controls_v8_ig1_1_1
+  - id: aws_cis_controls_v8_ig1_1_2

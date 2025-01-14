@@ -1,23 +1,28 @@
-ID: aws_nist_800_53_rev_5_au_6
-Title: Audit Record Review, Analysis And Reporting (AU-6)
-Description: Integrate audit review, analysis, and reporting with processes for investigation and response to suspicious activities.
-SectionCode: "6"
-Children:
-    - aws_nist_800_53_rev_5_au_6_1
-    - aws_nist_800_53_rev_5_au_6_3
-    - aws_nist_800_53_rev_5_au_6_4
-    - aws_nist_800_53_rev_5_au_6_5
-    - aws_nist_800_53_rev_5_au_6_6
-    - aws_nist_800_53_rev_5_au_6_9
-Controls: []
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_au_6
+  title: Audit Record Review, Analysis And Reporting (AU-6)
+  description: Integrate audit review, analysis, and reporting with processes for investigation and response to suspicious activities.
+  section-code: "6"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_nist_800_53_rev_5_au_6_1
+  - id: aws_nist_800_53_rev_5_au_6_3
+  - id: aws_nist_800_53_rev_5_au_6_4
+  - id: aws_nist_800_53_rev_5_au_6_5
+  - id: aws_nist_800_53_rev_5_au_6_6
+  - id: aws_nist_800_53_rev_5_au_6_9

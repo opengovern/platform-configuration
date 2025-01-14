@@ -1,28 +1,33 @@
-ID: azure_cis_v140_8
-Title: Other Security Considerations
-Description: ""
-SectionCode: "8"
-Children: []
-Controls:
-    - azure_cis_v140_8_1
-    - azure_cis_v140_8_2
-    - azure_cis_v140_8_3
-    - azure_cis_v140_8_4
-    - azure_cis_v140_8_5
-    - azure_cis_v140_8_6
-    - azure_cis_v140_8_7
-Tags:
-    category:
-        - Compliance
-    cis:
-        - "true"
-    cis_section_id:
-        - "8"
-    cis_version:
-        - v1.4.0
-    plugin:
-        - azure
-    service:
-        - Azure
-    type:
-        - Benchmark
+control-group:
+  id: azure_cis_v140_8
+  title: Other Security Considerations
+  description: Other Security Considerations
+  section-code: "8"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cis:
+      - "true"
+      cis_section_id:
+      - "8"
+      cis_version:
+      - v1.4.0
+      plugin:
+      - azure
+      service:
+      - Azure
+      type:
+      - Benchmark
+  controls:
+  - azure_cis_v140_8_1
+  - azure_cis_v140_8_2
+  - azure_cis_v140_8_3
+  - azure_cis_v140_8_4
+  - azure_cis_v140_8_5
+  - azure_cis_v140_8_6
+  - azure_cis_v140_8_7

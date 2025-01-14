@@ -1,19 +1,24 @@
-ID: aws_nist_800_171_rev_2_3_6
-Title: Incident Response
-Description: IR controls are specific to an organization's incident response policies and procedures. This includes incident response training, testing, monitoring, reporting, and response plan.
-SectionCode: "3_6"
-Children:
-    - aws_nist_800_171_rev_2_3_6_1
-    - aws_nist_800_171_rev_2_3_6_2
-Controls: []
-Tags:
-    category:
-        - Compliance
-    nist_800_171_rev_2:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_171_rev_2_3_6
+  title: Incident Response
+  description: IR controls are specific to an organization's incident response policies and procedures. This includes incident response training, testing, monitoring, reporting, and response plan.
+  section-code: "3_6"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_171_rev_2:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_nist_800_171_rev_2_3_6_1
+  - id: aws_nist_800_171_rev_2_3_6_2

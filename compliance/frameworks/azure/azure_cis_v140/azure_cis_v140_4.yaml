@@ -1,26 +1,32 @@
-ID: azure_cis_v140_4
-Title: Database Services
-Description: ""
-SectionCode: "4"
-Children:
-    - azure_cis_v140_4_1
-    - azure_cis_v140_4_2
-    - azure_cis_v140_4_3
-    - azure_cis_v140_4_4
-Controls:
-    - azure_cis_v140_4_5
-Tags:
-    category:
-        - Compliance
-    cis:
-        - "true"
-    cis_section_id:
-        - "4"
-    cis_version:
-        - v1.4.0
-    plugin:
-        - azure
-    service:
-        - Azure
-    type:
-        - Benchmark
+control-group:
+  id: azure_cis_v140_4
+  title: Database Services
+  description: Database Services
+  section-code: "4"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cis:
+      - "true"
+      cis_section_id:
+      - "4"
+      cis_version:
+      - v1.4.0
+      plugin:
+      - azure
+      service:
+      - Azure
+      type:
+      - Benchmark
+  control-group:
+  - id: azure_cis_v140_4_1
+  - id: azure_cis_v140_4_2
+  - id: azure_cis_v140_4_3
+  - id: azure_cis_v140_4_4
+  controls:
+  - azure_cis_v140_4_5

@@ -1,9 +1,14 @@
-ID: azure_cis_v210_2
-Title: Microsoft Defender
-Description: ""
-SectionCode: "2"
-Children:
-    - azure_cis_v210_2_1
-    - azure_cis_v210_2_2
-Controls: []
-Tags: {}
+control-group:
+  id: azure_cis_v210_2
+  title: Microsoft Defender
+  description: Microsoft Defender
+  section-code: "2"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  control-group:
+  - id: azure_cis_v210_2_1
+  - id: azure_cis_v210_2_2

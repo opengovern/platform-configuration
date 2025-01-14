@@ -1,13 +1,18 @@
-ID: aws_all_controls_backup
-Title: Backup
-Description: This section contains recommendations for configuring Backup resources.
-SectionCode: backup
-Children: []
-Controls:
-    - aws_backup_plan_min_retention_35_days
-    - aws_backup_plan_region_configured
-    - aws_backup_recovery_point_encryption_enabled
-    - aws_backup_recovery_point_manual_deletion_disabled
-    - aws_backup_recovery_point_min_retention_35_days
-    - aws_backup_vault_region_configured
-Tags: {}
+control-group:
+  id: aws_all_controls_backup
+  title: Backup
+  description: This section contains recommendations for configuring Backup resources.
+  section-code: backup
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - aws_backup_plan_min_retention_35_days
+  - aws_backup_plan_region_configured
+  - aws_backup_recovery_point_encryption_enabled
+  - aws_backup_recovery_point_manual_deletion_disabled
+  - aws_backup_recovery_point_min_retention_35_days
+  - aws_backup_vault_region_configured

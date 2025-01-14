@@ -1,21 +1,25 @@
-ID: azure_cis_v200_2_3
-Title: Microsoft Defender for External Attack Surface Monitoring
-Description: ""
-SectionCode: "3"
-Children: []
-Controls: []
-Tags:
-    category:
-        - Compliance
-    cis:
-        - "true"
-    cis_section_id:
-        - "2"
-    cis_version:
-        - v2.0.0
-    plugin:
-        - azure
-    service:
-        - Azure/SecurityCenter
-    type:
-        - Benchmark
+control-group:
+  id: azure_cis_v200_2_3
+  title: Microsoft Defender for External Attack Surface Monitoring
+  description: Microsoft Defender for External Attack Surface Monitoring
+  section-code: "3"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cis:
+      - "true"
+      cis_section_id:
+      - "2"
+      cis_version:
+      - v2.0.0
+      plugin:
+      - azure
+      service:
+      - Azure/SecurityCenter
+      type:
+      - Benchmark

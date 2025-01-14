@@ -1,18 +1,23 @@
-ID: aws_nist_800_53_rev_5_si_4_13_a
-Title: SI-4(13)(a)
-Description: Analyze communications traffic and event patterns for the system.
-SectionCode: a
-Children: []
-Controls:
-    - aws_guardduty_enabled
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_si_4_13_a
+  title: SI-4(13)(a)
+  description: Analyze communications traffic and event patterns for the system.
+  section-code: a
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_guardduty_enabled

@@ -1,18 +1,23 @@
-ID: azure_hipaa_hitrust_v92_1192_01l1organizational
-Title: 01l1Organizational.1-01.l 01.04 Network Access Control
-Description: Access to network equipment is physically protected.
-SectionCode: azure_hipaa_hitrust_v92_1192_01l1organizational
-Children: []
-Controls:
-    - azure_compute_vm_jit_access_protected
-Tags:
-    category:
-        - Compliance
-    hipaa_hitrust_v92:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure/Compute
-    type:
-        - Benchmark
+control-group:
+  id: azure_hipaa_hitrust_v92_1192_01l1organizational
+  title: 01l1Organizational.1-01.l 01.04 Network Access Control
+  description: Access to network equipment is physically protected.
+  section-code: azure_hipaa_hitrust_v92_1192_01l1organizational
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      hipaa_hitrust_v92:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure/Compute
+      type:
+      - Benchmark
+  controls:
+  - azure_compute_vm_jit_access_protected

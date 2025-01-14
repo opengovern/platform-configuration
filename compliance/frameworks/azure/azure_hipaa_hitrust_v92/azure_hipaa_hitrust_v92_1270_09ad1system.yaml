@@ -1,18 +1,23 @@
-ID: azure_hipaa_hitrust_v92_1270_09ad1system
-Title: 09ad1System.12-09.ad 09.10 Monitoring
-Description: The organization ensures proper logging is enabled in order to audit administrator activities; and reviews system administrator and operator logs on a regular basis.
-SectionCode: azure_hipaa_hitrust_v92_1270_09ad1system
-Children: []
-Controls:
-    - azure_monitor_log_alert_for_administrative_operations
-Tags:
-    category:
-        - Compliance
-    hipaa_hitrust_v92:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure/Monitor
-    type:
-        - Benchmark
+control-group:
+  id: azure_hipaa_hitrust_v92_1270_09ad1system
+  title: 09ad1System.12-09.ad 09.10 Monitoring
+  description: The organization ensures proper logging is enabled in order to audit administrator activities; and reviews system administrator and operator logs on a regular basis.
+  section-code: azure_hipaa_hitrust_v92_1270_09ad1system
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      hipaa_hitrust_v92:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure/Monitor
+      type:
+      - Benchmark
+  controls:
+  - azure_monitor_log_alert_for_administrative_operations

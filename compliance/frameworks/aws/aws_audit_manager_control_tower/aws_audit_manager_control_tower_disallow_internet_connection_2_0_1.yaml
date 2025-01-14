@@ -1,22 +1,27 @@
-ID: aws_audit_manager_control_tower_disallow_internet_connection_2_0_1
-Title: 0.1 - Disallow internet connection through RDP
-Description: Disallow internet connection through RDP - Checks whether security groups that are in use disallow unrestricted incoming TCP traffic to the specified
-SectionCode: "2_0_1"
-Children: []
-Controls:
-    - aws_vpc_security_group_restrict_ingress_common_ports_all
-Tags:
-    audit_manager_control_tower:
-        - "true"
-    audit_manager_control_tower_item_id:
-        - 2.0.1
-    category:
-        - Compliance
-    control_set:
-        - disallow_internet_connection
-    plugin:
-        - aws
-    service:
-        - AWS/VPC
-    type:
-        - Benchmark
+control-group:
+  id: aws_audit_manager_control_tower_disallow_internet_connection_2_0_1
+  title: 0.1 - Disallow internet connection through RDP
+  description: Disallow internet connection through RDP - Checks whether security groups that are in use disallow unrestricted incoming TCP traffic to the specified
+  section-code: "2_0_1"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      audit_manager_control_tower:
+      - "true"
+      audit_manager_control_tower_item_id:
+      - 2.0.1
+      category:
+      - Compliance
+      control_set:
+      - disallow_internet_connection
+      plugin:
+      - aws
+      service:
+      - AWS/VPC
+      type:
+      - Benchmark
+  controls:
+  - aws_vpc_security_group_restrict_ingress_common_ports_all

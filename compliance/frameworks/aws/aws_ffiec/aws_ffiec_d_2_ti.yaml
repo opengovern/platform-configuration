@@ -1,20 +1,25 @@
-ID: aws_ffiec_d_2_ti
-Title: Threat Intelligence (TI)
-Description: Threat intelligence and collaboration includes processes to effectively discover, analyze, and understand cyber threats, with the capability to share information internally and with appropriate third parties.
-SectionCode: ti
-Children:
-    - aws_ffiec_d_2_ti_ti_b_1
-    - aws_ffiec_d_2_ti_ti_b_2
-    - aws_ffiec_d_2_ti_ti_b_3
-Controls: []
-Tags:
-    category:
-        - Compliance
-    ffiec:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_ffiec_d_2_ti
+  title: Threat Intelligence (TI)
+  description: Threat intelligence and collaboration includes processes to effectively discover, analyze, and understand cyber threats, with the capability to share information internally and with appropriate third parties.
+  section-code: ti
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      ffiec:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_ffiec_d_2_ti_ti_b_1
+  - id: aws_ffiec_d_2_ti_ti_b_2
+  - id: aws_ffiec_d_2_ti_ti_b_3

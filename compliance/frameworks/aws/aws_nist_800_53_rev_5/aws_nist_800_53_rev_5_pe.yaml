@@ -1,18 +1,23 @@
-ID: aws_nist_800_53_rev_5_pe
-Title: Physical And Environmental Protection (PE)
-Description: The Physical and Environmental Protection control family is implemented to protect systems, buildings, and related supporting infrastructure against physical threats. These controls include physical access authorizations, monitoring, visitor records, emergency shutoff, power, lighting, fire protection, and water damage protection.
-SectionCode: pe
-Children:
-    - aws_nist_800_53_rev_5_pe_6
-Controls: []
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS/GuardDuty
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_pe
+  title: Physical And Environmental Protection (PE)
+  description: The Physical and Environmental Protection control family is implemented to protect systems, buildings, and related supporting infrastructure against physical threats. These controls include physical access authorizations, monitoring, visitor records, emergency shutoff, power, lighting, fire protection, and water damage protection.
+  section-code: pe
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS/GuardDuty
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_nist_800_53_rev_5_pe_6

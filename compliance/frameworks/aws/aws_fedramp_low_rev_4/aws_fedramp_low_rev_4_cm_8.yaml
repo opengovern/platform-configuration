@@ -1,21 +1,26 @@
-ID: aws_fedramp_low_rev_4_cm_8
-Title: benchmark.nist_800_53_rev_4_cm_8.title
-Description: benchmark.nist_800_53_rev_4_cm_8.description
-SectionCode: "8"
-Children: []
-Controls:
-    - aws_ec2_instance_ssm_managed
-    - aws_guardduty_enabled
-    - aws_ssm_managed_instance_compliance_association_compliant
-    - aws_ssm_managed_instance_compliance_patch_compliant
-Tags:
-    category:
-        - Compliance
-    fedramp_low_rev_4:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_fedramp_low_rev_4_cm_8
+  title: benchmark.nist_800_53_rev_4_cm_8.title
+  description: benchmark.nist_800_53_rev_4_cm_8.description
+  section-code: "8"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      fedramp_low_rev_4:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_ec2_instance_ssm_managed
+  - aws_guardduty_enabled
+  - aws_ssm_managed_instance_compliance_association_compliant
+  - aws_ssm_managed_instance_compliance_patch_compliant

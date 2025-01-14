@@ -1,18 +1,23 @@
-ID: azure_hipaa_hitrust_v92_0887_09n2organizational
-Title: 09n2Organizational.5-09.n 09.06 Network Security Management
-Description: The organization requires external/outsourced service providers to identify the specific functions, ports, and protocols used in the provision of the external/outsourced services.
-SectionCode: azure_hipaa_hitrust_v92_0887_09n2organizational
-Children: []
-Controls:
-    - azure_compute_vm_network_traffic_data_collection_windows_agent_installed
-Tags:
-    category:
-        - Compliance
-    hipaa_hitrust_v92:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure/Compute
-    type:
-        - Benchmark
+control-group:
+  id: azure_hipaa_hitrust_v92_0887_09n2organizational
+  title: 09n2Organizational.5-09.n 09.06 Network Security Management
+  description: The organization requires external/outsourced service providers to identify the specific functions, ports, and protocols used in the provision of the external/outsourced services.
+  section-code: azure_hipaa_hitrust_v92_0887_09n2organizational
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      hipaa_hitrust_v92:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure/Compute
+      type:
+      - Benchmark
+  controls:
+  - azure_compute_vm_network_traffic_data_collection_windows_agent_installed

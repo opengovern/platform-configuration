@@ -1,18 +1,23 @@
-ID: aws_fedramp_moderate_rev_4_au_2
-Title: Audit Events (AU-2)
-Description: 'The organization: a. Determines that the information system is capable of auditing the following events: [Assignment: organization-defined auditable events]; b. Coordinates the security audit function with other organizational entities requiring audit- related information to enhance mutual support and to help guide the selection of auditable events; c. Provides a rationale for why the auditable events are deemed to be adequate support after- the-fact investigations of security incidents.'
-SectionCode: "2"
-Children:
-    - aws_fedramp_moderate_rev_4_au_2_a_d
-Controls: []
-Tags:
-    category:
-        - Compliance
-    fedramp_moderate_rev_4:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_fedramp_moderate_rev_4_au_2
+  title: Audit Events (AU-2)
+  description: "The organization: a. Determines that the information system is capable of auditing the following events: [Assignment: organization-defined auditable events]; b. Coordinates the security audit function with other organizational entities requiring audit- related information to enhance mutual support and to help guide the selection of auditable events; c. Provides a rationale for why the auditable events are deemed to be adequate support after- the-fact investigations of security incidents."
+  section-code: "2"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      fedramp_moderate_rev_4:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_fedramp_moderate_rev_4_au_2_a_d

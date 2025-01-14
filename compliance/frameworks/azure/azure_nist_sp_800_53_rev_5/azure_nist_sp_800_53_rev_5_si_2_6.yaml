@@ -1,20 +1,25 @@
-ID: azure_nist_sp_800_53_rev_5_si_2_6
-Title: Removal of Previous Versions of Software and Firmware SI-2(6)
-Description: The organization removes organization-defined software and firmware components after updated versions have been installed.
-SectionCode: "6"
-Children: []
-Controls:
-    - azure_appservice_function_app_latest_http_version
-    - azure_appservice_web_app_latest_http_version
-    - azure_kubernetes_cluster_upgraded_with_non_vulnerable_version
-Tags:
-    category:
-        - Compliance
-    nist_sp_800_53_rev_5:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure
-    type:
-        - Benchmark
+control-group:
+  id: azure_nist_sp_800_53_rev_5_si_2_6
+  title: Removal of Previous Versions of Software and Firmware SI-2(6)
+  description: The organization removes organization-defined software and firmware components after updated versions have been installed.
+  section-code: "6"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_sp_800_53_rev_5:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure
+      type:
+      - Benchmark
+  controls:
+  - azure_appservice_function_app_latest_http_version
+  - azure_appservice_web_app_latest_http_version
+  - azure_kubernetes_cluster_upgraded_with_non_vulnerable_version

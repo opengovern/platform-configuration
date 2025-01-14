@@ -1,22 +1,27 @@
-ID: aws_audit_manager_control_tower_multi_factor_authentication_3_0_3
-Title: 0.3 - Enable MFA for the root user
-Description: Enable MFA for the root user - Checks whether the root user of your AWS account requires multi-factor authentication for console sign-in.
-SectionCode: "3_0_3"
-Children: []
-Controls:
-    - aws_iam_root_user_mfa_enabled
-Tags:
-    audit_manager_control_tower:
-        - "true"
-    audit_manager_control_tower_item_id:
-        - 3.0.3
-    category:
-        - Compliance
-    control_set:
-        - multi_factor_authentication
-    plugin:
-        - aws
-    service:
-        - AWS/IAM
-    type:
-        - Benchmark
+control-group:
+  id: aws_audit_manager_control_tower_multi_factor_authentication_3_0_3
+  title: 0.3 - Enable MFA for the root user
+  description: Enable MFA for the root user - Checks whether the root user of your AWS account requires multi-factor authentication for console sign-in.
+  section-code: "3_0_3"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      audit_manager_control_tower:
+      - "true"
+      audit_manager_control_tower_item_id:
+      - 3.0.3
+      category:
+      - Compliance
+      control_set:
+      - multi_factor_authentication
+      plugin:
+      - aws
+      service:
+      - AWS/IAM
+      type:
+      - Benchmark
+  controls:
+  - aws_iam_root_user_mfa_enabled

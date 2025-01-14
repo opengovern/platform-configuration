@@ -1,12 +1,17 @@
-ID: aws_all_controls_dms
-Title: DMS
-Description: This section contains recommendations for configuring DMS resources.
-SectionCode: dms
-Children: []
-Controls:
-    - aws_dms_certificate_not_expired
-    - aws_dms_endpoint_ssl_configured
-    - aws_dms_replication_instance_automatic_minor_version_upgrade_enabled
-    - aws_dms_replication_instance_not_publicly_accessible
-    - aws_dms_replication_task_source_database_logging_enabled
-Tags: {}
+control-group:
+  id: aws_all_controls_dms
+  title: DMS
+  description: This section contains recommendations for configuring DMS resources.
+  section-code: dms
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - aws_dms_certificate_not_expired
+  - aws_dms_endpoint_ssl_configured
+  - aws_dms_replication_instance_automatic_minor_version_upgrade_enabled
+  - aws_dms_replication_instance_not_publicly_accessible
+  - aws_dms_replication_task_source_database_logging_enabled

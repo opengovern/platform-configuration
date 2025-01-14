@@ -1,23 +1,28 @@
-ID: azure_cis_v150_2_4
-Title: Integrations
-Description: ""
-SectionCode: "4"
-Children: []
-Controls:
-    - azure_cis_v150_2_4_1
-    - azure_cis_v150_2_4_2
-Tags:
-    category:
-        - Compliance
-    cis:
-        - "true"
-    cis_section_id:
-        - "2"
-    cis_version:
-        - v1.5.0
-    plugin:
-        - azure
-    service:
-        - Azure/SecurityCenter
-    type:
-        - Benchmark
+control-group:
+  id: azure_cis_v150_2_4
+  title: Integrations
+  description: Integrations
+  section-code: "4"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cis:
+      - "true"
+      cis_section_id:
+      - "2"
+      cis_version:
+      - v1.5.0
+      plugin:
+      - azure
+      service:
+      - Azure/SecurityCenter
+      type:
+      - Benchmark
+  controls:
+  - azure_cis_v150_2_4_1
+  - azure_cis_v150_2_4_2

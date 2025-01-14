@@ -1,18 +1,23 @@
-ID: aws_nist_800_53_rev_5_ac_5
-Title: Separation Of Duties (AC-5)
-Description: Separate duties of individuals to prevent malevolent activity. automate separation of duties and access authorizations.
-SectionCode: "5"
-Children:
-    - aws_nist_800_53_rev_5_ac_5_b
-Controls: []
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_ac_5
+  title: Separation Of Duties (AC-5)
+  description: Separate duties of individuals to prevent malevolent activity. automate separation of duties and access authorizations.
+  section-code: "5"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_nist_800_53_rev_5_ac_5_b

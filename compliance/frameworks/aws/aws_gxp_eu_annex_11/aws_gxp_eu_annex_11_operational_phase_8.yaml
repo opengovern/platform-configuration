@@ -1,18 +1,23 @@
-ID: aws_gxp_eu_annex_11_operational_phase_8
-Title: Printouts
-Description: Clear printed copies of electronically stored data should be easily available. Any changes to data should be indicated.
-SectionCode: "8"
-Children:
-    - aws_gxp_eu_annex_11_operational_phase_8_2
-Controls: []
-Tags:
-    category:
-        - Compliance
-    gxp_eu_annex_11:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_gxp_eu_annex_11_operational_phase_8
+  title: Printouts
+  description: Clear printed copies of electronically stored data should be easily available. Any changes to data should be indicated.
+  section-code: "8"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      gxp_eu_annex_11:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_gxp_eu_annex_11_operational_phase_8_2

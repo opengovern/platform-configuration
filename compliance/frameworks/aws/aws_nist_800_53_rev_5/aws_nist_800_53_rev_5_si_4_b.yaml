@@ -1,18 +1,23 @@
-ID: aws_nist_800_53_rev_5_si_4_b
-Title: SI-4(b)
-Description: 'Identify unauthorized use of the system through the following techniques and methods: [Assignment: organization-defined techniques and methods].'
-SectionCode: b
-Children: []
-Controls:
-    - aws_guardduty_enabled
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS/GuardDuty
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_si_4_b
+  title: SI-4(b)
+  description: "Identify unauthorized use of the system through the following techniques and methods: [Assignment: organization-defined techniques and methods]."
+  section-code: b
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS/GuardDuty
+      type:
+      - Benchmark
+  controls:
+  - aws_guardduty_enabled

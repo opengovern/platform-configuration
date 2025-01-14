@@ -1,10 +1,15 @@
-ID: azure_all_controls_recoveryservice
-Title: Recovery Service
-Description: This section contains recommendations for configuring Recovery Service resources.
-SectionCode: recoveryservice
-Children: []
-Controls:
-    - azure_recovery_service_vault_uses_managed_identity
-    - azure_recovery_service_vault_uses_private_link
-    - azure_recovery_service_vault_uses_private_link_for_backup
-Tags: {}
+control-group:
+  id: azure_all_controls_recoveryservice
+  title: Recovery Service
+  description: This section contains recommendations for configuring Recovery Service resources.
+  section-code: recoveryservice
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - azure_recovery_service_vault_uses_managed_identity
+  - azure_recovery_service_vault_uses_private_link
+  - azure_recovery_service_vault_uses_private_link_for_backup

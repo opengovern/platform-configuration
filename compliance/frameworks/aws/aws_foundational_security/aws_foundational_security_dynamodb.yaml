@@ -1,21 +1,26 @@
-ID: aws_foundational_security_dynamodb
-Title: DynamoDB
-Description: ""
-SectionCode: dynamodb
-Children: []
-Controls:
-    - aws_foundational_security_dynamodb_1
-    - aws_foundational_security_dynamodb_2
-    - aws_foundational_security_dynamodb_3
-    - aws_foundational_security_dynamodb_6
-Tags:
-    aws_foundational_security:
-        - "true"
-    category:
-        - Compliance
-    plugin:
-        - aws
-    service:
-        - AWS/DynamoDB
-    type:
-        - Benchmark
+control-group:
+  id: aws_foundational_security_dynamodb
+  title: DynamoDB
+  description: DynamoDB
+  section-code: dynamodb
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      aws_foundational_security:
+      - "true"
+      category:
+      - Compliance
+      plugin:
+      - aws
+      service:
+      - AWS/DynamoDB
+      type:
+      - Benchmark
+  controls:
+  - aws_foundational_security_dynamodb_1
+  - aws_foundational_security_dynamodb_2
+  - aws_foundational_security_dynamodb_3
+  - aws_foundational_security_dynamodb_6

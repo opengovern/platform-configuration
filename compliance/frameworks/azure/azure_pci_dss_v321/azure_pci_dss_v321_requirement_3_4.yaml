@@ -1,25 +1,30 @@
-ID: azure_pci_dss_v321_requirement_3_4
-Title: PCI DSS requirement 3.4
-Description: Render PAN unreadable anywhere it is stored - including on portable digital media, backup media, in logs, and data received from or stored by wireless networks. Technology solutions for this requirement may include strong one-way hash functions of the entire PAN, truncation, index tokens with securely stored pads, or strong cryptography.
-SectionCode: "4"
-Children: []
-Controls:
-    - azure_appservice_api_app_use_https
-    - azure_appservice_function_app_only_https_accessible
-    - azure_automation_account_variable_encryption_enabled
-    - azure_redis_cache_ssl_enabled
-    - azure_compute_vm_temp_disks_cache_and_data_flows_encrypted
-    - azure_servicefabric_cluster_protection_level_as_encrypt_and_sign
-    - azure_sql_database_transparent_data_encryption_enabled
-    - azure_storage_account_secure_transfer_required_enabled
-Tags:
-    category:
-        - Compliance
-    pci_dss_v321:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure
-    type:
-        - Benchmark
+control-group:
+  id: azure_pci_dss_v321_requirement_3_4
+  title: PCI DSS requirement 3.4
+  description: Render PAN unreadable anywhere it is stored - including on portable digital media, backup media, in logs, and data received from or stored by wireless networks. Technology solutions for this requirement may include strong one-way hash functions of the entire PAN, truncation, index tokens with securely stored pads, or strong cryptography.
+  section-code: "4"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      pci_dss_v321:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure
+      type:
+      - Benchmark
+  controls:
+  - azure_appservice_api_app_use_https
+  - azure_appservice_function_app_only_https_accessible
+  - azure_automation_account_variable_encryption_enabled
+  - azure_redis_cache_ssl_enabled
+  - azure_compute_vm_temp_disks_cache_and_data_flows_encrypted
+  - azure_servicefabric_cluster_protection_level_as_encrypt_and_sign
+  - azure_sql_database_transparent_data_encryption_enabled
+  - azure_storage_account_secure_transfer_required_enabled

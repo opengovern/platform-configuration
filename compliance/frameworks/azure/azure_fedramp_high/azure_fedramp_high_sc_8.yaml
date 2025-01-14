@@ -1,18 +1,24 @@
-ID: azure_fedramp_high_sc_8
-Title: Transmission Confidentiality And Integrity (SC-8)
-Description: 'The information system protects the [Selection (one or more): confidentiality; integrity] of transmitted information.'
-SectionCode: "8"
-Children:
-    - azure_fedramp_high_sc_8_1
-Controls:
-    - azure_appservice_api_app_ftps_enabled
-    - azure_appservice_api_app_latest_tls_version
-    - azure_appservice_api_app_use_https
-    - azure_appservice_function_app_latest_tls_version
-    - azure_appservice_function_app_only_https_accessible
-    - azure_hdinsight_cluster_encryption_in_transit_enabled
-    - azure_mysql_ssl_enabled
-    - azure_postgres_sql_ssl_enabled
-    - azure_redis_cache_ssl_enabled
-    - azure_storage_account_secure_transfer_required_enabled
-Tags: {}
+control-group:
+  id: azure_fedramp_high_sc_8
+  title: Transmission Confidentiality And Integrity (SC-8)
+  description: "The information system protects the [Selection (one or more): confidentiality; integrity] of transmitted information."
+  section-code: "8"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  control-group:
+  - id: azure_fedramp_high_sc_8_1
+  controls:
+  - azure_appservice_api_app_ftps_enabled
+  - azure_appservice_api_app_latest_tls_version
+  - azure_appservice_api_app_use_https
+  - azure_appservice_function_app_latest_tls_version
+  - azure_appservice_function_app_only_https_accessible
+  - azure_hdinsight_cluster_encryption_in_transit_enabled
+  - azure_mysql_ssl_enabled
+  - azure_postgres_sql_ssl_enabled
+  - azure_redis_cache_ssl_enabled
+  - azure_storage_account_secure_transfer_required_enabled

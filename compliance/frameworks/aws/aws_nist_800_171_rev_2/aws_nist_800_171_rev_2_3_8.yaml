@@ -1,18 +1,23 @@
-ID: aws_nist_800_171_rev_2_3_8
-Title: Media Protection
-Description: This control family help organizations control access to sensitive media. Requirements cover best practice storage or destruction of sensitive information and media in both physical and digital formats.
-SectionCode: "3_8"
-Children:
-    - aws_nist_800_171_rev_2_3_8_9
-Controls: []
-Tags:
-    category:
-        - Compliance
-    nist_800_171_rev_2:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_171_rev_2_3_8
+  title: Media Protection
+  description: This control family help organizations control access to sensitive media. Requirements cover best practice storage or destruction of sensitive information and media in both physical and digital formats.
+  section-code: "3_8"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_171_rev_2:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_nist_800_171_rev_2_3_8_9

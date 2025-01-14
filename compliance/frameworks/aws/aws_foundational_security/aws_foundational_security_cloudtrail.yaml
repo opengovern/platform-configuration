@@ -1,21 +1,26 @@
-ID: aws_foundational_security_cloudtrail
-Title: CloudTrail
-Description: ""
-SectionCode: cloudtrail
-Children: []
-Controls:
-    - aws_foundational_security_cloudtrail_1
-    - aws_foundational_security_cloudtrail_2
-    - aws_foundational_security_cloudtrail_4
-    - aws_foundational_security_cloudtrail_5
-Tags:
-    aws_foundational_security:
-        - "true"
-    category:
-        - Compliance
-    plugin:
-        - aws
-    service:
-        - AWS/CloudTrail
-    type:
-        - Benchmark
+control-group:
+  id: aws_foundational_security_cloudtrail
+  title: CloudTrail
+  description: CloudTrail
+  section-code: cloudtrail
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      aws_foundational_security:
+      - "true"
+      category:
+      - Compliance
+      plugin:
+      - aws
+      service:
+      - AWS/CloudTrail
+      type:
+      - Benchmark
+  controls:
+  - aws_foundational_security_cloudtrail_1
+  - aws_foundational_security_cloudtrail_2
+  - aws_foundational_security_cloudtrail_4
+  - aws_foundational_security_cloudtrail_5

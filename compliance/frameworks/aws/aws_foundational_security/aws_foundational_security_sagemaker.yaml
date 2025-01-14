@@ -1,20 +1,25 @@
-ID: aws_foundational_security_sagemaker
-Title: SageMaker
-Description: ""
-SectionCode: sagemaker
-Children: []
-Controls:
-    - aws_foundational_security_sagemaker_1
-    - aws_foundational_security_sagemaker_2
-    - aws_foundational_security_sagemaker_3
-Tags:
-    aws_foundational_security:
-        - "true"
-    category:
-        - Compliance
-    plugin:
-        - aws
-    service:
-        - AWS/SageMaker
-    type:
-        - Benchmark
+control-group:
+  id: aws_foundational_security_sagemaker
+  title: SageMaker
+  description: SageMaker
+  section-code: sagemaker
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      aws_foundational_security:
+      - "true"
+      category:
+      - Compliance
+      plugin:
+      - aws
+      service:
+      - AWS/SageMaker
+      type:
+      - Benchmark
+  controls:
+  - aws_foundational_security_sagemaker_1
+  - aws_foundational_security_sagemaker_2
+  - aws_foundational_security_sagemaker_3

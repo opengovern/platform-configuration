@@ -1,18 +1,23 @@
-ID: azure_hipaa_hitrust_v92_1209_09aa3system
-Title: 09aa3System.2-09.aa 09.10 Monitoring
-Description: 'The information system generates audit records containing the following detailed information: filename accessed, program or command used to initiate the event and source and destination addresses.'
-SectionCode: azure_hipaa_hitrust_v92_1209_09aa3system
-Children: []
-Controls:
-    - azure_appservice_web_app_diagnostic_logs_enabled
-Tags:
-    category:
-        - Compliance
-    hipaa_hitrust_v92:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure/AppService
-    type:
-        - Benchmark
+control-group:
+  id: azure_hipaa_hitrust_v92_1209_09aa3system
+  title: 09aa3System.2-09.aa 09.10 Monitoring
+  description: "The information system generates audit records containing the following detailed information: filename accessed, program or command used to initiate the event and source and destination addresses."
+  section-code: azure_hipaa_hitrust_v92_1209_09aa3system
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      hipaa_hitrust_v92:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure/AppService
+      type:
+      - Benchmark
+  controls:
+  - azure_appservice_web_app_diagnostic_logs_enabled

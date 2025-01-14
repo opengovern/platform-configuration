@@ -1,9 +1,14 @@
-ID: aws_all_controls_fsx
-Title: FSx
-Description: This section contains recommendations for configuring FSx resources.
-SectionCode: fsx
-Children: []
-Controls:
-    - aws_fsx_file_system_copy_tags_to_backup_and_volume_enabled
-    - aws_fsx_file_system_protected_by_backup_plan
-Tags: {}
+control-group:
+  id: aws_all_controls_fsx
+  title: FSx
+  description: This section contains recommendations for configuring FSx resources.
+  section-code: fsx
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - aws_fsx_file_system_copy_tags_to_backup_and_volume_enabled
+  - aws_fsx_file_system_protected_by_backup_plan

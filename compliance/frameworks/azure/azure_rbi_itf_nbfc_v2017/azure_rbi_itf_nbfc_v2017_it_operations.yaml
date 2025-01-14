@@ -1,8 +1,13 @@
-ID: azure_rbi_itf_nbfc_v2017_it_operations
-Title: IT Operations
-Description: ""
-SectionCode: it_operations
-Children:
-    - azure_rbi_itf_nbfc_v2017_it_operations_4
-Controls: []
-Tags: {}
+control-group:
+  id: azure_rbi_itf_nbfc_v2017_it_operations
+  title: IT Operations
+  description: IT Operations
+  section-code: it_operations
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  control-group:
+  - id: azure_rbi_itf_nbfc_v2017_it_operations_4

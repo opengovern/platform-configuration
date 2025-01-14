@@ -1,8 +1,13 @@
-ID: aws_foundational_security_eventbridge
-Title: EventBridge
-Description: ""
-SectionCode: eventbridge
-Children: []
-Controls:
-    - aws_foundational_security_eventbridge_3
-Tags: {}
+control-group:
+  id: aws_foundational_security_eventbridge
+  title: EventBridge
+  description: EventBridge
+  section-code: eventbridge
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - aws_foundational_security_eventbridge_3

@@ -1,20 +1,25 @@
-ID: aws_fedramp_low_rev_4_sa_3
-Title: benchmark.nist_800_53_rev_4_sa_3.title
-Description: benchmark.nist_800_53_rev_4_sa_3.description
-SectionCode: "3"
-Children: []
-Controls:
-    - aws_codebuild_project_plaintext_env_variables_no_sensitive_aws_values
-    - aws_codebuild_project_source_repo_oauth_configured
-    - aws_ec2_instance_ssm_managed
-Tags:
-    category:
-        - Compliance
-    fedramp_low_rev_4:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_fedramp_low_rev_4_sa_3
+  title: benchmark.nist_800_53_rev_4_sa_3.title
+  description: benchmark.nist_800_53_rev_4_sa_3.description
+  section-code: "3"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      fedramp_low_rev_4:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_codebuild_project_plaintext_env_variables_no_sensitive_aws_values
+  - aws_codebuild_project_source_repo_oauth_configured
+  - aws_ec2_instance_ssm_managed

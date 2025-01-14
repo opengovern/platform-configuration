@@ -1,18 +1,23 @@
-ID: aws_cis_controls_v8_ig1_10_1
-Title: Deploy and Maintain Anti-Malware Software
-Description: Deploy and maintain anti-malware software on all enterprise assets.
-SectionCode: "1"
-Children: []
-Controls:
-    - aws_guardduty_enabled
-Tags:
-    category:
-        - Compliance
-    cis_controls_v8_ig1:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_cis_controls_v8_ig1_10_1
+  title: Deploy and Maintain Anti-Malware Software
+  description: Deploy and maintain anti-malware software on all enterprise assets.
+  section-code: "1"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cis_controls_v8_ig1:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_guardduty_enabled

@@ -1,26 +1,31 @@
-ID: aws_cis_v200_5
-Title: Networking
-Description: ""
-SectionCode: "5"
-Children: []
-Controls:
-    - aws_cis_v200_5_2
-    - aws_cis_v200_5_3
-    - aws_cis_v200_5_4
-    - aws_cis_v200_5_5
-    - aws_cis_v200_5_6
-Tags:
-    category:
-        - Compliance
-    cis:
-        - "true"
-    cis_section_id:
-        - "5"
-    cis_version:
-        - v2.0.0
-    plugin:
-        - aws
-    service:
-        - AWS/VPC
-    type:
-        - Benchmark
+control-group:
+  id: aws_cis_v200_5
+  title: Networking
+  description: Networking
+  section-code: "5"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cis:
+      - "true"
+      cis_section_id:
+      - "5"
+      cis_version:
+      - v2.0.0
+      plugin:
+      - aws
+      service:
+      - AWS/VPC
+      type:
+      - Benchmark
+  controls:
+  - aws_cis_v200_5_2
+  - aws_cis_v200_5_3
+  - aws_cis_v200_5_4
+  - aws_cis_v200_5_5
+  - aws_cis_v200_5_6

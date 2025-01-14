@@ -1,8 +1,13 @@
-ID: azure_rbi_itf_nbfc_v2017_it_governance
-Title: IT Governance
-Description: ""
-SectionCode: it_governance
-Children:
-    - azure_rbi_itf_nbfc_v2017_it_governance_1
-Controls: []
-Tags: {}
+control-group:
+  id: azure_rbi_itf_nbfc_v2017_it_governance
+  title: IT Governance
+  description: IT Governance
+  section-code: it_governance
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  control-group:
+  - id: azure_rbi_itf_nbfc_v2017_it_governance_1

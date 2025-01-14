@@ -1,8 +1,13 @@
-ID: azure_all_controls_logic
-Title: Logic
-Description: This section contains recommendations for configuring Logic resources.
-SectionCode: logic
-Children: []
-Controls:
-    - azure_logic_app_workflow_logging_enabled
-Tags: {}
+control-group:
+  id: azure_all_controls_logic
+  title: Logic
+  description: This section contains recommendations for configuring Logic resources.
+  section-code: logic
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - azure_logic_app_workflow_logging_enabled

@@ -1,18 +1,23 @@
-ID: aws_nist_800_53_rev_5_ra_3_4
-Title: RA-3(4) Predictive Cyber Analytics
-Description: 'Employ the following advanced automation and analytics capabilities to predict and identify risks to [Assignment: organization-defined systems or system components]: [Assignment: organization-defined advanced automation and analytics capabilities].'
-SectionCode: "4"
-Children: []
-Controls:
-    - aws_guardduty_enabled
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS/GuardDuty
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_ra_3_4
+  title: RA-3(4) Predictive Cyber Analytics
+  description: "Employ the following advanced automation and analytics capabilities to predict and identify risks to [Assignment: organization-defined systems or system components]: [Assignment: organization-defined advanced automation and analytics capabilities]."
+  section-code: "4"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS/GuardDuty
+      type:
+      - Benchmark
+  controls:
+  - aws_guardduty_enabled

@@ -1,20 +1,25 @@
-ID: aws_cisa_cyber_essentials_booting_up_things_to_do_first
-Title: 'Booting Up: Things to Do First'
-Description: Even before your organization has begun to adopt a Culture of Cyber Readiness, there are things you can begin doing today to make your organization more prepared against cyber risks.
-SectionCode: booting_up_things_to_do_first
-Children:
-    - aws_cisa_cyber_essentials_booting_up_things_to_do_first_1
-    - aws_cisa_cyber_essentials_booting_up_things_to_do_first_2
-    - aws_cisa_cyber_essentials_booting_up_things_to_do_first_3
-Controls: []
-Tags:
-    category:
-        - Compliance
-    cisa_cyber_essentials:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_cisa_cyber_essentials_booting_up_things_to_do_first
+  title: "Booting Up: Things to Do First"
+  description: Even before your organization has begun to adopt a Culture of Cyber Readiness, there are things you can begin doing today to make your organization more prepared against cyber risks.
+  section-code: booting_up_things_to_do_first
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cisa_cyber_essentials:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_cisa_cyber_essentials_booting_up_things_to_do_first_1
+  - id: aws_cisa_cyber_essentials_booting_up_things_to_do_first_2
+  - id: aws_cisa_cyber_essentials_booting_up_things_to_do_first_3

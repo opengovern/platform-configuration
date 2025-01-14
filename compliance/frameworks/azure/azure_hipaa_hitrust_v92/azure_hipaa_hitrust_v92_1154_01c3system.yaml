@@ -1,18 +1,23 @@
-ID: azure_hipaa_hitrust_v92_1154_01c3system
-Title: Contractors are provided with minimal system and physical access
-Description: The allocation and use of privileges to information systems and services shall be restricted and controlled. Special attention shall be given to the allocation of privileged access rights, which allow users to override system controls. Only after the organization assesses the contractor's ability to comply with its security requirements and the contractor agrees to comply.
-SectionCode: azure_hipaa_hitrust_v92_1154_01c3system
-Children: []
-Controls:
-    - azure_iam_subscription_owner_max_3
-Tags:
-    category:
-        - Compliance
-    hipaa_hitrust_v92:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure/IAM
-    type:
-        - Benchmark
+control-group:
+  id: azure_hipaa_hitrust_v92_1154_01c3system
+  title: Contractors are provided with minimal system and physical access
+  description: The allocation and use of privileges to information systems and services shall be restricted and controlled. Special attention shall be given to the allocation of privileged access rights, which allow users to override system controls. Only after the organization assesses the contractor's ability to comply with its security requirements and the contractor agrees to comply.
+  section-code: azure_hipaa_hitrust_v92_1154_01c3system
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      hipaa_hitrust_v92:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure/IAM
+      type:
+      - Benchmark
+  controls:
+  - azure_iam_subscription_owner_max_3

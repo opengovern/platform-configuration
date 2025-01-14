@@ -1,22 +1,27 @@
-ID: aws_nist_800_53_rev_5_si_7
-Title: Software, Firmware, and Information Integrity (SI-7)
-Description: 'a. Employ integrity verification tools to detect unauthorized changes to the following software, firmware, and information: [Assignment: organization-defined software, firmware, and information]; and b. Take the following actions when unauthorized changes to the software, firmware, and information are detected: [Assignment: organization-defined actions].'
-SectionCode: "7"
-Children:
-    - aws_nist_800_53_rev_5_si_7_1
-    - aws_nist_800_53_rev_5_si_7_3
-    - aws_nist_800_53_rev_5_si_7_7
-    - aws_nist_800_53_rev_5_si_7_8
-    - aws_nist_800_53_rev_5_si_7_a
-Controls: []
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_si_7
+  title: Software, Firmware, and Information Integrity (SI-7)
+  description: "a.\u2003Employ integrity verification tools to detect unauthorized changes to the following software, firmware, and information: [Assignment: organization-defined software, firmware, and information]; and b.\u2003Take the following actions when unauthorized changes to the software, firmware, and information are detected: [Assignment: organization-defined actions]."
+  section-code: "7"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_nist_800_53_rev_5_si_7_1
+  - id: aws_nist_800_53_rev_5_si_7_3
+  - id: aws_nist_800_53_rev_5_si_7_7
+  - id: aws_nist_800_53_rev_5_si_7_8
+  - id: aws_nist_800_53_rev_5_si_7_a

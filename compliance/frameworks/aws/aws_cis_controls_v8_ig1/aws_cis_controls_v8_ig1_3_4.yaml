@@ -1,18 +1,23 @@
-ID: aws_cis_controls_v8_ig1_3_4
-Title: Enforce Data Retention
-Description: Retain data according to the enterprise’s data management process. Data retention must include both minimum and maximum timelines.
-SectionCode: "4"
-Children: []
-Controls:
-    - aws_cloudwatch_log_group_retention_period_365
-Tags:
-    category:
-        - Compliance
-    cis_controls_v8_ig1:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_cis_controls_v8_ig1_3_4
+  title: Enforce Data Retention
+  description: Retain data according to the enterprise’s data management process. Data retention must include both minimum and maximum timelines.
+  section-code: "4"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cis_controls_v8_ig1:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_cloudwatch_log_group_retention_period_365

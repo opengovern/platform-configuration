@@ -1,10 +1,15 @@
-ID: aws_all_controls_directoryservice
-Title: Directory Service
-Description: This section contains recommendations for configuring Directory Service resources.
-SectionCode: directoryservice
-Children: []
-Controls:
-    - aws_directory_service_certificate_expires_90_days
-    - aws_directory_service_directory_snapshots_limit_2
-    - aws_directory_service_directory_sns_notifications_enabled
-Tags: {}
+control-group:
+  id: aws_all_controls_directoryservice
+  title: Directory Service
+  description: This section contains recommendations for configuring Directory Service resources.
+  section-code: directoryservice
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - aws_directory_service_certificate_expires_90_days
+  - aws_directory_service_directory_snapshots_limit_2
+  - aws_directory_service_directory_sns_notifications_enabled

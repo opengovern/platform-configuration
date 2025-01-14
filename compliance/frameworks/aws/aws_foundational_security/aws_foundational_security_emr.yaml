@@ -1,19 +1,24 @@
-ID: aws_foundational_security_emr
-Title: EMR
-Description: ""
-SectionCode: emr
-Children: []
-Controls:
-    - aws_foundational_security_emr_1
-    - aws_foundational_security_emr_2
-Tags:
-    aws_foundational_security:
-        - "true"
-    category:
-        - Compliance
-    plugin:
-        - aws
-    service:
-        - AWS/EMR
-    type:
-        - Benchmark
+control-group:
+  id: aws_foundational_security_emr
+  title: EMR
+  description: EMR
+  section-code: emr
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      aws_foundational_security:
+      - "true"
+      category:
+      - Compliance
+      plugin:
+      - aws
+      service:
+      - AWS/EMR
+      type:
+      - Benchmark
+  controls:
+  - aws_foundational_security_emr_1
+  - aws_foundational_security_emr_2

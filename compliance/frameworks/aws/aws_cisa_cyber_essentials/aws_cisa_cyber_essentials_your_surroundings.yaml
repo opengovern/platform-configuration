@@ -1,21 +1,26 @@
-ID: aws_cisa_cyber_essentials_your_surroundings
-Title: Your Surroundings
-Description: As your organization's digital workplace, this is an essential element of your organization's Culture of Cyber Readiness. Your task for this element is to ensure only those who belong on your digital workplace have access to it.
-SectionCode: your_surroundings
-Children:
-    - aws_cisa_cyber_essentials_your_surroundings_1
-    - aws_cisa_cyber_essentials_your_surroundings_2
-    - aws_cisa_cyber_essentials_your_surroundings_3
-    - aws_cisa_cyber_essentials_your_surroundings_4
-Controls: []
-Tags:
-    category:
-        - Compliance
-    cisa_cyber_essentials:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_cisa_cyber_essentials_your_surroundings
+  title: Your Surroundings
+  description: As your organization's digital workplace, this is an essential element of your organization's Culture of Cyber Readiness. Your task for this element is to ensure only those who belong on your digital workplace have access to it.
+  section-code: your_surroundings
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cisa_cyber_essentials:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_cisa_cyber_essentials_your_surroundings_1
+  - id: aws_cisa_cyber_essentials_your_surroundings_2
+  - id: aws_cisa_cyber_essentials_your_surroundings_3
+  - id: aws_cisa_cyber_essentials_your_surroundings_4

@@ -1,24 +1,29 @@
-ID: azure_cis_v150_4_3
-Title: PostgreSQL Database Server
-Description: ""
-SectionCode: "3"
-Children: []
-Controls:
-    - azure_cis_v150_4_3_1
-    - azure_cis_v150_4_3_7
-    - azure_cis_v150_4_3_8
-Tags:
-    category:
-        - Compliance
-    cis:
-        - "true"
-    cis_section_id:
-        - "4.3"
-    cis_version:
-        - v1.5.0
-    plugin:
-        - azure
-    service:
-        - Azure
-    type:
-        - Benchmark
+control-group:
+  id: azure_cis_v150_4_3
+  title: PostgreSQL Database Server
+  description: PostgreSQL Database Server
+  section-code: "3"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cis:
+      - "true"
+      cis_section_id:
+      - "4.3"
+      cis_version:
+      - v1.5.0
+      plugin:
+      - azure
+      service:
+      - Azure
+      type:
+      - Benchmark
+  controls:
+  - azure_cis_v150_4_3_1
+  - azure_cis_v150_4_3_7
+  - azure_cis_v150_4_3_8

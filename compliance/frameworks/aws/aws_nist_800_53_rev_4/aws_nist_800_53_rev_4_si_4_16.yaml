@@ -1,19 +1,24 @@
-ID: aws_nist_800_53_rev_4_si_4_16
-Title: SI-4(16) Correlate Monitoring Information
-Description: The organization correlates information from monitoring tools employed throughout the information system.
-SectionCode: "16"
-Children: []
-Controls:
-    - aws_guardduty_enabled
-    - aws_securityhub_enabled
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_4:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_4_si_4_16
+  title: SI-4(16) Correlate Monitoring Information
+  description: The organization correlates information from monitoring tools employed throughout the information system.
+  section-code: "16"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_4:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_guardduty_enabled
+  - aws_securityhub_enabled

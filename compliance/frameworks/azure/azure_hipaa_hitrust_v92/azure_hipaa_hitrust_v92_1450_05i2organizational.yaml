@@ -1,18 +1,23 @@
-ID: azure_hipaa_hitrust_v92_1450_05i2organizational
-Title: 05i2Organizational.2-05.i 05.02 External Parties
-Description: The organization obtains satisfactory assurances that reasonable information security exists across their information supply chain by performing an annual review, which includes all partners/third party-providers upon which their information supply chain depends.
-SectionCode: azure_hipaa_hitrust_v92_1450_05i2organizational
-Children: []
-Controls:
-    - azure_postgres_sql_ssl_enabled
-Tags:
-    category:
-        - Compliance
-    hipaa_hitrust_v92:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure/PostgreSQL
-    type:
-        - Benchmark
+control-group:
+  id: azure_hipaa_hitrust_v92_1450_05i2organizational
+  title: 05i2Organizational.2-05.i 05.02 External Parties
+  description: The organization obtains satisfactory assurances that reasonable information security exists across their information supply chain by performing an annual review, which includes all partners/third party-providers upon which their information supply chain depends.
+  section-code: azure_hipaa_hitrust_v92_1450_05i2organizational
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      hipaa_hitrust_v92:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure/PostgreSQL
+      type:
+      - Benchmark
+  controls:
+  - azure_postgres_sql_ssl_enabled

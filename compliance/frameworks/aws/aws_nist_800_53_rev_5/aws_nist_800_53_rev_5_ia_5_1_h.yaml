@@ -1,18 +1,23 @@
-ID: aws_nist_800_53_rev_5_ia_5_1_h
-Title: IA-5(1)(h)
-Description: 'For password-based authentication: (h) Enforce the following composition and complexity rules: [Assignment: organization-defined composition and complexity rules].'
-SectionCode: h
-Children: []
-Controls:
-    - aws_iam_account_password_policy_min_length_14
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS/IAM
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_ia_5_1_h
+  title: IA-5(1)(h)
+  description: "For password-based authentication: (h) Enforce the following composition and complexity rules: [Assignment: organization-defined composition and complexity rules]."
+  section-code: h
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS/IAM
+      type:
+      - Benchmark
+  controls:
+  - aws_iam_account_password_policy_min_length_14

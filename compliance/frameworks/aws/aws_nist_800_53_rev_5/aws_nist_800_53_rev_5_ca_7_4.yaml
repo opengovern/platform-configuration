@@ -1,18 +1,23 @@
-ID: aws_nist_800_53_rev_5_ca_7_4
-Title: CA-7(4) Risk Monitoring
-Description: 'Ensure risk monitoring is an integral part of the continuous monitoring strategy that includes the following: a. Effectiveness monitoring; b. Compliance monitoring; and c. Change monitoring.'
-SectionCode: "4"
-Children:
-    - aws_nist_800_53_rev_5_ca_7_4_c
-Controls: []
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_ca_7_4
+  title: CA-7(4) Risk Monitoring
+  description: "Ensure risk monitoring is an integral part of the continuous monitoring strategy that includes the following: a.\u2003Effectiveness monitoring; b.\u2003Compliance monitoring; and c.\u2003Change monitoring."
+  section-code: "4"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_nist_800_53_rev_5_ca_7_4_c

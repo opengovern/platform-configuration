@@ -1,13 +1,18 @@
-ID: aws_all_controls_kms
-Title: KMS
-Description: This section contains recommendations for configuring KMS resources.
-SectionCode: kms
-Children: []
-Controls:
-    - aws_kms_cmk_policy_prohibit_public_access
-    - aws_kms_cmk_rotation_enabled
-    - aws_kms_cmk_unused
-    - aws_kms_key_decryption_restricted_in_iam_customer_managed_policy
-    - aws_kms_key_decryption_restricted_in_iam_inline_policy
-    - aws_kms_key_not_pending_deletion
-Tags: {}
+control-group:
+  id: aws_all_controls_kms
+  title: KMS
+  description: This section contains recommendations for configuring KMS resources.
+  section-code: kms
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - aws_kms_cmk_policy_prohibit_public_access
+  - aws_kms_cmk_rotation_enabled
+  - aws_kms_cmk_unused
+  - aws_kms_key_decryption_restricted_in_iam_customer_managed_policy
+  - aws_kms_key_decryption_restricted_in_iam_inline_policy
+  - aws_kms_key_not_pending_deletion

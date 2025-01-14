@@ -1,19 +1,24 @@
-ID: aws_ffiec_d_3_pc_se_b_1
-Title: D3.PC.Se.B.1
-Description: Developers working for the institution follow secure program coding practices, as part of a system development life cycle (SDLC), that meet industry standards.
-SectionCode: se_b_1
-Children: []
-Controls:
-    - aws_codebuild_project_plaintext_env_variables_no_sensitive_aws_values
-    - aws_codebuild_project_source_repo_oauth_configured
-Tags:
-    category:
-        - Compliance
-    ffiec:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_ffiec_d_3_pc_se_b_1
+  title: D3.PC.Se.B.1
+  description: Developers working for the institution follow secure program coding practices, as part of a system development life cycle (SDLC), that meet industry standards.
+  section-code: se_b_1
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      ffiec:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_codebuild_project_plaintext_env_variables_no_sensitive_aws_values
+  - aws_codebuild_project_source_repo_oauth_configured

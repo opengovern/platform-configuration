@@ -1,9 +1,14 @@
-ID: aws_all_controls_athena
-Title: Athena
-Description: This section contains recommendations for configuring Athena resources.
-SectionCode: athena
-Children: []
-Controls:
-    - aws_athena_workgroup_encryption_at_rest_enabled
-    - aws_athena_workgroup_enforce_configuration_enabled
-Tags: {}
+control-group:
+  id: aws_all_controls_athena
+  title: Athena
+  description: This section contains recommendations for configuring Athena resources.
+  section-code: athena
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - aws_athena_workgroup_encryption_at_rest_enabled
+  - aws_athena_workgroup_enforce_configuration_enabled

@@ -1,19 +1,24 @@
-ID: aws_nist_800_53_rev_5_ac_2_3_b
-Title: AC-2(3)(b)
-Description: 'Disable accounts within [Assignment: organization-defined time period] when the accounts: (b) Are no longer associated with a user or individual.'
-SectionCode: b
-Children: []
-Controls:
-    - aws_iam_account_password_policy_min_length_14
-    - aws_iam_user_unused_credentials_90
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS/IAM
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_ac_2_3_b
+  title: AC-2(3)(b)
+  description: "Disable accounts within [Assignment: organization-defined time period] when the accounts: (b) Are no longer associated with a user or individual."
+  section-code: b
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS/IAM
+      type:
+      - Benchmark
+  controls:
+  - aws_iam_account_password_policy_min_length_14
+  - aws_iam_user_unused_credentials_90

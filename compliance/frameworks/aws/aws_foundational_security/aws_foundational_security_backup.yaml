@@ -1,8 +1,13 @@
-ID: aws_foundational_security_backup
-Title: Backup
-Description: ""
-SectionCode: backup
-Children: []
-Controls:
-    - aws_foundational_security_backup_1
-Tags: {}
+control-group:
+  id: aws_foundational_security_backup
+  title: Backup
+  description: Backup
+  section-code: backup
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - aws_foundational_security_backup_1

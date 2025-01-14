@@ -1,26 +1,32 @@
-ID: aws_nist_800_53_rev_5_ia_5
-Title: Authenticator Management (IA-5)
-Description: Authenticate users and devices. Automate administrative control. Enforce restrictions. Protect against unauthorized use.
-SectionCode: "5"
-Children:
-    - aws_nist_800_53_rev_5_ia_5_1
-    - aws_nist_800_53_rev_5_ia_5_8
-    - aws_nist_800_53_rev_5_ia_5_18
-    - aws_nist_800_53_rev_5_ia_5_b
-    - aws_nist_800_53_rev_5_ia_5_c
-    - aws_nist_800_53_rev_5_ia_5_d
-    - aws_nist_800_53_rev_5_ia_5_f
-    - aws_nist_800_53_rev_5_ia_5_h
-Controls:
-    - aws_iam_account_password_policy_min_length_14
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_ia_5
+  title: Authenticator Management (IA-5)
+  description: Authenticate users and devices. Automate administrative control. Enforce restrictions. Protect against unauthorized use.
+  section-code: "5"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_nist_800_53_rev_5_ia_5_1
+  - id: aws_nist_800_53_rev_5_ia_5_8
+  - id: aws_nist_800_53_rev_5_ia_5_18
+  - id: aws_nist_800_53_rev_5_ia_5_b
+  - id: aws_nist_800_53_rev_5_ia_5_c
+  - id: aws_nist_800_53_rev_5_ia_5_d
+  - id: aws_nist_800_53_rev_5_ia_5_f
+  - id: aws_nist_800_53_rev_5_ia_5_h
+  controls:
+  - aws_iam_account_password_policy_min_length_14

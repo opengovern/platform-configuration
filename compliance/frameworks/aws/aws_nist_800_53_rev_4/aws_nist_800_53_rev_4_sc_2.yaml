@@ -1,19 +1,24 @@
-ID: aws_nist_800_53_rev_4_sc_2
-Title: Application Partitioning (SC-2)
-Description: The information system separates user functionality (including user interface services) from information system management functionality.
-SectionCode: "2"
-Children: []
-Controls:
-    - aws_iam_group_not_empty
-    - aws_iam_policy_no_star_star
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_4:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS/IAM
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_4_sc_2
+  title: Application Partitioning (SC-2)
+  description: The information system separates user functionality (including user interface services) from information system management functionality.
+  section-code: "2"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_4:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS/IAM
+      type:
+      - Benchmark
+  controls:
+  - aws_iam_group_not_empty
+  - aws_iam_policy_no_star_star

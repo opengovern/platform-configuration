@@ -1,15 +1,20 @@
-ID: aws_foundational_security_neptune
-Title: Neptune
-Description: ""
-SectionCode: neptune
-Children: []
-Controls:
-    - aws_foundational_security_neptune_1
-    - aws_foundational_security_neptune_2
-    - aws_foundational_security_neptune_3
-    - aws_foundational_security_neptune_4
-    - aws_foundational_security_neptune_5
-    - aws_foundational_security_neptune_6
-    - aws_foundational_security_neptune_7
-    - aws_foundational_security_neptune_8
-Tags: {}
+control-group:
+  id: aws_foundational_security_neptune
+  title: Neptune
+  description: Neptune
+  section-code: neptune
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - aws_foundational_security_neptune_1
+  - aws_foundational_security_neptune_2
+  - aws_foundational_security_neptune_3
+  - aws_foundational_security_neptune_4
+  - aws_foundational_security_neptune_5
+  - aws_foundational_security_neptune_6
+  - aws_foundational_security_neptune_7
+  - aws_foundational_security_neptune_8

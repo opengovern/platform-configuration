@@ -1,18 +1,23 @@
-ID: aws_nist_800_53_rev_5_au_7
-Title: Audit Record Reduction And Report Generation (AU-7)
-Description: Support for real-time audit review, analysis, and reporting requirements without altering original audit records.
-SectionCode: "7"
-Children:
-    - aws_nist_800_53_rev_5_au_7_1
-Controls: []
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_5:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_5_au_7
+  title: Audit Record Reduction And Report Generation (AU-7)
+  description: Support for real-time audit review, analysis, and reporting requirements without altering original audit records.
+  section-code: "7"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_5:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  control-group:
+  - id: aws_nist_800_53_rev_5_au_7_1

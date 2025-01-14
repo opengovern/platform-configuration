@@ -1,19 +1,24 @@
-ID: aws_nist_800_53_rev_4_ia_2_2
-Title: IA-2(2) Network Access To Non-Privileged Accounts
-Description: The information system implements multifactor authentication for network access to non-privileged accounts.
-SectionCode: "2"
-Children: []
-Controls:
-    - aws_iam_user_console_access_mfa_enabled
-    - aws_iam_user_mfa_enabled
-Tags:
-    category:
-        - Compliance
-    nist_800_53_rev_4:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS/IAM
-    type:
-        - Benchmark
+control-group:
+  id: aws_nist_800_53_rev_4_ia_2_2
+  title: IA-2(2) Network Access To Non-Privileged Accounts
+  description: The information system implements multifactor authentication for network access to non-privileged accounts.
+  section-code: "2"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_800_53_rev_4:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS/IAM
+      type:
+      - Benchmark
+  controls:
+  - aws_iam_user_console_access_mfa_enabled
+  - aws_iam_user_mfa_enabled

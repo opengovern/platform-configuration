@@ -1,20 +1,25 @@
-ID: aws_rbi_cyber_security_annex_i_7_2
-Title: Annex I (7.2)
-Description: Passwords should be set as complex and lengthy and users should not use same passwords for all the applications/systems/devices.
-SectionCode: annex_i_7_2
-Children: []
-Controls:
-    - aws_iam_account_password_policy_strong_min_reuse_24
-Tags:
-    category:
-        - Compliance
-    plugin:
-        - aws
-    rbi_cyber_security:
-        - "true"
-    rbi_cyber_security_item_id:
-        - annex_i_7_2
-    service:
-        - AWS/IAM
-    type:
-        - Benchmark
+control-group:
+  id: aws_rbi_cyber_security_annex_i_7_2
+  title: Annex I (7.2)
+  description: Passwords should be set as complex and lengthy and users should not use same passwords for all the applications/systems/devices.
+  section-code: annex_i_7_2
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      plugin:
+      - aws
+      rbi_cyber_security:
+      - "true"
+      rbi_cyber_security_item_id:
+      - annex_i_7_2
+      service:
+      - AWS/IAM
+      type:
+      - Benchmark
+  controls:
+  - aws_iam_account_password_policy_strong_min_reuse_24

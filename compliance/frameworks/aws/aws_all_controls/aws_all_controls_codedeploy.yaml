@@ -1,7 +1,11 @@
-ID: aws_all_controls_codedeploy
-Title: CodeDeploy
-Description: This section contains recommendations for configuring CodeDeploy resources.
-SectionCode: codedeploy
-Children: []
-Controls: null
-Tags: {}
+control-group:
+  id: aws_all_controls_codedeploy
+  title: CodeDeploy
+  description: This section contains recommendations for configuring CodeDeploy resources.
+  section-code: codedeploy
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}

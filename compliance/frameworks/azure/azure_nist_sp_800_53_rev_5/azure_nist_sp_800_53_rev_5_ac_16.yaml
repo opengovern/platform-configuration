@@ -1,19 +1,24 @@
-ID: azure_nist_sp_800_53_rev_5_ac_16
-Title: Security and Privacy Attributes (AC-16)
-Description: Support and maintains the binding of security attributes to information in storage, in process, and in transition.
-SectionCode: "16"
-Children: []
-Controls:
-    - azure_securitycenter_azure_defender_on_for_sqlservervm
-    - azure_sql_server_azure_defender_enabled
-Tags:
-    category:
-        - Compliance
-    nist_sp_800_53_rev_5:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure
-    type:
-        - Benchmark
+control-group:
+  id: azure_nist_sp_800_53_rev_5_ac_16
+  title: Security and Privacy Attributes (AC-16)
+  description: Support and maintains the binding of security attributes to information in storage, in process, and in transition.
+  section-code: "16"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      nist_sp_800_53_rev_5:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure
+      type:
+      - Benchmark
+  controls:
+  - azure_securitycenter_azure_defender_on_for_sqlservervm
+  - azure_sql_server_azure_defender_enabled

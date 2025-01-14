@@ -1,10 +1,15 @@
-ID: azure_all_controls_batch
-Title: Batch
-Description: This section contains recommendations for configuring Batch resources.
-SectionCode: batch
-Children: []
-Controls:
-    - azure_batch_account_encrypted_with_cmk
-    - azure_batch_account_identity_provider_enabled
-    - azure_batch_account_logging_enabled
-Tags: {}
+control-group:
+  id: azure_all_controls_batch
+  title: Batch
+  description: This section contains recommendations for configuring Batch resources.
+  section-code: batch
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - azure_batch_account_encrypted_with_cmk
+  - azure_batch_account_identity_provider_enabled
+  - azure_batch_account_logging_enabled

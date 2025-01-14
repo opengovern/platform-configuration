@@ -1,8 +1,13 @@
-ID: azure_all_controls_springcloud
-Title: Spring Cloud
-Description: This section contains recommendations for configuring Spring Cloud resources.
-SectionCode: springcloud
-Children: []
-Controls:
-    - azure_spring_cloud_service_network_injection_enabled
-Tags: {}
+control-group:
+  id: azure_all_controls_springcloud
+  title: Spring Cloud
+  description: This section contains recommendations for configuring Spring Cloud resources.
+  section-code: springcloud
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - azure_spring_cloud_service_network_injection_enabled

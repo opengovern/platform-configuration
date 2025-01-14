@@ -1,18 +1,23 @@
-ID: azure_hipaa_hitrust_v92_0717_10m3organizational
-Title: 10m3Organizational.2-10.m 10.06 Technical Vulnerability Management
-Description: Vulnerability scanning tools include the capability to readily update the information system vulnerabilities scanned.
-SectionCode: azure_hipaa_hitrust_v92_0717_10m3organizational
-Children: []
-Controls:
-    - azure_compute_vm_scale_set_security_configuration_vulnerabilities_remediated
-Tags:
-    category:
-        - Compliance
-    hipaa_hitrust_v92:
-        - "true"
-    plugin:
-        - azure
-    service:
-        - Azure/Compute
-    type:
-        - Benchmark
+control-group:
+  id: azure_hipaa_hitrust_v92_0717_10m3organizational
+  title: 10m3Organizational.2-10.m 10.06 Technical Vulnerability Management
+  description: Vulnerability scanning tools include the capability to readily update the information system vulnerabilities scanned.
+  section-code: azure_hipaa_hitrust_v92_0717_10m3organizational
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      hipaa_hitrust_v92:
+      - "true"
+      plugin:
+      - azure
+      service:
+      - Azure/Compute
+      type:
+      - Benchmark
+  controls:
+  - azure_compute_vm_scale_set_security_configuration_vulnerabilities_remediated

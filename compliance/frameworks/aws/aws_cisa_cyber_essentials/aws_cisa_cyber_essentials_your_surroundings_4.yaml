@@ -1,18 +1,23 @@
-ID: aws_cisa_cyber_essentials_your_surroundings_4
-Title: Your Surroundings-4
-Description: Leverage unique passwords for all user accounts.
-SectionCode: "4"
-Children: []
-Controls:
-    - aws_iam_account_password_policy_strong_min_reuse_24
-Tags:
-    category:
-        - Compliance
-    cisa_cyber_essentials:
-        - "true"
-    plugin:
-        - aws
-    service:
-        - AWS
-    type:
-        - Benchmark
+control-group:
+  id: aws_cisa_cyber_essentials_your_surroundings_4
+  title: Your Surroundings-4
+  description: Leverage unique passwords for all user accounts.
+  section-code: "4"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags:
+      category:
+      - Compliance
+      cisa_cyber_essentials:
+      - "true"
+      plugin:
+      - aws
+      service:
+      - AWS
+      type:
+      - Benchmark
+  controls:
+  - aws_iam_account_password_policy_strong_min_reuse_24

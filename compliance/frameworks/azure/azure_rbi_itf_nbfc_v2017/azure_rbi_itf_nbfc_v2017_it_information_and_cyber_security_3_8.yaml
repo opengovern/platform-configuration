@@ -1,9 +1,14 @@
-ID: azure_rbi_itf_nbfc_v2017_it_information_and_cyber_security_3_8
-Title: Digital Signatures-3.8
-Description: ""
-SectionCode: "8"
-Children: []
-Controls:
-    - azure_appservice_function_app_client_certificates_on
-    - azure_appservice_web_app_client_certificates_on
-Tags: {}
+control-group:
+  id: azure_rbi_itf_nbfc_v2017_it_information_and_cyber_security_3_8
+  title: Digital Signatures-3.8
+  description: Digital Signatures-3.8
+  section-code: "8"
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - azure_appservice_function_app_client_certificates_on
+  - azure_appservice_web_app_client_certificates_on

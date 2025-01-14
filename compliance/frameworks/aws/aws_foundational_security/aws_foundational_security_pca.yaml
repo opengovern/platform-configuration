@@ -1,8 +1,13 @@
-ID: aws_foundational_security_pca
-Title: Private Certificate Authority
-Description: ""
-SectionCode: pca
-Children: []
-Controls:
-    - aws_foundational_security_pca_1
-Tags: {}
+control-group:
+  id: aws_foundational_security_pca
+  title: Private Certificate Authority
+  description: Private Certificate Authority
+  section-code: pca
+  metadata:
+    defaults:
+      auto-assign: null
+      enabled: false
+      tracks-drift-events: false
+    tags: {}
+  controls:
+  - aws_foundational_security_pca_1
