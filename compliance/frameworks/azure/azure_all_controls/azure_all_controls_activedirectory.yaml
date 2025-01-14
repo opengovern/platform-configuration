@@ -3,12 +3,10 @@ control-group:
   title: Active Directory
   description: This section contains recommendations for configuring Active Directory resources.
   section-code: activedirectory
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_ad_guest_user_reviewed_monthly
   - azure_iam_conditional_access_mfa_enabled

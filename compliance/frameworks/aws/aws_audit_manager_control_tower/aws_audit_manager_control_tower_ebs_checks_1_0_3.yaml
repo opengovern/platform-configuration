@@ -3,25 +3,24 @@ control-group:
   title: 0.3 - Enable encryption for EBS volumes attached to EC2 instances
   description: Enable encryption for EBS volumes attached to EC2 instances - Checks whether EBS volumes that are in an attached state are encrypted.
   section-code: "1_0_3"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      audit_manager_control_tower:
-      - "true"
-      audit_manager_control_tower_item_id:
-      - 1.0.3
-      category:
-      - Compliance
-      control_set:
-      - ebs_checks
-      plugin:
-      - aws
-      service:
-      - AWS/EBS
-      type:
-      - Benchmark
+  tags:
+    audit_manager_control_tower:
+    - "true"
+    audit_manager_control_tower_item_id:
+    - 1.0.3
+    category:
+    - Compliance
+    control_set:
+    - ebs_checks
+    plugin:
+    - aws
+    service:
+    - AWS/EBS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_ebs_attached_volume_encryption_enabled

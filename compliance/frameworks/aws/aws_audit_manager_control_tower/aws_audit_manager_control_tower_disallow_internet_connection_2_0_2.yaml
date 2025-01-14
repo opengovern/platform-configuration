@@ -3,25 +3,24 @@ control-group:
   title: 0.2 - Disallow internet connection through SSH
   description: Disallow internet connection through SSH - Checks whether security groups that are in use disallow unrestricted incoming SSH traffic.
   section-code: "2_0_2"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      audit_manager_control_tower:
-      - "true"
-      audit_manager_control_tower_item_id:
-      - 2.0.2
-      category:
-      - Compliance
-      control_set:
-      - disallow_internet_connection
-      plugin:
-      - aws
-      service:
-      - AWS/VPC
-      type:
-      - Benchmark
+  tags:
+    audit_manager_control_tower:
+    - "true"
+    audit_manager_control_tower_item_id:
+    - 2.0.2
+    category:
+    - Compliance
+    control_set:
+    - disallow_internet_connection
+    plugin:
+    - aws
+    service:
+    - AWS/VPC
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_vpc_security_group_restrict_ingress_ssh_all

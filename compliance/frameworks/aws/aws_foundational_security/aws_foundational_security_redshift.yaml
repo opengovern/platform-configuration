@@ -3,22 +3,21 @@ control-group:
   title: Redshift
   description: Redshift
   section-code: redshift
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      aws_foundational_security:
-      - "true"
-      category:
-      - Compliance
-      plugin:
-      - aws
-      service:
-      - AWS/Redshift
-      type:
-      - Benchmark
+  tags:
+    aws_foundational_security:
+    - "true"
+    category:
+    - Compliance
+    plugin:
+    - aws
+    service:
+    - AWS/Redshift
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_foundational_security_redshift_1
   - aws_foundational_security_redshift_2

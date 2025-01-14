@@ -3,22 +3,21 @@ control-group:
   title: AC-3(2) Dual Authorization
   description: "Enforce dual authorization for [Assignment: organization-defined privileged commands and/or other organization-defined actions]."
   section-code: "2"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      nist_800_53_rev_5:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS/IAM
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    nist_800_53_rev_5:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS/IAM
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_iam_root_user_hardware_mfa_enabled
   - aws_iam_root_user_mfa_enabled

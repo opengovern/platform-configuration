@@ -3,24 +3,23 @@ control-group:
   title: Annex I (5.1)
   description: The firewall configurations should be set to the highest security level and evaluation of critical device (such as firewall, network switches, security devices, etc.) configurations should be done periodically.
   section-code: annex_i_5_1
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      plugin:
-      - aws
-      rbi_cyber_security:
-      - "true"
-      rbi_cyber_security_item_id:
-      - annex_i_5_1
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    plugin:
+    - aws
+    rbi_cyber_security:
+    - "true"
+    rbi_cyber_security_item_id:
+    - annex_i_5_1
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_apigateway_stage_use_waf_web_acl
   - aws_elb_application_lb_waf_enabled

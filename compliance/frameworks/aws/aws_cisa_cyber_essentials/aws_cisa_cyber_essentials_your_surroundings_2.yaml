@@ -3,22 +3,21 @@ control-group:
   title: Your Surroundings-2
   description: Leverage multi-factor authentication for all users, starting with privileged, administrative and remote access users.
   section-code: "2"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      cisa_cyber_essentials:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    cisa_cyber_essentials:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_iam_root_user_hardware_mfa_enabled
   - aws_iam_root_user_mfa_enabled

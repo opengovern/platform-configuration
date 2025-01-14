@@ -3,12 +3,10 @@ control-group:
   title: Network
   description: This section contains recommendations for configuring Network resources.
   section-code: network
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_application_gateway_waf_enabled
   - azure_application_gateway_waf_uses_specified_mode

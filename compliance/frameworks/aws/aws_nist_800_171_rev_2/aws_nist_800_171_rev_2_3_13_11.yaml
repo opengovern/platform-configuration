@@ -3,22 +3,21 @@ control-group:
   title: 13.11 Employ FIPS-validated cryptography when used to protect the confidentiality of CUI
   description: Cryptography can be employed to support many security solutions including the protection of controlled unclassified information, the provision of digital signatures, and the enforcement of information separation when authorized individuals have the necessary clearances for such information but lack the necessary formal access approvals. Cryptography can also be used to support random number generation and hash generation. Cryptographic standards include FIPSvalidated cryptography and/or NSA-approved cryptography.
   section-code: "11"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      nist_800_171_rev_2:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    nist_800_171_rev_2:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_apigateway_stage_cache_encryption_at_rest_enabled
   - aws_cloudtrail_trail_logs_encrypted_with_kms_cmk

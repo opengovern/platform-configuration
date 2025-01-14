@@ -3,22 +3,21 @@ control-group:
   title: AC-3(1) Restricted Access To Privileged Functions
   description: "Employ an audited override of automated access control mechanisms under [Assignment: organization-defined conditions] by [Assignment: organization-defined roles]."
   section-code: "1"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      nist_800_53_rev_5:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    nist_800_53_rev_5:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_cloudtrail_multi_region_trail_enabled
   - aws_cloudtrail_trail_integrated_with_logs

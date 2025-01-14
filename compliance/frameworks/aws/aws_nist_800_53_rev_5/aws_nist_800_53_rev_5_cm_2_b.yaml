@@ -3,22 +3,21 @@ control-group:
   title: CM-2(b)
   description: "Review and update the baseline configuration of the system: 1. [Assignment: organization-defined frequency]; 2. When required due to [Assignment: organization-defined circumstances]; and 3. When system components are installed or upgraded."
   section-code: b
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      nist_800_53_rev_5:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    nist_800_53_rev_5:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_nist_800_53_rev_5_cm_2_b_1
   - id: aws_nist_800_53_rev_5_cm_2_b_2

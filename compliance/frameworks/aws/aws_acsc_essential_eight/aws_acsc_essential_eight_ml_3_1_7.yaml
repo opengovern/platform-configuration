@@ -3,12 +3,10 @@ control-group:
   title: "ACSC-EE-ML3-1.7: Application control ML3"
   description: Event logs are protected from unauthorised modification and deletion.
   section-code: "7"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_cloudtrail_bucket_not_public
   - aws_cloudtrail_security_trail_enabled

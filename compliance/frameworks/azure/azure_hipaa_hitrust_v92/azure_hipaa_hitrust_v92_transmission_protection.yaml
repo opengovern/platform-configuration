@@ -3,22 +3,21 @@ control-group:
   title: Transmission Protection
   description: The organization uses FIPS-validated cryptographic mechanisms during transmission to prevent unauthorized disclosure of information and detect changes to information unless otherwise protected by organization-defined alternative physical measures.
   section-code: transmission_protection
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_hitrust_v92:
-      - "true"
-      plugin:
-      - azure
-      service:
-      - Azure
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_hitrust_v92:
+    - "true"
+    plugin:
+    - azure
+    service:
+    - Azure
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: azure_hipaa_hitrust_v92_0901_09s1organizational
   - id: azure_hipaa_hitrust_v92_0902_09s2organizational

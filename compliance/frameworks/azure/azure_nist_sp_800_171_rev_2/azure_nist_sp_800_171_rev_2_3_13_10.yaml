@@ -3,12 +3,10 @@ control-group:
   title: 13.10 Establish and manage cryptographic keys for cryptography employed in organizational systems
   description: Cryptographic key management and establishment can be performed using manual procedures or mechanisms supported by manual procedures. Organizations define key management requirements in accordance with applicable federal laws, Executive Orders, policies, directives, regulations, and standards specifying appropriate options, levels, and parameters.
   section-code: "10"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_batch_account_encrypted_with_cmk
   - azure_cognitive_account_encrypted_with_cmk

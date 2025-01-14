@@ -3,22 +3,21 @@ control-group:
   title: SA-15(a)(4)
   description: "a. Require the developer of the system, system component, or system service to follow a documented development process that: 4. Documents, manages, and ensures the integrity of changes to the process and/or tools used in development."
   section-code: a_4
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      nist_800_53_rev_5:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    nist_800_53_rev_5:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_elb_application_lb_deletion_protection_enabled
   - aws_rds_db_instance_deletion_protection_enabled

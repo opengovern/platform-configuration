@@ -3,12 +3,10 @@ control-group:
   title: CloudFront
   description: This section contains recommendations for configuring CloudFront resources.
   section-code: cloudfront
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_cloudfront_distribution_configured_with_origin_failover
   - aws_cloudfront_distribution_custom_origins_encryption_in_transit_enabled

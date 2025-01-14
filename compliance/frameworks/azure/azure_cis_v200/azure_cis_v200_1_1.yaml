@@ -3,26 +3,25 @@ control-group:
   title: Security Defaults
   description: Security Defaults
   section-code: "1"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      cis:
-      - "true"
-      cis_section_id:
-      - "1.1"
-      cis_version:
-      - v2.0.0
-      plugin:
-      - azure
-      service:
-      - Azure/ActiveDirectory
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    cis:
+    - "true"
+    cis_section_id:
+    - "1.1"
+    cis_version:
+    - v2.0.0
+    plugin:
+    - azure
+    service:
+    - Azure/ActiveDirectory
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_cis_v200_1_1_1
   - azure_cis_v200_1_1_2

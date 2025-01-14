@@ -3,22 +3,21 @@ control-group:
   title: 01n2Organizational.1234-01.n 01.04 Network Access Control
   description: Network traffic is controlled in accordance with the organizations access control policy through firewall and other network-related restrictions for each network access point or external telecommunication service's managed interface.
   section-code: azure_hipaa_hitrust_v92_0809_01n2organizational
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_hitrust_v92:
-      - "true"
-      plugin:
-      - azure
-      service:
-      - Azure
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_hitrust_v92:
+    - "true"
+    plugin:
+    - azure
+    service:
+    - Azure
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_appservice_api_app_latest_tls_version
   - azure_appservice_api_app_use_https

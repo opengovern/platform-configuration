@@ -3,12 +3,10 @@ control-group:
   title: DMS
   description: This section contains recommendations for configuring DMS resources.
   section-code: dms
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_dms_certificate_not_expired
   - aws_dms_endpoint_ssl_configured

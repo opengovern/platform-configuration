@@ -3,12 +3,10 @@ control-group:
   title: Route 53
   description: This section contains recommendations for configuring Route 53 resources.
   section-code: route53
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_route53_domain_auto_renew_enabled
   - aws_route53_domain_expires_30_days

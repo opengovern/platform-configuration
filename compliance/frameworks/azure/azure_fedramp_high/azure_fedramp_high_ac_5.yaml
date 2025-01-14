@@ -3,11 +3,9 @@ control-group:
   title: Separation Of Duties (AC-5)
   description: Separate duties of individuals to prevent malevolent activity. automate separation of duties and access authorizations.
   section-code: "5"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_iam_subscription_owner_more_than_1

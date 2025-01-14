@@ -3,21 +3,20 @@ control-group:
   title: Security - Audit Trail
   description: Management systems for data and for documents should be designed to record the identity of operators entering, changing, confirming or deleting data including date and time.
   section-code: "4"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      gxp_eu_annex_11:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    gxp_eu_annex_11:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_cloudtrail_s3_data_events_enabled

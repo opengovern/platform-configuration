@@ -3,11 +3,9 @@ control-group:
   title: Step Functions
   description: Step Functions
   section-code: sfn
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_foundational_security_sfn_1

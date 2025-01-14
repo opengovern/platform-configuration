@@ -3,12 +3,10 @@ control-group:
   title: IT Governance-1
   description: IT Governance-1
   section-code: "1"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: azure_rbi_itf_nbfc_v2017_it_governance_1_1
   controls:

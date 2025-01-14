@@ -3,12 +3,10 @@ control-group:
   title: SC-8(1) Cryptographic Or Alternate Physical Protection
   description: "The information system implements cryptographic mechanisms to [Selection (one or more): prevent unauthorized disclosure of information; detect changes to information] during transmission unless otherwise protected by [Assignment: organization-defined alternative physical safeguards]."
   section-code: "1"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_appservice_api_app_ftps_enabled
   - azure_appservice_api_app_latest_tls_version

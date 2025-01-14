@@ -3,12 +3,10 @@ control-group:
   title: "Requirement 10: Track and monitor all access to network resources and cardholder data"
   description: Logging mechanisms and the ability to track user activities are critical in preventing, detecting, or minimizing the impact of a data compromise. The presence of logs in all environments allows thorough tracking, alerting, and analysis when something does go wrong.
   section-code: requirement_10
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_pci_dss_v321_requirement_10_1
   - id: aws_pci_dss_v321_requirement_10_2

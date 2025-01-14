@@ -3,21 +3,20 @@ control-group:
   title: 09s2Organizational.4-09.s 09.08 Exchange of Information
   description: The information system prohibits remote activation of collaborative computing devices and provides an explicit indication of use to users physically present at the devices.
   section-code: azure_hipaa_hitrust_v92_0916_09s2organizational
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_hitrust_v92:
-      - "true"
-      plugin:
-      - azure
-      service:
-      - Azure/AppService
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_hitrust_v92:
+    - "true"
+    plugin:
+    - azure
+    service:
+    - Azure/AppService
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_appservice_api_app_cors_no_star

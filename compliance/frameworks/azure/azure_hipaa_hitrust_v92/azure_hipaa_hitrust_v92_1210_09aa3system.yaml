@@ -3,22 +3,21 @@ control-group:
   title: 09aa3System.3-09.aa 09.10 Monitoring
   description: All disclosures of covered information within or outside of the organization are logged including type of disclosure, date/time of the event, recipient, and sender.
   section-code: azure_hipaa_hitrust_v92_1210_09aa3system
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_hitrust_v92:
-      - "true"
-      plugin:
-      - azure
-      service:
-      - Azure
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_hitrust_v92:
+    - "true"
+    plugin:
+    - azure
+    service:
+    - Azure
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_audit_diagnostic_setting
   - azure_datalake_analytics_account_logging_enabled

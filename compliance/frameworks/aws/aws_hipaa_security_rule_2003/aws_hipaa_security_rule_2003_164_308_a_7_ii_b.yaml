@@ -3,26 +3,25 @@ control-group:
   title: 308(a)(7)(ii)(B) Disaster recovery plan
   description: Establish (and implement as needed) procedures to restore any loss of data.
   section-code: a_7_ii_b
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_section:
-      - "164_308"
-      hipaa_security_rule_2003:
-      - "true"
-      hipaa_security_rule_2003_item_id:
-      - 164_308_a_7_ii_b
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_section:
+    - "164_308"
+    hipaa_security_rule_2003:
+    - "true"
+    hipaa_security_rule_2003_item_id:
+    - 164_308_a_7_ii_b
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_autoscaling_group_with_lb_use_health_check
   - aws_backup_plan_min_retention_35_days

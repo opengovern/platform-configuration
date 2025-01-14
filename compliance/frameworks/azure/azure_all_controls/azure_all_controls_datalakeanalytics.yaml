@@ -3,11 +3,9 @@ control-group:
   title: Data Lake Analytics
   description: This section contains recommendations for configuring Data Lake Analytics resources.
   section-code: datalakeanalytics
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_datalake_analytics_account_logging_enabled

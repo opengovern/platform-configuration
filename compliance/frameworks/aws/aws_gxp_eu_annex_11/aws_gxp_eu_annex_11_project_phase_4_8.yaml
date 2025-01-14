@@ -3,22 +3,21 @@ control-group:
   title: Validation - Data Transfer
   description: If data are transferred to another data format or system, validation should include checks that data are not altered in value and/or meaning during this migration process.
   section-code: "8"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      gxp_eu_annex_11:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    gxp_eu_annex_11:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_backup_plan_min_retention_35_days
   - aws_backup_recovery_point_encryption_enabled

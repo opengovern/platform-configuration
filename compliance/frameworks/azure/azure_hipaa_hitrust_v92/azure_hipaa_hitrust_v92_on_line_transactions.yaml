@@ -3,21 +3,20 @@ control-group:
   title: On-line Transactions
   description: Information involved in online transactions shall be protected to prevent incomplete transmission, misrouting, unauthorized message alteration, unauthorized disclosure, unauthorized message duplication or replay.
   section-code: on_line_transactions
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_hitrust_v92:
-      - "true"
-      plugin:
-      - azure
-      service:
-      - Azure
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_hitrust_v92:
+    - "true"
+    plugin:
+    - azure
+    service:
+    - Azure
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: azure_hipaa_hitrust_v92_0946_09y2organizational

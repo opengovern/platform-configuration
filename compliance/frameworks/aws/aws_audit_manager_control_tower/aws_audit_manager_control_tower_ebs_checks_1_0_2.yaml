@@ -3,25 +3,24 @@ control-group:
   title: 0.2 - Disallow EBS volumes that are unattached to an EC2 instance
   description: Disallow EBS volumes that are unattached to an EC2 instance - Checks whether EBS volumes are attached to EC2 instances.
   section-code: "1_0_2"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      audit_manager_control_tower:
-      - "true"
-      audit_manager_control_tower_item_id:
-      - 1.0.2
-      category:
-      - Compliance
-      control_set:
-      - ebs_checks
-      plugin:
-      - aws
-      service:
-      - AWS/EBS
-      type:
-      - Benchmark
+  tags:
+    audit_manager_control_tower:
+    - "true"
+    audit_manager_control_tower_item_id:
+    - 1.0.2
+    category:
+    - Compliance
+    control_set:
+    - ebs_checks
+    plugin:
+    - aws
+    service:
+    - AWS/EBS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_ebs_volume_unused

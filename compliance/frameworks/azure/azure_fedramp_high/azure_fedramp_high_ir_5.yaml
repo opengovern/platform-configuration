@@ -3,12 +3,10 @@ control-group:
   title: Incident Monitoring (IR-5)
   description: "Track incidents and collect and analyze incident information using [Assignment: organization-defined automated mechanisms]."
   section-code: "5"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_securitycenter_azure_defender_on_for_appservice
   - azure_securitycenter_azure_defender_on_for_containers

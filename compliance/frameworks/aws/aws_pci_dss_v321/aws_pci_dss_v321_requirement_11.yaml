@@ -3,12 +3,10 @@ control-group:
   title: "Requirement 11: Regularly test security systems and processes"
   description: Vulnerabilities are being discovered continually by malicious individuals and researchers, and being introduced by new software. System components, processes, and custom software should be tested frequently to ensure security controls continue to reflect a changing environment.
   section-code: requirement_11
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_pci_dss_v321_requirement_11_4
   - id: aws_pci_dss_v321_requirement_11_5

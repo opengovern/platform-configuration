@@ -3,22 +3,21 @@ control-group:
   title: SI-2(2) Automates Flaw Remediation Status
   description: The organization employs automated mechanisms to determine the state of information system components with regard to flaw remediation.
   section-code: "2"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      nist_800_53_rev_4:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    nist_800_53_rev_4:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_ec2_instance_ssm_managed
   - aws_ssm_managed_instance_compliance_association_compliant

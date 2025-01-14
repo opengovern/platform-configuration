@@ -3,22 +3,21 @@ control-group:
   title: CP-9(d)
   description: Protect the confidentiality, integrity, and availability of backup information.
   section-code: d
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      nist_800_53_rev_5:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    nist_800_53_rev_5:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_apigateway_stage_cache_encryption_at_rest_enabled
   - aws_cloudtrail_trail_logs_encrypted_with_kms_cmk

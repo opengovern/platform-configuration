@@ -3,21 +3,20 @@ control-group:
   title: Remote access connections between the organization and external parties are encrypted
   description: Remote access connections between the organization and external parties are encrypted
   section-code: azure_hipaa_hitrust_v92_1402_05i1organizational
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_hitrust_v92:
-      - "true"
-      plugin:
-      - azure
-      service:
-      - Azure/AppService
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_hitrust_v92:
+    - "true"
+    plugin:
+    - azure
+    service:
+    - Azure/AppService
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_appservice_function_app_only_https_accessible

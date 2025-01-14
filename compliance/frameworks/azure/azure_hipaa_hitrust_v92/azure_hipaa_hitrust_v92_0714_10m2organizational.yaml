@@ -3,21 +3,20 @@ control-group:
   title: 10m2Organizational.7-10.m 10.06 Technical Vulnerability Management
   description: The technical vulnerability management program is evaluated on a quarterly basis.
   section-code: azure_hipaa_hitrust_v92_0714_10m2organizational
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_hitrust_v92:
-      - "true"
-      plugin:
-      - azure
-      service:
-      - Azure/Compute
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_hitrust_v92:
+    - "true"
+    plugin:
+    - azure
+    service:
+    - Azure/Compute
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_compute_vm_scale_set_security_configuration_vulnerabilities_remediated

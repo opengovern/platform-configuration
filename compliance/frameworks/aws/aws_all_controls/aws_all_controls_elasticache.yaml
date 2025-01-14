@@ -3,12 +3,10 @@ control-group:
   title: ElastiCache
   description: This section contains recommendations for configuring ElastiCache resources.
   section-code: elasticache
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_elasticache_cluster_auto_minor_version_upgrade_enabled
   - aws_elasticache_cluster_no_default_subnet_group

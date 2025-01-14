@@ -3,21 +3,20 @@ control-group:
   title: 09ab1Organizational.4-09.ab 09.10 Monitoring
   description: The organization shall periodically test its monitoring and detection processes, remediate deficiencies, and improve its processes.
   section-code: azure_hipaa_hitrust_v92_12102_09ab1organizational
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_hitrust_v92:
-      - "true"
-      plugin:
-      - azure
-      service:
-      - Azure/Compute
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_hitrust_v92:
+    - "true"
+    plugin:
+    - azure
+    service:
+    - Azure/Compute
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_compute_vm_log_analytics_agent_installed_windows

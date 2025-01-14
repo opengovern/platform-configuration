@@ -3,11 +3,9 @@ control-group:
   title: DAX
   description: This section contains recommendations for configuring DAX resources.
   section-code: dax
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_dax_cluster_encryption_at_rest_enabled

@@ -3,12 +3,10 @@ control-group:
   title: II User Role
   description: A well-defined user role.
   section-code: II
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_iam_account_password_policy_strong_min_reuse_24
   - aws_iam_group_not_empty

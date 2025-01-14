@@ -3,25 +3,24 @@ control-group:
   title: Configuring Application Insights
   description: Configuring Application Insights
   section-code: "3"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      cis:
-      - "true"
-      cis_section_id:
-      - "5"
-      cis_version:
-      - v2.0.0
-      plugin:
-      - azure
-      service:
-      - Azure/Monitor
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    cis:
+    - "true"
+    cis_section_id:
+    - "5"
+    cis_version:
+    - v2.0.0
+    plugin:
+    - azure
+    service:
+    - Azure/Monitor
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_cis_v200_5_3_1

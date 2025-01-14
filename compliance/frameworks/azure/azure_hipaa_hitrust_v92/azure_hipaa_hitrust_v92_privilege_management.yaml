@@ -3,22 +3,21 @@ control-group:
   title: Privilege Management
   description: Privilege management is a crucial aspect of HIPAA and HITRUST compliance, focusing on access control to protect sensitive health information. It involves implementing role-based access controls, strong authentication measures, regular reviews of access privileges, and robust logging and monitoring systems. By enforcing these measures, organizations can ensure that only authorized individuals have appropriate access to electronic protected health information, reducing the risk of unauthorized disclosure and maintaining compliance with HIPAA and HITRUST standards.
   section-code: privilege_management
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_hitrust_v92:
-      - "true"
-      plugin:
-      - azure
-      service:
-      - Azure
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_hitrust_v92:
+    - "true"
+    plugin:
+    - azure
+    service:
+    - Azure
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: azure_hipaa_hitrust_v92_1149_01c2system
   - id: azure_hipaa_hitrust_v92_1154_01c3system

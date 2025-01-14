@@ -3,12 +3,10 @@ control-group:
   title: AU-12(1) System-Wide / Time-Correlated Audit Trail
   description: "Compile audit records from [Assignment: organization-defined system components] into a system-wide (logical or physical) audit trail that is time-correlated to within [Assignment: organization-defined level of tolerance for the relationship between time stamps of individual records in the audit trail]."
   section-code: "1"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_appservice_web_app_diagnostic_logs_enabled
   - azure_arc_compute_machine_linux_log_analytics_agent_installed

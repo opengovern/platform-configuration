@@ -3,12 +3,10 @@ control-group:
   title: S3
   description: This section contains recommendations for configuring S3 resources.
   section-code: s3
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_s3_access_point_restrict_public_access
   - aws_s3_bucket_acls_should_prohibit_user_access

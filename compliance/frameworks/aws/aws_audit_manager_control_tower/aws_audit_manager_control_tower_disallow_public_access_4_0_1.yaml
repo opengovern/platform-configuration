@@ -3,25 +3,24 @@ control-group:
   title: 0.1 - Disallow public access to RDS database instances
   description: Disallow public access to RDS database instances - Checks whether the Amazon Relational Database Service (RDS) instances are not publicly accessible. The rule is non-compliant if the publiclyAccessible field is true in the instance configuration item.
   section-code: "4_0_1"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      audit_manager_control_tower:
-      - "true"
-      audit_manager_control_tower_item_id:
-      - 4.0.1
-      category:
-      - Compliance
-      control_set:
-      - disallow_public_access
-      plugin:
-      - aws
-      service:
-      - AWS/RDS
-      type:
-      - Benchmark
+  tags:
+    audit_manager_control_tower:
+    - "true"
+    audit_manager_control_tower_item_id:
+    - 4.0.1
+    category:
+    - Compliance
+    control_set:
+    - disallow_public_access
+    plugin:
+    - aws
+    service:
+    - AWS/RDS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_rds_db_instance_prohibit_public_access

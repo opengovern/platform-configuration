@@ -3,22 +3,21 @@ control-group:
   title: Perform Automated Operating System Patch Management
   description: Perform operating system updates on enterprise assets through automated patch management on a monthly, or more frequent, basis.
   section-code: "3"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      cis_controls_v8_ig1:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    cis_controls_v8_ig1:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_redshift_cluster_maintenance_settings_check
   - aws_ssm_managed_instance_compliance_patch_compliant

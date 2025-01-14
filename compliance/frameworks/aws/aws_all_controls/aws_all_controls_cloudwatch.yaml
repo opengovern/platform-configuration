@@ -3,12 +3,10 @@ control-group:
   title: CloudWatch
   description: This section contains recommendations for configuring CloudWatch resources.
   section-code: cloudwatch
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_cloudwatch_alarm_action_enabled
   - aws_cloudwatch_alarm_action_enabled_check

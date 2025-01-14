@@ -3,22 +3,21 @@ control-group:
   title: AC-2(j)
   description: "The organization: j. Reviews accounts for compliance with account management requirements [Assignment: organization-defined frequency]."
   section-code: j
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      fedramp_moderate_rev_4:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    fedramp_moderate_rev_4:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_ecs_task_definition_user_for_host_mode_check
   - aws_iam_account_password_policy_min_length_14

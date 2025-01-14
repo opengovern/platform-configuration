@@ -3,12 +3,10 @@ control-group:
   title: Recovery Service
   description: This section contains recommendations for configuring Recovery Service resources.
   section-code: recoveryservice
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_recovery_service_vault_uses_managed_identity
   - azure_recovery_service_vault_uses_private_link

@@ -3,12 +3,10 @@ control-group:
   title: Information Security Policy
   description: "The IS Policy must provide for a IS framework with the following basic tenets: a. Identification and Classification of Information Assets, b. Segregation of functions, c. Role based Access Control, d. Personnel Security, e. Physical Security, f. Maker-checker, g. Incident Management, h. Trails, i. Public Key Infrastructure (PKI)."
   section-code: "1"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_rbi_itf_nbfc_3_1_a
   - id: aws_rbi_itf_nbfc_3_1_c

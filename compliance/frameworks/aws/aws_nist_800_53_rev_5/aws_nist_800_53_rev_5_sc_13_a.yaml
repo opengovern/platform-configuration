@@ -3,22 +3,21 @@ control-group:
   title: SC-13(a)
   description: "Determine the [Assignment: organization-defined cryptographic uses]."
   section-code: a
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      nist_800_53_rev_5:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    nist_800_53_rev_5:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_apigateway_rest_api_stage_use_ssl_certificate
   - aws_apigateway_stage_cache_encryption_at_rest_enabled

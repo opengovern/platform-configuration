@@ -3,12 +3,10 @@ control-group:
   title: Maker-checker-3.1.f
   description: Maker-checker-3.1.f
   section-code: f
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_iam_deprecated_account
   - azure_iam_deprecated_account_with_owner_roles

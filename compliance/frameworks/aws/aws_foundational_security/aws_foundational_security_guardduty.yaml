@@ -3,19 +3,18 @@ control-group:
   title: GuardDuty
   description: GuardDuty
   section-code: guardduty
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      aws_foundational_security:
-      - "true"
-      category:
-      - Compliance
-      plugin:
-      - aws
-      service:
-      - AWS/GuardDuty
-      type:
-      - Benchmark
+  tags:
+    aws_foundational_security:
+    - "true"
+    category:
+    - Compliance
+    plugin:
+    - aws
+    service:
+    - AWS/GuardDuty
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false

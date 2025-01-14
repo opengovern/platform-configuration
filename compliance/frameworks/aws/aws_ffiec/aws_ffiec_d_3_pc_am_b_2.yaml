@@ -3,22 +3,21 @@ control-group:
   title: D3.PC.Am.B.2
   description: Employee access to systems and confidential data provides for separation of duties.
   section-code: am_b_2
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      ffiec:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    ffiec:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_iam_all_policy_no_service_wild_card
   - aws_iam_policy_no_star_star

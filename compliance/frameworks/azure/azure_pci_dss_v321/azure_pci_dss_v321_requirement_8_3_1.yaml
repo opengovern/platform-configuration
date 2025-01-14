@@ -3,22 +3,21 @@ control-group:
   title: PCI DSS requirement 8.3.1
   description: Incorporate multi-factor authentication for all non-console access into the CDE for personnel with administrative access.
   section-code: "1"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      pci_dss_v321:
-      - "true"
-      plugin:
-      - azure
-      service:
-      - Azure
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    pci_dss_v321:
+    - "true"
+    plugin:
+    - azure
+    service:
+    - Azure
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_iam_external_user_with_owner_role
   - azure_iam_external_user_with_read_permission

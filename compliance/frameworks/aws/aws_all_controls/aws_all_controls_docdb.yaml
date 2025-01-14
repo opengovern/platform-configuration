@@ -3,12 +3,10 @@ control-group:
   title: DocumentDB
   description: This section contains recommendations for configuring DocumentDB resources.
   section-code: docdb
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_docdb_cluster_backup_retention_period_7_days
   - aws_docdb_cluster_deletion_protection_enabled

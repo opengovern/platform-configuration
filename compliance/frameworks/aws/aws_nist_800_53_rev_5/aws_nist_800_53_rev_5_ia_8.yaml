@@ -3,21 +3,20 @@ control-group:
   title: Identification And Authentication (Non-Organizational Users) (IA-8)
   description: Uniquely identify and authenticate non-organizational users or processes acting on behalf of non-organizational users.
   section-code: "8"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      nist_800_53_rev_5:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS/IAM
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    nist_800_53_rev_5:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS/IAM
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_nist_800_53_rev_5_ia_8_2

@@ -3,21 +3,20 @@ control-group:
   title: Configure Automatic Anti-Malware Signature Updates
   description: Configure automatic updates for anti-malware signature files on all enterprise assets.
   section-code: "2"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      cis_controls_v8_ig1:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    cis_controls_v8_ig1:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_guardduty_enabled

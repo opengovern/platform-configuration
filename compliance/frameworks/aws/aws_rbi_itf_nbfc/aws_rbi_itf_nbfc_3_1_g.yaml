@@ -3,12 +3,10 @@ control-group:
   title: 1.g Incident Management
   description: The IS Policy should define what constitutes an incident. NBFCs shall develop and implement processes for preventing, detecting, analysing and responding to information security incidents.
   section-code: g
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_elb_application_lb_waf_enabled
   - aws_guardduty_enabled

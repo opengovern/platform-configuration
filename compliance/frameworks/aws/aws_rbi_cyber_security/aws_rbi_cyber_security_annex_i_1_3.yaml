@@ -3,24 +3,23 @@ control-group:
   title: Annex I (1.3)
   description: Appropriately manage and provide protection within and outside UCB/network, keeping in mind how the data/information is stored, transmitted, processed, accessed and put to use within/outside the UCB’s network, and level of risk they are exposed to depending on the sensitivity of the data/information.
   section-code: annex_i_1_3
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      plugin:
-      - aws
-      rbi_cyber_security:
-      - "true"
-      rbi_cyber_security_item_id:
-      - annex_i_1_3
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    plugin:
+    - aws
+    rbi_cyber_security:
+    - "true"
+    rbi_cyber_security_item_id:
+    - annex_i_1_3
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_acm_certificate_expires_30_days
   - aws_apigateway_rest_api_stage_use_ssl_certificate

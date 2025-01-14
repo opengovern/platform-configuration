@@ -3,22 +3,21 @@ control-group:
   title: D3.CC.PM.B.1
   description: A patch management program is implemented and ensures that software and firmware patches are applied in a timely manner.
   section-code: pm_b_1
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      ffiec:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    ffiec:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_rds_db_instance_automatic_minor_version_upgrade_enabled
   - aws_redshift_cluster_maintenance_settings_check

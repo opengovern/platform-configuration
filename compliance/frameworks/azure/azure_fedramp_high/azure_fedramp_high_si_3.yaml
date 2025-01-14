@@ -3,12 +3,10 @@ control-group:
   title: Malicious Code Protection (SI-3)
   description: "Implement [Assignment (one or more): signature based, non-signature based] malicious code protection mechanisms at system entry and exit points to detect and eradicate malicious code; Automatically update malicious code protection mechanisms as new releases are available in accordance with organizational configuration management policy and procedures;"
   section-code: "3"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: azure_fedramp_high_si_3_1
   controls:

@@ -3,21 +3,20 @@ control-group:
   title: 01c2System.10-01.c 01.02 Authorized Access to Information Systems
   description: The access control system for the system components storing, processing or transmitting covered information is set with a default 'deny-all' setting.
   section-code: azure_hipaa_hitrust_v92_1150_01c2system
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_hitrust_v92:
-      - "true"
-      plugin:
-      - azure
-      service:
-      - Azure/Network
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_hitrust_v92:
+    - "true"
+    plugin:
+    - azure
+    service:
+    - Azure/Network
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_network_security_group_remote_access_restricted

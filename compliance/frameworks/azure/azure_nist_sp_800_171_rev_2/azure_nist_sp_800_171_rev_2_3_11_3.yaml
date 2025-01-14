@@ -3,12 +3,10 @@ control-group:
   title: 11.3 Remediate vulnerabilities in accordance with risk assessments
   description: Vulnerabilities discovered, for example, via the scanning conducted in response to 3.11.2, are remediated with consideration of the related assessment of risk. The consideration of risk influences the prioritization of remediation efforts and the level of effort to be expended in the remediation for specific vulnerabilities.
   section-code: "3"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_compute_vm_vulnerability_assessment_solution_enabled
   - azure_mssql_managed_instance_vulnerability_assessment_enabled

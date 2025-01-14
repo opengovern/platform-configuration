@@ -3,12 +3,10 @@ control-group:
   title: Compute
   description: This section contains recommendations for configuring Compute resources.
   section-code: compute
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_arc_compute_machine_linux_log_analytics_agent_installed
   - azure_arc_compute_machine_windows_log_analytics_agent_installed

@@ -3,11 +3,9 @@ control-group:
   title: IS Audit
   description: IS Audit
   section-code: is_audit
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: azure_rbi_itf_nbfc_v2017_is_audit_5

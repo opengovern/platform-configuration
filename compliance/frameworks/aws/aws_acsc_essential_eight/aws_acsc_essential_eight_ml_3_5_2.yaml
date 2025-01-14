@@ -3,12 +3,10 @@ control-group:
   title: "ACSC-EE-ML3-5.2: Restrict administrative privileges ML3"
   description: Privileged access is restricted to the minimum number of people required.
   section-code: "2"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_account_part_of_organizations
   - aws_backup_recovery_point_manual_deletion_disabled

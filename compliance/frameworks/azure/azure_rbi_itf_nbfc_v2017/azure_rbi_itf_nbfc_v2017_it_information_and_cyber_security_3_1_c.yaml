@@ -3,12 +3,10 @@ control-group:
   title: Role based Access Control-3.1.c
   description: Role based Access Control-3.1.c
   section-code: c
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_compute_vm_jit_access_protected
   - azure_iam_deprecated_account

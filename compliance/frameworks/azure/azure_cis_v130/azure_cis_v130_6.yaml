@@ -3,26 +3,25 @@ control-group:
   title: Networking
   description: Networking
   section-code: "6"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      cis:
-      - "true"
-      cis_section_id:
-      - "6"
-      cis_version:
-      - v1.3.0
-      plugin:
-      - azure
-      service:
-      - Azure/Network
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    cis:
+    - "true"
+    cis_section_id:
+    - "6"
+    cis_version:
+    - v1.3.0
+    plugin:
+    - azure
+    service:
+    - Azure/Network
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_cis_v130_6_1
   - azure_cis_v130_6_2

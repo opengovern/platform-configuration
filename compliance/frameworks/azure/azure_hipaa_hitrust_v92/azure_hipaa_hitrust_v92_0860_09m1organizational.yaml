@@ -3,21 +3,20 @@ control-group:
   title: 09m1Organizational.9-09.m 09.06 Network Security Management
   description: The organization formally manages equipment on the network, including equipment in user areas.
   section-code: azure_hipaa_hitrust_v92_0860_09m1organizational
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_hitrust_v92:
-      - "true"
-      plugin:
-      - azure
-      service:
-      - Azure/Network
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_hitrust_v92:
+    - "true"
+    plugin:
+    - azure
+    service:
+    - Azure/Network
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_network_security_group_diagnostic_setting_deployed

@@ -3,12 +3,10 @@ control-group:
   title: CodeBuild
   description: This section contains recommendations for configuring CodeBuild resources.
   section-code: codebuild
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_codebuild_project_artifact_encryption_enabled
   - aws_codebuild_project_build_greater_then_90_days

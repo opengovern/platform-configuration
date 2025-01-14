@@ -3,21 +3,20 @@ control-group:
   title: 09m2Organizational.12-09.m 09.06 Network Security Management
   description: Usage restrictions and implementation guidance are formally defined for VoIP, including the authorization and monitoring of the service.
   section-code: azure_hipaa_hitrust_v92_0864_09m2organizational
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_hitrust_v92:
-      - "true"
-      plugin:
-      - azure
-      service:
-      - Azure/CosmosDB
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_hitrust_v92:
+    - "true"
+    plugin:
+    - azure
+    service:
+    - Azure/CosmosDB
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_cosmosdb_use_virtual_service_endpoint

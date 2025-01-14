@@ -3,12 +3,10 @@ control-group:
   title: 1.4 Observe user accounts to verify that any inactive accounts over 90 days old are either removed or disabled
   description: Accounts that are not used regularly are often targets of attack since it is less likely that any changes (such as a changed password) will be noticed. As such, these accounts may be more easily exploited and used to access cardholder data.
   section-code: "4"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_iam_account_password_policy_strong_min_reuse_24
   - aws_iam_user_unused_credentials_90

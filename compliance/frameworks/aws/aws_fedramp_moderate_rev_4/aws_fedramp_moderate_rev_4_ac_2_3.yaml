@@ -3,22 +3,21 @@ control-group:
   title: benchmark.nist_800_53_rev_4_ac_2_3.title
   description: benchmark.nist_800_53_rev_4_ac_2_3.description
   section-code: "3"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      fedramp_moderate_rev_4:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS/IAM
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    fedramp_moderate_rev_4:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS/IAM
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_iam_account_password_policy_min_length_14
   - aws_iam_user_unused_credentials_90

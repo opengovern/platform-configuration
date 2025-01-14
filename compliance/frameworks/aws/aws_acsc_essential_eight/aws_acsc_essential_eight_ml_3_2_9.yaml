@@ -3,12 +3,10 @@ control-group:
   title: "ACSC-EE-ML3-2.9: Patch applications ML3"
   description: Applications that are no longer supported by vendors are removed.
   section-code: "9"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_ecs_service_fargate_using_latest_platform_version
   - aws_eks_cluster_with_latest_kubernetes_version

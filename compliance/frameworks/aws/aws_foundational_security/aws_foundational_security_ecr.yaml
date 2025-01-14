@@ -3,22 +3,21 @@ control-group:
   title: Elastic Container Registry
   description: Elastic Container Registry
   section-code: ecr
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      aws_foundational_security:
-      - "true"
-      category:
-      - Compliance
-      plugin:
-      - aws
-      service:
-      - AWS/ECR
-      type:
-      - Benchmark
+  tags:
+    aws_foundational_security:
+    - "true"
+    category:
+    - Compliance
+    plugin:
+    - aws
+    service:
+    - AWS/ECR
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_foundational_security_ecr_1
   - aws_foundational_security_ecr_2

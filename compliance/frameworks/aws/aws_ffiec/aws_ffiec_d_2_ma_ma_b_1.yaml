@@ -3,22 +3,21 @@ control-group:
   title: D2.MA.Ma.B.1
   description: Audit log records and other security event logs are reviewed and retained in a secure manner.
   section-code: ma_b_1
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      ffiec:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    ffiec:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_apigateway_stage_logging_enabled
   - aws_cloudtrail_multi_region_trail_enabled

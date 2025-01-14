@@ -3,25 +3,24 @@ control-group:
   title: 1.1 - Disallow S3 buckets that are not versioning enabled
   description: Disallow S3 buckets that are not versioning enabled - Checks whether versioning is enabled for your S3 buckets.
   section-code: "5_1_1"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      audit_manager_control_tower:
-      - "true"
-      audit_manager_control_tower_item_id:
-      - 5.1.1
-      category:
-      - Compliance
-      control_set:
-      - disallow_instances
-      plugin:
-      - aws
-      service:
-      - AWS/S3
-      type:
-      - Benchmark
+  tags:
+    audit_manager_control_tower:
+    - "true"
+    audit_manager_control_tower_item_id:
+    - 5.1.1
+    category:
+    - Compliance
+    control_set:
+    - disallow_instances
+    plugin:
+    - aws
+    service:
+    - AWS/S3
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_s3_bucket_versioning_enabled

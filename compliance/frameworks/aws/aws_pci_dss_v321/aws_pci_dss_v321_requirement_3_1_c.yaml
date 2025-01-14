@@ -3,12 +3,10 @@ control-group:
   title: 1.c For a sample of system components that store cardholder data examine files and system records to verify that the data stored does not exceed the requirements defined in the data retention policy and observe the deletion mechanism to verify data is deleted securely
   description: Identifying and deleting stored data that has exceeded its specified retention period prevents unnecessary retention of data that is no longer needed. This process may be automated or manual or a combination of both. For example, a programmatic procedure (automatic or manual) to locate and remove data and/or a manual review of data storage areas could be performed. Implementing secure deletion methods ensure that the data cannot be retrieved when it is no longer needed. Remember, if you don't need it, don't store it!
   section-code: c
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_backup_plan_min_retention_35_days
   - aws_backup_recovery_point_encryption_enabled

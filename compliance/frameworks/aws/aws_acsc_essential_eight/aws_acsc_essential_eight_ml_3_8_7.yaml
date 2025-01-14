@@ -3,12 +3,10 @@ control-group:
   title: "ACSC-EE-ML3-8.7: Regular backups ML3"
   description: Unprivileged accounts are prevented from modifying and deleting backups.
   section-code: "7"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_codebuild_project_source_repo_oauth_configured
   - aws_ec2_instance_iam_profile_attached

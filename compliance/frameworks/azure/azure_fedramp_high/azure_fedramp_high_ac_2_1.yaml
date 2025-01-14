@@ -3,12 +3,10 @@ control-group:
   title: AC-2(1) Automated System Account Management
   description: "Support the management of system accounts using [Assignment: organization-defined automated mechanisms]."
   section-code: "1"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_servicefabric_cluster_active_directory_authentication_enabled
   - azure_sql_server_azure_ad_authentication_enabled

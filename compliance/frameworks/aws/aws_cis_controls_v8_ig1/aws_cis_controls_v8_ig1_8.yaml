@@ -3,22 +3,21 @@ control-group:
   title: Audit Log Management
   description: Collect, alert, review, and retain audit logs of events that could help detect, understand, or recover from an attack.
   section-code: "8"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      cis_controls_v8_ig1:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    cis_controls_v8_ig1:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_cis_controls_v8_ig1_8_1
   - id: aws_cis_controls_v8_ig1_8_2

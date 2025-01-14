@@ -3,12 +3,10 @@ control-group:
   title: OpenSearch
   description: This section contains recommendations for configuring OpenSearch resources.
   section-code: opensearch
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_opensearch_domain_audit_logging_enabled
   - aws_opensearch_domain_cognito_authentication_enabled_for_kibana

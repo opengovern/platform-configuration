@@ -3,12 +3,10 @@ control-group:
   title: CloudFormation
   description: This section contains recommendations for configuring CloudFormation resources.
   section-code: cloudformation
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_cloudformation_stack_drift_detection_check
   - aws_cloudformation_stack_notifications_enabled

@@ -3,12 +3,10 @@ control-group:
   title: "ACSC-EE-ML1-8.3: Regular backups ML1"
   description: Backups of important data, software and configuration settings are retained in a secure and resilient manner.
   section-code: "3"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_backup_plan_min_retention_35_days
   - aws_backup_recovery_point_min_retention_35_days

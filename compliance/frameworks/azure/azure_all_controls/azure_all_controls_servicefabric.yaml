@@ -3,12 +3,10 @@ control-group:
   title: Service Fabric
   description: This section contains recommendations for configuring Service Fabric resources.
   section-code: servicefabric
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_servicefabric_cluster_active_directory_authentication_enabled
   - azure_servicefabric_cluster_protection_level_as_encrypt_and_sign

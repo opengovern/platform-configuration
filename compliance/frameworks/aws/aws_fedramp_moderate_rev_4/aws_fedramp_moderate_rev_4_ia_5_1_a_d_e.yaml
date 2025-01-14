@@ -3,21 +3,20 @@ control-group:
   title: IA-5(1)(a)(d)(e)
   description: "The information system, for password-based authentication: a. Enforces minimum password complexity of [Assignment: organization-defined requirements for case sensitivity, number of characters, mix of upper-case letters, lower-case letters, numbers, and special characters, including minimum requirements for each type]; d. Enforces password minimum and maximum lifetime restrictions of [Assignment: organization- defined numbers for lifetime minimum, lifetime maximum]; e. Prohibits password reuse for 24 generations"
   section-code: a_d_e
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      fedramp_moderate_rev_4:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS/IAM
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    fedramp_moderate_rev_4:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS/IAM
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_iam_account_password_policy_min_length_14

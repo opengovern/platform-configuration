@@ -3,11 +3,9 @@ control-group:
   title: Miscellaneous
   description: Miscellaneous
   section-code: "10"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_cis_v210_10_1

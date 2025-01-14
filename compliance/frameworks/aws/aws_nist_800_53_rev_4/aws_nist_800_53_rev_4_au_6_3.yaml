@@ -3,22 +3,21 @@ control-group:
   title: AU-6(3) Correlate Audit Repositories
   description: The organization analyzes and correlates audit records across different repositories to gain organization-wide situational awareness.
   section-code: "3"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      nist_800_53_rev_4:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    nist_800_53_rev_4:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_cloudtrail_trail_integrated_with_logs
   - aws_cloudwatch_alarm_action_enabled

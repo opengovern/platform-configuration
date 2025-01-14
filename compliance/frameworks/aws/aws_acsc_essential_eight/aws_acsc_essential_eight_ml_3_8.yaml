@@ -3,12 +3,10 @@ control-group:
   title: "ACSC-EE-ML3-8: Regular backups ML3"
   description: Backups of important data, software and configuration settings are performed and retained with a frequency and retention timeframe in accordance with business continuity requirements.
   section-code: "8"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_acsc_essential_eight_ml_3_8_1
   - id: aws_acsc_essential_eight_ml_3_8_2

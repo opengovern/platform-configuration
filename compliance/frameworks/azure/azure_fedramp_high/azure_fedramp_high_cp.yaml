@@ -3,12 +3,10 @@ control-group:
   title: Contingency Planning (CP)
   description: Thecp control family includes controls specific to an organization's contingency plan if a cybersecurity event should occur. This includes controls like contingency plan testing, updating, training, and backups, and system reconstitution.
   section-code: cp
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: azure_fedramp_high_cp_6
   - id: azure_fedramp_high_cp_7

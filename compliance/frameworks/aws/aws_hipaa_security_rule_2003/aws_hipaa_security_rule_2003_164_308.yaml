@@ -3,24 +3,23 @@ control-group:
   title: Administrative Safeguards
   description: An important step in protecting electronic protected health information (EPHI) is to implement reasonable and appropriate administrative safeguards that establish the foundation for a covered entity's security program. The Administrative Safeguards standards in the Security Rule, at § 164.308, were developed to accomplish this purpose.
   section-code: "164_308"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_section:
-      - "164_308"
-      hipaa_security_rule_2003:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_section:
+    - "164_308"
+    hipaa_security_rule_2003:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_hipaa_security_rule_2003_164_308_a_1_ii_a
   - id: aws_hipaa_security_rule_2003_164_308_a_1_ii_b

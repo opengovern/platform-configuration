@@ -3,26 +3,25 @@ control-group:
   title: 308(a)(3)(ii)(B) Workforce clearance procedure
   description: Implement procedures to determine that the access of a workforce member to electronic protected health information is appropriate.
   section-code: a_3_ii_b
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_section:
-      - "164_308"
-      hipaa_security_rule_2003:
-      - "true"
-      hipaa_security_rule_2003_item_id:
-      - 164_308_a_3_ii_b
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_section:
+    - "164_308"
+    hipaa_security_rule_2003:
+    - "true"
+    hipaa_security_rule_2003_item_id:
+    - 164_308_a_3_ii_b
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_iam_group_not_empty
   - aws_iam_policy_no_star_star

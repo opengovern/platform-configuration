@@ -3,22 +3,21 @@ control-group:
   title: PCI DSS requirement 8.1.5
   description: "Manage IDs used by thid parties to access, support, or maintain system components via remote access. Remote access are as follows: - Enabled only during the time period needed and disabled when not in use. - Monitored when in use."
   section-code: "5"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      pci_dss_v321:
-      - "true"
-      plugin:
-      - azure
-      service:
-      - Azure/ActiveDirectory
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    pci_dss_v321:
+    - "true"
+    plugin:
+    - azure
+    service:
+    - Azure/ActiveDirectory
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_iam_deprecated_account_with_owner_roles
   - azure_iam_deprecated_account

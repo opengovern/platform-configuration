@@ -3,11 +3,9 @@ control-group:
   title: Spring Cloud
   description: This section contains recommendations for configuring Spring Cloud resources.
   section-code: springcloud
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_spring_cloud_service_network_injection_enabled

@@ -3,12 +3,10 @@ control-group:
   title: "Requirement 3: Protect stored cardholder data"
   description: Protection methods such as encryption, truncation, masking, and hashing are critical components of cardholder data protection. If an intruder circumvents other security controls and gains access to encrypted data, without the proper cryptographic keys, the data is unreadable and unusable to that person.
   section-code: requirement_3
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_pci_dss_v321_requirement_3_1
   - id: aws_pci_dss_v321_requirement_3_2

@@ -3,12 +3,10 @@ control-group:
   title: WAFv2
   description: This section contains recommendations for configuring WAFv2 resources.
   section-code: wafv2
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_wafv2_rule_group_logging_enabled
   - aws_wafv2_web_acl_logging_enabled

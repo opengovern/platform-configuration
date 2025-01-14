@@ -3,12 +3,10 @@ control-group:
   title: 5.8 Prohibit password reuse for a specified number of generations
   description: Password lifetime restrictions do not apply to temporary passwords.
   section-code: "8"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_compute_vm_guest_configuration_installed_windows
   - azure_compute_vm_guest_configuration_with_no_managed_identity

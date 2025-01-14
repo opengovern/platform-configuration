@@ -3,12 +3,10 @@ control-group:
   title: HealthcareAPIs
   description: This section contains recommendations for configuring HealthcareAPIs resources.
   section-code: healthcare
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_healthcare_fhir_azure_api_encrypted_at_rest_with_cmk
   - azure_healthcare_fhir_uses_private_link

@@ -3,26 +3,25 @@ control-group:
   title: Networking
   description: Networking
   section-code: "5"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      cis:
-      - "true"
-      cis_section_id:
-      - "5"
-      cis_version:
-      - v3.0.0
-      plugin:
-      - aws
-      service:
-      - AWS/VPC
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    cis:
+    - "true"
+    cis_section_id:
+    - "5"
+    cis_version:
+    - v3.0.0
+    plugin:
+    - aws
+    service:
+    - AWS/VPC
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_cis_v300_5_2
   - aws_cis_v300_5_3

@@ -3,25 +3,24 @@ control-group:
   title: 1.1 - Disallow public read access to S3 buckets
   description: Disallow public read access to S3 buckets - Checks that your S3 buckets do not allow public read access.
   section-code: "4_1_1"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      audit_manager_control_tower:
-      - "true"
-      audit_manager_control_tower_item_id:
-      - 4.1.1
-      category:
-      - Compliance
-      control_set:
-      - disallow_public_access
-      plugin:
-      - aws
-      service:
-      - AWS/S3
-      type:
-      - Benchmark
+  tags:
+    audit_manager_control_tower:
+    - "true"
+    audit_manager_control_tower_item_id:
+    - 4.1.1
+    category:
+    - Compliance
+    control_set:
+    - disallow_public_access
+    plugin:
+    - aws
+    service:
+    - AWS/S3
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_s3_bucket_restrict_public_read_access

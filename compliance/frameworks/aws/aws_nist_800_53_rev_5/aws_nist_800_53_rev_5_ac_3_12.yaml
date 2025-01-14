@@ -3,22 +3,21 @@ control-group:
   title: AC-3(12)  Assert And Enforce Application Access
   description: "a.\u2003Require applications to assert, as part of the installation process, the access needed to the following system applications and functions: [Assignment: organization-defined system applications and functions];b.\u2003Provide an enforcement mechanism to prevent unauthorized access; and c.\u2003Approve access changes after initial installation of the application."
   section-code: "12"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      nist_800_53_rev_5:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    nist_800_53_rev_5:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_nist_800_53_rev_5_ac_3_12_a
   - id: aws_nist_800_53_rev_5_ac_3_12_b

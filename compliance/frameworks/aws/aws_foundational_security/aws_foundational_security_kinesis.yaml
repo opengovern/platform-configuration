@@ -3,21 +3,20 @@ control-group:
   title: Kinesis
   description: Kinesis
   section-code: kinesis
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      aws_foundational_security:
-      - "true"
-      category:
-      - Compliance
-      plugin:
-      - aws
-      service:
-      - AWS/Kinesis
-      type:
-      - Benchmark
+  tags:
+    aws_foundational_security:
+    - "true"
+    category:
+    - Compliance
+    plugin:
+    - aws
+    service:
+    - AWS/Kinesis
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_foundational_security_kinesis_1

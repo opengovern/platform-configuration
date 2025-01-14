@@ -3,12 +3,10 @@ control-group:
   title: Virtual Machines
   description: Virtual Machines
   section-code: "7"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_cis_v210_7_1
   - azure_cis_v210_7_2

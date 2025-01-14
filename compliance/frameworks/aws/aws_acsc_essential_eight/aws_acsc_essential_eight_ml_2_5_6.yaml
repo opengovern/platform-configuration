@@ -3,12 +3,10 @@ control-group:
   title: "ACSC-EE-ML2-5.6: Restrict administrative privileges ML2"
   description: Privileged operating environments are not virtualised within unprivileged operating environments.
   section-code: "6"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_codebuild_project_environment_privileged_mode_disabled
   - aws_codebuild_project_source_repo_oauth_configured

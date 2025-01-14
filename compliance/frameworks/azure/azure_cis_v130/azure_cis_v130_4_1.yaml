@@ -3,25 +3,24 @@ control-group:
   title: SQL Server - Auditing
   description: SQL Server - Auditing
   section-code: "1"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      cis:
-      - "true"
-      cis_section_id:
-      - "4.1"
-      cis_version:
-      - v1.3.0
-      plugin:
-      - azure
-      service:
-      - Azure/SQL
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    cis:
+    - "true"
+    cis_section_id:
+    - "4.1"
+    cis_version:
+    - v1.3.0
+    plugin:
+    - azure
+    service:
+    - Azure/SQL
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_cis_v130_4_1_2

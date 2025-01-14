@@ -3,12 +3,10 @@ control-group:
   title: AC-17(1) Automated Monitoring / Control
   description: Employ automated mechanisms to monitor and control remote access methods.
   section-code: "1"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_app_configuration_private_link_used
   - azure_appservice_api_app_remote_debugging_disabled

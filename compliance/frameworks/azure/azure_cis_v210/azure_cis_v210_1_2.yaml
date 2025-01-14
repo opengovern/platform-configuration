@@ -3,12 +3,10 @@ control-group:
   title: Conditional Access
   description: Conditional Access
   section-code: "2"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_cis_v210_1_2_1
   - azure_cis_v210_1_2_2

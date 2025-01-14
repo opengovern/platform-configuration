@@ -3,24 +3,23 @@ control-group:
   title: Disallow Instances
   description: This benchmark checks if RDS storage is encrypted and S3 bucket's versioning is enabled.
   section-code: disallow_instances
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      audit_manager_control_tower:
-      - "true"
-      category:
-      - Compliance
-      control_set:
-      - disallow_instances
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    audit_manager_control_tower:
+    - "true"
+    category:
+    - Compliance
+    control_set:
+    - disallow_instances
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_audit_manager_control_tower_disallow_instances_5_0_1
   - id: aws_audit_manager_control_tower_disallow_instances_5_1_1

@@ -3,22 +3,21 @@ control-group:
   title: D3.PC.Am.B.1
   description: Employee access is granted to systems and confidential data based on job responsibilities and the principles of least privilege.
   section-code: am_b_1
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      ffiec:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    ffiec:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_ec2_instance_iam_profile_attached
   - aws_ecs_task_definition_user_for_host_mode_check

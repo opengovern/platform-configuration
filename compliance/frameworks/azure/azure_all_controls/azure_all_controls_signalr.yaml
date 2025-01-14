@@ -3,12 +3,10 @@ control-group:
   title: SignalR Service
   description: This section contains recommendations for configuring SignalR Service resources.
   section-code: signalr
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_signalr_service_no_free_tier_sku
   - azure_signalr_service_private_link_used

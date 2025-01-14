@@ -3,11 +3,9 @@ control-group:
   title: AppSync
   description: AppSync
   section-code: appsync
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_foundational_security_appsync_2

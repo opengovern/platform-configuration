@@ -3,26 +3,25 @@ control-group:
   title: Simple Storage Service (S3)
   description: Simple Storage Service (S3)
   section-code: "1"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      cis:
-      - "true"
-      cis_section_id:
-      - "2.1"
-      cis_version:
-      - v2.0.0
-      plugin:
-      - aws
-      service:
-      - AWS/S3
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    cis:
+    - "true"
+    cis_section_id:
+    - "2.1"
+    cis_version:
+    - v2.0.0
+    plugin:
+    - aws
+    service:
+    - AWS/S3
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_cis_v200_2_1_1
   - aws_cis_v200_2_1_2

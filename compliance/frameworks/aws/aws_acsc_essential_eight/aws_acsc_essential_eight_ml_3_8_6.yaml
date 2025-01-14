@@ -3,12 +3,10 @@ control-group:
   title: "ACSC-EE-ML3-8.6: Regular backups ML3"
   description: Privileged accounts (excluding backup administrator accounts) cannot access backups belonging to other accounts, nor their own accounts.
   section-code: "6"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_backup_recovery_point_manual_deletion_disabled
   - aws_cloudtrail_bucket_not_public

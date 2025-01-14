@@ -3,23 +3,22 @@ control-group:
   title: Monitoring
   description: Monitoring
   section-code: "4"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      cis:
-      - "true"
-      cis_section_id:
-      - "4"
-      cis_version:
-      - v3.0.0
-      plugin:
-      - aws
-      service:
-      - AWS/CloudWatch
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    cis:
+    - "true"
+    cis_section_id:
+    - "4"
+    cis_version:
+    - v3.0.0
+    plugin:
+    - aws
+    service:
+    - AWS/CloudWatch
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false

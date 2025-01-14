@@ -3,12 +3,10 @@ control-group:
   title: "ACSC-EE-ML3-1: Application control ML3"
   description: Application control is implemented on workstations and servers.
   section-code: "1"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_acsc_essential_eight_ml_3_1_6
   - id: aws_acsc_essential_eight_ml_3_1_7

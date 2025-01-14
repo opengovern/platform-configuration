@@ -3,11 +3,9 @@ control-group:
   title: Backup
   description: Backup
   section-code: backup
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_foundational_security_backup_1

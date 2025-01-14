@@ -3,12 +3,10 @@ control-group:
   title: "Requirement 7: Restrict access to cardholder data by business need to know"
   description: To ensure critical data can only be accessed by authorized personnel, systems and processes must be in place to limit access based on need to know and according to job responsibilities.
   section-code: requirement_7
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_pci_dss_v321_requirement_7_1
   - id: aws_pci_dss_v321_requirement_7_2

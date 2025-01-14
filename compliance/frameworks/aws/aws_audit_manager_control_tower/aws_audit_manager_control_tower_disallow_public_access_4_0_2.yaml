@@ -3,25 +3,24 @@ control-group:
   title: 0.2 - Disallow public access to RDS database snapshots
   description: Disallow public access to RDS database snapshots - Checks if Amazon Relational Database Service (Amazon RDS) snapshots are public. The rule is non-compliant if any existing and new Amazon RDS snapshots are public.
   section-code: "4_0_2"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      audit_manager_control_tower:
-      - "true"
-      audit_manager_control_tower_item_id:
-      - 4.0.2
-      category:
-      - Compliance
-      control_set:
-      - disallow_public_access
-      plugin:
-      - aws
-      service:
-      - AWS/RDS
-      type:
-      - Benchmark
+  tags:
+    audit_manager_control_tower:
+    - "true"
+    audit_manager_control_tower_item_id:
+    - 4.0.2
+    category:
+    - Compliance
+    control_set:
+    - disallow_public_access
+    plugin:
+    - aws
+    service:
+    - AWS/RDS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_rds_db_snapshot_prohibit_public_access

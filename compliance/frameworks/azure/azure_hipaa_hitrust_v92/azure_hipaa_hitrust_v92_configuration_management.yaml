@@ -3,22 +3,21 @@ control-group:
   title: Configuration Management
   description: Configuration management involves implementing processes and controls to effectively manage and track changes to information systems, ensuring their integrity and security. In the context of compliance, organizations need to establish a robust configuration management program that includes documenting the baseline configuration of systems, implementing change management procedures, and conducting regular configuration reviews and audits.
   section-code: configuration_management
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_hitrust_v92:
-      - "true"
-      plugin:
-      - azure
-      service:
-      - Azure
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_hitrust_v92:
+    - "true"
+    plugin:
+    - azure
+    service:
+    - Azure
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: azure_hipaa_hitrust_v92_0605_10h1system
   - id: azure_hipaa_hitrust_v92_0635_10k1organizational

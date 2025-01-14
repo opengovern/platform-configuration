@@ -3,21 +3,20 @@ control-group:
   title: 01q2System.1-01.q 01.05 Operating System Access Control
   description: Multi-factor authentication methods are used in accordance with organizational policy, (e.g., for remote network access).
   section-code: azure_hipaa_hitrust_v92_1125_01q2system
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_hitrust_v92:
-      - "true"
-      plugin:
-      - azure
-      service:
-      - Azure/Compute
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_hitrust_v92:
+    - "true"
+    plugin:
+    - azure
+    service:
+    - Azure/Compute
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_compute_vm_administrators_group_with_specified_members_windows

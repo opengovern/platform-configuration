@@ -3,24 +3,23 @@ framework:
   title: Azure MSB
   description: Azure MSB
   section-code: azure_msb_main
-  metadata:
-    defaults:
-      auto-assign: true
-      enabled: true
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      platform_benchmark_type:
-      - compliance
-      platform_category:
-      - Best Practices
-      plugin:
-      - azure
-      service:
-      - Azure
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    platform_benchmark_type:
+    - compliance
+    platform_category:
+    - Best Practices
+    plugin:
+    - azure
+    service:
+    - Azure
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: true
+    enabled: true
+    tracks-drift-events: false
   control-group:
   - id: azure_cis_v200_2
   - id: azure_cis_v200_3

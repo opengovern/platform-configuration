@@ -3,12 +3,10 @@ control-group:
   title: "Requirement 8: Identify and authenticate access to system components"
   description: Assigning a unique identification (ID) to each person with access ensures that each individual is uniquely accountable for their actions. When such accountability is in place, actions taken on critical data and systems are performed by, and can be traced to, known and authorized users and processes.
   section-code: requirement_8
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_pci_dss_v321_requirement_8_1
   - id: aws_pci_dss_v321_requirement_8_2

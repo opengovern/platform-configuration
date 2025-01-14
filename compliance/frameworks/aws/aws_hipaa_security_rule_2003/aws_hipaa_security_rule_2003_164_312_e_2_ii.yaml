@@ -3,26 +3,25 @@ control-group:
   title: 312(e)(2)(ii) Encryption
   description: Implement a mechanism to encrypt electronic protected health information whenever deemed appropriate.
   section-code: e_2_ii
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_section:
-      - "164_312"
-      hipaa_security_rule_2003:
-      - "true"
-      hipaa_security_rule_2003_item_id:
-      - 164_312_e_2_ii
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_section:
+    - "164_312"
+    hipaa_security_rule_2003:
+    - "true"
+    hipaa_security_rule_2003_item_id:
+    - 164_312_e_2_ii
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_apigateway_stage_cache_encryption_at_rest_enabled
   - aws_cloudtrail_trail_logs_encrypted_with_kms_cmk

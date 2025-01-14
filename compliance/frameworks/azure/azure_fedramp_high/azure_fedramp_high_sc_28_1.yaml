@@ -3,12 +3,10 @@ control-group:
   title: SC-28(1) Cryptographic Protection
   description: "Implement cryptographic mechanisms to prevent unauthorized disclosure and modification of the following information at rest on [Assignment: organization-defined system components or media]: [Assignment: organization-defined information]."
   section-code: "1"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_app_service_environment_internal_encryption_enabled
   - azure_automation_account_variable_encryption_enabled

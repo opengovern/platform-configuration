@@ -3,12 +3,10 @@ control-group:
   title: SQL Server - Auditing
   description: SQL Server - Auditing
   section-code: "1"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_cis_v210_4_1_2
   - azure_cis_v210_4_1_4

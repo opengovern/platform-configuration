@@ -3,12 +3,10 @@ control-group:
   title: Event Hub
   description: This section contains recommendations for configuring Event Hub resources.
   section-code: eventhub
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_eventhub_namespace_cmk_encryption_enabled
   - azure_eventhub_namespace_logging_enabled

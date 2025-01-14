@@ -3,22 +3,21 @@ control-group:
   title: SI-4(4) Inbound and Outbound Communications Traffic
   description: The information system monitors inbound and outbound communications traffic continuously for unusual or unauthorized activities or conditions.
   section-code: "4"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      nist_800_53_rev_4:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    nist_800_53_rev_4:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_cloudtrail_trail_integrated_with_logs
   - aws_cloudwatch_alarm_action_enabled

@@ -3,12 +3,10 @@ control-group:
   title: Cryptographic Key Establishment And Management (SC-12)
   description: "The organization establishes and manages cryptographic keys for required cryptography employed within the information system in accordance with [Assignment: organization-defined requirements for key generation, distribution, storage, access, and destruction]."
   section-code: "12"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_batch_account_encrypted_with_cmk
   - azure_cognitive_account_encrypted_with_cmk

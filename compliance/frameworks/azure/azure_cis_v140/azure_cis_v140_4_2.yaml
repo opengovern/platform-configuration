@@ -3,23 +3,22 @@ control-group:
   title: SQL Server - Azure Defender for SQL
   description: SQL Server - Azure Defender for SQL
   section-code: "2"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      cis:
-      - "true"
-      cis_section_id:
-      - "4.2"
-      cis_version:
-      - v1.4.0
-      plugin:
-      - azure
-      service:
-      - Azure/SQL
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    cis:
+    - "true"
+    cis_section_id:
+    - "4.2"
+    cis_version:
+    - v1.4.0
+    plugin:
+    - azure
+    service:
+    - Azure/SQL
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false

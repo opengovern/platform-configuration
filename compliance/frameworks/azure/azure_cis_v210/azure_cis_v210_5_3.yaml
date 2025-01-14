@@ -3,11 +3,9 @@ control-group:
   title: Configuring Application Insights
   description: Configuring Application Insights
   section-code: "3"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_cis_v210_5_3_1

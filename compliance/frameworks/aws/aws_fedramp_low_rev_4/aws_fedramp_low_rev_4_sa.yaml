@@ -3,21 +3,20 @@ control-group:
   title: benchmark.nist_800_53_rev_4_sa.title
   description: benchmark.nist_800_53_rev_4_sa.description
   section-code: sa
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      fedramp_low_rev_4:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    fedramp_low_rev_4:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_fedramp_low_rev_4_sa_3

@@ -3,12 +3,10 @@ control-group:
   title: EFS
   description: This section contains recommendations for configuring EFS resources.
   section-code: efs
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_efs_access_point_enforce_root_directory
   - aws_efs_access_point_enforce_user_identity

@@ -3,12 +3,10 @@ control-group:
   title: System and Communications Protection (SC)
   description: The SC control family is responsible for systems and communications protection procedures. This includes boundary protection, protection of information at rest, collaborative computing devices, cryptographic protection, denial of service protection, and many others.
   section-code: sc
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: azure_fedramp_high_sc_3
   - id: azure_fedramp_high_sc_5

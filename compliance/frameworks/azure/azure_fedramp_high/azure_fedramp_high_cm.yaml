@@ -3,12 +3,10 @@ control-group:
   title: Configuration Management (CM)
   description: "The organization: (i) defines and documents configuration settings for information technology products employed within the information system; (ii) implements the configuration settings; (iii) identifies, documents, and approves any deviations from established configuration settings; and (iv) monitors and controls changes to the configuration settings."
   section-code: cm
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: azure_fedramp_high_cm_6
   - id: azure_fedramp_high_cm_7

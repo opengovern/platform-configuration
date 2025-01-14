@@ -3,12 +3,10 @@ control-group:
   title: 5.2 Restrict access to cryptographic keys to the fewest number of custodians necessary
   description: There should be very few who have access to cryptographic keys (reducing the potential for rending cardholder data visible by unauthorized parties), usually only those who have key custodian responsibilities.
   section-code: "2"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_iam_policy_custom_no_blocked_kms_actions
   - aws_iam_policy_inline_no_blocked_kms_actions

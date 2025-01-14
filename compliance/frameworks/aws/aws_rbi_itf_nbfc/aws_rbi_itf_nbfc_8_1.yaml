@@ -3,12 +3,10 @@ control-group:
   title: IT Systems
   description: IT Systems should be progressively scaled up as the size and complexity of NBFC's operations increases.
   section-code: "1"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_autoscaling_group_with_lb_use_health_check
   - aws_dynamodb_table_auto_scaling_enabled

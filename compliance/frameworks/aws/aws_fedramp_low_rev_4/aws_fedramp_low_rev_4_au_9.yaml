@@ -3,22 +3,21 @@ control-group:
   title: benchmark.nist_800_53_rev_4_au_9.title
   description: benchmark.nist_800_53_rev_4_au_9.description
   section-code: "9"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      fedramp_low_rev_4:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    fedramp_low_rev_4:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_cloudtrail_trail_logs_encrypted_with_kms_cmk
   - aws_cloudtrail_trail_validation_enabled

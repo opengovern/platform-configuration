@@ -3,12 +3,10 @@ control-group:
   title: AC-2(12) Account Monitoring
   description: Monitors and reports atypical usage of information system accounts to organization-defined personnel or roles.
   section-code: "12"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_compute_vm_jit_access_protected
   - azure_securitycenter_azure_defender_on_for_appservice

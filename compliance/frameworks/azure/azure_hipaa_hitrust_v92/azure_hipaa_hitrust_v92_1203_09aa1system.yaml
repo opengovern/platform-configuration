@@ -3,21 +3,20 @@ control-group:
   title: 09aa1System.2-09.aa 09.10 Monitoring
   description: Audit records include the unique user ID, unique data subject ID, function performed, and date/time the event was performed.
   section-code: azure_hipaa_hitrust_v92_1203_09aa1system
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_hitrust_v92:
-      - "true"
-      plugin:
-      - azure
-      service:
-      - Azure/Logic
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_hitrust_v92:
+    - "true"
+    plugin:
+    - azure
+    service:
+    - Azure/Logic
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_logic_app_workflow_logging_enabled

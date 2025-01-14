@@ -3,12 +3,10 @@ control-group:
   title: Identification and Classification of Information Assets-3.1.a
   description: Identification and Classification of Information Assets-3.1.a
   section-code: a
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_iam_deprecated_account
   - azure_iam_deprecated_account_with_owner_roles

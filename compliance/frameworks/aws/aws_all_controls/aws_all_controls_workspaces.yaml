@@ -3,11 +3,9 @@ control-group:
   title: WorkSpaces
   description: This section contains recommendations for configuring WorkSpaces resources.
   section-code: workspaces
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_workspaces_workspace_volume_encryption_enabled

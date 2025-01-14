@@ -3,12 +3,10 @@ control-group:
   title: Cosmos DB
   description: Cosmos DB
   section-code: "5"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_cis_v210_4_5_1
   - azure_cis_v210_4_5_2

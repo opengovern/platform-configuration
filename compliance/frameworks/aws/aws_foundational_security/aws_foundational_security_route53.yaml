@@ -3,11 +3,9 @@ control-group:
   title: Route53
   description: Route53
   section-code: route53
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_foundational_security_route53_2

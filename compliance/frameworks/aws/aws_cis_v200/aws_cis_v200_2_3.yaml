@@ -3,26 +3,25 @@ control-group:
   title: Relational Database Service (RDS)
   description: Relational Database Service (RDS)
   section-code: "3"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      cis:
-      - "true"
-      cis_section_id:
-      - "2.3"
-      cis_version:
-      - v2.0.0
-      plugin:
-      - aws
-      service:
-      - AWS/RDS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    cis:
+    - "true"
+    cis_section_id:
+    - "2.3"
+    cis_version:
+    - v2.0.0
+    plugin:
+    - aws
+    service:
+    - AWS/RDS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_cis_v200_2_3_1
   - aws_cis_v200_2_3_2

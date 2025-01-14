@@ -3,24 +3,23 @@ control-group:
   title: Annex I (6)
   description: Put in place systems and processes to identify, track, manage and monitor the status of patches to servers, operating system and application software running at the systems used by the UCB officials (end-users). Implement and update antivirus protection for all servers and applicable end points preferably through a centralised system.
   section-code: annex_i_6
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      plugin:
-      - aws
-      rbi_cyber_security:
-      - "true"
-      rbi_cyber_security_item_id:
-      - annex_i_6
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    plugin:
+    - aws
+    rbi_cyber_security:
+    - "true"
+    rbi_cyber_security_item_id:
+    - annex_i_6
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_guardduty_finding_archived
   - aws_rds_db_instance_automatic_minor_version_upgrade_enabled

@@ -3,21 +3,20 @@ control-group:
   title: The organization requires the use of encryption between, and the use of electronic signatures by, each of the parties involved in the transaction
   description: The organization requires the use of encryption between, and the use of electronic signatures by, each of the parties involved in the transaction
   section-code: azure_hipaa_hitrust_v92_0946_09y2organizational
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_hitrust_v92:
-      - "true"
-      plugin:
-      - azure
-      service:
-      - Azure/Redis
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_hitrust_v92:
+    - "true"
+    plugin:
+    - azure
+    service:
+    - Azure/Redis
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_redis_cache_ssl_enabled

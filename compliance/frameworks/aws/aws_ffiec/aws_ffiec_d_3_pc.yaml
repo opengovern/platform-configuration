@@ -3,22 +3,21 @@ control-group:
   title: Preventative Controls (PC)
   description: Preventative Controls deter and prevent cyber attacks and include infrastructure management, access management, device and end-point security, and secure coding.
   section-code: pc
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      ffiec:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    ffiec:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_ffiec_d_3_pc_am_b_1
   - id: aws_ffiec_d_3_pc_am_b_10

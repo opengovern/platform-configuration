@@ -3,26 +3,25 @@ control-group:
   title: 312(b) Audit controls
   description: Implement hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic protected health information.
   section-code: b
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_final_omnibus_security_rule_2013:
-      - "true"
-      hipaa_final_omnibus_security_rule_2013_item_id:
-      - 164_312_b
-      hipaa_section:
-      - "164_312"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_final_omnibus_security_rule_2013:
+    - "true"
+    hipaa_final_omnibus_security_rule_2013_item_id:
+    - 164_312_b
+    hipaa_section:
+    - "164_312"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_apigateway_rest_api_stage_xray_tracing_enabled
   - aws_apigateway_stage_logging_enabled

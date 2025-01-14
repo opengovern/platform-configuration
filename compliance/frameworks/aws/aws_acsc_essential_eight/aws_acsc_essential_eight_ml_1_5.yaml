@@ -3,12 +3,10 @@ control-group:
   title: "ACSC-EE-ML1-5: Restrict administrative privileges ML1"
   description: The restriction of administrative privileges is the practice of limiting the number of privileged accounts and the extent of their access to systems and data.
   section-code: "5"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_acsc_essential_eight_ml_1_5_2
   - id: aws_acsc_essential_eight_ml_1_5_3

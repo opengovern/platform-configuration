@@ -3,21 +3,20 @@ control-group:
   title: 01c3System.2-01.c 01.02 Authorized Access to Information Systems
   description: The organization audits the execution of privileged functions on information systems and ensures information systems prevent non-privileged users from executing privileged functions.
   section-code: azure_hipaa_hitrust_v92_1152_01c3system
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_hitrust_v92:
-      - "true"
-      plugin:
-      - azure
-      service:
-      - Azure/ActiveDirectory
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_hitrust_v92:
+    - "true"
+    plugin:
+    - azure
+    service:
+    - Azure/ActiveDirectory
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_iam_subscription_owner_more_than_1

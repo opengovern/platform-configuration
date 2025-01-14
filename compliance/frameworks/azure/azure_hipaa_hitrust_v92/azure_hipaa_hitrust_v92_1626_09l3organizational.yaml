@@ -3,21 +3,20 @@ control-group:
   title: 09l3Organizational.5-09.l 09.05 Information Back-Up
   description: The organization ensures a current, retrievable copy of covered information is available before movement of servers.
   section-code: azure_hipaa_hitrust_v92_1626_09l3organizational
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_hitrust_v92:
-      - "true"
-      plugin:
-      - azure
-      service:
-      - Azure/PostgreSQL
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_hitrust_v92:
+    - "true"
+    plugin:
+    - azure
+    service:
+    - Azure/PostgreSQL
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_postgres_db_server_geo_redundant_backup_enabled

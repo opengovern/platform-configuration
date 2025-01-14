@@ -3,21 +3,20 @@ control-group:
   title: SQS
   description: SQS
   section-code: sqs
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      aws_foundational_security:
-      - "true"
-      category:
-      - Compliance
-      plugin:
-      - aws
-      service:
-      - AWS/SQS
-      type:
-      - Benchmark
+  tags:
+    aws_foundational_security:
+    - "true"
+    category:
+    - Compliance
+    plugin:
+    - aws
+    service:
+    - AWS/SQS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_foundational_security_sqs_1

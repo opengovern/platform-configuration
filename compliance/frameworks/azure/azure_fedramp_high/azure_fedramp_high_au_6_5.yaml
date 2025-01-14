@@ -3,12 +3,10 @@ control-group:
   title: AU-6(5) Integration / Scanning And Monitoring Capabilities
   description: "Integrate analysis of audit records with analysis of [Selection (one or more): vulnerability scanning information; performance data; system monitoring information; [Assignment: organization-defined data/information collected from other sources]] to further enhance the ability to identify inappropriate or unusual activity."
   section-code: "5"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_appservice_web_app_diagnostic_logs_enabled
   - azure_arc_compute_machine_linux_log_analytics_agent_installed

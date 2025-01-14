@@ -3,21 +3,20 @@ control-group:
   title: Change and Configuration Management
   description: Any changes to a computerised system including system configurations should only be made in a controlled manner in accordance with a defined procedure.
   section-code: "10"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      gxp_eu_annex_11:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    gxp_eu_annex_11:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_config_enabled_all_regions

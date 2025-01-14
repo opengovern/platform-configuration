@@ -3,12 +3,10 @@ control-group:
   title: "ACSC-EE-ML2-7: Application control ML2"
   description: Allowed and blocked execution events on workstations and internet-facing servers are logged.
   section-code: "7"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_acsc_essential_eight_ml_2_7_1
   - id: aws_acsc_essential_eight_ml_2_7_4

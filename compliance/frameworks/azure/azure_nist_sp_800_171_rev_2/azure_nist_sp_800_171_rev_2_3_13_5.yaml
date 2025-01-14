@@ -3,12 +3,10 @@ control-group:
   title: 13.5 Implement subnetworks for publicly accessible system components that are physically or logically separated from internal networks
   description: Subnetworks that are physically or logically separated from internal networks are referred to as demilitarized zones (DMZs). DMZs are typically implemented with boundary control devices and techniques that include routers, gateways, firewalls, virtualization, or cloud-based technologies.
   section-code: "5"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_apimanagement_service_with_virtual_network
   - azure_app_configuration_private_link_used

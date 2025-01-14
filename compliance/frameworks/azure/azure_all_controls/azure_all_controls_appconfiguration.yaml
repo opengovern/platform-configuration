@@ -3,12 +3,10 @@ control-group:
   title: App Configuration
   description: This section contains recommendations for configuring App Configuration resources.
   section-code: appconfiguration
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_app_configuration_encryption_enabled
   - azure_app_configuration_private_link_used

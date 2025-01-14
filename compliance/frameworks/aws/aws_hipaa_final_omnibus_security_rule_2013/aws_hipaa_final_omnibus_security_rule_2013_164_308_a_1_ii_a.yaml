@@ -3,26 +3,25 @@ control-group:
   title: 308(a)(1)(ii)(A) Risk analysis
   description: Conduct an accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of electronic protected health information held by the covered entity or business associate.
   section-code: a_1_ii_a
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_final_omnibus_security_rule_2013:
-      - "true"
-      hipaa_final_omnibus_security_rule_2013_item_id:
-      - 164_308_a_1_ii_a
-      hipaa_section:
-      - "164_308"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_final_omnibus_security_rule_2013:
+    - "true"
+    hipaa_final_omnibus_security_rule_2013_item_id:
+    - 164_308_a_1_ii_a
+    hipaa_section:
+    - "164_308"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_cloudtrail_trail_enabled
   - aws_config_enabled_all_regions

@@ -3,11 +3,9 @@ control-group:
   title: Stream Analytics
   description: This section contains recommendations for configuring Stream Analytics resources.
   section-code: streamanalytics
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_stream_analytics_job_logging_enabled

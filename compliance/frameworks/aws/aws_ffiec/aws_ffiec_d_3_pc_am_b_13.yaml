@@ -3,22 +3,21 @@ control-group:
   title: D3.PC.Am.B.13
   description: Confidential data is encrypted when transmitted across public or untrusted networks (e.g., Internet).
   section-code: am_b_13
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      ffiec:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    ffiec:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_apigateway_rest_api_stage_use_ssl_certificate
   - aws_elb_application_lb_redirect_http_request_to_https

@@ -3,11 +3,9 @@ control-group:
   title: HPC Cache
   description: This section contains recommendations for configuring HPC Cache resources.
   section-code: hpccache
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_hpc_cache_encrypted_with_cmk

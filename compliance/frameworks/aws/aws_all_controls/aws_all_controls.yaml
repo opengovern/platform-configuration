@@ -3,12 +3,10 @@ framework:
   title: All Controls
   description: This benchmark contains all controls grouped by service to help you detect resource configurations that do not meet best practices.
   section-code: aws_all_controls
-  metadata:
-    defaults:
-      auto-assign: false
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: false
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_all_controls_account
   - id: aws_all_controls_acm

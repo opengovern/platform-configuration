@@ -3,12 +3,10 @@ control-group:
   title: Backup
   description: This section contains recommendations for configuring Backup resources.
   section-code: backup
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_backup_plan_min_retention_35_days
   - aws_backup_plan_region_configured

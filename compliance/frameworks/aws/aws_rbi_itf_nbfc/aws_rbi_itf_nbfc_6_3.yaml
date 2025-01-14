@@ -3,12 +3,10 @@ control-group:
   title: Backup and Recovery
   description: NBFCs shall consider the need to put in place necessary backup sites for their critical business systems and Data centers.
   section-code: "3"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_backup_plan_min_retention_35_days
   - aws_backup_recovery_point_min_retention_35_days

@@ -3,22 +3,21 @@ control-group:
   title: SC-7(24)(b)
   description: "For systems that process personally identifiable information: (b) Monitor for permitted processing at the external interfaces to the system and at key internal boundaries within the system."
   section-code: b
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      nist_800_53_rev_5:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    nist_800_53_rev_5:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_dms_replication_instance_not_publicly_accessible
   - aws_ebs_snapshot_not_publicly_restorable

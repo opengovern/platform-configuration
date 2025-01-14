@@ -3,12 +3,10 @@ control-group:
   title: Kubernetes Service
   description: This section contains recommendations for configuring Kubernetes Service resources.
   section-code: kubernetes
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_kubernetes_cluster_add_on_azure_policy_enabled
   - azure_kubernetes_cluster_addon_azure_policy_enabled

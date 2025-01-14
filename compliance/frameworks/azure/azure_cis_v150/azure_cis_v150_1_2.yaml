@@ -3,26 +3,25 @@ control-group:
   title: Conditional Access
   description: Conditional Access
   section-code: "2"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      cis:
-      - "true"
-      cis_section_id:
-      - "1.2"
-      cis_version:
-      - v1.5.0
-      plugin:
-      - azure
-      service:
-      - Azure/ActiveDirectory
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    cis:
+    - "true"
+    cis_section_id:
+    - "1.2"
+    cis_version:
+    - v1.5.0
+    plugin:
+    - azure
+    service:
+    - Azure/ActiveDirectory
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_cis_v150_1_2_1
   - azure_cis_v150_1_2_2

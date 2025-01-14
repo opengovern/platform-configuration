@@ -3,12 +3,10 @@ control-group:
   title: Data Explorer
   description: This section contains recommendations for configuring Data Explorer resources.
   section-code: kusto
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_kusto_cluster_disk_encryption_enabled
   - azure_kusto_cluster_double_encryption_enabled

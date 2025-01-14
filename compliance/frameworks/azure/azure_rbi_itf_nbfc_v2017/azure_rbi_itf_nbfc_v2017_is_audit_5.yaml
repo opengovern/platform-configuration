@@ -3,12 +3,10 @@ control-group:
   title: Policy for Information System Audit (IS Audit)-5
   description: Policy for Information System Audit (IS Audit)-5
   section-code: "5"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: azure_rbi_itf_nbfc_v2017_is_audit_5_2
   controls:

@@ -3,12 +3,10 @@ framework:
   title: PCI DSS v3.2.1
   description: The Payment Card Industry Data Security Standard (PCI DSS) v3.2.1 is an information security standard for entities that store, process, and/or transmit cardholder data.
   section-code: aws_pci_dss_v321
-  metadata:
-    defaults:
-      auto-assign: false
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: false
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_pci_dss_v321_requirement_1
   - id: aws_pci_dss_v321_requirement_2

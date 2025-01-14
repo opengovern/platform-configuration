@@ -3,12 +3,10 @@ control-group:
   title: VPC
   description: This section contains recommendations for configuring VPC resources.
   section-code: vpc
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_vpc_configured_to_use_vpc_endpoints
   - aws_vpc_default_security_group_restricts_all_traffic

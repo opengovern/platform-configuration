@@ -3,11 +3,9 @@ control-group:
   title: DRS
   description: This section contains recommendations for configuring DRS resources.
   section-code: drs
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_drs_job_enabled

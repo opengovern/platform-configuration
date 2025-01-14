@@ -3,28 +3,27 @@ framework:
   title: HIPAA HITRUST 9.2
   description: The HIPAA HITRUST 9.2 provides a combined set of predefined compliance and security best-practice checks for Health Insurance Portability and Accountability Act.
   section-code: azure_hipaa_hitrust_v92
-  metadata:
-    defaults:
-      auto-assign: false
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_hitrust_v92:
-      - "true"
-      platform_benchmark_type:
-      - compliance
-      platform_category:
-      - Laws & Regulations
-      - Frameworks
-      - Privacy
-      plugin:
-      - azure
-      service:
-      - Azure
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_hitrust_v92:
+    - "true"
+    platform_benchmark_type:
+    - compliance
+    platform_category:
+    - Laws & Regulations
+    - Frameworks
+    - Privacy
+    plugin:
+    - azure
+    service:
+    - Azure
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: false
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: azure_hipaa_hitrust_v92_privilege_management
   - id: azure_hipaa_hitrust_v92_user_authentication_for_external_connections

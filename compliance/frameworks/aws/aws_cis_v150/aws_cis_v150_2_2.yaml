@@ -3,25 +3,24 @@ control-group:
   title: Elastic Compute Cloud (EC2)
   description: Elastic Compute Cloud (EC2)
   section-code: "2"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      cis:
-      - "true"
-      cis_section_id:
-      - "2.2"
-      cis_version:
-      - v1.5.0
-      plugin:
-      - aws
-      service:
-      - AWS/EBS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    cis:
+    - "true"
+    cis_section_id:
+    - "2.2"
+    cis_version:
+    - v1.5.0
+    plugin:
+    - aws
+    service:
+    - AWS/EBS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_cis_v150_2_2_1

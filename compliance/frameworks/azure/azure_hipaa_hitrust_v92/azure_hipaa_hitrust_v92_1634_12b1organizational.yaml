@@ -3,21 +3,20 @@ control-group:
   title: 12b1Organizational.1-12.b 12.01 Information Security Aspects of Business Continuity Management
   description: The organization identifies the critical business processes requiring business continuity.
   section-code: azure_hipaa_hitrust_v92_1634_12b1organizational
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_hitrust_v92:
-      - "true"
-      plugin:
-      - azure
-      service:
-      - Azure/Compute
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_hitrust_v92:
+    - "true"
+    plugin:
+    - azure
+    service:
+    - Azure/Compute
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_compute_vm_disaster_recovery_enabled

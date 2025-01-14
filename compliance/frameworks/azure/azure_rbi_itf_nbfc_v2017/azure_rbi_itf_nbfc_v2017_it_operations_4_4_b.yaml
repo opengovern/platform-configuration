@@ -3,12 +3,10 @@ control-group:
   title: IT Operations-4.4.b
   description: IT Operations-4.4.b
   section-code: b
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_compute_vm_network_traffic_data_collection_linux_agent_installed
   - azure_securitycenter_azure_defender_on_for_sqldb

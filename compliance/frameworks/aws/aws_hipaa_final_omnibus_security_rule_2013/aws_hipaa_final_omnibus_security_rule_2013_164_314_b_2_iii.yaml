@@ -3,26 +3,25 @@ control-group:
   title: 314(b)(2)(iii)
   description: Ensure that any agent to whom it provides this information agrees to implement reasonable and appropriate security measures to protect the information.
   section-code: b_2_iii
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_final_omnibus_security_rule_2013:
-      - "true"
-      hipaa_final_omnibus_security_rule_2013_item_id:
-      - 164_314_b_2_iii
-      hipaa_section:
-      - "164_314"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_final_omnibus_security_rule_2013:
+    - "true"
+    hipaa_final_omnibus_security_rule_2013_item_id:
+    - 164_314_b_2_iii
+    hipaa_section:
+    - "164_314"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_cloudtrail_trail_logs_encrypted_with_kms_cmk
   - aws_dax_cluster_encryption_at_rest_enabled

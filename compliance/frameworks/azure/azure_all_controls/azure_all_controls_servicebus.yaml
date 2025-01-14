@@ -3,12 +3,10 @@ control-group:
   title: Service Bus
   description: This section contains recommendations for configuring Service Bus resources.
   section-code: servicebus
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_servicebus_name_space_private_link_used
   - azure_servicebus_namespace_logging_enabled

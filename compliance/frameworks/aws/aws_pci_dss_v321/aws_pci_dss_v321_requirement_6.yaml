@@ -3,12 +3,10 @@ control-group:
   title: "Requirement 6: Develop and maintain secure systems and applications"
   description: Unscrupulous individuals use security vulnerabilities to gain privileged access to systems. Many of these vulnerabilities are fixed by vendorprovided security patches, which must be installed by the entities that manage the systems.
   section-code: requirement_6
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_pci_dss_v321_requirement_6_1
   - id: aws_pci_dss_v321_requirement_6_2

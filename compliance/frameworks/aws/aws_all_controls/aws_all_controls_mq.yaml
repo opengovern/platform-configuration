@@ -3,11 +3,9 @@ control-group:
   title: MQ
   description: This section contains recommendations for configuring MQ resources.
   section-code: mq
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_mq_broker_restrict_public_access

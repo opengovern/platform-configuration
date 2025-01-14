@@ -3,26 +3,25 @@ control-group:
   title: AKS
   description: AKS
   section-code: "11"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      cis:
-      - "true"
-      cis_section_id:
-      - "5"
-      cis_version:
-      - v2.0.0
-      plugin:
-      - azure
-      service:
-      - Azure
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    cis:
+    - "true"
+    cis_section_id:
+    - "5"
+    cis_version:
+    - v2.0.0
+    plugin:
+    - azure
+    service:
+    - Azure
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_check_for_kubernetes_version
   - azure_enable_defender_for_cloud_for_aks_clusters

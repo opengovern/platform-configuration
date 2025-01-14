@@ -3,12 +3,10 @@ control-group:
   title: Account Management (AC-2)
   description: Manage system accounts, group memberships, privileges, workflow, notifications, deactivations, and authorizations.
   section-code: "2"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: azure_fedramp_high_ac_2_1
   - id: azure_fedramp_high_ac_2_12

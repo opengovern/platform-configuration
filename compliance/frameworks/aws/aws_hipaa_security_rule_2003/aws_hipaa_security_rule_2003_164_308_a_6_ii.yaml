@@ -3,26 +3,25 @@ control-group:
   title: 308(a)(6)(ii) Response and Reporting
   description: Identify and respond to suspected or known security incidents; mitigate, to the extent practicable, harmful effects of security incidents that are known to the covered entity; and document security incidents and their outcomes.
   section-code: a_6_ii
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_section:
-      - "164_308"
-      hipaa_security_rule_2003:
-      - "true"
-      hipaa_security_rule_2003_item_id:
-      - 164_308_a_6_ii
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_section:
+    - "164_308"
+    hipaa_security_rule_2003:
+    - "true"
+    hipaa_security_rule_2003_item_id:
+    - 164_308_a_6_ii
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_apigateway_stage_logging_enabled
   - aws_cloudtrail_multi_region_trail_enabled

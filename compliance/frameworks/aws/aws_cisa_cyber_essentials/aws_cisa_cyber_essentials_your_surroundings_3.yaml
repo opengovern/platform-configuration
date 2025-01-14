@@ -3,22 +3,21 @@ control-group:
   title: Your Surroundings-3
   description: Grant access and admin permissions based on need-to-know and least privilege.
   section-code: "3"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      cisa_cyber_essentials:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    cisa_cyber_essentials:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_elb_application_network_lb_use_ssl_certificate
   - aws_iam_group_user_role_no_inline_policies

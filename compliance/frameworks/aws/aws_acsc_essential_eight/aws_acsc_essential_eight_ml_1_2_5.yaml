@@ -3,12 +3,10 @@ control-group:
   title: "ACSC-EE-ML1-2.5: Patch applications ML1"
   description: Patches, updates or vendor mitigations for security vulnerabilities in internet-facing services are applied within two weeks of release, or within 48 hours if an exploit exists.
   section-code: "5"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_ecs_service_fargate_using_latest_platform_version
   - aws_eks_cluster_with_latest_kubernetes_version

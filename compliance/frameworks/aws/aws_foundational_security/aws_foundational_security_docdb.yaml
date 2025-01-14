@@ -3,12 +3,10 @@ control-group:
   title: DocumentDB
   description: DocumentDB
   section-code: docdb
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_foundational_security_docdb_1
   - aws_foundational_security_docdb_2

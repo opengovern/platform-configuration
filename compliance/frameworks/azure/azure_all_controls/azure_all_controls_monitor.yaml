@@ -3,12 +3,10 @@ control-group:
   title: Monitor
   description: This section contains recommendations for configuring Monitor resources.
   section-code: monitor
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_application_insights_block_log_ingestion_and_querying_from_public
   - azure_log_analytics_workspace_block_log_ingestion_and_querying_from_public

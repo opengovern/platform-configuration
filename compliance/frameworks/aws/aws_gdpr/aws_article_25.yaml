@@ -3,24 +3,23 @@ control-group:
   title: Article 25 Data protection by design and by default
   description: Article 25 Data protection by design and by default
   section-code: aws_article_25
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      gdpr:
-      - "true"
-      gdpr_article:
-      - "25"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    gdpr:
+    - "true"
+    gdpr_article:
+    - "25"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_cloudtrail_bucket_not_public
   - aws_cloudtrail_multi_region_trail_enabled

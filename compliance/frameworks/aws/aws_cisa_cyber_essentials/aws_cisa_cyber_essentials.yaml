@@ -3,26 +3,25 @@ framework:
   title: CISA Cyber Essentials
   description: CISA's Cyber Essentials is a guide for leaders of small businesses as well as leaders of small and local government agencies to develop an actionable understanding of where to start implementing organizational cybersecurity practices.
   section-code: aws_cisa_cyber_essentials
-  metadata:
-    defaults:
-      auto-assign: false
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      cisa_cyber_essentials:
-      - "true"
-      platform_benchmark_type:
-      - compliance
-      platform_category:
-      - Best Practices
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    cisa_cyber_essentials:
+    - "true"
+    platform_benchmark_type:
+    - compliance
+    platform_category:
+    - Best Practices
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: false
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_cisa_cyber_essentials_your_systems
   - id: aws_cisa_cyber_essentials_your_surroundings

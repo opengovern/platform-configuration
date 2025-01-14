@@ -3,26 +3,25 @@ control-group:
   title: Cosmos DB
   description: Cosmos DB
   section-code: "5"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      cis:
-      - "true"
-      cis_section_id:
-      - "4"
-      cis_version:
-      - v1.5.0
-      plugin:
-      - azure
-      service:
-      - Azure/SQL
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    cis:
+    - "true"
+    cis_section_id:
+    - "4"
+    cis_version:
+    - v1.5.0
+    plugin:
+    - azure
+    service:
+    - Azure/SQL
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_cis_v150_4_5_1
   - azure_cis_v150_4_5_2

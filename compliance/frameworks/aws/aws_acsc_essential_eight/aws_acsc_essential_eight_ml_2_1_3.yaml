@@ -3,12 +3,10 @@ control-group:
   title: "ACSC-EE-ML2-1.3: Application control ML2"
   description: Allowed and blocked execution events on workstations and internet-facing servers are logged.
   section-code: "3"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_apigateway_rest_api_stage_xray_tracing_enabled
   - aws_apigateway_stage_logging_enabled

@@ -3,21 +3,20 @@ control-group:
   title: Usage Restrictions (SC-43)
   description: "a.\u2003Establish usage restrictions and implementation guidelines for the following system components: [Assignment: organization-defined system components]; and b.\u2003Authorize, monitor, and control the use of such components within the system."
   section-code: "43"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      nist_800_53_rev_5:
-      - "true"
-      plugin:
-      - aws
-      service:
-      - AWS/GuardDuty
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    nist_800_53_rev_5:
+    - "true"
+    plugin:
+    - aws
+    service:
+    - AWS/GuardDuty
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   control-group:
   - id: aws_nist_800_53_rev_5_sc_43_b

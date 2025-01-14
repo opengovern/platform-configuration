@@ -3,12 +3,10 @@ control-group:
   title: Identifier Management (IA-4)
   description: Manage information system identifiers for users and devices. Automate authorizing and disabling users to prevent misuse.
   section-code: "4"
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_appservice_function_app_uses_managed_identity
   - azure_appservice_web_app_uses_managed_identity

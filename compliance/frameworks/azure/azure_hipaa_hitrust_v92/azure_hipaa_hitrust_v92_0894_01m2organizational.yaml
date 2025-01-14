@@ -3,22 +3,21 @@ control-group:
   title: 01m2Organizational.7-01.m 01.04 Network Access Control
   description: Networks are segregated from production-level networks when migrating physical servers, applications or data to virtualized servers.
   section-code: azure_hipaa_hitrust_v92_0894_01m2organizational
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_hitrust_v92:
-      - "true"
-      plugin:
-      - azure
-      service:
-      - Azure
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_hitrust_v92:
+    - "true"
+    plugin:
+    - azure
+    service:
+    - Azure
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_appservice_web_app_use_virtual_service_endpoint
   - azure_compute_vm_attached_with_network

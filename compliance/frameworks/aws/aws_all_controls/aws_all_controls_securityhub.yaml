@@ -3,11 +3,9 @@ control-group:
   title: Security Hub
   description: This section contains recommendations for configuring Security Hub resources.
   section-code: securityhub
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_securityhub_enabled

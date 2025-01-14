@@ -3,24 +3,23 @@ control-group:
   title: Article 30 Records of processing activities
   description: Article 30 Records of processing activities
   section-code: aws_article_30
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      gdpr:
-      - "true"
-      gdpr_article:
-      - "30"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    gdpr:
+    - "true"
+    gdpr_article:
+    - "30"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_cloudtrail_multi_region_trail_enabled
   - aws_cloudtrail_s3_data_events_enabled

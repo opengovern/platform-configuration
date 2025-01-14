@@ -3,26 +3,25 @@ control-group:
   title: 308(a)(7)(ii)(A) Data backup plan
   description: Establish and implement procedures to create and maintain retrievable exact copies of electronic protected health information.
   section-code: a_7_ii_a
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags:
-      category:
-      - Compliance
-      hipaa_final_omnibus_security_rule_2013:
-      - "true"
-      hipaa_final_omnibus_security_rule_2013_item_id:
-      - 164_308_a_7_ii_a
-      hipaa_section:
-      - "164_308"
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
+  tags:
+    category:
+    - Compliance
+    hipaa_final_omnibus_security_rule_2013:
+    - "true"
+    hipaa_final_omnibus_security_rule_2013_item_id:
+    - 164_308_a_7_ii_a
+    hipaa_section:
+    - "164_308"
+    plugin:
+    - aws
+    service:
+    - AWS
+    type:
+    - Benchmark
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - aws_autoscaling_group_with_lb_use_health_check
   - aws_backup_plan_min_retention_35_days

@@ -3,12 +3,10 @@ control-group:
   title: Container Registry
   description: This section contains recommendations for configuring Container Registry resources.
   section-code: containerregistry
-  metadata:
-    defaults:
-      auto-assign: null
-      enabled: false
-      tracks-drift-events: false
-    tags: {}
+  defaults:
+    auto-assign: null
+    enabled: false
+    tracks-drift-events: false
   controls:
   - azure_container_registry_admin_user_disabled
   - azure_container_registry_encrypted_with_cmk
