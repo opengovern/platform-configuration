@@ -3,10 +3,6 @@ control-group:
   title: "ACSC-EE-ML1-6: Patch operating systems ML1"
   description: The patching of operating systems is the practice of applying patches, updates or vendor mitigations to security vulnerabilities in operating systems.
   section-code: "6"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: aws_acsc_essential_eight_ml_1_6_2
   - id: aws_acsc_essential_eight_ml_1_6_3

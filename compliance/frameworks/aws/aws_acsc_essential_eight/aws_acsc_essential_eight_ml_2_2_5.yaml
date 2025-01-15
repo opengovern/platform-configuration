@@ -3,9 +3,5 @@ control-group:
   title: "ACSC-EE-ML2-2.5: Patch applications ML2"
   description: A vulnerability scanner is used at least fortnightly to identify missing patches or updates for security vulnerabilities in other applications.
   section-code: "5"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_ecr_repository_image_scan_on_push_enabled

@@ -3,10 +3,6 @@ control-group:
   title: ECS
   description: This section contains recommendations for configuring ECS resources.
   section-code: ecs
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_ecs_cluster_container_insights_enabled
   - aws_ecs_cluster_container_instance_agent_connected

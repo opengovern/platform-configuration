@@ -3,9 +3,5 @@ control-group:
   title: Risk Assessment (RA)
   description: The RA control family relates to an organization's risk assessment policies and vulnerability scanning capabilities. Using an integrated risk management solution like CyberStrong can help streamline and automate your NIST 800 53 compliance efforts.
   section-code: ra
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: azure_fedramp_high_ra_5

@@ -3,10 +3,6 @@ control-group:
   title: Elastic Beanstalk
   description: This section contains recommendations for configuring Elastic Beanstalk resources.
   section-code: elasticbeanstalk
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_elastic_beanstalk_enhanced_health_reporting_enabled
   - aws_elastic_beanstalk_environment_logs_to_cloudwatch

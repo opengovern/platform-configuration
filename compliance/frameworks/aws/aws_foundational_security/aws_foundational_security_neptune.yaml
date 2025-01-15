@@ -3,10 +3,6 @@ control-group:
   title: Neptune
   description: Neptune
   section-code: neptune
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_foundational_security_neptune_1
   - aws_foundational_security_neptune_2

@@ -3,9 +3,5 @@ control-group:
   title: III Maker-Checker Concept
   description: A Maker-checker concept to reduce the risk of error and misuse and to ensure reliability of data/information.
   section-code: III
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_s3_bucket_versioning_enabled

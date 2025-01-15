@@ -3,9 +3,5 @@ control-group:
   title: IoT Hub
   description: This section contains recommendations for configuring IoT Hub resources.
   section-code: iothub
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_iot_hub_logging_enabled

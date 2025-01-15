@@ -14,9 +14,5 @@ control-group:
     - Azure/SQL
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_sql_database_long_term_geo_redundant_backup_enabled

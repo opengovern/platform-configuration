@@ -3,10 +3,6 @@ control-group:
   title: Batch
   description: This section contains recommendations for configuring Batch resources.
   section-code: batch
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_batch_account_encrypted_with_cmk
   - azure_batch_account_identity_provider_enabled

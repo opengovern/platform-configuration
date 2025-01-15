@@ -14,10 +14,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: aws_ffiec_d_1_g
   - id: aws_ffiec_d_1_rm

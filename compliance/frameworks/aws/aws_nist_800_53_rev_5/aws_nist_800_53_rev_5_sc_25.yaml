@@ -14,10 +14,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_dms_replication_instance_not_publicly_accessible
   - aws_ebs_snapshot_not_publicly_restorable

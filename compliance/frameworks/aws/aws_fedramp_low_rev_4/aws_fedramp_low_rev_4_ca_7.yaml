@@ -14,10 +14,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_autoscaling_group_with_lb_use_health_check
   - aws_cloudtrail_multi_region_trail_enabled

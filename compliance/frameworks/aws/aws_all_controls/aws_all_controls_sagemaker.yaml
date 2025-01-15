@@ -3,10 +3,6 @@ control-group:
   title: SageMaker
   description: This section contains recommendations for configuring SageMaker resources.
   section-code: sagemaker
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_sagemaker_endpoint_configuration_encryption_at_rest_enabled
   - aws_sagemaker_model_in_vpc

@@ -14,10 +14,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_cloudtrail_security_trail_enabled
   - aws_cloudwatch_alarm_action_enabled

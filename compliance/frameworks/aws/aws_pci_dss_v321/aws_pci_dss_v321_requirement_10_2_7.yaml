@@ -3,10 +3,6 @@ control-group:
   title: 2.7 Creation and deletion of system- level objects
   description: Malicious software, such as malware, often creates or replaces system level objects on the target system in order to control a particular function or operation on that system. By logging when system-level objects, such as database tables or stored procedures, are created or deleted, it will be easier to determine whether such modifications were authorized. This control verifies creation and deletion of system level objects are logged.
   section-code: "7"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_cloudtrail_multi_region_trail_enabled
   - aws_cloudtrail_s3_data_events_enabled

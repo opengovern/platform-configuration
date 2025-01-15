@@ -14,9 +14,5 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_lambda_function_dead_letter_queue_configured

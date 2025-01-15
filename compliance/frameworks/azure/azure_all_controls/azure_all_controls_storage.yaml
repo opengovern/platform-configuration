@@ -3,10 +3,6 @@ control-group:
   title: Storage
   description: This section contains recommendations for configuring Storage resources.
   section-code: storage
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_storage_account_blob_containers_public_access_private
   - azure_storage_account_blob_service_logging_enabled

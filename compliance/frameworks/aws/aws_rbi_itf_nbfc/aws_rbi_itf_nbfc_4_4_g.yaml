@@ -3,9 +3,5 @@ control-group:
   title: 4.g Fraud analysis
   description: Suspicious transaction analysis, embezzlement, theft or suspected money-laundering, misappropriation of assets, manipulation of financial records etc. The regulatory requirement of reporting fraud to RBI should be system driven.
   section-code: g
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_guardduty_enabled

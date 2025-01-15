@@ -14,10 +14,6 @@ control-group:
     - Azure
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_appservice_web_app_diagnostic_logs_enabled
   - azure_arc_compute_machine_linux_log_analytics_agent_installed

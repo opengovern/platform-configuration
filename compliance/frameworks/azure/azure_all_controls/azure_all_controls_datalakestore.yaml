@@ -3,10 +3,6 @@ control-group:
   title: Data Lake Storage
   description: This section contains recommendations for configuring Data Lake Storage resources.
   section-code: datalakestore
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_datalake_store_account_encryption_enabled
   - azure_datalake_store_account_logging_enabled

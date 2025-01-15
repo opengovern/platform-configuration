@@ -3,10 +3,6 @@ control-group:
   title: Network Firewall
   description: This section contains recommendations for configuring Network Firewall resources.
   section-code: networkfirewall
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_networkfirewall_firewall_deletion_protection_enabled
   - aws_networkfirewall_firewall_in_vpc

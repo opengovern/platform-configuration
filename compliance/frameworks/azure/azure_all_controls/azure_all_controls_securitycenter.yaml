@@ -3,10 +3,6 @@ control-group:
   title: Security Center
   description: This section contains recommendations for configuring Security Center resources.
   section-code: securitycenter
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_securitycenter_additional_email_configured
   - azure_securitycenter_asc_default_setting_not_disabled

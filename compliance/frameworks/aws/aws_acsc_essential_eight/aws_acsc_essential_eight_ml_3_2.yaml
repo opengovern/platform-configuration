@@ -3,10 +3,6 @@ control-group:
   title: "ACSC-EE-ML3-2: Patch applications ML3"
   description: All workstations and servers have the latest security-relevant patches applied.
   section-code: "2"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: aws_acsc_essential_eight_ml_3_2_2
   - id: aws_acsc_essential_eight_ml_3_2_9

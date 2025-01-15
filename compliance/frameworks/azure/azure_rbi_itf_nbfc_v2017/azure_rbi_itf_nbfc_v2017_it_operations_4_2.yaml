@@ -3,9 +3,5 @@ control-group:
   title: IT Operations-4.2
   description: IT Operations-4.2
   section-code: "2"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_compute_vm_network_traffic_data_collection_linux_agent_installed

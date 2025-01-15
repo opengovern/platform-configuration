@@ -3,10 +3,6 @@ control-group:
   title: "ACSC-EE-ML2-8: Daily backups ML2"
   description: Backups are taken daily and retained for at least 7 days.
   section-code: "8"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: aws_acsc_essential_eight_ml_2_8_1
   - id: aws_acsc_essential_eight_ml_2_8_2

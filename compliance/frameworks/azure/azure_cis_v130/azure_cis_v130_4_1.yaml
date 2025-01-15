@@ -18,9 +18,5 @@ control-group:
     - Azure/SQL
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_cis_v130_4_1_2

@@ -3,10 +3,6 @@ control-group:
   title: "ACSC-EE-ML3-8.8: Regular backups ML3"
   description: Privileged accounts (including backup administrator accounts) are prevented from modifying and deleting backups during their retention period.
   section-code: "8"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_backup_recovery_point_manual_deletion_disabled
   - aws_cloudtrail_bucket_not_public

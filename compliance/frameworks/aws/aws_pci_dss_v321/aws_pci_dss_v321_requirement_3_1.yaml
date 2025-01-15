@@ -3,10 +3,6 @@ control-group:
   title: Keep cardholder data storage to a minimum by implementing data retention and disposal policies, procedures and processes
   description: "Procedures and processes should include at least the following for all cardholder data (CHD) storage: limiting data storage amount and retention time to that which is required for legal, regulatory, and/or business requirements, specific retention requirements for cardholder data, processes for secure deletion of data when no longer needed, a quarterly process for identifying and securely deleting stored cardholder data that exceeds defined retention. Identifying and deleting stored data that has exceeded its specified retention period prevents unnecessary retention of data that is no longer needed. This process may be automated or manual or a combination of both. For example, a programmatic procedure (automatic or manual) to locate and remove data and/or a manual review of data storage areas could be performed. Implementing secure deletion methods ensure that the data cannot be retrieved when it is no longer needed. Remember, if you don't need it, don't store it!"
   section-code: "1"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: aws_pci_dss_v321_requirement_3_1_a
   - id: aws_pci_dss_v321_requirement_3_1_c

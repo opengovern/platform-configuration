@@ -14,9 +14,5 @@ control-group:
     - Azure/Compute
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_compute_vm_with_no_specified_certificates_in_trusted_root_windows

@@ -14,10 +14,6 @@ control-group:
     - AWS/GuardDuty
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: aws_nist_800_53_rev_5_pe_6_2
   - id: aws_nist_800_53_rev_5_pe_6_4

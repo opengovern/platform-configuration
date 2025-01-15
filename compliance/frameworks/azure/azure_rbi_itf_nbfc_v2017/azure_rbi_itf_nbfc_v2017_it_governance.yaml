@@ -3,9 +3,5 @@ control-group:
   title: IT Governance
   description: IT Governance
   section-code: it_governance
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: azure_rbi_itf_nbfc_v2017_it_governance_1

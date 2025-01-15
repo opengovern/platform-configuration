@@ -3,9 +3,5 @@ control-group:
   title: Data Box
   description: This section contains recommendations for configuring Data Box resources.
   section-code: databoxedge
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_databox_edge_device_double_encryption_enabled

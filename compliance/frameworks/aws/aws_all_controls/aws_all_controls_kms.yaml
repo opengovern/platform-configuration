@@ -3,10 +3,6 @@ control-group:
   title: KMS
   description: This section contains recommendations for configuring KMS resources.
   section-code: kms
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_kms_cmk_policy_prohibit_public_access
   - aws_kms_cmk_rotation_enabled

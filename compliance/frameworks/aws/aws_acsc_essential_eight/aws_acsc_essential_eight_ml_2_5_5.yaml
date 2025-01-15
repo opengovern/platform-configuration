@@ -3,10 +3,6 @@ control-group:
   title: "ACSC-EE-ML2-5.5: Restrict administrative privileges ML2"
   description: Privileged users use separate privileged and unprivileged operating environments.
   section-code: "5"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_codebuild_project_environment_privileged_mode_disabled
   - aws_codebuild_project_source_repo_oauth_configured

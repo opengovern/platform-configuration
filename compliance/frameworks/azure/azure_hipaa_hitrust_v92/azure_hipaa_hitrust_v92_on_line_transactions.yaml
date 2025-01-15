@@ -14,9 +14,5 @@ control-group:
     - Azure
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: azure_hipaa_hitrust_v92_0946_09y2organizational

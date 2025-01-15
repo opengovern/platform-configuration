@@ -3,10 +3,6 @@ control-group:
   title: Vulnerability Scanning (RA-5)
   description: Scan for system vulnerabilities. Share vulnerability information and security controls that eliminate vulnerabilities.
   section-code: "5"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_compute_vm_vulnerability_assessment_solution_enabled
   - azure_mssql_managed_instance_vulnerability_assessment_enabled

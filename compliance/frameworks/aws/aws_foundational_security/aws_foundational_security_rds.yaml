@@ -14,10 +14,6 @@ control-group:
     - AWS/RDS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_foundational_security_rds_2
   - aws_foundational_security_rds_3

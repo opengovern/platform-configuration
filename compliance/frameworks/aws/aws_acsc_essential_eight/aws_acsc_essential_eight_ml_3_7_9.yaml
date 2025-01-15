@@ -3,10 +3,6 @@ control-group:
   title: "ACSC-EE-ML3-7.9: Multi-factor authentication ML3"
   description: Event logs are protected from unauthorised modification and deletion.
   section-code: "9"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_cloudtrail_bucket_not_public
   - aws_cloudtrail_security_trail_enabled

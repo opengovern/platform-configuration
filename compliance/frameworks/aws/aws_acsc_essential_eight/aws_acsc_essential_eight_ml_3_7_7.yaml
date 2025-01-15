@@ -3,10 +3,6 @@ control-group:
   title: "ACSC-EE-ML3-7.7: Multi-factor authentication ML3"
   description: "Multi-factor authentication is phishing-resistant and uses either: something users have and something users know, or something users have that is unlocked by something users know or are."
   section-code: "7"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_iam_root_user_hardware_mfa_enabled
   - aws_iam_root_user_mfa_enabled

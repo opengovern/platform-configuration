@@ -3,10 +3,6 @@ control-group:
   title: Container Instance
   description: This section contains recommendations for configuring Container Instance resources.
   section-code: containerinstance
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_container_instance_container_group_encrypted_using_cmk
   - azure_container_instance_container_group_identity_provider_enabled

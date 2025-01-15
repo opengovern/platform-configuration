@@ -14,10 +14,6 @@ control-group:
     - Azure
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_appservice_api_app_ftps_enabled
   - azure_appservice_api_app_latest_tls_version

@@ -14,10 +14,6 @@ control-group:
     - Azure
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_audit_diagnostic_setting
   - azure_datalake_analytics_account_logging_enabled

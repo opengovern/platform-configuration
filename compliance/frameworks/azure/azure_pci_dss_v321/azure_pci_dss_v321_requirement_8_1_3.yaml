@@ -14,10 +14,6 @@ control-group:
     - Azure/ActiveDirectory
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_iam_deprecated_account
   - azure_iam_deprecated_account_with_owner_roles

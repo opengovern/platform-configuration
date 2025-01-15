@@ -3,10 +3,6 @@ control-group:
   title: 4.i Incident reporting
   description: Incident reporting, their impact and steps taken for non-recurrence of such events in the future.
   section-code: i
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_guardduty_enabled
   - aws_guardduty_finding_archived

@@ -3,9 +3,5 @@ control-group:
   title: Least Functionality (CM-7)
   description: The organization configures the information system to provide only essential capabilities and prohibits or restricts the use of the functions, ports, protocols, and/or services.
   section-code: "7"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_securitycenter_azure_defender_on_for_server

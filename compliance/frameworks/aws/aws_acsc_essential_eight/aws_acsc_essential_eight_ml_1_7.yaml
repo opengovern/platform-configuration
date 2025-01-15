@@ -3,10 +3,6 @@ control-group:
   title: "ACSC-EE-ML1-7: Application control ML1"
   description: Application control is the practice of restricting the execution of applications to those that have been authorised and are known to be secure.
   section-code: "7"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: aws_acsc_essential_eight_ml_1_7_1
   - id: aws_acsc_essential_eight_ml_1_7_2

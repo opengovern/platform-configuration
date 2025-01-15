@@ -3,10 +3,6 @@ control-group:
   title: 13.6 Deny network communications traffic by default and allow network communications traffic by exception (i.e., deny all, permit by exception)
   description: This requirement applies to inbound and outbound network communications traffic at the system boundary and at identified points within the system. A deny-all, permit-by-exception network communications traffic policy ensures that only those connections which are essential and approved are allowed.
   section-code: "6"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_application_gateway_waf_enabled
   - azure_cognitive_service_local_auth_disabled

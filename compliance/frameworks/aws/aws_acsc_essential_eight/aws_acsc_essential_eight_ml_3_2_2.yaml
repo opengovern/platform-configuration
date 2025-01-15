@@ -3,9 +3,5 @@ control-group:
   title: "ACSC-EE-ML3-2.2: Patch applications ML3"
   description: A vulnerability scanner with an up-to-date vulnerability database is used for vulnerability scanning activities.
   section-code: "2"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_ecr_repository_image_scan_on_push_enabled

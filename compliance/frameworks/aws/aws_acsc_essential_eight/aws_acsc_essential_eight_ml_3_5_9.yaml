@@ -3,10 +3,6 @@ control-group:
   title: "ACSC-EE-ML3-5.9: Restrict administrative privileges ML3"
   description: Privileged accounts (excluding local administrator accounts) cannot logon to unprivileged operating environments.
   section-code: "9"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_codebuild_project_environment_privileged_mode_disabled
   - aws_codebuild_project_source_repo_oauth_configured

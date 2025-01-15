@@ -3,9 +3,5 @@ control-group:
   title: Step Functions
   description: This section contains recommendations for configuring Step Functions resources.
   section-code: sfn
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_sfn_state_machine_logging_enabled

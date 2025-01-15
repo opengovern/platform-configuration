@@ -14,10 +14,6 @@ control-group:
     - Azure
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: azure_nist_sp_800_53_rev_5_ir_4
   - id: azure_nist_sp_800_53_rev_5_ir_5

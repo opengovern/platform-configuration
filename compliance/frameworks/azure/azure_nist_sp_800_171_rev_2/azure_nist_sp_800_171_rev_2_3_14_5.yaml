@@ -3,10 +3,6 @@ control-group:
   title: 14.5 Perform periodic scans of the information system and real-time scans of files from external sources as files are downloaded, opened, or executed
   description: Periodic scans of organizational systems and real-time scans of files from external sources can detect malicious code. Malicious code can be encoded in various formats (e.g., UUENCODE, Unicode), contained within compressed or hidden files, or hidden in files using techniques such as steganography. Malicious code can be inserted into systems in a variety of ways including web accesses, electronic mail, electronic mail attachments, and portable storage devices. Malicious code insertions occur through the exploitation of system vulnerabilities.
   section-code: "5"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_compute_vm_malware_agent_automatic_upgrade_enabled
   - azure_compute_vm_malware_agent_installed

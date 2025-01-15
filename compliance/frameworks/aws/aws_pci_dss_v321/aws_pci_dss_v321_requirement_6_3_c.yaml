@@ -3,10 +3,6 @@ control-group:
   title: 3.c Examine written software-development processes to verify that software applications are developed in accordance with PCI DSS
   description: Without the inclusion of security during the requirements definition, design, analysis, and testing phases of software development, security vulnerabilities can be inadvertently or maliciously introduced into the production environment. Understanding how sensitive data is handled by the application—including when stored, transmitted, and when in memory—can help identify where data needs to be protected.
   section-code: c
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_codebuild_project_environment_privileged_mode_disabled
   - aws_codebuild_project_plaintext_env_variables_no_sensitive_aws_values

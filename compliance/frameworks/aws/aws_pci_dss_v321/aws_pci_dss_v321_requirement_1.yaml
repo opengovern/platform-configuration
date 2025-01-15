@@ -3,10 +3,6 @@ control-group:
   title: "Requirement 1: Install and maintain a firewall configuration to protect cardholder data"
   description: A firewall examines all network traffic and blocks those transmissions that do not meet the specified security criteria. All systems must be protected from unauthorized access from untrusted networks.
   section-code: requirement_1
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: aws_pci_dss_v321_requirement_1_1
   - id: aws_pci_dss_v321_requirement_1_2

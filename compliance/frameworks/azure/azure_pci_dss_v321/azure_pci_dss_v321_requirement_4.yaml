@@ -14,9 +14,5 @@ control-group:
     - Azure
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: azure_pci_dss_v321_requirement_4_1

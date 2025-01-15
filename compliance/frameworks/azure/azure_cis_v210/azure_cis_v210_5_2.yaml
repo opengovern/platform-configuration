@@ -3,10 +3,6 @@ control-group:
   title: Monitoring using Activity Log Alerts
   description: Monitoring using Activity Log Alerts
   section-code: "2"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_cis_v210_5_2_1
   - azure_cis_v210_5_2_2

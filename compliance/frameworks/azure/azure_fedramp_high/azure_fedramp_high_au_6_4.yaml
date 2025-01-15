@@ -3,10 +3,6 @@ control-group:
   title: AU-6(4) Central Review And Analysis
   description: Provide and implement the capability to centrally review and analyze audit records from multiple components within the system.
   section-code: "4"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_appservice_web_app_diagnostic_logs_enabled
   - azure_arc_compute_machine_linux_log_analytics_agent_installed

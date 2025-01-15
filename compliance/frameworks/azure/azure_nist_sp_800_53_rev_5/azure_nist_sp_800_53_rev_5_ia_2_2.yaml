@@ -3,9 +3,5 @@ control-group:
   title: Multi-factor Authentication to Non-privileged Accounts
   description: Implement multi-factor authentication for access to non-privileged accounts.
   section-code: "2"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_iam_user_with_read_permission_on_subscription_mfa_enabled

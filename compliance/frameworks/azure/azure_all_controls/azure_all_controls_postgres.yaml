@@ -3,10 +3,6 @@ control-group:
   title: PostgreSQL
   description: This section contains recommendations for configuring PostgreSQL resources.
   section-code: postgres
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_postgres_db_server_allow_access_to_azure_services_disabled
   - azure_postgres_db_server_connection_throttling_on

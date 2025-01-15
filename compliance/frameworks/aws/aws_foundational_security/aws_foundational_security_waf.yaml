@@ -14,10 +14,6 @@ control-group:
     - AWS/WAF
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_foundational_security_waf_1
   - aws_foundational_security_waf_2

@@ -3,10 +3,6 @@ control-group:
   title: "ACSC-EE-ML3-5.4: Restrict administrative privileges ML3"
   description: Privileged access to systems and applications is limited to only what is required for users and services to undertake their duties.
   section-code: "4"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_ecs_task_definition_container_readonly_root_filesystem
   - aws_iam_user_in_group

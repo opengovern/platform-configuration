@@ -14,10 +14,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: aws_fedramp_moderate_rev_4_si_4_1
   - id: aws_fedramp_moderate_rev_4_si_4_16

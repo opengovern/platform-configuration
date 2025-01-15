@@ -3,10 +3,6 @@ control-group:
   title: Define and implement policies and procedures to ensure proper user identification management for non-consumer users and administrators
   description: By ensuring each user is uniquely identified— instead of using one ID for several employees—an organization can maintain individual responsibility for actions and an effective audit trail per employee. This will help speed issue resolution and containment when misuse or malicious intent occurs.
   section-code: "1"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: aws_pci_dss_v321_requirement_8_1_2
   - id: aws_pci_dss_v321_requirement_8_1_4

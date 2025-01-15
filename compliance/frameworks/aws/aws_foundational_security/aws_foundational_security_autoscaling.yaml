@@ -14,10 +14,6 @@ control-group:
     - AWS/AutoScaling
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_foundational_security_autoscaling_1
   - aws_foundational_security_autoscaling_2

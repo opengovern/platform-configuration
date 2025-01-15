@@ -14,9 +14,5 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: aws_nist_800_53_rev_5_ac_2_12_a

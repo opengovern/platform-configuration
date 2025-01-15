@@ -14,9 +14,5 @@ control-group:
     - AWS/DynamoDB
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_dynamodb_table_encrypted_with_kms

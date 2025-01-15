@@ -14,10 +14,6 @@ control-group:
     - Azure
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_audit_diagnostic_setting
   - azure_compute_vm_uses_azure_resource_manager

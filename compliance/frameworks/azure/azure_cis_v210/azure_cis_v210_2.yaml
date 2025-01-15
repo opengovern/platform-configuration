@@ -3,10 +3,6 @@ control-group:
   title: Microsoft Defender
   description: Microsoft Defender
   section-code: "2"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: azure_cis_v210_2_1
   - id: azure_cis_v210_2_2

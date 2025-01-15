@@ -16,9 +16,5 @@ control-group:
     - AWS/EC2
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_ec2_instance_ssm_managed

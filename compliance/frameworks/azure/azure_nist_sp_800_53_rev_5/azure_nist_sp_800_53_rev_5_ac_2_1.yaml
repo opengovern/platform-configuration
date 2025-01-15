@@ -14,10 +14,6 @@ control-group:
     - Azure
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_cognitive_service_local_auth_disabled
   - azure_servicefabric_cluster_active_directory_authentication_enabled

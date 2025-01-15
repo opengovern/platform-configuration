@@ -14,10 +14,6 @@ control-group:
     - Azure/Compute
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_compute_vm_monitor_missing_endpoint_protection_in_asc
   - azure_compute_vm_scale_set_endpoint_protection_solution_installed

@@ -3,10 +3,6 @@ control-group:
   title: 4.h Capacity and performance analysis
   description: Capacity and performance analysis of IT security systems.
   section-code: h
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_autoscaling_group_with_lb_use_health_check
   - aws_dynamodb_table_auto_scaling_enabled

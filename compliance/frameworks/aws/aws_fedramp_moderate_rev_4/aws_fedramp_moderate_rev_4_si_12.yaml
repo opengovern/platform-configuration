@@ -14,10 +14,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_backup_plan_min_retention_35_days
   - aws_cloudwatch_log_group_retention_period_365

@@ -14,10 +14,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_dynamodb_table_auto_scaling_enabled
   - aws_elb_classic_lb_cross_zone_load_balancing_enabled

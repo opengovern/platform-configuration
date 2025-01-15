@@ -3,10 +3,6 @@ control-group:
   title: "ACSC-EE-ML2-5.4: Restrict administrative privileges ML2"
   description: Privileged accounts (excluding privileged service accounts) are prevented from accessing the internet, email and web services.
   section-code: "4"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_codebuild_project_environment_privileged_mode_disabled
   - aws_ecs_task_definition_container_non_privileged

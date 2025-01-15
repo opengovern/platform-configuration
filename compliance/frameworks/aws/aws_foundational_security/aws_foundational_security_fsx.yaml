@@ -3,9 +3,5 @@ control-group:
   title: FSx
   description: FSx
   section-code: fsx
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_foundational_security_fsx_1

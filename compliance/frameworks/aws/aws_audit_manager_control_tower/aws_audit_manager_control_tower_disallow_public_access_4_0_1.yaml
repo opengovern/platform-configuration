@@ -18,9 +18,5 @@ control-group:
     - AWS/RDS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_rds_db_instance_prohibit_public_access

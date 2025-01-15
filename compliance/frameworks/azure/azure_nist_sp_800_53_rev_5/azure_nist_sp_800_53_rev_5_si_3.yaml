@@ -14,10 +14,6 @@ control-group:
     - Azure
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_securitycenter_azure_defender_on_for_server
   - azure_compute_vm_monitor_missing_endpoint_protection_in_asc

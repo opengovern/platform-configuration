@@ -3,10 +3,6 @@ control-group:
   title: HDInsight
   description: This section contains recommendations for configuring HDInsight resources.
   section-code: hdinsight
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_hdinsight_cluster_encrypted_at_rest_with_cmk
   - azure_hdinsight_cluster_encryption_at_host_enabled

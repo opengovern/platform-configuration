@@ -3,10 +3,6 @@ control-group:
   title: Redis
   description: This section contains recommendations for configuring Redis resources.
   section-code: redis
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_redis_cache_ssl_enabled
   - azure_redis_cache_uses_private_link

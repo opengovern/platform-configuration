@@ -14,9 +14,5 @@ control-group:
     - AWS/CodeBuild
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_codebuild_project_plaintext_env_variables_no_sensitive_aws_values

@@ -3,10 +3,6 @@ control-group:
   title: IA-5(1) Password-Based Authentication
   description: The information system, for password-based authentication that enforces  minimum password complexity, stores and transmits only cryptographically-protected passwords, enforces password minimum and maximum lifetime restrictions, prohibits password reuse, allows the use of a temporary password for system logons with an immediate change to a permanent password etc.
   section-code: "1"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_compute_vm_guest_configuration_installed_linux
   - azure_compute_vm_guest_configuration_installed_windows

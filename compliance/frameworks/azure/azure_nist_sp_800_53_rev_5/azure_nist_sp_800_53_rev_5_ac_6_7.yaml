@@ -14,10 +14,6 @@ control-group:
     - Azure/ActiveDirectory
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_iam_no_custom_role
   - azure_iam_subscription_owner_max_3

@@ -3,10 +3,6 @@ control-group:
   title: Remote Access (AC-17)
   description: Authorize remote access systems prior to connection. Enforce remote connection requirements to information systems.
   section-code: "17"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: azure_fedramp_high_ac_17_1
   controls:

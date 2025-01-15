@@ -3,10 +3,6 @@ control-group:
   title: WAF
   description: This section contains recommendations for configuring WAF resources.
   section-code: waf
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_waf_regional_rule_condition_attached
   - aws_waf_regional_rule_group_rule_attached

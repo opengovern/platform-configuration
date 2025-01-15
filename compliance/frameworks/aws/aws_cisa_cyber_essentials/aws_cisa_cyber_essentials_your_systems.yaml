@@ -14,10 +14,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: aws_cisa_cyber_essentials_your_systems_1
   - id: aws_cisa_cyber_essentials_your_systems_2

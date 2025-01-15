@@ -3,9 +3,5 @@ control-group:
   title: Machine Learning
   description: This section contains recommendations for configuring Machine Learning resources.
   section-code: machinelearning
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_machine_learning_workspace_encrypted_with_cmk

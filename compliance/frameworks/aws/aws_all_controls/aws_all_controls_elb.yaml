@@ -3,10 +3,6 @@ control-group:
   title: ELB
   description: This section contains recommendations for configuring ELB resources.
   section-code: elb
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_ec2_classic_lb_connection_draining_enabled
   - aws_elb_application_classic_lb_logging_enabled

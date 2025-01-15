@@ -3,10 +3,6 @@ control-group:
   title: "ACSC-EE-ML2-5.11: Restrict administrative privileges ML2"
   description: Privileged access events are logged.
   section-code: "11"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_apigateway_rest_api_stage_xray_tracing_enabled
   - aws_apigateway_stage_logging_enabled

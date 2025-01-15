@@ -3,10 +3,6 @@ control-group:
   title: AC-6(7) Review Of User Privileges
   description: Centralize access control for all enterprise assets through a directory service or SSO provider, where supported.
   section-code: "7"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_iam_no_custom_role
   - azure_iam_subscription_owner_max_3

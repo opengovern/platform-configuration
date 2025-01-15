@@ -14,10 +14,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_secretsmanager_secret_unused_90_day
   - aws_secretsmanager_secret_rotated_as_scheduled

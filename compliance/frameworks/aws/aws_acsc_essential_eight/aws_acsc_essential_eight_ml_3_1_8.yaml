@@ -3,10 +3,6 @@ control-group:
   title: "ACSC-EE-ML3-1.8: Application control ML3"
   description: Event logs are monitored for signs of compromise and actioned when any signs of compromise are detected.
   section-code: "8"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_apigateway_rest_api_stage_xray_tracing_enabled
   - aws_cloudwatch_alarm_action_enabled

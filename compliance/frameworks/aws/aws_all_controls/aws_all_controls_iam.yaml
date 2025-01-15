@@ -3,10 +3,6 @@ control-group:
   title: IAM
   description: This section contains recommendations for configuring IAM resources.
   section-code: iam
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_iam_access_analyzer_enabled
   - aws_iam_account_password_policy_min_length_14

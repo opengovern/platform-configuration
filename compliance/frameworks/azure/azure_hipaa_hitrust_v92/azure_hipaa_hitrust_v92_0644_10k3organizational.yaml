@@ -14,9 +14,5 @@ control-group:
     - Azure/Compute
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_compute_vm_meet_system_audit_policies_requirement_windows

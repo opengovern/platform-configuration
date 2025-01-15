@@ -3,9 +3,5 @@ control-group:
   title: DLM
   description: This section contains recommendations for configuring DLM resources.
   section-code: dlm
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_dlm_ebs_snapshot_lifecycle_policy_enabled

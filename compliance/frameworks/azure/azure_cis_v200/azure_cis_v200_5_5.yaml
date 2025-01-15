@@ -22,10 +22,6 @@ control-group:
     - azure
     service:
     - Azure/Monitor
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_network_lb_no_basic_sku
   - azure_network_public_ip_no_basic_sku

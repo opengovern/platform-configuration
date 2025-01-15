@@ -14,10 +14,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_apigateway_rest_api_stage_use_ssl_certificate
   - aws_elb_classic_lb_use_ssl_certificate

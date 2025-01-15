@@ -3,7 +3,3 @@ control-group:
   title: CodeDeploy
   description: This section contains recommendations for configuring CodeDeploy resources.
   section-code: codedeploy
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false

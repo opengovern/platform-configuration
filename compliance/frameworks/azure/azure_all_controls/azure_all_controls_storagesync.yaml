@@ -3,9 +3,5 @@ control-group:
   title: File Sync
   description: This section contains recommendations for configuring FileSync resources.
   section-code: storagesync
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_storage_sync_private_link_used

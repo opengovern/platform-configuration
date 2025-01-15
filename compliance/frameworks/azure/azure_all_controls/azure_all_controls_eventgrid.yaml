@@ -3,10 +3,6 @@ control-group:
   title: Event Grid
   description: This section contains recommendations for configuring Event Grid resources.
   section-code: eventgrid
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_eventgrid_domain_identity_provider_enabled
   - azure_eventgrid_domain_private_link_used

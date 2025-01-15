@@ -14,10 +14,6 @@ control-group:
     - AWS/ELB
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_elb_application_network_lb_use_ssl_certificate
   - aws_elb_classic_lb_use_ssl_certificate
