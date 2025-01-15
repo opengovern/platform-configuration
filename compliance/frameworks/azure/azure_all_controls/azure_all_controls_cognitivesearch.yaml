@@ -3,10 +3,6 @@ control-group:
   title: Cognitive Search
   description: This section contains recommendations for configuring Cognitive Search resources.
   section-code: cognitivesearch
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_search_service_logging_enabled
   - azure_search_service_public_network_access_disabled

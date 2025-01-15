@@ -14,10 +14,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_iam_account_password_policy_strong_min_reuse_24
   - aws_iam_all_policy_no_service_wild_card

@@ -3,10 +3,6 @@ control-group:
   title: 1.13 Employ cryptographic mechanisms to protect the confidentiality of remote access sessions
   description: Cryptographic standards include FIPS-validated cryptography and NSA-approved cryptography.
   section-code: "13"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_app_configuration_private_link_used
   - azure_cognitive_account_private_link_used

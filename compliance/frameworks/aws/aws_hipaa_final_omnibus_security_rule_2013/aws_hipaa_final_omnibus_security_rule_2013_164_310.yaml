@@ -16,9 +16,5 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: aws_hipaa_final_omnibus_security_rule_2013_164_310_d_2_iv

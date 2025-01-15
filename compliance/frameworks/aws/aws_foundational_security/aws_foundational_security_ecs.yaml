@@ -14,10 +14,6 @@ control-group:
     - AWS/ECS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_foundational_security_ecs_1
   - aws_foundational_security_ecs_2

@@ -3,10 +3,6 @@ control-group:
   title: Maintain an inventory of system components that are in scope for PCI DSS
   description: Maintaining a current list of all system components will enable an organization to accurately and efficiently define the scope of their environment for implementing PCI DSS controls. Without an inventory, some system components could be forgotten, and be inadvertently excluded from the organization's configuration standards.
   section-code: "4"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: aws_pci_dss_v321_requirement_2_4_a
   controls:

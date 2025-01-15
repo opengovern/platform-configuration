@@ -3,9 +3,5 @@ control-group:
   title: "ACSC-EE-ML3-4: User application hardening ML3"
   description: Web browsers do not process Java from the internet.
   section-code: "4"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: aws_acsc_essential_eight_ml_3_4_18

@@ -3,10 +3,6 @@ control-group:
   title: Kinesis
   description: This section contains recommendations for configuring Kinesis resources.
   section-code: kinesis
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_kinesis_firehose_delivery_stream_server_side_encryption_enabled
   - aws_kinesis_stream_encrypted_with_kms_cmk

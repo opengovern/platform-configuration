@@ -16,10 +16,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_guardduty_finding_archived
   - aws_rds_db_instance_automatic_minor_version_upgrade_enabled

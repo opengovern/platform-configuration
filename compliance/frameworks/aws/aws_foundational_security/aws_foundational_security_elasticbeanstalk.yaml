@@ -14,10 +14,6 @@ control-group:
     - AWS/ElasticBeanstalk
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_foundational_security_elasticbeanstalk_1
   - aws_foundational_security_elasticbeanstalk_3

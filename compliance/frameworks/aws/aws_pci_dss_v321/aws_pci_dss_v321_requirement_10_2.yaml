@@ -3,10 +3,6 @@ control-group:
   title: Through interviews of responsible personnel, observation of audit logs, and examination of audit log settings
   description: "It is critical to have a process or system that links user access to system components accessed. This system generates audit logs and provides the ability to trace back suspicious activity to a specific user. This control verifies, through observation and interviewing the system administrator, that: audit trails are enabled and active for system components, access to system components is linked to individual users."
   section-code: "2"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: aws_pci_dss_v321_requirement_10_2_1
   - id: aws_pci_dss_v321_requirement_10_2_2

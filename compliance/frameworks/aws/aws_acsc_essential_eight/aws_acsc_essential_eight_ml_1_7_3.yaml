@@ -3,10 +3,6 @@ control-group:
   title: "ACSC-EE-ML1-7.3: Multi-factor authentication ML1"
   description: Multi-factor authentication (where available) is used by an organisations users if they authenticate to third-party internet-facing services that process, store or communicate their organisation's non-sensitive data.
   section-code: "3"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_iam_root_user_hardware_mfa_enabled
   - aws_iam_root_user_mfa_enabled

@@ -3,10 +3,6 @@ control-group:
   title: IX Backup and Recovery
   description: Arrangement for backup of data with periodic testing.
   section-code: IX
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_backup_plan_min_retention_35_days
   - aws_backup_recovery_point_manual_deletion_disabled

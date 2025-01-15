@@ -3,10 +3,6 @@ control-group:
   title: 5.6 Disable identifiers after a defined period of inactivity
   description: Inactive identifiers pose a risk to organizational information because attackers may exploit an inactive identifier to gain undetected access to organizational devices. The owners of the inactive accounts may not notice if unauthorized access to the account has been obtained.
   section-code: "6"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_appservice_function_app_uses_managed_identity
   - azure_appservice_web_app_uses_managed_identity

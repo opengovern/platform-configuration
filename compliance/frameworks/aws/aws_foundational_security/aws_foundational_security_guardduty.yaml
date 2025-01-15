@@ -14,7 +14,3 @@ control-group:
     - AWS/GuardDuty
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false

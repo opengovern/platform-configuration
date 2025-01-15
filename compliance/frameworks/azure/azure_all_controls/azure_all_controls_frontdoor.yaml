@@ -3,9 +3,5 @@ control-group:
   title: Front Door
   description: This section contains recommendations for configuring Front Door resources.
   section-code: frontdoor
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_frontdoor_waf_enabled

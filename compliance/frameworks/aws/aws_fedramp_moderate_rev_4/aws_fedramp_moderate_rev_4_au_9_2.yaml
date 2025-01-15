@@ -14,10 +14,6 @@ control-group:
     - AWS/S3
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_s3_bucket_cross_region_replication_enabled
   - aws_s3_bucket_versioning_enabled

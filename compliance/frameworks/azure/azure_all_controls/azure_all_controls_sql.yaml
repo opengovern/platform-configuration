@@ -3,10 +3,6 @@ control-group:
   title: SQL
   description: This section contains recommendations for configuring SQL resources.
   section-code: sql
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_sql_database_allow_internet_access
   - azure_sql_database_long_term_geo_redundant_backup_enabled

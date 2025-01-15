@@ -3,10 +3,6 @@ control-group:
   title: "ACSC-EE-ML3-6.8: Patch operating systems ML3"
   description: Operating systems that are no longer supported by vendors are replaced.
   section-code: "8"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_ecs_service_fargate_using_latest_platform_version
   - aws_eks_cluster_with_latest_kubernetes_version

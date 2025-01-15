@@ -14,9 +14,5 @@ control-group:
     - Azure/Redis
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_redis_cache_ssl_enabled

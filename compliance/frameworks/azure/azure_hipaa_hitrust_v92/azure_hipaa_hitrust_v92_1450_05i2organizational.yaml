@@ -14,9 +14,5 @@ control-group:
     - Azure/PostgreSQL
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_postgres_sql_ssl_enabled

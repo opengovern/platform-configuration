@@ -3,10 +3,6 @@ control-group:
   title: Memory Protection (SI-16)
   description: "Implement the following controls to protect the system memory from unauthorized code execution: [Assignment: organization-defined controls]."
   section-code: "16"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_compute_vm_windows_defender_exploit_guard_enabled
   - azure_securitycenter_azure_defender_on_for_server

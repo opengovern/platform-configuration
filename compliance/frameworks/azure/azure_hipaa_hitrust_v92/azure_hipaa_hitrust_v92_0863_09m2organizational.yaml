@@ -14,9 +14,5 @@ control-group:
     - Azure/EventHub
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_eventhub_namespace_use_virtual_service_endpoint

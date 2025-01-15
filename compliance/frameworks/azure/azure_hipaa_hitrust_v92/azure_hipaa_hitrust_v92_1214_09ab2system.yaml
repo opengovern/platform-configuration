@@ -14,9 +14,5 @@ control-group:
     - Azure/Monitor
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_monitor_log_profile_enabled_for_all_regions

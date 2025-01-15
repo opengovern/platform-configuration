@@ -14,10 +14,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_redshift_cluster_maintenance_settings_check
   - aws_ssm_managed_instance_compliance_patch_compliant

@@ -3,10 +3,6 @@ control-group:
   title: Key Vault
   description: This section contains recommendations for configuring Key Vault resources.
   section-code: keyvault
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_keyvault_firewall_enabled
   - azure_keyvault_key_expiration_set

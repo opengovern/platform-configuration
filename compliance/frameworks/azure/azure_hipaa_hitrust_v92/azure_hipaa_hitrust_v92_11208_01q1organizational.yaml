@@ -14,9 +14,5 @@ control-group:
     - Azure/IAM
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_iam_subscription_owner_more_than_1

@@ -3,10 +3,6 @@ control-group:
   title: MySQL Database
   description: MySQL Database
   section-code: "4"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_cis_v210_4_4_1
   - azure_cis_v210_4_4_2

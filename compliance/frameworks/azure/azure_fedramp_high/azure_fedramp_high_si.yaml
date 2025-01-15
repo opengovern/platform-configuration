@@ -3,10 +3,6 @@ control-group:
   title: System and Information Integrity (SI)
   description: The SI control family correlates to controls that protect system and information integrity. These include flaw remediation, malicious code protection, information system monitoring, security alerts, software and firmware integrity, and spam protection.
   section-code: si
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: azure_fedramp_high_si_2
   - id: azure_fedramp_high_si_3

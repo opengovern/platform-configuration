@@ -3,10 +3,6 @@ control-group:
   title: ECR
   description: This section contains recommendations for configuring ECR resources.
   section-code: ecr
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_ecr_repository_image_scan_on_push_enabled
   - aws_ecr_repository_lifecycle_policy_configured

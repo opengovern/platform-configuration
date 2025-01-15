@@ -14,10 +14,6 @@ control-group:
     - Azure
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_arc_kubernetes_cluster_azure_defender_extension_installed
   - azure_compute_vm_jit_access_protected

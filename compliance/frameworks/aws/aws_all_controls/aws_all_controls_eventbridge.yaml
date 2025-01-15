@@ -3,9 +3,5 @@ control-group:
   title: EventBridge
   description: This section contains recommendations for configuring EventBridge resources.
   section-code: eventbridge
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_eventbridge_custom_bus_resource_based_policy_attached

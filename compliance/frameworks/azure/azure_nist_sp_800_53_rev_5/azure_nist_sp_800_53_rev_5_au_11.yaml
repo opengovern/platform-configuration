@@ -14,9 +14,5 @@ control-group:
     - Azure/SQL
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_sql_server_auditing_storage_account_destination_retention_90_days

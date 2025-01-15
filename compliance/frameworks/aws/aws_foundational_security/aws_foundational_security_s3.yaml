@@ -14,10 +14,6 @@ control-group:
     - AWS/S3
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_foundational_security_s3_1
   - aws_foundational_security_s3_5

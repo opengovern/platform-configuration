@@ -14,10 +14,6 @@ control-group:
     - AWS/NetworkFirewall
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_foundational_security_networkfirewall_2
   - aws_foundational_security_networkfirewall_3

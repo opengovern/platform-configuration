@@ -3,10 +3,6 @@ control-group:
   title: Glue
   description: This section contains recommendations for configuring Glue resources.
   section-code: glue
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_glue_connection_ssl_enabled
   - aws_glue_data_catalog_encryption_settings_metadata_encryption_enabled

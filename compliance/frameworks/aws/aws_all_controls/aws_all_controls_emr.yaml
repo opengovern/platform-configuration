@@ -3,10 +3,6 @@ control-group:
   title: EMR
   description: This section contains recommendations for configuring EMR resources.
   section-code: emr
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_emr_account_public_access_blocked
   - aws_emr_cluster_encryption_at_rest_with_sse_kms

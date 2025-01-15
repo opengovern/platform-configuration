@@ -3,10 +3,6 @@ control-group:
   title: "ACSC-EE-ML2-7.7: Multi-factor authentication ML2"
   description: Successful and unsuccessful multi-factor authentication events are logged.
   section-code: "7"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_apigateway_rest_api_stage_xray_tracing_enabled
   - aws_apigateway_stage_logging_enabled

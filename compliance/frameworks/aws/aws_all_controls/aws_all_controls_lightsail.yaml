@@ -3,9 +3,5 @@ control-group:
   title: Lightsail
   description: This section contains recommendations for configuring Lightsail resources.
   section-code: lightsail
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_lightsail_instance_ipv6_networking_disabled

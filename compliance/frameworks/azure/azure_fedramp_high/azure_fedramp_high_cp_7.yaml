@@ -3,9 +3,5 @@ control-group:
   title: Alternate Processing Site (CP-7)
   description: Alternate Processing Site (CP-7)
   section-code: "7"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_compute_vm_disaster_recovery_enabled

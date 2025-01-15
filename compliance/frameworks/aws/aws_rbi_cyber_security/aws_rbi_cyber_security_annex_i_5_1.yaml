@@ -16,10 +16,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_apigateway_stage_use_waf_web_acl
   - aws_elb_application_lb_waf_enabled

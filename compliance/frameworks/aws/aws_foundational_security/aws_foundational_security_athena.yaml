@@ -3,9 +3,5 @@ control-group:
   title: Athena
   description: Athena
   section-code: athena
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_foundational_security_athena_1

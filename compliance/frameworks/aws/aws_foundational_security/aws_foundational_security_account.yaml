@@ -14,9 +14,5 @@ control-group:
     - AWS/Account
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_foundational_security_account_1

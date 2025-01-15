@@ -18,10 +18,6 @@ control-group:
     - AWS/VPC
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_cis_v120_4_1
   - aws_cis_v120_4_2

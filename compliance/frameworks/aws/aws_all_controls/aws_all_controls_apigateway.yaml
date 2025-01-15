@@ -3,10 +3,6 @@ control-group:
   title: API Gateway
   description: This section contains recommendations for configuring API Gateway resources.
   section-code: apigateway
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_api_gateway_method_authorization_type_configured
   - aws_api_gateway_method_request_parameter_validated

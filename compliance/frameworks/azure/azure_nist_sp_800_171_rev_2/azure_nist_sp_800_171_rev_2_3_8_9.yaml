@@ -3,10 +3,6 @@ control-group:
   title: 8.9 Protect the confidentiality of backup CUI at storage locations
   description: Organizations can employ cryptographic mechanisms or alternative physical controls to protect the confidentiality of backup information at designated storage locations. Backed-up information containing CUI may include system-level information and user-level information. System-level information includes system-state information, operating system software, application software, and licenses. User-level information includes information other than system-level information.
   section-code: "9"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_keyvault_purge_protection_enabled
   - azure_keyvault_soft_delete_enabled

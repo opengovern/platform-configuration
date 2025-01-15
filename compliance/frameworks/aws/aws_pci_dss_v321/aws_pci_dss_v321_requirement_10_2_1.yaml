@@ -3,10 +3,6 @@ control-group:
   title: 2.1 All individual user accesses to cardholder data
   description: Malicious individuals could obtain knowledge of a user account with access to systems in the CDE, or they could create a new, unauthorized account in order to access cardholder data. A record of all individual accesses to cardholder data can identify which accounts may have been compromised or misused. This control verifies all individual access to cardholder data is loggedVerify all individual access to cardholder data is logged.
   section-code: "1"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_cloudtrail_multi_region_trail_enabled
   - aws_cloudtrail_s3_data_events_enabled

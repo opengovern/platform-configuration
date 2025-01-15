@@ -3,10 +3,6 @@ control-group:
   title: CP-6(1) Separation From Primary Site
   description: Identify an alternate storage site that is sufficiently separated from the primary storage site to reduce susceptibility to the same threats.
   section-code: "1"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_mariadb_server_geo_redundant_backup_enabled
   - azure_mysql_db_server_geo_redundant_backup_enabled

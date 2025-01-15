@@ -3,10 +3,6 @@ control-group:
   title: Audit And Accountability (AU)
   description: The FedRAMP High baseline requires that audit logs are generated and reviewed for security-relevant events. This benchmark verifies that audit logs are generated and reviewed for security-relevant events.
   section-code: au
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: azure_fedramp_high_au_6
   - id: azure_fedramp_high_au_12

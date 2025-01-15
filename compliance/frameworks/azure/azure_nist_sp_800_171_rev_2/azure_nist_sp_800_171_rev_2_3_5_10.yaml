@@ -3,10 +3,6 @@ control-group:
   title: 5.10 Store and transmit only cryptographically-protected passwords
   description: Cryptographically-protected passwords use salted one-way cryptographic hashes of passwords.
   section-code: "10"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_compute_vm_guest_configuration_installed_linux
   - azure_compute_vm_guest_configuration_installed_windows

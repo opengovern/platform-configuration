@@ -14,10 +14,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_ec2_stopped_instance_30_days
   - aws_ssm_managed_instance_compliance_association_compliant

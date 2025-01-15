@@ -14,9 +14,5 @@ control-group:
     - Azure/KubernetesService
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_kubernetes_instance_rbac_enabled

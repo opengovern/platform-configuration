@@ -3,10 +3,6 @@ control-group:
   title: RDS
   description: This section contains recommendations for configuring RDS resources.
   section-code: rds
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_rds_db_cluster_aurora_backtracking_enabled
   - aws_rds_db_cluster_aurora_mysql_audit_logging_enabled

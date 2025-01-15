@@ -3,10 +3,6 @@ control-group:
   title: EC2
   description: This section contains recommendations for configuring EC2 resources.
   section-code: ec2
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_ec2_ami_ebs_encryption_enabled
   - aws_ec2_ami_not_older_than_90_days

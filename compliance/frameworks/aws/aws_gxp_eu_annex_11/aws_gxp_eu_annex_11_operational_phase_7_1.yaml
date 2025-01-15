@@ -14,10 +14,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_apigateway_stage_cache_encryption_at_rest_enabled
   - aws_cloudfront_distribution_custom_origins_encryption_in_transit_enabled

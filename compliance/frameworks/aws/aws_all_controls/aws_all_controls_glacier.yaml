@@ -3,9 +3,5 @@ control-group:
   title: Glacier
   description: This section contains recommendations for configuring Glacier resources.
   section-code: glacier
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_glacier_vault_restrict_public_access

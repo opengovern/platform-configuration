@@ -3,10 +3,6 @@ control-group:
   title: 3.4 Do not allow unauthorized outbound traffic from the cardholder data environment to the Internet
   description: All traffic outbound from the cardholder data environment should be evaluated to ensure that it follows established, authorized rules. Connections should be inspected to restrict traffic to only authorized communications (for example by restricting source/destination addresses/ports, and/or blocking of content). The set of controls will examine firewall and router configurations to verify that outbound traffic from the cardholder data environment to the Internet is explicitly authorized.
   section-code: "4"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_autoscaling_launch_config_requires_imdsv2
   - aws_dms_replication_instance_not_publicly_accessible

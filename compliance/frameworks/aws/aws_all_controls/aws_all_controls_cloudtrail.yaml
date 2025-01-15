@@ -3,10 +3,6 @@ control-group:
   title: CloudTrail
   description: This section contains recommendations for configuring CloudTrail resources.
   section-code: cloudtrail
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_cloudtrail_bucket_not_public
   - aws_cloudtrail_multi_region_read_write_enabled

@@ -3,10 +3,6 @@ control-group:
   title: Cosmos DB
   description: This section contains recommendations for configuring CosmosDB resources.
   section-code: cosmosdb
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_cosmosdb_account_encryption_at_rest_using_cmk
   - azure_cosmosdb_account_key_based_metadata_write_access_disabled

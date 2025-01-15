@@ -14,10 +14,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_cloudtrail_trail_logs_encrypted_with_kms_cmk
   - aws_cloudtrail_trail_validation_enabled

@@ -3,10 +3,6 @@ control-group:
   title: "ACSC-EE-ML1-5.4: Restrict administrative privileges ML1"
   description: Unprivileged accounts cannot logon to privileged operating environments.
   section-code: "4"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_codebuild_project_source_repo_oauth_configured
   - aws_ec2_instance_iam_profile_attached

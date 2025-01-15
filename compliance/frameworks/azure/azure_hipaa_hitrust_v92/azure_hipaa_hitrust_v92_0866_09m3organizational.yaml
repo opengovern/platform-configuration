@@ -14,9 +14,5 @@ control-group:
     - Azure/Storage
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_storage_account_default_network_access_rule_denied

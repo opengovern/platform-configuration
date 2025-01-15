@@ -14,10 +14,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_backup_recovery_point_encryption_enabled
   - aws_backup_recovery_point_manual_deletion_disabled

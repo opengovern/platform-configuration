@@ -14,10 +14,6 @@ control-group:
     - Azure
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_datalake_store_account_encryption_enabled
   - azure_mssql_managed_instance_encryption_at_rest_using_cmk

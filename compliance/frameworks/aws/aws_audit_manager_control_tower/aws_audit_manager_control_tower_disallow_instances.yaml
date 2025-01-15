@@ -16,10 +16,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: aws_audit_manager_control_tower_disallow_instances_5_0_1
   - id: aws_audit_manager_control_tower_disallow_instances_5_1_1

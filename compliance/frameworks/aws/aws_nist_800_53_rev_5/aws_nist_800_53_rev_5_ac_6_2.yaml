@@ -14,10 +14,6 @@ control-group:
     - AWS/IAM
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_iam_all_policy_no_service_wild_card
   - aws_iam_policy_no_star_star

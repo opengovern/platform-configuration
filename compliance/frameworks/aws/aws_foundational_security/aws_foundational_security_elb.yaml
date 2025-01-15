@@ -14,10 +14,6 @@ control-group:
     - AWS/ELB
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_foundational_security_elb_1
   - aws_foundational_security_elb_2

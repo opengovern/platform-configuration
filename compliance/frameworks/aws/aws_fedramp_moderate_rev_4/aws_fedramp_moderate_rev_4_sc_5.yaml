@@ -14,10 +14,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_elb_classic_lb_cross_zone_load_balancing_enabled
   - aws_rds_db_instance_deletion_protection_enabled

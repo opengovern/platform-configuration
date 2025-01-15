@@ -14,9 +14,5 @@ control-group:
     - AWS/EBS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_ebs_attached_volume_delete_on_termination_enabled

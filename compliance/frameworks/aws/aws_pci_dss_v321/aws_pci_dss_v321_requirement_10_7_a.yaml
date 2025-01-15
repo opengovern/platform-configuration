@@ -3,10 +3,6 @@ control-group:
   title: 7.a Examine security policies and procedures to verify that they define audit log retention policies and procedures for retaining audit logs for at least one year, with a minimum of three months immediately available online
   description: Retaining logs for at least a year allows for the fact that it often takes a while to notice that a compromise has occurred or is occurring, and allows investigators sufficient log history to better determine the length of time of a potential breach and potential system(s) impacted. By having three months of logs immediately available, an entity can quickly identify and minimize impact of a data breach. Storing logs in off-line locations could prevent them from being readily available, resulting in longer time frames to restore log data, perform analysis, and identify impacted systems or data.
   section-code: a
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_backup_plan_min_retention_35_days
   - aws_backup_recovery_point_manual_deletion_disabled

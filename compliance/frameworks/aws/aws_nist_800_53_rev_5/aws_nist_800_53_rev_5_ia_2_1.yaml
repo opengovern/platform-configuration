@@ -14,10 +14,6 @@ control-group:
     - AWS/IAM
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_iam_root_user_hardware_mfa_enabled
   - aws_iam_root_user_mfa_enabled

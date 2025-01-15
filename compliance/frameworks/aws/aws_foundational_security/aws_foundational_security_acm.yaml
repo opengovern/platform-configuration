@@ -14,10 +14,6 @@ control-group:
     - AWS/ACM
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_foundational_security_acm_1
   - aws_foundational_security_acm_2

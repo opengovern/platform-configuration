@@ -16,10 +16,6 @@ control-group:
     - AWS/EBS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: aws_audit_manager_control_tower_ebs_checks_1_0_1
   - id: aws_audit_manager_control_tower_ebs_checks_1_0_2

@@ -3,78 +3,74 @@ framework:
   title: "NIST Cybersecurity Framework (CSF) v1.1"
   description: "NIST Cybersecurity Framework is a set of best practices, standards, and recommendations that help an organization improve its cybersecurity measures."
   section-code: aws_nist_csf
-  metadata:
-    defaults:
-      auto-assign: false
-      enabled: true
-      tracks-drift-events: false
-    tags:
-      category:
-        - "Compliance"
-      nist_csf:
-        - "true"
-      platform_benchmark_type:
-        - "compliance"
-      platform_category:
-        - "Frameworks"
-        - "Best Practices"
-      plugin:
-        - "aws"
-      service:
-        - "AWS"
-      type:
-        - "Benchmark"
+  defaults:
+    auto-assign: false
+    enabled: true
+    tracks-drift-events: false
+  tags:
+    category:
+      - "Compliance"
+    nist_csf:
+      - "true"
+    platform_benchmark_type:
+      - "compliance"
+    platform_category:
+      - "Frameworks"
+      - "Best Practices"
+    plugin:
+      - "aws"
+    service:
+      - "AWS"
+    type:
+      - "Benchmark"
   control-group:
     - id: aws_nist_csf_de
       title: "Detect (DE)"
       description: "Develop and implement appropriate activities to identify the occurrence of a cybersecurity event."
       section-code: de
-      metadata:
-        tags:
-          category:
-            - "Compliance"
-          nist_csf:
-            - "true"
-          plugin:
-            - "aws"
-          service:
-            - "AWS"
-          type:
-            - "Benchmark"
+      tags:
+        category:
+          - "Compliance"
+        nist_csf:
+          - "true"
+        plugin:
+          - "aws"
+        service:
+          - "AWS"
+        type:
+          - "Benchmark"
       control-group:
         - id: aws_nist_csf_de_ae
           title: "Anomalies and Events (DE.AE)"
           description: "Anomalous activity is detected and the potential impact of events is understood."
           section-code: ae
-          metadata:
-            tags:
-              category:
-                - "Compliance"
-              nist_csf:
-                - "true"
-              plugin:
-                - "aws"
-              service:
-                - "AWS"
-              type:
-                - "Benchmark"
+          tags:
+            category:
+              - "Compliance"
+            nist_csf:
+              - "true"
+            plugin:
+              - "aws"
+            service:
+              - "AWS"
+            type:
+              - "Benchmark"
           control-group:
             - id: aws_nist_csf_de_ae_1
               title: "DE.AE-1"
               description: "A baseline of network operations and expected data flows for users and systems is established and managed."
               section-code: "1"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_apigateway_stage_logging_enabled
                 - aws_apigateway_stage_use_waf_web_acl
@@ -120,18 +116,17 @@ framework:
               title: "DE.AE-2"
               description: "Detected events are analyzed to understand attack targets and methods."
               section-code: "2"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_guardduty_enabled
                 - aws_guardduty_finding_archived
@@ -141,18 +136,17 @@ framework:
               title: "DE.AE-3"
               description: "Event data are collected and correlated from multiple sources and sensors."
               section-code: "3"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_apigateway_stage_logging_enabled
                 - aws_cloudfront_distribution_logging_enabled
@@ -179,18 +173,17 @@ framework:
               title: "DE.AE-4"
               description: "Impact of events is determined."
               section-code: "4"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_cloudtrail_multi_region_trail_enabled
                 - aws_cloudtrail_s3_data_events_enabled
@@ -205,18 +198,17 @@ framework:
               title: "DE.AE-5"
               description: "Incident alert thresholds are established."
               section-code: "5"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_cloudwatch_alarm_action_enabled
                 - aws_codebuild_project_source_repo_oauth_configured
@@ -226,35 +218,33 @@ framework:
           title: "Security Continuous Monitoring (DE.CM)"
           description: "The information system and assets are monitored to identify cybersecurity events and verify the effectiveness of protective measures."
           section-code: cm
-          metadata:
-            tags:
-              category:
-                - "Compliance"
-              nist_csf:
-                - "true"
-              plugin:
-                - "aws"
-              service:
-                - "AWS"
-              type:
-                - "Benchmark"
+          tags:
+            category:
+              - "Compliance"
+            nist_csf:
+              - "true"
+            plugin:
+              - "aws"
+            service:
+              - "AWS"
+            type:
+              - "Benchmark"
           control-group:
             - id: aws_nist_csf_de_cm_1
               title: "DE.CM-1"
               description: "The network is monitored to detect potential cybersecurity events."
               section-code: "1"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_apigateway_stage_logging_enabled
                 - aws_cloudtrail_multi_region_trail_enabled
@@ -271,18 +261,17 @@ framework:
               title: "DE.CM-2"
               description: "The physical environment is monitored to detect potential cybersecurity events."
               section-code: "2"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_cloudtrail_bucket_not_public
                 - aws_cloudtrail_multi_region_read_write_enabled
@@ -317,18 +306,17 @@ framework:
               title: "DE.CM-3"
               description: "Personnel activity is monitored to detect potential cybersecurity events."
               section-code: "3"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_cloudtrail_multi_region_trail_enabled
                 - aws_cloudtrail_s3_data_events_enabled
@@ -341,18 +329,17 @@ framework:
               title: "DE.CM-4"
               description: "Malicious code is detected."
               section-code: "4"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_guardduty_enabled
                 - aws_guardduty_finding_archived
@@ -362,18 +349,17 @@ framework:
               title: "DE.CM-5"
               description: "Unauthorized mobile code is detected."
               section-code: "5"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_cloudtrail_trail_integrated_with_logs
                 - aws_cloudwatch_alarm_action_enabled
@@ -388,18 +374,17 @@ framework:
               title: "DE.CM-6"
               description: "External service provider activity is monitored to detect potential cybersecurity events."
               section-code: "6"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_cloudtrail_multi_region_trail_enabled
                 - aws_cloudtrail_s3_data_events_enabled
@@ -412,18 +397,17 @@ framework:
               title: "DE.CM-7"
               description: "Monitoring for unauthorized personnel, connections, devices, and software is performed."
               section-code: "7"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_apigateway_stage_logging_enabled
                 - aws_cloudtrail_multi_region_trail_enabled
@@ -439,35 +423,33 @@ framework:
           title: "Detection Processes (DE.DP)"
           description: "Detection processes and procedures are maintained and tested to ensure awareness of anomalous events."
           section-code: dp
-          metadata:
-            tags:
-              category:
-                - "Compliance"
-              nist_csf:
-                - "true"
-              plugin:
-                - "aws"
-              service:
-                - "AWS"
-              type:
-                - "Benchmark"
+          tags:
+            category:
+              - "Compliance"
+            nist_csf:
+              - "true"
+            plugin:
+              - "aws"
+            service:
+              - "AWS"
+            type:
+              - "Benchmark"
           control-group:
             - id: aws_nist_csf_de_dp_4
               title: "DE.DP-4"
               description: "Event detection information is communicated."
               section-code: "4"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_cloudformation_stack_notifications_enabled
                 - aws_cloudtrail_trail_integrated_with_logs
@@ -486,18 +468,17 @@ framework:
               title: "DE.DP-5"
               description: "Detection processes are continuously improved."
               section-code: "5"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS/EC2"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS/EC2"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_guardduty_enabled
                 - aws_ec2_instance_detailed_monitoring_enabled
@@ -506,52 +487,49 @@ framework:
       title: "Identify (ID)"
       description: "Develop the organizational understanding to manage cybersecurity risk to systems, assets, data, and capabilities."
       section-code: id
-      metadata:
-        tags:
-          category:
-            - "Compliance"
-          nist_csf:
-            - "true"
-          plugin:
-            - "aws"
-          service:
-            - "AWS"
-          type:
-            - "Benchmark"
+      tags:
+        category:
+          - "Compliance"
+        nist_csf:
+          - "true"
+        plugin:
+          - "aws"
+        service:
+          - "AWS"
+        type:
+          - "Benchmark"
       control-group:
         - id: aws_nist_csf_id_am
           title: "Asset Management (ID.AM)"
           description: "The data, personnel, devices, systems, and facilities that enable the organization to achieve business purposes are identified and managed consistent with their relative importance."
           section-code: am
-          metadata:
-            tags:
-              category:
-                - "Compliance"
-              nist_csf:
-                - "true"
-              plugin:
-                - "aws"
-              service:
-                - "AWS"
-              type:
-                - "Benchmark"
+          tags:
+            category:
+              - "Compliance"
+            nist_csf:
+              - "true"
+            plugin:
+              - "aws"
+            service:
+              - "AWS"
+            type:
+              - "Benchmark"
           control-group:
             - id: aws_nist_csf_id_am_1
               title: "ID.AM-1"
               description: "Physical devices and systems within the organization are inventoried."
               section-code: "1"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_config_enabled_all_regions
                 - aws_ec2_instance_ssm_managed
@@ -560,18 +538,17 @@ framework:
               title: "ID.AM-2"
               description: "Software platforms and applications within the organization are inventoried."
               section-code: "2"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_ec2_instance_ssm_managed
                 - aws_ec2_stopped_instance_30_days
@@ -583,18 +560,17 @@ framework:
               title: "ID.AM-3"
               description: "Organizational communication and data flows are mapped."
               section-code: "3"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_apigateway_stage_logging_enabled
                 - aws_cloudtrail_multi_region_trail_enabled
@@ -608,18 +584,17 @@ framework:
               title: "ID.AM-5"
               description: "Resources are prioritized based on their classification, criticality, and business value."
               section-code: "5"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_autoscaling_group_with_lb_use_health_check
                 - aws_dynamodb_table_auto_scaling_enabled
@@ -628,18 +603,17 @@ framework:
               title: "ID.AM-6"
               description: "Cybersecurity roles and responsibilities for the entire workforce and third-party stakeholders are established."
               section-code: "6"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS/IAM"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS/IAM"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_iam_user_in_group
 
@@ -647,35 +621,33 @@ framework:
           title: "Business Environment (ID.BE)"
           description: "The organization's mission, objectives, stakeholders, and activities are understood and prioritized."
           section-code: be
-          metadata:
-            tags:
-              category:
-                - "Compliance"
-              nist_csf:
-                - "true"
-              plugin:
-                - "aws"
-              service:
-                - "AWS"
-              type:
-                - "Benchmark"
+          tags:
+            category:
+              - "Compliance"
+            nist_csf:
+              - "true"
+            plugin:
+              - "aws"
+            service:
+              - "AWS"
+            type:
+              - "Benchmark"
           control-group:
             - id: aws_nist_csf_id_be_5
               title: "ID.BE-5"
               description: "Resilience requirements for critical services are established."
               section-code: "5"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_autoscaling_group_multiple_az_configured
                 - aws_autoscaling_group_with_lb_use_health_check
@@ -712,35 +684,33 @@ framework:
           title: "Risk Assessment (ID.RA)"
           description: "The organization understands the cybersecurity risk to organizational operations and assets."
           section-code: ra
-          metadata:
-            tags:
-              category:
-                - "Compliance"
-              nist_csf:
-                - "true"
-              plugin:
-                - "aws"
-              service:
-                - "AWS"
-              type:
-                - "Benchmark"
+          tags:
+            category:
+              - "Compliance"
+            nist_csf:
+              - "true"
+            plugin:
+              - "aws"
+            service:
+              - "AWS"
+            type:
+              - "Benchmark"
           control-group:
             - id: aws_nist_csf_id_ra_1
               title: "ID.RA-1"
               description: "Asset vulnerabilities are identified and documented."
               section-code: "1"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_cloudtrail_bucket_not_public
                 - aws_cloudtrail_multi_region_read_write_enabled
@@ -777,18 +747,17 @@ framework:
               title: "ID.RA-2"
               description: "Cyber threat intelligence is received from information sharing forums and sources."
               section-code: "2"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_guardduty_enabled
                 - aws_securityhub_enabled
@@ -797,18 +766,17 @@ framework:
               title: "ID.RA-3"
               description: "Threats, both internal and external, are identified and documented."
               section-code: "3"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_guardduty_enabled
                 - aws_securityhub_enabled
@@ -817,18 +785,17 @@ framework:
               title: "ID.RA-5"
               description: "Threats, vulnerabilities, likelihoods, and impacts are used to determine risk."
               section-code: "5"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_cloudtrail_bucket_not_public
                 - aws_cloudtrail_multi_region_read_write_enabled
@@ -863,35 +830,33 @@ framework:
           title: "Supply Chain Risk Management (ID.SC)"
           description: "The organization uses processes to identify, assess and manage supply chain risks."
           section-code: sc
-          metadata:
-            tags:
-              category:
-                - "Compliance"
-              nist_csf:
-                - "true"
-              plugin:
-                - "aws"
-              service:
-                - "AWS"
-              type:
-                - "Benchmark"
+          tags:
+            category:
+              - "Compliance"
+            nist_csf:
+              - "true"
+            plugin:
+              - "aws"
+            service:
+              - "AWS"
+            type:
+              - "Benchmark"
           control-group:
             - id: aws_nist_csf_id_sc_4
               title: "ID.SC-4"
               description: "Suppliers and third-party partners are routinely assessed to confirm they meet obligations."
               section-code: "4"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_cloudtrail_bucket_not_public
                 - aws_cloudtrail_multi_region_read_write_enabled
@@ -926,52 +891,49 @@ framework:
       title: "Protect (PR)"
       description: "Develop and implement safeguards to ensure delivery of critical services."
       section-code: pr
-      metadata:
-        tags:
-          category:
-            - "Compliance"
-          nist_csf:
-            - "true"
-          plugin:
-            - "aws"
-          service:
-            - "AWS"
-          type:
-            - "Benchmark"
+      tags:
+        category:
+          - "Compliance"
+        nist_csf:
+          - "true"
+        plugin:
+          - "aws"
+        service:
+          - "AWS"
+        type:
+          - "Benchmark"
       control-group:
         - id: aws_nist_csf_pr_ac
           title: "Identity Management and Access Control (PR.AC)"
           description: "Access to physical and logical assets and associated facilities is limited to authorized users, processes, and devices, and is managed consistent with the assessed risk of unauthorized access to authorized activities and transactions."
           section-code: ac
-          metadata:
-            tags:
-              category:
-                - "Compliance"
-              nist_csf:
-                - "true"
-              plugin:
-                - "aws"
-              service:
-                - "AWS"
-              type:
-                - "Benchmark"
+          tags:
+            category:
+              - "Compliance"
+            nist_csf:
+              - "true"
+            plugin:
+              - "aws"
+            service:
+              - "AWS"
+            type:
+              - "Benchmark"
           control-group:
             - id: aws_nist_csf_pr_ac_1
               title: "PR.AC-1"
               description: "Identities and credentials are issued, managed, verified, revoked, and audited for authorized devices, users and processes."
               section-code: "1"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_codebuild_project_environment_privileged_mode_disabled
                 - aws_ec2_instance_iam_profile_attached
@@ -1009,18 +971,17 @@ framework:
               title: "PR.AC-3"
               description: "Remote access is managed."
               section-code: "3"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_apigateway_stage_use_waf_web_acl
                 - aws_autoscaling_launch_config_public_ip_disabled
@@ -1071,18 +1032,17 @@ framework:
               title: "PR.AC-4"
               description: "Access permissions and authorizations are managed, incorporating the principles of least privilege and separation of duties."
               section-code: "4"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_autoscaling_launch_config_public_ip_disabled
                 - aws_codebuild_project_environment_privileged_mode_disabled
@@ -1136,18 +1096,17 @@ framework:
               title: "PR.AC-5"
               description: "Network integrity is protected (e.g., network segregation, network segmentation)."
               section-code: "5"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_acm_certificate_expires_30_days
                 - aws_apigateway_stage_use_waf_web_acl
@@ -1193,18 +1152,17 @@ framework:
               title: "PR.AC-6"
               description: "Identities are proofed and bound to credentials and asserted in interactions."
               section-code: "6"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_cloudtrail_multi_region_trail_enabled
                 - aws_cloudtrail_trail_enabled
@@ -1216,18 +1174,17 @@ framework:
               title: "PR.AC-7"
               description: "Users, devices, and other assets are authenticated (e.g., single-factor, multi-factor) commensurate with the risk of the transaction."
               section-code: "7"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS/IAM"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS/IAM"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_iam_account_password_policy_strong_min_reuse_24
                 - aws_iam_root_user_hardware_mfa_enabled
@@ -1238,35 +1195,33 @@ framework:
           title: "Data Security (PR.DS)"
           description: "Information and records (data) are managed consistent with the organization's risk strategy to protect the confidentiality, integrity, and availability of information."
           section-code: ds
-          metadata:
-            tags:
-              category:
-                - "Compliance"
-              nist_csf:
-                - "true"
-              plugin:
-                - "aws"
-              service:
-                - "AWS"
-              type:
-                - "Benchmark"
+          tags:
+            category:
+              - "Compliance"
+            nist_csf:
+              - "true"
+            plugin:
+              - "aws"
+            service:
+              - "AWS"
+            type:
+              - "Benchmark"
           control-group:
             - id: aws_nist_csf_pr_ds_1
               title: "PR.DS-1"
               description: "Data-at-rest is protected."
               section-code: "1"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_apigateway_stage_cache_encryption_at_rest_enabled
                 - aws_cloudtrail_trail_logs_encrypted_with_kms_cmk
@@ -1299,18 +1254,17 @@ framework:
               title: "PR.DS-2"
               description: "Data-in-transit is protected."
               section-code: "2"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_acm_certificate_expires_30_days
                 - aws_apigateway_rest_api_stage_use_ssl_certificate
@@ -1333,18 +1287,17 @@ framework:
               title: "PR.DS-3"
               description: "Assets are formally managed throughout removal, transfers, and disposition."
               section-code: "3"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_ec2_instance_ssm_managed
                 - aws_ssm_managed_instance_compliance_association_compliant
@@ -1354,18 +1307,17 @@ framework:
               title: "PR.DS-4"
               description: "Adequate capacity to ensure availability is maintained."
               section-code: "4"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_autoscaling_group_multiple_az_configured
                 - aws_autoscaling_group_with_lb_use_health_check
@@ -1402,18 +1354,17 @@ framework:
               title: "PR.DS-5"
               description: "Protections against data leaks are implemented."
               section-code: "5"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_autoscaling_launch_config_public_ip_disabled
                 - aws_cloudtrail_multi_region_trail_enabled
@@ -1450,18 +1401,17 @@ framework:
               title: "PR.DS-6"
               description: "Integrity checking mechanisms are used to verify software, firmware, and information integrity."
               section-code: "6"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS/CloudTrail"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS/CloudTrail"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_cloudtrail_trail_validation_enabled
                 - aws_s3_bucket_versioning_enabled
@@ -1470,18 +1420,17 @@ framework:
               title: "PR.DS-7"
               description: "The development and testing environment(s) are separate from the production environment."
               section-code: "7"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_cloudtrail_security_trail_enabled
                 - aws_ebs_volume_unused
@@ -1495,18 +1444,17 @@ framework:
               title: "PR.DS-8"
               description: "Integrity checking mechanisms are used to verify hardware integrity."
               section-code: "8"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_ec2_instance_ssm_managed
                 - aws_securityhub_enabled
@@ -1514,35 +1462,33 @@ framework:
           title: "Information Protection Processes and Procedures (PR.IP)"
           description: "Security policies (addressing purpose, scope, roles, responsibilities, management commitment, and coordination among organizational entities), processes, and procedures are maintained and used to manage protection of information systems and assets."
           section-code: ip
-          metadata:
-            tags:
-              category:
-                - "Compliance"
-              nist_csf:
-                - "true"
-              plugin:
-                - "aws"
-              service:
-                - "AWS"
-              type:
-                - "Benchmark"
+          tags:
+            category:
+              - "Compliance"
+            nist_csf:
+              - "true"
+            plugin:
+              - "aws"
+            service:
+              - "AWS"
+            type:
+              - "Benchmark"
           control-group:
             - id: aws_nist_csf_pr_ip_1
               title: "PR.IP-1"
               description: "A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)."
               section-code: "1"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_account_part_of_organizations
                 - aws_autoscaling_launch_config_hop_limit
@@ -1582,18 +1528,17 @@ framework:
               title: "PR.IP-2"
               description: "A System Development Life Cycle to manage systems is implemented."
               section-code: "2"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_codebuild_project_plaintext_env_variables_no_sensitive_aws_values
                 - aws_codebuild_project_source_repo_oauth_configured
@@ -1603,18 +1548,17 @@ framework:
               title: "PR.IP-3"
               description: "Configuration change control processes are in place."
               section-code: "3"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS/ELB"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS/ELB"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_elb_application_lb_deletion_protection_enabled
                 - aws_rds_db_cluster_deletion_protection_enabled
@@ -1624,18 +1568,17 @@ framework:
               title: "PR.IP-4"
               description: "Backups of information are conducted, maintained, and tested periodically."
               section-code: "4"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_dynamodb_table_in_backup_plan
                 - aws_dynamodb_table_point_in_time_recovery_enabled
@@ -1657,18 +1600,17 @@ framework:
               title: "PR.IP-7"
               description: "Protection processes are improved."
               section-code: "7"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS/EC2"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS/EC2"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_ec2_instance_ebs_optimized
 
@@ -1676,18 +1618,17 @@ framework:
               title: "PR.IP-8"
               description: "Effectiveness of protection technologies is shared."
               section-code: "8"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_dms_replication_instance_not_publicly_accessible
                 - aws_ebs_snapshot_not_publicly_restorable
@@ -1709,18 +1650,17 @@ framework:
               title: "PR.IP-9"
               description: "Response plans (Incident Response and Business Continuity) and recovery plans (Incident Recovery and Disaster Recovery) are in place and managed."
               section-code: "9"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_backup_plan_min_retention_35_days
                 - aws_backup_recovery_point_encryption_enabled
@@ -1753,18 +1693,17 @@ framework:
               title: "PR.IP-12"
               description: "A vulnerability management plan is developed and implemented."
               section-code: "12"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_config_enabled_all_regions
                 - aws_ec2_instance_ssm_managed
@@ -1775,35 +1714,33 @@ framework:
           title: "Maintenance (PR.MA)"
           description: "Maintenance and repairs of industrial control and information system components are performed consistent with policies and procedures."
           section-code: ma
-          metadata:
-            tags:
-              category:
-                - "Compliance"
-              nist_csf:
-                - "true"
-              plugin:
-                - "aws"
-              service:
-                - "AWS"
-              type:
-                - "Benchmark"
+          tags:
+            category:
+              - "Compliance"
+            nist_csf:
+              - "true"
+            plugin:
+              - "aws"
+            service:
+              - "AWS"
+            type:
+              - "Benchmark"
           control-group:
             - id: aws_nist_csf_pr_ma_2
               title: "PR.MA-2"
               description: "Remote maintenance of organizational assets is approved, logged, and performed in a manner that prevents unauthorized access."
               section-code: "2"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS/CloudTrail"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS/CloudTrail"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_cloudtrail_multi_region_trail_enabled
                 - aws_cloudtrail_trail_enabled
@@ -1813,35 +1750,33 @@ framework:
           title: "Protective Technology (PR.PT)"
           description: "Technical security solutions are managed to ensure the security and resilience of systems and assets."
           section-code: pt
-          metadata:
-            tags:
-              category:
-                - "Compliance"
-              nist_csf:
-                - "true"
-              plugin:
-                - "aws"
-              service:
-                - "AWS"
-              type:
-                - "Benchmark"
+          tags:
+            category:
+              - "Compliance"
+            nist_csf:
+              - "true"
+            plugin:
+              - "aws"
+            service:
+              - "AWS"
+            type:
+              - "Benchmark"
           control-group:
             - id: aws_nist_csf_pr_pt_1
               title: "PR.PT-1"
               description: "Audit/log records are determined, documented, implemented, and reviewed in accordance with policy."
               section-code: "1"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_apigateway_rest_api_stage_xray_tracing_enabled
                 - aws_apigateway_stage_logging_enabled
@@ -1871,18 +1806,17 @@ framework:
               title: "PR.PT-3"
               description: "The principle of least functionality is incorporated by configuring systems to provide only essential capabilities."
               section-code: "3"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_autoscaling_launch_config_public_ip_disabled
                 - aws_codebuild_project_environment_privileged_mode_disabled
@@ -1923,18 +1857,17 @@ framework:
               title: "PR.PT-4"
               description: "Communications and control networks are protected."
               section-code: "4"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_acm_certificate_expires_30_days
                 - aws_apigateway_stage_use_waf_web_acl
@@ -1978,18 +1911,17 @@ framework:
               title: "PR.PT-5"
               description: "Mechanisms (e.g., failsafe, load balancing, hot swap) are implemented to achieve resilience requirements in normal and adverse situations."
               section-code: "5"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_autoscaling_group_multiple_az_configured
                 - aws_autoscaling_group_with_lb_use_health_check
@@ -2028,52 +1960,49 @@ framework:
       title: "Recover (RC)"
       description: "Develop and implement appropriate activities to maintain plans for resilience and to restore any capabilities or services that were impaired due to a cybersecurity incident."
       section-code: rc
-      metadata:
-        tags:
-          category:
-            - "Compliance"
-          nist_csf:
-            - "true"
-          plugin:
-            - "aws"
-          service:
-            - "AWS"
-          type:
-            - "Benchmark"
+      tags:
+        category:
+          - "Compliance"
+        nist_csf:
+          - "true"
+        plugin:
+          - "aws"
+        service:
+          - "AWS"
+        type:
+          - "Benchmark"
       control-group:
         - id: aws_nist_csf_rc_rp
           title: "Recovery Planning (RC.RP)"
           description: "Recovery processes and procedures are executed and maintained to ensure timely restoration of systems or assets affected by cybersecurity events."
           section-code: rp
-          metadata:
-            tags:
-              category:
-                - "Compliance"
-              nist_csf:
-                - "true"
-              plugin:
-                - "aws"
-              service:
-                - "AWS"
-              type:
-                - "Benchmark"
+          tags:
+            category:
+              - "Compliance"
+            nist_csf:
+              - "true"
+            plugin:
+              - "aws"
+            service:
+              - "AWS"
+            type:
+              - "Benchmark"
           control-group:
             - id: aws_nist_csf_rc_rp_1
               title: "RC.RP-1"
               description: "Recovery plan is executed during or after a cybersecurity incident."
               section-code: "1"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_autoscaling_group_multiple_az_configured
                 - aws_autoscaling_use_multiple_instance_types_in_multiple_az
@@ -2117,52 +2046,49 @@ framework:
       title: "Respond (RS)"
       description: "Develop and implement appropriate activities to take action regarding a detected cybersecurity incident."
       section-code: rs
-      metadata:
-        tags:
-          category:
-            - "Compliance"
-          nist_csf:
-            - "true"
-          plugin:
-            - "aws"
-          service:
-            - "AWS"
-          type:
-            - "Benchmark"
+      tags:
+        category:
+          - "Compliance"
+        nist_csf:
+          - "true"
+        plugin:
+          - "aws"
+        service:
+          - "AWS"
+        type:
+          - "Benchmark"
       control-group:
         - id: aws_nist_csf_rs_an
           title: "Analysis (RS.AN)"
           description: "Analysis is conducted to ensure effective response and support recovery activities."
           section-code: an
-          metadata:
-            tags:
-              category:
-                - "Compliance"
-              nist_csf:
-                - "true"
-              plugin:
-                - "aws"
-              service:
-                - "AWS"
-              type:
-                - "Benchmark"
+          tags:
+            category:
+              - "Compliance"
+            nist_csf:
+              - "true"
+            plugin:
+              - "aws"
+            service:
+              - "AWS"
+            type:
+              - "Benchmark"
           control-group:
             - id: aws_nist_csf_rs_an_2
               title: "RS.AN-2"
               description: "The impact of the incident is understood."
               section-code: "2"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS/GuardDuty"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS/GuardDuty"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_guardduty_finding_archived
 
@@ -2170,35 +2096,33 @@ framework:
           title: "Mitigation (RS.MI)"
           description: "Activities are performed to prevent expansion of an event, mitigate its effects, and eradicate the incident."
           section-code: mi
-          metadata:
-            tags:
-              category:
-                - "Compliance"
-              nist_csf:
-                - "true"
-              plugin:
-                - "aws"
-              service:
-                - "AWS"
-              type:
-                - "Benchmark"
+          tags:
+            category:
+              - "Compliance"
+            nist_csf:
+              - "true"
+            plugin:
+              - "aws"
+            service:
+              - "AWS"
+            type:
+              - "Benchmark"
           control-group:
             - id: aws_nist_csf_rs_mi_3
               title: "RS.MI-3"
               description: "Newly identified vulnerabilities are mitigated or documented as accepted risks."
               section-code: "3"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS/GuardDuty"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS/GuardDuty"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_guardduty_finding_archived
 
@@ -2206,35 +2130,33 @@ framework:
           title: "Response Planning (RS.RP)"
           description: "Response processes and procedures are executed and maintained, ensuring timely response to detected cybersecurity events."
           section-code: rp
-          metadata:
-            tags:
-              category:
-                - "Compliance"
-              nist_csf:
-                - "true"
-              plugin:
-                - "aws"
-              service:
-                - "AWS"
-              type:
-                - "Benchmark"
+          tags:
+            category:
+              - "Compliance"
+            nist_csf:
+              - "true"
+            plugin:
+              - "aws"
+            service:
+              - "AWS"
+            type:
+              - "Benchmark"
           control-group:
             - id: aws_nist_csf_rs_rp_1
               title: "RS.RP-1"
               description: "Response plan is executed during or after an incident."
               section-code: "1"
-              metadata:
-                tags:
-                  category:
-                    - "Compliance"
-                  nist_csf:
-                    - "true"
-                  plugin:
-                    - "aws"
-                  service:
-                    - "AWS"
-                  type:
-                    - "Benchmark"
+              tags:
+                category:
+                  - "Compliance"
+                nist_csf:
+                  - "true"
+                plugin:
+                  - "aws"
+                service:
+                  - "AWS"
+                type:
+                  - "Benchmark"
               controls:
                 - aws_backup_plan_min_retention_35_days
                 - aws_backup_recovery_point_encryption_enabled

@@ -3,10 +3,6 @@ control-group:
   title: DynamoDB
   description: This section contains recommendations for configuring DynamoDB resources.
   section-code: dynamodb
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_dynamodb_table_auto_scaling_enabled
   - aws_dynamodb_table_deletion_protection_enabled

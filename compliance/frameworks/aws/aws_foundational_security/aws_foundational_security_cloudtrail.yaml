@@ -14,10 +14,6 @@ control-group:
     - AWS/CloudTrail
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_foundational_security_cloudtrail_1
   - aws_foundational_security_cloudtrail_2

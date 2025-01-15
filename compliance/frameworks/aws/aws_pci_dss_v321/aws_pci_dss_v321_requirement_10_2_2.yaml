@@ -3,10 +3,6 @@ control-group:
   title: 2.2 All actions taken by any individual with root or administrative privileges
   description: Accounts with increased privileges, such as the “administrator” or “root” account, have the potential to greatly impact the security or operational functionality of a system. Without a log of the activities performed, an organization is unable to trace any issues resulting from an administrative mistake or misuse of privilege back to the specific action and individual. This control verifies all actions taken by any individual with root or administrative privileges are logged.
   section-code: "2"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_cloudtrail_multi_region_trail_enabled
   - aws_cloudtrail_s3_data_events_enabled

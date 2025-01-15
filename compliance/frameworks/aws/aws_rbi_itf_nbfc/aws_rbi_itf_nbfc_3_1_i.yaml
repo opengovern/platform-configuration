@@ -3,10 +3,6 @@ control-group:
   title: 1.i Public Key Infrastructure (PKI)
   description: NBFCs may increase the usage of PKI to ensure confidentiality of data, access control, data integrity, authentication and nonrepudiation.
   section-code: i
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_acm_certificate_expires_30_days
   - aws_apigateway_rest_api_stage_use_ssl_certificate

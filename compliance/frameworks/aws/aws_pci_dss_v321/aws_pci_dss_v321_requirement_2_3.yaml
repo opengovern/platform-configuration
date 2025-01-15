@@ -3,10 +3,6 @@ control-group:
   title: Encrypt all non-console administrative access using strong cryptography
   description: If non-console (including remote) administration does not use secure authentication and encrypted communications, sensitive administrative or operational level information (like administrator's IDs and passwords) can be revealed to an eavesdropper. A malicious individual could use this information to access the network, become administrator, and steal data. Clear-text protocols (such as HTTP, telnet, etc.) do not encrypt traffic or logon details, making it easy for an eavesdropper to intercept this information. Select a sample of system components and verify that non-console administrative access is encrypted.
   section-code: "3"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_acm_certificate_expires_30_days
   - aws_cloudfront_distribution_encryption_in_transit_enabled

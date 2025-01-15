@@ -3,10 +3,6 @@ control-group:
   title: "ACSC-EE-ML3-7.8: Multi-factor authentication ML3"
   description: Successful and unsuccessful multi-factor authentication events are centrally logged.
   section-code: "8"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_cloudtrail_multi_region_trail_enabled
   - aws_cloudtrail_s3_data_events_enabled

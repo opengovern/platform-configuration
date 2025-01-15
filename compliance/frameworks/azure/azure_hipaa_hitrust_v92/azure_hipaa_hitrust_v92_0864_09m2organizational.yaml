@@ -14,9 +14,5 @@ control-group:
     - Azure/CosmosDB
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_cosmosdb_use_virtual_service_endpoint

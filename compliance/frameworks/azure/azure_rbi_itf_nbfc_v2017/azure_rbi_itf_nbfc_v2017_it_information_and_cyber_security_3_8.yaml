@@ -3,10 +3,6 @@ control-group:
   title: Digital Signatures-3.8
   description: Digital Signatures-3.8
   section-code: "8"
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_appservice_function_app_client_certificates_on
   - azure_appservice_web_app_client_certificates_on

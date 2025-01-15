@@ -3,10 +3,6 @@ control-group:
   title: Data Factory
   description: This section contains recommendations for configuring Data Factory resources.
   section-code: datafactory
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_data_factory_encrypted_with_cmk
   - azure_data_factory_public_network_access_disabled

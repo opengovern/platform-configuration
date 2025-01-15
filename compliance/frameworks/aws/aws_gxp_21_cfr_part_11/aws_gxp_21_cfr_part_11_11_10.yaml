@@ -14,10 +14,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: aws_gxp_21_cfr_part_11_11_10_a
   - id: aws_gxp_21_cfr_part_11_11_10_c

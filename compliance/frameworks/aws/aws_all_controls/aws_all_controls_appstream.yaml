@@ -3,10 +3,6 @@ control-group:
   title: AppStream
   description: This section contains recommendations for configuring AppStream resources.
   section-code: appstream
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_appstream_fleet_default_internet_access_disabled
   - aws_appstream_fleet_idle_disconnect_timeout_600_seconds

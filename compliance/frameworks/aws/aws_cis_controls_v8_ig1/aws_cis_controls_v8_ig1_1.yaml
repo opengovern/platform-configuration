@@ -14,10 +14,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   control-group:
   - id: aws_cis_controls_v8_ig1_1_1
   - id: aws_cis_controls_v8_ig1_1_2

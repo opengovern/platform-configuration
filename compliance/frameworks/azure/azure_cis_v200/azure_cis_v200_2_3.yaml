@@ -18,7 +18,3 @@ control-group:
     - Azure/SecurityCenter
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false

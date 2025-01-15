@@ -3,9 +3,5 @@ control-group:
   title: MSK
   description: MSK
   section-code: msk
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_foundational_security_msk_1

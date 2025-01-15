@@ -3,9 +3,5 @@ control-group:
   title: EventBridge
   description: EventBridge
   section-code: eventbridge
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_foundational_security_eventbridge_3

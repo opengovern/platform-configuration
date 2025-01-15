@@ -14,10 +14,6 @@ control-group:
     - AWS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_vpc_security_group_restrict_ingress_common_ports_all
   - aws_vpc_security_group_restrict_ingress_ssh_all

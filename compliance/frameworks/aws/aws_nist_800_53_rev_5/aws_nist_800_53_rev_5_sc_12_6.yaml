@@ -14,10 +14,6 @@ control-group:
     - AWS/KMS
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_kms_cmk_rotation_enabled
   - aws_kms_key_not_pending_deletion

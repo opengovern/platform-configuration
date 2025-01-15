@@ -3,10 +3,6 @@ control-group:
   title: Lambda
   description: This section contains recommendations for configuring Lambda resources.
   section-code: lambda
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_lambda_function_cloudtrail_logging_enabled
   - aws_lambda_function_cloudwatch_insights_enabled

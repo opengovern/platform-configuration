@@ -14,9 +14,5 @@ control-group:
     - Azure/MariaDB
     type:
     - Benchmark
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_mariadb_server_geo_redundant_backup_enabled

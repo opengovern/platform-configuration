@@ -3,9 +3,5 @@ control-group:
   title: MSK
   description: This section contains recommendations for configuring MSK resources.
   section-code: msk
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - aws_msk_cluster_encryption_in_transit_with_tls_enabled

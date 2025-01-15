@@ -3,10 +3,6 @@ control-group:
   title: Synapse Analytics
   description: This section contains recommendations for configuring Synapse Analytics resources.
   section-code: synapse
-  defaults:
-    auto-assign: null
-    enabled: false
-    tracks-drift-events: false
   controls:
   - azure_synapse_workspace_data_exfiltration_protection_enabled
   - azure_synapse_workspace_encryption_at_rest_using_cmk
