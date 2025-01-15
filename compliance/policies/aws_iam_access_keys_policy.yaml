@@ -2,6 +2,7 @@ id: aws_iam_access_keys_policy
 title: AWS IAM Access Key Policy
 description: Specifies the maximum age for IAM Access Keys
 language: sql
+type: policy
 primary_resource: aws_iam_access_key
 definition: |
   SELECT
