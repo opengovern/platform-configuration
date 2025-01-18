@@ -15,7 +15,6 @@ plugins:
     artifact_details:
       package_url: "ghcr.io/opengovern/og-describer-aws"
       package_tag: "local-latest"
-
   - id: 2
     integration_type: "azure_subscription"
     name: "Microsoft Azure Subscription"
@@ -31,7 +30,6 @@ plugins:
     artifact_details:
       package_url: "ghcr.io/opengovern/og-describer-azure"
       package_tag: "local-latest"
-
   - id: 3
     integration_type: "entraid_directory"
     name: "Microsoft EntraID Directory"
@@ -47,7 +45,6 @@ plugins:
     artifact_details:
       package_url: "ghcr.io/opengovern/og-describer-entraid"
       package_tag: "local-latest"
-
   - id: 4
     integration_type: "github_account"
     name: "GitHub"
@@ -63,7 +60,6 @@ plugins:
     package_type: "plugin"
     artifact_details:
       package_url: "https://github.com/opengovern/og-describer-github/releases/download/v0.49.0/github-plugin.zip"
-
   - id: 5
     integration_type: "digitalocean_team"
     name: "DigitalOcean"
@@ -79,7 +75,6 @@ plugins:
     artifact_details:
       package_url: "ghcr.io/opengovern/og-describer-digitalocean"
       package_tag: "local-latest"
-
   - id: 6
     integration_type: "cloudflare_account"
     name: "Cloudflare"
@@ -95,7 +90,6 @@ plugins:
     artifact_details:
       package_url: "ghcr.io/opengovern/og-describer-cloudflare"
       package_tag: "local-latest"
-
   - id: 7
     integration_type: "openai_integration"
     name: "OpenAI"
@@ -111,7 +105,6 @@ plugins:
     artifact_details:
       package_url: "ghcr.io/opengovern/og-describer-openai"
       package_tag: "local-latest"
-
   - id: 8
     integration_type: "linode_account"
     name: "Linode (Akamai)"
@@ -127,7 +120,6 @@ plugins:
     artifact_details:
       package_url: "ghcr.io/opengovern/og-describer-linode"
       package_tag: "local-latest"
-
   - id: 9
     integration_type: "cohereai_project"
     name: "CohereAI"
@@ -143,7 +135,6 @@ plugins:
     artifact_details:
       package_url: "ghcr.io/opengovern/og-describer-cohereai"
       package_tag: "local-latest"
-
   - id: 10
     integration_type: "google_workspace_account"
     name: "Google Workspace"
@@ -160,7 +151,6 @@ plugins:
     artifact_details:
       package_url: "ghcr.io/opengovern/og-describer-googleworkspace"
       package_tag: "local-latest"
-
   - id: 11
     integration_type: "oci_repository"
     name: "OCI Repository"
@@ -172,7 +162,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 12
     integration_type: "render_account"
     name: "Render"
@@ -188,7 +177,6 @@ plugins:
     artifact_details:
       package_url: "ghcr.io/opengovern/og-describer-render"
       package_tag: "local-latest"
-
   - id: 13
     integration_type: "doppler_account"
     name: "Doppler"
@@ -204,7 +192,6 @@ plugins:
     artifact_details:
       package_url: "ghcr.io/opengovern/og-describer-doppler"
       package_tag: "local-latest"
-
   - id: 14
     integration_type: "slack_account"
     name: "Slack"
@@ -219,7 +206,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 15
     integration_type: "jira_cloud"
     name: "Atlassian JIRA Cloud"
@@ -233,7 +219,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 16
     integration_type: "chainguard_dev_account"
     name: "Chainguard.dev"
@@ -247,7 +232,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 17
     integration_type: "godaddy_account"
     name: "GoDaddy"
@@ -261,7 +245,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 18
     integration_type: "servicenow_account"
     name: "ServiceNow"
@@ -275,7 +258,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 19
     integration_type: "okta_account"
     name: "Okta"
@@ -290,7 +272,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 20
     integration_type: "aws_costs"
     name: "Amazon Web Services (AWS) Costs"
@@ -305,7 +286,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 21
     integration_type: "azure_costs"
     name: "Microsoft Azure Costs"
@@ -320,7 +300,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 22
     integration_type: "semgrep_account"
     name: "Semgrep"
@@ -334,7 +313,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 23
     integration_type: "huggingface_account"
     name: "HuggingFace"
@@ -348,7 +326,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 24
     integration_type: "kubernetes"
     name: "Kubernetes"
@@ -363,7 +340,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 25
     integration_type: "jamf_account"
     name: "Jamf"
@@ -377,7 +353,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 26
     integration_type: "jumpcloud_account"
     name: "JumpCloud"
@@ -392,7 +367,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 25
     integration_type: "gitlab_account"
     name: "GitLab"
@@ -407,7 +381,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 27
     integration_type: "oracle_cloud_account"
     name: "Oracle Cloud"
@@ -421,7 +394,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 28
     integration_type: "teleport_account"
     name: "Teleport"
@@ -436,7 +408,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 29
     integration_type: "monday_com_account"
     name: "Monday.com"
@@ -450,7 +421,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 30
     integration_type: "rubrik_account"
     name: "Rubrik"
@@ -464,7 +434,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 31
     integration_type: "commvault_account"
     name: "CommVault"
@@ -478,7 +447,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 32
     integration_type: "bitbucket_cloud"
     name: "Bitbucket Cloud"
@@ -493,7 +461,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 33
     integration_type: "veracode_account"
     name: "Veracode"
@@ -507,7 +474,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 34
     integration_type: "splunk_enterprise_security"
     name: "Splunk Enterprise Security"
@@ -521,7 +487,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 35
     integration_type: "microsoft_sentinel"
     name: "Microsoft Sentinel"
@@ -535,7 +500,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 36
     integration_type: "rapid7_insightidr"
     name: "Rapid7 InsightIDR"
@@ -549,7 +513,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 37
     integration_type: "datadog_cloud_siem"
     name: "Datadog Cloud SIEM"
@@ -564,7 +527,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 38
     integration_type: "intruder_io"
     name: "IntruderIO"
@@ -579,7 +541,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 39
     integration_type: "cobalt_io"
     name: "CobaltIO"
@@ -593,7 +554,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 40
     integration_type: "appdynamics_saas"
     name: "Cisco AppDynamics (SaaS)"
@@ -608,7 +568,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 41
     integration_type: "cisco_duo"
     name: "Cisco Duo"
@@ -623,7 +582,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 42
     integration_type: "cisco_meraki"
     name: "Cisco Meraki"
@@ -637,7 +595,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 43
     integration_type: "fly_io_account"
     name: "Fly.io"
@@ -652,7 +609,6 @@ plugins:
     source_code: ""
     package_type: "classic"
     artifact_details: {}
-
   - id: 44
     integration_type: "Tailscale"
     name: "Tailscale"
