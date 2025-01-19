@@ -614,7 +614,7 @@ plugins:
     description: "Deploy and manage applications with Fly.io."
     icon: "fly_io.svg"
     availability: "Planned for Dec 2024"
-    source_code: ""
+    source_code: "https://github.com/opengovern/og-describer-fly"
     package_type: "plugin"
     default: false
     artifact_details:
