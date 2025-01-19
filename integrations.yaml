@@ -11,10 +11,11 @@ plugins:
     icon: "aws.svg"
     availability: "GA"
     source_code: "https://github.com/opengovern/og-describer-aws"
-    package_type: "classic"
+    package_type: "plugin"
+    default: false
     artifact_details:
-      package_url: "ghcr.io/opengovern/og-describer-aws"
-      package_tag: "local-latest"
+      package_url: "https://github.com/opengovern/og-describer-aws/releases/download/v0.3.0/aws-plugin.zip"
+    
   - id: 2
     integration_type: "azure_subscription"
     name: "Microsoft Azure Subscription"
@@ -26,10 +27,11 @@ plugins:
     icon: "azure.svg"
     availability: "GA"
     source_code: "https://github.com/opengovern/og-describer-azure"
-    package_type: "classic"
+    package_type: "plugin"
+    default: false
     artifact_details:
-      package_url: "ghcr.io/opengovern/og-describer-azure"
-      package_tag: "local-latest"
+      package_url: "https://github.com/opengovern/og-describer-azure/releases/download/v0.2.1/azure-plugin.zip"
+      
   - id: 3
     integration_type: "entraid_directory"
     name: "Microsoft EntraID Directory"
@@ -40,11 +42,13 @@ plugins:
     description: "Discover Users, Identities, Apps, Accounts."
     icon: "entraid.svg"
     availability: "GA"
+    default: false
     source_code: "https://github.com/opengovern/og-describer-entraid"
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details:
-      package_url: "ghcr.io/opengovern/og-describer-entraid"
-      package_tag: "local-latest"
+      package_url: "https://github.com/opengovern/og-describer-entraid/releases/download/v0.3.0/entraid-plugin.zip"
+
+      
   - id: 4
     integration_type: "github_account"
     name: "GitHub"
@@ -58,6 +62,7 @@ plugins:
     availability: "GA"
     source_code: "https://github.com/opengovern/og-describer-github"
     package_type: "plugin"
+    default: true
     artifact_details:
       package_url: "https://github.com/opengovern/og-describer-github/releases/download/v0.49.0/github-plugin.zip"
   - id: 5
@@ -70,11 +75,12 @@ plugins:
     description: "Manage DigitalOcean resources and droplets."
     icon: "digitalocean.svg"
     availability: "GA"
+    default: false
     source_code: "https://github.com/opengovern/og-describer-digitalocean"
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details:
-      package_url: "ghcr.io/opengovern/og-describer-digitalocean"
-      package_tag: "local-latest"
+      package_url: "https://github.com/opengovern/og-describer-digitalocean/releases/download/v0.1.0/digitalocean-plugin.zip"
+     
   - id: 6
     integration_type: "cloudflare_account"
     name: "Cloudflare"
@@ -85,11 +91,12 @@ plugins:
     description: "Gain visibility into DNS, WAFs, Firewall Rules."
     icon: "cloudflare.svg"
     availability: "GA"
+    default: false
     source_code: "https://github.com/opengovern/og-describer-cloudflare"
     package_type: "classic"
     artifact_details:
-      package_url: "ghcr.io/opengovern/og-describer-cloudflare"
-      package_tag: "local-latest"
+      package_url: "https://github.com/opengovern/og-describer-cloudflare/releases/download/v0.6.0/cloudflare-plugin.zip"
+
   - id: 7
     integration_type: "openai_integration"
     name: "OpenAI"
@@ -101,10 +108,10 @@ plugins:
     icon: "openai.svg"
     availability: "GA"
     source_code: "https://github.com/opengovern/og-describer-openai"
-    package_type: "classic"
+    package_type: "plugin"
+    default: false
     artifact_details:
-      package_url: "ghcr.io/opengovern/og-describer-openai"
-      package_tag: "local-latest"
+      package_url: "https://github.com/opengovern/og-describer-openai/releases/download/v0.4.4/openai-plugin.zip"
   - id: 8
     integration_type: "linode_account"
     name: "Linode (Akamai)"
@@ -116,10 +123,10 @@ plugins:
     icon: "linode.svg"
     availability: "GA"
     source_code: "https://github.com/opengovern/og-describer-linode"
-    package_type: "classic"
+    package_type: "plugin"
+    default: false
     artifact_details:
-      package_url: "ghcr.io/opengovern/og-describer-linode"
-      package_tag: "local-latest"
+      package_url: "https://github.com/opengovern/og-describer-linode/releases/download/v0.8.4/linode-plugin.zip"
   - id: 9
     integration_type: "cohereai_project"
     name: "CohereAI"
@@ -131,10 +138,10 @@ plugins:
     icon: "cohereai.svg"
     availability: "GA"
     source_code: "https://github.com/opengovern/og-describer-cohereai"
-    package_type: "classic"
+    package_type: "plugin"
+    default: false
     artifact_details:
-      package_url: "ghcr.io/opengovern/og-describer-cohereai"
-      package_tag: "local-latest"
+      package_url: "https://github.com/opengovern/og-describer-cohereai/releases/download/v0.4.3/cohereai-plugin.zip"
   - id: 10
     integration_type: "google_workspace_account"
     name: "Google Workspace"
@@ -147,10 +154,10 @@ plugins:
     icon: "gcp.svg"
     availability: "GA"
     source_code: "https://github.com/opengovern/og-describer-googleworkspace"
-    package_type: "classic"
+    package_type: "plugin"
+    default: false
     artifact_details:
-      package_url: "ghcr.io/opengovern/og-describer-googleworkspace"
-      package_tag: "local-latest"
+      package_url: "https://github.com/opengovern/og-describer-googleworkspace/releases/download/v0.6.1/googleworkspace-plugin.zip"
   - id: 11
     integration_type: "oci_repository"
     name: "OCI Repository"
@@ -173,10 +180,11 @@ plugins:
     icon: "render.svg"
     availability: "GA"
     source_code: "https://github.com/opengovern/og-describer-render"
-    package_type: "classic"
+    package_type: "plugin"
+    default: false
     artifact_details:
-      package_url: "ghcr.io/opengovern/og-describer-render"
-      package_tag: "local-latest"
+      package_url: "https://github.com/opengovern/og-describer-render/releases/download/v0.2.6/render-plugin.zip"
+     
   - id: 13
     integration_type: "doppler_account"
     name: "Doppler"
@@ -188,10 +196,10 @@ plugins:
     icon: "doppler.svg"
     availability: "GA"
     source_code: "https://github.com/opengovern/og-describer-doppler"
-    package_type: "classic"
+    package_type: "plugin"
+    default: false
     artifact_details:
-      package_url: "ghcr.io/opengovern/og-describer-doppler"
-      package_tag: "local-latest"
+      package_url: "https://github.com/opengovern/og-describer-doppler/releases/download/v0.2.4/doppler-plugin.zip"
   - id: 14
     integration_type: "slack_account"
     name: "Slack"
@@ -204,7 +212,7 @@ plugins:
     icon: "slack.svg"
     availability: "PREVIEW"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 15
     integration_type: "jira_cloud"
@@ -217,7 +225,7 @@ plugins:
     icon: "jira.svg"
     availability: "Planned for Dec 2024"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 16
     integration_type: "chainguard_dev_account"
@@ -230,7 +238,7 @@ plugins:
     icon: "Chainguard_dev.svg"
     availability: "Planned for Dec 2024"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 17
     integration_type: "godaddy_account"
@@ -243,7 +251,7 @@ plugins:
     icon: ""
     availability: "Planned for Dec 2024"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 18
     integration_type: "servicenow_account"
@@ -256,7 +264,7 @@ plugins:
     icon: "servicenow.png"
     availability: "Planned for Dec 2024"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 19
     integration_type: "okta_account"
@@ -270,7 +278,7 @@ plugins:
     icon: "okta.svg"
     availability: "Planned for Dec 2024"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 20
     integration_type: "aws_costs"
@@ -284,7 +292,7 @@ plugins:
     icon: "aws_costs.svg"
     availability: "Planned for Dec 2024"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 21
     integration_type: "azure_costs"
@@ -298,7 +306,7 @@ plugins:
     icon: "azure_costs.svg"
     availability: "Planned for Dec 2024"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 22
     integration_type: "semgrep_account"
@@ -311,7 +319,7 @@ plugins:
     icon: "semgrep.svg"
     availability: "Planned for Dec 2024"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 23
     integration_type: "huggingface_account"
@@ -324,7 +332,7 @@ plugins:
     icon: "huggingface.svg"
     availability: "Planned for Jan 2025"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 24
     integration_type: "kubernetes"
@@ -338,7 +346,7 @@ plugins:
     icon: "kubernetes.svg"
     availability: "Planned for Jan 2025"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 25
     integration_type: "jamf_account"
@@ -351,7 +359,7 @@ plugins:
     icon: ""
     availability: "Planned for Jan 2025"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 26
     integration_type: "jumpcloud_account"
@@ -365,7 +373,7 @@ plugins:
     icon: "jumpcloud.svg"
     availability: "Planned for Jan 2025"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 25
     integration_type: "gitlab_account"
@@ -379,7 +387,7 @@ plugins:
     icon: "gitlab.svg"
     availability: "Planned for Jan 2025"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 27
     integration_type: "oracle_cloud_account"
@@ -392,7 +400,7 @@ plugins:
     icon: "oracle_cloud.svg"
     availability: "Planned for Jan 2025"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 28
     integration_type: "teleport_account"
@@ -406,7 +414,7 @@ plugins:
     icon: "teleport.svg"
     availability: "Planned for Jan 2025"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 29
     integration_type: "monday_com_account"
@@ -419,7 +427,7 @@ plugins:
     icon: "monday_com.svg"
     availability: "Planned for Jan 2025"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 30
     integration_type: "rubrik_account"
@@ -432,7 +440,7 @@ plugins:
     icon: ""
     availability: "Planned for Jan 2025"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 31
     integration_type: "commvault_account"
@@ -445,7 +453,7 @@ plugins:
     icon: ""
     availability: "Planned for Jan 2025"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 32
     integration_type: "bitbucket_cloud"
@@ -459,7 +467,7 @@ plugins:
     icon: "bitbucket.svg"
     availability: "Planned for Jan 2025"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 33
     integration_type: "veracode_account"
@@ -472,7 +480,7 @@ plugins:
     icon: ""
     availability: "Planned for Feb 2025"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 34
     integration_type: "splunk_enterprise_security"
@@ -485,7 +493,7 @@ plugins:
     icon: "cisco.svg"
     availability: "Planned for Feb 2025"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 35
     integration_type: "microsoft_sentinel"
@@ -498,7 +506,7 @@ plugins:
     icon: ""
     availability: "Planned for Feb 2025"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 36
     integration_type: "rapid7_insightidr"
@@ -511,7 +519,7 @@ plugins:
     icon: ""
     availability: "Planned for Feb 2025"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 37
     integration_type: "datadog_cloud_siem"
@@ -525,7 +533,7 @@ plugins:
     icon: "datadog.svg"
     availability: "Planned for Feb 2025"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 38
     integration_type: "intruder_io"
@@ -539,7 +547,7 @@ plugins:
     icon: ""
     availability: "Planned for Feb 2025"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 39
     integration_type: "cobalt_io"
@@ -552,7 +560,7 @@ plugins:
     icon: ""
     availability: "Planned for Feb 2025"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 40
     integration_type: "appdynamics_saas"
@@ -566,7 +574,7 @@ plugins:
     icon: "cisco.svg"
     availability: "Planned for Feb 2025"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 41
     integration_type: "cisco_duo"
@@ -580,7 +588,7 @@ plugins:
     icon: "cisco.svg"
     availability: "Planned for Feb 2025"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 42
     integration_type: "cisco_meraki"
@@ -593,7 +601,7 @@ plugins:
     icon: "cisco.svg"
     availability: "Planned for Feb 2025"
     source_code: ""
-    package_type: "classic"
+    package_type: "plugin"
     artifact_details: {}
   - id: 43
     integration_type: "fly_io_account"
@@ -607,8 +615,10 @@ plugins:
     icon: "fly_io.svg"
     availability: "Planned for Dec 2024"
     source_code: ""
-    package_type: "classic"
-    artifact_details: {}
+    package_type: "plugin"
+    default: false
+    artifact_details:
+      package_url: "https://github.com/opengovern/og-describer-fly/releases/download/v0.0.5/fly-plugin.zip"
   - id: 44
     integration_type: "Tailscale"
     name: "Tailscale"
@@ -622,6 +632,6 @@ plugins:
     availability: "GA"
     source_code: "https://github.com/opengovern/og-describer-tailscale"
     package_type: "plugin"
+    default: false
     artifact_details:
-      package_url: "ghcr.io/opengovern/og-describer-tailscale"
-      package_tag: "local-latest"
+      package_url: "https://github.com/opengovern/og-describer-tailscale/releases/download/v0.0.3/tailscale-plugin.zip"
