@@ -60,7 +60,7 @@ plugins:
     package_type: "plugin"
     default: true
     artifact_details:
-      package_url: "https://github.com/opengovern/og-describer-github/releases/download/v0.49.0/github-plugin.zip"
+      package_url: "https://github.com/opengovern/og-describer-github/releases/download/v0.54.0/github-plugin.zip"
   - id: 5
     integration_type: "digitalocean_team"
     name: "DigitalOcean"
