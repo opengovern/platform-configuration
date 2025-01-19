@@ -15,7 +15,6 @@ plugins:
     default: false
     artifact_details:
       package_url: "https://github.com/opengovern/og-describer-aws/releases/download/v0.3.0/aws-plugin.zip"
-    
   - id: 2
     integration_type: "azure_subscription"
     name: "Microsoft Azure Subscription"
@@ -31,7 +30,6 @@ plugins:
     default: false
     artifact_details:
       package_url: "https://github.com/opengovern/og-describer-azure/releases/download/v0.2.1/azure-plugin.zip"
-      
   - id: 3
     integration_type: "entraid_directory"
     name: "Microsoft EntraID Directory"
@@ -47,8 +45,6 @@ plugins:
     package_type: "plugin"
     artifact_details:
       package_url: "https://github.com/opengovern/og-describer-entraid/releases/download/v0.3.0/entraid-plugin.zip"
-
-      
   - id: 4
     integration_type: "github_account"
     name: "GitHub"
@@ -80,7 +76,6 @@ plugins:
     package_type: "plugin"
     artifact_details:
       package_url: "https://github.com/opengovern/og-describer-digitalocean/releases/download/v0.1.0/digitalocean-plugin.zip"
-     
   - id: 6
     integration_type: "cloudflare_account"
     name: "Cloudflare"
@@ -96,7 +91,6 @@ plugins:
     package_type: "classic"
     artifact_details:
       package_url: "https://github.com/opengovern/og-describer-cloudflare/releases/download/v0.6.0/cloudflare-plugin.zip"
-
   - id: 7
     integration_type: "openai_integration"
     name: "OpenAI"
@@ -184,7 +178,6 @@ plugins:
     default: false
     artifact_details:
       package_url: "https://github.com/opengovern/og-describer-render/releases/download/v0.2.6/render-plugin.zip"
-     
   - id: 13
     integration_type: "doppler_account"
     name: "Doppler"
