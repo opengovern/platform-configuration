@@ -1,14 +1,13 @@
-Description: This control checks whether Classic Load Balancers have connection draining enabled.
-ID: aws_ec2_classic_lb_connection_draining_enabled_rego
-IntegrationType:
+id: aws_ec2_classic_lb_connection_draining_enabled_rego
+title: Classic Load Balancers should have connection draining enabled
+description: This control checks whether Classic Load Balancers have connection draining enabled.
+integration_type:
   - aws_cloud_account
-Query:
-  Engine: cloudql-rego
-  ListOfTables:
-    - aws_ec2_classic_load_balancer
-  Parameters: []
-  PrimaryTable: aws_ec2_classic_load_balancer
-  RegoPolicies:
+parameters: []
+policy:
+  language: rego
+  primary_resource: aws_ec2_classic_load_balancer
+  rego_policies:
     - |
       package aws_ec2_classic_lb_connection_draining_enabled_rego
       import future.keywords.in
@@ -40,10 +39,10 @@ Query:
           "account_id": lb.account_id,
         }
       }
-  QueryToExecute: |
+  definition: |
     data.aws_ec2_classic_lb_connection_draining_enabled_rego.result
-Severity: medium
-Tags:
+severity: medium
+tags:
   aws_foundational_security:
     - "true"
   category:
@@ -56,4 +55,3 @@ Tags:
     - aws
   service:
     - AWS/ELB
-Title: Classic Load Balancers should have connection draining enabled
