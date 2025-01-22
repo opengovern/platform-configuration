@@ -14,7 +14,7 @@ plugins:
     package_type: "plugin"
     default: false
     artifact_details:
-      package_url: "https://github.com/opengovern/og-describer-aws/releases/download/v0.6.0/aws-plugin.zip"
+      package_url: "https://github.com/opengovern/og-describer-aws/releases/download/v0.6.1/aws-plugin.zip"
   - id: 2
     integration_type: "azure_subscription"
     name: "Microsoft Azure Subscription"
