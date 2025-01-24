@@ -14,7 +14,7 @@ plugins:
     package_type: "plugin"
     default: false
     artifact_details:
-      package_url: "https://github.com/opengovern/og-describer-aws/releases/download/v0.6.1/aws-plugin.zip"
+      package_url: "https://github.com/opengovern/og-describer-aws/releases/download/v0.7.0/aws-plugin.zip"
   - id: 2
     integration_type: "azure_subscription"
     name: "Microsoft Azure Subscription"
@@ -29,7 +29,7 @@ plugins:
     package_type: "plugin"
     default: false
     artifact_details:
-      package_url: "https://github.com/opengovern/og-describer-azure/releases/download/v0.5.0/azure-plugin.zip"
+      package_url: "https://github.com/opengovern/og-describer-azure/releases/download/v0.6.0/azure-plugin.zip"
   - id: 3
     integration_type: "entraid_directory"
     name: "Microsoft EntraID Directory"
@@ -44,7 +44,7 @@ plugins:
     source_code: "https://github.com/opengovern/og-describer-entraid"
     package_type: "plugin"
     artifact_details:
-      package_url: "https://github.com/opengovern/og-describer-entraid/releases/download/v0.5.0/entraid-plugin.zip"
+      package_url: "https://github.com/opengovern/og-describer-entraid/releases/download/v0.6.0/entraid-plugin.zip"
   - id: 4
     integration_type: "github_account"
     name: "GitHub"
@@ -75,7 +75,7 @@ plugins:
     source_code: "https://github.com/opengovern/og-describer-digitalocean"
     package_type: "plugin"
     artifact_details:
-      package_url: "https://github.com/opengovern/og-describer-digitalocean/releases/download/v0.3.0/digitalocean-plugin.zip"
+      package_url: "https://github.com/opengovern/og-describer-digitalocean/releases/download/v0.4.0/digitalocean-plugin.zip"
   - id: 6
     integration_type: "cloudflare_account"
     name: "Cloudflare"
@@ -90,7 +90,7 @@ plugins:
     source_code: "https://github.com/opengovern/og-describer-cloudflare"
     package_type: "plugin"
     artifact_details:
-      package_url: "https://github.com/opengovern/og-describer-cloudflare/releases/download/v0.9.0/cloudflare-plugin.zip"
+      package_url: "https://github.com/opengovern/og-describer-cloudflare/releases/download/v0.10.0/cloudflare-plugin.zip"
   - id: 7
     integration_type: "openai_integration"
     name: "OpenAI"
@@ -105,7 +105,7 @@ plugins:
     package_type: "plugin"
     default: false
     artifact_details:
-      package_url: "https://github.com/opengovern/og-describer-openai/releases/download/v0.6.0/openai-plugin.zip"
+      package_url: "https://github.com/opengovern/og-describer-openai/releases/download/v0.7.0/openai-plugin.zip"
   - id: 8
     integration_type: "linode_account"
     name: "Linode (Akamai)"
@@ -120,7 +120,7 @@ plugins:
     package_type: "plugin"
     default: false
     artifact_details:
-      package_url: "https://github.com/opengovern/og-describer-linode/releases/download/v0.12.0/linode-plugin.zip"
+      package_url: "https://github.com/opengovern/og-describer-linode/releases/download/v0.13.0/linode-plugin.zip"
   - id: 9
     integration_type: "cohereai_project"
     name: "CohereAI"
@@ -135,7 +135,7 @@ plugins:
     package_type: "plugin"
     default: false
     artifact_details:
-      package_url: "https://github.com/opengovern/og-describer-cohereai/releases/download/v0.5.0/cohereai-plugin.zip"
+      package_url: "https://github.com/opengovern/og-describer-cohereai/releases/download/v0.6.0/cohereai-plugin.zip"
   - id: 10
     integration_type: "google_workspace_account"
     name: "Google Workspace"
@@ -151,7 +151,7 @@ plugins:
     package_type: "plugin"
     default: false
     artifact_details:
-      package_url: "https://github.com/opengovern/og-describer-googleworkspace/releases/download/v0.8.0/googleworkspace-plugin.zip"
+      package_url: "https://github.com/opengovern/og-describer-googleworkspace/releases/download/v0.9.0/googleworkspace-plugin.zip"
   - id: 11
     integration_type: "render_account"
     name: "Render"
@@ -166,7 +166,7 @@ plugins:
     package_type: "plugin"
     default: false
     artifact_details:
-      package_url: "https://github.com/opengovern/og-describer-render/releases/download/v0.5.0/render-plugin.zip"
+      package_url: "https://github.com/opengovern/og-describer-render/releases/download/v0.6.0/render-plugin.zip"
   - id: 12
     integration_type: "doppler_account"
     name: "Doppler"
@@ -181,7 +181,7 @@ plugins:
     package_type: "plugin"
     default: false
     artifact_details:
-      package_url: "https://github.com/opengovern/og-describer-doppler/releases/download/v0.5.0/doppler-plugin.zip"
+      package_url: "https://github.com/opengovern/og-describer-doppler/releases/download/v0.6.0/doppler-plugin.zip"
   - id: 13
     integration_type: "fly_account"
     name: "Fly.io"
@@ -197,7 +197,7 @@ plugins:
     package_type: "plugin"
     default: false
     artifact_details:
-      package_url: "https://github.com/opengovern/og-describer-fly/releases/download/v0.3.1/fly-plugin.zip"
+      package_url: "https://github.com/opengovern/og-describer-fly/releases/download/v0.4.0/fly-plugin.zip"
   - id: 14
     integration_type: "tailscale_account"
     name: "Tailscale"
@@ -213,7 +213,7 @@ plugins:
     package_type: "plugin"
     default: false
     artifact_details:
-      package_url: "https://github.com/opengovern/og-describer-tailscale/releases/download/v0.2.0/tailscale-plugin.zip"
+      package_url: "https://github.com/opengovern/og-describer-tailscale/releases/download/v0.3.0/tailscale-plugin.zip"
   
   - id: 15
     integration_type: "heroku_account"
@@ -230,7 +230,7 @@ plugins:
     package_type: "plugin"
     default: false
     artifact_details:
-      package_url: "https://github.com/opengovern/og-describer-heroku/releases/download/v0.3.1/heroku-plugin.zip"
+      package_url: "https://github.com/opengovern/og-describer-heroku/releases/download/v0.4.0/heroku-plugin.zip"
   - id: 16
     integration_type: "oci_repository"
     name: "OCI Repository"
