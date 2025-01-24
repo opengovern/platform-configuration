@@ -4,7 +4,7 @@ framework:
   description: NIST SP 800-171 Revision 2 signifies a significant endeavor to enhance cybersecurity practices, specifically tailored for organizations engaging with the U.S. federal government.
   section-code: azure_nist_sp_800_171_rev_2
   defaults:
-    auto-assign: false
+    is-baseline: false
     enabled: false
     tracks-drift-events: false
   control-group:

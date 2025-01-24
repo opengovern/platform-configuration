@@ -20,7 +20,7 @@ framework:
     type:
     - Benchmark
   defaults:
-    auto-assign: false
+    is-baseline: false
     enabled: true
     tracks-drift-events: false
   control-group:

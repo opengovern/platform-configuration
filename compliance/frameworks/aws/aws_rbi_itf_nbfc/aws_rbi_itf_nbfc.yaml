@@ -4,7 +4,7 @@ framework:
   description: The NBFC (Non-Banking Finance Company) sector has grown in size and complexity over the years. As the NBFC industry matures and achieves scale, its Information Technology /Information Security (IT/IS) framework, Business continuity planning (BCP), Disaster Recovery (DR) Management, IT audit, etc. must be benchmarked to best practices.
   section-code: aws_rbi_itf_nbfc
   defaults:
-    auto-assign: false
+    is-baseline: false
     enabled: false
     tracks-drift-events: false
   control-group:

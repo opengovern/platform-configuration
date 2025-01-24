@@ -9,8 +9,8 @@ framework:
     type:
     - BASELINE
   defaults:
-    auto-assign: true
-    enabled: false
+    is-baseline: true
+    enabled: true
     tracks-drift-events: false
   control-group:
   - id: aws_baseline_supportability

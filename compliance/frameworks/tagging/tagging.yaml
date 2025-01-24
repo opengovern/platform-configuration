@@ -19,8 +19,8 @@ framework:
     type:
     - Benchmark
   defaults:
-    auto-assign: false
-    enabled: true
+    is-baseline: false
+    enabled: false
     tracks-drift-events: false
   control-group:
   - id: tagging_aws_tagging
