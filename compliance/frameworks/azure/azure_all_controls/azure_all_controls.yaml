@@ -4,7 +4,7 @@ framework:
   description: This benchmark contains all controls grouped by service to help you detect resource configurations that do not meet best practices.
   section-code: azure_all_controls
   defaults:
-    auto-assign: false
+    is-baseline: false
     enabled: false
     tracks-drift-events: false
   control-group:

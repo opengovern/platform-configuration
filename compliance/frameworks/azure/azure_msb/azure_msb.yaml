@@ -17,8 +17,8 @@ framework:
     type:
     - Benchmark
   defaults:
-    auto-assign: true
-    enabled: true
+    is-baseline: false
+    enabled: false
     tracks-drift-events: false
   control-group:
   - id: azure_cis_v200_2

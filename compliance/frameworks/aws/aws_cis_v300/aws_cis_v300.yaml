@@ -21,7 +21,7 @@ framework:
     type:
     - Benchmark
   defaults:
-    auto-assign: true
+    is-baseline: true
     enabled: true
     tracks-drift-events: false
   control-group:
