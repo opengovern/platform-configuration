@@ -1,26 +1,26 @@
-control-group:
-  id: aws_hipaa_security_rule_2003_164_308_a_5_ii_c
-  title: 308(a)(5)(ii)(C) Log-in monitoring
-  description: Procedures for monitoring log-in attempts and reporting discrepancies.
-  section-code: a_5_ii_c
-  tags:
-    category:
-    - Compliance
-    hipaa_section:
-    - "164_308"
-    hipaa_security_rule_2003:
-    - "true"
-    hipaa_security_rule_2003_item_id:
-    - 164_308_a_5_ii_c
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_cloudtrail_trail_enabled
-  - aws_cloudtrail_trail_integrated_with_logs
-  - aws_cloudtrail_trail_validation_enabled
-  - aws_guardduty_enabled
-  - aws_log_metric_filter_console_authentication_failure
+id: aws_hipaa_security_rule_2003_164_308_a_5_ii_c
+title: 308(a)(5)(ii)(C) Log-in monitoring
+description: Procedures for monitoring log-in attempts and reporting discrepancies.
+section-code: a_5_ii_c
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_section:
+  - "164_308"
+  hipaa_security_rule_2003:
+  - "true"
+  hipaa_security_rule_2003_item_id:
+  - 164_308_a_5_ii_c
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_cloudtrail_trail_enabled
+- aws_cloudtrail_trail_integrated_with_logs
+- aws_cloudtrail_trail_validation_enabled
+- aws_guardduty_enabled
+- aws_log_metric_filter_console_authentication_failure

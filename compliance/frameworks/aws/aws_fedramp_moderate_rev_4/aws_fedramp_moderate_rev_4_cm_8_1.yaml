@@ -1,19 +1,19 @@
-control-group:
-  id: aws_fedramp_moderate_rev_4_cm_8_1
-  title: CM-8(1)
-  description: The organization updates the inventory of information system components as an integral part of component installations, removals, and information system updates.
-  section-code: "1"
-  tags:
-    category:
-    - Compliance
-    fedramp_moderate_rev_4:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_ec2_instance_ssm_managed
-  - aws_ssm_managed_instance_compliance_association_compliant
+id: aws_fedramp_moderate_rev_4_cm_8_1
+title: CM-8(1)
+description: The organization updates the inventory of information system components as an integral part of component installations, removals, and information system updates.
+section-code: "1"
+type: control-group
+tags:
+  category:
+  - Compliance
+  fedramp_moderate_rev_4:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_ec2_instance_ssm_managed
+- aws_ssm_managed_instance_compliance_association_compliant

@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1197_01l3organizational
-  title: 01l3Organizational.3-01.l 01.04 Network Access Control
-  description: The organization disables Bluetooth and peer-to-peer networking protocols within the information system determined to be unnecessary or non-secure.
-  section-code: azure_hipaa_hitrust_v92_1197_01l3organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/Compute
-    type:
-    - Benchmark
-  controls:
-  - azure_compute_vm_adaptive_application_controls_enabled
+id: azure_hipaa_hitrust_v92_1197_01l3organizational
+title: 01l3Organizational.3-01.l 01.04 Network Access Control
+description: The organization disables Bluetooth and peer-to-peer networking protocols within the information system determined to be unnecessary or non-secure.
+section-code: azure_hipaa_hitrust_v92_1197_01l3organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/Compute
+  type:
+  - Benchmark
+controls:
+- azure_compute_vm_adaptive_application_controls_enabled

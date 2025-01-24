@@ -1,7 +1,7 @@
-control-group:
-  id: aws_all_controls_glacier
-  title: Glacier
-  description: This section contains recommendations for configuring Glacier resources.
-  section-code: glacier
-  controls:
-  - aws_glacier_vault_restrict_public_access
+id: aws_all_controls_glacier
+title: Glacier
+description: This section contains recommendations for configuring Glacier resources.
+section-code: glacier
+type: control-group
+controls:
+- aws_glacier_vault_restrict_public_access

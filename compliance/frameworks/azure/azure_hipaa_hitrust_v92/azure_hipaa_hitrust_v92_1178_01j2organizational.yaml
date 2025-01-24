@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1178_01j2organizational
-  title: 01j2Organizational.7-01.j 01.04 Network Access Control
-  description: 01j2Organizational.7-01.j 01.04 Network Access Control
-  section-code: azure_hipaa_hitrust_v92_1178_01j2organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/IAM
-    type:
-    - Benchmark
-  controls:
-  - azure_iam_user_with_read_permission_on_subscription_mfa_enabled
+id: azure_hipaa_hitrust_v92_1178_01j2organizational
+title: 01j2Organizational.7-01.j 01.04 Network Access Control
+description: 01j2Organizational.7-01.j 01.04 Network Access Control
+section-code: azure_hipaa_hitrust_v92_1178_01j2organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/IAM
+  type:
+  - Benchmark
+controls:
+- azure_iam_user_with_read_permission_on_subscription_mfa_enabled

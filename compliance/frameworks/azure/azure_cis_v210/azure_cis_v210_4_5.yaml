@@ -1,9 +1,9 @@
-control-group:
-  id: azure_cis_v210_4_5
-  title: Cosmos DB
-  description: Cosmos DB
-  section-code: "5"
-  controls:
-  - azure_cis_v210_4_5_1
-  - azure_cis_v210_4_5_2
-  - azure_cis_v210_4_5_3
+id: azure_cis_v210_4_5
+title: Cosmos DB
+description: Cosmos DB
+section-code: "5"
+type: control-group
+controls:
+- azure_cis_v210_4_5_1
+- azure_cis_v210_4_5_2
+- azure_cis_v210_4_5_3

@@ -1,8 +1,8 @@
-control-group:
-  id: azure_all_controls_servicefabric
-  title: Service Fabric
-  description: This section contains recommendations for configuring Service Fabric resources.
-  section-code: servicefabric
-  controls:
-  - azure_servicefabric_cluster_active_directory_authentication_enabled
-  - azure_servicefabric_cluster_protection_level_as_encrypt_and_sign
+id: azure_all_controls_servicefabric
+title: Service Fabric
+description: This section contains recommendations for configuring Service Fabric resources.
+section-code: servicefabric
+type: control-group
+controls:
+- azure_servicefabric_cluster_active_directory_authentication_enabled
+- azure_servicefabric_cluster_protection_level_as_encrypt_and_sign

@@ -1,20 +1,23 @@
+id: aws_ffiec_d_3
+title: Cybersecurity Controls (Domain 3)
+description: Cybersecurity controls are the practices and processes used to protect assets, infrastructure, and information by strengthening the institution's defensive posture through continuous, automated protection and monitoring.
+section-code: d_3
+type: control-group
+tags:
+  category:
+  - Compliance
+  ffiec:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_ffiec_d_3
-  title: Cybersecurity Controls (Domain 3)
-  description: Cybersecurity controls are the practices and processes used to protect assets, infrastructure, and information by strengthening the institution's defensive posture through continuous, automated protection and monitoring.
-  section-code: d_3
-  tags:
-    category:
-    - Compliance
-    ffiec:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_ffiec_d_3_cc
-  - id: aws_ffiec_d_3_dc
-  - id: aws_ffiec_d_3_pc
+- id: aws_ffiec_d_3_cc
+  type: ""
+- id: aws_ffiec_d_3_dc
+  type: ""
+- id: aws_ffiec_d_3_pc
+  type: ""

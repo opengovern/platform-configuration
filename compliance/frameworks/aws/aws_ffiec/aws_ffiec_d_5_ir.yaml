@@ -1,18 +1,19 @@
+id: aws_ffiec_d_5_ir
+title: Incident Resilience Planning & Strategy (IR)
+description: Incident Resilience Planning & Strategy incorporates resilience planning and testing into existing business continuity and disaster recovery plans to minimize service disruptions and the destruction or corruption of data.
+section-code: ir
+type: control-group
+tags:
+  category:
+  - Compliance
+  ffiec:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_ffiec_d_5_ir
-  title: Incident Resilience Planning & Strategy (IR)
-  description: Incident Resilience Planning & Strategy incorporates resilience planning and testing into existing business continuity and disaster recovery plans to minimize service disruptions and the destruction or corruption of data.
-  section-code: ir
-  tags:
-    category:
-    - Compliance
-    ffiec:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_ffiec_d_5_ir_pi_b_6
+- id: aws_ffiec_d_5_ir_pi_b_6
+  type: ""

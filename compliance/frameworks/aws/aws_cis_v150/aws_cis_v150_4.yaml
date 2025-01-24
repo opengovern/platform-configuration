@@ -1,25 +1,25 @@
-control-group:
-  id: aws_cis_v150_4
-  title: Monitoring
-  description: Monitoring
-  section-code: "4"
-  tags:
-    category:
-    - Compliance
-    cis:
-    - "true"
-    cis_section_id:
-    - "4"
-    cis_version:
-    - v1.5.0
-    plugin:
-    - aws
-    service:
-    - AWS/CloudWatch
-    type:
-    - Benchmark
-  controls:
-  - aws_cis_v150_4_3
-  - aws_cis_v150_4_5
-  - aws_cis_v150_4_7
-  - aws_cis_v150_4_8
+id: aws_cis_v150_4
+title: Monitoring
+description: Monitoring
+section-code: "4"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cis:
+  - "true"
+  cis_section_id:
+  - "4"
+  cis_version:
+  - v1.5.0
+  plugin:
+  - aws
+  service:
+  - AWS/CloudWatch
+  type:
+  - Benchmark
+controls:
+- aws_cis_v150_4_3
+- aws_cis_v150_4_5
+- aws_cis_v150_4_7
+- aws_cis_v150_4_8

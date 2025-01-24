@@ -1,8 +1,8 @@
-control-group:
-  id: azure_cis_v210_4_4
-  title: MySQL Database
-  description: MySQL Database
-  section-code: "4"
-  controls:
-  - azure_cis_v210_4_4_1
-  - azure_cis_v210_4_4_2
+id: azure_cis_v210_4_4
+title: MySQL Database
+description: MySQL Database
+section-code: "4"
+type: control-group
+controls:
+- azure_cis_v210_4_4_1
+- azure_cis_v210_4_4_2

@@ -1,18 +1,19 @@
+id: aws_nist_800_53_rev_5_cm_12
+title: Information Location (CM-12)
+description: "a.\u2003Identify and document the location of [Assignment: organization-defined information] and the specific system components on which the information is processed and stored; b.\u2003Identify and document the users who have access to the system and system components where the information is processed and stored; and c.\u2003Document changes to the location (i.e., system or system components) where the information is processed and stored."
+section-code: "12"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_5_cm_12
-  title: Information Location (CM-12)
-  description: "a.\u2003Identify and document the location of [Assignment: organization-defined information] and the specific system components on which the information is processed and stored; b.\u2003Identify and document the users who have access to the system and system components where the information is processed and stored; and c.\u2003Document changes to the location (i.e., system or system components) where the information is processed and stored."
-  section-code: "12"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_5_cm_12_b
+- id: aws_nist_800_53_rev_5_cm_12_b
+  type: ""

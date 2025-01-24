@@ -1,7 +1,7 @@
-control-group:
-  id: aws_all_controls_organization
-  title: Organization
-  description: This section contains recommendations for configuring Organization resources.
-  section-code: organization
-  controls:
-  - aws_organizational_tag_policies_enabled
+id: aws_all_controls_organization
+title: Organization
+description: This section contains recommendations for configuring Organization resources.
+section-code: organization
+type: control-group
+controls:
+- aws_organizational_tag_policies_enabled

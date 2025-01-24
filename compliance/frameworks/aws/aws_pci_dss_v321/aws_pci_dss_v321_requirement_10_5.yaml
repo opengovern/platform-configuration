@@ -1,18 +1,22 @@
+id: aws_pci_dss_v321_requirement_10_5
+title: Interview system administrators and examine system configurations and permissions to verify that audit trails are secured so that they cannot be altered
+description: Often a malicious individual who has entered the network will attempt to edit the audit logs in order to hide their activity. Without adequate protection of audit logs, their completeness, accuracy, and integrity cannot be guaranteed, and the audit logs can be rendered useless as an investigation tool after a compromise. This control checks secure audit trails so they cannot be altered.
+section-code: "5"
+type: control-group
 control-group:
-  id: aws_pci_dss_v321_requirement_10_5
-  title: Interview system administrators and examine system configurations and permissions to verify that audit trails are secured so that they cannot be altered
-  description: Often a malicious individual who has entered the network will attempt to edit the audit logs in order to hide their activity. Without adequate protection of audit logs, their completeness, accuracy, and integrity cannot be guaranteed, and the audit logs can be rendered useless as an investigation tool after a compromise. This control checks secure audit trails so they cannot be altered.
-  section-code: "5"
-  control-group:
-  - id: aws_pci_dss_v321_requirement_10_5_2
-  - id: aws_pci_dss_v321_requirement_10_5_3
-  - id: aws_pci_dss_v321_requirement_10_5_4
-  - id: aws_pci_dss_v321_requirement_10_5_5
-  controls:
-  - aws_cloudtrail_multi_region_trail_enabled
-  - aws_cloudtrail_s3_data_events_enabled
-  - aws_cloudtrail_trail_enabled
-  - aws_cloudtrail_trail_integrated_with_logs
-  - aws_rds_db_instance_logging_enabled
-  - aws_redshift_cluster_encryption_logging_enabled
-  - aws_s3_bucket_logging_enabled
+- id: aws_pci_dss_v321_requirement_10_5_2
+  type: ""
+- id: aws_pci_dss_v321_requirement_10_5_3
+  type: ""
+- id: aws_pci_dss_v321_requirement_10_5_4
+  type: ""
+- id: aws_pci_dss_v321_requirement_10_5_5
+  type: ""
+controls:
+- aws_cloudtrail_multi_region_trail_enabled
+- aws_cloudtrail_s3_data_events_enabled
+- aws_cloudtrail_trail_enabled
+- aws_cloudtrail_trail_integrated_with_logs
+- aws_rds_db_instance_logging_enabled
+- aws_redshift_cluster_encryption_logging_enabled
+- aws_s3_bucket_logging_enabled

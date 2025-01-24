@@ -1,10 +1,14 @@
+id: aws_acsc_essential_eight_ml_1_5
+title: "ACSC-EE-ML1-5: Restrict administrative privileges ML1"
+description: The restriction of administrative privileges is the practice of limiting the number of privileged accounts and the extent of their access to systems and data.
+section-code: "5"
+type: control-group
 control-group:
-  id: aws_acsc_essential_eight_ml_1_5
-  title: "ACSC-EE-ML1-5: Restrict administrative privileges ML1"
-  description: The restriction of administrative privileges is the practice of limiting the number of privileged accounts and the extent of their access to systems and data.
-  section-code: "5"
-  control-group:
-  - id: aws_acsc_essential_eight_ml_1_5_2
-  - id: aws_acsc_essential_eight_ml_1_5_3
-  - id: aws_acsc_essential_eight_ml_1_5_4
-  - id: aws_acsc_essential_eight_ml_1_5_5
+- id: aws_acsc_essential_eight_ml_1_5_2
+  type: ""
+- id: aws_acsc_essential_eight_ml_1_5_3
+  type: ""
+- id: aws_acsc_essential_eight_ml_1_5_4
+  type: ""
+- id: aws_acsc_essential_eight_ml_1_5_5
+  type: ""

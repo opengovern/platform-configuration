@@ -1,18 +1,19 @@
+id: aws_cis_controls_v8_ig1_12
+title: Network Infrastructure Management
+description: Establish, implement, and actively manage (track, report, correct) network devices, in order to prevent attackers from exploiting vulnerable network services and access points.
+section-code: "12"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cis_controls_v8_ig1:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_cis_controls_v8_ig1_12
-  title: Network Infrastructure Management
-  description: Establish, implement, and actively manage (track, report, correct) network devices, in order to prevent attackers from exploiting vulnerable network services and access points.
-  section-code: "12"
-  tags:
-    category:
-    - Compliance
-    cis_controls_v8_ig1:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_cis_controls_v8_ig1_12_1
+- id: aws_cis_controls_v8_ig1_12_1
+  type: ""

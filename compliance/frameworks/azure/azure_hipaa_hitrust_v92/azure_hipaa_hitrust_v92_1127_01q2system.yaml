@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1127_01q2system
-  title: 01q2System.3-01.q 01.05 Operating System Access Control
-  description: Where tokens are provided for multi-factor authentication, in-person verification is required prior to granting access.
-  section-code: azure_hipaa_hitrust_v92_1127_01q2system
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/Compute
-    type:
-    - Benchmark
-  controls:
-  - azure_compute_vm_administrators_group_with_no_specified_members_windows
+id: azure_hipaa_hitrust_v92_1127_01q2system
+title: 01q2System.3-01.q 01.05 Operating System Access Control
+description: Where tokens are provided for multi-factor authentication, in-person verification is required prior to granting access.
+section-code: azure_hipaa_hitrust_v92_1127_01q2system
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/Compute
+  type:
+  - Benchmark
+controls:
+- azure_compute_vm_administrators_group_with_no_specified_members_windows

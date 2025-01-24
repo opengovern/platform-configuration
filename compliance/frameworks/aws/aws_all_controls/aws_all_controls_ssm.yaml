@@ -1,11 +1,11 @@
-control-group:
-  id: aws_all_controls_ssm
-  title: SSM
-  description: This section contains recommendations for configuring SSM resources.
-  section-code: ssm
-  controls:
-  - aws_ec2_instance_ssm_managed
-  - aws_ssm_document_prohibit_public_access
-  - aws_ssm_managed_instance_compliance_association_compliant
-  - aws_ssm_managed_instance_compliance_patch_compliant
-  - aws_ssm_parameter_encryption_enabled
+id: aws_all_controls_ssm
+title: SSM
+description: This section contains recommendations for configuring SSM resources.
+section-code: ssm
+type: control-group
+controls:
+- aws_ec2_instance_ssm_managed
+- aws_ssm_document_prohibit_public_access
+- aws_ssm_managed_instance_compliance_association_compliant
+- aws_ssm_managed_instance_compliance_patch_compliant
+- aws_ssm_parameter_encryption_enabled

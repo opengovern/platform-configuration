@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_11180_01c3system
-  title: 01c3System.6-01.c 01.02 Authorized Access to Information Systems
-  description: Access to management functions or administrative consoles for systems hosting virtualized systems are restricted to personnel based upon the principle of least privilege and supported through technical controls.
-  section-code: azure_hipaa_hitrust_v92_11180_01c3system
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/Compute
-    type:
-    - Benchmark
-  controls:
-  - azure_compute_vm_jit_access_protected
+id: azure_hipaa_hitrust_v92_11180_01c3system
+title: 01c3System.6-01.c 01.02 Authorized Access to Information Systems
+description: Access to management functions or administrative consoles for systems hosting virtualized systems are restricted to personnel based upon the principle of least privilege and supported through technical controls.
+section-code: azure_hipaa_hitrust_v92_11180_01c3system
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/Compute
+  type:
+  - Benchmark
+controls:
+- azure_compute_vm_jit_access_protected

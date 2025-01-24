@@ -1,22 +1,25 @@
+id: aws_audit_manager_control_tower_multi_factor_authentication
+title: Multi-Factor Authentication
+description: This benchmark checks if MFA is enabled for all the IAM users.
+section-code: multi_factor_authentication
+type: control-group
+tags:
+  audit_manager_control_tower:
+  - "true"
+  category:
+  - Compliance
+  control_set:
+  - multi_factor_authentication
+  plugin:
+  - aws
+  service:
+  - AWS/IAM
+  type:
+  - Benchmark
 control-group:
-  id: aws_audit_manager_control_tower_multi_factor_authentication
-  title: Multi-Factor Authentication
-  description: This benchmark checks if MFA is enabled for all the IAM users.
-  section-code: multi_factor_authentication
-  tags:
-    audit_manager_control_tower:
-    - "true"
-    category:
-    - Compliance
-    control_set:
-    - multi_factor_authentication
-    plugin:
-    - aws
-    service:
-    - AWS/IAM
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_audit_manager_control_tower_multi_factor_authentication_3_0_1
-  - id: aws_audit_manager_control_tower_multi_factor_authentication_3_0_2
-  - id: aws_audit_manager_control_tower_multi_factor_authentication_3_0_3
+- id: aws_audit_manager_control_tower_multi_factor_authentication_3_0_1
+  type: ""
+- id: aws_audit_manager_control_tower_multi_factor_authentication_3_0_2
+  type: ""
+- id: aws_audit_manager_control_tower_multi_factor_authentication_3_0_3
+  type: ""

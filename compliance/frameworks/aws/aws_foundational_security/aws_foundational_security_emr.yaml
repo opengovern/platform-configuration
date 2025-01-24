@@ -1,19 +1,19 @@
-control-group:
-  id: aws_foundational_security_emr
-  title: EMR
-  description: EMR
-  section-code: emr
-  tags:
-    aws_foundational_security:
-    - "true"
-    category:
-    - Compliance
-    plugin:
-    - aws
-    service:
-    - AWS/EMR
-    type:
-    - Benchmark
-  controls:
-  - aws_foundational_security_emr_1
-  - aws_foundational_security_emr_2
+id: aws_foundational_security_emr
+title: EMR
+description: EMR
+section-code: emr
+type: control-group
+tags:
+  aws_foundational_security:
+  - "true"
+  category:
+  - Compliance
+  plugin:
+  - aws
+  service:
+  - AWS/EMR
+  type:
+  - Benchmark
+controls:
+- aws_foundational_security_emr_1
+- aws_foundational_security_emr_2

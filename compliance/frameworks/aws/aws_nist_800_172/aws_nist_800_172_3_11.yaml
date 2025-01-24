@@ -1,8 +1,10 @@
+id: aws_nist_800_172_3_11
+title: Risk Assessment
+description: The RA control family relates to an organization's risk assessment policies and vulnerability scanning capabilities. Using an integrated risk management solution like CyberStrong can help streamline and automate your NIST 800 53 compliance efforts.
+section-code: "3_11"
+type: control-group
 control-group:
-  id: aws_nist_800_172_3_11
-  title: Risk Assessment
-  description: The RA control family relates to an organization's risk assessment policies and vulnerability scanning capabilities. Using an integrated risk management solution like CyberStrong can help streamline and automate your NIST 800 53 compliance efforts.
-  section-code: "3_11"
-  control-group:
-  - id: aws_nist_800_172_3_11_1_e
-  - id: aws_nist_800_172_3_11_2_e
+- id: aws_nist_800_172_3_11_1_e
+  type: ""
+- id: aws_nist_800_172_3_11_2_e
+  type: ""

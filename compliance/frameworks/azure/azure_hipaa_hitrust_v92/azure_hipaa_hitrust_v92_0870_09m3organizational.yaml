@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_0870_09m3organizational
-  title: 09m3Organizational.20-09.m 09.06 Network Security Management
-  description: Access to all proxies is denied, except for those hosts, ports, and services that are explicitly required.
-  section-code: azure_hipaa_hitrust_v92_0870_09m3organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/ContainerRegistry
-    type:
-    - Benchmark
-  controls:
-  - azure_container_registry_use_virtual_service_endpoint
+id: azure_hipaa_hitrust_v92_0870_09m3organizational
+title: 09m3Organizational.20-09.m 09.06 Network Security Management
+description: Access to all proxies is denied, except for those hosts, ports, and services that are explicitly required.
+section-code: azure_hipaa_hitrust_v92_0870_09m3organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/ContainerRegistry
+  type:
+  - Benchmark
+controls:
+- azure_container_registry_use_virtual_service_endpoint

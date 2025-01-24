@@ -1,7 +1,7 @@
-control-group:
-  id: aws_pci_dss_v321_requirement_2_4_a
-  title: 4.a Examine system inventory to verify that a list of hardware and software components is maintained and includes a description of function/use for each
-  description: Maintaining a current list of all system components will enable an organization to accurately and efficiently define the scope of their environment for implementing PCI DSS controls. Without an inventory, some system components could be forgotten, and be inadvertently excluded from the organization's configuration standards.
-  section-code: a
-  controls:
-  - aws_config_enabled_all_regions
+id: aws_pci_dss_v321_requirement_2_4_a
+title: 4.a Examine system inventory to verify that a list of hardware and software components is maintained and includes a description of function/use for each
+description: Maintaining a current list of all system components will enable an organization to accurately and efficiently define the scope of their environment for implementing PCI DSS controls. Without an inventory, some system components could be forgotten, and be inadvertently excluded from the organization's configuration standards.
+section-code: a
+type: control-group
+controls:
+- aws_config_enabled_all_regions

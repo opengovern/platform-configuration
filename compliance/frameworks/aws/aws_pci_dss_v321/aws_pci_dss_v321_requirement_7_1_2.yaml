@@ -1,7 +1,8 @@
+id: aws_pci_dss_v321_requirement_7_1_2
+title: 1.2 Restrict access to privileged user IDs to least privileges necessary to perform job responsibilities
+description: When assigning privileged IDs, it is important to assign individuals only the privileges they need to perform their job (the “least privileges”). For example, the database administrator or backup administrator should not be assigned the same privileges as the overall systems administrator.
+section-code: "2"
+type: control-group
 control-group:
-  id: aws_pci_dss_v321_requirement_7_1_2
-  title: 1.2 Restrict access to privileged user IDs to least privileges necessary to perform job responsibilities
-  description: When assigning privileged IDs, it is important to assign individuals only the privileges they need to perform their job (the “least privileges”). For example, the database administrator or backup administrator should not be assigned the same privileges as the overall systems administrator.
-  section-code: "2"
-  control-group:
-  - id: aws_pci_dss_v321_requirement_7_1_2_a
+- id: aws_pci_dss_v321_requirement_7_1_2_a
+  type: ""

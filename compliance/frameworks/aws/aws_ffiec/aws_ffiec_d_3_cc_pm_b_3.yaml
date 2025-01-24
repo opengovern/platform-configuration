@@ -1,20 +1,20 @@
-control-group:
-  id: aws_ffiec_d_3_cc_pm_b_3
-  title: D3.CC.PM.B.3
-  description: Patch management reports are reviewed and reflect missing security patches.
-  section-code: pm_b_3
-  tags:
-    category:
-    - Compliance
-    ffiec:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_rds_db_instance_automatic_minor_version_upgrade_enabled
-  - aws_redshift_cluster_maintenance_settings_check
-  - aws_ssm_managed_instance_compliance_patch_compliant
+id: aws_ffiec_d_3_cc_pm_b_3
+title: D3.CC.PM.B.3
+description: Patch management reports are reviewed and reflect missing security patches.
+section-code: pm_b_3
+type: control-group
+tags:
+  category:
+  - Compliance
+  ffiec:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_rds_db_instance_automatic_minor_version_upgrade_enabled
+- aws_redshift_cluster_maintenance_settings_check
+- aws_ssm_managed_instance_compliance_patch_compliant

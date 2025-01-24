@@ -1,25 +1,27 @@
+id: azure_cis_v130_5
+title: Logging and Monitoring
+description: Logging and Monitoring
+section-code: "5"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cis:
+  - "true"
+  cis_section_id:
+  - "5"
+  cis_version:
+  - v1.3.0
+  plugin:
+  - azure
+  service:
+  - Azure
+  type:
+  - Benchmark
 control-group:
-  id: azure_cis_v130_5
-  title: Logging and Monitoring
-  description: Logging and Monitoring
-  section-code: "5"
-  tags:
-    category:
-    - Compliance
-    cis:
-    - "true"
-    cis_section_id:
-    - "5"
-    cis_version:
-    - v1.3.0
-    plugin:
-    - azure
-    service:
-    - Azure
-    type:
-    - Benchmark
-  control-group:
-  - id: azure_cis_v130_5_1
-  - id: azure_cis_v130_5_2
-  controls:
-  - azure_cis_v130_5_3
+- id: azure_cis_v130_5_1
+  type: ""
+- id: azure_cis_v130_5_2
+  type: ""
+controls:
+- azure_cis_v130_5_3

@@ -1,18 +1,18 @@
-control-group:
-  id: aws_nist_800_53_rev_5_pm_16
-  title: Threat Awareness Program (PM-16)
-  description: Implement a threat awareness program that includes a cross-organization information-sharing capability for threat intelligence.
-  section-code: "16"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/GuardDuty
-    type:
-    - Benchmark
-  controls:
-  - aws_guardduty_enabled
+id: aws_nist_800_53_rev_5_pm_16
+title: Threat Awareness Program (PM-16)
+description: Implement a threat awareness program that includes a cross-organization information-sharing capability for threat intelligence.
+section-code: "16"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/GuardDuty
+  type:
+  - Benchmark
+controls:
+- aws_guardduty_enabled

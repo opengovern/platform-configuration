@@ -1,19 +1,19 @@
-control-group:
-  id: aws_fedramp_moderate_rev_4_ac_2_12_a
-  title: AC-2(12)(a)
-  description: "The organization: a. Monitors information system accounts for [Assignment: organization-defined atypical use]."
-  section-code: a
-  tags:
-    category:
-    - Compliance
-    fedramp_moderate_rev_4:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_guardduty_enabled
-  - aws_securityhub_enabled
+id: aws_fedramp_moderate_rev_4_ac_2_12_a
+title: AC-2(12)(a)
+description: "The organization: a. Monitors information system accounts for [Assignment: organization-defined atypical use]."
+section-code: a
+type: control-group
+tags:
+  category:
+  - Compliance
+  fedramp_moderate_rev_4:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_guardduty_enabled
+- aws_securityhub_enabled

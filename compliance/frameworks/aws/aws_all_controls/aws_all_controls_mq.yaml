@@ -1,7 +1,7 @@
-control-group:
-  id: aws_all_controls_mq
-  title: MQ
-  description: This section contains recommendations for configuring MQ resources.
-  section-code: mq
-  controls:
-  - aws_mq_broker_restrict_public_access
+id: aws_all_controls_mq
+title: MQ
+description: This section contains recommendations for configuring MQ resources.
+section-code: mq
+type: control-group
+controls:
+- aws_mq_broker_restrict_public_access

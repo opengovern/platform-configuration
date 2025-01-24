@@ -1,8 +1,8 @@
-control-group:
-  id: aws_rbi_itf_nbfc_4_4_i
-  title: 4.i Incident reporting
-  description: Incident reporting, their impact and steps taken for non-recurrence of such events in the future.
-  section-code: i
-  controls:
-  - aws_guardduty_enabled
-  - aws_guardduty_finding_archived
+id: aws_rbi_itf_nbfc_4_4_i
+title: 4.i Incident reporting
+description: Incident reporting, their impact and steps taken for non-recurrence of such events in the future.
+section-code: i
+type: control-group
+controls:
+- aws_guardduty_enabled
+- aws_guardduty_finding_archived

@@ -1,7 +1,7 @@
-control-group:
-  id: aws_foundational_security_sfn
-  title: Step Functions
-  description: Step Functions
-  section-code: sfn
-  controls:
-  - aws_foundational_security_sfn_1
+id: aws_foundational_security_sfn
+title: Step Functions
+description: Step Functions
+section-code: sfn
+type: control-group
+controls:
+- aws_foundational_security_sfn_1

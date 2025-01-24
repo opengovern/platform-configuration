@@ -1,7 +1,7 @@
-control-group:
-  id: azure_all_controls_frontdoor
-  title: Front Door
-  description: This section contains recommendations for configuring Front Door resources.
-  section-code: frontdoor
-  controls:
-  - azure_frontdoor_waf_enabled
+id: azure_all_controls_frontdoor
+title: Front Door
+description: This section contains recommendations for configuring Front Door resources.
+section-code: frontdoor
+type: control-group
+controls:
+- azure_frontdoor_waf_enabled

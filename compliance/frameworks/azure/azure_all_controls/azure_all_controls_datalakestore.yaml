@@ -1,8 +1,8 @@
-control-group:
-  id: azure_all_controls_datalakestore
-  title: Data Lake Storage
-  description: This section contains recommendations for configuring Data Lake Storage resources.
-  section-code: datalakestore
-  controls:
-  - azure_datalake_store_account_encryption_enabled
-  - azure_datalake_store_account_logging_enabled
+id: azure_all_controls_datalakestore
+title: Data Lake Storage
+description: This section contains recommendations for configuring Data Lake Storage resources.
+section-code: datalakestore
+type: control-group
+controls:
+- azure_datalake_store_account_encryption_enabled
+- azure_datalake_store_account_logging_enabled

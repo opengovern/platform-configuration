@@ -1,7 +1,7 @@
-control-group:
-  id: azure_cis_v210_5_3
-  title: Configuring Application Insights
-  description: Configuring Application Insights
-  section-code: "3"
-  controls:
-  - azure_cis_v210_5_3_1
+id: azure_cis_v210_5_3
+title: Configuring Application Insights
+description: Configuring Application Insights
+section-code: "3"
+type: control-group
+controls:
+- azure_cis_v210_5_3_1

@@ -1,9 +1,12 @@
+id: aws_acsc_essential_eight_ml_3_1
+title: "ACSC-EE-ML3-1: Application control ML3"
+description: Application control is implemented on workstations and servers.
+section-code: "1"
+type: control-group
 control-group:
-  id: aws_acsc_essential_eight_ml_3_1
-  title: "ACSC-EE-ML3-1: Application control ML3"
-  description: Application control is implemented on workstations and servers.
-  section-code: "1"
-  control-group:
-  - id: aws_acsc_essential_eight_ml_3_1_6
-  - id: aws_acsc_essential_eight_ml_3_1_7
-  - id: aws_acsc_essential_eight_ml_3_1_8
+- id: aws_acsc_essential_eight_ml_3_1_6
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_1_7
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_1_8
+  type: ""

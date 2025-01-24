@@ -1,22 +1,22 @@
-control-group:
-  id: aws_nist_800_53_rev_5_ac_7_4_a
-  title: AC-7(4)(a)
-  description: "Allow the use of [Assignment: organization-defined authentication factors] that are different from the primary authentication factors after the number of organization-defined consecutive invalid logon attempts have been exceeded."
-  section-code: a
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/IAM
-    type:
-    - Benchmark
-  controls:
-  - aws_iam_account_password_policy_min_length_14
-  - aws_iam_root_user_hardware_mfa_enabled
-  - aws_iam_root_user_mfa_enabled
-  - aws_iam_user_console_access_mfa_enabled
-  - aws_iam_user_mfa_enabled
+id: aws_nist_800_53_rev_5_ac_7_4_a
+title: AC-7(4)(a)
+description: "Allow the use of [Assignment: organization-defined authentication factors] that are different from the primary authentication factors after the number of organization-defined consecutive invalid logon attempts have been exceeded."
+section-code: a
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/IAM
+  type:
+  - Benchmark
+controls:
+- aws_iam_account_password_policy_min_length_14
+- aws_iam_root_user_hardware_mfa_enabled
+- aws_iam_root_user_mfa_enabled
+- aws_iam_user_console_access_mfa_enabled
+- aws_iam_user_mfa_enabled

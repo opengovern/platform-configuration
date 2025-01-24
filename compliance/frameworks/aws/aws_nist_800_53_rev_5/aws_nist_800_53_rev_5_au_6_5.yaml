@@ -1,21 +1,21 @@
-control-group:
-  id: aws_nist_800_53_rev_5_au_6_5
-  title: AU-6(5) Central Review And Analysis
-  description: "Integrate analysis of audit records with analysis of [Selection (one or more): vulnerability scanning information; performance data; system monitoring information; [Assignment: organization-defined data/information collected from other sources]] to further enhance the ability to identify inappropriate or unusual activity."
-  section-code: "5"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_cloudtrail_trail_integrated_with_logs
-  - aws_cloudwatch_alarm_action_enabled
-  - aws_guardduty_enabled
-  - aws_securityhub_enabled
+id: aws_nist_800_53_rev_5_au_6_5
+title: AU-6(5) Central Review And Analysis
+description: "Integrate analysis of audit records with analysis of [Selection (one or more): vulnerability scanning information; performance data; system monitoring information; [Assignment: organization-defined data/information collected from other sources]] to further enhance the ability to identify inappropriate or unusual activity."
+section-code: "5"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_cloudtrail_trail_integrated_with_logs
+- aws_cloudwatch_alarm_action_enabled
+- aws_guardduty_enabled
+- aws_securityhub_enabled

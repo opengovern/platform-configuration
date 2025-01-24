@@ -1,18 +1,18 @@
-control-group:
-  id: aws_nist_800_53_rev_5_sc_28_2
-  title: SC-28(2) Offline Storage
-  description: "Remove the following information from online storage and store offline in a secure location: [Assignment: organization-defined information]."
-  section-code: "2"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/CloudWatch
-    type:
-    - Benchmark
-  controls:
-  - aws_cloudwatch_log_group_retention_period_365
+id: aws_nist_800_53_rev_5_sc_28_2
+title: SC-28(2) Offline Storage
+description: "Remove the following information from online storage and store offline in a secure location: [Assignment: organization-defined information]."
+section-code: "2"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/CloudWatch
+  type:
+  - Benchmark
+controls:
+- aws_cloudwatch_log_group_retention_period_365

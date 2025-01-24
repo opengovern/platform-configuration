@@ -1,7 +1,7 @@
-control-group:
-  id: azure_cis_v210_10
-  title: Miscellaneous
-  description: Miscellaneous
-  section-code: "10"
-  controls:
-  - azure_cis_v210_10_1
+id: azure_cis_v210_10
+title: Miscellaneous
+description: Miscellaneous
+section-code: "10"
+type: control-group
+controls:
+- azure_cis_v210_10_1

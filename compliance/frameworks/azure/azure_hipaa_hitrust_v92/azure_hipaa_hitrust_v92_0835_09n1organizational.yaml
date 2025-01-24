@@ -1,19 +1,19 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_0835_09n1organizational
-  title: 09n1Organizational.1-09.n 09.06 Network Security Management
-  description: Agreed services provided by a network service provider/manager are formally managed and monitored to ensure they are provided securely.
-  section-code: azure_hipaa_hitrust_v92_0835_09n1organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/Compute
-    type:
-    - Benchmark
-  controls:
-  - azure_compute_vm_network_traffic_data_collection_windows_agent_installed
-  - azure_compute_vm_uses_azure_resource_manager
+id: azure_hipaa_hitrust_v92_0835_09n1organizational
+title: 09n1Organizational.1-09.n 09.06 Network Security Management
+description: Agreed services provided by a network service provider/manager are formally managed and monitored to ensure they are provided securely.
+section-code: azure_hipaa_hitrust_v92_0835_09n1organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/Compute
+  type:
+  - Benchmark
+controls:
+- azure_compute_vm_network_traffic_data_collection_windows_agent_installed
+- azure_compute_vm_uses_azure_resource_manager

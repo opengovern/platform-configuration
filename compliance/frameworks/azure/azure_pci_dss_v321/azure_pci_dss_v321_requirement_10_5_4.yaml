@@ -1,21 +1,21 @@
-control-group:
-  id: azure_pci_dss_v321_requirement_10_5_4
-  title: PCI DSS requirement 10.5.4
-  description: Write logs for external-facing technologies onto a secure, centralized, internal log server or media device.
-  section-code: "4"
-  tags:
-    category:
-    - Compliance
-    pci_dss_v321:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure
-    type:
-    - Benchmark
-  controls:
-  - azure_audit_diagnostic_setting
-  - azure_compute_vm_uses_azure_resource_manager
-  - azure_sql_server_auditing_on
-  - azure_storage_account_uses_azure_resource_manager
+id: azure_pci_dss_v321_requirement_10_5_4
+title: PCI DSS requirement 10.5.4
+description: Write logs for external-facing technologies onto a secure, centralized, internal log server or media device.
+section-code: "4"
+type: control-group
+tags:
+  category:
+  - Compliance
+  pci_dss_v321:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure
+  type:
+  - Benchmark
+controls:
+- azure_audit_diagnostic_setting
+- azure_compute_vm_uses_azure_resource_manager
+- azure_sql_server_auditing_on
+- azure_storage_account_uses_azure_resource_manager

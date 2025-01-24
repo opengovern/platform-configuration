@@ -1,30 +1,30 @@
-control-group:
-  id: azure_cis_v150_9
-  title: AppService
-  description: AppService
-  section-code: "9"
-  tags:
-    category:
-    - Compliance
-    cis:
-    - "true"
-    cis_section_id:
-    - "9"
-    cis_version:
-    - v1.5.0
-    plugin:
-    - azure
-    service:
-    - Azure/AppService
-    type:
-    - Benchmark
-  controls:
-  - azure_cis_v150_9_1
-  - azure_cis_v150_9_2
-  - azure_cis_v150_9_4
-  - azure_cis_v150_9_5
-  - azure_cis_v150_9_6
-  - azure_cis_v150_9_7
-  - azure_cis_v150_9_8
-  - azure_cis_v150_9_9
-  - azure_cis_v150_9_11
+id: azure_cis_v150_9
+title: AppService
+description: AppService
+section-code: "9"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cis:
+  - "true"
+  cis_section_id:
+  - "9"
+  cis_version:
+  - v1.5.0
+  plugin:
+  - azure
+  service:
+  - Azure/AppService
+  type:
+  - Benchmark
+controls:
+- azure_cis_v150_9_1
+- azure_cis_v150_9_2
+- azure_cis_v150_9_4
+- azure_cis_v150_9_5
+- azure_cis_v150_9_6
+- azure_cis_v150_9_7
+- azure_cis_v150_9_8
+- azure_cis_v150_9_9
+- azure_cis_v150_9_11

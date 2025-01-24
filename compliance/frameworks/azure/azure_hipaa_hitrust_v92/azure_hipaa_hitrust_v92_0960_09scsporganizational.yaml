@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_0960_09scsporganizational
-  title: 09sCSPOrganizational.1-09.s 09.08 Exchange of Information
-  description: Cloud service providers use secure (e.g., non-clear text and authenticated) standardized network protocols for the import and export of data and to manage the service, and make available a document to consumers (tenants) detailing the relevant interoperability and portability standards that are involved.
-  section-code: azure_hipaa_hitrust_v92_0960_09scsporganizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/AppService
-    type:
-    - Benchmark
-  controls:
-  - azure_appservice_function_app_cors_no_star
+id: azure_hipaa_hitrust_v92_0960_09scsporganizational
+title: 09sCSPOrganizational.1-09.s 09.08 Exchange of Information
+description: Cloud service providers use secure (e.g., non-clear text and authenticated) standardized network protocols for the import and export of data and to manage the service, and make available a document to consumers (tenants) detailing the relevant interoperability and portability standards that are involved.
+section-code: azure_hipaa_hitrust_v92_0960_09scsporganizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/AppService
+  type:
+  - Benchmark
+controls:
+- azure_appservice_function_app_cors_no_star

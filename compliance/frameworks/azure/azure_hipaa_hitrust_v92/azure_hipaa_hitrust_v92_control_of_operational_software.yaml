@@ -1,19 +1,21 @@
+id: azure_hipaa_hitrust_v92_control_of_operational_software
+title: Control of Operational Software
+description: There shall be procedures in place to control the installation of software on operational systems.
+section-code: control_of_operational_software
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure
+  type:
+  - Benchmark
 control-group:
-  id: azure_hipaa_hitrust_v92_control_of_operational_software
-  title: Control of Operational Software
-  description: There shall be procedures in place to control the installation of software on operational systems.
-  section-code: control_of_operational_software
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure
-    type:
-    - Benchmark
-  control-group:
-  - id: azure_hipaa_hitrust_v92_0606_10h2system
-  - id: azure_hipaa_hitrust_v92_0607_10h2system
+- id: azure_hipaa_hitrust_v92_0606_10h2system
+  type: ""
+- id: azure_hipaa_hitrust_v92_0607_10h2system
+  type: ""

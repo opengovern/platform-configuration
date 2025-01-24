@@ -1,28 +1,28 @@
-control-group:
-  id: azure_cis_v130_7
-  title: Virtual Machines
-  description: Virtual Machines
-  section-code: "7"
-  tags:
-    category:
-    - Compliance
-    cis:
-    - "true"
-    cis_section_id:
-    - "7"
-    cis_version:
-    - v1.3.0
-    plugin:
-    - azure
-    service:
-    - Azure/Compute
-    type:
-    - Benchmark
-  controls:
-  - azure_cis_v130_7_1
-  - azure_cis_v130_7_2
-  - azure_cis_v130_7_3
-  - azure_cis_v130_7_4
-  - azure_cis_v130_7_5
-  - azure_cis_v130_7_6
-  - azure_cis_v130_7_7
+id: azure_cis_v130_7
+title: Virtual Machines
+description: Virtual Machines
+section-code: "7"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cis:
+  - "true"
+  cis_section_id:
+  - "7"
+  cis_version:
+  - v1.3.0
+  plugin:
+  - azure
+  service:
+  - Azure/Compute
+  type:
+  - Benchmark
+controls:
+- azure_cis_v130_7_1
+- azure_cis_v130_7_2
+- azure_cis_v130_7_3
+- azure_cis_v130_7_4
+- azure_cis_v130_7_5
+- azure_cis_v130_7_6
+- azure_cis_v130_7_7

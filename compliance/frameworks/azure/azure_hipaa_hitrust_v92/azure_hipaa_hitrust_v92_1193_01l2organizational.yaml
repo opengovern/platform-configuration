@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1193_01l2organizational
-  title: 01l2Organizational.13-01.l 01.04 Network Access Control
-  description: Controls for the access to diagnostic and configuration ports include the use of a key lock and the implementation of supporting procedures to control physical access to the port.
-  section-code: azure_hipaa_hitrust_v92_1193_01l2organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/Network
-    type:
-    - Benchmark
-  controls:
-  - azure_network_security_group_remote_access_restricted
+id: azure_hipaa_hitrust_v92_1193_01l2organizational
+title: 01l2Organizational.13-01.l 01.04 Network Access Control
+description: Controls for the access to diagnostic and configuration ports include the use of a key lock and the implementation of supporting procedures to control physical access to the port.
+section-code: azure_hipaa_hitrust_v92_1193_01l2organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/Network
+  type:
+  - Benchmark
+controls:
+- azure_network_security_group_remote_access_restricted

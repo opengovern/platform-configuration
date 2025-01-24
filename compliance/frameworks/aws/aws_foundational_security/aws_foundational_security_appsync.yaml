@@ -1,7 +1,7 @@
-control-group:
-  id: aws_foundational_security_appsync
-  title: AppSync
-  description: AppSync
-  section-code: appsync
-  controls:
-  - aws_foundational_security_appsync_2
+id: aws_foundational_security_appsync
+title: AppSync
+description: AppSync
+section-code: appsync
+type: control-group
+controls:
+- aws_foundational_security_appsync_2

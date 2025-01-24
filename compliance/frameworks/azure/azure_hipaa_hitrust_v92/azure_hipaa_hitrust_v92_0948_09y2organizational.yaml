@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_0948_09y2organizational
-  title: 09y2Organizational.3-09.y 09.09 Electronic Commerce Services
-  description: Where a trusted authority is used (e.g., for the purposes of issuing and maintaining digital signatures and/or digital certificates), security is integrated and embedded throughout the entire end-to-end certificate/signature management process.
-  section-code: azure_hipaa_hitrust_v92_0948_09y2organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/MySQL
-    type:
-    - Benchmark
-  controls:
-  - azure_mysql_ssl_enabled
+id: azure_hipaa_hitrust_v92_0948_09y2organizational
+title: 09y2Organizational.3-09.y 09.09 Electronic Commerce Services
+description: Where a trusted authority is used (e.g., for the purposes of issuing and maintaining digital signatures and/or digital certificates), security is integrated and embedded throughout the entire end-to-end certificate/signature management process.
+section-code: azure_hipaa_hitrust_v92_0948_09y2organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/MySQL
+  type:
+  - Benchmark
+controls:
+- azure_mysql_ssl_enabled

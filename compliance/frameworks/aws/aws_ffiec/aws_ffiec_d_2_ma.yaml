@@ -1,19 +1,21 @@
+id: aws_ffiec_d_2_ma
+title: Monitoring and Analyzing (MA)
+description: Monitoring and Analyzing refers to how an institution monitors threat sources and what analysis may be performed to identify threats that are specific to the institution or to resolve conflicts in the different threat intelligence streams.
+section-code: ma
+type: control-group
+tags:
+  category:
+  - Compliance
+  ffiec:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_ffiec_d_2_ma
-  title: Monitoring and Analyzing (MA)
-  description: Monitoring and Analyzing refers to how an institution monitors threat sources and what analysis may be performed to identify threats that are specific to the institution or to resolve conflicts in the different threat intelligence streams.
-  section-code: ma
-  tags:
-    category:
-    - Compliance
-    ffiec:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_ffiec_d_2_ma_ma_b_1
-  - id: aws_ffiec_d_2_ma_ma_b_2
+- id: aws_ffiec_d_2_ma_ma_b_1
+  type: ""
+- id: aws_ffiec_d_2_ma_ma_b_2
+  type: ""

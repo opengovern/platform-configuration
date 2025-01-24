@@ -1,20 +1,23 @@
+id: aws_nist_800_53_rev_5_cm_2
+title: Baseline Configuration (CM-2)
+description: The organization develops, documents, and maintains under configuration control, a current baseline configuration of the information system.
+section-code: "2"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_5_cm_2
-  title: Baseline Configuration (CM-2)
-  description: The organization develops, documents, and maintains under configuration control, a current baseline configuration of the information system.
-  section-code: "2"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_5_cm_2_2
-  - id: aws_nist_800_53_rev_5_cm_2_a
-  - id: aws_nist_800_53_rev_5_cm_2_b
+- id: aws_nist_800_53_rev_5_cm_2_2
+  type: ""
+- id: aws_nist_800_53_rev_5_cm_2_a
+  type: ""
+- id: aws_nist_800_53_rev_5_cm_2_b
+  type: ""

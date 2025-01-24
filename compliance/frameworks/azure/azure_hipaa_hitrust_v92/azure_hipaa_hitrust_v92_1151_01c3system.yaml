@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1151_01c3system
-  title: 01c3System.1-01.c 01.02 Authorized Access to Information Systems
-  description: The organization limits authorization to privileged accounts on information systems to a pre-defined subset of users.
-  section-code: azure_hipaa_hitrust_v92_1151_01c3system
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/ActiveDirectory
-    type:
-    - Benchmark
-  controls:
-  - azure_iam_subscription_owner_max_3
+id: azure_hipaa_hitrust_v92_1151_01c3system
+title: 01c3System.1-01.c 01.02 Authorized Access to Information Systems
+description: The organization limits authorization to privileged accounts on information systems to a pre-defined subset of users.
+section-code: azure_hipaa_hitrust_v92_1151_01c3system
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/ActiveDirectory
+  type:
+  - Benchmark
+controls:
+- azure_iam_subscription_owner_max_3

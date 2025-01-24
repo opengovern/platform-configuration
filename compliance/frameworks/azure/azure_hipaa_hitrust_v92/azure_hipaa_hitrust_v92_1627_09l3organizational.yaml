@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1627_09l3organizational
-  title: 09l3Organizational.6-09.l 09.05 Information Back-Up
-  description: The organization tests backup information following each backup to verify media reliability and information integrity, and at least annually thereafter.
-  section-code: azure_hipaa_hitrust_v92_1627_09l3organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/MariaDB
-    type:
-    - Benchmark
-  controls:
-  - azure_mariadb_server_geo_redundant_backup_enabled
+id: azure_hipaa_hitrust_v92_1627_09l3organizational
+title: 09l3Organizational.6-09.l 09.05 Information Back-Up
+description: The organization tests backup information following each backup to verify media reliability and information integrity, and at least annually thereafter.
+section-code: azure_hipaa_hitrust_v92_1627_09l3organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/MariaDB
+  type:
+  - Benchmark
+controls:
+- azure_mariadb_server_geo_redundant_backup_enabled

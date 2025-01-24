@@ -1,18 +1,18 @@
-control-group:
-  id: aws_foundational_security_account
-  title: Account
-  description: Account
-  section-code: account
-  tags:
-    aws_foundational_security:
-    - "true"
-    category:
-    - Compliance
-    plugin:
-    - aws
-    service:
-    - AWS/Account
-    type:
-    - Benchmark
-  controls:
-  - aws_foundational_security_account_1
+id: aws_foundational_security_account
+title: Account
+description: Account
+section-code: account
+type: control-group
+tags:
+  aws_foundational_security:
+  - "true"
+  category:
+  - Compliance
+  plugin:
+  - aws
+  service:
+  - AWS/Account
+  type:
+  - Benchmark
+controls:
+- aws_foundational_security_account_1

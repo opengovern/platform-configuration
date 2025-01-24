@@ -1,12 +1,18 @@
+id: azure_rbi_itf_nbfc_v2017_it_information_and_cyber_security_3_1
+title: Identification and Classification of Information Assets-3.1
+description: Identification and Classification of Information Assets-3.1
+section-code: "1"
+type: control-group
 control-group:
-  id: azure_rbi_itf_nbfc_v2017_it_information_and_cyber_security_3_1
-  title: Identification and Classification of Information Assets-3.1
-  description: Identification and Classification of Information Assets-3.1
-  section-code: "1"
-  control-group:
-  - id: azure_rbi_itf_nbfc_v2017_it_information_and_cyber_security_3_1_a
-  - id: azure_rbi_itf_nbfc_v2017_it_information_and_cyber_security_3_1_b
-  - id: azure_rbi_itf_nbfc_v2017_it_information_and_cyber_security_3_1_c
-  - id: azure_rbi_itf_nbfc_v2017_it_information_and_cyber_security_3_1_f
-  - id: azure_rbi_itf_nbfc_v2017_it_information_and_cyber_security_3_1_g
-  - id: azure_rbi_itf_nbfc_v2017_it_information_and_cyber_security_3_1_h
+- id: azure_rbi_itf_nbfc_v2017_it_information_and_cyber_security_3_1_a
+  type: ""
+- id: azure_rbi_itf_nbfc_v2017_it_information_and_cyber_security_3_1_b
+  type: ""
+- id: azure_rbi_itf_nbfc_v2017_it_information_and_cyber_security_3_1_c
+  type: ""
+- id: azure_rbi_itf_nbfc_v2017_it_information_and_cyber_security_3_1_f
+  type: ""
+- id: azure_rbi_itf_nbfc_v2017_it_information_and_cyber_security_3_1_g
+  type: ""
+- id: azure_rbi_itf_nbfc_v2017_it_information_and_cyber_security_3_1_h
+  type: ""

@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_0888_09n2Organizational
-  title: 09n2Organizational.6-09.n 09.06 Network Security Management
-  description: The contract with the external/outsourced service provider includes the specification that the service provider is responsible for the protection of covered information shared.
-  section-code: azure_hipaa_hitrust_v92_0888_09n2Organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/Network
-    type:
-    - Benchmark
-  controls:
-  - azure_network_watcher_enabled
+id: azure_hipaa_hitrust_v92_0888_09n2Organizational
+title: 09n2Organizational.6-09.n 09.06 Network Security Management
+description: The contract with the external/outsourced service provider includes the specification that the service provider is responsible for the protection of covered information shared.
+section-code: azure_hipaa_hitrust_v92_0888_09n2Organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/Network
+  type:
+  - Benchmark
+controls:
+- azure_network_watcher_enabled

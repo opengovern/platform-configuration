@@ -1,26 +1,26 @@
-control-group:
-  id: aws_foundational_security_waf
-  title: WAF
-  description: WAF
-  section-code: waf
-  tags:
-    aws_foundational_security:
-    - "true"
-    category:
-    - Compliance
-    plugin:
-    - aws
-    service:
-    - AWS/WAF
-    type:
-    - Benchmark
-  controls:
-  - aws_foundational_security_waf_1
-  - aws_foundational_security_waf_2
-  - aws_foundational_security_waf_3
-  - aws_foundational_security_waf_4
-  - aws_foundational_security_waf_6
-  - aws_foundational_security_waf_7
-  - aws_foundational_security_waf_8
-  - aws_foundational_security_waf_10
-  - aws_foundational_security_waf_12
+id: aws_foundational_security_waf
+title: WAF
+description: WAF
+section-code: waf
+type: control-group
+tags:
+  aws_foundational_security:
+  - "true"
+  category:
+  - Compliance
+  plugin:
+  - aws
+  service:
+  - AWS/WAF
+  type:
+  - Benchmark
+controls:
+- aws_foundational_security_waf_1
+- aws_foundational_security_waf_2
+- aws_foundational_security_waf_3
+- aws_foundational_security_waf_4
+- aws_foundational_security_waf_6
+- aws_foundational_security_waf_7
+- aws_foundational_security_waf_8
+- aws_foundational_security_waf_10
+- aws_foundational_security_waf_12

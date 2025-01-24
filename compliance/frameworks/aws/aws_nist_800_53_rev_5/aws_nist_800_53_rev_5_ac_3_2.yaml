@@ -1,21 +1,21 @@
-control-group:
-  id: aws_nist_800_53_rev_5_ac_3_2
-  title: AC-3(2) Dual Authorization
-  description: "Enforce dual authorization for [Assignment: organization-defined privileged commands and/or other organization-defined actions]."
-  section-code: "2"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/IAM
-    type:
-    - Benchmark
-  controls:
-  - aws_iam_root_user_hardware_mfa_enabled
-  - aws_iam_root_user_mfa_enabled
-  - aws_iam_user_console_access_mfa_enabled
-  - aws_iam_user_mfa_enabled
+id: aws_nist_800_53_rev_5_ac_3_2
+title: AC-3(2) Dual Authorization
+description: "Enforce dual authorization for [Assignment: organization-defined privileged commands and/or other organization-defined actions]."
+section-code: "2"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/IAM
+  type:
+  - Benchmark
+controls:
+- aws_iam_root_user_hardware_mfa_enabled
+- aws_iam_root_user_mfa_enabled
+- aws_iam_user_console_access_mfa_enabled
+- aws_iam_user_mfa_enabled

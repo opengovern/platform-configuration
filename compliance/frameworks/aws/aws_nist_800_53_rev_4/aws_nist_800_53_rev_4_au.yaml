@@ -1,24 +1,31 @@
+id: aws_nist_800_53_rev_4_au
+title: Audit and Accountability (AU)
+description: The AU control family consists of security controls related to an organization’s audit capabilities. This includes audit policies and procedures, audit logging, audit report generation, and protection of audit information.
+section-code: au
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_4:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_4_au
-  title: Audit and Accountability (AU)
-  description: The AU control family consists of security controls related to an organization’s audit capabilities. This includes audit policies and procedures, audit logging, audit report generation, and protection of audit information.
-  section-code: au
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_4:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_4_au_2
-  - id: aws_nist_800_53_rev_4_au_3
-  - id: aws_nist_800_53_rev_4_au_6
-  - id: aws_nist_800_53_rev_4_au_7
-  - id: aws_nist_800_53_rev_4_au_9
-  - id: aws_nist_800_53_rev_4_au_11
-  - id: aws_nist_800_53_rev_4_au_12
+- id: aws_nist_800_53_rev_4_au_2
+  type: ""
+- id: aws_nist_800_53_rev_4_au_3
+  type: ""
+- id: aws_nist_800_53_rev_4_au_6
+  type: ""
+- id: aws_nist_800_53_rev_4_au_7
+  type: ""
+- id: aws_nist_800_53_rev_4_au_9
+  type: ""
+- id: aws_nist_800_53_rev_4_au_11
+  type: ""
+- id: aws_nist_800_53_rev_4_au_12
+  type: ""

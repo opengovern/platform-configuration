@@ -1,20 +1,20 @@
-control-group:
-  id: aws_foundational_security_sagemaker
-  title: SageMaker
-  description: SageMaker
-  section-code: sagemaker
-  tags:
-    aws_foundational_security:
-    - "true"
-    category:
-    - Compliance
-    plugin:
-    - aws
-    service:
-    - AWS/SageMaker
-    type:
-    - Benchmark
-  controls:
-  - aws_foundational_security_sagemaker_1
-  - aws_foundational_security_sagemaker_2
-  - aws_foundational_security_sagemaker_3
+id: aws_foundational_security_sagemaker
+title: SageMaker
+description: SageMaker
+section-code: sagemaker
+type: control-group
+tags:
+  aws_foundational_security:
+  - "true"
+  category:
+  - Compliance
+  plugin:
+  - aws
+  service:
+  - AWS/SageMaker
+  type:
+  - Benchmark
+controls:
+- aws_foundational_security_sagemaker_1
+- aws_foundational_security_sagemaker_2
+- aws_foundational_security_sagemaker_3

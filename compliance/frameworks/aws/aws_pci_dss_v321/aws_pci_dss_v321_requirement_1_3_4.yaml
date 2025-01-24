@@ -1,16 +1,16 @@
-control-group:
-  id: aws_pci_dss_v321_requirement_1_3_4
-  title: 3.4 Do not allow unauthorized outbound traffic from the cardholder data environment to the Internet
-  description: All traffic outbound from the cardholder data environment should be evaluated to ensure that it follows established, authorized rules. Connections should be inspected to restrict traffic to only authorized communications (for example by restricting source/destination addresses/ports, and/or blocking of content). The set of controls will examine firewall and router configurations to verify that outbound traffic from the cardholder data environment to the Internet is explicitly authorized.
-  section-code: "4"
-  controls:
-  - aws_autoscaling_launch_config_requires_imdsv2
-  - aws_dms_replication_instance_not_publicly_accessible
-  - aws_es_domain_in_vpc
-  - aws_lambda_function_in_vpc
-  - aws_lambda_function_restrict_public_access
-  - aws_rds_db_instance_prohibit_public_access
-  - aws_redshift_cluster_prohibit_public_access
-  - aws_s3_bucket_restrict_public_read_access
-  - aws_s3_bucket_restrict_public_write_access
-  - aws_sagemaker_notebook_instance_direct_internet_access_disabled
+id: aws_pci_dss_v321_requirement_1_3_4
+title: 3.4 Do not allow unauthorized outbound traffic from the cardholder data environment to the Internet
+description: All traffic outbound from the cardholder data environment should be evaluated to ensure that it follows established, authorized rules. Connections should be inspected to restrict traffic to only authorized communications (for example by restricting source/destination addresses/ports, and/or blocking of content). The set of controls will examine firewall and router configurations to verify that outbound traffic from the cardholder data environment to the Internet is explicitly authorized.
+section-code: "4"
+type: control-group
+controls:
+- aws_autoscaling_launch_config_requires_imdsv2
+- aws_dms_replication_instance_not_publicly_accessible
+- aws_es_domain_in_vpc
+- aws_lambda_function_in_vpc
+- aws_lambda_function_restrict_public_access
+- aws_rds_db_instance_prohibit_public_access
+- aws_redshift_cluster_prohibit_public_access
+- aws_s3_bucket_restrict_public_read_access
+- aws_s3_bucket_restrict_public_write_access
+- aws_sagemaker_notebook_instance_direct_internet_access_disabled

@@ -1,21 +1,21 @@
-control-group:
-  id: aws_ffiec_d_4_c_co_b_2
-  title: D4.C.Co.B.2
-  description: The institution ensures that third-party connections are authorized.
-  section-code: co_b_2
-  tags:
-    category:
-    - Compliance
-    ffiec:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_vpc_default_security_group_restricts_all_traffic
-  - aws_vpc_security_group_restrict_ingress_common_ports_all
-  - aws_vpc_security_group_restrict_ingress_ssh_all
-  - aws_vpc_security_group_restrict_ingress_tcp_udp_all
+id: aws_ffiec_d_4_c_co_b_2
+title: D4.C.Co.B.2
+description: The institution ensures that third-party connections are authorized.
+section-code: co_b_2
+type: control-group
+tags:
+  category:
+  - Compliance
+  ffiec:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_vpc_default_security_group_restricts_all_traffic
+- aws_vpc_security_group_restrict_ingress_common_ports_all
+- aws_vpc_security_group_restrict_ingress_ssh_all
+- aws_vpc_security_group_restrict_ingress_tcp_udp_all

@@ -1,18 +1,18 @@
-control-group:
-  id: aws_nist_800_53_rev_5_si_4_a_1
-  title: SI-4(a)(1)
-  description: "a. Monitor the system to detect: 1. Attacks and indicators of potential attacks in accordance with the following monitoring objectives: [Assignment: organization-defined monitoring objectives]; and 2. Unauthorized local, network, and remote connections."
-  section-code: "1"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/GuardDuty
-    type:
-    - Benchmark
-  controls:
-  - aws_guardduty_enabled
+id: aws_nist_800_53_rev_5_si_4_a_1
+title: SI-4(a)(1)
+description: "a. Monitor the system to detect: 1. Attacks and indicators of potential attacks in accordance with the following monitoring objectives: [Assignment: organization-defined monitoring objectives]; and 2. Unauthorized local, network, and remote connections."
+section-code: "1"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/GuardDuty
+  type:
+  - Benchmark
+controls:
+- aws_guardduty_enabled

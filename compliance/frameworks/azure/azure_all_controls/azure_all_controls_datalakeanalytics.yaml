@@ -1,7 +1,7 @@
-control-group:
-  id: azure_all_controls_datalakeanalytics
-  title: Data Lake Analytics
-  description: This section contains recommendations for configuring Data Lake Analytics resources.
-  section-code: datalakeanalytics
-  controls:
-  - azure_datalake_analytics_account_logging_enabled
+id: azure_all_controls_datalakeanalytics
+title: Data Lake Analytics
+description: This section contains recommendations for configuring Data Lake Analytics resources.
+section-code: datalakeanalytics
+type: control-group
+controls:
+- azure_datalake_analytics_account_logging_enabled

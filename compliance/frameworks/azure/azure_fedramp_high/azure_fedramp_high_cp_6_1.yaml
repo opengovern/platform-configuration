@@ -1,11 +1,11 @@
-control-group:
-  id: azure_fedramp_high_cp_6_1
-  title: CP-6(1) Separation From Primary Site
-  description: Identify an alternate storage site that is sufficiently separated from the primary storage site to reduce susceptibility to the same threats.
-  section-code: "1"
-  controls:
-  - azure_mariadb_server_geo_redundant_backup_enabled
-  - azure_mysql_db_server_geo_redundant_backup_enabled
-  - azure_postgres_db_server_geo_redundant_backup_enabled
-  - azure_sql_database_long_term_geo_redundant_backup_enabled
-  - azure_storage_account_geo_redundant_enabled
+id: azure_fedramp_high_cp_6_1
+title: CP-6(1) Separation From Primary Site
+description: Identify an alternate storage site that is sufficiently separated from the primary storage site to reduce susceptibility to the same threats.
+section-code: "1"
+type: control-group
+controls:
+- azure_mariadb_server_geo_redundant_backup_enabled
+- azure_mysql_db_server_geo_redundant_backup_enabled
+- azure_postgres_db_server_geo_redundant_backup_enabled
+- azure_sql_database_long_term_geo_redundant_backup_enabled
+- azure_storage_account_geo_redundant_enabled

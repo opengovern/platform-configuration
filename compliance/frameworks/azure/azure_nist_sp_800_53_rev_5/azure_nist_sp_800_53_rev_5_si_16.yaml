@@ -1,19 +1,19 @@
-control-group:
-  id: azure_nist_sp_800_53_rev_5_si_16
-  title: Memory Protection (SI-16)
-  description: The information system implements organization-defined security safeguards to protect its memory from unauthorized code execution.
-  section-code: "16"
-  tags:
-    category:
-    - Compliance
-    nist_sp_800_53_rev_5:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/Compute
-    type:
-    - Benchmark
-  controls:
-  - azure_compute_vm_windows_defender_exploit_guard_enabled
-  - azure_securitycenter_azure_defender_on_for_server
+id: azure_nist_sp_800_53_rev_5_si_16
+title: Memory Protection (SI-16)
+description: The information system implements organization-defined security safeguards to protect its memory from unauthorized code execution.
+section-code: "16"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_sp_800_53_rev_5:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/Compute
+  type:
+  - Benchmark
+controls:
+- azure_compute_vm_windows_defender_exploit_guard_enabled
+- azure_securitycenter_azure_defender_on_for_server

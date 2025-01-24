@@ -1,18 +1,18 @@
-control-group:
-  id: aws_ffiec_d_1_rm_ra_b_2
-  title: D1.RM.RA.B.2
-  description: The risk assessment identifies Internet- based systems and high-risk transactions that warrant additional authentication controls.
-  section-code: ra_b_2
-  tags:
-    category:
-    - Compliance
-    ffiec:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_guardduty_enabled
+id: aws_ffiec_d_1_rm_ra_b_2
+title: D1.RM.RA.B.2
+description: The risk assessment identifies Internet- based systems and high-risk transactions that warrant additional authentication controls.
+section-code: ra_b_2
+type: control-group
+tags:
+  category:
+  - Compliance
+  ffiec:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_guardduty_enabled

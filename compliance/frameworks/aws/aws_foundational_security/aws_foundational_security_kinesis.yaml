@@ -1,18 +1,18 @@
-control-group:
-  id: aws_foundational_security_kinesis
-  title: Kinesis
-  description: Kinesis
-  section-code: kinesis
-  tags:
-    aws_foundational_security:
-    - "true"
-    category:
-    - Compliance
-    plugin:
-    - aws
-    service:
-    - AWS/Kinesis
-    type:
-    - Benchmark
-  controls:
-  - aws_foundational_security_kinesis_1
+id: aws_foundational_security_kinesis
+title: Kinesis
+description: Kinesis
+section-code: kinesis
+type: control-group
+tags:
+  aws_foundational_security:
+  - "true"
+  category:
+  - Compliance
+  plugin:
+  - aws
+  service:
+  - AWS/Kinesis
+  type:
+  - Benchmark
+controls:
+- aws_foundational_security_kinesis_1

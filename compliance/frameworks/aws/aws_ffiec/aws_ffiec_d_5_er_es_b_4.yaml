@@ -1,18 +1,18 @@
-control-group:
-  id: aws_ffiec_d_5_er_es_b_4
-  title: D5.ER.Es.B.4
-  description: Incidents are classified, logged and tracked.
-  section-code: es_b_4
-  tags:
-    category:
-    - Compliance
-    ffiec:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_guardduty_finding_archived
+id: aws_ffiec_d_5_er_es_b_4
+title: D5.ER.Es.B.4
+description: Incidents are classified, logged and tracked.
+section-code: es_b_4
+type: control-group
+tags:
+  category:
+  - Compliance
+  ffiec:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_guardduty_finding_archived

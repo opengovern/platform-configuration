@@ -1,19 +1,19 @@
-control-group:
-  id: aws_nist_800_53_rev_4_ac_17_1
-  title: AC-17(1) Automated Monitoring/Control
-  description: The information system monitors and controls remote access methods.
-  section-code: "1"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_4:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_guardduty_enabled
-  - aws_securityhub_enabled
+id: aws_nist_800_53_rev_4_ac_17_1
+title: AC-17(1) Automated Monitoring/Control
+description: The information system monitors and controls remote access methods.
+section-code: "1"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_4:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_guardduty_enabled
+- aws_securityhub_enabled

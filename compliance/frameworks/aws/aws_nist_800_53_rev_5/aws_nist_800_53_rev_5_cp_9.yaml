@@ -1,22 +1,27 @@
+id: aws_nist_800_53_rev_5_cp_9
+title: System Backup (CP-9)
+description: "a.\u2003Conduct backups of user-level information contained in [Assignment: organization-defined system components] [Assignment: organization-defined frequency consistent with recovery time and recovery point objectives]; b.\u2003Conduct backups of system-level information contained in the system [Assignment: organization-defined frequency consistent with recovery time and recovery point objectives]; c.\u2003Conduct backups of system documentation, including security- and privacy-related documentation [Assignment: organization-defined frequency consistent with recovery time and recovery point objectives]; and d.\u2003Protect the confidentiality, integrity, and availability of backup information."
+section-code: "9"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_5_cp_9
-  title: System Backup (CP-9)
-  description: "a.\u2003Conduct backups of user-level information contained in [Assignment: organization-defined system components] [Assignment: organization-defined frequency consistent with recovery time and recovery point objectives]; b.\u2003Conduct backups of system-level information contained in the system [Assignment: organization-defined frequency consistent with recovery time and recovery point objectives]; c.\u2003Conduct backups of system documentation, including security- and privacy-related documentation [Assignment: organization-defined frequency consistent with recovery time and recovery point objectives]; and d.\u2003Protect the confidentiality, integrity, and availability of backup information."
-  section-code: "9"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_5_cp_9_8
-  - id: aws_nist_800_53_rev_5_cp_9_a
-  - id: aws_nist_800_53_rev_5_cp_9_b
-  - id: aws_nist_800_53_rev_5_cp_9_c
-  - id: aws_nist_800_53_rev_5_cp_9_d
+- id: aws_nist_800_53_rev_5_cp_9_8
+  type: ""
+- id: aws_nist_800_53_rev_5_cp_9_a
+  type: ""
+- id: aws_nist_800_53_rev_5_cp_9_b
+  type: ""
+- id: aws_nist_800_53_rev_5_cp_9_c
+  type: ""
+- id: aws_nist_800_53_rev_5_cp_9_d
+  type: ""

@@ -1,8 +1,8 @@
-control-group:
-  id: aws_all_controls_account
-  title: Account
-  description: This section contains recommendations for configuring Account resources.
-  section-code: account
-  controls:
-  - aws_account_alternate_contact_security_registered
-  - aws_account_part_of_organizations
+id: aws_all_controls_account
+title: Account
+description: This section contains recommendations for configuring Account resources.
+section-code: account
+type: control-group
+controls:
+- aws_account_alternate_contact_security_registered
+- aws_account_part_of_organizations

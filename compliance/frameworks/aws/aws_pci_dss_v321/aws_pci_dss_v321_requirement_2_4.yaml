@@ -1,12 +1,13 @@
+id: aws_pci_dss_v321_requirement_2_4
+title: Maintain an inventory of system components that are in scope for PCI DSS
+description: Maintaining a current list of all system components will enable an organization to accurately and efficiently define the scope of their environment for implementing PCI DSS controls. Without an inventory, some system components could be forgotten, and be inadvertently excluded from the organization's configuration standards.
+section-code: "4"
+type: control-group
 control-group:
-  id: aws_pci_dss_v321_requirement_2_4
-  title: Maintain an inventory of system components that are in scope for PCI DSS
-  description: Maintaining a current list of all system components will enable an organization to accurately and efficiently define the scope of their environment for implementing PCI DSS controls. Without an inventory, some system components could be forgotten, and be inadvertently excluded from the organization's configuration standards.
-  section-code: "4"
-  control-group:
-  - id: aws_pci_dss_v321_requirement_2_4_a
-  controls:
-  - aws_config_enabled_all_regions
-  - aws_ec2_instance_ssm_managed
-  - aws_ssm_managed_instance_compliance_association_compliant
-  - aws_vpc_eip_associated
+- id: aws_pci_dss_v321_requirement_2_4_a
+  type: ""
+controls:
+- aws_config_enabled_all_regions
+- aws_ec2_instance_ssm_managed
+- aws_ssm_managed_instance_compliance_association_compliant
+- aws_vpc_eip_associated

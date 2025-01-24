@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1402_05i1organizational
-  title: Remote access connections between the organization and external parties are encrypted
-  description: Remote access connections between the organization and external parties are encrypted
-  section-code: azure_hipaa_hitrust_v92_1402_05i1organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/AppService
-    type:
-    - Benchmark
-  controls:
-  - azure_appservice_function_app_only_https_accessible
+id: azure_hipaa_hitrust_v92_1402_05i1organizational
+title: Remote access connections between the organization and external parties are encrypted
+description: Remote access connections between the organization and external parties are encrypted
+section-code: azure_hipaa_hitrust_v92_1402_05i1organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/AppService
+  type:
+  - Benchmark
+controls:
+- azure_appservice_function_app_only_https_accessible

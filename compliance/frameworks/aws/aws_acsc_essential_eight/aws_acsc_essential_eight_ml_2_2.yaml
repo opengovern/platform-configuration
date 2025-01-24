@@ -1,7 +1,8 @@
+id: aws_acsc_essential_eight_ml_2_2
+title: "ACSC-EE-ML2-2: Patch operating systems ML2"
+description: An automated method of asset discovery is used at least weekly to support the detection of assets for subsequent vulnerability scanning activities.
+section-code: "2"
+type: control-group
 control-group:
-  id: aws_acsc_essential_eight_ml_2_2
-  title: "ACSC-EE-ML2-2: Patch operating systems ML2"
-  description: An automated method of asset discovery is used at least weekly to support the detection of assets for subsequent vulnerability scanning activities.
-  section-code: "2"
-  control-group:
-  - id: aws_acsc_essential_eight_ml_2_2_5
+- id: aws_acsc_essential_eight_ml_2_2_5
+  type: ""

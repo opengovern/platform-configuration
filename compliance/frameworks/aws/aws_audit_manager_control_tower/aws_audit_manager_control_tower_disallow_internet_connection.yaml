@@ -1,21 +1,23 @@
+id: aws_audit_manager_control_tower_disallow_internet_connection
+title: Disallow Internet Connection
+description: This benchmark checks if the VPC security group restricts ingress from RDP and SSH.
+section-code: disallow_internet_connection
+type: control-group
+tags:
+  audit_manager_control_tower:
+  - "true"
+  category:
+  - Compliance
+  control_set:
+  - disallow_internet_connection
+  plugin:
+  - aws
+  service:
+  - AWS/VPC
+  type:
+  - Benchmark
 control-group:
-  id: aws_audit_manager_control_tower_disallow_internet_connection
-  title: Disallow Internet Connection
-  description: This benchmark checks if the VPC security group restricts ingress from RDP and SSH.
-  section-code: disallow_internet_connection
-  tags:
-    audit_manager_control_tower:
-    - "true"
-    category:
-    - Compliance
-    control_set:
-    - disallow_internet_connection
-    plugin:
-    - aws
-    service:
-    - AWS/VPC
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_audit_manager_control_tower_disallow_internet_connection_2_0_1
-  - id: aws_audit_manager_control_tower_disallow_internet_connection_2_0_2
+- id: aws_audit_manager_control_tower_disallow_internet_connection_2_0_1
+  type: ""
+- id: aws_audit_manager_control_tower_disallow_internet_connection_2_0_2
+  type: ""

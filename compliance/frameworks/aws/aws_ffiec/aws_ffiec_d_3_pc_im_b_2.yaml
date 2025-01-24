@@ -1,23 +1,23 @@
-control-group:
-  id: aws_ffiec_d_3_pc_im_b_2
-  title: D3.PC.IM.B.2
-  description: Systems that are accessed from the Internet or by external parties are protected by firewalls or other similar devices.
-  section-code: im_b_2
-  tags:
-    category:
-    - Compliance
-    ffiec:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_apigateway_stage_use_waf_web_acl
-  - aws_elb_application_lb_waf_enabled
-  - aws_vpc_default_security_group_restricts_all_traffic
-  - aws_vpc_security_group_restrict_ingress_common_ports_all
-  - aws_vpc_security_group_restrict_ingress_ssh_all
-  - aws_vpc_security_group_restrict_ingress_tcp_udp_all
+id: aws_ffiec_d_3_pc_im_b_2
+title: D3.PC.IM.B.2
+description: Systems that are accessed from the Internet or by external parties are protected by firewalls or other similar devices.
+section-code: im_b_2
+type: control-group
+tags:
+  category:
+  - Compliance
+  ffiec:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_apigateway_stage_use_waf_web_acl
+- aws_elb_application_lb_waf_enabled
+- aws_vpc_default_security_group_restricts_all_traffic
+- aws_vpc_security_group_restrict_ingress_common_ports_all
+- aws_vpc_security_group_restrict_ingress_ssh_all
+- aws_vpc_security_group_restrict_ingress_tcp_udp_all

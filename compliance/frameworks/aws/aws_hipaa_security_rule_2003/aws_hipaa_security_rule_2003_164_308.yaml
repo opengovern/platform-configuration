@@ -1,40 +1,61 @@
+id: aws_hipaa_security_rule_2003_164_308
+title: Administrative Safeguards
+description: An important step in protecting electronic protected health information (EPHI) is to implement reasonable and appropriate administrative safeguards that establish the foundation for a covered entity's security program. The Administrative Safeguards standards in the Security Rule, at § 164.308, were developed to accomplish this purpose.
+section-code: "164_308"
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_section:
+  - "164_308"
+  hipaa_security_rule_2003:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_hipaa_security_rule_2003_164_308
-  title: Administrative Safeguards
-  description: An important step in protecting electronic protected health information (EPHI) is to implement reasonable and appropriate administrative safeguards that establish the foundation for a covered entity's security program. The Administrative Safeguards standards in the Security Rule, at § 164.308, were developed to accomplish this purpose.
-  section-code: "164_308"
-  tags:
-    category:
-    - Compliance
-    hipaa_section:
-    - "164_308"
-    hipaa_security_rule_2003:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_hipaa_security_rule_2003_164_308_a_1_ii_a
-  - id: aws_hipaa_security_rule_2003_164_308_a_1_ii_b
-  - id: aws_hipaa_security_rule_2003_164_308_a_1_ii_d
-  - id: aws_hipaa_security_rule_2003_164_308_a_3_i
-  - id: aws_hipaa_security_rule_2003_164_308_a_3_ii_a
-  - id: aws_hipaa_security_rule_2003_164_308_a_3_ii_b
-  - id: aws_hipaa_security_rule_2003_164_308_a_3_ii_c
-  - id: aws_hipaa_security_rule_2003_164_308_a_4_i
-  - id: aws_hipaa_security_rule_2003_164_308_a_4_ii_a
-  - id: aws_hipaa_security_rule_2003_164_308_a_4_ii_b
-  - id: aws_hipaa_security_rule_2003_164_308_a_4_ii_c
-  - id: aws_hipaa_security_rule_2003_164_308_a_5_ii_b
-  - id: aws_hipaa_security_rule_2003_164_308_a_5_ii_c
-  - id: aws_hipaa_security_rule_2003_164_308_a_5_ii_d
-  - id: aws_hipaa_security_rule_2003_164_308_a_6_i
-  - id: aws_hipaa_security_rule_2003_164_308_a_6_ii
-  - id: aws_hipaa_security_rule_2003_164_308_a_7_i
-  - id: aws_hipaa_security_rule_2003_164_308_a_7_ii_a
-  - id: aws_hipaa_security_rule_2003_164_308_a_7_ii_b
-  - id: aws_hipaa_security_rule_2003_164_308_a_7_ii_c
-  - id: aws_hipaa_security_rule_2003_164_308_a_8
+- id: aws_hipaa_security_rule_2003_164_308_a_1_ii_a
+  type: ""
+- id: aws_hipaa_security_rule_2003_164_308_a_1_ii_b
+  type: ""
+- id: aws_hipaa_security_rule_2003_164_308_a_1_ii_d
+  type: ""
+- id: aws_hipaa_security_rule_2003_164_308_a_3_i
+  type: ""
+- id: aws_hipaa_security_rule_2003_164_308_a_3_ii_a
+  type: ""
+- id: aws_hipaa_security_rule_2003_164_308_a_3_ii_b
+  type: ""
+- id: aws_hipaa_security_rule_2003_164_308_a_3_ii_c
+  type: ""
+- id: aws_hipaa_security_rule_2003_164_308_a_4_i
+  type: ""
+- id: aws_hipaa_security_rule_2003_164_308_a_4_ii_a
+  type: ""
+- id: aws_hipaa_security_rule_2003_164_308_a_4_ii_b
+  type: ""
+- id: aws_hipaa_security_rule_2003_164_308_a_4_ii_c
+  type: ""
+- id: aws_hipaa_security_rule_2003_164_308_a_5_ii_b
+  type: ""
+- id: aws_hipaa_security_rule_2003_164_308_a_5_ii_c
+  type: ""
+- id: aws_hipaa_security_rule_2003_164_308_a_5_ii_d
+  type: ""
+- id: aws_hipaa_security_rule_2003_164_308_a_6_i
+  type: ""
+- id: aws_hipaa_security_rule_2003_164_308_a_6_ii
+  type: ""
+- id: aws_hipaa_security_rule_2003_164_308_a_7_i
+  type: ""
+- id: aws_hipaa_security_rule_2003_164_308_a_7_ii_a
+  type: ""
+- id: aws_hipaa_security_rule_2003_164_308_a_7_ii_b
+  type: ""
+- id: aws_hipaa_security_rule_2003_164_308_a_7_ii_c
+  type: ""
+- id: aws_hipaa_security_rule_2003_164_308_a_8
+  type: ""

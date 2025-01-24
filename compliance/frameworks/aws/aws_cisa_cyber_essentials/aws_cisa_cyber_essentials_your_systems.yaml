@@ -1,20 +1,23 @@
+id: aws_cisa_cyber_essentials_your_systems
+title: Your Systems
+description: As the infrastructure that makes your organization operational, your systems are an essential element of your organization's Culture of Cyber Readiness. Your task for this element is to protect critical assets and applications.
+section-code: your_systems
+type: control-group
+tags:
+  category:
+  - Compliance
+  cisa_cyber_essentials:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_cisa_cyber_essentials_your_systems
-  title: Your Systems
-  description: As the infrastructure that makes your organization operational, your systems are an essential element of your organization's Culture of Cyber Readiness. Your task for this element is to protect critical assets and applications.
-  section-code: your_systems
-  tags:
-    category:
-    - Compliance
-    cisa_cyber_essentials:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_cisa_cyber_essentials_your_systems_1
-  - id: aws_cisa_cyber_essentials_your_systems_2
-  - id: aws_cisa_cyber_essentials_your_systems_3
+- id: aws_cisa_cyber_essentials_your_systems_1
+  type: ""
+- id: aws_cisa_cyber_essentials_your_systems_2
+  type: ""
+- id: aws_cisa_cyber_essentials_your_systems_3
+  type: ""

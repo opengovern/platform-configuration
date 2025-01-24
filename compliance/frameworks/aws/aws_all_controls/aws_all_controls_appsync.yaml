@@ -1,7 +1,7 @@
-control-group:
-  id: aws_all_controls_appsync
-  title: AppSync
-  description: This section contains recommendations for configuring AppSync resources.
-  section-code: appsync
-  controls:
-  - aws_appsync_graphql_api_field_level_logging_enabled
+id: aws_all_controls_appsync
+title: AppSync
+description: This section contains recommendations for configuring AppSync resources.
+section-code: appsync
+type: control-group
+controls:
+- aws_appsync_graphql_api_field_level_logging_enabled

@@ -1,19 +1,19 @@
-control-group:
-  id: aws_cisa_cyber_essentials_your_data_5
-  title: Your Data-5
-  description: Leverage protections for backups, including physical security, encryption and offline copies.
-  section-code: "5"
-  tags:
-    category:
-    - Compliance
-    cisa_cyber_essentials:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_backup_recovery_point_encryption_enabled
-  - aws_backup_recovery_point_manual_deletion_disabled
+id: aws_cisa_cyber_essentials_your_data_5
+title: Your Data-5
+description: Leverage protections for backups, including physical security, encryption and offline copies.
+section-code: "5"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cisa_cyber_essentials:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_backup_recovery_point_encryption_enabled
+- aws_backup_recovery_point_manual_deletion_disabled

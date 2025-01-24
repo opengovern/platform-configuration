@@ -1,20 +1,23 @@
+id: aws_cis_controls_v8_ig1_11
+title: Data Recovery
+description: Establish and maintain data recovery practices sufficient to restore in-scope enterprise assets to a pre-incident and trusted state.
+section-code: "11"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cis_controls_v8_ig1:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_cis_controls_v8_ig1_11
-  title: Data Recovery
-  description: Establish and maintain data recovery practices sufficient to restore in-scope enterprise assets to a pre-incident and trusted state.
-  section-code: "11"
-  tags:
-    category:
-    - Compliance
-    cis_controls_v8_ig1:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_cis_controls_v8_ig1_11_2
-  - id: aws_cis_controls_v8_ig1_11_3
-  - id: aws_cis_controls_v8_ig1_11_4
+- id: aws_cis_controls_v8_ig1_11_2
+  type: ""
+- id: aws_cis_controls_v8_ig1_11_3
+  type: ""
+- id: aws_cis_controls_v8_ig1_11_4
+  type: ""

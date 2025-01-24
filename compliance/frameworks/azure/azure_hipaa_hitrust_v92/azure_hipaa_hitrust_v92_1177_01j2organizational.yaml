@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1177_01j2organizational
-  title: User IDs assigned to vendors are reviewed in accordance with the organization's access review policy, at a minimum annually
-  description: User IDs assigned to vendors are reviewed in accordance with the organization's access review policy, at a minimum annually
-  section-code: azure_hipaa_hitrust_v92_1177_01j2organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/IAM
-    type:
-    - Benchmark
-  controls:
-  - azure_iam_user_with_write_permission_on_subscription_mfa_enabled
+id: azure_hipaa_hitrust_v92_1177_01j2organizational
+title: User IDs assigned to vendors are reviewed in accordance with the organization's access review policy, at a minimum annually
+description: User IDs assigned to vendors are reviewed in accordance with the organization's access review policy, at a minimum annually
+section-code: azure_hipaa_hitrust_v92_1177_01j2organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/IAM
+  type:
+  - Benchmark
+controls:
+- azure_iam_user_with_write_permission_on_subscription_mfa_enabled

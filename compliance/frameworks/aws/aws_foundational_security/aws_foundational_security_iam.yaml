@@ -1,24 +1,24 @@
-control-group:
-  id: aws_foundational_security_iam
-  title: IAM
-  description: IAM
-  section-code: iam
-  tags:
-    aws_foundational_security:
-    - "true"
-    category:
-    - Compliance
-    plugin:
-    - aws
-    service:
-    - AWS/IAM
-    type:
-    - Benchmark
-  controls:
-  - aws_foundational_security_iam_1
-  - aws_foundational_security_iam_2
-  - aws_foundational_security_iam_3
-  - aws_foundational_security_iam_4
-  - aws_foundational_security_iam_5
-  - aws_foundational_security_iam_8
-  - aws_foundational_security_iam_21
+id: aws_foundational_security_iam
+title: IAM
+description: IAM
+section-code: iam
+type: control-group
+tags:
+  aws_foundational_security:
+  - "true"
+  category:
+  - Compliance
+  plugin:
+  - aws
+  service:
+  - AWS/IAM
+  type:
+  - Benchmark
+controls:
+- aws_foundational_security_iam_1
+- aws_foundational_security_iam_2
+- aws_foundational_security_iam_3
+- aws_foundational_security_iam_4
+- aws_foundational_security_iam_5
+- aws_foundational_security_iam_8
+- aws_foundational_security_iam_21

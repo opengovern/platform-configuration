@@ -1,31 +1,33 @@
+id: azure_cis_v210_1
+title: Identity and Access Management
+description: Identity and Access Management
+section-code: "1"
+type: control-group
 control-group:
-  id: azure_cis_v210_1
-  title: Identity and Access Management
-  description: Identity and Access Management
-  section-code: "1"
-  control-group:
-  - id: azure_cis_v210_1_1
-  - id: azure_cis_v210_1_2
-  controls:
-  - azure_cis_v210_1_4
-  - azure_cis_v210_1_5
-  - azure_cis_v210_1_6
-  - azure_cis_v210_1_7
-  - azure_cis_v210_1_8
-  - azure_cis_v210_1_9
-  - azure_cis_v210_1_10
-  - azure_cis_v210_1_11
-  - azure_cis_v210_1_12
-  - azure_cis_v210_1_13
-  - azure_cis_v210_1_14
-  - azure_cis_v210_1_15
-  - azure_cis_v210_1_16
-  - azure_cis_v210_1_17
-  - azure_cis_v210_1_18
-  - azure_cis_v210_1_19
-  - azure_cis_v210_1_20
-  - azure_cis_v210_1_21
-  - azure_cis_v210_1_22
-  - azure_cis_v210_1_23
-  - azure_cis_v210_1_24
-  - azure_cis_v210_1_25
+- id: azure_cis_v210_1_1
+  type: ""
+- id: azure_cis_v210_1_2
+  type: ""
+controls:
+- azure_cis_v210_1_4
+- azure_cis_v210_1_5
+- azure_cis_v210_1_6
+- azure_cis_v210_1_7
+- azure_cis_v210_1_8
+- azure_cis_v210_1_9
+- azure_cis_v210_1_10
+- azure_cis_v210_1_11
+- azure_cis_v210_1_12
+- azure_cis_v210_1_13
+- azure_cis_v210_1_14
+- azure_cis_v210_1_15
+- azure_cis_v210_1_16
+- azure_cis_v210_1_17
+- azure_cis_v210_1_18
+- azure_cis_v210_1_19
+- azure_cis_v210_1_20
+- azure_cis_v210_1_21
+- azure_cis_v210_1_22
+- azure_cis_v210_1_23
+- azure_cis_v210_1_24
+- azure_cis_v210_1_25

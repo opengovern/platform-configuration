@@ -1,7 +1,7 @@
-control-group:
-  id: aws_pci_dss_v321_requirement_8_1_2
-  title: 1.2 Control addition, deletion, and modification of user IDs, credentials, and other identifier objects
-  description: To ensure that user accounts granted access to systems are all valid and recognized users, strong processes must manage all changes to user IDs and other authentication credentials, including adding new ones and modifying or deleting existing ones.
-  section-code: "2"
-  controls:
-  - aws_log_metric_filter_iam_policy
+id: aws_pci_dss_v321_requirement_8_1_2
+title: 1.2 Control addition, deletion, and modification of user IDs, credentials, and other identifier objects
+description: To ensure that user accounts granted access to systems are all valid and recognized users, strong processes must manage all changes to user IDs and other authentication credentials, including adding new ones and modifying or deleting existing ones.
+section-code: "2"
+type: control-group
+controls:
+- aws_log_metric_filter_iam_policy

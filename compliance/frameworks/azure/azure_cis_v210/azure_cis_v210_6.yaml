@@ -1,12 +1,12 @@
-control-group:
-  id: azure_cis_v210_6
-  title: Networking
-  description: Networking
-  section-code: "6"
-  controls:
-  - azure_cis_v210_6_1
-  - azure_cis_v210_6_2
-  - azure_cis_v210_6_3
-  - azure_cis_v210_6_4
-  - azure_cis_v210_6_6
-  - azure_cis_v210_6_7
+id: azure_cis_v210_6
+title: Networking
+description: Networking
+section-code: "6"
+type: control-group
+controls:
+- azure_cis_v210_6_1
+- azure_cis_v210_6_2
+- azure_cis_v210_6_3
+- azure_cis_v210_6_4
+- azure_cis_v210_6_6
+- azure_cis_v210_6_7

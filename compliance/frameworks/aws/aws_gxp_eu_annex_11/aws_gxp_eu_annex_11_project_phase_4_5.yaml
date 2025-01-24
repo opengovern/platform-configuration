@@ -1,18 +1,18 @@
-control-group:
-  id: aws_gxp_eu_annex_11_project_phase_4_5
-  title: Validation - Development Quality
-  description: The regulated user should take all reasonable steps, to ensure that the system has been developed in accordance with an appropriate quality management system. The supplier should be assessed appropriately.
-  section-code: "5"
-  tags:
-    category:
-    - Compliance
-    gxp_eu_annex_11:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_config_enabled_all_regions
+id: aws_gxp_eu_annex_11_project_phase_4_5
+title: Validation - Development Quality
+description: The regulated user should take all reasonable steps, to ensure that the system has been developed in accordance with an appropriate quality management system. The supplier should be assessed appropriately.
+section-code: "5"
+type: control-group
+tags:
+  category:
+  - Compliance
+  gxp_eu_annex_11:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_config_enabled_all_regions

@@ -1,26 +1,31 @@
+id: azure_cis_v200_4
+title: Database Services
+description: Database Services
+section-code: "4"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cis:
+  - "true"
+  cis_section_id:
+  - "4"
+  cis_version:
+  - v2.0.0
+  plugin:
+  - azure
+  service:
+  - Azure
+  type:
+  - Benchmark
 control-group:
-  id: azure_cis_v200_4
-  title: Database Services
-  description: Database Services
-  section-code: "4"
-  tags:
-    category:
-    - Compliance
-    cis:
-    - "true"
-    cis_section_id:
-    - "4"
-    cis_version:
-    - v2.0.0
-    plugin:
-    - azure
-    service:
-    - Azure
-    type:
-    - Benchmark
-  control-group:
-  - id: azure_cis_v200_4_1
-  - id: azure_cis_v200_4_2
-  - id: azure_cis_v200_4_3
-  - id: azure_cis_v200_4_4
-  - id: azure_cis_v200_4_5
+- id: azure_cis_v200_4_1
+  type: ""
+- id: azure_cis_v200_4_2
+  type: ""
+- id: azure_cis_v200_4_3
+  type: ""
+- id: azure_cis_v200_4_4
+  type: ""
+- id: azure_cis_v200_4_5
+  type: ""

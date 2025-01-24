@@ -1,10 +1,10 @@
-control-group:
-  id: aws_rbi_itf_nbfc_3_1_a
-  title: 1.a Identification and Classification of Information Assets
-  description: NBFCs shall maintain detailed inventory of Information Asset with distinct and clear identification of the asset.
-  section-code: a
-  controls:
-  - aws_ebs_volume_unused
-  - aws_ec2_instance_ssm_managed
-  - aws_ec2_stopped_instance_30_days
-  - aws_ecr_repository_tag_immutability_enabled
+id: aws_rbi_itf_nbfc_3_1_a
+title: 1.a Identification and Classification of Information Assets
+description: NBFCs shall maintain detailed inventory of Information Asset with distinct and clear identification of the asset.
+section-code: a
+type: control-group
+controls:
+- aws_ebs_volume_unused
+- aws_ec2_instance_ssm_managed
+- aws_ec2_stopped_instance_30_days
+- aws_ecr_repository_tag_immutability_enabled

@@ -1,7 +1,7 @@
-control-group:
-  id: azure_all_controls_machinelearning
-  title: Machine Learning
-  description: This section contains recommendations for configuring Machine Learning resources.
-  section-code: machinelearning
-  controls:
-  - azure_machine_learning_workspace_encrypted_with_cmk
+id: azure_all_controls_machinelearning
+title: Machine Learning
+description: This section contains recommendations for configuring Machine Learning resources.
+section-code: machinelearning
+type: control-group
+controls:
+- azure_machine_learning_workspace_encrypted_with_cmk

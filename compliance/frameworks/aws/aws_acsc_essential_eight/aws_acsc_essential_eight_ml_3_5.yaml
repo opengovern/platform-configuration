@@ -1,20 +1,34 @@
+id: aws_acsc_essential_eight_ml_3_5
+title: "ACSC-EE-ML3-5: Restrict administrative privileges ML3"
+description: Requests for privileged access to systems and applications are validated when first requested.
+section-code: "5"
+type: control-group
 control-group:
-  id: aws_acsc_essential_eight_ml_3_5
-  title: "ACSC-EE-ML3-5: Restrict administrative privileges ML3"
-  description: Requests for privileged access to systems and applications are validated when first requested.
-  section-code: "5"
-  control-group:
-  - id: aws_acsc_essential_eight_ml_3_5_2
-  - id: aws_acsc_essential_eight_ml_3_5_3
-  - id: aws_acsc_essential_eight_ml_3_5_4
-  - id: aws_acsc_essential_eight_ml_3_5_5
-  - id: aws_acsc_essential_eight_ml_3_5_6
-  - id: aws_acsc_essential_eight_ml_3_5_7
-  - id: aws_acsc_essential_eight_ml_3_5_8
-  - id: aws_acsc_essential_eight_ml_3_5_9
-  - id: aws_acsc_essential_eight_ml_3_5_11
-  - id: aws_acsc_essential_eight_ml_3_5_12
-  - id: aws_acsc_essential_eight_ml_3_5_14
-  - id: aws_acsc_essential_eight_ml_3_5_15
-  - id: aws_acsc_essential_eight_ml_3_5_16
-  - id: aws_acsc_essential_eight_ml_3_5_17
+- id: aws_acsc_essential_eight_ml_3_5_2
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_5_3
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_5_4
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_5_5
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_5_6
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_5_7
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_5_8
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_5_9
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_5_11
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_5_12
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_5_14
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_5_15
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_5_16
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_5_17
+  type: ""

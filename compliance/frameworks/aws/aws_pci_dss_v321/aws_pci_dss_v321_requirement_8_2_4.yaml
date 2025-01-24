@@ -1,10 +1,12 @@
+id: aws_pci_dss_v321_requirement_8_2_4
+title: 2.4 Change user passwords/passphrases at least once every 90 days
+description: "Passwords/passphrases that are valid for a long time without a change provide malicious individuals with more time to work on breaking the password/phrase. Note: Testing Procedure 8.2.4.b is an additional procedure that only applies if the entity being assessed is a service provider."
+section-code: "4"
+type: control-group
 control-group:
-  id: aws_pci_dss_v321_requirement_8_2_4
-  title: 2.4 Change user passwords/passphrases at least once every 90 days
-  description: "Passwords/passphrases that are valid for a long time without a change provide malicious individuals with more time to work on breaking the password/phrase. Note: Testing Procedure 8.2.4.b is an additional procedure that only applies if the entity being assessed is a service provider."
-  section-code: "4"
-  control-group:
-  - id: aws_pci_dss_v321_requirement_8_2_4_a
-  - id: aws_pci_dss_v321_requirement_8_2_4_b
-  controls:
-  - aws_iam_account_password_policy_strong_min_reuse_24
+- id: aws_pci_dss_v321_requirement_8_2_4_a
+  type: ""
+- id: aws_pci_dss_v321_requirement_8_2_4_b
+  type: ""
+controls:
+- aws_iam_account_password_policy_strong_min_reuse_24

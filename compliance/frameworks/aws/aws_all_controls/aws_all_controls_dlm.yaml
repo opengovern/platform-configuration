@@ -1,7 +1,7 @@
-control-group:
-  id: aws_all_controls_dlm
-  title: DLM
-  description: This section contains recommendations for configuring DLM resources.
-  section-code: dlm
-  controls:
-  - aws_dlm_ebs_snapshot_lifecycle_policy_enabled
+id: aws_all_controls_dlm
+title: DLM
+description: This section contains recommendations for configuring DLM resources.
+section-code: dlm
+type: control-group
+controls:
+- aws_dlm_ebs_snapshot_lifecycle_policy_enabled

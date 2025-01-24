@@ -1,23 +1,23 @@
-control-group:
-  id: aws_nist_800_53_rev_5_cp_1_a_2
-  title: CP-1(a)(2)
-  description: "a. Develop, document, and disseminate to [Assignment: organization-defined personnel or roles]: 2. Procedures to facilitate the implementation of the contingency planning policy and the associated contingency planning controls."
-  section-code: "2"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_dynamodb_table_auto_scaling_enabled
-  - aws_elb_application_lb_deletion_protection_enabled
-  - aws_elb_classic_lb_cross_zone_load_balancing_enabled
-  - aws_rds_db_instance_deletion_protection_enabled
-  - aws_rds_db_instance_multiple_az_enabled
-  - aws_vpc_vpn_tunnel_up
+id: aws_nist_800_53_rev_5_cp_1_a_2
+title: CP-1(a)(2)
+description: "a. Develop, document, and disseminate to [Assignment: organization-defined personnel or roles]: 2. Procedures to facilitate the implementation of the contingency planning policy and the associated contingency planning controls."
+section-code: "2"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_dynamodb_table_auto_scaling_enabled
+- aws_elb_application_lb_deletion_protection_enabled
+- aws_elb_classic_lb_cross_zone_load_balancing_enabled
+- aws_rds_db_instance_deletion_protection_enabled
+- aws_rds_db_instance_multiple_az_enabled
+- aws_vpc_vpn_tunnel_up

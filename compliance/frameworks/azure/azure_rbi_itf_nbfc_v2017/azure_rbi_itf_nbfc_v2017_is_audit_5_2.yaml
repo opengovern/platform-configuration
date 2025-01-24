@@ -1,9 +1,9 @@
-control-group:
-  id: azure_rbi_itf_nbfc_v2017_is_audit_5_2
-  title: Policy for Information System Audit (IS Audit)-5.2
-  description: Policy for Information System Audit (IS Audit)-5.2
-  section-code: "2"
-  controls:
-  - azure_mariadb_server_geo_redundant_backup_enabled
-  - azure_mysql_db_server_geo_redundant_backup_enabled
-  - azure_postgres_db_server_geo_redundant_backup_enabled
+id: azure_rbi_itf_nbfc_v2017_is_audit_5_2
+title: Policy for Information System Audit (IS Audit)-5.2
+description: Policy for Information System Audit (IS Audit)-5.2
+section-code: "2"
+type: control-group
+controls:
+- azure_mariadb_server_geo_redundant_backup_enabled
+- azure_mysql_db_server_geo_redundant_backup_enabled
+- azure_postgres_db_server_geo_redundant_backup_enabled

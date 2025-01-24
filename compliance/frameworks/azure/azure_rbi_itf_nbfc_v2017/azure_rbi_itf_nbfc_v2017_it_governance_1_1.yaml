@@ -1,9 +1,9 @@
-control-group:
-  id: azure_rbi_itf_nbfc_v2017_it_governance_1_1
-  title: IT Governance-1.1
-  description: IT Governance-1.1
-  section-code: "1"
-  controls:
-  - azure_compute_vm_jit_access_protected
-  - azure_network_interface_ip_forwarding_disabled
-  - azure_network_security_group_remote_access_restricted
+id: azure_rbi_itf_nbfc_v2017_it_governance_1_1
+title: IT Governance-1.1
+description: IT Governance-1.1
+section-code: "1"
+type: control-group
+controls:
+- azure_compute_vm_jit_access_protected
+- azure_network_interface_ip_forwarding_disabled
+- azure_network_security_group_remote_access_restricted

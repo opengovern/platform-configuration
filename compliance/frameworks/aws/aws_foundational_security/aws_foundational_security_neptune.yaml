@@ -1,14 +1,14 @@
-control-group:
-  id: aws_foundational_security_neptune
-  title: Neptune
-  description: Neptune
-  section-code: neptune
-  controls:
-  - aws_foundational_security_neptune_1
-  - aws_foundational_security_neptune_2
-  - aws_foundational_security_neptune_3
-  - aws_foundational_security_neptune_4
-  - aws_foundational_security_neptune_5
-  - aws_foundational_security_neptune_6
-  - aws_foundational_security_neptune_7
-  - aws_foundational_security_neptune_8
+id: aws_foundational_security_neptune
+title: Neptune
+description: Neptune
+section-code: neptune
+type: control-group
+controls:
+- aws_foundational_security_neptune_1
+- aws_foundational_security_neptune_2
+- aws_foundational_security_neptune_3
+- aws_foundational_security_neptune_4
+- aws_foundational_security_neptune_5
+- aws_foundational_security_neptune_6
+- aws_foundational_security_neptune_7
+- aws_foundational_security_neptune_8

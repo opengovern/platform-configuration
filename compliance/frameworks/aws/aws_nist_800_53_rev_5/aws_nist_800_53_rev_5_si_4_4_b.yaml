@@ -1,18 +1,18 @@
-control-group:
-  id: aws_nist_800_53_rev_5_si_4_4_b
-  title: SI-4(4)(b)
-  description: "Monitor inbound and outbound communications traffic [Assignment: organization-defined frequency] for [Assignment: organization-defined unusual or unauthorized activities or conditions]."
-  section-code: b
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/GuardDuty
-    type:
-    - Benchmark
-  controls:
-  - aws_guardduty_enabled
+id: aws_nist_800_53_rev_5_si_4_4_b
+title: SI-4(4)(b)
+description: "Monitor inbound and outbound communications traffic [Assignment: organization-defined frequency] for [Assignment: organization-defined unusual or unauthorized activities or conditions]."
+section-code: b
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/GuardDuty
+  type:
+  - Benchmark
+controls:
+- aws_guardduty_enabled

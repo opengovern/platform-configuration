@@ -1,20 +1,21 @@
+id: aws_fedramp_moderate_rev_4_si_7
+title: benchmark.nist_800_53_rev_4_si_7.title
+description: benchmark.nist_800_53_rev_4_si_7.description
+section-code: "7"
+type: control-group
+tags:
+  category:
+  - Compliance
+  fedramp_moderate_rev_4:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_fedramp_moderate_rev_4_si_7
-  title: benchmark.nist_800_53_rev_4_si_7.title
-  description: benchmark.nist_800_53_rev_4_si_7.description
-  section-code: "7"
-  tags:
-    category:
-    - Compliance
-    fedramp_moderate_rev_4:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_fedramp_moderate_rev_4_si_7_1
-  controls:
-  - aws_cloudtrail_trail_validation_enabled
+- id: aws_fedramp_moderate_rev_4_si_7_1
+  type: ""
+controls:
+- aws_cloudtrail_trail_validation_enabled

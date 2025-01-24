@@ -1,18 +1,19 @@
+id: aws_nist_800_53_rev_5_au_4
+title: Audit Log Stprage Capacity (AU-4)
+description: "Allocate audit log storage capacity to accommodate [Assignment: organization-defined audit log retention requirements]."
+section-code: "4"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_5_au_4
-  title: Audit Log Stprage Capacity (AU-4)
-  description: "Allocate audit log storage capacity to accommodate [Assignment: organization-defined audit log retention requirements]."
-  section-code: "4"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_5_au_4_1
+- id: aws_nist_800_53_rev_5_au_4_1
+  type: ""

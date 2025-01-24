@@ -1,7 +1,7 @@
-control-group:
-  id: aws_rbi_itf_nbfc_4_4_g
-  title: 4.g Fraud analysis
-  description: Suspicious transaction analysis, embezzlement, theft or suspected money-laundering, misappropriation of assets, manipulation of financial records etc. The regulatory requirement of reporting fraud to RBI should be system driven.
-  section-code: g
-  controls:
-  - aws_guardduty_enabled
+id: aws_rbi_itf_nbfc_4_4_g
+title: 4.g Fraud analysis
+description: Suspicious transaction analysis, embezzlement, theft or suspected money-laundering, misappropriation of assets, manipulation of financial records etc. The regulatory requirement of reporting fraud to RBI should be system driven.
+section-code: g
+type: control-group
+controls:
+- aws_guardduty_enabled

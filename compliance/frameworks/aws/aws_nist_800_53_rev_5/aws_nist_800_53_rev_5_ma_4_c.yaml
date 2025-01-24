@@ -1,18 +1,18 @@
-control-group:
-  id: aws_nist_800_53_rev_5_ma_4_c
-  title: MA-4(c)
-  description: Employ strong authentication in the establishment of nonlocal maintenance and diagnostic sessions.
-  section-code: c
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/IAM
-    type:
-    - Benchmark
-  controls:
-  - aws_iam_account_password_policy_min_length_14
+id: aws_nist_800_53_rev_5_ma_4_c
+title: MA-4(c)
+description: Employ strong authentication in the establishment of nonlocal maintenance and diagnostic sessions.
+section-code: c
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/IAM
+  type:
+  - Benchmark
+controls:
+- aws_iam_account_password_policy_min_length_14

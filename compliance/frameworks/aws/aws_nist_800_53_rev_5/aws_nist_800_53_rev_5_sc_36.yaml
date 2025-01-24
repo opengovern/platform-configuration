@@ -1,23 +1,24 @@
+id: aws_nist_800_53_rev_5_sc_36
+title: Distributed Processing And Storage (SC-36)
+description: "Distribute the following processing and storage components across multiple [Selection: physical locations; logical domains]: [Assignment: organization-defined processing and storage components]."
+section-code: "36"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_5_sc_36
-  title: Distributed Processing And Storage (SC-36)
-  description: "Distribute the following processing and storage components across multiple [Selection: physical locations; logical domains]: [Assignment: organization-defined processing and storage components]."
-  section-code: "36"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_5_sc_36_1_a
-  controls:
-  - aws_dynamodb_table_auto_scaling_enabled
-  - aws_elb_classic_lb_cross_zone_load_balancing_enabled
-  - aws_rds_db_instance_multiple_az_enabled
-  - aws_vpc_vpn_tunnel_up
+- id: aws_nist_800_53_rev_5_sc_36_1_a
+  type: ""
+controls:
+- aws_dynamodb_table_auto_scaling_enabled
+- aws_elb_classic_lb_cross_zone_load_balancing_enabled
+- aws_rds_db_instance_multiple_az_enabled
+- aws_vpc_vpn_tunnel_up

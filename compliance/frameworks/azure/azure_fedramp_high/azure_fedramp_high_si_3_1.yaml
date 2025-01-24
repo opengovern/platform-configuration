@@ -1,8 +1,8 @@
-control-group:
-  id: azure_fedramp_high_si_3_1
-  title: SI-3(1) Central Management
-  description: SI-3(1) Central Management
-  section-code: "1"
-  controls:
-  - azure_compute_vm_windows_defender_exploit_guard_enabled
-  - azure_securitycenter_azure_defender_on_for_server
+id: azure_fedramp_high_si_3_1
+title: SI-3(1) Central Management
+description: SI-3(1) Central Management
+section-code: "1"
+type: control-group
+controls:
+- azure_compute_vm_windows_defender_exploit_guard_enabled
+- azure_securitycenter_azure_defender_on_for_server

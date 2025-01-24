@@ -1,25 +1,33 @@
+id: aws_nist_800_171_rev_2_3_4
+title: Configuration Management
+description: CM controls are specific to an organization's configuration management policies. This includes a baseline configuration to operate as the basis for future builds or changes to information systems. Additionally, this includes information system component inventories and a security impact analysis control.
+section-code: "3_4"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_171_rev_2:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_171_rev_2_3_4
-  title: Configuration Management
-  description: CM controls are specific to an organization's configuration management policies. This includes a baseline configuration to operate as the basis for future builds or changes to information systems. Additionally, this includes information system component inventories and a security impact analysis control.
-  section-code: "3_4"
-  tags:
-    category:
-    - Compliance
-    nist_800_171_rev_2:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_171_rev_2_3_4_1
-  - id: aws_nist_800_171_rev_2_3_4_2
-  - id: aws_nist_800_171_rev_2_3_4_3
-  - id: aws_nist_800_171_rev_2_3_4_4
-  - id: aws_nist_800_171_rev_2_3_4_5
-  - id: aws_nist_800_171_rev_2_3_4_6
-  - id: aws_nist_800_171_rev_2_3_4_7
-  - id: aws_nist_800_171_rev_2_3_4_9
+- id: aws_nist_800_171_rev_2_3_4_1
+  type: ""
+- id: aws_nist_800_171_rev_2_3_4_2
+  type: ""
+- id: aws_nist_800_171_rev_2_3_4_3
+  type: ""
+- id: aws_nist_800_171_rev_2_3_4_4
+  type: ""
+- id: aws_nist_800_171_rev_2_3_4_5
+  type: ""
+- id: aws_nist_800_171_rev_2_3_4_6
+  type: ""
+- id: aws_nist_800_171_rev_2_3_4_7
+  type: ""
+- id: aws_nist_800_171_rev_2_3_4_9
+  type: ""

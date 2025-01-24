@@ -1,13 +1,13 @@
-control-group:
-  id: aws_all_controls_route53
-  title: Route 53
-  description: This section contains recommendations for configuring Route 53 resources.
-  section-code: route53
-  controls:
-  - aws_route53_domain_auto_renew_enabled
-  - aws_route53_domain_expires_30_days
-  - aws_route53_domain_expires_7_days
-  - aws_route53_domain_not_expired
-  - aws_route53_domain_privacy_protection_enabled
-  - aws_route53_domain_transfer_lock_enabled
-  - aws_route53_zone_query_logging_enabled
+id: aws_all_controls_route53
+title: Route 53
+description: This section contains recommendations for configuring Route 53 resources.
+section-code: route53
+type: control-group
+controls:
+- aws_route53_domain_auto_renew_enabled
+- aws_route53_domain_expires_30_days
+- aws_route53_domain_expires_7_days
+- aws_route53_domain_not_expired
+- aws_route53_domain_privacy_protection_enabled
+- aws_route53_domain_transfer_lock_enabled
+- aws_route53_zone_query_logging_enabled

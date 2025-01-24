@@ -1,35 +1,53 @@
+id: aws_ffiec_d_3_pc
+title: Preventative Controls (PC)
+description: Preventative Controls deter and prevent cyber attacks and include infrastructure management, access management, device and end-point security, and secure coding.
+section-code: pc
+type: control-group
+tags:
+  category:
+  - Compliance
+  ffiec:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_ffiec_d_3_pc
-  title: Preventative Controls (PC)
-  description: Preventative Controls deter and prevent cyber attacks and include infrastructure management, access management, device and end-point security, and secure coding.
-  section-code: pc
-  tags:
-    category:
-    - Compliance
-    ffiec:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_ffiec_d_3_pc_am_b_1
-  - id: aws_ffiec_d_3_pc_am_b_10
-  - id: aws_ffiec_d_3_pc_am_b_12
-  - id: aws_ffiec_d_3_pc_am_b_13
-  - id: aws_ffiec_d_3_pc_am_b_15
-  - id: aws_ffiec_d_3_pc_am_b_16
-  - id: aws_ffiec_d_3_pc_am_b_2
-  - id: aws_ffiec_d_3_pc_am_b_3
-  - id: aws_ffiec_d_3_pc_am_b_6
-  - id: aws_ffiec_d_3_pc_am_b_7
-  - id: aws_ffiec_d_3_pc_am_b_8
-  - id: aws_ffiec_d_3_pc_im_b_1
-  - id: aws_ffiec_d_3_pc_im_b_2
-  - id: aws_ffiec_d_3_pc_im_b_3
-  - id: aws_ffiec_d_3_pc_im_b_5
-  - id: aws_ffiec_d_3_pc_im_b_6
-  - id: aws_ffiec_d_3_pc_im_b_7
-  - id: aws_ffiec_d_3_pc_se_b_1
+- id: aws_ffiec_d_3_pc_am_b_1
+  type: ""
+- id: aws_ffiec_d_3_pc_am_b_10
+  type: ""
+- id: aws_ffiec_d_3_pc_am_b_12
+  type: ""
+- id: aws_ffiec_d_3_pc_am_b_13
+  type: ""
+- id: aws_ffiec_d_3_pc_am_b_15
+  type: ""
+- id: aws_ffiec_d_3_pc_am_b_16
+  type: ""
+- id: aws_ffiec_d_3_pc_am_b_2
+  type: ""
+- id: aws_ffiec_d_3_pc_am_b_3
+  type: ""
+- id: aws_ffiec_d_3_pc_am_b_6
+  type: ""
+- id: aws_ffiec_d_3_pc_am_b_7
+  type: ""
+- id: aws_ffiec_d_3_pc_am_b_8
+  type: ""
+- id: aws_ffiec_d_3_pc_im_b_1
+  type: ""
+- id: aws_ffiec_d_3_pc_im_b_2
+  type: ""
+- id: aws_ffiec_d_3_pc_im_b_3
+  type: ""
+- id: aws_ffiec_d_3_pc_im_b_5
+  type: ""
+- id: aws_ffiec_d_3_pc_im_b_6
+  type: ""
+- id: aws_ffiec_d_3_pc_im_b_7
+  type: ""
+- id: aws_ffiec_d_3_pc_se_b_1
+  type: ""

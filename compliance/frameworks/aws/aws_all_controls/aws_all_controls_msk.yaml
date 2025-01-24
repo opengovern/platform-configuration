@@ -1,7 +1,7 @@
-control-group:
-  id: aws_all_controls_msk
-  title: MSK
-  description: This section contains recommendations for configuring MSK resources.
-  section-code: msk
-  controls:
-  - aws_msk_cluster_encryption_in_transit_with_tls_enabled
+id: aws_all_controls_msk
+title: MSK
+description: This section contains recommendations for configuring MSK resources.
+section-code: msk
+type: control-group
+controls:
+- aws_msk_cluster_encryption_in_transit_with_tls_enabled

@@ -1,7 +1,7 @@
-control-group:
-  id: aws_all_controls_securityhub
-  title: Security Hub
-  description: This section contains recommendations for configuring Security Hub resources.
-  section-code: securityhub
-  controls:
-  - aws_securityhub_enabled
+id: aws_all_controls_securityhub
+title: Security Hub
+description: This section contains recommendations for configuring Security Hub resources.
+section-code: securityhub
+type: control-group
+controls:
+- aws_securityhub_enabled

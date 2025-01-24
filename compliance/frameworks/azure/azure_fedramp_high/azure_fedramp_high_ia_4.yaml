@@ -1,10 +1,10 @@
-control-group:
-  id: azure_fedramp_high_ia_4
-  title: Identifier Management (IA-4)
-  description: Manage information system identifiers for users and devices. Automate authorizing and disabling users to prevent misuse.
-  section-code: "4"
-  controls:
-  - azure_appservice_function_app_uses_managed_identity
-  - azure_appservice_web_app_uses_managed_identity
-  - azure_servicefabric_cluster_active_directory_authentication_enabled
-  - azure_sql_server_azure_ad_authentication_enabled
+id: azure_fedramp_high_ia_4
+title: Identifier Management (IA-4)
+description: Manage information system identifiers for users and devices. Automate authorizing and disabling users to prevent misuse.
+section-code: "4"
+type: control-group
+controls:
+- azure_appservice_function_app_uses_managed_identity
+- azure_appservice_web_app_uses_managed_identity
+- azure_servicefabric_cluster_active_directory_authentication_enabled
+- azure_sql_server_azure_ad_authentication_enabled

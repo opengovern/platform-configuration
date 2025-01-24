@@ -1,19 +1,19 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1207_09aa2system
-  title: 09aa2System.4-09.aa 09.10 Monitoring
-  description: Audit records are retained for 90 days and older audit records are archived for one year.
-  section-code: azure_hipaa_hitrust_v92_1207_09aa2system
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure
-    type:
-    - Benchmark
-  controls:
-  - azure_eventhub_namespace_logging_enabled
-  - azure_stream_analytics_job_logging_enabled
+id: azure_hipaa_hitrust_v92_1207_09aa2system
+title: 09aa2System.4-09.aa 09.10 Monitoring
+description: Audit records are retained for 90 days and older audit records are archived for one year.
+section-code: azure_hipaa_hitrust_v92_1207_09aa2system
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure
+  type:
+  - Benchmark
+controls:
+- azure_eventhub_namespace_logging_enabled
+- azure_stream_analytics_job_logging_enabled

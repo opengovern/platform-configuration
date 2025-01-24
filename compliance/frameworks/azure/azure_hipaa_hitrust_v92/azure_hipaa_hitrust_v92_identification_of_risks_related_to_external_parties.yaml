@@ -1,21 +1,25 @@
+id: azure_hipaa_hitrust_v92_identification_of_risks_related_to_external_parties
+title: Identification of Risks Related to External Parties
+description: The risks to the organization's information and information assets from business processes involving external parties shall be identified, and appropriate controls implemented before granting access.
+section-code: identification_of_risks_related_to_external_parties
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure
+  type:
+  - Benchmark
 control-group:
-  id: azure_hipaa_hitrust_v92_identification_of_risks_related_to_external_parties
-  title: Identification of Risks Related to External Parties
-  description: The risks to the organization's information and information assets from business processes involving external parties shall be identified, and appropriate controls implemented before granting access.
-  section-code: identification_of_risks_related_to_external_parties
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure
-    type:
-    - Benchmark
-  control-group:
-  - id: azure_hipaa_hitrust_v92_1401_05i1organizational
-  - id: azure_hipaa_hitrust_v92_1402_05i1organizational
-  - id: azure_hipaa_hitrust_v92_1403_05i1organizational
-  - id: azure_hipaa_hitrust_v92_1418_05i1organizational
+- id: azure_hipaa_hitrust_v92_1401_05i1organizational
+  type: ""
+- id: azure_hipaa_hitrust_v92_1402_05i1organizational
+  type: ""
+- id: azure_hipaa_hitrust_v92_1403_05i1organizational
+  type: ""
+- id: azure_hipaa_hitrust_v92_1418_05i1organizational
+  type: ""

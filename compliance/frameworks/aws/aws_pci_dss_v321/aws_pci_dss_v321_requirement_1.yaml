@@ -1,9 +1,12 @@
+id: aws_pci_dss_v321_requirement_1
+title: "Requirement 1: Install and maintain a firewall configuration to protect cardholder data"
+description: A firewall examines all network traffic and blocks those transmissions that do not meet the specified security criteria. All systems must be protected from unauthorized access from untrusted networks.
+section-code: requirement_1
+type: control-group
 control-group:
-  id: aws_pci_dss_v321_requirement_1
-  title: "Requirement 1: Install and maintain a firewall configuration to protect cardholder data"
-  description: A firewall examines all network traffic and blocks those transmissions that do not meet the specified security criteria. All systems must be protected from unauthorized access from untrusted networks.
-  section-code: requirement_1
-  control-group:
-  - id: aws_pci_dss_v321_requirement_1_1
-  - id: aws_pci_dss_v321_requirement_1_2
-  - id: aws_pci_dss_v321_requirement_1_3
+- id: aws_pci_dss_v321_requirement_1_1
+  type: ""
+- id: aws_pci_dss_v321_requirement_1_2
+  type: ""
+- id: aws_pci_dss_v321_requirement_1_3
+  type: ""

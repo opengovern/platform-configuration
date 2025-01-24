@@ -1,19 +1,19 @@
-control-group:
-  id: aws_foundational_security_elasticbeanstalk
-  title: Elastic Beanstalk
-  description: Elastic Beanstalk
-  section-code: elasticbeanstalk
-  tags:
-    aws_foundational_security:
-    - "true"
-    category:
-    - Compliance
-    plugin:
-    - aws
-    service:
-    - AWS/ElasticBeanstalk
-    type:
-    - Benchmark
-  controls:
-  - aws_foundational_security_elasticbeanstalk_1
-  - aws_foundational_security_elasticbeanstalk_3
+id: aws_foundational_security_elasticbeanstalk
+title: Elastic Beanstalk
+description: Elastic Beanstalk
+section-code: elasticbeanstalk
+type: control-group
+tags:
+  aws_foundational_security:
+  - "true"
+  category:
+  - Compliance
+  plugin:
+  - aws
+  service:
+  - AWS/ElasticBeanstalk
+  type:
+  - Benchmark
+controls:
+- aws_foundational_security_elasticbeanstalk_1
+- aws_foundational_security_elasticbeanstalk_3

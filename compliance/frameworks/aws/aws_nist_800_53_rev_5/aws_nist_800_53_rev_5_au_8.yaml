@@ -1,18 +1,19 @@
+id: aws_nist_800_53_rev_5_au_8
+title: Time Stamps (AU-8)
+description: Use internal system clocks to generate time stamps for audit records.
+section-code: "8"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_5_au_8
-  title: Time Stamps (AU-8)
-  description: Use internal system clocks to generate time stamps for audit records.
-  section-code: "8"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_5_au_8_b
+- id: aws_nist_800_53_rev_5_au_8_b
+  type: ""

@@ -1,8 +1,8 @@
-control-group:
-  id: azure_fedramp_high_ac_2_7
-  title: AC-2(7) Role-Based Schemes
-  description: "The organization: Establishes and administers privileged user accounts in accordance with a role-based access scheme that organizes allowed information system access and privileges into roles; Monitors privileged role assignments; and Takes [Assignment: organization-defined actions] when privileged role assignments are no longer appropriate."
-  section-code: "7"
-  controls:
-  - azure_iam_no_custom_role
-  - azure_sql_server_azure_ad_authentication_enabled
+id: azure_fedramp_high_ac_2_7
+title: AC-2(7) Role-Based Schemes
+description: "The organization: Establishes and administers privileged user accounts in accordance with a role-based access scheme that organizes allowed information system access and privileges into roles; Monitors privileged role assignments; and Takes [Assignment: organization-defined actions] when privileged role assignments are no longer appropriate."
+section-code: "7"
+type: control-group
+controls:
+- azure_iam_no_custom_role
+- azure_sql_server_azure_ad_authentication_enabled

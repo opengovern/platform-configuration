@@ -1,16 +1,16 @@
-control-group:
-  id: aws_foundational_security_guardduty
-  title: GuardDuty
-  description: GuardDuty
-  section-code: guardduty
-  tags:
-    aws_foundational_security:
-    - "true"
-    category:
-    - Compliance
-    plugin:
-    - aws
-    service:
-    - AWS/GuardDuty
-    type:
-    - Benchmark
+id: aws_foundational_security_guardduty
+title: GuardDuty
+description: GuardDuty
+section-code: guardduty
+type: control-group
+tags:
+  aws_foundational_security:
+  - "true"
+  category:
+  - Compliance
+  plugin:
+  - aws
+  service:
+  - AWS/GuardDuty
+  type:
+  - Benchmark

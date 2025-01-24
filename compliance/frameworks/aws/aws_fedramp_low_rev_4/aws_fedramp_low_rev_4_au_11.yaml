@@ -1,18 +1,18 @@
-control-group:
-  id: aws_fedramp_low_rev_4_au_11
-  title: Audit Record Retention (AU-11)
-  description: The organization retains audit records for at least 90 days to provide support for after-the-fact investigations of security incidents and to meet regulatory and organizational information retention requirements.
-  section-code: "11"
-  tags:
-    category:
-    - Compliance
-    fedramp_low_rev_4:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/CloudWatch
-    type:
-    - Benchmark
-  controls:
-  - aws_cloudwatch_log_group_retention_period_365
+id: aws_fedramp_low_rev_4_au_11
+title: Audit Record Retention (AU-11)
+description: The organization retains audit records for at least 90 days to provide support for after-the-fact investigations of security incidents and to meet regulatory and organizational information retention requirements.
+section-code: "11"
+type: control-group
+tags:
+  category:
+  - Compliance
+  fedramp_low_rev_4:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/CloudWatch
+  type:
+  - Benchmark
+controls:
+- aws_cloudwatch_log_group_retention_period_365

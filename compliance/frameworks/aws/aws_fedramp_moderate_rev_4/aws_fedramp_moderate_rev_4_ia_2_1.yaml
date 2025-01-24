@@ -1,23 +1,24 @@
+id: aws_fedramp_moderate_rev_4_ia_2_1
+title: benchmark.nist_800_53_rev_4_ia_2_1.title
+description: benchmark.nist_800_53_rev_4_ia_2_1.description
+section-code: "1"
+type: control-group
+tags:
+  category:
+  - Compliance
+  fedramp_moderate_rev_4:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/IAM
+  type:
+  - Benchmark
 control-group:
-  id: aws_fedramp_moderate_rev_4_ia_2_1
-  title: benchmark.nist_800_53_rev_4_ia_2_1.title
-  description: benchmark.nist_800_53_rev_4_ia_2_1.description
-  section-code: "1"
-  tags:
-    category:
-    - Compliance
-    fedramp_moderate_rev_4:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/IAM
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_fedramp_moderate_rev_4_ia_2_1_2
-  controls:
-  - aws_iam_root_user_hardware_mfa_enabled
-  - aws_iam_root_user_mfa_enabled
-  - aws_iam_user_console_access_mfa_enabled
-  - aws_iam_user_mfa_enabled
+- id: aws_fedramp_moderate_rev_4_ia_2_1_2
+  type: ""
+controls:
+- aws_iam_root_user_hardware_mfa_enabled
+- aws_iam_root_user_mfa_enabled
+- aws_iam_user_console_access_mfa_enabled
+- aws_iam_user_mfa_enabled

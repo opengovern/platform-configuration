@@ -1,11 +1,14 @@
+id: aws_pci_dss_v321_requirement_10_7
+title: Retain audit trail history for at least one year, with a minimum of three months immediately available for analysis (for example, online, archived, or restorable from backup)
+description: Retaining logs for at least a year allows for the fact that it often takes a while to notice that a compromise has occurred or is occurring, and allows investigators sufficient log history to better determine the length of time of a potential breach and potential system(s) impacted. By having three months of logs immediately available, an entity can quickly identify and minimize impact of a data breach. Storing logs in off-line locations could prevent them from being readily available, resulting in longer time frames to restore log data, perform analysis, and identify impacted systems or data.
+section-code: "7"
+type: control-group
 control-group:
-  id: aws_pci_dss_v321_requirement_10_7
-  title: Retain audit trail history for at least one year, with a minimum of three months immediately available for analysis (for example, online, archived, or restorable from backup)
-  description: Retaining logs for at least a year allows for the fact that it often takes a while to notice that a compromise has occurred or is occurring, and allows investigators sufficient log history to better determine the length of time of a potential breach and potential system(s) impacted. By having three months of logs immediately available, an entity can quickly identify and minimize impact of a data breach. Storing logs in off-line locations could prevent them from being readily available, resulting in longer time frames to restore log data, perform analysis, and identify impacted systems or data.
-  section-code: "7"
-  control-group:
-  - id: aws_pci_dss_v321_requirement_10_7_a
-  - id: aws_pci_dss_v321_requirement_10_7_b
-  - id: aws_pci_dss_v321_requirement_10_7_c
-  controls:
-  - aws_cloudwatch_log_group_retention_period_365
+- id: aws_pci_dss_v321_requirement_10_7_a
+  type: ""
+- id: aws_pci_dss_v321_requirement_10_7_b
+  type: ""
+- id: aws_pci_dss_v321_requirement_10_7_c
+  type: ""
+controls:
+- aws_cloudwatch_log_group_retention_period_365

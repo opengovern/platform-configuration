@@ -1,9 +1,9 @@
-control-group:
-  id: aws_all_controls_guardduty
-  title: GuardDuty
-  description: This section contains recommendations for configuring GuardDuty resources.
-  section-code: guardduty
-  controls:
-  - aws_guardduty_enabled
-  - aws_guardduty_finding_archived
-  - aws_guardduty_no_high_severity_findings
+id: aws_all_controls_guardduty
+title: GuardDuty
+description: This section contains recommendations for configuring GuardDuty resources.
+section-code: guardduty
+type: control-group
+controls:
+- aws_guardduty_enabled
+- aws_guardduty_finding_archived
+- aws_guardduty_no_high_severity_findings

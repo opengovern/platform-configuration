@@ -1,21 +1,21 @@
-control-group:
-  id: aws_foundational_security_dynamodb
-  title: DynamoDB
-  description: DynamoDB
-  section-code: dynamodb
-  tags:
-    aws_foundational_security:
-    - "true"
-    category:
-    - Compliance
-    plugin:
-    - aws
-    service:
-    - AWS/DynamoDB
-    type:
-    - Benchmark
-  controls:
-  - aws_foundational_security_dynamodb_1
-  - aws_foundational_security_dynamodb_2
-  - aws_foundational_security_dynamodb_3
-  - aws_foundational_security_dynamodb_6
+id: aws_foundational_security_dynamodb
+title: DynamoDB
+description: DynamoDB
+section-code: dynamodb
+type: control-group
+tags:
+  aws_foundational_security:
+  - "true"
+  category:
+  - Compliance
+  plugin:
+  - aws
+  service:
+  - AWS/DynamoDB
+  type:
+  - Benchmark
+controls:
+- aws_foundational_security_dynamodb_1
+- aws_foundational_security_dynamodb_2
+- aws_foundational_security_dynamodb_3
+- aws_foundational_security_dynamodb_6

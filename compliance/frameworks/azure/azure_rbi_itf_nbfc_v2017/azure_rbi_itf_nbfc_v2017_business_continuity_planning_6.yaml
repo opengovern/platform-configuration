@@ -1,17 +1,20 @@
+id: azure_rbi_itf_nbfc_v2017_business_continuity_planning_6
+title: Business Continuity Planning (BCP) and Disaster Recovery-6
+description: Business Continuity Planning (BCP) and Disaster Recovery-6
+section-code: "6"
+type: control-group
 control-group:
-  id: azure_rbi_itf_nbfc_v2017_business_continuity_planning_6
-  title: Business Continuity Planning (BCP) and Disaster Recovery-6
-  description: Business Continuity Planning (BCP) and Disaster Recovery-6
-  section-code: "6"
-  control-group:
-  - id: azure_rbi_itf_nbfc_v2017_business_continuity_planning_6_2
-  - id: azure_rbi_itf_nbfc_v2017_business_continuity_planning_6_3
-  - id: azure_rbi_itf_nbfc_v2017_business_continuity_planning_6_4
-  controls:
-  - azure_compute_vm_disaster_recovery_enabled
-  - azure_mariadb_server_geo_redundant_backup_enabled
-  - azure_mysql_db_server_geo_redundant_backup_enabled
-  - azure_postgres_db_server_geo_redundant_backup_enabled
-  - azure_recovery_service_vault_uses_private_link
-  - azure_recovery_service_vault_uses_private_link_for_backup
-  - azure_sql_database_long_term_geo_redundant_backup_enabled
+- id: azure_rbi_itf_nbfc_v2017_business_continuity_planning_6_2
+  type: ""
+- id: azure_rbi_itf_nbfc_v2017_business_continuity_planning_6_3
+  type: ""
+- id: azure_rbi_itf_nbfc_v2017_business_continuity_planning_6_4
+  type: ""
+controls:
+- azure_compute_vm_disaster_recovery_enabled
+- azure_mariadb_server_geo_redundant_backup_enabled
+- azure_mysql_db_server_geo_redundant_backup_enabled
+- azure_postgres_db_server_geo_redundant_backup_enabled
+- azure_recovery_service_vault_uses_private_link
+- azure_recovery_service_vault_uses_private_link_for_backup
+- azure_sql_database_long_term_geo_redundant_backup_enabled

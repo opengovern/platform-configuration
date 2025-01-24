@@ -1,5 +1,5 @@
-control-group:
-  id: aws_all_controls_codedeploy
-  title: CodeDeploy
-  description: This section contains recommendations for configuring CodeDeploy resources.
-  section-code: codedeploy
+id: aws_all_controls_codedeploy
+title: CodeDeploy
+description: This section contains recommendations for configuring CodeDeploy resources.
+section-code: codedeploy
+type: control-group

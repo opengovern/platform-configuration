@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1175_01j1organizational
-  title: 01j1Organizational.8-01.j 01.04 Network Access Control
-  description: Remote access to business information across public networks only takes place after successful identification and authentication.
-  section-code: azure_hipaa_hitrust_v92_1175_01j1organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/Compute
-    type:
-    - Benchmark
-  controls:
-  - azure_compute_vm_jit_access_protected
+id: azure_hipaa_hitrust_v92_1175_01j1organizational
+title: 01j1Organizational.8-01.j 01.04 Network Access Control
+description: Remote access to business information across public networks only takes place after successful identification and authentication.
+section-code: azure_hipaa_hitrust_v92_1175_01j1organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/Compute
+  type:
+  - Benchmark
+controls:
+- azure_compute_vm_jit_access_protected

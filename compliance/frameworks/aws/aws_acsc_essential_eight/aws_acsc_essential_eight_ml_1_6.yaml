@@ -1,12 +1,18 @@
+id: aws_acsc_essential_eight_ml_1_6
+title: "ACSC-EE-ML1-6: Patch operating systems ML1"
+description: The patching of operating systems is the practice of applying patches, updates or vendor mitigations to security vulnerabilities in operating systems.
+section-code: "6"
+type: control-group
 control-group:
-  id: aws_acsc_essential_eight_ml_1_6
-  title: "ACSC-EE-ML1-6: Patch operating systems ML1"
-  description: The patching of operating systems is the practice of applying patches, updates or vendor mitigations to security vulnerabilities in operating systems.
-  section-code: "6"
-  control-group:
-  - id: aws_acsc_essential_eight_ml_1_6_2
-  - id: aws_acsc_essential_eight_ml_1_6_3
-  - id: aws_acsc_essential_eight_ml_1_6_4
-  - id: aws_acsc_essential_eight_ml_1_6_5
-  - id: aws_acsc_essential_eight_ml_1_6_6
-  - id: aws_acsc_essential_eight_ml_1_6_7
+- id: aws_acsc_essential_eight_ml_1_6_2
+  type: ""
+- id: aws_acsc_essential_eight_ml_1_6_3
+  type: ""
+- id: aws_acsc_essential_eight_ml_1_6_4
+  type: ""
+- id: aws_acsc_essential_eight_ml_1_6_5
+  type: ""
+- id: aws_acsc_essential_eight_ml_1_6_6
+  type: ""
+- id: aws_acsc_essential_eight_ml_1_6_7
+  type: ""

@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1149_01c2system
-  title: The organization facilitates information sharing by enabling authorized users
-  description: To determine a business partner's access when discretion is allowed as defined by the organization and by employing manual processes or automated mechanisms to assist users in making information sharing/collaboration decisions.
-  section-code: azure_hipaa_hitrust_v92_1149_01c2system
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/KubernetesService
-    type:
-    - Benchmark
-  controls:
-  - azure_kubernetes_instance_rbac_enabled
+id: azure_hipaa_hitrust_v92_1149_01c2system
+title: The organization facilitates information sharing by enabling authorized users
+description: To determine a business partner's access when discretion is allowed as defined by the organization and by employing manual processes or automated mechanisms to assist users in making information sharing/collaboration decisions.
+section-code: azure_hipaa_hitrust_v92_1149_01c2system
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/KubernetesService
+  type:
+  - Benchmark
+controls:
+- azure_kubernetes_instance_rbac_enabled

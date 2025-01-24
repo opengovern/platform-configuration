@@ -1,7 +1,8 @@
+id: aws_nist_800_172_3_1
+title: Access Control
+description: The access control family consists of security requirements detailing system logging. This includes who has access to what assets and reporting capabilities like account management, system privileges, and remote access logging to determine when users have access to the system and their level of access.
+section-code: "3_1"
+type: control-group
 control-group:
-  id: aws_nist_800_172_3_1
-  title: Access Control
-  description: The access control family consists of security requirements detailing system logging. This includes who has access to what assets and reporting capabilities like account management, system privileges, and remote access logging to determine when users have access to the system and their level of access.
-  section-code: "3_1"
-  control-group:
-  - id: aws_nist_800_172_3_1_3_e
+- id: aws_nist_800_172_3_1_3_e
+  type: ""

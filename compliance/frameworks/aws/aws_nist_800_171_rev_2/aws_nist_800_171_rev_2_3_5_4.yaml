@@ -1,21 +1,21 @@
-control-group:
-  id: aws_nist_800_171_rev_2_3_5_4
-  title: 5.4 Employ replay-resistant authentication mechanisms for network access to privileged and non-privileged accounts
-  description: Authentication processes resist replay attacks if it is impractical to successfully authenticate by recording or replaying previous authentication messages. Replay-resistant techniques include protocols that use nonces or challenges such as time synchronous or challenge-response one-time authenticators.
-  section-code: "4"
-  tags:
-    category:
-    - Compliance
-    nist_800_171_rev_2:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_iam_root_user_hardware_mfa_enabled
-  - aws_iam_root_user_mfa_enabled
-  - aws_iam_user_console_access_mfa_enabled
-  - aws_iam_user_mfa_enabled
+id: aws_nist_800_171_rev_2_3_5_4
+title: 5.4 Employ replay-resistant authentication mechanisms for network access to privileged and non-privileged accounts
+description: Authentication processes resist replay attacks if it is impractical to successfully authenticate by recording or replaying previous authentication messages. Replay-resistant techniques include protocols that use nonces or challenges such as time synchronous or challenge-response one-time authenticators.
+section-code: "4"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_171_rev_2:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_iam_root_user_hardware_mfa_enabled
+- aws_iam_root_user_mfa_enabled
+- aws_iam_user_console_access_mfa_enabled
+- aws_iam_user_mfa_enabled

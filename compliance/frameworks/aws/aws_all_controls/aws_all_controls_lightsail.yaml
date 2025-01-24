@@ -1,7 +1,7 @@
-control-group:
-  id: aws_all_controls_lightsail
-  title: Lightsail
-  description: This section contains recommendations for configuring Lightsail resources.
-  section-code: lightsail
-  controls:
-  - aws_lightsail_instance_ipv6_networking_disabled
+id: aws_all_controls_lightsail
+title: Lightsail
+description: This section contains recommendations for configuring Lightsail resources.
+section-code: lightsail
+type: control-group
+controls:
+- aws_lightsail_instance_ipv6_networking_disabled

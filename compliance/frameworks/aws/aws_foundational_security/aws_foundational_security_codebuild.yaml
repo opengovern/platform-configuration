@@ -1,22 +1,22 @@
-control-group:
-  id: aws_foundational_security_codebuild
-  title: CodeBuild
-  description: CodeBuild
-  section-code: codebuild
-  tags:
-    aws_foundational_security:
-    - "true"
-    category:
-    - Compliance
-    plugin:
-    - aws
-    service:
-    - AWS/CodeBuild
-    type:
-    - Benchmark
-  controls:
-  - aws_foundational_security_codebuild_1
-  - aws_foundational_security_codebuild_2
-  - aws_foundational_security_codebuild_3
-  - aws_foundational_security_codebuild_4
-  - aws_foundational_security_codebuild_5
+id: aws_foundational_security_codebuild
+title: CodeBuild
+description: CodeBuild
+section-code: codebuild
+type: control-group
+tags:
+  aws_foundational_security:
+  - "true"
+  category:
+  - Compliance
+  plugin:
+  - aws
+  service:
+  - AWS/CodeBuild
+  type:
+  - Benchmark
+controls:
+- aws_foundational_security_codebuild_1
+- aws_foundational_security_codebuild_2
+- aws_foundational_security_codebuild_3
+- aws_foundational_security_codebuild_4
+- aws_foundational_security_codebuild_5

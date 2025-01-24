@@ -1,18 +1,18 @@
-control-group:
-  id: aws_nist_800_53_rev_4_ia_5_4
-  title: IA-5(4) Automated Support For Password Strength Determination
-  description: "The organization employs automated tools to determine if password authenticators are sufficiently strong to satisfy [Assignment: organization-defined requirements]."
-  section-code: "4"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_4:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/IAM
-    type:
-    - Benchmark
-  controls:
-  - aws_iam_account_password_policy_strong_min_reuse_24
+id: aws_nist_800_53_rev_4_ia_5_4
+title: IA-5(4) Automated Support For Password Strength Determination
+description: "The organization employs automated tools to determine if password authenticators are sufficiently strong to satisfy [Assignment: organization-defined requirements]."
+section-code: "4"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_4:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/IAM
+  type:
+  - Benchmark
+controls:
+- aws_iam_account_password_policy_strong_min_reuse_24

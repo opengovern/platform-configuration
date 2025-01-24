@@ -1,18 +1,19 @@
+id: aws_ffiec_d_2_is
+title: Information Sharing (IS)
+description: Information Sharing encompasses establishing relationships with peers and information-sharing forums and how threat information is communicated to those groups as well as internal stakeholders.
+section-code: is
+type: control-group
+tags:
+  category:
+  - Compliance
+  ffiec:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_ffiec_d_2_is
-  title: Information Sharing (IS)
-  description: Information Sharing encompasses establishing relationships with peers and information-sharing forums and how threat information is communicated to those groups as well as internal stakeholders.
-  section-code: is
-  tags:
-    category:
-    - Compliance
-    ffiec:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_ffiec_d_2_is_is_b_1
+- id: aws_ffiec_d_2_is_is_b_1
+  type: ""

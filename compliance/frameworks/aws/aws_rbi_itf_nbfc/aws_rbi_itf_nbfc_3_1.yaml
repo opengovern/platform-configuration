@@ -1,11 +1,16 @@
+id: aws_rbi_itf_nbfc_3_1
+title: Information Security Policy
+description: "The IS Policy must provide for a IS framework with the following basic tenets: a. Identification and Classification of Information Assets, b. Segregation of functions, c. Role based Access Control, d. Personnel Security, e. Physical Security, f. Maker-checker, g. Incident Management, h. Trails, i. Public Key Infrastructure (PKI)."
+section-code: "1"
+type: control-group
 control-group:
-  id: aws_rbi_itf_nbfc_3_1
-  title: Information Security Policy
-  description: "The IS Policy must provide for a IS framework with the following basic tenets: a. Identification and Classification of Information Assets, b. Segregation of functions, c. Role based Access Control, d. Personnel Security, e. Physical Security, f. Maker-checker, g. Incident Management, h. Trails, i. Public Key Infrastructure (PKI)."
-  section-code: "1"
-  control-group:
-  - id: aws_rbi_itf_nbfc_3_1_a
-  - id: aws_rbi_itf_nbfc_3_1_c
-  - id: aws_rbi_itf_nbfc_3_1_g
-  - id: aws_rbi_itf_nbfc_3_1_h
-  - id: aws_rbi_itf_nbfc_3_1_i
+- id: aws_rbi_itf_nbfc_3_1_a
+  type: ""
+- id: aws_rbi_itf_nbfc_3_1_c
+  type: ""
+- id: aws_rbi_itf_nbfc_3_1_g
+  type: ""
+- id: aws_rbi_itf_nbfc_3_1_h
+  type: ""
+- id: aws_rbi_itf_nbfc_3_1_i
+  type: ""

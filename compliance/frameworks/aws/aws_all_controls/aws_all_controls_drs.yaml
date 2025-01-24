@@ -1,7 +1,7 @@
-control-group:
-  id: aws_all_controls_drs
-  title: DRS
-  description: This section contains recommendations for configuring DRS resources.
-  section-code: drs
-  controls:
-  - aws_drs_job_enabled
+id: aws_all_controls_drs
+title: DRS
+description: This section contains recommendations for configuring DRS resources.
+section-code: drs
+type: control-group
+controls:
+- aws_drs_job_enabled

@@ -1,11 +1,16 @@
+id: aws_pci_dss_v321_requirement_6_3
+title: Develop internal and external software applications (including web-based administrative access to applications) securely
+description: "Develop internal and external software application securely as follows: in accordance with PCI DSS (for example, secure authentication and logging), based on industry standards and/or best practices, incorporating information security throughout the software-development life cycle. Note: this applies to all software developed internally as well as bespoke or custom software developed by a third party. Without the inclusion of security during the requirements definition, design, analysis, and testing phases of software development, security vulnerabilities can be inadvertently or maliciously introduced into the production environment. Understanding how sensitive data is handled by the application—including when stored, transmitted, and when in memory—can help identify where data needs to be protected."
+section-code: "3"
+type: control-group
 control-group:
-  id: aws_pci_dss_v321_requirement_6_3
-  title: Develop internal and external software applications (including web-based administrative access to applications) securely
-  description: "Develop internal and external software application securely as follows: in accordance with PCI DSS (for example, secure authentication and logging), based on industry standards and/or best practices, incorporating information security throughout the software-development life cycle. Note: this applies to all software developed internally as well as bespoke or custom software developed by a third party. Without the inclusion of security during the requirements definition, design, analysis, and testing phases of software development, security vulnerabilities can be inadvertently or maliciously introduced into the production environment. Understanding how sensitive data is handled by the application—including when stored, transmitted, and when in memory—can help identify where data needs to be protected."
-  section-code: "3"
-  control-group:
-  - id: aws_pci_dss_v321_requirement_6_3_1
-  - id: aws_pci_dss_v321_requirement_6_3_2
-  - id: aws_pci_dss_v321_requirement_6_3_a
-  - id: aws_pci_dss_v321_requirement_6_3_b
-  - id: aws_pci_dss_v321_requirement_6_3_c
+- id: aws_pci_dss_v321_requirement_6_3_1
+  type: ""
+- id: aws_pci_dss_v321_requirement_6_3_2
+  type: ""
+- id: aws_pci_dss_v321_requirement_6_3_a
+  type: ""
+- id: aws_pci_dss_v321_requirement_6_3_b
+  type: ""
+- id: aws_pci_dss_v321_requirement_6_3_c
+  type: ""

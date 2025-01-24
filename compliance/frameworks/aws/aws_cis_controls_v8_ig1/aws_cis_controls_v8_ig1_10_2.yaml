@@ -1,18 +1,18 @@
-control-group:
-  id: aws_cis_controls_v8_ig1_10_2
-  title: Configure Automatic Anti-Malware Signature Updates
-  description: Configure automatic updates for anti-malware signature files on all enterprise assets.
-  section-code: "2"
-  tags:
-    category:
-    - Compliance
-    cis_controls_v8_ig1:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_guardduty_enabled
+id: aws_cis_controls_v8_ig1_10_2
+title: Configure Automatic Anti-Malware Signature Updates
+description: Configure automatic updates for anti-malware signature files on all enterprise assets.
+section-code: "2"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cis_controls_v8_ig1:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_guardduty_enabled

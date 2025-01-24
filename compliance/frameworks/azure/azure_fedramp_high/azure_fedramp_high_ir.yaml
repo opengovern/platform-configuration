@@ -1,8 +1,10 @@
+id: azure_fedramp_high_ir
+title: Incident Response (IR)
+description: IR controls are specific to an organization's incident response policies and procedures. This includes incident response training, testing, monitoring, reporting, and response plan.
+section-code: ir
+type: control-group
 control-group:
-  id: azure_fedramp_high_ir
-  title: Incident Response (IR)
-  description: IR controls are specific to an organization's incident response policies and procedures. This includes incident response training, testing, monitoring, reporting, and response plan.
-  section-code: ir
-  control-group:
-  - id: azure_fedramp_high_ir_4
-  - id: azure_fedramp_high_ir_5
+- id: azure_fedramp_high_ir_4
+  type: ""
+- id: azure_fedramp_high_ir_5
+  type: ""

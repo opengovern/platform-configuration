@@ -1,18 +1,18 @@
-control-group:
-  id: aws_nist_800_53_rev_5_cm_12_b
-  title: CM-12(b)
-  description: Identify and document the users who have access to the system and system components where the information is processed and stored.
-  section-code: b
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_iam_account_password_policy_min_length_14
+id: aws_nist_800_53_rev_5_cm_12_b
+title: CM-12(b)
+description: Identify and document the users who have access to the system and system components where the information is processed and stored.
+section-code: b
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_iam_account_password_policy_min_length_14

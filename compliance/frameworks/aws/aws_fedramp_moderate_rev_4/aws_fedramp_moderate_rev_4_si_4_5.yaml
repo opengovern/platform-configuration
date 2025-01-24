@@ -1,21 +1,21 @@
-control-group:
-  id: aws_fedramp_moderate_rev_4_si_4_5
-  title: benchmark.nist_800_53_rev_4_si_4_5.title
-  description: benchmark.nist_800_53_rev_4_si_4_5.description
-  section-code: "5"
-  tags:
-    category:
-    - Compliance
-    fedramp_moderate_rev_4:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_cloudtrail_trail_integrated_with_logs
-  - aws_cloudwatch_alarm_action_enabled
-  - aws_guardduty_enabled
-  - aws_securityhub_enabled
+id: aws_fedramp_moderate_rev_4_si_4_5
+title: benchmark.nist_800_53_rev_4_si_4_5.title
+description: benchmark.nist_800_53_rev_4_si_4_5.description
+section-code: "5"
+type: control-group
+tags:
+  category:
+  - Compliance
+  fedramp_moderate_rev_4:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_cloudtrail_trail_integrated_with_logs
+- aws_cloudwatch_alarm_action_enabled
+- aws_guardduty_enabled
+- aws_securityhub_enabled

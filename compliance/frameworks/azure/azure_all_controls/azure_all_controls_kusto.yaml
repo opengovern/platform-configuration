@@ -1,10 +1,10 @@
-control-group:
-  id: azure_all_controls_kusto
-  title: Data Explorer
-  description: This section contains recommendations for configuring Data Explorer resources.
-  section-code: kusto
-  controls:
-  - azure_kusto_cluster_disk_encryption_enabled
-  - azure_kusto_cluster_double_encryption_enabled
-  - azure_kusto_cluster_encrypted_at_rest_with_cmk
-  - azure_kusto_cluster_sku_with_sla
+id: azure_all_controls_kusto
+title: Data Explorer
+description: This section contains recommendations for configuring Data Explorer resources.
+section-code: kusto
+type: control-group
+controls:
+- azure_kusto_cluster_disk_encryption_enabled
+- azure_kusto_cluster_double_encryption_enabled
+- azure_kusto_cluster_encrypted_at_rest_with_cmk
+- azure_kusto_cluster_sku_with_sla

@@ -1,12 +1,12 @@
-control-group:
-  id: azure_cis_v210_5_1
-  title: Configuring Diagnostic Settings
-  description: Configuring Diagnostic Settings
-  section-code: "1"
-  controls:
-  - azure_cis_v210_5_1_1
-  - azure_cis_v210_5_1_2
-  - azure_cis_v210_5_1_3
-  - azure_cis_v210_5_1_4
-  - azure_cis_v210_5_1_5
-  - azure_cis_v210_5_1_6
+id: azure_cis_v210_5_1
+title: Configuring Diagnostic Settings
+description: Configuring Diagnostic Settings
+section-code: "1"
+type: control-group
+controls:
+- azure_cis_v210_5_1_1
+- azure_cis_v210_5_1_2
+- azure_cis_v210_5_1_3
+- azure_cis_v210_5_1_4
+- azure_cis_v210_5_1_5
+- azure_cis_v210_5_1_6

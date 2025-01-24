@@ -1,24 +1,24 @@
-control-group:
-  id: azure_pci_dss_v321_requirement_3_2
-  title: PCI DSS requirement 3.2
-  description: Do not store sensitive authentication data after authorization (even if it is encrypted). Render all sensitive authentication data unrecoverable upon completion of the authorization process. Issuers and related entities may store sensitive authentication data if there is a business justification, and the data is stored securely.
-  section-code: "2"
-  tags:
-    category:
-    - Compliance
-    pci_dss_v321:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure
-    type:
-    - Benchmark
-  controls:
-  - azure_iam_external_user_with_owner_role
-  - azure_iam_external_user_with_read_permission
-  - azure_iam_external_user_with_write_permission
-  - azure_iam_no_custom_role
-  - azure_iam_user_with_owner_permission_on_subscription_mfa_enabled
-  - azure_iam_user_with_write_permission_on_subscription_mfa_enabled
-  - azure_sql_server_azure_ad_authentication_enabled
+id: azure_pci_dss_v321_requirement_3_2
+title: PCI DSS requirement 3.2
+description: Do not store sensitive authentication data after authorization (even if it is encrypted). Render all sensitive authentication data unrecoverable upon completion of the authorization process. Issuers and related entities may store sensitive authentication data if there is a business justification, and the data is stored securely.
+section-code: "2"
+type: control-group
+tags:
+  category:
+  - Compliance
+  pci_dss_v321:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure
+  type:
+  - Benchmark
+controls:
+- azure_iam_external_user_with_owner_role
+- azure_iam_external_user_with_read_permission
+- azure_iam_external_user_with_write_permission
+- azure_iam_no_custom_role
+- azure_iam_user_with_owner_permission_on_subscription_mfa_enabled
+- azure_iam_user_with_write_permission_on_subscription_mfa_enabled
+- azure_sql_server_azure_ad_authentication_enabled

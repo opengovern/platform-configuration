@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_0718_10m3organizational
-  title: 10m3Organizational.34-10.m 10.06 Technical Vulnerability Management
-  description: The organization scans for vulnerabilities in the information system and hosted applications to determine the state of flaw remediation monthly (automatically) and again (manually or automatically) when new vulnerabilities potentially affecting the systems and networked environments are identified and reported.
-  section-code: azure_hipaa_hitrust_v92_0718_10m3organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/Compute
-    type:
-    - Benchmark
-  controls:
-  - azure_compute_vm_security_configuration_vulnerabilities_remediated
+id: azure_hipaa_hitrust_v92_0718_10m3organizational
+title: 10m3Organizational.34-10.m 10.06 Technical Vulnerability Management
+description: The organization scans for vulnerabilities in the information system and hosted applications to determine the state of flaw remediation monthly (automatically) and again (manually or automatically) when new vulnerabilities potentially affecting the systems and networked environments are identified and reported.
+section-code: azure_hipaa_hitrust_v92_0718_10m3organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/Compute
+  type:
+  - Benchmark
+controls:
+- azure_compute_vm_security_configuration_vulnerabilities_remediated

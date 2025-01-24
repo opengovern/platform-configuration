@@ -1,31 +1,31 @@
-control-group:
-  id: aws_foundational_security_rds
-  title: RDS
-  description: RDS
-  section-code: rds
-  tags:
-    aws_foundational_security:
-    - "true"
-    category:
-    - Compliance
-    plugin:
-    - aws
-    service:
-    - AWS/RDS
-    type:
-    - Benchmark
-  controls:
-  - aws_foundational_security_rds_2
-  - aws_foundational_security_rds_3
-  - aws_foundational_security_rds_5
-  - aws_foundational_security_rds_7
-  - aws_foundational_security_rds_8
-  - aws_foundational_security_rds_9
-  - aws_foundational_security_rds_20
-  - aws_foundational_security_rds_21
-  - aws_foundational_security_rds_22
-  - aws_foundational_security_rds_24
-  - aws_foundational_security_rds_25
-  - aws_foundational_security_rds_27
-  - aws_foundational_security_rds_34
-  - aws_foundational_security_rds_35
+id: aws_foundational_security_rds
+title: RDS
+description: RDS
+section-code: rds
+type: control-group
+tags:
+  aws_foundational_security:
+  - "true"
+  category:
+  - Compliance
+  plugin:
+  - aws
+  service:
+  - AWS/RDS
+  type:
+  - Benchmark
+controls:
+- aws_foundational_security_rds_2
+- aws_foundational_security_rds_3
+- aws_foundational_security_rds_5
+- aws_foundational_security_rds_7
+- aws_foundational_security_rds_8
+- aws_foundational_security_rds_9
+- aws_foundational_security_rds_20
+- aws_foundational_security_rds_21
+- aws_foundational_security_rds_22
+- aws_foundational_security_rds_24
+- aws_foundational_security_rds_25
+- aws_foundational_security_rds_27
+- aws_foundational_security_rds_34
+- aws_foundational_security_rds_35

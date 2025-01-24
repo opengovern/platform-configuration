@@ -1,20 +1,20 @@
-control-group:
-  id: azure_cis_v140_4_2
-  title: SQL Server - Azure Defender for SQL
-  description: SQL Server - Azure Defender for SQL
-  section-code: "2"
-  tags:
-    category:
-    - Compliance
-    cis:
-    - "true"
-    cis_section_id:
-    - "4.2"
-    cis_version:
-    - v1.4.0
-    plugin:
-    - azure
-    service:
-    - Azure/SQL
-    type:
-    - Benchmark
+id: azure_cis_v140_4_2
+title: SQL Server - Azure Defender for SQL
+description: SQL Server - Azure Defender for SQL
+section-code: "2"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cis:
+  - "true"
+  cis_section_id:
+  - "4.2"
+  cis_version:
+  - v1.4.0
+  plugin:
+  - azure
+  service:
+  - Azure/SQL
+  type:
+  - Benchmark

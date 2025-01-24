@@ -1,23 +1,23 @@
-control-group:
-  id: azure_cis_v150_2_4
-  title: Integrations
-  description: Integrations
-  section-code: "4"
-  tags:
-    category:
-    - Compliance
-    cis:
-    - "true"
-    cis_section_id:
-    - "2"
-    cis_version:
-    - v1.5.0
-    plugin:
-    - azure
-    service:
-    - Azure/SecurityCenter
-    type:
-    - Benchmark
-  controls:
-  - azure_cis_v150_2_4_1
-  - azure_cis_v150_2_4_2
+id: azure_cis_v150_2_4
+title: Integrations
+description: Integrations
+section-code: "4"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cis:
+  - "true"
+  cis_section_id:
+  - "2"
+  cis_version:
+  - v1.5.0
+  plugin:
+  - azure
+  service:
+  - Azure/SecurityCenter
+  type:
+  - Benchmark
+controls:
+- azure_cis_v150_2_4_1
+- azure_cis_v150_2_4_2

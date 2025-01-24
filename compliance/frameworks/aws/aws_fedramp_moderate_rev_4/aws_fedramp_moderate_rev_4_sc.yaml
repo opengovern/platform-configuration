@@ -1,26 +1,35 @@
+id: aws_fedramp_moderate_rev_4_sc
+title: benchmark.nist_800_53_rev_4_sc.title
+description: benchmark.nist_800_53_rev_4_sc.description
+section-code: sc
+type: control-group
+tags:
+  category:
+  - Compliance
+  fedramp_moderate_rev_4:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_fedramp_moderate_rev_4_sc
-  title: benchmark.nist_800_53_rev_4_sc.title
-  description: benchmark.nist_800_53_rev_4_sc.description
-  section-code: sc
-  tags:
-    category:
-    - Compliance
-    fedramp_moderate_rev_4:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_fedramp_moderate_rev_4_sc_2
-  - id: aws_fedramp_moderate_rev_4_sc_4
-  - id: aws_fedramp_moderate_rev_4_sc_5
-  - id: aws_fedramp_moderate_rev_4_sc_7
-  - id: aws_fedramp_moderate_rev_4_sc_8
-  - id: aws_fedramp_moderate_rev_4_sc_12
-  - id: aws_fedramp_moderate_rev_4_sc_13
-  - id: aws_fedramp_moderate_rev_4_sc_23
-  - id: aws_fedramp_moderate_rev_4_sc_28
+- id: aws_fedramp_moderate_rev_4_sc_2
+  type: ""
+- id: aws_fedramp_moderate_rev_4_sc_4
+  type: ""
+- id: aws_fedramp_moderate_rev_4_sc_5
+  type: ""
+- id: aws_fedramp_moderate_rev_4_sc_7
+  type: ""
+- id: aws_fedramp_moderate_rev_4_sc_8
+  type: ""
+- id: aws_fedramp_moderate_rev_4_sc_12
+  type: ""
+- id: aws_fedramp_moderate_rev_4_sc_13
+  type: ""
+- id: aws_fedramp_moderate_rev_4_sc_23
+  type: ""
+- id: aws_fedramp_moderate_rev_4_sc_28
+  type: ""

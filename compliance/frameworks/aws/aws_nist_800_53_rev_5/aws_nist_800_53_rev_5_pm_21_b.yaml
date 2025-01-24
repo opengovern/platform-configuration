@@ -1,18 +1,18 @@
-control-group:
-  id: aws_nist_800_53_rev_5_pm_21_b
-  title: PM-21(b)
-  description: Retain the accounting of disclosures for the length of the time the personally identifiable information is maintained or five years after the disclosure is made, whichever is longer.
-  section-code: b
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/CloudWatch
-    type:
-    - Benchmark
-  controls:
-  - aws_cloudwatch_log_group_retention_period_365
+id: aws_nist_800_53_rev_5_pm_21_b
+title: PM-21(b)
+description: Retain the accounting of disclosures for the length of the time the personally identifiable information is maintained or five years after the disclosure is made, whichever is longer.
+section-code: b
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/CloudWatch
+  type:
+  - Benchmark
+controls:
+- aws_cloudwatch_log_group_retention_period_365

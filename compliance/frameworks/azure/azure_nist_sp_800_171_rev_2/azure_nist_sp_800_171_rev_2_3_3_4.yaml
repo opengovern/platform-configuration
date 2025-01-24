@@ -1,15 +1,15 @@
-control-group:
-  id: azure_nist_sp_800_171_rev_2_3_3_4
-  title: 3.4 Alert in the event of an audit logging process failure
-  description: Audit logging process failures include software and hardware errors, failures in the audit record capturing mechanisms, and audit record storage capacity being reached or exceeded. This requirement applies to each audit record data storage repository (i.e., distinct system component where audit records are stored), the total audit record storage capacity of organizations (i.e., all audit record data storage repositories combined), or both.
-  section-code: "4"
-  controls:
-  - azure_securitycenter_azure_defender_on_for_appservice
-  - azure_securitycenter_azure_defender_on_for_containers
-  - azure_securitycenter_azure_defender_on_for_keyvault
-  - azure_securitycenter_azure_defender_on_for_resource_manager
-  - azure_securitycenter_azure_defender_on_for_server
-  - azure_securitycenter_azure_defender_on_for_sqldb
-  - azure_securitycenter_azure_defender_on_for_sqlservervm
-  - azure_securitycenter_azure_defender_on_for_storage
-  - azure_sql_server_azure_defender_enabled
+id: azure_nist_sp_800_171_rev_2_3_3_4
+title: 3.4 Alert in the event of an audit logging process failure
+description: Audit logging process failures include software and hardware errors, failures in the audit record capturing mechanisms, and audit record storage capacity being reached or exceeded. This requirement applies to each audit record data storage repository (i.e., distinct system component where audit records are stored), the total audit record storage capacity of organizations (i.e., all audit record data storage repositories combined), or both.
+section-code: "4"
+type: control-group
+controls:
+- azure_securitycenter_azure_defender_on_for_appservice
+- azure_securitycenter_azure_defender_on_for_containers
+- azure_securitycenter_azure_defender_on_for_keyvault
+- azure_securitycenter_azure_defender_on_for_resource_manager
+- azure_securitycenter_azure_defender_on_for_server
+- azure_securitycenter_azure_defender_on_for_sqldb
+- azure_securitycenter_azure_defender_on_for_sqlservervm
+- azure_securitycenter_azure_defender_on_for_storage
+- azure_sql_server_azure_defender_enabled

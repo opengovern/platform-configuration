@@ -1,7 +1,7 @@
-control-group:
-  id: azure_all_controls_logic
-  title: Logic
-  description: This section contains recommendations for configuring Logic resources.
-  section-code: logic
-  controls:
-  - azure_logic_app_workflow_logging_enabled
+id: azure_all_controls_logic
+title: Logic
+description: This section contains recommendations for configuring Logic resources.
+section-code: logic
+type: control-group
+controls:
+- azure_logic_app_workflow_logging_enabled

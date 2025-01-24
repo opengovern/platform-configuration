@@ -1,21 +1,21 @@
-control-group:
-  id: aws_cisa_cyber_essentials_your_surroundings_3
-  title: Your Surroundings-3
-  description: Grant access and admin permissions based on need-to-know and least privilege.
-  section-code: "3"
-  tags:
-    category:
-    - Compliance
-    cisa_cyber_essentials:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_elb_application_network_lb_use_ssl_certificate
-  - aws_iam_group_user_role_no_inline_policies
-  - aws_iam_policy_no_star_star
-  - aws_iam_root_user_no_access_keys
+id: aws_cisa_cyber_essentials_your_surroundings_3
+title: Your Surroundings-3
+description: Grant access and admin permissions based on need-to-know and least privilege.
+section-code: "3"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cisa_cyber_essentials:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_elb_application_network_lb_use_ssl_certificate
+- aws_iam_group_user_role_no_inline_policies
+- aws_iam_policy_no_star_star
+- aws_iam_root_user_no_access_keys

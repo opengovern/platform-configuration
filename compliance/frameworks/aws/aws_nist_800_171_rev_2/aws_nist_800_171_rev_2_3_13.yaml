@@ -1,28 +1,39 @@
+id: aws_nist_800_171_rev_2_3_13
+title: System and Communications Protection
+description: The SC control family is responsible for systems and communications protection procedures. This includes boundary protection, protection of information at rest, collaborative computing devices, cryptographic protection, denial of service protection, and many others.
+section-code: "3_13"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_171_rev_2:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_171_rev_2_3_13
-  title: System and Communications Protection
-  description: The SC control family is responsible for systems and communications protection procedures. This includes boundary protection, protection of information at rest, collaborative computing devices, cryptographic protection, denial of service protection, and many others.
-  section-code: "3_13"
-  tags:
-    category:
-    - Compliance
-    nist_800_171_rev_2:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_171_rev_2_3_13_1
-  - id: aws_nist_800_171_rev_2_3_13_2
-  - id: aws_nist_800_171_rev_2_3_13_3
-  - id: aws_nist_800_171_rev_2_3_13_4
-  - id: aws_nist_800_171_rev_2_3_13_5
-  - id: aws_nist_800_171_rev_2_3_13_6
-  - id: aws_nist_800_171_rev_2_3_13_8
-  - id: aws_nist_800_171_rev_2_3_13_10
-  - id: aws_nist_800_171_rev_2_3_13_11
-  - id: aws_nist_800_171_rev_2_3_13_15
-  - id: aws_nist_800_171_rev_2_3_13_16
+- id: aws_nist_800_171_rev_2_3_13_1
+  type: ""
+- id: aws_nist_800_171_rev_2_3_13_2
+  type: ""
+- id: aws_nist_800_171_rev_2_3_13_3
+  type: ""
+- id: aws_nist_800_171_rev_2_3_13_4
+  type: ""
+- id: aws_nist_800_171_rev_2_3_13_5
+  type: ""
+- id: aws_nist_800_171_rev_2_3_13_6
+  type: ""
+- id: aws_nist_800_171_rev_2_3_13_8
+  type: ""
+- id: aws_nist_800_171_rev_2_3_13_10
+  type: ""
+- id: aws_nist_800_171_rev_2_3_13_11
+  type: ""
+- id: aws_nist_800_171_rev_2_3_13_15
+  type: ""
+- id: aws_nist_800_171_rev_2_3_13_16
+  type: ""

@@ -1,7 +1,7 @@
-control-group:
-  id: aws_foundational_security_fsx
-  title: FSx
-  description: FSx
-  section-code: fsx
-  controls:
-  - aws_foundational_security_fsx_1
+id: aws_foundational_security_fsx
+title: FSx
+description: FSx
+section-code: fsx
+type: control-group
+controls:
+- aws_foundational_security_fsx_1

@@ -1,10 +1,10 @@
-control-group:
-  id: aws_foundational_security_docdb
-  title: DocumentDB
-  description: DocumentDB
-  section-code: docdb
-  controls:
-  - aws_foundational_security_docdb_1
-  - aws_foundational_security_docdb_2
-  - aws_foundational_security_docdb_4
-  - aws_foundational_security_docdb_5
+id: aws_foundational_security_docdb
+title: DocumentDB
+description: DocumentDB
+section-code: docdb
+type: control-group
+controls:
+- aws_foundational_security_docdb_1
+- aws_foundational_security_docdb_2
+- aws_foundational_security_docdb_4
+- aws_foundational_security_docdb_5

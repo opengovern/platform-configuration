@@ -1,7 +1,7 @@
-control-group:
-  id: azure_fedramp_high_cp_7
-  title: Alternate Processing Site (CP-7)
-  description: Alternate Processing Site (CP-7)
-  section-code: "7"
-  controls:
-  - azure_compute_vm_disaster_recovery_enabled
+id: azure_fedramp_high_cp_7
+title: Alternate Processing Site (CP-7)
+description: Alternate Processing Site (CP-7)
+section-code: "7"
+type: control-group
+controls:
+- azure_compute_vm_disaster_recovery_enabled

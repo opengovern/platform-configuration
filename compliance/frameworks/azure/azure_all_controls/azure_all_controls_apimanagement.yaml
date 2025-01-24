@@ -1,8 +1,8 @@
-control-group:
-  id: azure_all_controls_apimanagement
-  title: API Management
-  description: This section contains recommendations for configuring API Management resources.
-  section-code: apimanagement
-  controls:
-  - azure_apimanagement_service_client_certificate_enabled
-  - azure_apimanagement_service_with_virtual_network
+id: azure_all_controls_apimanagement
+title: API Management
+description: This section contains recommendations for configuring API Management resources.
+section-code: apimanagement
+type: control-group
+controls:
+- azure_apimanagement_service_client_certificate_enabled
+- azure_apimanagement_service_with_virtual_network

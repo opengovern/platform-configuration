@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1220_09ab3system
-  title: 09ab3System.56-09.ab 09.10 Monitoring
-  description: Monitoring includes inbound and outbound communications and file integrity monitoring.
-  section-code: azure_hipaa_hitrust_v92_1220_09ab3system
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/SecurityCenter
-    type:
-    - Benchmark
-  controls:
-  - azure_securitycenter_automatic_provisioning_monitoring_agent_on
+id: azure_hipaa_hitrust_v92_1220_09ab3system
+title: 09ab3System.56-09.ab 09.10 Monitoring
+description: Monitoring includes inbound and outbound communications and file integrity monitoring.
+section-code: azure_hipaa_hitrust_v92_1220_09ab3system
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/SecurityCenter
+  type:
+  - Benchmark
+controls:
+- azure_securitycenter_automatic_provisioning_monitoring_agent_on

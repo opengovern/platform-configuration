@@ -1,7 +1,8 @@
+id: aws_acsc_essential_eight_ml_3_4
+title: "ACSC-EE-ML3-4: User application hardening ML3"
+description: Web browsers do not process Java from the internet.
+section-code: "4"
+type: control-group
 control-group:
-  id: aws_acsc_essential_eight_ml_3_4
-  title: "ACSC-EE-ML3-4: User application hardening ML3"
-  description: Web browsers do not process Java from the internet.
-  section-code: "4"
-  control-group:
-  - id: aws_acsc_essential_eight_ml_3_4_18
+- id: aws_acsc_essential_eight_ml_3_4_18
+  type: ""

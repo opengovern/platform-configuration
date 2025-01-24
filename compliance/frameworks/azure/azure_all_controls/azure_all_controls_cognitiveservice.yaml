@@ -1,11 +1,11 @@
-control-group:
-  id: azure_all_controls_cognitiveservice
-  title: Cognitive Services
-  description: This section contains recommendations for configuring Cognitive Services resources.
-  section-code: cognitiveservice
-  controls:
-  - azure_cognitive_account_encrypted_with_cmk
-  - azure_cognitive_account_private_link_used
-  - azure_cognitive_account_public_network_access_disabled
-  - azure_cognitive_account_restrict_public_access
-  - azure_cognitive_service_local_auth_disabled
+id: azure_all_controls_cognitiveservice
+title: Cognitive Services
+description: This section contains recommendations for configuring Cognitive Services resources.
+section-code: cognitiveservice
+type: control-group
+controls:
+- azure_cognitive_account_encrypted_with_cmk
+- azure_cognitive_account_private_link_used
+- azure_cognitive_account_public_network_access_disabled
+- azure_cognitive_account_restrict_public_access
+- azure_cognitive_service_local_auth_disabled
