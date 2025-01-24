@@ -1,34 +1,34 @@
-framework:
-  id: azure_nist_sp_800_53_rev_5
-  title: NIST SP 800-53 Revision 5
-  description: NIST SP 800-53 Revision 5 represents a multi-year effort to develop the next generation of security and privacy controls needed to strengthen and support the U.S. federal government.
-  section-code: azure_nist_sp_800_53_rev_5
-  tags:
-    category:
-    - Compliance
-    nist_sp_800_53_rev_5:
-    - "true"
-    platform_benchmark_type:
-    - compliance
-    platform_category:
-    - Frameworks
-    plugin:
-    - azure
-    service:
-    - Azure
-    type:
-    - Benchmark
-  defaults:
-    is-baseline: false
-    enabled: false
-    tracks-drift-events: false
-  control-group:
-  - id: azure_nist_sp_800_53_rev_5_ac
-  - id: azure_nist_sp_800_53_rev_5_au
-  - id: azure_nist_sp_800_53_rev_5_cm
-  - id: azure_nist_sp_800_53_rev_5_cp
-  - id: azure_nist_sp_800_53_rev_5_ia
-  - id: azure_nist_sp_800_53_rev_5_ir
-  - id: azure_nist_sp_800_53_rev_5_ra
-  - id: azure_nist_sp_800_53_rev_5_sc
-  - id: azure_nist_sp_800_53_rev_5_si
+id: azure_nist_sp_800_53_rev_5
+title: NIST SP 800-53 Revision 5
+description: NIST SP 800-53 Revision 5 represents a multi-year effort to develop the next generation of security and privacy controls needed to strengthen and support the U.S. federal government.
+section-code: azure_nist_sp_800_53_rev_5
+type: framework
+tags:
+  category:
+  - Compliance
+  nist_sp_800_53_rev_5:
+  - "true"
+  platform_benchmark_type:
+  - compliance
+  platform_category:
+  - Frameworks
+  plugin:
+  - azure
+  service:
+  - Azure
+  type:
+  - Benchmark
+defaults:
+  is-baseline: false
+  enabled: false
+  tracks-drift-events: false
+control-group:
+- id: azure_nist_sp_800_53_rev_5_ac
+- id: azure_nist_sp_800_53_rev_5_au
+- id: azure_nist_sp_800_53_rev_5_cm
+- id: azure_nist_sp_800_53_rev_5_cp
+- id: azure_nist_sp_800_53_rev_5_ia
+- id: azure_nist_sp_800_53_rev_5_ir
+- id: azure_nist_sp_800_53_rev_5_ra
+- id: azure_nist_sp_800_53_rev_5_sc
+- id: azure_nist_sp_800_53_rev_5_si

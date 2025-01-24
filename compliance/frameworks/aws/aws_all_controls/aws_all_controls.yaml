@@ -1,75 +1,75 @@
-framework:
-  id: aws_all_controls
-  title: All Controls
-  description: This benchmark contains all controls grouped by service to help you detect resource configurations that do not meet best practices.
-  section-code: aws_all_controls
-  defaults:
-    is-baseline: false
-    enabled: false
-    tracks-drift-events: false
-  control-group:
-  - id: aws_all_controls_account
-  - id: aws_all_controls_acm
-  - id: aws_all_controls_apigateway
-  - id: aws_all_controls_appstream
-  - id: aws_all_controls_appsync
-  - id: aws_all_controls_athena
-  - id: aws_all_controls_autoscaling
-  - id: aws_all_controls_backup
-  - id: aws_all_controls_cloudformation
-  - id: aws_all_controls_cloudfront
-  - id: aws_all_controls_cloudtrail
-  - id: aws_all_controls_cloudwatch
-  - id: aws_all_controls_codebuild
-  - id: aws_all_controls_codedeploy
-  - id: aws_all_controls_config
-  - id: aws_all_controls_dax
-  - id: aws_all_controls_directoryservice
-  - id: aws_all_controls_dlm
-  - id: aws_all_controls_dms
-  - id: aws_all_controls_docdb
-  - id: aws_all_controls_drs
-  - id: aws_all_controls_dynamodb
-  - id: aws_all_controls_ebs
-  - id: aws_all_controls_ec2
-  - id: aws_all_controls_ecr
-  - id: aws_all_controls_ecs
-  - id: aws_all_controls_efs
-  - id: aws_all_controls_eks
-  - id: aws_all_controls_elasticache
-  - id: aws_all_controls_elasticbeanstalk
-  - id: aws_all_controls_elb
-  - id: aws_all_controls_emr
-  - id: aws_all_controls_es
-  - id: aws_all_controls_eventbridge
-  - id: aws_all_controls_fsx
-  - id: aws_all_controls_glacier
-  - id: aws_all_controls_glue
-  - id: aws_all_controls_guardduty
-  - id: aws_all_controls_iam
-  - id: aws_all_controls_kinesis
-  - id: aws_all_controls_kms
-  - id: aws_all_controls_lambda
-  - id: aws_all_controls_lightsail
-  - id: aws_all_controls_mq
-  - id: aws_all_controls_msk
-  - id: aws_all_controls_neptune
-  - id: aws_all_controls_networkfirewall
-  - id: aws_all_controls_opensearch
-  - id: aws_all_controls_organization
-  - id: aws_all_controls_pca
-  - id: aws_all_controls_rds
-  - id: aws_all_controls_redshift
-  - id: aws_all_controls_route53
-  - id: aws_all_controls_s3
-  - id: aws_all_controls_sagemaker
-  - id: aws_all_controls_secretsmanager
-  - id: aws_all_controls_securityhub
-  - id: aws_all_controls_sfn
-  - id: aws_all_controls_sns
-  - id: aws_all_controls_sqs
-  - id: aws_all_controls_ssm
-  - id: aws_all_controls_vpc
-  - id: aws_all_controls_waf
-  - id: aws_all_controls_wafv2
-  - id: aws_all_controls_workspaces
+id: aws_all_controls
+title: All Controls
+description: This benchmark contains all controls grouped by service to help you detect resource configurations that do not meet best practices.
+section-code: aws_all_controls
+type: framework
+defaults:
+  is-baseline: false
+  enabled: false
+  tracks-drift-events: false
+control-group:
+- id: aws_all_controls_account
+- id: aws_all_controls_acm
+- id: aws_all_controls_apigateway
+- id: aws_all_controls_appstream
+- id: aws_all_controls_appsync
+- id: aws_all_controls_athena
+- id: aws_all_controls_autoscaling
+- id: aws_all_controls_backup
+- id: aws_all_controls_cloudformation
+- id: aws_all_controls_cloudfront
+- id: aws_all_controls_cloudtrail
+- id: aws_all_controls_cloudwatch
+- id: aws_all_controls_codebuild
+- id: aws_all_controls_codedeploy
+- id: aws_all_controls_config
+- id: aws_all_controls_dax
+- id: aws_all_controls_directoryservice
+- id: aws_all_controls_dlm
+- id: aws_all_controls_dms
+- id: aws_all_controls_docdb
+- id: aws_all_controls_drs
+- id: aws_all_controls_dynamodb
+- id: aws_all_controls_ebs
+- id: aws_all_controls_ec2
+- id: aws_all_controls_ecr
+- id: aws_all_controls_ecs
+- id: aws_all_controls_efs
+- id: aws_all_controls_eks
+- id: aws_all_controls_elasticache
+- id: aws_all_controls_elasticbeanstalk
+- id: aws_all_controls_elb
+- id: aws_all_controls_emr
+- id: aws_all_controls_es
+- id: aws_all_controls_eventbridge
+- id: aws_all_controls_fsx
+- id: aws_all_controls_glacier
+- id: aws_all_controls_glue
+- id: aws_all_controls_guardduty
+- id: aws_all_controls_iam
+- id: aws_all_controls_kinesis
+- id: aws_all_controls_kms
+- id: aws_all_controls_lambda
+- id: aws_all_controls_lightsail
+- id: aws_all_controls_mq
+- id: aws_all_controls_msk
+- id: aws_all_controls_neptune
+- id: aws_all_controls_networkfirewall
+- id: aws_all_controls_opensearch
+- id: aws_all_controls_organization
+- id: aws_all_controls_pca
+- id: aws_all_controls_rds
+- id: aws_all_controls_redshift
+- id: aws_all_controls_route53
+- id: aws_all_controls_s3
+- id: aws_all_controls_sagemaker
+- id: aws_all_controls_secretsmanager
+- id: aws_all_controls_securityhub
+- id: aws_all_controls_sfn
+- id: aws_all_controls_sns
+- id: aws_all_controls_sqs
+- id: aws_all_controls_ssm
+- id: aws_all_controls_vpc
+- id: aws_all_controls_waf
+- id: aws_all_controls_wafv2
+- id: aws_all_controls_workspaces

@@ -1,30 +1,30 @@
-framework:
-  id: aws_hipaa_final_omnibus_security_rule_2013
-  title: HIPAA Final Omnibus Security Rule 2013
-  description: The HIPAA Security Rule establishes national standards to protect individuals electronic personal health information that is created, received, used, or maintained by a business associate and covered entity. The Final Omnibus Rule provides additional guidance to the 2003 Security Rule and implements a number of provisions of the HITECH Act to strengthen the privacy and security protections for health information established under HIPAA.
-  section-code: aws_hipaa_final_omnibus_security_rule_2013
-  tags:
-    category:
-    - Compliance
-    hipaa_final_omnibus_security_rule_2013:
-    - "true"
-    platform_benchmark_type:
-    - compliance
-    platform_category:
-    - Laws & Regulations
-    - Privacy
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  defaults:
-    is-baseline: false
-    enabled: false
-    tracks-drift-events: false
-  control-group:
-  - id: aws_hipaa_final_omnibus_security_rule_2013_164_308
-  - id: aws_hipaa_final_omnibus_security_rule_2013_164_310
-  - id: aws_hipaa_final_omnibus_security_rule_2013_164_312
-  - id: aws_hipaa_final_omnibus_security_rule_2013_164_314
+id: aws_hipaa_final_omnibus_security_rule_2013
+title: HIPAA Final Omnibus Security Rule 2013
+description: The HIPAA Security Rule establishes national standards to protect individuals electronic personal health information that is created, received, used, or maintained by a business associate and covered entity. The Final Omnibus Rule provides additional guidance to the 2003 Security Rule and implements a number of provisions of the HITECH Act to strengthen the privacy and security protections for health information established under HIPAA.
+section-code: aws_hipaa_final_omnibus_security_rule_2013
+type: framework
+tags:
+  category:
+  - Compliance
+  hipaa_final_omnibus_security_rule_2013:
+  - "true"
+  platform_benchmark_type:
+  - compliance
+  platform_category:
+  - Laws & Regulations
+  - Privacy
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+defaults:
+  is-baseline: false
+  enabled: false
+  tracks-drift-events: false
+control-group:
+- id: aws_hipaa_final_omnibus_security_rule_2013_164_308
+- id: aws_hipaa_final_omnibus_security_rule_2013_164_310
+- id: aws_hipaa_final_omnibus_security_rule_2013_164_312
+- id: aws_hipaa_final_omnibus_security_rule_2013_164_314

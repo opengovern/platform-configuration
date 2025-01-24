@@ -1,55 +1,55 @@
-framework:
-  id: azure_all_controls
-  title: All Controls
-  description: This benchmark contains all controls grouped by service to help you detect resource configurations that do not meet best practices.
-  section-code: azure_all_controls
-  defaults:
-    is-baseline: false
-    enabled: false
-    tracks-drift-events: false
-  control-group:
-  - id: azure_all_controls_activedirectory
-  - id: azure_all_controls_apimanagement
-  - id: azure_all_controls_appconfiguration
-  - id: azure_all_controls_appservice
-  - id: azure_all_controls_automation
-  - id: azure_all_controls_batch
-  - id: azure_all_controls_cognitivesearch
-  - id: azure_all_controls_cognitiveservice
-  - id: azure_all_controls_compute
-  - id: azure_all_controls_containerinstance
-  - id: azure_all_controls_containerregistry
-  - id: azure_all_controls_cosmosdb
-  - id: azure_all_controls_databoxedge
-  - id: azure_all_controls_datafactory
-  - id: azure_all_controls_datalakeanalytics
-  - id: azure_all_controls_datalakestore
-  - id: azure_all_controls_eventgrid
-  - id: azure_all_controls_eventhub
-  - id: azure_all_controls_frontdoor
-  - id: azure_all_controls_hdinsight
-  - id: azure_all_controls_healthcare
-  - id: azure_all_controls_hpccache
-  - id: azure_all_controls_iothub
-  - id: azure_all_controls_keyvault
-  - id: azure_all_controls_kubernetes
-  - id: azure_all_controls_kusto
-  - id: azure_all_controls_logic
-  - id: azure_all_controls_machinelearning
-  - id: azure_all_controls_mariadb
-  - id: azure_all_controls_monitor
-  - id: azure_all_controls_mysql
-  - id: azure_all_controls_network
-  - id: azure_all_controls_postgres
-  - id: azure_all_controls_recoveryservice
-  - id: azure_all_controls_redis
-  - id: azure_all_controls_securitycenter
-  - id: azure_all_controls_servicebus
-  - id: azure_all_controls_servicefabric
-  - id: azure_all_controls_signalr
-  - id: azure_all_controls_springcloud
-  - id: azure_all_controls_sql
-  - id: azure_all_controls_storage
-  - id: azure_all_controls_storagesync
-  - id: azure_all_controls_streamanalytics
-  - id: azure_all_controls_synapse
+id: azure_all_controls
+title: All Controls
+description: This benchmark contains all controls grouped by service to help you detect resource configurations that do not meet best practices.
+section-code: azure_all_controls
+type: framework
+defaults:
+  is-baseline: false
+  enabled: false
+  tracks-drift-events: false
+control-group:
+- id: azure_all_controls_activedirectory
+- id: azure_all_controls_apimanagement
+- id: azure_all_controls_appconfiguration
+- id: azure_all_controls_appservice
+- id: azure_all_controls_automation
+- id: azure_all_controls_batch
+- id: azure_all_controls_cognitivesearch
+- id: azure_all_controls_cognitiveservice
+- id: azure_all_controls_compute
+- id: azure_all_controls_containerinstance
+- id: azure_all_controls_containerregistry
+- id: azure_all_controls_cosmosdb
+- id: azure_all_controls_databoxedge
+- id: azure_all_controls_datafactory
+- id: azure_all_controls_datalakeanalytics
+- id: azure_all_controls_datalakestore
+- id: azure_all_controls_eventgrid
+- id: azure_all_controls_eventhub
+- id: azure_all_controls_frontdoor
+- id: azure_all_controls_hdinsight
+- id: azure_all_controls_healthcare
+- id: azure_all_controls_hpccache
+- id: azure_all_controls_iothub
+- id: azure_all_controls_keyvault
+- id: azure_all_controls_kubernetes
+- id: azure_all_controls_kusto
+- id: azure_all_controls_logic
+- id: azure_all_controls_machinelearning
+- id: azure_all_controls_mariadb
+- id: azure_all_controls_monitor
+- id: azure_all_controls_mysql
+- id: azure_all_controls_network
+- id: azure_all_controls_postgres
+- id: azure_all_controls_recoveryservice
+- id: azure_all_controls_redis
+- id: azure_all_controls_securitycenter
+- id: azure_all_controls_servicebus
+- id: azure_all_controls_servicefabric
+- id: azure_all_controls_signalr
+- id: azure_all_controls_springcloud
+- id: azure_all_controls_sql
+- id: azure_all_controls_storage
+- id: azure_all_controls_storagesync
+- id: azure_all_controls_streamanalytics
+- id: azure_all_controls_synapse

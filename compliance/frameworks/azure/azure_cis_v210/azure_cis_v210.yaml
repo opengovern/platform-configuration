@@ -1,20 +1,20 @@
-framework:
-  id: azure_cis_v210
-  title: CIS v2.1.0
-  description: The CIS Microsoft Azure Foundations Security Benchmark provides prescriptive guidance for establishing a secure baseline configuration for Microsoft Azure.
-  section-code: azure_cis_v210
-  defaults:
-    is-baseline: true
-    enabled: true
-    tracks-drift-events: false
-  control-group:
-  - id: azure_cis_v210_1
-  - id: azure_cis_v210_2
-  - id: azure_cis_v210_3
-  - id: azure_cis_v210_4
-  - id: azure_cis_v210_5
-  - id: azure_cis_v210_6
-  - id: azure_cis_v210_7
-  - id: azure_cis_v210_8
-  - id: azure_cis_v210_9
-  - id: azure_cis_v210_10
+id: azure_cis_v210
+title: CIS v2.1.0
+description: The CIS Microsoft Azure Foundations Security Benchmark provides prescriptive guidance for establishing a secure baseline configuration for Microsoft Azure.
+section-code: azure_cis_v210
+type: framework
+defaults:
+  is-baseline: true
+  enabled: true
+  tracks-drift-events: false
+control-group:
+- id: azure_cis_v210_1
+- id: azure_cis_v210_2
+- id: azure_cis_v210_3
+- id: azure_cis_v210_4
+- id: azure_cis_v210_5
+- id: azure_cis_v210_6
+- id: azure_cis_v210_7
+- id: azure_cis_v210_8
+- id: azure_cis_v210_9
+- id: azure_cis_v210_10

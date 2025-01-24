@@ -1,73 +1,73 @@
-framework:
-  id: aws_foundational_security
-  title: AWS Foundational Security Best Practices
-  description: The AWS Foundational Security Best Practices standard is a set of controls that detect when your deployed accounts and resources deviate from security best practices.
-  section-code: aws_foundational_security
-  tags:
-    aws_foundational_security:
-    - "true"
-    category:
-    - Compliance
-    platform_benchmark_type:
-    - compliance
-    platform_category:
-    - Best Practices
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  defaults:
-    is-baseline: false
-    enabled: false
-    tracks-drift-events: false
-  control-group:
-  - id: aws_foundational_security_account
-  - id: aws_foundational_security_acm
-  - id: aws_foundational_security_apigateway
-  - id: aws_foundational_security_appsync
-  - id: aws_foundational_security_athena
-  - id: aws_foundational_security_autoscaling
-  - id: aws_foundational_security_backup
-  - id: aws_foundational_security_cloudformation
-  - id: aws_foundational_security_cloudfront
-  - id: aws_foundational_security_cloudtrail
-  - id: aws_foundational_security_codebuild
-  - id: aws_foundational_security_config
-  - id: aws_foundational_security_dms
-  - id: aws_foundational_security_docdb
-  - id: aws_foundational_security_dynamodb
-  - id: aws_foundational_security_ec2
-  - id: aws_foundational_security_ecr
-  - id: aws_foundational_security_ecs
-  - id: aws_foundational_security_efs
-  - id: aws_foundational_security_eks
-  - id: aws_foundational_security_elasticache
-  - id: aws_foundational_security_elasticbeanstalk
-  - id: aws_foundational_security_elb
-  - id: aws_foundational_security_emr
-  - id: aws_foundational_security_es
-  - id: aws_foundational_security_eventbridge
-  - id: aws_foundational_security_fsx
-  - id: aws_foundational_security_guardduty
-  - id: aws_foundational_security_iam
-  - id: aws_foundational_security_kinesis
-  - id: aws_foundational_security_kms
-  - id: aws_foundational_security_lambda
-  - id: aws_foundational_security_msk
-  - id: aws_foundational_security_neptune
-  - id: aws_foundational_security_networkfirewall
-  - id: aws_foundational_security_opensearch
-  - id: aws_foundational_security_pca
-  - id: aws_foundational_security_rds
-  - id: aws_foundational_security_redshift
-  - id: aws_foundational_security_route53
-  - id: aws_foundational_security_s3
-  - id: aws_foundational_security_sagemaker
-  - id: aws_foundational_security_secretsmanager
-  - id: aws_foundational_security_sfn
-  - id: aws_foundational_security_sns
-  - id: aws_foundational_security_sqs
-  - id: aws_foundational_security_ssm
-  - id: aws_foundational_security_waf
+id: aws_foundational_security
+title: AWS Foundational Security Best Practices
+description: The AWS Foundational Security Best Practices standard is a set of controls that detect when your deployed accounts and resources deviate from security best practices.
+section-code: aws_foundational_security
+type: framework
+tags:
+  aws_foundational_security:
+  - "true"
+  category:
+  - Compliance
+  platform_benchmark_type:
+  - compliance
+  platform_category:
+  - Best Practices
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+defaults:
+  is-baseline: false
+  enabled: false
+  tracks-drift-events: false
+control-group:
+- id: aws_foundational_security_account
+- id: aws_foundational_security_acm
+- id: aws_foundational_security_apigateway
+- id: aws_foundational_security_appsync
+- id: aws_foundational_security_athena
+- id: aws_foundational_security_autoscaling
+- id: aws_foundational_security_backup
+- id: aws_foundational_security_cloudformation
+- id: aws_foundational_security_cloudfront
+- id: aws_foundational_security_cloudtrail
+- id: aws_foundational_security_codebuild
+- id: aws_foundational_security_config
+- id: aws_foundational_security_dms
+- id: aws_foundational_security_docdb
+- id: aws_foundational_security_dynamodb
+- id: aws_foundational_security_ec2
+- id: aws_foundational_security_ecr
+- id: aws_foundational_security_ecs
+- id: aws_foundational_security_efs
+- id: aws_foundational_security_eks
+- id: aws_foundational_security_elasticache
+- id: aws_foundational_security_elasticbeanstalk
+- id: aws_foundational_security_elb
+- id: aws_foundational_security_emr
+- id: aws_foundational_security_es
+- id: aws_foundational_security_eventbridge
+- id: aws_foundational_security_fsx
+- id: aws_foundational_security_guardduty
+- id: aws_foundational_security_iam
+- id: aws_foundational_security_kinesis
+- id: aws_foundational_security_kms
+- id: aws_foundational_security_lambda
+- id: aws_foundational_security_msk
+- id: aws_foundational_security_neptune
+- id: aws_foundational_security_networkfirewall
+- id: aws_foundational_security_opensearch
+- id: aws_foundational_security_pca
+- id: aws_foundational_security_rds
+- id: aws_foundational_security_redshift
+- id: aws_foundational_security_route53
+- id: aws_foundational_security_s3
+- id: aws_foundational_security_sagemaker
+- id: aws_foundational_security_secretsmanager
+- id: aws_foundational_security_sfn
+- id: aws_foundational_security_sns
+- id: aws_foundational_security_sqs
+- id: aws_foundational_security_ssm
+- id: aws_foundational_security_waf

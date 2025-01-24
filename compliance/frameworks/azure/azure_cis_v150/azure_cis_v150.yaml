@@ -1,37 +1,37 @@
-framework:
-  id: azure_cis_v150
-  title: CIS v1.5.0
-  description: The CIS Microsoft Azure Foundations Security Benchmark provides prescriptive guidance for establishing a secure baseline configuration for Microsoft Azure.
-  section-code: azure_cis_v150
-  tags:
-    category:
-    - Compliance
-    cis:
-    - "true"
-    cis_version:
-    - v1.5.0
-    platform_benchmark_type:
-    - compliance
-    platform_category:
-    - Best Practices
-    plugin:
-    - azure
-    service:
-    - Azure
-    type:
-    - Benchmark
-  defaults:
-    is-baseline: false
-    enabled: false
-    tracks-drift-events: false
-  control-group:
-  - id: azure_cis_v150_1
-  - id: azure_cis_v150_2
-  - id: azure_cis_v150_3
-  - id: azure_cis_v150_4
-  - id: azure_cis_v150_5
-  - id: azure_cis_v150_6
-  - id: azure_cis_v150_7
-  - id: azure_cis_v150_8
-  - id: azure_cis_v150_9
-  - id: azure_cis_v150_10
+id: azure_cis_v150
+title: CIS v1.5.0
+description: The CIS Microsoft Azure Foundations Security Benchmark provides prescriptive guidance for establishing a secure baseline configuration for Microsoft Azure.
+section-code: azure_cis_v150
+type: framework
+tags:
+  category:
+  - Compliance
+  cis:
+  - "true"
+  cis_version:
+  - v1.5.0
+  platform_benchmark_type:
+  - compliance
+  platform_category:
+  - Best Practices
+  plugin:
+  - azure
+  service:
+  - Azure
+  type:
+  - Benchmark
+defaults:
+  is-baseline: false
+  enabled: false
+  tracks-drift-events: false
+control-group:
+- id: azure_cis_v150_1
+- id: azure_cis_v150_2
+- id: azure_cis_v150_3
+- id: azure_cis_v150_4
+- id: azure_cis_v150_5
+- id: azure_cis_v150_6
+- id: azure_cis_v150_7
+- id: azure_cis_v150_8
+- id: azure_cis_v150_9
+- id: azure_cis_v150_10
