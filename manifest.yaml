@@ -1,5 +1,5 @@
-type: platform-manifest
-supported-platform-versions: ["2.0.0","2.1"],
+type: platform_manifest
+supported_platform_versions: ["2.0.0", "2.1"]
 parameters:
   # A key with no controls (global)
   - key: awsRdsBaselineRestorableTimeInHrs
@@ -15,9 +15,9 @@ parameters:
   # Another key with no controls (global)
   - key: awsIamServerCertificateAge
     value: 90
-scheduling:
-    integration_resource_discovery_frequency: 24h
-    compliance_framework_frequency: 48h
+schedules:
+  intergration_discovery_frequency: 24h
+  compliance_evaluation_frequency: 48h
 integrations:
   plugins:
     aws_cloud_account:
