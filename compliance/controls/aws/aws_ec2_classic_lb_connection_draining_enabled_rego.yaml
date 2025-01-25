@@ -1,57 +1,26 @@
 id: aws_ec2_classic_lb_connection_draining_enabled_rego
 title: Classic Load Balancers should have connection draining enabled
+type: control
 description: This control checks whether Classic Load Balancers have connection draining enabled.
 integration_type:
-  - aws_cloud_account
+- aws_cloud_account
 parameters: []
 policy:
   language: rego
   primary_resource: aws_ec2_classic_load_balancer
-  rego_policies:
-    - |
-      package aws_ec2_classic_lb_connection_draining_enabled_rego
-      import future.keywords.in
-  
-      status(lb) = "ok" {
-        lb.connection_draining_enabled == true
-      }
-      status(lb) = "alarm" {
-        lb.connection_draining_enabled == false
-      }
-
-      reason(lb) = sprintf("%s connection draining enabled.", [lb.title]) {
-        lb.connection_draining_enabled == true
-      }
-      reason(lb) = sprintf("%s connection draining disabled.", [lb.title]) {
-        lb.connection_draining_enabled == false
-      }
-
-      result[obj] {
-        some lb in opencomply.aws_ec2_classic_load_balancer({})
-  
-        obj = {
-          "resource": lb.arn,
-          "platform_integration_id": lb.platform_integration_id,
-          "platform_resource_id": lb.platform_resource_id,
-          "status": status(lb),
-          "reason": reason(lb),
-          "region": lb.region,
-          "account_id": lb.account_id,
-        }
-      }
   definition: |
     data.aws_ec2_classic_lb_connection_draining_enabled_rego.result
 severity: medium
 tags:
   aws_foundational_security:
-    - "true"
+  - "true"
   category:
-    - Compliance
+  - Compliance
   foundational_security_category:
-    - resilience
+  - resilience
   foundational_security_item_id:
-    - elb_7
+  - elb_7
   plugin:
-    - aws
+  - aws
   service:
-    - AWS/ELB
+  - AWS/ELB

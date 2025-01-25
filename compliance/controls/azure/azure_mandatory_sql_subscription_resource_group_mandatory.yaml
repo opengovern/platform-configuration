@@ -1,11 +1,12 @@
 id: azure_mandatory_sql_subscription_resource_group_mandatory
 title: Resource groups should have mandatory tags
+type: control
 description: Check if Resource groups have mandatory tags.
 integration_type:
-  - azure_subscription
+- azure_subscription
 parameters:
-  - key: azureMandatoryTags
-    value: '["name","environment"]'
+- key: azureMandatoryTags
+  value: "[\"name\",\"environment\"]"
 policy:
   language: sql
   primary_resource: azure_resource_group
