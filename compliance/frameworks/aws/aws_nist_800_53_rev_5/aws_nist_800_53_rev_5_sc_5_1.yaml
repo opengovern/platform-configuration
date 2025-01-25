@@ -1,18 +1,18 @@
-control-group:
-  id: aws_nist_800_53_rev_5_sc_5_1
-  title: SC-5(1) Restrict Ability TO Attack Other Systems
-  description: "Restrict the ability of individuals to launch the following denial-of-service attacks against other systems: [Assignment: organization-defined denial-of-service attacks]."
-  section-code: "1"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/GuardDuty
-    type:
-    - Benchmark
-  controls:
-  - aws_guardduty_enabled
+id: aws_nist_800_53_rev_5_sc_5_1
+title: SC-5(1) Restrict Ability TO Attack Other Systems
+description: "Restrict the ability of individuals to launch the following denial-of-service attacks against other systems: [Assignment: organization-defined denial-of-service attacks]."
+section-code: "1"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/GuardDuty
+  type:
+  - Benchmark
+controls:
+- aws_guardduty_enabled

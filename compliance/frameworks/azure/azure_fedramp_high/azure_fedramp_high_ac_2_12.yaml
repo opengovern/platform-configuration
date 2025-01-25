@@ -1,15 +1,15 @@
-control-group:
-  id: azure_fedramp_high_ac_2_12
-  title: AC-2(12) Account Monitoring
-  description: Monitors and reports atypical usage of information system accounts to organization-defined personnel or roles.
-  section-code: "12"
-  controls:
-  - azure_compute_vm_jit_access_protected
-  - azure_securitycenter_azure_defender_on_for_appservice
-  - azure_securitycenter_azure_defender_on_for_containers
-  - azure_securitycenter_azure_defender_on_for_keyvault
-  - azure_securitycenter_azure_defender_on_for_resource_manager
-  - azure_securitycenter_azure_defender_on_for_server
-  - azure_securitycenter_azure_defender_on_for_sqldb
-  - azure_securitycenter_azure_defender_on_for_sqlservervm
-  - azure_securitycenter_azure_defender_on_for_storage
+id: azure_fedramp_high_ac_2_12
+title: AC-2(12) Account Monitoring
+description: Monitors and reports atypical usage of information system accounts to organization-defined personnel or roles.
+section-code: "12"
+type: control-group
+controls:
+- azure_compute_vm_jit_access_protected
+- azure_securitycenter_azure_defender_on_for_appservice
+- azure_securitycenter_azure_defender_on_for_containers
+- azure_securitycenter_azure_defender_on_for_keyvault
+- azure_securitycenter_azure_defender_on_for_resource_manager
+- azure_securitycenter_azure_defender_on_for_server
+- azure_securitycenter_azure_defender_on_for_sqldb
+- azure_securitycenter_azure_defender_on_for_sqlservervm
+- azure_securitycenter_azure_defender_on_for_storage

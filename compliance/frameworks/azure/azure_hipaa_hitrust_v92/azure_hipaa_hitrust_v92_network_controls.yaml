@@ -1,18 +1,19 @@
+id: azure_hipaa_hitrust_v92_network_controls
+title: Network Controls
+description: The organization monitors for all authorized and unauthorized wireless access to the information system and prohibits installation of wireless access points (WAPs) unless explicitly authorized in writing by the CIO or his/her designated representative.
+section-code: network_controls
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure
+  type:
+  - Benchmark
 control-group:
-  id: azure_hipaa_hitrust_v92_network_controls
-  title: Network Controls
-  description: The organization monitors for all authorized and unauthorized wireless access to the information system and prohibits installation of wireless access points (WAPs) unless explicitly authorized in writing by the CIO or his/her designated representative.
-  section-code: network_controls
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure
-    type:
-    - Benchmark
-  control-group:
-  - id: azure_hipaa_hitrust_v92_0867_09m3organizational
+- id: azure_hipaa_hitrust_v92_0867_09m3organizational
+  type: ""

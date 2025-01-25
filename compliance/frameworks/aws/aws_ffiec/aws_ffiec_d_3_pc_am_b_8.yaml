@@ -1,18 +1,18 @@
-control-group:
-  id: aws_ffiec_d_3_pc_am_b_8
-  title: D3.PC.Am.B.8
-  description: All default passwords and unnecessary default accounts are changed before system implementation.
-  section-code: am_b_8
-  tags:
-    category:
-    - Compliance
-    ffiec:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_iam_root_user_no_access_keys
+id: aws_ffiec_d_3_pc_am_b_8
+title: D3.PC.Am.B.8
+description: All default passwords and unnecessary default accounts are changed before system implementation.
+section-code: am_b_8
+type: control-group
+tags:
+  category:
+  - Compliance
+  ffiec:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_iam_root_user_no_access_keys

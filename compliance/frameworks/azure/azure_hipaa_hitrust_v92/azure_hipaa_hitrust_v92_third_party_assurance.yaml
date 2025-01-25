@@ -1,19 +1,21 @@
+id: azure_hipaa_hitrust_v92_third_party_assurance
+title: Third Party Assurance
+description: Where software development is outsourced, the development process is monitored by the organization and includes independent security and code reviews.
+section-code: third_party_assurance
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure
+  type:
+  - Benchmark
 control-group:
-  id: azure_hipaa_hitrust_v92_third_party_assurance
-  title: Third Party Assurance
-  description: Where software development is outsourced, the development process is monitored by the organization and includes independent security and code reviews.
-  section-code: third_party_assurance
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure
-    type:
-    - Benchmark
-  control-group:
-  - id: azure_hipaa_hitrust_v92_1450_05i2organizational
-  - id: azure_hipaa_hitrust_v92_1451_05icsporganizational
+- id: azure_hipaa_hitrust_v92_1450_05i2organizational
+  type: ""
+- id: azure_hipaa_hitrust_v92_1451_05icsporganizational
+  type: ""

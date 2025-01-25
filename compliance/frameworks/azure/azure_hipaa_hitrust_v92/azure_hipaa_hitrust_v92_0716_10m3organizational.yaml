@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_0716_10m3organizational
-  title: 10m3Organizational.1-10.m 10.06 Technical Vulnerability Management
-  description: The organization conducts an enterprise security posture review as needed but no less than once within every three-hundred-sixty-five (365) days, in accordance with organizational IS procedures.
-  section-code: azure_hipaa_hitrust_v92_0716_10m3organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/SQL
-    type:
-    - Benchmark
-  controls:
-  - azure_sql_database_vulnerability_findings_resolved
+id: azure_hipaa_hitrust_v92_0716_10m3organizational
+title: 10m3Organizational.1-10.m 10.06 Technical Vulnerability Management
+description: The organization conducts an enterprise security posture review as needed but no less than once within every three-hundred-sixty-five (365) days, in accordance with organizational IS procedures.
+section-code: azure_hipaa_hitrust_v92_0716_10m3organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/SQL
+  type:
+  - Benchmark
+controls:
+- azure_sql_database_vulnerability_findings_resolved

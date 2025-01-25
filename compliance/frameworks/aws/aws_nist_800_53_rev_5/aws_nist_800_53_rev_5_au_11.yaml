@@ -1,20 +1,21 @@
+id: aws_nist_800_53_rev_5_au_11
+title: Audit Record Retention (AU-11)
+description: "Retain audit records for [Assignment: organization-defined time period consistent with records retention policy] to provide support for after-the-fact investigations of incidents and to meet regulatory and organizational information retention requirements."
+section-code: "11"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/CloudWatch
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_5_au_11
-  title: Audit Record Retention (AU-11)
-  description: "Retain audit records for [Assignment: organization-defined time period consistent with records retention policy] to provide support for after-the-fact investigations of incidents and to meet regulatory and organizational information retention requirements."
-  section-code: "11"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/CloudWatch
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_5_au_11_1
-  controls:
-  - aws_cloudwatch_log_group_retention_period_365
+- id: aws_nist_800_53_rev_5_au_11_1
+  type: ""
+controls:
+- aws_cloudwatch_log_group_retention_period_365

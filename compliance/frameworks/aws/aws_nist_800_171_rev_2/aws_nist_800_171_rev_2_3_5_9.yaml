@@ -1,18 +1,18 @@
-control-group:
-  id: aws_nist_800_171_rev_2_3_5_9
-  title: 5.9 Allow temporary password use for system logons with an immediate change to a permanent password
-  description: Changing temporary passwords to permanent passwords immediately after system logon ensures that the necessary strength of the authentication mechanism is implemented at the earliest opportunity, reducing the susceptibility to authenticator compromises.
-  section-code: "9"
-  tags:
-    category:
-    - Compliance
-    nist_800_171_rev_2:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_iam_account_password_policy_strong_min_reuse_24
+id: aws_nist_800_171_rev_2_3_5_9
+title: 5.9 Allow temporary password use for system logons with an immediate change to a permanent password
+description: Changing temporary passwords to permanent passwords immediately after system logon ensures that the necessary strength of the authentication mechanism is implemented at the earliest opportunity, reducing the susceptibility to authenticator compromises.
+section-code: "9"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_171_rev_2:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_iam_account_password_policy_strong_min_reuse_24

@@ -1,22 +1,22 @@
-control-group:
-  id: aws_audit_manager_control_tower_disallow_public_access_4_1_2
-  title: 1.2 - Disallow public write access to S3 buckets
-  description: Disallow public write access to S3 buckets - Checks that your S3 buckets do not allow public write access.
-  section-code: "4_1_2"
-  tags:
-    audit_manager_control_tower:
-    - "true"
-    audit_manager_control_tower_item_id:
-    - 4.1.2
-    category:
-    - Compliance
-    control_set:
-    - disallow_public_access
-    plugin:
-    - aws
-    service:
-    - AWS/S3
-    type:
-    - Benchmark
-  controls:
-  - aws_s3_bucket_restrict_public_write_access
+id: aws_audit_manager_control_tower_disallow_public_access_4_1_2
+title: 1.2 - Disallow public write access to S3 buckets
+description: Disallow public write access to S3 buckets - Checks that your S3 buckets do not allow public write access.
+section-code: "4_1_2"
+type: control-group
+tags:
+  audit_manager_control_tower:
+  - "true"
+  audit_manager_control_tower_item_id:
+  - 4.1.2
+  category:
+  - Compliance
+  control_set:
+  - disallow_public_access
+  plugin:
+  - aws
+  service:
+  - AWS/S3
+  type:
+  - Benchmark
+controls:
+- aws_s3_bucket_restrict_public_write_access

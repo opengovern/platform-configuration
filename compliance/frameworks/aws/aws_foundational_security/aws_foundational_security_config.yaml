@@ -1,18 +1,18 @@
-control-group:
-  id: aws_foundational_security_config
-  title: Config
-  description: Config
-  section-code: config
-  tags:
-    aws_foundational_security:
-    - "true"
-    category:
-    - Compliance
-    plugin:
-    - aws
-    service:
-    - AWS/Config
-    type:
-    - Benchmark
-  controls:
-  - aws_foundational_security_config_1
+id: aws_foundational_security_config
+title: Config
+description: Config
+section-code: config
+type: control-group
+tags:
+  aws_foundational_security:
+  - "true"
+  category:
+  - Compliance
+  plugin:
+  - aws
+  service:
+  - AWS/Config
+  type:
+  - Benchmark
+controls:
+- aws_foundational_security_config_1

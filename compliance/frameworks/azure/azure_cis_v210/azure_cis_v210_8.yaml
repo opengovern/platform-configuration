@@ -1,13 +1,13 @@
-control-group:
-  id: azure_cis_v210_8
-  title: Key Vault
-  description: Key Vault
-  section-code: "8"
-  controls:
-  - azure_cis_v210_8_1
-  - azure_cis_v210_8_2
-  - azure_cis_v210_8_3
-  - azure_cis_v210_8_4
-  - azure_cis_v210_8_5
-  - azure_cis_v210_8_6
-  - azure_cis_v210_8_8
+id: azure_cis_v210_8
+title: Key Vault
+description: Key Vault
+section-code: "8"
+type: control-group
+controls:
+- azure_cis_v210_8_1
+- azure_cis_v210_8_2
+- azure_cis_v210_8_3
+- azure_cis_v210_8_4
+- azure_cis_v210_8_5
+- azure_cis_v210_8_6
+- azure_cis_v210_8_8

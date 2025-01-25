@@ -1,8 +1,10 @@
+id: aws_acsc_essential_eight_ml_3_2
+title: "ACSC-EE-ML3-2: Patch applications ML3"
+description: All workstations and servers have the latest security-relevant patches applied.
+section-code: "2"
+type: control-group
 control-group:
-  id: aws_acsc_essential_eight_ml_3_2
-  title: "ACSC-EE-ML3-2: Patch applications ML3"
-  description: All workstations and servers have the latest security-relevant patches applied.
-  section-code: "2"
-  control-group:
-  - id: aws_acsc_essential_eight_ml_3_2_2
-  - id: aws_acsc_essential_eight_ml_3_2_9
+- id: aws_acsc_essential_eight_ml_3_2_2
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_2_9
+  type: ""

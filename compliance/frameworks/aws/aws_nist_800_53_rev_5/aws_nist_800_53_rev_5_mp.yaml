@@ -1,18 +1,19 @@
+id: aws_nist_800_53_rev_5_mp
+title: Media Protection (MP)
+description: The Media Protection control family includes controls specific to access, marking, storage, transport policies, sanitization, and defined organizational media use.
+section-code: mp
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_5_mp
-  title: Media Protection (MP)
-  description: The Media Protection control family includes controls specific to access, marking, storage, transport policies, sanitization, and defined organizational media use.
-  section-code: mp
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_5_mp_2
+- id: aws_nist_800_53_rev_5_mp_2
+  type: ""

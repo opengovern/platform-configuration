@@ -1,12 +1,12 @@
-control-group:
-  id: aws_all_controls_emr
-  title: EMR
-  description: This section contains recommendations for configuring EMR resources.
-  section-code: emr
-  controls:
-  - aws_emr_account_public_access_blocked
-  - aws_emr_cluster_encryption_at_rest_with_sse_kms
-  - aws_emr_cluster_kerberos_enabled
-  - aws_emr_cluster_local_disk_encrypted_with_cmk
-  - aws_emr_cluster_master_nodes_no_public_ip
-  - aws_emr_cluster_security_configuration_enabled
+id: aws_all_controls_emr
+title: EMR
+description: This section contains recommendations for configuring EMR resources.
+section-code: emr
+type: control-group
+controls:
+- aws_emr_account_public_access_blocked
+- aws_emr_cluster_encryption_at_rest_with_sse_kms
+- aws_emr_cluster_kerberos_enabled
+- aws_emr_cluster_local_disk_encrypted_with_cmk
+- aws_emr_cluster_master_nodes_no_public_ip
+- aws_emr_cluster_security_configuration_enabled

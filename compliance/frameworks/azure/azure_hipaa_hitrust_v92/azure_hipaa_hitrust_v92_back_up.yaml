@@ -1,18 +1,19 @@
+id: azure_hipaa_hitrust_v92_back_up
+title: Back-up
+description: Ensure the maintenance, integrity, and availability of organizational information. Back-up copies of information and software shall be taken and tested regularly.
+section-code: back_up
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure
+  type:
+  - Benchmark
 control-group:
-  id: azure_hipaa_hitrust_v92_back_up
-  title: Back-up
-  description: Ensure the maintenance, integrity, and availability of organizational information. Back-up copies of information and software shall be taken and tested regularly.
-  section-code: back_up
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure
-    type:
-    - Benchmark
-  control-group:
-  - id: azure_hipaa_hitrust_v92_1699_09l1organizational
+- id: azure_hipaa_hitrust_v92_1699_09l1organizational
+  type: ""

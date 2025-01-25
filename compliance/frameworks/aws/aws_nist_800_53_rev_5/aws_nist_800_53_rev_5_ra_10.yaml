@@ -1,18 +1,19 @@
+id: aws_nist_800_53_rev_5_ra_10
+title: Threat Hunting (RA-10)
+description: "a.\u2003Establish and maintain a cyber threat hunting capability to: 1.\u2003Search for indicators of compromise in organizational systems; and 2.\u2003Detect, track, and disrupt threats that evade existing controls; and b.\u2003Employ the threat hunting capability [Assignment: organization-defined frequency]."
+section-code: "10"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/GuardDuty
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_5_ra_10
-  title: Threat Hunting (RA-10)
-  description: "a.\u2003Establish and maintain a cyber threat hunting capability to: 1.\u2003Search for indicators of compromise in organizational systems; and 2.\u2003Detect, track, and disrupt threats that evade existing controls; and b.\u2003Employ the threat hunting capability [Assignment: organization-defined frequency]."
-  section-code: "10"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/GuardDuty
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_5_ra_10_a
+- id: aws_nist_800_53_rev_5_ra_10_a
+  type: ""

@@ -1,10 +1,10 @@
-control-group:
-  id: aws_all_controls_ecr
-  title: ECR
-  description: This section contains recommendations for configuring ECR resources.
-  section-code: ecr
-  controls:
-  - aws_ecr_repository_image_scan_on_push_enabled
-  - aws_ecr_repository_lifecycle_policy_configured
-  - aws_ecr_repository_prohibit_public_access
-  - aws_ecr_repository_tag_immutability_enabled
+id: aws_all_controls_ecr
+title: ECR
+description: This section contains recommendations for configuring ECR resources.
+section-code: ecr
+type: control-group
+controls:
+- aws_ecr_repository_image_scan_on_push_enabled
+- aws_ecr_repository_lifecycle_policy_configured
+- aws_ecr_repository_prohibit_public_access
+- aws_ecr_repository_tag_immutability_enabled

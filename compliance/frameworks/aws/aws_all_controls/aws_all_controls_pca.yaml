@@ -1,7 +1,7 @@
-control-group:
-  id: aws_all_controls_pca
-  title: Private Certificate Authority
-  description: This section contains recommendations for configuring Private Certificate Authority resources.
-  section-code: pca
-  controls:
-  - aws_acmpca_root_certificate_authority_disabled
+id: aws_all_controls_pca
+title: Private Certificate Authority
+description: This section contains recommendations for configuring Private Certificate Authority resources.
+section-code: pca
+type: control-group
+controls:
+- aws_acmpca_root_certificate_authority_disabled

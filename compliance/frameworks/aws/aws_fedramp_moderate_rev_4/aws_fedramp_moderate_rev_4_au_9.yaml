@@ -1,22 +1,23 @@
+id: aws_fedramp_moderate_rev_4_au_9
+title: benchmark.nist_800_53_rev_4_au_9.title
+description: benchmark.nist_800_53_rev_4_au_9.description
+section-code: "9"
+type: control-group
+tags:
+  category:
+  - Compliance
+  fedramp_moderate_rev_4:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_fedramp_moderate_rev_4_au_9
-  title: benchmark.nist_800_53_rev_4_au_9.title
-  description: benchmark.nist_800_53_rev_4_au_9.description
-  section-code: "9"
-  tags:
-    category:
-    - Compliance
-    fedramp_moderate_rev_4:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_fedramp_moderate_rev_4_au_9_2
-  controls:
-  - aws_cloudtrail_trail_logs_encrypted_with_kms_cmk
-  - aws_cloudtrail_trail_validation_enabled
-  - aws_log_group_encryption_at_rest_enabled
+- id: aws_fedramp_moderate_rev_4_au_9_2
+  type: ""
+controls:
+- aws_cloudtrail_trail_logs_encrypted_with_kms_cmk
+- aws_cloudtrail_trail_validation_enabled
+- aws_log_group_encryption_at_rest_enabled

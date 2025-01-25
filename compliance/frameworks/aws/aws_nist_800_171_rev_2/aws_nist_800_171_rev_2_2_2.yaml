@@ -1,19 +1,19 @@
-control-group:
-  id: aws_nist_800_171_rev_2_2_2
-  title: 2. List all software components installed on the system
-  description: List all software components installed on the system.
-  section-code: "2"
-  tags:
-    category:
-    - Compliance
-    nist_800_171_rev_2:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_config_enabled_all_regions
-  - aws_ec2_instance_ssm_managed
+id: aws_nist_800_171_rev_2_2_2
+title: 2. List all software components installed on the system
+description: List all software components installed on the system.
+section-code: "2"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_171_rev_2:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_config_enabled_all_regions
+- aws_ec2_instance_ssm_managed

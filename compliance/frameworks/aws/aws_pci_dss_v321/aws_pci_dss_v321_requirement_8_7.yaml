@@ -1,10 +1,14 @@
+id: aws_pci_dss_v321_requirement_8_7
+title: All access to any database containing cardholder data (including access by applications, administrators, and all other users) is restricted
+description: "Access to any database containing cardholder data is restricted as follows: all user access to, user queries of, and user actions on databases are through programmatic methods. Only database administrators have the ability to directly access or query databases. Application IDs for database applications can only be used by the applications (and not by individual users or other non-application processes). Without user authentication for access to databases and applications, the potential for unauthorized or malicious access increases, and such access cannot be logged since the user has not been authenticated and is therefore not known to the system. Also, database access should be granted through programmatic methods only (for example, through stored procedures), rather than via direct access to the database by end users (except for DBAs, who may need direct access to the database for their administrative duties)."
+section-code: "7"
+type: control-group
 control-group:
-  id: aws_pci_dss_v321_requirement_8_7
-  title: All access to any database containing cardholder data (including access by applications, administrators, and all other users) is restricted
-  description: "Access to any database containing cardholder data is restricted as follows: all user access to, user queries of, and user actions on databases are through programmatic methods. Only database administrators have the ability to directly access or query databases. Application IDs for database applications can only be used by the applications (and not by individual users or other non-application processes). Without user authentication for access to databases and applications, the potential for unauthorized or malicious access increases, and such access cannot be logged since the user has not been authenticated and is therefore not known to the system. Also, database access should be granted through programmatic methods only (for example, through stored procedures), rather than via direct access to the database by end users (except for DBAs, who may need direct access to the database for their administrative duties)."
-  section-code: "7"
-  control-group:
-  - id: aws_pci_dss_v321_requirement_8_7_a
-  - id: aws_pci_dss_v321_requirement_8_7_b
-  - id: aws_pci_dss_v321_requirement_8_7_c
-  - id: aws_pci_dss_v321_requirement_8_7_d
+- id: aws_pci_dss_v321_requirement_8_7_a
+  type: ""
+- id: aws_pci_dss_v321_requirement_8_7_b
+  type: ""
+- id: aws_pci_dss_v321_requirement_8_7_c
+  type: ""
+- id: aws_pci_dss_v321_requirement_8_7_d
+  type: ""

@@ -1,7 +1,7 @@
-control-group:
-  id: azure_all_controls_iothub
-  title: IoT Hub
-  description: This section contains recommendations for configuring IoT Hub resources.
-  section-code: iothub
-  controls:
-  - azure_iot_hub_logging_enabled
+id: azure_all_controls_iothub
+title: IoT Hub
+description: This section contains recommendations for configuring IoT Hub resources.
+section-code: iothub
+type: control-group
+controls:
+- azure_iot_hub_logging_enabled

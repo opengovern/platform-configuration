@@ -1,7 +1,7 @@
-control-group:
-  id: aws_foundational_security_eventbridge
-  title: EventBridge
-  description: EventBridge
-  section-code: eventbridge
-  controls:
-  - aws_foundational_security_eventbridge_3
+id: aws_foundational_security_eventbridge
+title: EventBridge
+description: EventBridge
+section-code: eventbridge
+type: control-group
+controls:
+- aws_foundational_security_eventbridge_3

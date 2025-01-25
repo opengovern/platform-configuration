@@ -1,21 +1,25 @@
+id: aws_nist_800_53_rev_5_sa
+title: System and Services Acquisition (SA)
+description: The SA control family correlates with controls that protect allocated resources and an organization’s system development life cycle. This includes information system documentation controls, development configuration management controls, and developer security testing and evaluation controls.
+section-code: sa
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_5_sa
-  title: System and Services Acquisition (SA)
-  description: The SA control family correlates with controls that protect allocated resources and an organization’s system development life cycle. This includes information system documentation controls, development configuration management controls, and developer security testing and evaluation controls.
-  section-code: sa
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_5_sa_1
-  - id: aws_nist_800_53_rev_5_sa_9
-  - id: aws_nist_800_53_rev_5_sa_10
-  - id: aws_nist_800_53_rev_5_sa_15
+- id: aws_nist_800_53_rev_5_sa_1
+  type: ""
+- id: aws_nist_800_53_rev_5_sa_9
+  type: ""
+- id: aws_nist_800_53_rev_5_sa_10
+  type: ""
+- id: aws_nist_800_53_rev_5_sa_15
+  type: ""

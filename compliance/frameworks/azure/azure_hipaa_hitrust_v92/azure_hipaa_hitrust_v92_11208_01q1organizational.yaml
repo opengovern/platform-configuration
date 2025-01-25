@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_11208_01q1organizational
-  title: The organization requires that electronic signatures, unique to one individual, cannot be reused by, or reassigned to, anyone else
-  description: The organization requires that electronic signatures, unique to one individual, cannot be reused by, or reassigned to, anyone else
-  section-code: azure_hipaa_hitrust_v92_11208_01q1organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/IAM
-    type:
-    - Benchmark
-  controls:
-  - azure_iam_subscription_owner_more_than_1
+id: azure_hipaa_hitrust_v92_11208_01q1organizational
+title: The organization requires that electronic signatures, unique to one individual, cannot be reused by, or reassigned to, anyone else
+description: The organization requires that electronic signatures, unique to one individual, cannot be reused by, or reassigned to, anyone else
+section-code: azure_hipaa_hitrust_v92_11208_01q1organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/IAM
+  type:
+  - Benchmark
+controls:
+- azure_iam_subscription_owner_more_than_1

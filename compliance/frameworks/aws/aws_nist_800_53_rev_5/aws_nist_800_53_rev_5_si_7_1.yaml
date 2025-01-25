@@ -1,18 +1,18 @@
-control-group:
-  id: aws_nist_800_53_rev_5_si_7_1
-  title: SI-7(1) Integrity Checks
-  description: "Perform an integrity check of [Assignment: organization-defined software, firmware, and information] [Selection (one or more): at startup; at [Assignment: organization-defined transitional states or security-relevant events]; [Assignment: organization-defined frequency]]."
-  section-code: "1"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/CloudTrail
-    type:
-    - Benchmark
-  controls:
-  - aws_cloudtrail_trail_validation_enabled
+id: aws_nist_800_53_rev_5_si_7_1
+title: SI-7(1) Integrity Checks
+description: "Perform an integrity check of [Assignment: organization-defined software, firmware, and information] [Selection (one or more): at startup; at [Assignment: organization-defined transitional states or security-relevant events]; [Assignment: organization-defined frequency]]."
+section-code: "1"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/CloudTrail
+  type:
+  - Benchmark
+controls:
+- aws_cloudtrail_trail_validation_enabled

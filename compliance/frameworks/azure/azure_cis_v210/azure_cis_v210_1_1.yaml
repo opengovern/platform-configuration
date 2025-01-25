@@ -1,10 +1,10 @@
-control-group:
-  id: azure_cis_v210_1_1
-  title: Security Defaults
-  description: Security Defaults
-  section-code: "1"
-  controls:
-  - azure_cis_v210_1_1_1
-  - azure_cis_v210_1_1_2
-  - azure_cis_v210_1_1_3
-  - azure_cis_v210_1_1_4
+id: azure_cis_v210_1_1
+title: Security Defaults
+description: Security Defaults
+section-code: "1"
+type: control-group
+controls:
+- azure_cis_v210_1_1_1
+- azure_cis_v210_1_1_2
+- azure_cis_v210_1_1_3
+- azure_cis_v210_1_1_4

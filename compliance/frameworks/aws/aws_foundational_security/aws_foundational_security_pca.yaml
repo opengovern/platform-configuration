@@ -1,7 +1,7 @@
-control-group:
-  id: aws_foundational_security_pca
-  title: Private Certificate Authority
-  description: Private Certificate Authority
-  section-code: pca
-  controls:
-  - aws_foundational_security_pca_1
+id: aws_foundational_security_pca
+title: Private Certificate Authority
+description: Private Certificate Authority
+section-code: pca
+type: control-group
+controls:
+- aws_foundational_security_pca_1

@@ -1,20 +1,23 @@
+id: azure_pci_dss_v321_requirement_8
+title: Requirement 8 - Identify and authenticate access to system components
+description: Assigning a unique identification (ID) to each person with access ensures that actions taken on critical data and systems are performed by, and can be traced to, known and authorized users. Requirements apply to all accounts, including point of sale accounts, with administrative capabilities and all accounts with access to stored cardholder data. Requirements do not apply to accounts used by consumers (eg.,cardholders).
+section-code: requirement_8
+type: control-group
+tags:
+  category:
+  - Compliance
+  pci_dss_v321:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure
+  type:
+  - Benchmark
 control-group:
-  id: azure_pci_dss_v321_requirement_8
-  title: Requirement 8 - Identify and authenticate access to system components
-  description: Assigning a unique identification (ID) to each person with access ensures that actions taken on critical data and systems are performed by, and can be traced to, known and authorized users. Requirements apply to all accounts, including point of sale accounts, with administrative capabilities and all accounts with access to stored cardholder data. Requirements do not apply to accounts used by consumers (eg.,cardholders).
-  section-code: requirement_8
-  tags:
-    category:
-    - Compliance
-    pci_dss_v321:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure
-    type:
-    - Benchmark
-  control-group:
-  - id: azure_pci_dss_v321_requirement_8_1
-  - id: azure_pci_dss_v321_requirement_8_2
-  - id: azure_pci_dss_v321_requirement_8_3
+- id: azure_pci_dss_v321_requirement_8_1
+  type: ""
+- id: azure_pci_dss_v321_requirement_8_2
+  type: ""
+- id: azure_pci_dss_v321_requirement_8_3
+  type: ""

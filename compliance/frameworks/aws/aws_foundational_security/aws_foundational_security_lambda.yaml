@@ -1,19 +1,19 @@
-control-group:
-  id: aws_foundational_security_lambda
-  title: Lambda
-  description: Lambda
-  section-code: lambda
-  tags:
-    aws_foundational_security:
-    - "true"
-    category:
-    - Compliance
-    plugin:
-    - aws
-    service:
-    - AWS/Lambda
-    type:
-    - Benchmark
-  controls:
-  - aws_foundational_security_lambda_1
-  - aws_foundational_security_lambda_2
+id: aws_foundational_security_lambda
+title: Lambda
+description: Lambda
+section-code: lambda
+type: control-group
+tags:
+  aws_foundational_security:
+  - "true"
+  category:
+  - Compliance
+  plugin:
+  - aws
+  service:
+  - AWS/Lambda
+  type:
+  - Benchmark
+controls:
+- aws_foundational_security_lambda_1
+- aws_foundational_security_lambda_2

@@ -1,7 +1,7 @@
-control-group:
-  id: azure_all_controls_automation
-  title: Automation
-  description: This section contains recommendations for configuring Automation resources.
-  section-code: automation
-  controls:
-  - azure_automation_account_variable_encryption_enabled
+id: azure_all_controls_automation
+title: Automation
+description: This section contains recommendations for configuring Automation resources.
+section-code: automation
+type: control-group
+controls:
+- azure_automation_account_variable_encryption_enabled

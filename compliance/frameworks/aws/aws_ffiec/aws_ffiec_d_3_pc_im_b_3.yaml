@@ -1,23 +1,23 @@
-control-group:
-  id: aws_ffiec_d_3_pc_im_b_3
-  title: D3.PC.IM.B.3
-  description: All ports are monitored.
-  section-code: im_b_3
-  tags:
-    category:
-    - Compliance
-    ffiec:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_apigateway_stage_logging_enabled
-  - aws_cloudtrail_trail_enabled
-  - aws_cloudtrail_trail_integrated_with_logs
-  - aws_elb_application_classic_lb_logging_enabled
-  - aws_vpc_flow_logs_enabled
-  - aws_wafv2_web_acl_logging_enabled
+id: aws_ffiec_d_3_pc_im_b_3
+title: D3.PC.IM.B.3
+description: All ports are monitored.
+section-code: im_b_3
+type: control-group
+tags:
+  category:
+  - Compliance
+  ffiec:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_apigateway_stage_logging_enabled
+- aws_cloudtrail_trail_enabled
+- aws_cloudtrail_trail_integrated_with_logs
+- aws_elb_application_classic_lb_logging_enabled
+- aws_vpc_flow_logs_enabled
+- aws_wafv2_web_acl_logging_enabled

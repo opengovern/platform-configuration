@@ -1,24 +1,31 @@
+id: azure_nist_sp_800_53_rev_5_ac
+title: Access Control (AC)
+description: The AC Control Family consists of security requirements detailing system logging. This includes who has access to what assets and reporting capabilities like account management, system privileges, and remote access logging to determine when users have access to the system and their level of access.
+section-code: ac
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_sp_800_53_rev_5:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure
+  type:
+  - Benchmark
 control-group:
-  id: azure_nist_sp_800_53_rev_5_ac
-  title: Access Control (AC)
-  description: The AC Control Family consists of security requirements detailing system logging. This includes who has access to what assets and reporting capabilities like account management, system privileges, and remote access logging to determine when users have access to the system and their level of access.
-  section-code: ac
-  tags:
-    category:
-    - Compliance
-    nist_sp_800_53_rev_5:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure
-    type:
-    - Benchmark
-  control-group:
-  - id: azure_nist_sp_800_53_rev_5_ac_2
-  - id: azure_nist_sp_800_53_rev_5_ac_3
-  - id: azure_nist_sp_800_53_rev_5_ac_4
-  - id: azure_nist_sp_800_53_rev_5_ac_5
-  - id: azure_nist_sp_800_53_rev_5_ac_6
-  - id: azure_nist_sp_800_53_rev_5_ac_16
-  - id: azure_nist_sp_800_53_rev_5_ac_17
+- id: azure_nist_sp_800_53_rev_5_ac_2
+  type: ""
+- id: azure_nist_sp_800_53_rev_5_ac_3
+  type: ""
+- id: azure_nist_sp_800_53_rev_5_ac_4
+  type: ""
+- id: azure_nist_sp_800_53_rev_5_ac_5
+  type: ""
+- id: azure_nist_sp_800_53_rev_5_ac_6
+  type: ""
+- id: azure_nist_sp_800_53_rev_5_ac_16
+  type: ""
+- id: azure_nist_sp_800_53_rev_5_ac_17
+  type: ""

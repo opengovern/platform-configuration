@@ -1,11 +1,16 @@
+id: aws_acsc_essential_eight_ml_2_7
+title: "ACSC-EE-ML2-7: Application control ML2"
+description: Allowed and blocked execution events on workstations and internet-facing servers are logged.
+section-code: "7"
+type: control-group
 control-group:
-  id: aws_acsc_essential_eight_ml_2_7
-  title: "ACSC-EE-ML2-7: Application control ML2"
-  description: Allowed and blocked execution events on workstations and internet-facing servers are logged.
-  section-code: "7"
-  control-group:
-  - id: aws_acsc_essential_eight_ml_2_7_1
-  - id: aws_acsc_essential_eight_ml_2_7_4
-  - id: aws_acsc_essential_eight_ml_2_7_5
-  - id: aws_acsc_essential_eight_ml_2_7_6
-  - id: aws_acsc_essential_eight_ml_2_7_7
+- id: aws_acsc_essential_eight_ml_2_7_1
+  type: ""
+- id: aws_acsc_essential_eight_ml_2_7_4
+  type: ""
+- id: aws_acsc_essential_eight_ml_2_7_5
+  type: ""
+- id: aws_acsc_essential_eight_ml_2_7_6
+  type: ""
+- id: aws_acsc_essential_eight_ml_2_7_7
+  type: ""

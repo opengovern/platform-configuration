@@ -1,8 +1,8 @@
-control-group:
-  id: azure_fedramp_high_sc_3
-  title: Security Function Isolation (SC-3)
-  description: Isolate security functions from nonsecurity functions.
-  section-code: "3"
-  controls:
-  - azure_compute_vm_windows_defender_exploit_guard_enabled
-  - azure_securitycenter_azure_defender_on_for_server
+id: azure_fedramp_high_sc_3
+title: Security Function Isolation (SC-3)
+description: Isolate security functions from nonsecurity functions.
+section-code: "3"
+type: control-group
+controls:
+- azure_compute_vm_windows_defender_exploit_guard_enabled
+- azure_securitycenter_azure_defender_on_for_server

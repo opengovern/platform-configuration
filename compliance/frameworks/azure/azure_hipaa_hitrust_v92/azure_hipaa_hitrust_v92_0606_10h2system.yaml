@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_0606_10h2system
-  title: Applications and operating systems are successfully tested for usability, security and impact prior to production
-  description: Applications and operating systems are successfully tested for usability, security and impact prior to production
-  section-code: azure_hipaa_hitrust_v92_0606_10h2system
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/Compute
-    type:
-    - Benchmark
-  controls:
-  - azure_compute_vm_container_security_configurations_vulnerabilities_remediated
+id: azure_hipaa_hitrust_v92_0606_10h2system
+title: Applications and operating systems are successfully tested for usability, security and impact prior to production
+description: Applications and operating systems are successfully tested for usability, security and impact prior to production
+section-code: azure_hipaa_hitrust_v92_0606_10h2system
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/Compute
+  type:
+  - Benchmark
+controls:
+- azure_compute_vm_container_security_configurations_vulnerabilities_remediated

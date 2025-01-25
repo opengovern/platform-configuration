@@ -1,18 +1,19 @@
+id: aws_nist_800_53_rev_5_si_4_13
+title: SI-4(13) Analyze Traffic And Event Patterns
+description: a. Analyze communications traffic and event patterns for the system; b. Develop profiles representing common traffic and event patterns; and c. Use the traffic and event profiles in tuning system-monitoring devices.
+section-code: "13"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_5_si_4_13
-  title: SI-4(13) Analyze Traffic And Event Patterns
-  description: a. Analyze communications traffic and event patterns for the system; b. Develop profiles representing common traffic and event patterns; and c. Use the traffic and event profiles in tuning system-monitoring devices.
-  section-code: "13"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_5_si_4_13_a
+- id: aws_nist_800_53_rev_5_si_4_13_a
+  type: ""

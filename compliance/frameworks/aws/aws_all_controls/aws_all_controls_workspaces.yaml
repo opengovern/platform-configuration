@@ -1,7 +1,7 @@
-control-group:
-  id: aws_all_controls_workspaces
-  title: WorkSpaces
-  description: This section contains recommendations for configuring WorkSpaces resources.
-  section-code: workspaces
-  controls:
-  - aws_workspaces_workspace_volume_encryption_enabled
+id: aws_all_controls_workspaces
+title: WorkSpaces
+description: This section contains recommendations for configuring WorkSpaces resources.
+section-code: workspaces
+type: control-group
+controls:
+- aws_workspaces_workspace_volume_encryption_enabled

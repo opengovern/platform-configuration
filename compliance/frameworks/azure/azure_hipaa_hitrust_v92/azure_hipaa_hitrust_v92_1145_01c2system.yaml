@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1145_01c2system
-  title: 01c2System.1-01.c 01.02 Authorized Access to Information Systems
-  description: Role-based access control is implemented and capable of mapping each user to one or more roles, and each role to one or more system functions.
-  section-code: azure_hipaa_hitrust_v92_1145_01c2system
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/ActiveDirectory
-    type:
-    - Benchmark
-  controls:
-  - azure_iam_subscription_owner_more_than_1
+id: azure_hipaa_hitrust_v92_1145_01c2system
+title: 01c2System.1-01.c 01.02 Authorized Access to Information Systems
+description: Role-based access control is implemented and capable of mapping each user to one or more roles, and each role to one or more system functions.
+section-code: azure_hipaa_hitrust_v92_1145_01c2system
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/ActiveDirectory
+  type:
+  - Benchmark
+controls:
+- azure_iam_subscription_owner_more_than_1

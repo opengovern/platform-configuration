@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1232_09c3organizational
-  title: 09c3Organizational.12-09.c 09.01 Documented Operating Procedures
-  description: Access for individuals responsible for administering access controls is limited to the minimum necessary based upon each user's role and responsibilities and these individuals cannot access audit functions related to these controls.
-  section-code: azure_hipaa_hitrust_v92_1232_09c3organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/Network
-    type:
-    - Benchmark
-  controls:
-  - azure_network_security_group_rdp_access_restricted
+id: azure_hipaa_hitrust_v92_1232_09c3organizational
+title: 09c3Organizational.12-09.c 09.01 Documented Operating Procedures
+description: Access for individuals responsible for administering access controls is limited to the minimum necessary based upon each user's role and responsibilities and these individuals cannot access audit functions related to these controls.
+section-code: azure_hipaa_hitrust_v92_1232_09c3organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/Network
+  type:
+  - Benchmark
+controls:
+- azure_network_security_group_rdp_access_restricted

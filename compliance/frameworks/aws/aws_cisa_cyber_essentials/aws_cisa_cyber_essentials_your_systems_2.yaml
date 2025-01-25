@@ -1,20 +1,20 @@
-control-group:
-  id: aws_cisa_cyber_essentials_your_systems_2
-  title: Your Systems-2
-  description: Leverage automatic updates for all operating systems and third-party software.
-  section-code: "2"
-  tags:
-    category:
-    - Compliance
-    cisa_cyber_essentials:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_rds_db_instance_automatic_minor_version_upgrade_enabled
-  - aws_redshift_cluster_maintenance_settings_check
-  - aws_ssm_managed_instance_compliance_patch_compliant
+id: aws_cisa_cyber_essentials_your_systems_2
+title: Your Systems-2
+description: Leverage automatic updates for all operating systems and third-party software.
+section-code: "2"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cisa_cyber_essentials:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_rds_db_instance_automatic_minor_version_upgrade_enabled
+- aws_redshift_cluster_maintenance_settings_check
+- aws_ssm_managed_instance_compliance_patch_compliant

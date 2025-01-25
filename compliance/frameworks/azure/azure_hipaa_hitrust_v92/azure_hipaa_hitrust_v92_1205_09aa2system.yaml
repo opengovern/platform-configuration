@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1205_09aa2system
-  title: 09aa2System.1-09.aa 09.10 Monitoring
-  description: Logs of messages sent and received are maintained including the date, time, origin and destination of the message, but not its contents.
-  section-code: azure_hipaa_hitrust_v92_1205_09aa2system
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/Batch
-    type:
-    - Benchmark
-  controls:
-  - azure_batch_account_logging_enabled
+id: azure_hipaa_hitrust_v92_1205_09aa2system
+title: 09aa2System.1-09.aa 09.10 Monitoring
+description: Logs of messages sent and received are maintained including the date, time, origin and destination of the message, but not its contents.
+section-code: azure_hipaa_hitrust_v92_1205_09aa2system
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/Batch
+  type:
+  - Benchmark
+controls:
+- azure_batch_account_logging_enabled

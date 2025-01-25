@@ -1,24 +1,24 @@
-control-group:
-  id: aws_ffiec_d_3_pc_am_b_13
-  title: D3.PC.Am.B.13
-  description: Confidential data is encrypted when transmitted across public or untrusted networks (e.g., Internet).
-  section-code: am_b_13
-  tags:
-    category:
-    - Compliance
-    ffiec:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_apigateway_rest_api_stage_use_ssl_certificate
-  - aws_elb_application_lb_redirect_http_request_to_https
-  - aws_elb_application_network_lb_use_ssl_certificate
-  - aws_elb_classic_lb_use_ssl_certificate
-  - aws_elb_classic_lb_use_tls_https_listeners
-  - aws_redshift_cluster_encryption_in_transit_enabled
-  - aws_s3_bucket_enforces_ssl
+id: aws_ffiec_d_3_pc_am_b_13
+title: D3.PC.Am.B.13
+description: Confidential data is encrypted when transmitted across public or untrusted networks (e.g., Internet).
+section-code: am_b_13
+type: control-group
+tags:
+  category:
+  - Compliance
+  ffiec:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_apigateway_rest_api_stage_use_ssl_certificate
+- aws_elb_application_lb_redirect_http_request_to_https
+- aws_elb_application_network_lb_use_ssl_certificate
+- aws_elb_classic_lb_use_ssl_certificate
+- aws_elb_classic_lb_use_tls_https_listeners
+- aws_redshift_cluster_encryption_in_transit_enabled
+- aws_s3_bucket_enforces_ssl

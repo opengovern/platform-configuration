@@ -1,7 +1,7 @@
-control-group:
-  id: azure_all_controls_streamanalytics
-  title: Stream Analytics
-  description: This section contains recommendations for configuring Stream Analytics resources.
-  section-code: streamanalytics
-  controls:
-  - azure_stream_analytics_job_logging_enabled
+id: azure_all_controls_streamanalytics
+title: Stream Analytics
+description: This section contains recommendations for configuring Stream Analytics resources.
+section-code: streamanalytics
+type: control-group
+controls:
+- azure_stream_analytics_job_logging_enabled

@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1418_05i1organizational
-  title: The identification of risks related to external party access takes into account a minimal set of specifically defined issues
-  description: The identification of risks related to external party access takes into account a minimal set of specifically defined issues
-  section-code: azure_hipaa_hitrust_v92_1418_05i1organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/MySQL
-    type:
-    - Benchmark
-  controls:
-  - azure_mysql_ssl_enabled
+id: azure_hipaa_hitrust_v92_1418_05i1organizational
+title: The identification of risks related to external party access takes into account a minimal set of specifically defined issues
+description: The identification of risks related to external party access takes into account a minimal set of specifically defined issues
+section-code: azure_hipaa_hitrust_v92_1418_05i1organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/MySQL
+  type:
+  - Benchmark
+controls:
+- azure_mysql_ssl_enabled

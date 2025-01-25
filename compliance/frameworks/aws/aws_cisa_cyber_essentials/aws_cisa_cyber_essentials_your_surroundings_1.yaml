@@ -1,20 +1,20 @@
-control-group:
-  id: aws_cisa_cyber_essentials_your_surroundings_1
-  title: Your Surroundings-1
-  description: Learn who is on your network. Maintain inventories of network connections (user accounts, vendors, business partners, etc.).
-  section-code: "1"
-  tags:
-    category:
-    - Compliance
-    cisa_cyber_essentials:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_vpc_eip_associated
-  - aws_vpc_flow_logs_enabled
-  - aws_vpc_network_acl_unused
+id: aws_cisa_cyber_essentials_your_surroundings_1
+title: Your Surroundings-1
+description: Learn who is on your network. Maintain inventories of network connections (user accounts, vendors, business partners, etc.).
+section-code: "1"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cisa_cyber_essentials:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_vpc_eip_associated
+- aws_vpc_flow_logs_enabled
+- aws_vpc_network_acl_unused

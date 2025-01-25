@@ -1,22 +1,22 @@
-control-group:
-  id: azure_nist_sp_800_53_rev_5_cp_6_1
-  title: Separation from Primary Site CP-6(1)
-  description: The organization identifies an alternate storage site that is separated from the primary storage site to reduce susceptibility to the same threats.
-  section-code: "1"
-  tags:
-    category:
-    - Compliance
-    nist_sp_800_53_rev_5:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure
-    type:
-    - Benchmark
-  controls:
-  - azure_mariadb_server_geo_redundant_backup_enabled
-  - azure_mysql_db_server_geo_redundant_backup_enabled
-  - azure_postgres_db_server_geo_redundant_backup_enabled
-  - azure_sql_database_long_term_geo_redundant_backup_enabled
-  - azure_storage_account_geo_redundant_enabled
+id: azure_nist_sp_800_53_rev_5_cp_6_1
+title: Separation from Primary Site CP-6(1)
+description: The organization identifies an alternate storage site that is separated from the primary storage site to reduce susceptibility to the same threats.
+section-code: "1"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_sp_800_53_rev_5:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure
+  type:
+  - Benchmark
+controls:
+- azure_mariadb_server_geo_redundant_backup_enabled
+- azure_mysql_db_server_geo_redundant_backup_enabled
+- azure_postgres_db_server_geo_redundant_backup_enabled
+- azure_sql_database_long_term_geo_redundant_backup_enabled
+- azure_storage_account_geo_redundant_enabled

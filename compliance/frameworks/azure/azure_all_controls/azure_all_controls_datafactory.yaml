@@ -1,10 +1,10 @@
-control-group:
-  id: azure_all_controls_datafactory
-  title: Data Factory
-  description: This section contains recommendations for configuring Data Factory resources.
-  section-code: datafactory
-  controls:
-  - azure_data_factory_encrypted_with_cmk
-  - azure_data_factory_public_network_access_disabled
-  - azure_data_factory_uses_git_repository
-  - azure_data_factory_uses_private_link
+id: azure_all_controls_datafactory
+title: Data Factory
+description: This section contains recommendations for configuring Data Factory resources.
+section-code: datafactory
+type: control-group
+controls:
+- azure_data_factory_encrypted_with_cmk
+- azure_data_factory_public_network_access_disabled
+- azure_data_factory_uses_git_repository
+- azure_data_factory_uses_private_link

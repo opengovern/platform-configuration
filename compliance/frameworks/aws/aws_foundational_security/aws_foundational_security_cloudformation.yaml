@@ -1,18 +1,18 @@
-control-group:
-  id: aws_foundational_security_cloudformation
-  title: CloudFormation
-  description: CloudFormation
-  section-code: cloudformation
-  tags:
-    aws_foundational_security:
-    - "true"
-    category:
-    - Compliance
-    plugin:
-    - aws
-    service:
-    - AWS/CloudFormation
-    type:
-    - Benchmark
-  controls:
-  - aws_foundational_security_cloudformation_1
+id: aws_foundational_security_cloudformation
+title: CloudFormation
+description: CloudFormation
+section-code: cloudformation
+type: control-group
+tags:
+  aws_foundational_security:
+  - "true"
+  category:
+  - Compliance
+  plugin:
+  - aws
+  service:
+  - AWS/CloudFormation
+  type:
+  - Benchmark
+controls:
+- aws_foundational_security_cloudformation_1

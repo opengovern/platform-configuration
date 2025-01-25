@@ -1,20 +1,20 @@
-control-group:
-  id: aws_ffiec_d_3_dc_an_b_1
-  title: D3.DC.An.B.1
-  description: The institution is able to detect anomalous activities through monitoring across the environment.
-  section-code: an_b_1
-  tags:
-    category:
-    - Compliance
-    ffiec:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_guardduty_enabled
-  - aws_guardduty_finding_archived
-  - aws_securityhub_enabled
+id: aws_ffiec_d_3_dc_an_b_1
+title: D3.DC.An.B.1
+description: The institution is able to detect anomalous activities through monitoring across the environment.
+section-code: an_b_1
+type: control-group
+tags:
+  category:
+  - Compliance
+  ffiec:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_guardduty_enabled
+- aws_guardduty_finding_archived
+- aws_securityhub_enabled

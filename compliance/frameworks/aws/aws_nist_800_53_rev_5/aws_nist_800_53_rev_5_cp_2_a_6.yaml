@@ -1,23 +1,23 @@
-control-group:
-  id: aws_nist_800_53_rev_5_cp_2_a_6
-  title: CP-2(a)(6)
-  description: "Develop a contingency plan for the system that: 6. Addresses the sharing of contingency information."
-  section-code: "6"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_dynamodb_table_auto_scaling_enabled
-  - aws_elb_application_lb_deletion_protection_enabled
-  - aws_elb_classic_lb_cross_zone_load_balancing_enabled
-  - aws_rds_db_instance_deletion_protection_enabled
-  - aws_rds_db_instance_multiple_az_enabled
-  - aws_vpc_vpn_tunnel_up
+id: aws_nist_800_53_rev_5_cp_2_a_6
+title: CP-2(a)(6)
+description: "Develop a contingency plan for the system that: 6. Addresses the sharing of contingency information."
+section-code: "6"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_dynamodb_table_auto_scaling_enabled
+- aws_elb_application_lb_deletion_protection_enabled
+- aws_elb_classic_lb_cross_zone_load_balancing_enabled
+- aws_rds_db_instance_deletion_protection_enabled
+- aws_rds_db_instance_multiple_az_enabled
+- aws_vpc_vpn_tunnel_up

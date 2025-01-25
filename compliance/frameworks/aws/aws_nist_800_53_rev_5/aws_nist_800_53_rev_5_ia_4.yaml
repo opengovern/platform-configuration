@@ -1,21 +1,25 @@
+id: aws_nist_800_53_rev_5_ia_4
+title: Identifier Management (IA-4)
+description: Manage information system identifiers for users and devices. Automate authorizing and disabling users to prevent misuse.
+section-code: "4"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/IAM
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_5_ia_4
-  title: Identifier Management (IA-4)
-  description: Manage information system identifiers for users and devices. Automate authorizing and disabling users to prevent misuse.
-  section-code: "4"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/IAM
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_5_ia_4_8
-  - id: aws_nist_800_53_rev_5_ia_4_b
-  - id: aws_nist_800_53_rev_5_ia_4_d
-  - id: aws_nist_800_53_rev_5_ia_4_4
+- id: aws_nist_800_53_rev_5_ia_4_8
+  type: ""
+- id: aws_nist_800_53_rev_5_ia_4_b
+  type: ""
+- id: aws_nist_800_53_rev_5_ia_4_d
+  type: ""
+- id: aws_nist_800_53_rev_5_ia_4_4
+  type: ""

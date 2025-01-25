@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_0863_09m2organizational
-  title: 09m2Organizational.910-09.m 09.06 Network Security Management
-  description: The organization builds a firewall configuration that restricts connections between un-trusted networks and any system components in the covered information environment; and any changes to the firewall configuration are updated in the network diagram.
-  section-code: azure_hipaa_hitrust_v92_0863_09m2organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/EventHub
-    type:
-    - Benchmark
-  controls:
-  - azure_eventhub_namespace_use_virtual_service_endpoint
+id: azure_hipaa_hitrust_v92_0863_09m2organizational
+title: 09m2Organizational.910-09.m 09.06 Network Security Management
+description: The organization builds a firewall configuration that restricts connections between un-trusted networks and any system components in the covered information environment; and any changes to the firewall configuration are updated in the network diagram.
+section-code: azure_hipaa_hitrust_v92_0863_09m2organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/EventHub
+  type:
+  - Benchmark
+controls:
+- azure_eventhub_namespace_use_virtual_service_endpoint

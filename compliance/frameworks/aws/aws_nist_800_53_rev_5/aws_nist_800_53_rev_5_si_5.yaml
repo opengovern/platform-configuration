@@ -1,19 +1,21 @@
+id: aws_nist_800_53_rev_5_si_5
+title: Secuity Alerts, Advisories, And Directives (SI-5)
+description: "a.\u2003Receive system security alerts, advisories, and directives from [Assignment: organization-defined external organizations] on an ongoing basis; b.\u2003Generate internal security alerts, advisories, and directives as deemed necessary; c.\u2003Disseminate security alerts, advisories, and directives to: [Selection (one or more): [Assignment: organization-defined personnel or roles]; [Assignment: organization-defined elements within the organization]; [Assignment: organization-defined external organizations]]; and d.\u2003Implement security directives in accordance with established time frames, or notify the issuing organization of the degree of noncompliance."
+section-code: "5"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_5_si_5
-  title: Secuity Alerts, Advisories, And Directives (SI-5)
-  description: "a.\u2003Receive system security alerts, advisories, and directives from [Assignment: organization-defined external organizations] on an ongoing basis; b.\u2003Generate internal security alerts, advisories, and directives as deemed necessary; c.\u2003Disseminate security alerts, advisories, and directives to: [Selection (one or more): [Assignment: organization-defined personnel or roles]; [Assignment: organization-defined elements within the organization]; [Assignment: organization-defined external organizations]]; and d.\u2003Implement security directives in accordance with established time frames, or notify the issuing organization of the degree of noncompliance."
-  section-code: "5"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_5_si_5_1
-  - id: aws_nist_800_53_rev_5_si_5_b
+- id: aws_nist_800_53_rev_5_si_5_1
+  type: ""
+- id: aws_nist_800_53_rev_5_si_5_b
+  type: ""

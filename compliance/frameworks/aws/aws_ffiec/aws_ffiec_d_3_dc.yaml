@@ -1,26 +1,35 @@
+id: aws_ffiec_d_3_dc
+title: Detective Controls (DC)
+description: Detective Controls include threat and vulnerability detection, anomalous activity detection, and event detection, may alert the institution to network and system irregularities that indicate an incident has or may occur.
+section-code: dc
+type: control-group
+tags:
+  category:
+  - Compliance
+  ffiec:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_ffiec_d_3_dc
-  title: Detective Controls (DC)
-  description: Detective Controls include threat and vulnerability detection, anomalous activity detection, and event detection, may alert the institution to network and system irregularities that indicate an incident has or may occur.
-  section-code: dc
-  tags:
-    category:
-    - Compliance
-    ffiec:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_ffiec_d_3_dc_an_b_1
-  - id: aws_ffiec_d_3_dc_an_b_2
-  - id: aws_ffiec_d_3_dc_an_b_3
-  - id: aws_ffiec_d_3_dc_an_b_4
-  - id: aws_ffiec_d_3_dc_an_b_5
-  - id: aws_ffiec_d_3_dc_ev_b_1
-  - id: aws_ffiec_d_3_dc_ev_b_2
-  - id: aws_ffiec_d_3_dc_ev_b_3
-  - id: aws_ffiec_d_3_dc_th_b_1
+- id: aws_ffiec_d_3_dc_an_b_1
+  type: ""
+- id: aws_ffiec_d_3_dc_an_b_2
+  type: ""
+- id: aws_ffiec_d_3_dc_an_b_3
+  type: ""
+- id: aws_ffiec_d_3_dc_an_b_4
+  type: ""
+- id: aws_ffiec_d_3_dc_an_b_5
+  type: ""
+- id: aws_ffiec_d_3_dc_ev_b_1
+  type: ""
+- id: aws_ffiec_d_3_dc_ev_b_2
+  type: ""
+- id: aws_ffiec_d_3_dc_ev_b_3
+  type: ""
+- id: aws_ffiec_d_3_dc_th_b_1
+  type: ""

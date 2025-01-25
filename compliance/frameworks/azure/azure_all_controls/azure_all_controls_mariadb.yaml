@@ -1,9 +1,9 @@
-control-group:
-  id: azure_all_controls_mariadb
-  title: MariaDB
-  description: This section contains recommendations for configuring MariaDB resources.
-  section-code: mariadb
-  controls:
-  - azure_mariadb_server_geo_redundant_backup_enabled
-  - azure_mariadb_server_public_network_access_disabled
-  - azure_mariadb_server_ssl_enabled
+id: azure_all_controls_mariadb
+title: MariaDB
+description: This section contains recommendations for configuring MariaDB resources.
+section-code: mariadb
+type: control-group
+controls:
+- azure_mariadb_server_geo_redundant_backup_enabled
+- azure_mariadb_server_public_network_access_disabled
+- azure_mariadb_server_ssl_enabled

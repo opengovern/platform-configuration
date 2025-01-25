@@ -1,20 +1,20 @@
-control-group:
-  id: aws_ffiec_d_3_pc_im_b_5
-  title: D3.PC.Im.B.5
-  description: Systems configurations (for servers, desktops, routers, etc.) follow industry standards and are enforced
-  section-code: im_b_5
-  tags:
-    category:
-    - Compliance
-    ffiec:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_ec2_instance_ssm_managed
-  - aws_ssm_managed_instance_compliance_association_compliant
-  - aws_ssm_managed_instance_compliance_patch_compliant
+id: aws_ffiec_d_3_pc_im_b_5
+title: D3.PC.Im.B.5
+description: Systems configurations (for servers, desktops, routers, etc.) follow industry standards and are enforced
+section-code: im_b_5
+type: control-group
+tags:
+  category:
+  - Compliance
+  ffiec:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_ec2_instance_ssm_managed
+- aws_ssm_managed_instance_compliance_association_compliant
+- aws_ssm_managed_instance_compliance_patch_compliant

@@ -1,24 +1,24 @@
-control-group:
-  id: aws_nist_800_53_rev_4_cm_2
-  title: Baseline Configuration (CM-2)
-  description: The organization develops, documents, and maintains under configuration control, a current baseline configuration of the information system.
-  section-code: "2"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_4:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_cloudtrail_security_trail_enabled
-  - aws_ebs_attached_volume_delete_on_termination_enabled
-  - aws_ec2_instance_ssm_managed
-  - aws_ec2_stopped_instance_30_days
-  - aws_elb_application_lb_deletion_protection_enabled
-  - aws_ssm_managed_instance_compliance_association_compliant
-  - aws_vpc_security_group_restrict_ingress_common_ports_all
+id: aws_nist_800_53_rev_4_cm_2
+title: Baseline Configuration (CM-2)
+description: The organization develops, documents, and maintains under configuration control, a current baseline configuration of the information system.
+section-code: "2"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_4:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_cloudtrail_security_trail_enabled
+- aws_ebs_attached_volume_delete_on_termination_enabled
+- aws_ec2_instance_ssm_managed
+- aws_ec2_stopped_instance_30_days
+- aws_elb_application_lb_deletion_protection_enabled
+- aws_ssm_managed_instance_compliance_association_compliant
+- aws_vpc_security_group_restrict_ingress_common_ports_all

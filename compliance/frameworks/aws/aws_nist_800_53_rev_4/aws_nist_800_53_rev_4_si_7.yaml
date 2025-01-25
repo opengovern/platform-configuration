@@ -1,20 +1,21 @@
+id: aws_nist_800_53_rev_4_si_7
+title: Software, Firmware, and Information Integrity (SI-7)
+description: "The organization employs integrity verification tools to detect unauthorized changes to [Assignment: organization-defined software, firmware, and information]."
+section-code: "7"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_4:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_4_si_7
-  title: Software, Firmware, and Information Integrity (SI-7)
-  description: "The organization employs integrity verification tools to detect unauthorized changes to [Assignment: organization-defined software, firmware, and information]."
-  section-code: "7"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_4:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_4_si_7_1
-  controls:
-  - aws_cloudtrail_trail_validation_enabled
+- id: aws_nist_800_53_rev_4_si_7_1
+  type: ""
+controls:
+- aws_cloudtrail_trail_validation_enabled

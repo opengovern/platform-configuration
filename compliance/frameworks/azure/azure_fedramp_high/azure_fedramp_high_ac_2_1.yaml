@@ -1,8 +1,8 @@
-control-group:
-  id: azure_fedramp_high_ac_2_1
-  title: AC-2(1) Automated System Account Management
-  description: "Support the management of system accounts using [Assignment: organization-defined automated mechanisms]."
-  section-code: "1"
-  controls:
-  - azure_servicefabric_cluster_active_directory_authentication_enabled
-  - azure_sql_server_azure_ad_authentication_enabled
+id: azure_fedramp_high_ac_2_1
+title: AC-2(1) Automated System Account Management
+description: "Support the management of system accounts using [Assignment: organization-defined automated mechanisms]."
+section-code: "1"
+type: control-group
+controls:
+- azure_servicefabric_cluster_active_directory_authentication_enabled
+- azure_sql_server_azure_ad_authentication_enabled

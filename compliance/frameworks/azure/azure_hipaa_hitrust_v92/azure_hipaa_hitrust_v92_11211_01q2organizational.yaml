@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_11211_01q2organizational
-  title: Signed electronic records shall contain information associated with the signing in human-readable format
-  description: Signed electronic records shall contain information associated with the signing in human-readable format
-  section-code: azure_hipaa_hitrust_v92_11211_01q2organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/Compute
-    type:
-    - Benchmark
-  controls:
-  - azure_compute_vm_administrators_group_with_no_specified_members_windows
+id: azure_hipaa_hitrust_v92_11211_01q2organizational
+title: Signed electronic records shall contain information associated with the signing in human-readable format
+description: Signed electronic records shall contain information associated with the signing in human-readable format
+section-code: azure_hipaa_hitrust_v92_11211_01q2organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/Compute
+  type:
+  - Benchmark
+controls:
+- azure_compute_vm_administrators_group_with_no_specified_members_windows

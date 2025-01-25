@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_0644_10k3organizational
-  title: 10k3Organizational.4-10.k 10.05 Security In Development and Support Processes
-  description: The organization employs automated mechanisms to (i) centrally manage, apply, and verify configuration settings; (ii) respond to unauthorized changes to network and system security-related configuration settings; and (iii) enforce access restrictions and auditing of the enforcement actions.
-  section-code: azure_hipaa_hitrust_v92_0644_10k3organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/Compute
-    type:
-    - Benchmark
-  controls:
-  - azure_compute_vm_meet_system_audit_policies_requirement_windows
+id: azure_hipaa_hitrust_v92_0644_10k3organizational
+title: 10k3Organizational.4-10.k 10.05 Security In Development and Support Processes
+description: The organization employs automated mechanisms to (i) centrally manage, apply, and verify configuration settings; (ii) respond to unauthorized changes to network and system security-related configuration settings; and (iii) enforce access restrictions and auditing of the enforcement actions.
+section-code: azure_hipaa_hitrust_v92_0644_10k3organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/Compute
+  type:
+  - Benchmark
+controls:
+- azure_compute_vm_meet_system_audit_policies_requirement_windows

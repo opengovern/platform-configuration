@@ -1,7 +1,7 @@
-control-group:
-  id: aws_acsc_essential_eight_ml_2_6_3
-  title: "ACSC-EE-ML2-6.3: Patch operating systems ML2"
-  description: A vulnerability scanner is used at least daily to identify missing patches or updates for security vulnerabilities in operating systems of internet-facing services.
-  section-code: "3"
-  controls:
-  - aws_ecr_repository_image_scan_on_push_enabled
+id: aws_acsc_essential_eight_ml_2_6_3
+title: "ACSC-EE-ML2-6.3: Patch operating systems ML2"
+description: A vulnerability scanner is used at least daily to identify missing patches or updates for security vulnerabilities in operating systems of internet-facing services.
+section-code: "3"
+type: control-group
+controls:
+- aws_ecr_repository_image_scan_on_push_enabled

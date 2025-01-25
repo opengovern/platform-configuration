@@ -1,21 +1,21 @@
-control-group:
-  id: aws_foundational_security_ssm
-  title: SSM
-  description: SSM
-  section-code: ssm
-  tags:
-    aws_foundational_security:
-    - "true"
-    category:
-    - Compliance
-    plugin:
-    - aws
-    service:
-    - AWS/SSM
-    type:
-    - Benchmark
-  controls:
-  - aws_foundational_security_ssm_1
-  - aws_foundational_security_ssm_2
-  - aws_foundational_security_ssm_3
-  - aws_foundational_security_ssm_4
+id: aws_foundational_security_ssm
+title: SSM
+description: SSM
+section-code: ssm
+type: control-group
+tags:
+  aws_foundational_security:
+  - "true"
+  category:
+  - Compliance
+  plugin:
+  - aws
+  service:
+  - AWS/SSM
+  type:
+  - Benchmark
+controls:
+- aws_foundational_security_ssm_1
+- aws_foundational_security_ssm_2
+- aws_foundational_security_ssm_3
+- aws_foundational_security_ssm_4

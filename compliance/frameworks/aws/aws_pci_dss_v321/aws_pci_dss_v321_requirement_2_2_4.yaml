@@ -1,9 +1,9 @@
-control-group:
-  id: aws_pci_dss_v321_requirement_2_2_4
-  title: 2.4 Configure system security parameters to prevent misuse
-  description: System configuration standards and related processes should specifically address security settings and parameters that have known security implications for each type of system in use. In order for systems to be configured securely, personnel responsible for configuration and/or administering systems must be knowledgeable in the specific security parameters and settings that apply to the system.
-  section-code: "4"
-  controls:
-  - aws_ec2_instance_ssm_managed
-  - aws_ssm_managed_instance_compliance_association_compliant
-  - aws_ssm_managed_instance_compliance_patch_compliant
+id: aws_pci_dss_v321_requirement_2_2_4
+title: 2.4 Configure system security parameters to prevent misuse
+description: System configuration standards and related processes should specifically address security settings and parameters that have known security implications for each type of system in use. In order for systems to be configured securely, personnel responsible for configuration and/or administering systems must be knowledgeable in the specific security parameters and settings that apply to the system.
+section-code: "4"
+type: control-group
+controls:
+- aws_ec2_instance_ssm_managed
+- aws_ssm_managed_instance_compliance_association_compliant
+- aws_ssm_managed_instance_compliance_patch_compliant

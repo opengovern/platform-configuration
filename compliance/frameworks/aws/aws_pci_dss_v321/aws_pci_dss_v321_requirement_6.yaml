@@ -1,11 +1,16 @@
+id: aws_pci_dss_v321_requirement_6
+title: "Requirement 6: Develop and maintain secure systems and applications"
+description: Unscrupulous individuals use security vulnerabilities to gain privileged access to systems. Many of these vulnerabilities are fixed by vendorprovided security patches, which must be installed by the entities that manage the systems.
+section-code: requirement_6
+type: control-group
 control-group:
-  id: aws_pci_dss_v321_requirement_6
-  title: "Requirement 6: Develop and maintain secure systems and applications"
-  description: Unscrupulous individuals use security vulnerabilities to gain privileged access to systems. Many of these vulnerabilities are fixed by vendorprovided security patches, which must be installed by the entities that manage the systems.
-  section-code: requirement_6
-  control-group:
-  - id: aws_pci_dss_v321_requirement_6_1
-  - id: aws_pci_dss_v321_requirement_6_2
-  - id: aws_pci_dss_v321_requirement_6_3
-  - id: aws_pci_dss_v321_requirement_6_5
-  - id: aws_pci_dss_v321_requirement_6_6
+- id: aws_pci_dss_v321_requirement_6_1
+  type: ""
+- id: aws_pci_dss_v321_requirement_6_2
+  type: ""
+- id: aws_pci_dss_v321_requirement_6_3
+  type: ""
+- id: aws_pci_dss_v321_requirement_6_5
+  type: ""
+- id: aws_pci_dss_v321_requirement_6_6
+  type: ""

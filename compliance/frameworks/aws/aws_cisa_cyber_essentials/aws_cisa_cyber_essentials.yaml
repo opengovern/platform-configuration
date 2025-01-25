@@ -1,30 +1,30 @@
-framework:
-  id: aws_cisa_cyber_essentials
-  title: CISA Cyber Essentials
-  description: CISA's Cyber Essentials is a guide for leaders of small businesses as well as leaders of small and local government agencies to develop an actionable understanding of where to start implementing organizational cybersecurity practices.
-  section-code: aws_cisa_cyber_essentials
-  tags:
-    category:
-    - Compliance
-    cisa_cyber_essentials:
-    - "true"
-    platform_benchmark_type:
-    - compliance
-    platform_category:
-    - Best Practices
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  defaults:
-    is-baseline: false
-    enabled: false
-    tracks-drift-events: false
-  control-group:
-  - id: aws_cisa_cyber_essentials_your_systems
-  - id: aws_cisa_cyber_essentials_your_surroundings
-  - id: aws_cisa_cyber_essentials_your_data
-  - id: aws_cisa_cyber_essentials_your_crisis_response
-  - id: aws_cisa_cyber_essentials_booting_up_things_to_do_first
+id: aws_cisa_cyber_essentials
+title: CISA Cyber Essentials
+description: CISA's Cyber Essentials is a guide for leaders of small businesses as well as leaders of small and local government agencies to develop an actionable understanding of where to start implementing organizational cybersecurity practices.
+section-code: aws_cisa_cyber_essentials
+type: framework
+tags:
+  category:
+  - Compliance
+  cisa_cyber_essentials:
+  - "true"
+  platform_benchmark_type:
+  - compliance
+  platform_category:
+  - Best Practices
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+defaults:
+  is-baseline: false
+  enabled: false
+  tracks-drift-events: false
+control-group:
+- id: aws_cisa_cyber_essentials_your_systems
+- id: aws_cisa_cyber_essentials_your_surroundings
+- id: aws_cisa_cyber_essentials_your_data
+- id: aws_cisa_cyber_essentials_your_crisis_response
+- id: aws_cisa_cyber_essentials_booting_up_things_to_do_first

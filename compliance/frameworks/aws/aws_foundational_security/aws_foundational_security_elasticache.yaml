@@ -1,24 +1,24 @@
-control-group:
-  id: aws_foundational_security_elasticache
-  title: ElastiCache
-  description: ElastiCache
-  section-code: elasticache
-  tags:
-    aws_foundational_security:
-    - "true"
-    category:
-    - Compliance
-    plugin:
-    - aws
-    service:
-    - AWS/ElastiCache
-    type:
-    - Benchmark
-  controls:
-  - aws_foundational_security_elasticache_1
-  - aws_foundational_security_elasticache_2
-  - aws_foundational_security_elasticache_3
-  - aws_foundational_security_elasticache_4
-  - aws_foundational_security_elasticache_5
-  - aws_foundational_security_elasticache_6
-  - aws_foundational_security_elasticache_7
+id: aws_foundational_security_elasticache
+title: ElastiCache
+description: ElastiCache
+section-code: elasticache
+type: control-group
+tags:
+  aws_foundational_security:
+  - "true"
+  category:
+  - Compliance
+  plugin:
+  - aws
+  service:
+  - AWS/ElastiCache
+  type:
+  - Benchmark
+controls:
+- aws_foundational_security_elasticache_1
+- aws_foundational_security_elasticache_2
+- aws_foundational_security_elasticache_3
+- aws_foundational_security_elasticache_4
+- aws_foundational_security_elasticache_5
+- aws_foundational_security_elasticache_6
+- aws_foundational_security_elasticache_7

@@ -1,7 +1,7 @@
-control-group:
-  id: aws_all_controls_dax
-  title: DAX
-  description: This section contains recommendations for configuring DAX resources.
-  section-code: dax
-  controls:
-  - aws_dax_cluster_encryption_at_rest_enabled
+id: aws_all_controls_dax
+title: DAX
+description: This section contains recommendations for configuring DAX resources.
+section-code: dax
+type: control-group
+controls:
+- aws_dax_cluster_encryption_at_rest_enabled

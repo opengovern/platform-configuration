@@ -1,10 +1,10 @@
-control-group:
-  id: azure_all_controls_containerinstance
-  title: Container Instance
-  description: This section contains recommendations for configuring Container Instance resources.
-  section-code: containerinstance
-  controls:
-  - azure_container_instance_container_group_encrypted_using_cmk
-  - azure_container_instance_container_group_identity_provider_enabled
-  - azure_container_instance_container_group_in_virtual_network
-  - azure_container_instance_container_group_secured_environment_variable
+id: azure_all_controls_containerinstance
+title: Container Instance
+description: This section contains recommendations for configuring Container Instance resources.
+section-code: containerinstance
+type: control-group
+controls:
+- azure_container_instance_container_group_encrypted_using_cmk
+- azure_container_instance_container_group_identity_provider_enabled
+- azure_container_instance_container_group_in_virtual_network
+- azure_container_instance_container_group_secured_environment_variable

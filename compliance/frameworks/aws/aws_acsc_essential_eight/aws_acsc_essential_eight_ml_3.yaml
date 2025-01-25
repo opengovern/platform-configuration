@@ -1,13 +1,20 @@
+id: aws_acsc_essential_eight_ml_3
+title: ACSC Essential Eight Maturity Level 3
+description: The Essential Eight Maturity Model is a prioritised list of strategies to mitigate cyber security incidents. The model consists of 8 essential strategies that organisations can implement to protect their systems from a range of adversaries.
+section-code: ml_3
+type: control-group
 control-group:
-  id: aws_acsc_essential_eight_ml_3
-  title: ACSC Essential Eight Maturity Level 3
-  description: The Essential Eight Maturity Model is a prioritised list of strategies to mitigate cyber security incidents. The model consists of 8 essential strategies that organisations can implement to protect their systems from a range of adversaries.
-  section-code: ml_3
-  control-group:
-  - id: aws_acsc_essential_eight_ml_3_1
-  - id: aws_acsc_essential_eight_ml_3_2
-  - id: aws_acsc_essential_eight_ml_3_4
-  - id: aws_acsc_essential_eight_ml_3_5
-  - id: aws_acsc_essential_eight_ml_3_6
-  - id: aws_acsc_essential_eight_ml_3_7
-  - id: aws_acsc_essential_eight_ml_3_8
+- id: aws_acsc_essential_eight_ml_3_1
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_2
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_4
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_5
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_6
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_7
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_8
+  type: ""

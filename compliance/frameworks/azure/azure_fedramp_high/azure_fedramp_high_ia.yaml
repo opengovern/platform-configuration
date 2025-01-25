@@ -1,9 +1,12 @@
+id: azure_fedramp_high_ia
+title: Identification and Authentication (IA)
+description: IA controls are specific to the identification and authentication policies in an organization. This includes the identification and authentication of organizational and non-organizational users and how the management of those systems.
+section-code: ia
+type: control-group
 control-group:
-  id: azure_fedramp_high_ia
-  title: Identification and Authentication (IA)
-  description: IA controls are specific to the identification and authentication policies in an organization. This includes the identification and authentication of organizational and non-organizational users and how the management of those systems.
-  section-code: ia
-  control-group:
-  - id: azure_fedramp_high_ia_2
-  - id: azure_fedramp_high_ia_4
-  - id: azure_fedramp_high_ia_5
+- id: azure_fedramp_high_ia_2
+  type: ""
+- id: azure_fedramp_high_ia_4
+  type: ""
+- id: azure_fedramp_high_ia_5
+  type: ""

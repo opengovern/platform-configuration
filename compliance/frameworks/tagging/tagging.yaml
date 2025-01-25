@@ -1,8 +1,32 @@
-framework:
-  id: tagging
-  title: Tagging
-  description: Tagging
-  section-code: tagging
+id: tagging
+title: Tagging
+description: Tagging
+section-code: tagging
+type: framework
+tags:
+  category:
+  - Compliance
+  platform_benchmark_type:
+  - compliance
+  platform_category:
+  - Best Practices
+  plugin:
+  - aws
+  - azure
+  service:
+  - AWS
+  - Azure
+  type:
+  - Benchmark
+defaults:
+  is-baseline: false
+  enabled: false
+  tracks-drift-events: false
+control-group:
+- id: tagging_aws_tagging
+  title: AWS Tagging
+  description: AWS Tagging
+  section-code: tagging_aws_tagging
   tags:
     category:
     - Compliance
@@ -12,176 +36,152 @@ framework:
     - Best Practices
     plugin:
     - aws
-    - azure
     service:
     - AWS
+    type:
+    - Benchmark
+  controls:
+  - aws_mandatory_sql_accessanalyzer_analyzer_mandatory
+  - aws_mandatory_sql_api_gateway_stage_mandatory
+  - aws_mandatory_sql_cloudfront_distribution_mandatory
+  - aws_mandatory_sql_cloudtrail_trail_mandatory
+  - aws_mandatory_sql_cloudwatch_alarm_mandatory
+  - aws_mandatory_sql_cloudwatch_log_group_mandatory
+  - aws_mandatory_sql_codebuild_project_mandatory
+  - aws_mandatory_sql_codecommit_repository_mandatory
+  - aws_mandatory_sql_codepipeline_pipeline_mandatory
+  - aws_mandatory_sql_config_rule_mandatory
+  - aws_mandatory_sql_dax_cluster_mandatory
+  - aws_mandatory_sql_directory_service_directory_mandatory
+  - aws_mandatory_sql_dms_replication_instance_mandatory
+  - aws_mandatory_sql_dynamodb_table_mandatory
+  - aws_mandatory_sql_ebs_snapshot_mandatory
+  - aws_mandatory_sql_ebs_volume_mandatory
+  - aws_mandatory_sql_ec2_application_load_balancer_mandatory
+  - aws_mandatory_sql_ec2_classic_load_balancer_mandatory
+  - aws_mandatory_sql_ec2_gateway_load_balancer_mandatory
+  - aws_mandatory_sql_ec2_instance_mandatory
+  - aws_mandatory_sql_ec2_network_load_balancer_mandatory
+  - aws_mandatory_sql_ec2_reserved_instance_mandatory
+  - aws_mandatory_sql_ecr_repository_mandatory
+  - aws_mandatory_sql_ecs_container_instance_mandatory
+  - aws_mandatory_sql_ecs_service_mandatory
+  - aws_mandatory_sql_efs_file_system_mandatory
+  - aws_mandatory_sql_eks_addon_mandatory
+  - aws_mandatory_sql_eks_cluster_mandatory
+  - aws_mandatory_sql_elastic_beanstalk_application_mandatory
+  - aws_mandatory_sql_elastic_beanstalk_environment_mandatory
+  - aws_mandatory_sql_elasticache_cluster_mandatory
+  - aws_mandatory_sql_elasticsearch_domain_mandatory
+  - aws_mandatory_sql_eventbridge_rule_mandatory
+  - aws_mandatory_sql_guardduty_detector_mandatory
+  - aws_mandatory_sql_iam_role_mandatory
+  - aws_mandatory_sql_iam_server_certificate_mandatory
+  - aws_mandatory_sql_iam_user_mandatory
+  - aws_mandatory_sql_inspector_assessment_template_mandatory
+  - aws_mandatory_sql_kinesis_firehose_delivery_stream_mandatory
+  - aws_mandatory_sql_kms_key_mandatory
+  - aws_mandatory_sql_lambda_function_mandatory
+  - aws_mandatory_sql_rds_db_cluster_mandatory
+  - aws_mandatory_sql_rds_db_cluster_parameter_group_mandatory
+  - aws_mandatory_sql_rds_db_cluster_snapshot_mandatory
+  - aws_mandatory_sql_rds_db_instance_mandatory
+  - aws_mandatory_sql_rds_db_option_group_mandatory
+  - aws_mandatory_sql_rds_db_parameter_group_mandatory
+  - aws_mandatory_sql_rds_db_snapshot_mandatory
+  - aws_mandatory_sql_rds_db_subnet_group_mandatory
+  - aws_mandatory_sql_redshift_cluster_mandatory
+  - aws_mandatory_sql_route53_domain_mandatory
+  - aws_mandatory_sql_route53_resolver_endpoint_mandatory
+  - aws_mandatory_sql_s3_bucket_mandatory
+  - aws_mandatory_sql_sagemaker_endpoint_configuration_mandatory
+  - aws_mandatory_sql_sagemaker_model_mandatory
+  - aws_mandatory_sql_sagemaker_notebook_instance_mandatory
+  - aws_mandatory_sql_sagemaker_training_job_mandatory
+  - aws_mandatory_sql_secretsmanager_secret_mandatory
+  - aws_mandatory_sql_ssm_parameter_mandatory
+  - aws_mandatory_sql_vpc_eip_mandatory
+  - aws_mandatory_sql_vpc_mandatory
+  - aws_mandatory_sql_vpc_nat_gateway_mandatory
+  - aws_mandatory_sql_vpc_network_acl_mandatory
+  - aws_mandatory_sql_vpc_security_group_mandatory
+  - aws_mandatory_sql_vpc_vpn_connection_mandatory
+  - aws_mandatory_sql_wafv2_ip_set_mandatory
+  - aws_mandatory_sql_wafv2_regex_pattern_set_mandatory
+  - aws_mandatory_sql_wafv2_rule_group_mandatory
+  - aws_mandatory_sql_wafv2_web_acl_mandatory
+- id: tagging_azure_tagging
+  title: Azure Tagging
+  description: Azure Tagging
+  section-code: tagging_azure_tagging
+  tags:
+    category:
+    - Compliance
+    platform_benchmark_type:
+    - compliance
+    platform_category:
+    - Best Practices
+    plugin:
+    - azure
+    service:
     - Azure
     type:
     - Benchmark
-  defaults:
-    is-baseline: false
-    enabled: false
-    tracks-drift-events: false
-  control-group:
-  - id: tagging_aws_tagging
-    title: AWS Tagging
-    description: AWS Tagging
-    section-code: tagging_aws_tagging
-    tags:
-      category:
-      - Compliance
-      platform_benchmark_type:
-      - compliance
-      platform_category:
-      - Best Practices
-      plugin:
-      - aws
-      service:
-      - AWS
-      type:
-      - Benchmark
-    controls:
-    - aws_mandatory_sql_accessanalyzer_analyzer_mandatory
-    - aws_mandatory_sql_api_gateway_stage_mandatory
-    - aws_mandatory_sql_cloudfront_distribution_mandatory
-    - aws_mandatory_sql_cloudtrail_trail_mandatory
-    - aws_mandatory_sql_cloudwatch_alarm_mandatory
-    - aws_mandatory_sql_cloudwatch_log_group_mandatory
-    - aws_mandatory_sql_codebuild_project_mandatory
-    - aws_mandatory_sql_codecommit_repository_mandatory
-    - aws_mandatory_sql_codepipeline_pipeline_mandatory
-    - aws_mandatory_sql_config_rule_mandatory
-    - aws_mandatory_sql_dax_cluster_mandatory
-    - aws_mandatory_sql_directory_service_directory_mandatory
-    - aws_mandatory_sql_dms_replication_instance_mandatory
-    - aws_mandatory_sql_dynamodb_table_mandatory
-    - aws_mandatory_sql_ebs_snapshot_mandatory
-    - aws_mandatory_sql_ebs_volume_mandatory
-    - aws_mandatory_sql_ec2_application_load_balancer_mandatory
-    - aws_mandatory_sql_ec2_classic_load_balancer_mandatory
-    - aws_mandatory_sql_ec2_gateway_load_balancer_mandatory
-    - aws_mandatory_sql_ec2_instance_mandatory
-    - aws_mandatory_sql_ec2_network_load_balancer_mandatory
-    - aws_mandatory_sql_ec2_reserved_instance_mandatory
-    - aws_mandatory_sql_ecr_repository_mandatory
-    - aws_mandatory_sql_ecs_container_instance_mandatory
-    - aws_mandatory_sql_ecs_service_mandatory
-    - aws_mandatory_sql_efs_file_system_mandatory
-    - aws_mandatory_sql_eks_addon_mandatory
-    - aws_mandatory_sql_eks_cluster_mandatory
-    - aws_mandatory_sql_elastic_beanstalk_application_mandatory
-    - aws_mandatory_sql_elastic_beanstalk_environment_mandatory
-    - aws_mandatory_sql_elasticache_cluster_mandatory
-    - aws_mandatory_sql_elasticsearch_domain_mandatory
-    - aws_mandatory_sql_eventbridge_rule_mandatory
-    - aws_mandatory_sql_guardduty_detector_mandatory
-    - aws_mandatory_sql_iam_role_mandatory
-    - aws_mandatory_sql_iam_server_certificate_mandatory
-    - aws_mandatory_sql_iam_user_mandatory
-    - aws_mandatory_sql_inspector_assessment_template_mandatory
-    - aws_mandatory_sql_kinesis_firehose_delivery_stream_mandatory
-    - aws_mandatory_sql_kms_key_mandatory
-    - aws_mandatory_sql_lambda_function_mandatory
-    - aws_mandatory_sql_rds_db_cluster_mandatory
-    - aws_mandatory_sql_rds_db_cluster_parameter_group_mandatory
-    - aws_mandatory_sql_rds_db_cluster_snapshot_mandatory
-    - aws_mandatory_sql_rds_db_instance_mandatory
-    - aws_mandatory_sql_rds_db_option_group_mandatory
-    - aws_mandatory_sql_rds_db_parameter_group_mandatory
-    - aws_mandatory_sql_rds_db_snapshot_mandatory
-    - aws_mandatory_sql_rds_db_subnet_group_mandatory
-    - aws_mandatory_sql_redshift_cluster_mandatory
-    - aws_mandatory_sql_route53_domain_mandatory
-    - aws_mandatory_sql_route53_resolver_endpoint_mandatory
-    - aws_mandatory_sql_s3_bucket_mandatory
-    - aws_mandatory_sql_sagemaker_endpoint_configuration_mandatory
-    - aws_mandatory_sql_sagemaker_model_mandatory
-    - aws_mandatory_sql_sagemaker_notebook_instance_mandatory
-    - aws_mandatory_sql_sagemaker_training_job_mandatory
-    - aws_mandatory_sql_secretsmanager_secret_mandatory
-    - aws_mandatory_sql_ssm_parameter_mandatory
-    - aws_mandatory_sql_vpc_eip_mandatory
-    - aws_mandatory_sql_vpc_mandatory
-    - aws_mandatory_sql_vpc_nat_gateway_mandatory
-    - aws_mandatory_sql_vpc_network_acl_mandatory
-    - aws_mandatory_sql_vpc_security_group_mandatory
-    - aws_mandatory_sql_vpc_vpn_connection_mandatory
-    - aws_mandatory_sql_wafv2_ip_set_mandatory
-    - aws_mandatory_sql_wafv2_regex_pattern_set_mandatory
-    - aws_mandatory_sql_wafv2_rule_group_mandatory
-    - aws_mandatory_sql_wafv2_web_acl_mandatory
-  - id: tagging_azure_tagging
-    title: Azure Tagging
-    description: Azure Tagging
-    section-code: tagging_azure_tagging
-    tags:
-      category:
-      - Compliance
-      platform_benchmark_type:
-      - compliance
-      platform_category:
-      - Best Practices
-      plugin:
-      - azure
-      service:
-      - Azure
-      type:
-      - Benchmark
-    controls:
-    - azure_mandatory_sql_resource_group_api_management_mandatory
-    - azure_mandatory_sql_resource_group_app_service_environment_mandatory
-    - azure_mandatory_sql_resource_group_app_service_function_app_mandatory
-    - azure_mandatory_sql_resource_group_app_service_plan_mandatory
-    - azure_mandatory_sql_resource_group_app_service_web_app_mandatory
-    - azure_mandatory_sql_resource_group_application_security_group_mandatory
-    - azure_mandatory_sql_resource_group_batch_account_mandatory
-    - azure_mandatory_sql_resource_group_compute_availability_set_mandatory
-    - azure_mandatory_sql_resource_group_compute_disk_encryption_set_mandatory
-    - azure_mandatory_sql_resource_group_compute_disk_mandatory
-    - azure_mandatory_sql_resource_group_compute_image_mandatory
-    - azure_mandatory_sql_resource_group_compute_snapshot_mandatory
-    - azure_mandatory_sql_resource_group_compute_virtual_machine_mandatory
-    - azure_mandatory_sql_resource_group_compute_virtual_machine_scale_set_mandatory
-    - azure_mandatory_sql_resource_group_container_registry_mandatory
-    - azure_mandatory_sql_resource_group_cosmosdb_account_mandatory
-    - azure_mandatory_sql_resource_group_cosmosdb_mongo_database_mandatory
-    - azure_mandatory_sql_resource_group_cosmosdb_sql_database_mandatory
-    - azure_mandatory_sql_resource_group_data_factory_mandatory
-    - azure_mandatory_sql_resource_group_data_lake_analytics_account_mandatory
-    - azure_mandatory_sql_resource_group_data_lake_store_mandatory
-    - azure_mandatory_sql_resource_group_eventhub_namespace_mandatory
-    - azure_mandatory_sql_resource_group_express_route_circuit_mandatory
-    - azure_mandatory_sql_resource_group_firewall_mandatory
-    - azure_mandatory_sql_resource_group_iothub_mandatory
-    - azure_mandatory_sql_resource_group_key_vault_deleted_vault_mandatory
-    - azure_mandatory_sql_resource_group_key_vault_key_mandatory
-    - azure_mandatory_sql_resource_group_key_vault_managed_hardware_security_module_mandatory
-    - azure_mandatory_sql_resource_group_key_vault_mandatory
-    - azure_mandatory_sql_resource_group_key_vault_secret_mandatory
-    - azure_mandatory_sql_resource_group_kubernetes_cluster_mandatory
-    - azure_mandatory_sql_resource_group_lb_mandatory
-    - azure_mandatory_sql_resource_group_log_alert_mandatory
-    - azure_mandatory_sql_resource_group_log_profile_mandatory
-    - azure_mandatory_sql_resource_group_logic_app_workflow_mandatory
-    - azure_mandatory_sql_resource_group_mariadb_server_mandatory
-    - azure_mandatory_sql_resource_group_mssql_elasticpool_mandatory
-    - azure_mandatory_sql_resource_group_mssql_managed_instance_mandatory
-    - azure_mandatory_sql_resource_group_mysql_server_mandatory
-    - azure_mandatory_sql_resource_group_network_interface_mandatory
-    - azure_mandatory_sql_resource_group_network_security_group_mandatory
-    - azure_mandatory_sql_resource_group_network_watcher_flow_log_mandatory
-    - azure_mandatory_sql_resource_group_network_watcher_mandatory
-    - azure_mandatory_sql_resource_group_postgresql_server_mandatory
-    - azure_mandatory_sql_resource_group_public_ip_mandatory
-    - azure_mandatory_sql_resource_group_recovery_services_vault_mandatory
-    - azure_mandatory_sql_resource_group_redis_cache_mandatory
-    - azure_mandatory_sql_resource_group_route_table_mandatory
-    - azure_mandatory_sql_resource_group_search_service_mandatory
-    - azure_mandatory_sql_resource_group_servicebus_namespace_mandatory
-    - azure_mandatory_sql_resource_group_sql_database_mandatory
-    - azure_mandatory_sql_resource_group_sql_server_mandatory
-    - azure_mandatory_sql_resource_group_storage_account_mandatory
-    - azure_mandatory_sql_resource_group_stream_analytics_job_mandatory
-    - azure_mandatory_sql_resource_group_virtual_network_gateway_mandatory
-    - azure_mandatory_sql_resource_group_virtual_network_mandatory
-    - azure_mandatory_sql_subscription_resource_group_mandatory
+  controls:
+  - azure_mandatory_sql_resource_group_api_management_mandatory
+  - azure_mandatory_sql_resource_group_app_service_environment_mandatory
+  - azure_mandatory_sql_resource_group_app_service_function_app_mandatory
+  - azure_mandatory_sql_resource_group_app_service_plan_mandatory
+  - azure_mandatory_sql_resource_group_app_service_web_app_mandatory
+  - azure_mandatory_sql_resource_group_application_security_group_mandatory
+  - azure_mandatory_sql_resource_group_batch_account_mandatory
+  - azure_mandatory_sql_resource_group_compute_availability_set_mandatory
+  - azure_mandatory_sql_resource_group_compute_disk_encryption_set_mandatory
+  - azure_mandatory_sql_resource_group_compute_disk_mandatory
+  - azure_mandatory_sql_resource_group_compute_image_mandatory
+  - azure_mandatory_sql_resource_group_compute_snapshot_mandatory
+  - azure_mandatory_sql_resource_group_compute_virtual_machine_mandatory
+  - azure_mandatory_sql_resource_group_compute_virtual_machine_scale_set_mandatory
+  - azure_mandatory_sql_resource_group_container_registry_mandatory
+  - azure_mandatory_sql_resource_group_cosmosdb_account_mandatory
+  - azure_mandatory_sql_resource_group_cosmosdb_mongo_database_mandatory
+  - azure_mandatory_sql_resource_group_cosmosdb_sql_database_mandatory
+  - azure_mandatory_sql_resource_group_data_factory_mandatory
+  - azure_mandatory_sql_resource_group_data_lake_analytics_account_mandatory
+  - azure_mandatory_sql_resource_group_data_lake_store_mandatory
+  - azure_mandatory_sql_resource_group_eventhub_namespace_mandatory
+  - azure_mandatory_sql_resource_group_express_route_circuit_mandatory
+  - azure_mandatory_sql_resource_group_firewall_mandatory
+  - azure_mandatory_sql_resource_group_iothub_mandatory
+  - azure_mandatory_sql_resource_group_key_vault_deleted_vault_mandatory
+  - azure_mandatory_sql_resource_group_key_vault_key_mandatory
+  - azure_mandatory_sql_resource_group_key_vault_managed_hardware_security_module_mandatory
+  - azure_mandatory_sql_resource_group_key_vault_mandatory
+  - azure_mandatory_sql_resource_group_key_vault_secret_mandatory
+  - azure_mandatory_sql_resource_group_kubernetes_cluster_mandatory
+  - azure_mandatory_sql_resource_group_lb_mandatory
+  - azure_mandatory_sql_resource_group_log_alert_mandatory
+  - azure_mandatory_sql_resource_group_log_profile_mandatory
+  - azure_mandatory_sql_resource_group_logic_app_workflow_mandatory
+  - azure_mandatory_sql_resource_group_mariadb_server_mandatory
+  - azure_mandatory_sql_resource_group_mssql_elasticpool_mandatory
+  - azure_mandatory_sql_resource_group_mssql_managed_instance_mandatory
+  - azure_mandatory_sql_resource_group_mysql_server_mandatory
+  - azure_mandatory_sql_resource_group_network_interface_mandatory
+  - azure_mandatory_sql_resource_group_network_security_group_mandatory
+  - azure_mandatory_sql_resource_group_network_watcher_flow_log_mandatory
+  - azure_mandatory_sql_resource_group_network_watcher_mandatory
+  - azure_mandatory_sql_resource_group_postgresql_server_mandatory
+  - azure_mandatory_sql_resource_group_public_ip_mandatory
+  - azure_mandatory_sql_resource_group_recovery_services_vault_mandatory
+  - azure_mandatory_sql_resource_group_redis_cache_mandatory
+  - azure_mandatory_sql_resource_group_route_table_mandatory
+  - azure_mandatory_sql_resource_group_search_service_mandatory
+  - azure_mandatory_sql_resource_group_servicebus_namespace_mandatory
+  - azure_mandatory_sql_resource_group_sql_database_mandatory
+  - azure_mandatory_sql_resource_group_sql_server_mandatory
+  - azure_mandatory_sql_resource_group_storage_account_mandatory
+  - azure_mandatory_sql_resource_group_stream_analytics_job_mandatory
+  - azure_mandatory_sql_resource_group_virtual_network_gateway_mandatory
+  - azure_mandatory_sql_resource_group_virtual_network_mandatory
+  - azure_mandatory_sql_subscription_resource_group_mandatory

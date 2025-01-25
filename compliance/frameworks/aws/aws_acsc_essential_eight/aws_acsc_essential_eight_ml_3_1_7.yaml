@@ -1,13 +1,13 @@
-control-group:
-  id: aws_acsc_essential_eight_ml_3_1_7
-  title: "ACSC-EE-ML3-1.7: Application control ML3"
-  description: Event logs are protected from unauthorised modification and deletion.
-  section-code: "7"
-  controls:
-  - aws_cloudtrail_bucket_not_public
-  - aws_cloudtrail_security_trail_enabled
-  - aws_cloudtrail_trail_enabled
-  - aws_cloudtrail_trail_logs_encrypted_with_kms_cmk
-  - aws_cloudtrail_trail_validation_enabled
-  - aws_log_group_encryption_at_rest_enabled
-  - aws_s3_public_access_block_bucket
+id: aws_acsc_essential_eight_ml_3_1_7
+title: "ACSC-EE-ML3-1.7: Application control ML3"
+description: Event logs are protected from unauthorised modification and deletion.
+section-code: "7"
+type: control-group
+controls:
+- aws_cloudtrail_bucket_not_public
+- aws_cloudtrail_security_trail_enabled
+- aws_cloudtrail_trail_enabled
+- aws_cloudtrail_trail_logs_encrypted_with_kms_cmk
+- aws_cloudtrail_trail_validation_enabled
+- aws_log_group_encryption_at_rest_enabled
+- aws_s3_public_access_block_bucket

@@ -1,7 +1,7 @@
-control-group:
-  id: azure_all_controls_databoxedge
-  title: Data Box
-  description: This section contains recommendations for configuring Data Box resources.
-  section-code: databoxedge
-  controls:
-  - azure_databox_edge_device_double_encryption_enabled
+id: azure_all_controls_databoxedge
+title: Data Box
+description: This section contains recommendations for configuring Data Box resources.
+section-code: databoxedge
+type: control-group
+controls:
+- azure_databox_edge_device_double_encryption_enabled

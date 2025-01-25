@@ -1,13 +1,20 @@
+id: aws_acsc_essential_eight_ml_3_8
+title: "ACSC-EE-ML3-8: Regular backups ML3"
+description: Backups of important data, software and configuration settings are performed and retained with a frequency and retention timeframe in accordance with business continuity requirements.
+section-code: "8"
+type: control-group
 control-group:
-  id: aws_acsc_essential_eight_ml_3_8
-  title: "ACSC-EE-ML3-8: Regular backups ML3"
-  description: Backups of important data, software and configuration settings are performed and retained with a frequency and retention timeframe in accordance with business continuity requirements.
-  section-code: "8"
-  control-group:
-  - id: aws_acsc_essential_eight_ml_3_8_1
-  - id: aws_acsc_essential_eight_ml_3_8_2
-  - id: aws_acsc_essential_eight_ml_3_8_3
-  - id: aws_acsc_essential_eight_ml_3_8_5
-  - id: aws_acsc_essential_eight_ml_3_8_6
-  - id: aws_acsc_essential_eight_ml_3_8_7
-  - id: aws_acsc_essential_eight_ml_3_8_8
+- id: aws_acsc_essential_eight_ml_3_8_1
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_8_2
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_8_3
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_8_5
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_8_6
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_8_7
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_8_8
+  type: ""

@@ -1,20 +1,23 @@
+id: azure_pci_dss_v321_requirement_7_1
+title: PCI DSS requirement 7.1
+description: Limit access to system components and cardholder data to only those individuals whose job requires such access.
+section-code: "1"
+type: control-group
+tags:
+  category:
+  - Compliance
+  pci_dss_v321:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure
+  type:
+  - Benchmark
 control-group:
-  id: azure_pci_dss_v321_requirement_7_1
-  title: PCI DSS requirement 7.1
-  description: Limit access to system components and cardholder data to only those individuals whose job requires such access.
-  section-code: "1"
-  tags:
-    category:
-    - Compliance
-    pci_dss_v321:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure
-    type:
-    - Benchmark
-  control-group:
-  - id: azure_pci_dss_v321_requirement_7_1_1
-  - id: azure_pci_dss_v321_requirement_7_1_2
-  - id: azure_pci_dss_v321_requirement_7_1_3
+- id: azure_pci_dss_v321_requirement_7_1_1
+  type: ""
+- id: azure_pci_dss_v321_requirement_7_1_2
+  type: ""
+- id: azure_pci_dss_v321_requirement_7_1_3
+  type: ""

@@ -1,40 +1,40 @@
-framework:
-  id: aws_nist_800_53_rev_5
-  title: NIST 800-53 Revision 5
-  description: NIST 800-53 is a regulatory standard that defines the minimum baseline of security controls for all U.S. federal information systems except those related to national security.
-  section-code: aws_nist_800_53_rev_5
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    platform_benchmark_type:
-    - compliance
-    platform_category:
-    - Frameworks
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  defaults:
-    is-baseline: false
-    enabled: false
-    tracks-drift-events: false
-  control-group:
-  - id: aws_nist_800_53_rev_5_ac
-  - id: aws_nist_800_53_rev_5_au
-  - id: aws_nist_800_53_rev_5_ca
-  - id: aws_nist_800_53_rev_5_cm
-  - id: aws_nist_800_53_rev_5_cp
-  - id: aws_nist_800_53_rev_5_ia
-  - id: aws_nist_800_53_rev_5_ir
-  - id: aws_nist_800_53_rev_5_ma
-  - id: aws_nist_800_53_rev_5_mp
-  - id: aws_nist_800_53_rev_5_pe
-  - id: aws_nist_800_53_rev_5_pm
-  - id: aws_nist_800_53_rev_5_ra
-  - id: aws_nist_800_53_rev_5_sa
-  - id: aws_nist_800_53_rev_5_sc
-  - id: aws_nist_800_53_rev_5_si
+id: aws_nist_800_53_rev_5
+title: NIST 800-53 Revision 5
+description: NIST 800-53 is a regulatory standard that defines the minimum baseline of security controls for all U.S. federal information systems except those related to national security.
+section-code: aws_nist_800_53_rev_5
+type: framework
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  platform_benchmark_type:
+  - compliance
+  platform_category:
+  - Frameworks
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+defaults:
+  is-baseline: false
+  enabled: false
+  tracks-drift-events: false
+control-group:
+- id: aws_nist_800_53_rev_5_ac
+- id: aws_nist_800_53_rev_5_au
+- id: aws_nist_800_53_rev_5_ca
+- id: aws_nist_800_53_rev_5_cm
+- id: aws_nist_800_53_rev_5_cp
+- id: aws_nist_800_53_rev_5_ia
+- id: aws_nist_800_53_rev_5_ir
+- id: aws_nist_800_53_rev_5_ma
+- id: aws_nist_800_53_rev_5_mp
+- id: aws_nist_800_53_rev_5_pe
+- id: aws_nist_800_53_rev_5_pm
+- id: aws_nist_800_53_rev_5_ra
+- id: aws_nist_800_53_rev_5_sa
+- id: aws_nist_800_53_rev_5_sc
+- id: aws_nist_800_53_rev_5_si

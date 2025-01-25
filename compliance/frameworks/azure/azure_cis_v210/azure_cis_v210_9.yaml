@@ -1,15 +1,15 @@
-control-group:
-  id: azure_cis_v210_9
-  title: AppService
-  description: AppService
-  section-code: "9"
-  controls:
-  - azure_cis_v210_9_1
-  - azure_cis_v210_9_2
-  - azure_cis_v210_9_3
-  - azure_cis_v210_9_4
-  - azure_cis_v210_9_5
-  - azure_cis_v210_9_6
-  - azure_cis_v210_9_7
-  - azure_cis_v210_9_8
-  - azure_cis_v210_9_10
+id: azure_cis_v210_9
+title: AppService
+description: AppService
+section-code: "9"
+type: control-group
+controls:
+- azure_cis_v210_9_1
+- azure_cis_v210_9_2
+- azure_cis_v210_9_3
+- azure_cis_v210_9_4
+- azure_cis_v210_9_5
+- azure_cis_v210_9_6
+- azure_cis_v210_9_7
+- azure_cis_v210_9_8
+- azure_cis_v210_9_10

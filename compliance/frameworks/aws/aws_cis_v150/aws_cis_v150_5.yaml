@@ -1,25 +1,25 @@
-control-group:
-  id: aws_cis_v150_5
-  title: Networking
-  description: Networking
-  section-code: "5"
-  tags:
-    category:
-    - Compliance
-    cis:
-    - "true"
-    cis_section_id:
-    - "5"
-    cis_version:
-    - v1.5.0
-    plugin:
-    - aws
-    service:
-    - AWS/VPC
-    type:
-    - Benchmark
-  controls:
-  - aws_cis_v150_5_2
-  - aws_cis_v150_5_3
-  - aws_cis_v150_5_4
-  - aws_cis_v150_5_5
+id: aws_cis_v150_5
+title: Networking
+description: Networking
+section-code: "5"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cis:
+  - "true"
+  cis_section_id:
+  - "5"
+  cis_version:
+  - v1.5.0
+  plugin:
+  - aws
+  service:
+  - AWS/VPC
+  type:
+  - Benchmark
+controls:
+- aws_cis_v150_5_2
+- aws_cis_v150_5_3
+- aws_cis_v150_5_4
+- aws_cis_v150_5_5

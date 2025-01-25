@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1620_09l1organizational
-  title: 09l1Organizational.8-09.l 09.05 Information Back-Up
-  description: When the backup service is delivered by the third party, the service level agreement includes the detailed protections to control confidentiality, integrity and availability of the backup information.
-  section-code: azure_hipaa_hitrust_v92_1620_09l1organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/Compute
-    type:
-    - Benchmark
-  controls:
-  - azure_compute_vm_azure_backup_enabled
+id: azure_hipaa_hitrust_v92_1620_09l1organizational
+title: 09l1Organizational.8-09.l 09.05 Information Back-Up
+description: When the backup service is delivered by the third party, the service level agreement includes the detailed protections to control confidentiality, integrity and availability of the backup information.
+section-code: azure_hipaa_hitrust_v92_1620_09l1organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/Compute
+  type:
+  - Benchmark
+controls:
+- azure_compute_vm_azure_backup_enabled

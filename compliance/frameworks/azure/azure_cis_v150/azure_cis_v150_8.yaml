@@ -1,28 +1,28 @@
-control-group:
-  id: azure_cis_v150_8
-  title: Other Security Considerations
-  description: Other Security Considerations
-  section-code: "8"
-  tags:
-    category:
-    - Compliance
-    cis:
-    - "true"
-    cis_section_id:
-    - "8"
-    cis_version:
-    - v1.5.0
-    plugin:
-    - azure
-    service:
-    - Azure
-    type:
-    - Benchmark
-  controls:
-  - azure_cis_v150_8_1
-  - azure_cis_v150_8_2
-  - azure_cis_v150_8_3
-  - azure_cis_v150_8_4
-  - azure_cis_v150_8_5
-  - azure_cis_v150_8_6
-  - azure_cis_v150_8_8
+id: azure_cis_v150_8
+title: Other Security Considerations
+description: Other Security Considerations
+section-code: "8"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cis:
+  - "true"
+  cis_section_id:
+  - "8"
+  cis_version:
+  - v1.5.0
+  plugin:
+  - azure
+  service:
+  - Azure
+  type:
+  - Benchmark
+controls:
+- azure_cis_v150_8_1
+- azure_cis_v150_8_2
+- azure_cis_v150_8_3
+- azure_cis_v150_8_4
+- azure_cis_v150_8_5
+- azure_cis_v150_8_6
+- azure_cis_v150_8_8

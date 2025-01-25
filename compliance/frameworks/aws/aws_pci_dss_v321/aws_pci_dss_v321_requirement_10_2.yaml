@@ -1,18 +1,25 @@
+id: aws_pci_dss_v321_requirement_10_2
+title: Through interviews of responsible personnel, observation of audit logs, and examination of audit log settings
+description: "It is critical to have a process or system that links user access to system components accessed. This system generates audit logs and provides the ability to trace back suspicious activity to a specific user. This control verifies, through observation and interviewing the system administrator, that: audit trails are enabled and active for system components, access to system components is linked to individual users."
+section-code: "2"
+type: control-group
 control-group:
-  id: aws_pci_dss_v321_requirement_10_2
-  title: Through interviews of responsible personnel, observation of audit logs, and examination of audit log settings
-  description: "It is critical to have a process or system that links user access to system components accessed. This system generates audit logs and provides the ability to trace back suspicious activity to a specific user. This control verifies, through observation and interviewing the system administrator, that: audit trails are enabled and active for system components, access to system components is linked to individual users."
-  section-code: "2"
-  control-group:
-  - id: aws_pci_dss_v321_requirement_10_2_1
-  - id: aws_pci_dss_v321_requirement_10_2_2
-  - id: aws_pci_dss_v321_requirement_10_2_3
-  - id: aws_pci_dss_v321_requirement_10_2_4
-  - id: aws_pci_dss_v321_requirement_10_2_5
-  - id: aws_pci_dss_v321_requirement_10_2_6
-  - id: aws_pci_dss_v321_requirement_10_2_7
-  controls:
-  - aws_es_domain_logs_to_cloudwatch
-  - aws_opensearch_domain_audit_logging_enabled
-  - aws_opensearch_domain_logs_to_cloudwatch
-  - aws_redshift_cluster_audit_logging_enabled
+- id: aws_pci_dss_v321_requirement_10_2_1
+  type: ""
+- id: aws_pci_dss_v321_requirement_10_2_2
+  type: ""
+- id: aws_pci_dss_v321_requirement_10_2_3
+  type: ""
+- id: aws_pci_dss_v321_requirement_10_2_4
+  type: ""
+- id: aws_pci_dss_v321_requirement_10_2_5
+  type: ""
+- id: aws_pci_dss_v321_requirement_10_2_6
+  type: ""
+- id: aws_pci_dss_v321_requirement_10_2_7
+  type: ""
+controls:
+- aws_es_domain_logs_to_cloudwatch
+- aws_opensearch_domain_audit_logging_enabled
+- aws_opensearch_domain_logs_to_cloudwatch
+- aws_redshift_cluster_audit_logging_enabled

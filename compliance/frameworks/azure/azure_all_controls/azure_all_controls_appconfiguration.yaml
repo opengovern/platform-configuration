@@ -1,9 +1,9 @@
-control-group:
-  id: azure_all_controls_appconfiguration
-  title: App Configuration
-  description: This section contains recommendations for configuring App Configuration resources.
-  section-code: appconfiguration
-  controls:
-  - azure_app_configuration_encryption_enabled
-  - azure_app_configuration_private_link_used
-  - azure_app_configuration_sku_standard
+id: azure_all_controls_appconfiguration
+title: App Configuration
+description: This section contains recommendations for configuring App Configuration resources.
+section-code: appconfiguration
+type: control-group
+controls:
+- azure_app_configuration_encryption_enabled
+- azure_app_configuration_private_link_used
+- azure_app_configuration_sku_standard

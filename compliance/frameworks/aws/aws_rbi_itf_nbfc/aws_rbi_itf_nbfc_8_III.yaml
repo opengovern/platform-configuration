@@ -1,7 +1,7 @@
-control-group:
-  id: aws_rbi_itf_nbfc_8_III
-  title: III Maker-Checker Concept
-  description: A Maker-checker concept to reduce the risk of error and misuse and to ensure reliability of data/information.
-  section-code: III
-  controls:
-  - aws_s3_bucket_versioning_enabled
+id: aws_rbi_itf_nbfc_8_III
+title: III Maker-Checker Concept
+description: A Maker-checker concept to reduce the risk of error and misuse and to ensure reliability of data/information.
+section-code: III
+type: control-group
+controls:
+- aws_s3_bucket_versioning_enabled

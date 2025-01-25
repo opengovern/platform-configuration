@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1217_09ab3system
-  title: 09ab3System.3-09.ab 09.10 Monitoring
-  description: Alerts are generated for technical personnel to analyze and investigate suspicious activity or suspected violations.
-  section-code: azure_hipaa_hitrust_v92_1217_09ab3system
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/Compute
-    type:
-    - Benchmark
-  controls:
-  - azure_compute_vm_log_analytics_agent_installed_windows
+id: azure_hipaa_hitrust_v92_1217_09ab3system
+title: 09ab3System.3-09.ab 09.10 Monitoring
+description: Alerts are generated for technical personnel to analyze and investigate suspicious activity or suspected violations.
+section-code: azure_hipaa_hitrust_v92_1217_09ab3system
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/Compute
+  type:
+  - Benchmark
+controls:
+- azure_compute_vm_log_analytics_agent_installed_windows

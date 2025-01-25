@@ -1,18 +1,18 @@
-control-group:
-  id: aws_cis_controls_v8_ig1_1_2
-  title: Address Unauthorized Assets
-  description: Ensure that a process exists to address unauthorized assets on a weekly basis. The enterprise may choose to remove the asset from the network, deny the asset from connecting remotely to the network, or quarantine the asset.
-  section-code: "2"
-  tags:
-    category:
-    - Compliance
-    cis_controls_v8_ig1:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_guardduty_enabled
+id: aws_cis_controls_v8_ig1_1_2
+title: Address Unauthorized Assets
+description: Ensure that a process exists to address unauthorized assets on a weekly basis. The enterprise may choose to remove the asset from the network, deny the asset from connecting remotely to the network, or quarantine the asset.
+section-code: "2"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cis_controls_v8_ig1:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_guardduty_enabled

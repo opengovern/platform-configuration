@@ -1,8 +1,8 @@
-control-group:
-  id: azure_all_controls_signalr
-  title: SignalR Service
-  description: This section contains recommendations for configuring SignalR Service resources.
-  section-code: signalr
-  controls:
-  - azure_signalr_service_no_free_tier_sku
-  - azure_signalr_service_private_link_used
+id: azure_all_controls_signalr
+title: SignalR Service
+description: This section contains recommendations for configuring SignalR Service resources.
+section-code: signalr
+type: control-group
+controls:
+- azure_signalr_service_no_free_tier_sku
+- azure_signalr_service_private_link_used

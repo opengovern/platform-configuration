@@ -1,18 +1,19 @@
+id: aws_fedramp_moderate_rev_4_si_2
+title: benchmark.nist_800_53_rev_4_si_2.title
+description: benchmark.nist_800_53_rev_4_si_2.description
+section-code: "2"
+type: control-group
+tags:
+  category:
+  - Compliance
+  fedramp_moderate_rev_4:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_fedramp_moderate_rev_4_si_2
-  title: benchmark.nist_800_53_rev_4_si_2.title
-  description: benchmark.nist_800_53_rev_4_si_2.description
-  section-code: "2"
-  tags:
-    category:
-    - Compliance
-    fedramp_moderate_rev_4:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_fedramp_moderate_rev_4_si_2_2
+- id: aws_fedramp_moderate_rev_4_si_2_2
+  type: ""

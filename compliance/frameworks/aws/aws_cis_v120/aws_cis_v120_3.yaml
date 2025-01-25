@@ -1,22 +1,22 @@
-control-group:
-  id: aws_cis_v120_3
-  title: Monitoring
-  description: Monitoring
-  section-code: "3"
-  tags:
-    category:
-    - Compliance
-    cis:
-    - "true"
-    cis_section_id:
-    - "3"
-    cis_version:
-    - v1.2.0
-    plugin:
-    - aws
-    service:
-    - AWS/CloudWatch
-    type:
-    - Benchmark
-  controls:
-  - aws_cis_v120_3_5
+id: aws_cis_v120_3
+title: Monitoring
+description: Monitoring
+section-code: "3"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cis:
+  - "true"
+  cis_section_id:
+  - "3"
+  cis_version:
+  - v1.2.0
+  plugin:
+  - aws
+  service:
+  - AWS/CloudWatch
+  type:
+  - Benchmark
+controls:
+- aws_cis_v120_3_5

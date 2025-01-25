@@ -1,36 +1,55 @@
+id: aws_nist_800_53_rev_5_sc_7
+title: Boundary Protection (SC-7)
+description: "The information system: a. Monitors and controls communications at the external boundary of the system and at key internal boundaries within the system; b. Implements subnetworks for publicly accessible system components that are [Selection: physically; logically] separated from internal organizational networks; and c. Connects to external networks or information systems only through managed interfaces consisting of boundary protection devices arranged in accordance with an organizational security architecture."
+section-code: "7"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_5_sc_7
-  title: Boundary Protection (SC-7)
-  description: "The information system: a. Monitors and controls communications at the external boundary of the system and at key internal boundaries within the system; b. Implements subnetworks for publicly accessible system components that are [Selection: physically; logically] separated from internal organizational networks; and c. Connects to external networks or information systems only through managed interfaces consisting of boundary protection devices arranged in accordance with an organizational security architecture."
-  section-code: "7"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_5_sc_7_2
-  - id: aws_nist_800_53_rev_5_sc_7_3
-  - id: aws_nist_800_53_rev_5_sc_7_4
-  - id: aws_nist_800_53_rev_5_sc_7_5
-  - id: aws_nist_800_53_rev_5_sc_7_7
-  - id: aws_nist_800_53_rev_5_sc_7_9
-  - id: aws_nist_800_53_rev_5_sc_7_11
-  - id: aws_nist_800_53_rev_5_sc_7_12
-  - id: aws_nist_800_53_rev_5_sc_7_16
-  - id: aws_nist_800_53_rev_5_sc_7_20
-  - id: aws_nist_800_53_rev_5_sc_7_21
-  - id: aws_nist_800_53_rev_5_sc_7_24
-  - id: aws_nist_800_53_rev_5_sc_7_25
-  - id: aws_nist_800_53_rev_5_sc_7_26
-  - id: aws_nist_800_53_rev_5_sc_7_27
-  - id: aws_nist_800_53_rev_5_sc_7_28
-  - id: aws_nist_800_53_rev_5_sc_7_a
-  - id: aws_nist_800_53_rev_5_sc_7_b
-  - id: aws_nist_800_53_rev_5_sc_7_c
+- id: aws_nist_800_53_rev_5_sc_7_2
+  type: ""
+- id: aws_nist_800_53_rev_5_sc_7_3
+  type: ""
+- id: aws_nist_800_53_rev_5_sc_7_4
+  type: ""
+- id: aws_nist_800_53_rev_5_sc_7_5
+  type: ""
+- id: aws_nist_800_53_rev_5_sc_7_7
+  type: ""
+- id: aws_nist_800_53_rev_5_sc_7_9
+  type: ""
+- id: aws_nist_800_53_rev_5_sc_7_11
+  type: ""
+- id: aws_nist_800_53_rev_5_sc_7_12
+  type: ""
+- id: aws_nist_800_53_rev_5_sc_7_16
+  type: ""
+- id: aws_nist_800_53_rev_5_sc_7_20
+  type: ""
+- id: aws_nist_800_53_rev_5_sc_7_21
+  type: ""
+- id: aws_nist_800_53_rev_5_sc_7_24
+  type: ""
+- id: aws_nist_800_53_rev_5_sc_7_25
+  type: ""
+- id: aws_nist_800_53_rev_5_sc_7_26
+  type: ""
+- id: aws_nist_800_53_rev_5_sc_7_27
+  type: ""
+- id: aws_nist_800_53_rev_5_sc_7_28
+  type: ""
+- id: aws_nist_800_53_rev_5_sc_7_a
+  type: ""
+- id: aws_nist_800_53_rev_5_sc_7_b
+  type: ""
+- id: aws_nist_800_53_rev_5_sc_7_c
+  type: ""

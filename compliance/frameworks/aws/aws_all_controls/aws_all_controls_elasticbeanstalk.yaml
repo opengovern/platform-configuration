@@ -1,9 +1,9 @@
-control-group:
-  id: aws_all_controls_elasticbeanstalk
-  title: Elastic Beanstalk
-  description: This section contains recommendations for configuring Elastic Beanstalk resources.
-  section-code: elasticbeanstalk
-  controls:
-  - aws_elastic_beanstalk_enhanced_health_reporting_enabled
-  - aws_elastic_beanstalk_environment_logs_to_cloudwatch
-  - aws_elastic_beanstalk_environment_managed_updates_enabled
+id: aws_all_controls_elasticbeanstalk
+title: Elastic Beanstalk
+description: This section contains recommendations for configuring Elastic Beanstalk resources.
+section-code: elasticbeanstalk
+type: control-group
+controls:
+- aws_elastic_beanstalk_enhanced_health_reporting_enabled
+- aws_elastic_beanstalk_environment_logs_to_cloudwatch
+- aws_elastic_beanstalk_environment_managed_updates_enabled

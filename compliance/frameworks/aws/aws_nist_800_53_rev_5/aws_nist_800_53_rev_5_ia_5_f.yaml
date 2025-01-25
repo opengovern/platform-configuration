@@ -1,18 +1,18 @@
-control-group:
-  id: aws_nist_800_53_rev_5_ia_5_f
-  title: IA-5(f)
-  description: "Manage system authenticators by: f. Changing or refreshing authenticators [Assignment: organization-defined time period by authenticator type] or when [Assignment: organization-defined events] occur."
-  section-code: f
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/IAM
-    type:
-    - Benchmark
-  controls:
-  - aws_iam_account_password_policy_min_length_14
+id: aws_nist_800_53_rev_5_ia_5_f
+title: IA-5(f)
+description: "Manage system authenticators by: f. Changing or refreshing authenticators [Assignment: organization-defined time period by authenticator type] or when [Assignment: organization-defined events] occur."
+section-code: f
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/IAM
+  type:
+  - Benchmark
+controls:
+- aws_iam_account_password_policy_min_length_14

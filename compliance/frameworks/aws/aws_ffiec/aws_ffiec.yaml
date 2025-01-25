@@ -1,30 +1,30 @@
-framework:
-  id: aws_ffiec
-  title: Federal Financial Institutions Examination Council (FFIEC)
-  description: Federal Financial Institutions Examination Council (FFIEC) developed the Cybersecurity Assessment Tool (Assessment) to help institutions identify their risks and determine their cybersecurity preparedness.
-  section-code: aws_ffiec
-  tags:
-    category:
-    - Compliance
-    ffiec:
-    - "true"
-    platform_benchmark_type:
-    - compliance
-    platform_category:
-    - Certifications and Attestations
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  defaults:
-    is-baseline: false
-    enabled: false
-    tracks-drift-events: false
-  control-group:
-  - id: aws_ffiec_d_1
-  - id: aws_ffiec_d_2
-  - id: aws_ffiec_d_3
-  - id: aws_ffiec_d_4
-  - id: aws_ffiec_d_5
+id: aws_ffiec
+title: Federal Financial Institutions Examination Council (FFIEC)
+description: Federal Financial Institutions Examination Council (FFIEC) developed the Cybersecurity Assessment Tool (Assessment) to help institutions identify their risks and determine their cybersecurity preparedness.
+section-code: aws_ffiec
+type: framework
+tags:
+  category:
+  - Compliance
+  ffiec:
+  - "true"
+  platform_benchmark_type:
+  - compliance
+  platform_category:
+  - Certifications and Attestations
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+defaults:
+  is-baseline: false
+  enabled: false
+  tracks-drift-events: false
+control-group:
+- id: aws_ffiec_d_1
+- id: aws_ffiec_d_2
+- id: aws_ffiec_d_3
+- id: aws_ffiec_d_4
+- id: aws_ffiec_d_5

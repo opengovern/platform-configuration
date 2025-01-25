@@ -1,18 +1,18 @@
-control-group:
-  id: aws_nist_800_53_rev_5_ia_4_8
-  title: IA-4(8)
-  description: Generate pairwise pseudonymous identifiers.
-  section-code: "8"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/IAM
-    type:
-    - Benchmark
-  controls:
-  - aws_iam_root_user_no_access_keys
+id: aws_nist_800_53_rev_5_ia_4_8
+title: IA-4(8)
+description: Generate pairwise pseudonymous identifiers.
+section-code: "8"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/IAM
+  type:
+  - Benchmark
+controls:
+- aws_iam_root_user_no_access_keys

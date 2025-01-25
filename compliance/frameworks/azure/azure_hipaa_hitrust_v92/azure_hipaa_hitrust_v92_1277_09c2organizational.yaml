@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1277_09c2organizational
-  title: 09c2Organizational.4-09.c 09.01 Documented Operating Procedures
-  description: The initiation of an event is separated from its authorization to reduce the possibility of collusion.
-  section-code: azure_hipaa_hitrust_v92_1277_09c2organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/Compute
-    type:
-    - Benchmark
-  controls:
-  - azure_compute_vm_meet_security_options_user_account_control_requirement_windows
+id: azure_hipaa_hitrust_v92_1277_09c2organizational
+title: 09c2Organizational.4-09.c 09.01 Documented Operating Procedures
+description: The initiation of an event is separated from its authorization to reduce the possibility of collusion.
+section-code: azure_hipaa_hitrust_v92_1277_09c2organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/Compute
+  type:
+  - Benchmark
+controls:
+- azure_compute_vm_meet_security_options_user_account_control_requirement_windows

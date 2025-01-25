@@ -1,8 +1,10 @@
+id: azure_cis_v210_2
+title: Microsoft Defender
+description: Microsoft Defender
+section-code: "2"
+type: control-group
 control-group:
-  id: azure_cis_v210_2
-  title: Microsoft Defender
-  description: Microsoft Defender
-  section-code: "2"
-  control-group:
-  - id: azure_cis_v210_2_1
-  - id: azure_cis_v210_2_2
+- id: azure_cis_v210_2_1
+  type: ""
+- id: azure_cis_v210_2_2
+  type: ""

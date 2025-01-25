@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_0945_09y1organizational
-  title: 09y1Organizational.3-09.y 09.09 Electronic Commerce Services
-  description: Protocols used to communicate between all involved parties are secured using cryptographic techniques (e.g., SSL).
-  section-code: azure_hipaa_hitrust_v92_0945_09y1organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/Compute
-    type:
-    - Benchmark
-  controls:
-  - azure_compute_vm_with_no_specified_certificates_in_trusted_root_windows
+id: azure_hipaa_hitrust_v92_0945_09y1organizational
+title: 09y1Organizational.3-09.y 09.09 Electronic Commerce Services
+description: Protocols used to communicate between all involved parties are secured using cryptographic techniques (e.g., SSL).
+section-code: azure_hipaa_hitrust_v92_0945_09y1organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/Compute
+  type:
+  - Benchmark
+controls:
+- azure_compute_vm_with_no_specified_certificates_in_trusted_root_windows

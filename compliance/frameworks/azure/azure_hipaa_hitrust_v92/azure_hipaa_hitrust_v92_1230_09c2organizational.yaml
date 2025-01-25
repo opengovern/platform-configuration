@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1230_09c2organizational
-  title: 09c2Organizational.1-09.c 09.01 Documented Operating Procedures
-  description: No single person is able to access, modify, or use information systems without authorization or detection.
-  section-code: azure_hipaa_hitrust_v92_1230_09c2organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/IAM
-    type:
-    - Benchmark
-  controls:
-  - azure_iam_no_custom_role
+id: azure_hipaa_hitrust_v92_1230_09c2organizational
+title: 09c2Organizational.1-09.c 09.01 Documented Operating Procedures
+description: No single person is able to access, modify, or use information systems without authorization or detection.
+section-code: azure_hipaa_hitrust_v92_1230_09c2organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/IAM
+  type:
+  - Benchmark
+controls:
+- azure_iam_no_custom_role

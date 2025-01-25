@@ -1,11 +1,16 @@
+id: aws_acsc_essential_eight_ml_1
+title: ACSC Essential Eight Maturity Level 1
+description: The availability category refers to the accessibility of information used by the entity’s systems, as well as the products or services provided to its customers.
+section-code: ml_1
+type: control-group
 control-group:
-  id: aws_acsc_essential_eight_ml_1
-  title: ACSC Essential Eight Maturity Level 1
-  description: The availability category refers to the accessibility of information used by the entity’s systems, as well as the products or services provided to its customers.
-  section-code: ml_1
-  control-group:
-  - id: aws_acsc_essential_eight_ml_1_2
-  - id: aws_acsc_essential_eight_ml_1_5
-  - id: aws_acsc_essential_eight_ml_1_6
-  - id: aws_acsc_essential_eight_ml_1_7
-  - id: aws_acsc_essential_eight_ml_1_8
+- id: aws_acsc_essential_eight_ml_1_2
+  type: ""
+- id: aws_acsc_essential_eight_ml_1_5
+  type: ""
+- id: aws_acsc_essential_eight_ml_1_6
+  type: ""
+- id: aws_acsc_essential_eight_ml_1_7
+  type: ""
+- id: aws_acsc_essential_eight_ml_1_8
+  type: ""

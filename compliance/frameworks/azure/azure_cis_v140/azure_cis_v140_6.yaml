@@ -1,25 +1,25 @@
-control-group:
-  id: azure_cis_v140_6
-  title: Networking
-  description: Networking
-  section-code: "6"
-  tags:
-    category:
-    - Compliance
-    cis:
-    - "true"
-    cis_section_id:
-    - "6"
-    cis_version:
-    - v1.4.0
-    plugin:
-    - azure
-    service:
-    - Azure/Network
-    type:
-    - Benchmark
-  controls:
-  - azure_cis_v140_6_1
-  - azure_cis_v140_6_2
-  - azure_cis_v140_6_3
-  - azure_cis_v140_6_6
+id: azure_cis_v140_6
+title: Networking
+description: Networking
+section-code: "6"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cis:
+  - "true"
+  cis_section_id:
+  - "6"
+  cis_version:
+  - v1.4.0
+  plugin:
+  - azure
+  service:
+  - Azure/Network
+  type:
+  - Benchmark
+controls:
+- azure_cis_v140_6_1
+- azure_cis_v140_6_2
+- azure_cis_v140_6_3
+- azure_cis_v140_6_6

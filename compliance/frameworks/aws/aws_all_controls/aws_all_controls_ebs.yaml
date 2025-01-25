@@ -1,15 +1,15 @@
-control-group:
-  id: aws_all_controls_ebs
-  title: EBS
-  description: This section contains recommendations for configuring EBS resources.
-  section-code: ebs
-  controls:
-  - aws_ebs_attached_volume_delete_on_termination_enabled
-  - aws_ebs_attached_volume_encryption_enabled
-  - aws_ebs_snapshot_encryption_enabled
-  - aws_ebs_snapshot_not_publicly_restorable
-  - aws_ebs_volume_encryption_at_rest_enabled
-  - aws_ebs_volume_in_backup_plan
-  - aws_ebs_volume_protected_by_backup_plan
-  - aws_ebs_volume_snapshot_exists
-  - aws_ebs_volume_unused
+id: aws_all_controls_ebs
+title: EBS
+description: This section contains recommendations for configuring EBS resources.
+section-code: ebs
+type: control-group
+controls:
+- aws_ebs_attached_volume_delete_on_termination_enabled
+- aws_ebs_attached_volume_encryption_enabled
+- aws_ebs_snapshot_encryption_enabled
+- aws_ebs_snapshot_not_publicly_restorable
+- aws_ebs_volume_encryption_at_rest_enabled
+- aws_ebs_volume_in_backup_plan
+- aws_ebs_volume_protected_by_backup_plan
+- aws_ebs_volume_snapshot_exists
+- aws_ebs_volume_unused

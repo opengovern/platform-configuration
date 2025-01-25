@@ -1,11 +1,11 @@
-control-group:
-  id: aws_all_controls_cloudformation
-  title: CloudFormation
-  description: This section contains recommendations for configuring CloudFormation resources.
-  section-code: cloudformation
-  controls:
-  - aws_cloudformation_stack_drift_detection_check
-  - aws_cloudformation_stack_notifications_enabled
-  - aws_cloudformation_stack_output_no_secrets
-  - aws_cloudformation_stack_rollback_enabled
-  - aws_cloudformation_stack_termination_protection_enabled
+id: aws_all_controls_cloudformation
+title: CloudFormation
+description: This section contains recommendations for configuring CloudFormation resources.
+section-code: cloudformation
+type: control-group
+controls:
+- aws_cloudformation_stack_drift_detection_check
+- aws_cloudformation_stack_notifications_enabled
+- aws_cloudformation_stack_output_no_secrets
+- aws_cloudformation_stack_rollback_enabled
+- aws_cloudformation_stack_termination_protection_enabled

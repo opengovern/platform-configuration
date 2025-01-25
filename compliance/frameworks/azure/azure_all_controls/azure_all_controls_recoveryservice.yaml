@@ -1,9 +1,9 @@
-control-group:
-  id: azure_all_controls_recoveryservice
-  title: Recovery Service
-  description: This section contains recommendations for configuring Recovery Service resources.
-  section-code: recoveryservice
-  controls:
-  - azure_recovery_service_vault_uses_managed_identity
-  - azure_recovery_service_vault_uses_private_link
-  - azure_recovery_service_vault_uses_private_link_for_backup
+id: azure_all_controls_recoveryservice
+title: Recovery Service
+description: This section contains recommendations for configuring Recovery Service resources.
+section-code: recoveryservice
+type: control-group
+controls:
+- azure_recovery_service_vault_uses_managed_identity
+- azure_recovery_service_vault_uses_private_link
+- azure_recovery_service_vault_uses_private_link_for_backup

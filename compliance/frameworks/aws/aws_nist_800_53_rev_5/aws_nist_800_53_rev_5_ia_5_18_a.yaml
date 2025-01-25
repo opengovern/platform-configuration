@@ -1,18 +1,18 @@
-control-group:
-  id: aws_nist_800_53_rev_5_ia_5_18_a
-  title: IA-5(18)(a)
-  description: "Employ [Assignment: organization-defined password managers] to generate and manage passwords."
-  section-code: a
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/IAM
-    type:
-    - Benchmark
-  controls:
-  - aws_iam_account_password_policy_min_length_14
+id: aws_nist_800_53_rev_5_ia_5_18_a
+title: IA-5(18)(a)
+description: "Employ [Assignment: organization-defined password managers] to generate and manage passwords."
+section-code: a
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/IAM
+  type:
+  - Benchmark
+controls:
+- aws_iam_account_password_policy_min_length_14

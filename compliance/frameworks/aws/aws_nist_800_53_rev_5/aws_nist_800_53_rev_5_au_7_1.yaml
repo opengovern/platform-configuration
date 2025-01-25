@@ -1,18 +1,18 @@
-control-group:
-  id: aws_nist_800_53_rev_5_au_7_1
-  title: AU-7(1) Automatic Processing
-  description: "Provide and implement the capability to process, sort, and search audit records for events of interest based on the following content: [Assignment: organization-defined fields within audit records]."
-  section-code: "1"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_cloudtrail_trail_integrated_with_logs
+id: aws_nist_800_53_rev_5_au_7_1
+title: AU-7(1) Automatic Processing
+description: "Provide and implement the capability to process, sort, and search audit records for events of interest based on the following content: [Assignment: organization-defined fields within audit records]."
+section-code: "1"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_cloudtrail_trail_integrated_with_logs

@@ -1,12 +1,16 @@
+id: azure_cis_v210_5
+title: Logging and Monitoring
+description: Logging and Monitoring
+section-code: "5"
+type: control-group
 control-group:
-  id: azure_cis_v210_5
-  title: Logging and Monitoring
-  description: Logging and Monitoring
-  section-code: "5"
-  control-group:
-  - id: azure_cis_v210_5_1
-  - id: azure_cis_v210_5_2
-  - id: azure_cis_v210_5_3
-  - id: azure_cis_v210_5_5
-  controls:
-  - azure_cis_v210_5_4
+- id: azure_cis_v210_5_1
+  type: ""
+- id: azure_cis_v210_5_2
+  type: ""
+- id: azure_cis_v210_5_3
+  type: ""
+- id: azure_cis_v210_5_5
+  type: ""
+controls:
+- azure_cis_v210_5_4

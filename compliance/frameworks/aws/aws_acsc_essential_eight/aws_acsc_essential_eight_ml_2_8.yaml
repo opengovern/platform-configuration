@@ -1,13 +1,20 @@
+id: aws_acsc_essential_eight_ml_2_8
+title: "ACSC-EE-ML2-8: Daily backups ML2"
+description: Backups are taken daily and retained for at least 7 days.
+section-code: "8"
+type: control-group
 control-group:
-  id: aws_acsc_essential_eight_ml_2_8
-  title: "ACSC-EE-ML2-8: Daily backups ML2"
-  description: Backups are taken daily and retained for at least 7 days.
-  section-code: "8"
-  control-group:
-  - id: aws_acsc_essential_eight_ml_2_8_1
-  - id: aws_acsc_essential_eight_ml_2_8_2
-  - id: aws_acsc_essential_eight_ml_2_8_3
-  - id: aws_acsc_essential_eight_ml_2_8_5
-  - id: aws_acsc_essential_eight_ml_2_8_6
-  - id: aws_acsc_essential_eight_ml_2_8_7
-  - id: aws_acsc_essential_eight_ml_2_8_8
+- id: aws_acsc_essential_eight_ml_2_8_1
+  type: ""
+- id: aws_acsc_essential_eight_ml_2_8_2
+  type: ""
+- id: aws_acsc_essential_eight_ml_2_8_3
+  type: ""
+- id: aws_acsc_essential_eight_ml_2_8_5
+  type: ""
+- id: aws_acsc_essential_eight_ml_2_8_6
+  type: ""
+- id: aws_acsc_essential_eight_ml_2_8_7
+  type: ""
+- id: aws_acsc_essential_eight_ml_2_8_8
+  type: ""

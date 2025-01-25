@@ -1,7 +1,7 @@
-control-group:
-  id: aws_all_controls_sfn
-  title: Step Functions
-  description: This section contains recommendations for configuring Step Functions resources.
-  section-code: sfn
-  controls:
-  - aws_sfn_state_machine_logging_enabled
+id: aws_all_controls_sfn
+title: Step Functions
+description: This section contains recommendations for configuring Step Functions resources.
+section-code: sfn
+type: control-group
+controls:
+- aws_sfn_state_machine_logging_enabled

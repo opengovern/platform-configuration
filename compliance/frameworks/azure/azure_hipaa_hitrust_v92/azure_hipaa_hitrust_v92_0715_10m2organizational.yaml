@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_0715_10m2organizational
-  title: 10m2Organizational.8-10.m 10.06 Technical Vulnerability Management
-  description: Systems are appropriately hardened (e.g., configured with only necessary and secure services, ports and protocols enabled).
-  section-code: azure_hipaa_hitrust_v92_0715_10m2organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/Compute
-    type:
-    - Benchmark
-  controls:
-  - azure_compute_vm_container_security_configurations_vulnerabilities_remediated
+id: azure_hipaa_hitrust_v92_0715_10m2organizational
+title: 10m2Organizational.8-10.m 10.06 Technical Vulnerability Management
+description: Systems are appropriately hardened (e.g., configured with only necessary and secure services, ports and protocols enabled).
+section-code: azure_hipaa_hitrust_v92_0715_10m2organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/Compute
+  type:
+  - Benchmark
+controls:
+- azure_compute_vm_container_security_configurations_vulnerabilities_remediated

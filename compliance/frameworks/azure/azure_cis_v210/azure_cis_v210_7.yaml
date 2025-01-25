@@ -1,15 +1,15 @@
-control-group:
-  id: azure_cis_v210_7
-  title: Virtual Machines
-  description: Virtual Machines
-  section-code: "7"
-  controls:
-  - azure_cis_v210_7_1
-  - azure_cis_v210_7_2
-  - azure_cis_v210_7_3
-  - azure_cis_v210_7_4
-  - azure_cis_v210_7_5
-  - azure_cis_v210_7_6
-  - azure_cis_v210_7_7
-  - azure_cis_v210_7_8
-  - azure_cis_v210_7_9
+id: azure_cis_v210_7
+title: Virtual Machines
+description: Virtual Machines
+section-code: "7"
+type: control-group
+controls:
+- azure_cis_v210_7_1
+- azure_cis_v210_7_2
+- azure_cis_v210_7_3
+- azure_cis_v210_7_4
+- azure_cis_v210_7_5
+- azure_cis_v210_7_6
+- azure_cis_v210_7_7
+- azure_cis_v210_7_8
+- azure_cis_v210_7_9

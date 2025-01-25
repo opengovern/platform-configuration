@@ -1,16 +1,26 @@
+id: aws_acsc_essential_eight_ml_3_7
+title: "ACSC-EE-ML3-7: Restrict administrative privileges ML3"
+description: Multi-factor authentication is used by an organisation's users if they authenticate to their organisations internet-facing services.
+section-code: "7"
+type: control-group
 control-group:
-  id: aws_acsc_essential_eight_ml_3_7
-  title: "ACSC-EE-ML3-7: Restrict administrative privileges ML3"
-  description: Multi-factor authentication is used by an organisation's users if they authenticate to their organisations internet-facing services.
-  section-code: "7"
-  control-group:
-  - id: aws_acsc_essential_eight_ml_3_7_1
-  - id: aws_acsc_essential_eight_ml_3_7_2
-  - id: aws_acsc_essential_eight_ml_3_7_3
-  - id: aws_acsc_essential_eight_ml_3_7_4
-  - id: aws_acsc_essential_eight_ml_3_7_5
-  - id: aws_acsc_essential_eight_ml_3_7_6
-  - id: aws_acsc_essential_eight_ml_3_7_7
-  - id: aws_acsc_essential_eight_ml_3_7_8
-  - id: aws_acsc_essential_eight_ml_3_7_9
-  - id: aws_acsc_essential_eight_ml_3_7_10
+- id: aws_acsc_essential_eight_ml_3_7_1
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_7_2
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_7_3
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_7_4
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_7_5
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_7_6
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_7_7
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_7_8
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_7_9
+  type: ""
+- id: aws_acsc_essential_eight_ml_3_7_10
+  type: ""

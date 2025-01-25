@@ -1,19 +1,19 @@
-control-group:
-  id: aws_cis_controls_v8_ig1_5_4
-  title: Restrict Administrator Privileges to Dedicated Administrator Accounts
-  description: Restrict administrator privileges to dedicated administrator accounts on enterprise assets. Conduct general computing activities, such as internet browsing, email, and productivity suite use, from the user's primary, non-privileged account.
-  section-code: "4"
-  tags:
-    category:
-    - Compliance
-    cis_controls_v8_ig1:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_iam_policy_no_star_star
-  - aws_iam_root_user_no_access_keys
+id: aws_cis_controls_v8_ig1_5_4
+title: Restrict Administrator Privileges to Dedicated Administrator Accounts
+description: Restrict administrator privileges to dedicated administrator accounts on enterprise assets. Conduct general computing activities, such as internet browsing, email, and productivity suite use, from the user's primary, non-privileged account.
+section-code: "4"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cis_controls_v8_ig1:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_iam_policy_no_star_star
+- aws_iam_root_user_no_access_keys

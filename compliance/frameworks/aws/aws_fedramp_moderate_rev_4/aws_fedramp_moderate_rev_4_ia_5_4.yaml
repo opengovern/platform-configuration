@@ -1,18 +1,18 @@
-control-group:
-  id: aws_fedramp_moderate_rev_4_ia_5_4
-  title: benchmark.nist_800_53_rev_4_ia_5_4.title
-  description: benchmark.nist_800_53_rev_4_ia_5_4.description
-  section-code: "4"
-  tags:
-    category:
-    - Compliance
-    fedramp_moderate_rev_4:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/IAM
-    type:
-    - Benchmark
-  controls:
-  - aws_iam_account_password_policy_min_length_14
+id: aws_fedramp_moderate_rev_4_ia_5_4
+title: benchmark.nist_800_53_rev_4_ia_5_4.title
+description: benchmark.nist_800_53_rev_4_ia_5_4.description
+section-code: "4"
+type: control-group
+tags:
+  category:
+  - Compliance
+  fedramp_moderate_rev_4:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/IAM
+  type:
+  - Benchmark
+controls:
+- aws_iam_account_password_policy_min_length_14

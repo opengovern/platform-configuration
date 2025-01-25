@@ -1,7 +1,7 @@
-control-group:
-  id: aws_pci_dss_v321_requirement_11_5_b
-  title: 5.b Verify the mechanism is configured to alert personnel to unauthorized modification (including changes, additions, and deletions) of critical files, and to perform critical file comparisons at least weekly
-  description: 5.b Verify the mechanism is configured to alert personnel to unauthorized modification (including changes, additions, and deletions) of critical files, and to perform critical file comparisons at least weekly
-  section-code: b
-  controls:
-  - aws_config_enabled_all_regions
+id: aws_pci_dss_v321_requirement_11_5_b
+title: 5.b Verify the mechanism is configured to alert personnel to unauthorized modification (including changes, additions, and deletions) of critical files, and to perform critical file comparisons at least weekly
+description: 5.b Verify the mechanism is configured to alert personnel to unauthorized modification (including changes, additions, and deletions) of critical files, and to perform critical file comparisons at least weekly
+section-code: b
+type: control-group
+controls:
+- aws_config_enabled_all_regions

@@ -1,18 +1,18 @@
-control-group:
-  id: aws_nist_800_53_rev_5_si_7_3
-  title: SI-7(3) Centrally Managed Integrity Tools
-  description: Employ centrally managed integrity verification tools.
-  section-code: "3"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/CloudTrail
-    type:
-    - Benchmark
-  controls:
-  - aws_cloudtrail_trail_validation_enabled
+id: aws_nist_800_53_rev_5_si_7_3
+title: SI-7(3) Centrally Managed Integrity Tools
+description: Employ centrally managed integrity verification tools.
+section-code: "3"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/CloudTrail
+  type:
+  - Benchmark
+controls:
+- aws_cloudtrail_trail_validation_enabled

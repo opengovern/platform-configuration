@@ -1,10 +1,14 @@
+id: azure_cis_v210_4
+title: Database Services
+description: Database Services
+section-code: "4"
+type: control-group
 control-group:
-  id: azure_cis_v210_4
-  title: Database Services
-  description: Database Services
-  section-code: "4"
-  control-group:
-  - id: azure_cis_v210_4_1
-  - id: azure_cis_v210_4_3
-  - id: azure_cis_v210_4_4
-  - id: azure_cis_v210_4_5
+- id: azure_cis_v210_4_1
+  type: ""
+- id: azure_cis_v210_4_3
+  type: ""
+- id: azure_cis_v210_4_4
+  type: ""
+- id: azure_cis_v210_4_5
+  type: ""

@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1619_09l1organizational
-  title: 09l1Organizational.7-09.l 09.05 Information Back-Up
-  description: Inventory records for the backup copies, including content and current location, are maintained.
-  section-code: azure_hipaa_hitrust_v92_1619_09l1organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/MariaDB
-    type:
-    - Benchmark
-  controls:
-  - azure_mariadb_server_geo_redundant_backup_enabled
+id: azure_hipaa_hitrust_v92_1619_09l1organizational
+title: 09l1Organizational.7-09.l 09.05 Information Back-Up
+description: Inventory records for the backup copies, including content and current location, are maintained.
+section-code: azure_hipaa_hitrust_v92_1619_09l1organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/MariaDB
+  type:
+  - Benchmark
+controls:
+- azure_mariadb_server_geo_redundant_backup_enabled

@@ -1,24 +1,31 @@
+id: aws_nist_800_53_rev_4_ac
+title: Access Control (AC)
+description: The access control family consists of security requirements detailing system logging. This includes who has access to what assets and reporting capabilities like account management, system privileges, and remote access logging to determine when users have access to the system and their level of access.
+section-code: ac
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_4:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_4_ac
-  title: Access Control (AC)
-  description: The access control family consists of security requirements detailing system logging. This includes who has access to what assets and reporting capabilities like account management, system privileges, and remote access logging to determine when users have access to the system and their level of access.
-  section-code: ac
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_4:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_4_ac_2
-  - id: aws_nist_800_53_rev_4_ac_3
-  - id: aws_nist_800_53_rev_4_ac_4
-  - id: aws_nist_800_53_rev_4_ac_5
-  - id: aws_nist_800_53_rev_4_ac_6
-  - id: aws_nist_800_53_rev_4_ac_17
-  - id: aws_nist_800_53_rev_4_ac_21
+- id: aws_nist_800_53_rev_4_ac_2
+  type: ""
+- id: aws_nist_800_53_rev_4_ac_3
+  type: ""
+- id: aws_nist_800_53_rev_4_ac_4
+  type: ""
+- id: aws_nist_800_53_rev_4_ac_5
+  type: ""
+- id: aws_nist_800_53_rev_4_ac_6
+  type: ""
+- id: aws_nist_800_53_rev_4_ac_17
+  type: ""
+- id: aws_nist_800_53_rev_4_ac_21
+  type: ""

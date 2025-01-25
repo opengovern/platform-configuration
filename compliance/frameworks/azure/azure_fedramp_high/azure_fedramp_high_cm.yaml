@@ -1,8 +1,10 @@
+id: azure_fedramp_high_cm
+title: Configuration Management (CM)
+description: "The organization: (i) defines and documents configuration settings for information technology products employed within the information system; (ii) implements the configuration settings; (iii) identifies, documents, and approves any deviations from established configuration settings; and (iv) monitors and controls changes to the configuration settings."
+section-code: cm
+type: control-group
 control-group:
-  id: azure_fedramp_high_cm
-  title: Configuration Management (CM)
-  description: "The organization: (i) defines and documents configuration settings for information technology products employed within the information system; (ii) implements the configuration settings; (iii) identifies, documents, and approves any deviations from established configuration settings; and (iv) monitors and controls changes to the configuration settings."
-  section-code: cm
-  control-group:
-  - id: azure_fedramp_high_cm_6
-  - id: azure_fedramp_high_cm_7
+- id: azure_fedramp_high_cm_6
+  type: ""
+- id: azure_fedramp_high_cm_7
+  type: ""

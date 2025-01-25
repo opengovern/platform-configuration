@@ -1,18 +1,18 @@
-control-group:
-  id: aws_foundational_security_sqs
-  title: SQS
-  description: SQS
-  section-code: sqs
-  tags:
-    aws_foundational_security:
-    - "true"
-    category:
-    - Compliance
-    plugin:
-    - aws
-    service:
-    - AWS/SQS
-    type:
-    - Benchmark
-  controls:
-  - aws_foundational_security_sqs_1
+id: aws_foundational_security_sqs
+title: SQS
+description: SQS
+section-code: sqs
+type: control-group
+tags:
+  aws_foundational_security:
+  - "true"
+  category:
+  - Compliance
+  plugin:
+  - aws
+  service:
+  - AWS/SQS
+  type:
+  - Benchmark
+controls:
+- aws_foundational_security_sqs_1

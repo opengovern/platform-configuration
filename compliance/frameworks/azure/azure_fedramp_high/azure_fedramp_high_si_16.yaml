@@ -1,8 +1,8 @@
-control-group:
-  id: azure_fedramp_high_si_16
-  title: Memory Protection (SI-16)
-  description: "Implement the following controls to protect the system memory from unauthorized code execution: [Assignment: organization-defined controls]."
-  section-code: "16"
-  controls:
-  - azure_compute_vm_windows_defender_exploit_guard_enabled
-  - azure_securitycenter_azure_defender_on_for_server
+id: azure_fedramp_high_si_16
+title: Memory Protection (SI-16)
+description: "Implement the following controls to protect the system memory from unauthorized code execution: [Assignment: organization-defined controls]."
+section-code: "16"
+type: control-group
+controls:
+- azure_compute_vm_windows_defender_exploit_guard_enabled
+- azure_securitycenter_azure_defender_on_for_server

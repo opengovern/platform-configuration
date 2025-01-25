@@ -1,19 +1,19 @@
-control-group:
-  id: azure_pci_dss_v321_requirement_7_1_1
-  title: PCI DSS requirement 7.1.1
-  description: "Define access needs for each role, including: - System components and data resources that each role needs to access for their job function - Level of privilege required (for example, user, administrator, etc.) for accessing resources."
-  section-code: "1"
-  tags:
-    category:
-    - Compliance
-    pci_dss_v321:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/ActiveDirectory
-    type:
-    - Benchmark
-  controls:
-  - azure_iam_subscription_owner_max_3
-  - azure_iam_subscription_owner_more_than_1
+id: azure_pci_dss_v321_requirement_7_1_1
+title: PCI DSS requirement 7.1.1
+description: "Define access needs for each role, including: - System components and data resources that each role needs to access for their job function - Level of privilege required (for example, user, administrator, etc.) for accessing resources."
+section-code: "1"
+type: control-group
+tags:
+  category:
+  - Compliance
+  pci_dss_v321:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/ActiveDirectory
+  type:
+  - Benchmark
+controls:
+- azure_iam_subscription_owner_max_3
+- azure_iam_subscription_owner_more_than_1

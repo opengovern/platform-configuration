@@ -1,18 +1,19 @@
+id: azure_pci_dss_v321_requirement_10_5
+title: PCI DSS requirement 10.5
+description: Secure audit trails so they cannot be altered.
+section-code: "5"
+type: control-group
+tags:
+  category:
+  - Compliance
+  pci_dss_v321:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure
+  type:
+  - Benchmark
 control-group:
-  id: azure_pci_dss_v321_requirement_10_5
-  title: PCI DSS requirement 10.5
-  description: Secure audit trails so they cannot be altered.
-  section-code: "5"
-  tags:
-    category:
-    - Compliance
-    pci_dss_v321:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure
-    type:
-    - Benchmark
-  control-group:
-  - id: azure_pci_dss_v321_requirement_10_5_4
+- id: azure_pci_dss_v321_requirement_10_5_4
+  type: ""

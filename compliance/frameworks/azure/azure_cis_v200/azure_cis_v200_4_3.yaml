@@ -1,25 +1,25 @@
-control-group:
-  id: azure_cis_v200_4_3
-  title: PostgreSQL Database Server
-  description: PostgreSQL Database Server
-  section-code: "3"
-  tags:
-    category:
-    - Compliance
-    cis:
-    - "true"
-    cis_section_id:
-    - "4.3"
-    cis_version:
-    - v2.0.0
-    plugin:
-    - azure
-    service:
-    - Azure
-    type:
-    - Benchmark
-  controls:
-  - azure_cis_v200_4_3_1
-  - azure_cis_v200_4_3_5
-  - azure_cis_v200_4_3_7
-  - azure_cis_v200_4_3_8
+id: azure_cis_v200_4_3
+title: PostgreSQL Database Server
+description: PostgreSQL Database Server
+section-code: "3"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cis:
+  - "true"
+  cis_section_id:
+  - "4.3"
+  cis_version:
+  - v2.0.0
+  plugin:
+  - azure
+  service:
+  - Azure
+  type:
+  - Benchmark
+controls:
+- azure_cis_v200_4_3_1
+- azure_cis_v200_4_3_5
+- azure_cis_v200_4_3_7
+- azure_cis_v200_4_3_8

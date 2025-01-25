@@ -1,18 +1,19 @@
+id: aws_nist_800_53_rev_5_cm_5
+title: Access Restrictions For Change (CM-5)
+description: Define, document, approve, and enforce physical and logical access restrictions associated with changes to the system.
+section-code: "5"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_5_cm_5
-  title: Access Restrictions For Change (CM-5)
-  description: Define, document, approve, and enforce physical and logical access restrictions associated with changes to the system.
-  section-code: "5"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_5_cm_5_1
+- id: aws_nist_800_53_rev_5_cm_5_1
+  type: ""

@@ -1,19 +1,19 @@
-control-group:
-  id: aws_ffiec_d_3_dc_an_b_2
-  title: D3.DC.An.B.2
-  description: Customer transactions generating anomalous activity alerts are monitored and reviewed.
-  section-code: an_b_2
-  tags:
-    category:
-    - Compliance
-    ffiec:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_guardduty_enabled
-  - aws_securityhub_enabled
+id: aws_ffiec_d_3_dc_an_b_2
+title: D3.DC.An.B.2
+description: Customer transactions generating anomalous activity alerts are monitored and reviewed.
+section-code: an_b_2
+type: control-group
+tags:
+  category:
+  - Compliance
+  ffiec:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_guardduty_enabled
+- aws_securityhub_enabled

@@ -1,18 +1,19 @@
+id: aws_nist_800_53_rev_5_sa_1
+title: Policy And Procedures (SA-1)
+description: "The organization develops, disseminates, and periodically reviews/updates: (i) a formal, documented, system and services acquisition policy that includes information security considerations and that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and (ii) formal, documented procedures to facilitate the implementation of the system and services acquisition policy and associated system and services acquisition controls."
+section-code: "1"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/CloudTrail
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_5_sa_1
-  title: Policy And Procedures (SA-1)
-  description: "The organization develops, disseminates, and periodically reviews/updates: (i) a formal, documented, system and services acquisition policy that includes information security considerations and that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and (ii) formal, documented procedures to facilitate the implementation of the system and services acquisition policy and associated system and services acquisition controls."
-  section-code: "1"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/CloudTrail
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_5_sa_1_1
+- id: aws_nist_800_53_rev_5_sa_1_1
+  type: ""

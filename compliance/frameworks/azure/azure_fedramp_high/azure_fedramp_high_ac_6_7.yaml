@@ -1,8 +1,8 @@
-control-group:
-  id: azure_fedramp_high_ac_6_7
-  title: AC-6(7) Review Of User Privileges
-  description: Centralize access control for all enterprise assets through a directory service or SSO provider, where supported.
-  section-code: "7"
-  controls:
-  - azure_iam_no_custom_role
-  - azure_iam_subscription_owner_max_3
+id: azure_fedramp_high_ac_6_7
+title: AC-6(7) Review Of User Privileges
+description: Centralize access control for all enterprise assets through a directory service or SSO provider, where supported.
+section-code: "7"
+type: control-group
+controls:
+- azure_iam_no_custom_role
+- azure_iam_subscription_owner_max_3

@@ -1,18 +1,18 @@
-control-group:
-  id: aws_nist_800_53_rev_5_ac_2_g
-  title: AC-2(g)
-  description: "The organization: g. Monitors the use of information system accounts."
-  section-code: g
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/IAM
-    type:
-    - Benchmark
-  controls:
-  - aws_iam_user_unused_credentials_90
+id: aws_nist_800_53_rev_5_ac_2_g
+title: AC-2(g)
+description: "The organization: g. Monitors the use of information system accounts."
+section-code: g
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/IAM
+  type:
+  - Benchmark
+controls:
+- aws_iam_user_unused_credentials_90

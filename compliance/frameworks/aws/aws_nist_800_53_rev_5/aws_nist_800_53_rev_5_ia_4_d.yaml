@@ -1,18 +1,18 @@
-control-group:
-  id: aws_nist_800_53_rev_5_ia_4_d
-  title: IA-4(d)
-  description: "Manage system identifiers by: d. Preventing reuse of identifiers for [Assignment: organization-defined time period]."
-  section-code: d
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/IAM
-    type:
-    - Benchmark
-  controls:
-  - aws_iam_account_password_policy_min_length_14
+id: aws_nist_800_53_rev_5_ia_4_d
+title: IA-4(d)
+description: "Manage system identifiers by: d. Preventing reuse of identifiers for [Assignment: organization-defined time period]."
+section-code: d
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/IAM
+  type:
+  - Benchmark
+controls:
+- aws_iam_account_password_policy_min_length_14

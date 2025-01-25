@@ -1,21 +1,21 @@
-control-group:
-  id: aws_nist_800_53_rev_4_si_4_4
-  title: SI-4(4) Inbound and Outbound Communications Traffic
-  description: The information system monitors inbound and outbound communications traffic continuously for unusual or unauthorized activities or conditions.
-  section-code: "4"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_4:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_cloudtrail_trail_integrated_with_logs
-  - aws_cloudwatch_alarm_action_enabled
-  - aws_guardduty_enabled
-  - aws_securityhub_enabled
+id: aws_nist_800_53_rev_4_si_4_4
+title: SI-4(4) Inbound and Outbound Communications Traffic
+description: The information system monitors inbound and outbound communications traffic continuously for unusual or unauthorized activities or conditions.
+section-code: "4"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_4:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_cloudtrail_trail_integrated_with_logs
+- aws_cloudwatch_alarm_action_enabled
+- aws_guardduty_enabled
+- aws_securityhub_enabled

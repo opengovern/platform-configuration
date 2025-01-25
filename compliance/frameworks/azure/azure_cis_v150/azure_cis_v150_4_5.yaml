@@ -1,23 +1,23 @@
-control-group:
-  id: azure_cis_v150_4_5
-  title: Cosmos DB
-  description: Cosmos DB
-  section-code: "5"
-  tags:
-    category:
-    - Compliance
-    cis:
-    - "true"
-    cis_section_id:
-    - "4"
-    cis_version:
-    - v1.5.0
-    plugin:
-    - azure
-    service:
-    - Azure/SQL
-    type:
-    - Benchmark
-  controls:
-  - azure_cis_v150_4_5_1
-  - azure_cis_v150_4_5_2
+id: azure_cis_v150_4_5
+title: Cosmos DB
+description: Cosmos DB
+section-code: "5"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cis:
+  - "true"
+  cis_section_id:
+  - "4"
+  cis_version:
+  - v1.5.0
+  plugin:
+  - azure
+  service:
+  - Azure/SQL
+  type:
+  - Benchmark
+controls:
+- azure_cis_v150_4_5_1
+- azure_cis_v150_4_5_2

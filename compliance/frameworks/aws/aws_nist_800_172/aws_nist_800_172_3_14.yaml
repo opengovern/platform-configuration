@@ -1,10 +1,14 @@
+id: aws_nist_800_172_3_14
+title: System and Information integrity
+description: The SI control family correlates to controls that protect system and information integrity. These include flaw remediation, malicious code protection, information system monitoring, security alerts, software and firmware integrity, and spam protection.
+section-code: "3_14"
+type: control-group
 control-group:
-  id: aws_nist_800_172_3_14
-  title: System and Information integrity
-  description: The SI control family correlates to controls that protect system and information integrity. These include flaw remediation, malicious code protection, information system monitoring, security alerts, software and firmware integrity, and spam protection.
-  section-code: "3_14"
-  control-group:
-  - id: aws_nist_800_172_3_14_1_e
-  - id: aws_nist_800_172_3_14_2_e
-  - id: aws_nist_800_172_3_14_6_e
-  - id: aws_nist_800_172_3_14_7_e
+- id: aws_nist_800_172_3_14_1_e
+  type: ""
+- id: aws_nist_800_172_3_14_2_e
+  type: ""
+- id: aws_nist_800_172_3_14_6_e
+  type: ""
+- id: aws_nist_800_172_3_14_7_e
+  type: ""

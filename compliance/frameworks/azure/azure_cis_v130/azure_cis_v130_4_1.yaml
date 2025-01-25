@@ -1,22 +1,22 @@
-control-group:
-  id: azure_cis_v130_4_1
-  title: SQL Server - Auditing
-  description: SQL Server - Auditing
-  section-code: "1"
-  tags:
-    category:
-    - Compliance
-    cis:
-    - "true"
-    cis_section_id:
-    - "4.1"
-    cis_version:
-    - v1.3.0
-    plugin:
-    - azure
-    service:
-    - Azure/SQL
-    type:
-    - Benchmark
-  controls:
-  - azure_cis_v130_4_1_2
+id: azure_cis_v130_4_1
+title: SQL Server - Auditing
+description: SQL Server - Auditing
+section-code: "1"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cis:
+  - "true"
+  cis_section_id:
+  - "4.1"
+  cis_version:
+  - v1.3.0
+  plugin:
+  - azure
+  service:
+  - Azure/SQL
+  type:
+  - Benchmark
+controls:
+- azure_cis_v130_4_1_2

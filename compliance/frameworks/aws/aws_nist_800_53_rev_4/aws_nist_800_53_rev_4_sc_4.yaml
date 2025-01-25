@@ -1,18 +1,18 @@
-control-group:
-  id: aws_nist_800_53_rev_4_sc_4
-  title: Information In Shared Resources (SC-4)
-  description: The information system prevents unauthorized and unintended information transfer via shared system resources.
-  section-code: "4"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_4:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/EBS
-    type:
-    - Benchmark
-  controls:
-  - aws_ebs_attached_volume_delete_on_termination_enabled
+id: aws_nist_800_53_rev_4_sc_4
+title: Information In Shared Resources (SC-4)
+description: The information system prevents unauthorized and unintended information transfer via shared system resources.
+section-code: "4"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_4:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/EBS
+  type:
+  - Benchmark
+controls:
+- aws_ebs_attached_volume_delete_on_termination_enabled

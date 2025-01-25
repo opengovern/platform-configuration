@@ -1,21 +1,25 @@
+id: aws_nist_800_53_rev_5_au_9
+title: Protection of Audit Information (AU-9)
+description: Protect audit information & tools from unauthorized access, modification & deletion.
+section-code: "9"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_5_au_9
-  title: Protection of Audit Information (AU-9)
-  description: Protect audit information & tools from unauthorized access, modification & deletion.
-  section-code: "9"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_5_au_9_2
-  - id: aws_nist_800_53_rev_5_au_9_3
-  - id: aws_nist_800_53_rev_5_au_9_7
-  - id: aws_nist_800_53_rev_5_au_9_a
+- id: aws_nist_800_53_rev_5_au_9_2
+  type: ""
+- id: aws_nist_800_53_rev_5_au_9_3
+  type: ""
+- id: aws_nist_800_53_rev_5_au_9_7
+  type: ""
+- id: aws_nist_800_53_rev_5_au_9_a
+  type: ""

@@ -1,7 +1,7 @@
-control-group:
-  id: azure_fedramp_high_cm_7
-  title: Least Functionality (CM-7)
-  description: The organization configures the information system to provide only essential capabilities and prohibits or restricts the use of the functions, ports, protocols, and/or services.
-  section-code: "7"
-  controls:
-  - azure_securitycenter_azure_defender_on_for_server
+id: azure_fedramp_high_cm_7
+title: Least Functionality (CM-7)
+description: The organization configures the information system to provide only essential capabilities and prohibits or restricts the use of the functions, ports, protocols, and/or services.
+section-code: "7"
+type: control-group
+controls:
+- azure_securitycenter_azure_defender_on_for_server

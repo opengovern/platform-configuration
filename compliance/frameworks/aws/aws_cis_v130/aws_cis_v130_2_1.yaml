@@ -1,23 +1,23 @@
-control-group:
-  id: aws_cis_v130_2_1
-  title: Simple Storage Service (S3)
-  description: Simple Storage Service (S3)
-  section-code: "1"
-  tags:
-    category:
-    - Compliance
-    cis:
-    - "true"
-    cis_section_id:
-    - "2.1"
-    cis_version:
-    - v1.3.0
-    plugin:
-    - aws
-    service:
-    - AWS/S3
-    type:
-    - Benchmark
-  controls:
-  - aws_cis_v130_2_1_1
-  - aws_cis_v130_2_1_2
+id: aws_cis_v130_2_1
+title: Simple Storage Service (S3)
+description: Simple Storage Service (S3)
+section-code: "1"
+type: control-group
+tags:
+  category:
+  - Compliance
+  cis:
+  - "true"
+  cis_section_id:
+  - "2.1"
+  cis_version:
+  - v1.3.0
+  plugin:
+  - aws
+  service:
+  - AWS/S3
+  type:
+  - Benchmark
+controls:
+- aws_cis_v130_2_1_1
+- aws_cis_v130_2_1_2

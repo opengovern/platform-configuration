@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1401_05i1organizational
-  title: Access to the organizations information and systems by external parties
-  description: Access to the organizations information and systems by external parties is not permitted until due diligence has been conducted, the appropriate controls have been implemented, and a contract/agreement reflecting the security requirements is signed acknowledging they understand and accept their obligations.
-  section-code: azure_hipaa_hitrust_v92_1401_05i1organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/Storage
-    type:
-    - Benchmark
-  controls:
-  - azure_storage_account_secure_transfer_required_enabled
+id: azure_hipaa_hitrust_v92_1401_05i1organizational
+title: Access to the organizations information and systems by external parties
+description: Access to the organizations information and systems by external parties is not permitted until due diligence has been conducted, the appropriate controls have been implemented, and a contract/agreement reflecting the security requirements is signed acknowledging they understand and accept their obligations.
+section-code: azure_hipaa_hitrust_v92_1401_05i1organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/Storage
+  type:
+  - Benchmark
+controls:
+- azure_storage_account_secure_transfer_required_enabled

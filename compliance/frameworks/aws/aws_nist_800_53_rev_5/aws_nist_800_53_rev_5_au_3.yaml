@@ -1,24 +1,31 @@
+id: aws_nist_800_53_rev_5_au_3
+title: Content of Audit Records (AU-3)
+description: The information system generates audit records containing information that establishes what type of event occurred, when the event occurred, where the event occurred, the source of the event, the outcome of the event, and the identity of any individuals or subjects associated with the event.
+section-code: "3"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_5_au_3
-  title: Content of Audit Records (AU-3)
-  description: The information system generates audit records containing information that establishes what type of event occurred, when the event occurred, where the event occurred, the source of the event, the outcome of the event, and the identity of any individuals or subjects associated with the event.
-  section-code: "3"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_5_au_3_1
-  - id: aws_nist_800_53_rev_5_au_3_a
-  - id: aws_nist_800_53_rev_5_au_3_b
-  - id: aws_nist_800_53_rev_5_au_3_c
-  - id: aws_nist_800_53_rev_5_au_3_d
-  - id: aws_nist_800_53_rev_5_au_3_e
-  - id: aws_nist_800_53_rev_5_au_3_f
+- id: aws_nist_800_53_rev_5_au_3_1
+  type: ""
+- id: aws_nist_800_53_rev_5_au_3_a
+  type: ""
+- id: aws_nist_800_53_rev_5_au_3_b
+  type: ""
+- id: aws_nist_800_53_rev_5_au_3_c
+  type: ""
+- id: aws_nist_800_53_rev_5_au_3_d
+  type: ""
+- id: aws_nist_800_53_rev_5_au_3_e
+  type: ""
+- id: aws_nist_800_53_rev_5_au_3_f
+  type: ""

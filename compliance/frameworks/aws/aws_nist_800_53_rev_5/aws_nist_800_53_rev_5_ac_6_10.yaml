@@ -1,20 +1,20 @@
-control-group:
-  id: aws_nist_800_53_rev_5_ac_6_10
-  title: AC-6(10)
-  description: Prevent non-privileged users from executing privileged functions.
-  section-code: "10"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/IAM
-    type:
-    - Benchmark
-  controls:
-  - aws_iam_all_policy_no_service_wild_card
-  - aws_iam_policy_no_star_star
-  - aws_iam_root_user_no_access_keys
+id: aws_nist_800_53_rev_5_ac_6_10
+title: AC-6(10)
+description: Prevent non-privileged users from executing privileged functions.
+section-code: "10"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/IAM
+  type:
+  - Benchmark
+controls:
+- aws_iam_all_policy_no_service_wild_card
+- aws_iam_policy_no_star_star
+- aws_iam_root_user_no_access_keys

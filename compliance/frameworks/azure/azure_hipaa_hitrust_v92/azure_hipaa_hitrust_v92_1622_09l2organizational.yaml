@@ -1,18 +1,18 @@
-control-group:
-  id: azure_hipaa_hitrust_v92_1622_09l2organizational
-  title: 09l2Organizational.23-09.l 09.05 Information Back-Up
-  description: The integrity and security of the backup copies are maintained to ensure future availability, and any potential accessibility problems with the backup copies are identified and mitigated in the event of an area-wide disaster.
-  section-code: azure_hipaa_hitrust_v92_1622_09l2organizational
-  tags:
-    category:
-    - Compliance
-    hipaa_hitrust_v92:
-    - "true"
-    plugin:
-    - azure
-    service:
-    - Azure/MySQL
-    type:
-    - Benchmark
-  controls:
-  - azure_mysql_db_server_geo_redundant_backup_enabled
+id: azure_hipaa_hitrust_v92_1622_09l2organizational
+title: 09l2Organizational.23-09.l 09.05 Information Back-Up
+description: The integrity and security of the backup copies are maintained to ensure future availability, and any potential accessibility problems with the backup copies are identified and mitigated in the event of an area-wide disaster.
+section-code: azure_hipaa_hitrust_v92_1622_09l2organizational
+type: control-group
+tags:
+  category:
+  - Compliance
+  hipaa_hitrust_v92:
+  - "true"
+  plugin:
+  - azure
+  service:
+  - Azure/MySQL
+  type:
+  - Benchmark
+controls:
+- azure_mysql_db_server_geo_redundant_backup_enabled

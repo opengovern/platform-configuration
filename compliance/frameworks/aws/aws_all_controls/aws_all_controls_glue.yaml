@@ -1,10 +1,10 @@
-control-group:
-  id: aws_all_controls_glue
-  title: Glue
-  description: This section contains recommendations for configuring Glue resources.
-  section-code: glue
-  controls:
-  - aws_glue_connection_ssl_enabled
-  - aws_glue_data_catalog_encryption_settings_metadata_encryption_enabled
-  - aws_glue_data_catalog_encryption_settings_password_encryption_enabled
-  - aws_glue_job_bookmarks_encryption_enabled
+id: aws_all_controls_glue
+title: Glue
+description: This section contains recommendations for configuring Glue resources.
+section-code: glue
+type: control-group
+controls:
+- aws_glue_connection_ssl_enabled
+- aws_glue_data_catalog_encryption_settings_metadata_encryption_enabled
+- aws_glue_data_catalog_encryption_settings_password_encryption_enabled
+- aws_glue_job_bookmarks_encryption_enabled

@@ -1,12 +1,18 @@
+id: aws_acsc_essential_eight_ml_2_6
+title: "ACSC-EE-ML2-6: Multi-factor authentication ML2"
+description: Multi-factor authentication is enabled for all users and administrators.
+section-code: "6"
+type: control-group
 control-group:
-  id: aws_acsc_essential_eight_ml_2_6
-  title: "ACSC-EE-ML2-6: Multi-factor authentication ML2"
-  description: Multi-factor authentication is enabled for all users and administrators.
-  section-code: "6"
-  control-group:
-  - id: aws_acsc_essential_eight_ml_2_6_2
-  - id: aws_acsc_essential_eight_ml_2_6_3
-  - id: aws_acsc_essential_eight_ml_2_6_4
-  - id: aws_acsc_essential_eight_ml_2_6_5
-  - id: aws_acsc_essential_eight_ml_2_6_6
-  - id: aws_acsc_essential_eight_ml_2_6_7
+- id: aws_acsc_essential_eight_ml_2_6_2
+  type: ""
+- id: aws_acsc_essential_eight_ml_2_6_3
+  type: ""
+- id: aws_acsc_essential_eight_ml_2_6_4
+  type: ""
+- id: aws_acsc_essential_eight_ml_2_6_5
+  type: ""
+- id: aws_acsc_essential_eight_ml_2_6_6
+  type: ""
+- id: aws_acsc_essential_eight_ml_2_6_7
+  type: ""

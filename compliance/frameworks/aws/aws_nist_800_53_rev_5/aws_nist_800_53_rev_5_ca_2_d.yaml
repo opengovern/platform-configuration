@@ -1,19 +1,19 @@
-control-group:
-  id: aws_nist_800_53_rev_5_ca_2_d
-  title: CA-2(d)
-  description: "Assess the controls in the system and its environment of operation [Assignment: organization-defined frequency] to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security and privacy requirements."
-  section-code: d
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_guardduty_enabled
-  - aws_securityhub_enabled
+id: aws_nist_800_53_rev_5_ca_2_d
+title: CA-2(d)
+description: "Assess the controls in the system and its environment of operation [Assignment: organization-defined frequency] to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security and privacy requirements."
+section-code: d
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_guardduty_enabled
+- aws_securityhub_enabled

@@ -1,18 +1,18 @@
-control-group:
-  id: aws_nist_800_53_rev_5_ac_16_b
-  title: AC-16(b)
-  description: Ensure that the attribute associations are made and retained with the information.
-  section-code: b
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS/CloudWatch
-    type:
-    - Benchmark
-  controls:
-  - aws_cloudwatch_log_group_retention_period_365
+id: aws_nist_800_53_rev_5_ac_16_b
+title: AC-16(b)
+description: Ensure that the attribute associations are made and retained with the information.
+section-code: b
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS/CloudWatch
+  type:
+  - Benchmark
+controls:
+- aws_cloudwatch_log_group_retention_period_365

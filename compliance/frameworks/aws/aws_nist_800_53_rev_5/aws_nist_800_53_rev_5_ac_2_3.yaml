@@ -1,24 +1,28 @@
+id: aws_nist_800_53_rev_5_ac_2_3
+title: AC-2(3) Disable Accounts
+description: "Disable accounts within [Assignment: organization-defined time period] when the accounts: (a) Have expired; (b) Are no longer associated with a user or individual; (c) Are in violation of organizational policy; or (d) Have been inactive for [Assignment: organization-defined time period]."
+section-code: "3"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_5_ac_2_3
-  title: AC-2(3) Disable Accounts
-  description: "Disable accounts within [Assignment: organization-defined time period] when the accounts: (a) Have expired; (b) Are no longer associated with a user or individual; (c) Are in violation of organizational policy; or (d) Have been inactive for [Assignment: organization-defined time period]."
-  section-code: "3"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_5_ac_2_3_a
-  - id: aws_nist_800_53_rev_5_ac_2_3_b
-  - id: aws_nist_800_53_rev_5_ac_2_3_c
-  - id: aws_nist_800_53_rev_5_ac_2_3_d
-  controls:
-  - aws_iam_account_password_policy_min_length_14
-  - aws_iam_user_unused_credentials_90
+- id: aws_nist_800_53_rev_5_ac_2_3_a
+  type: ""
+- id: aws_nist_800_53_rev_5_ac_2_3_b
+  type: ""
+- id: aws_nist_800_53_rev_5_ac_2_3_c
+  type: ""
+- id: aws_nist_800_53_rev_5_ac_2_3_d
+  type: ""
+controls:
+- aws_iam_account_password_policy_min_length_14
+- aws_iam_user_unused_credentials_90

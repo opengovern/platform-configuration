@@ -1,12 +1,18 @@
+id: azure_fedramp_high_ac
+title: Access Control (AC)
+description: Access control policies and procedures are established and implemented to ensure that access to systems and data is restricted to authorized users, processes, or devices, and to prevent unauthorized access.
+section-code: ac
+type: control-group
 control-group:
-  id: azure_fedramp_high_ac
-  title: Access Control (AC)
-  description: Access control policies and procedures are established and implemented to ensure that access to systems and data is restricted to authorized users, processes, or devices, and to prevent unauthorized access.
-  section-code: ac
-  control-group:
-  - id: azure_fedramp_high_ac_2
-  - id: azure_fedramp_high_ac_3
-  - id: azure_fedramp_high_ac_4
-  - id: azure_fedramp_high_ac_5
-  - id: azure_fedramp_high_ac_6
-  - id: azure_fedramp_high_ac_17
+- id: azure_fedramp_high_ac_2
+  type: ""
+- id: azure_fedramp_high_ac_3
+  type: ""
+- id: azure_fedramp_high_ac_4
+  type: ""
+- id: azure_fedramp_high_ac_5
+  type: ""
+- id: azure_fedramp_high_ac_6
+  type: ""
+- id: azure_fedramp_high_ac_17
+  type: ""

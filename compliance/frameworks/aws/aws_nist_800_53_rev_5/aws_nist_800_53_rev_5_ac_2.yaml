@@ -1,26 +1,35 @@
+id: aws_nist_800_53_rev_5_ac_2
+title: Account Management (AC-2)
+description: Manage system accounts, group memberships, privileges, workflow, notifications, deactivations, and authorizations.
+section-code: "2"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
 control-group:
-  id: aws_nist_800_53_rev_5_ac_2
-  title: Account Management (AC-2)
-  description: Manage system accounts, group memberships, privileges, workflow, notifications, deactivations, and authorizations.
-  section-code: "2"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  control-group:
-  - id: aws_nist_800_53_rev_5_ac_2_1
-  - id: aws_nist_800_53_rev_5_ac_2_3
-  - id: aws_nist_800_53_rev_5_ac_2_4
-  - id: aws_nist_800_53_rev_5_ac_2_6
-  - id: aws_nist_800_53_rev_5_ac_2_12
-  - id: aws_nist_800_53_rev_5_ac_2_d_1
-  - id: aws_nist_800_53_rev_5_ac_2_g
-  - id: aws_nist_800_53_rev_5_ac_2_i_2
-  - id: aws_nist_800_53_rev_5_ac_2_j
+- id: aws_nist_800_53_rev_5_ac_2_1
+  type: ""
+- id: aws_nist_800_53_rev_5_ac_2_3
+  type: ""
+- id: aws_nist_800_53_rev_5_ac_2_4
+  type: ""
+- id: aws_nist_800_53_rev_5_ac_2_6
+  type: ""
+- id: aws_nist_800_53_rev_5_ac_2_12
+  type: ""
+- id: aws_nist_800_53_rev_5_ac_2_d_1
+  type: ""
+- id: aws_nist_800_53_rev_5_ac_2_g
+  type: ""
+- id: aws_nist_800_53_rev_5_ac_2_i_2
+  type: ""
+- id: aws_nist_800_53_rev_5_ac_2_j
+  type: ""

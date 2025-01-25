@@ -1,19 +1,19 @@
-control-group:
-  id: aws_nist_800_53_rev_5_cm_8_a_3
-  title: CM-8(a)(3)
-  description: "Develop and document an inventory of system components that: 3. Does not include duplicate accounting of components or components assigned to any other system."
-  section-code: "3"
-  tags:
-    category:
-    - Compliance
-    nist_800_53_rev_5:
-    - "true"
-    plugin:
-    - aws
-    service:
-    - AWS
-    type:
-    - Benchmark
-  controls:
-  - aws_ec2_instance_ssm_managed
-  - aws_ssm_managed_instance_compliance_association_compliant
+id: aws_nist_800_53_rev_5_cm_8_a_3
+title: CM-8(a)(3)
+description: "Develop and document an inventory of system components that: 3. Does not include duplicate accounting of components or components assigned to any other system."
+section-code: "3"
+type: control-group
+tags:
+  category:
+  - Compliance
+  nist_800_53_rev_5:
+  - "true"
+  plugin:
+  - aws
+  service:
+  - AWS
+  type:
+  - Benchmark
+controls:
+- aws_ec2_instance_ssm_managed
+- aws_ssm_managed_instance_compliance_association_compliant
