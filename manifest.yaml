@@ -166,7 +166,7 @@ plugins:
     package_type: "plugin"
     default: false
     artifact_details:
-      package_url: "https://github.com/opengovern/og-describer-render/releases/download/v0.7.0/render-plugin.zip"
+      package_url: "https://github.com/opengovern/og-describer-render/releases/download/v0.7.1/render-plugin.zip"
   - id: 12
     integration_type: "doppler_account"
     name: "Doppler"
