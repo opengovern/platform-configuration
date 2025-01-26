@@ -29,7 +29,7 @@ plugins:
     package_type: "plugin"
     default: false
     artifact_details:
-      package_url: "https://github.com/opengovern/og-describer-azure/releases/download/v0.7.0/azure-plugin.zip"
+      package_url: "https://github.com/opengovern/og-describer-azure/releases/download/v0.7.1/azure-plugin.zip"
   - id: 3
     integration_type: "entraid_directory"
     name: "Microsoft EntraID Directory"
@@ -44,7 +44,7 @@ plugins:
     source_code: "https://github.com/opengovern/og-describer-entraid"
     package_type: "plugin"
     artifact_details:
-      package_url: "https://github.com/opengovern/og-describer-entraid/releases/download/v0.7.0/entraid-plugin.zip"
+      package_url: "https://github.com/opengovern/og-describer-entraid/releases/download/v0.7.1/entraid-plugin.zip"
   - id: 4
     integration_type: "github_account"
     name: "GitHub"
