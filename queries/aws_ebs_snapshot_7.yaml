@@ -1,7 +1,7 @@
 id: aws_ebs_snapshot_7
 type: query
-title: List all AWS EBS Snapshot Configurations and Status
-description: Allows users to query AWS EBS snapshots, providing detailed information about each snapshot's configuration, status, and associated metadata.
+title: Amazon-Owned EBS Snapshots
+description: Finds all AWS EBS snapshots owned by Amazon.
 integration_type:
   - aws_cloud_account
 query: |
