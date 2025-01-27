@@ -1,7 +1,7 @@
 id: aws_ecs_container_instance_3
 type: query
-title: List all AWS ECS Container Instances with SQL
-description: Allows users to query AWS ECS Container Instance to retrieve data about the Amazon Elastic Container Service (ECS) container instances. This includes information about the container instance ARN, status, running tasks count, pending tasks count, agent connected status, and more.
+title: ECS Container Instance Attachments
+description: Lists all AWS ECS Container Instance attachments and their details (ID, status, type).
 integration_type:
   - aws_cloud_account
 query: |
