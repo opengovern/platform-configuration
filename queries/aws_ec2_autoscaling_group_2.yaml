@@ -1,7 +1,7 @@
 id: aws_ec2_autoscaling_group_2
 type: query
-title: Find AWS EC2 Auto Scaling Groups with Less than 2 AZs
-description: Allows users to query AWS EC2 Auto Scaling Groups and access detailed information about each group's configuration, instances, policies, and more.
+title: Auto Scaling Groups with Limited Availability Zones
+description: Finds AWS EC2 Auto Scaling Groups configured with fewer than two Availability Zones.
 integration_type:
   - aws_cloud_account
 query: |
