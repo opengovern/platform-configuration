@@ -1,7 +1,7 @@
 id: all_github_container_package
 type: query
-title: Find all Container Packages to be utilized in tasks
-description: Find all Container Packages in GitHub for tasks
+title: Container Packages in GitHub
+description: Find all Container Packages in GitHub
 integration_type:
   - github_account
 query: |
@@ -12,4 +12,6 @@ query: |
       platform_integration_id
     FROM
       github_container_package;
-tags: {}
+tags:
+    platform_queries_bookmark:
+      - 'true'
