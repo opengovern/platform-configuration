@@ -19,3 +19,5 @@ tags:
       - aws
     cloud_service:
       - Amazon EC2
+    platform_queries_bookmark:
+      - 'true'
