@@ -21,3 +21,5 @@ tags:
       - aws
     cloud_service:
       - Elastic Block Store
+    platform_queries_bookmark:
+      - 'true'
