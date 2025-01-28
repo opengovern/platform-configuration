@@ -22,3 +22,5 @@ tags:
       - aws
     cloud_service:
       - Amazon ECR
+    platform_queries_bookmark:
+      - 'true'
