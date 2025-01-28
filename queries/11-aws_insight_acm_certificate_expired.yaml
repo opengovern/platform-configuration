@@ -19,3 +19,14 @@ tags:
       - Technical Debt
       - Resiliency
       - Cost Management
+    cloud_asset_management:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - aws
+      - azure
+    cloud_service:
+      - Cognitive Services
+    platform_queries_bookmark:
+      - 'true'
