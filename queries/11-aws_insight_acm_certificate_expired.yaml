@@ -1,6 +1,6 @@
 id: aws_insight_acm_certificate_expired
 type: query
-title: Expired Certificates
+title: Expired Certificates in AWS
 description: List of expired certificates
 integration_type:
   - aws_cloud_account
