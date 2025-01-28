@@ -22,3 +22,5 @@ tags:
       - aws
     cloud_service:
       - AWS Account
+    platform_queries_bookmark:
+      - 'true'
