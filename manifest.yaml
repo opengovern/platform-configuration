@@ -224,7 +224,7 @@ plugins:
         - "VPN"
         - "Code Security"
     description: "Gain visibility in to Heroku"
-    icon: "tailscale.svg"
+    icon: "heroku.svg"
     availability: "GA"
     source_code: "https://github.com/opengovern/og-describer-heroku"
     package_type: "plugin"
