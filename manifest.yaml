@@ -213,7 +213,7 @@ plugins:
     package_type: "plugin"
     default: false
     artifact_details:
-      package_url: "https://github.com/opengovern/og-describer-tailscale/releases/download/v0.4.0/tailscale-plugin.zip"
+      package_url: "https://github.com/opengovern/og-describer-tailscale/releases/download/v0.4.1/tailscale-plugin.zip"
   
   - id: 15
     integration_type: "heroku_account"
