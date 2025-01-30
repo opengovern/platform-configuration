@@ -4,9 +4,6 @@ type: control
 description: IAM Users with API Keys should have keys rotated every X days
 integration_type:
 - aws_cloud_account
-parameters:
-- key: awsIamUserKeyRotateDays
-  value: ""
 policy:
   language: sql
   primary_resource: aws_iam_credential_report
