@@ -1,6 +1,5 @@
 type: parameters
 parameters:
-  # A key with no controls (global)
   - key: awsRdsBaselineRestorableTimeInHrs
     value: 72
 
@@ -28,38 +27,32 @@ parameters:
   - key: azureAppTierTags
     value: '{"name": "env"}'
     
-  # Another key with no controls (global)
   - key: awsIamUserKeyRotateDays
-    value: '90'
+    value: 90
 
-  # Another key with no controls (global)
   - key: awsIamServerCertificateAge
-    value: '90'
+    value: 90
 
-  # Another key with no controls (global)
   - key: entraidClientSecretExpireDays
-    value: '90'
+    value: 90
     
-  # Another key with no controls (global)
   - key: azureSufficientDaysBeforeCertificateExpiry
-    value: '90'
+    value: 90
 
-  # Another key with no controls (global)
   - key: azureKeyVaultKeyExpirationDateDays
-    value: '90'
+    value: 90
     
-  # Another key with no controls (global)
   - key: azureCmkSecretExpireDays
-    value: '90'
+    value: 90
 
   - key: azureDiskSnapshotAgeThreshold
-    value: '365'
+    value: 365
 
   - key: entraidClientSecretExpireDays
-    value: '30'
+    value: 30
 
   - key: awsIamUserPasswordExpirationDays
-    value: '7'
+    value: 7
   - key: azureAllowedKeyTypes
     value: 'EC-HSM, RSA, EC, RSA-HSM, oct-HSM'
   
