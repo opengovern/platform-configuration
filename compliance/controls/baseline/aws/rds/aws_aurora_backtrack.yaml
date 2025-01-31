@@ -1,7 +1,7 @@
-id: aws_backtrack
-title: Amazon Aurora Backtrack is required for Production Clusters
+id: aws_aurora_backtrack
+title: Aurora Backtrack required on production clusters
 type: control
-description: Enable Amazon Aurora Backtrack.
+description: Amazon Aurora Backtrack is required for Production Clusters
 integration_type:
 - aws_cloud_account
 parameters: []
