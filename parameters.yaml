@@ -55,3 +55,8 @@ parameters:
   - key: azureDiskSnapshotAgeThreshold
     value: 365
 
+  - key: entraidClientSecretExpireDays
+    value: 30
+
+
+
