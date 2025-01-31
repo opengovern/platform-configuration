@@ -4,9 +4,6 @@ type: control
 description: Ensure there is a sufficient period configured for the SSL certificates auto-renewal.
 integration_type:
 - azure_subscription
-parameters:
-- key: azureSufficientDaysBeforeCertificateExpiry
-  value: ""
 policy:
   language: sql
   primary_resource: azure_key_vault_certificate
