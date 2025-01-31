@@ -51,3 +51,7 @@ parameters:
   # Another key with no controls (global)
   - key: azureCmkSecretExpireDays
     value: 90
+
+  - key: azureDiskSnapshotAgeThreshold
+    value: 365
+
