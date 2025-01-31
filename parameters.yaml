@@ -7,10 +7,44 @@ parameters:
   - key: awsMandatoryTags
     value: '{"name", "env"}'
 
+  - key: awsAppTierTags
+    value: '{"name", "env"}'
+
+  - key: awsDatabaseTierTags
+    value: '{"name", "env"}'
+
+  - key: azureDatabaseTierTags
+    value: '{"name", "env"}'
+
+    - key: azureWebTierTags
+    value: '{"name", "env"}'
+
+  - key: azureDatabaseTierTags
+    value: '{"name", "env"}'
+
+  - key: azureAppTierTags
+    value: '{"name", "env"}'
+    
   # Another key with no controls (global)
   - key: awsIamUserKeyRotateDays
     value: 90
 
   # Another key with no controls (global)
   - key: awsIamServerCertificateAge
+    value: 90
+
+  # Another key with no controls (global)
+  - key: entraidClientSecretExpireDays
+    value: 90
+    
+  # Another key with no controls (global)
+  - key: azureSufficientDaysBeforeCertificateExpiry
+    value: 90
+
+  # Another key with no controls (global)
+  - key: azureKeyVaultKeyExpirationDateDays
+    value: 90
+    
+  # Another key with no controls (global)
+  - key: azureCmkSecretExpireDays
     value: 90
