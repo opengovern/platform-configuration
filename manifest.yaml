@@ -20,7 +20,7 @@ integrations:
         install: true
         enable: true
       artifact_details:
-        package_url: "https://github.com/opengovern/og-describer-aws/releases/download/v0.9.0/aws-plugin.zip"
+        package_url: "https://github.com/opengovern/og-describer-aws/releases/download/v0.10.0/aws-plugin.zip"
     - integration_type: "azure_subscription"
       name: "Microsoft Azure Subscription"
       tier: "Community"
