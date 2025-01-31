@@ -4,6 +4,7 @@ type: control
 description: This recommendation ensures that users accessing the Windows Azure Service Management API (i.e. Azure Powershell, Azure CLI, Azure Resource Manager API, etc.) are required to use multifactor authentication (MFA) credentials when accessing resources through the Windows Azure Service Management API.
 integration_type:
 - azure_subscription
+- entraid_directory
 parameters: []
 policy:
   language: sql

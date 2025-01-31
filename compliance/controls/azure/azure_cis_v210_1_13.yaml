@@ -4,6 +4,7 @@ type: control
 description: Require administrators or appropriately delegated users to register third-party applications.
 integration_type:
 - azure_subscription
+- entraid_directory
 parameters: []
 policy:
   language: sql

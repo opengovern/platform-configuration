@@ -4,6 +4,7 @@ type: control
 description: AzureAD Users should have MFA Enabled with Azure subscription role assignment
 integration_type:
 - azure_subscription
+- entraid_directory
 parameters:
 - key: entraidAccountStatusInclude
   value: ""

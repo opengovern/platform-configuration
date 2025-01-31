@@ -4,6 +4,7 @@ type: control
 description: This recommendation ensures that users accessing Microsoft Admin Portals (i.e. Microsoft 365 Admin, Microsoft 365 Defender, Exchange Admin Center, Azure Portal, etc.) are required to use multifactor authentication (MFA) credentials when logging into an Admin Portal.
 integration_type:
 - azure_subscription
+- entraid_directory
 parameters: []
 policy:
   language: sql
