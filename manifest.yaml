@@ -1,20 +1,5 @@
 type: platform_manifest
 supported_platform_versions: ["2.X.X"]
-parameters:
-  # A key with no controls (global)
-  - key: awsRdsBaselineRestorableTimeInHrs
-    value: 72
-
-  - key: awsMandatoryTags
-    value: '{"name", "env"}'
-
-  # Another key with no controls (global)
-  - key: awsIamUserKeyRotateDays
-    value: 90
-
-  # Another key with no controls (global)
-  - key: awsIamServerCertificateAge
-    value: 90
 schedules:
   integration_discovery_frequency_hours: 24
   compliance_evaluation_frequency_hours: 48
