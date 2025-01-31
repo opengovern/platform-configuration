@@ -5,58 +5,63 @@ parameters:
     value: 72
 
   - key: awsMandatoryTags
-    value: '{"name", "env"}'
+    value: '{"name": "env"}'
 
   - key: awsAppTierTags
-    value: '{"name", "env"}'
+    value: '{"name": "env"}'
 
   - key: awsDatabaseTierTags
-    value: '{"name", "env"}'
+    value: '{"name": "env"}'
 
   - key: azureRsaCertificateMinSize
     value: 2048
 
   - key: azureDatabaseTierTags
-    value: '{"name", "env"}'
+    value: '{"name": "env"}'
 
     - key: azureWebTierTags
-    value: '{"name", "env"}'
+    value: '{"name": "env"}'
 
   - key: azureDatabaseTierTags
-    value: '{"name", "env"}'
+    value: '{"name": "env"}'
 
   - key: azureAppTierTags
-    value: '{"name", "env"}'
+    value: '{"name": "env"}'
     
   # Another key with no controls (global)
   - key: awsIamUserKeyRotateDays
-    value: 90
+    value: '90'
 
   # Another key with no controls (global)
   - key: awsIamServerCertificateAge
-    value: 90
+    value: '90'
 
   # Another key with no controls (global)
   - key: entraidClientSecretExpireDays
-    value: 90
+    value: '90'
     
   # Another key with no controls (global)
   - key: azureSufficientDaysBeforeCertificateExpiry
-    value: 90
+    value: '90'
 
   # Another key with no controls (global)
   - key: azureKeyVaultKeyExpirationDateDays
-    value: 90
+    value: '90'
     
   # Another key with no controls (global)
   - key: azureCmkSecretExpireDays
-    value: 90
+    value: '90'
 
   - key: azureDiskSnapshotAgeThreshold
-    value: 365
+    value: '365'
 
   - key: entraidClientSecretExpireDays
-    value: 30
+    value: '30'
 
+  - key: awsIamUserPasswordExpirationDays
+    value: '7'
+  - key: azureAllowedKeyTypes
+    value: 'EC-HSM, RSA, EC, RSA-HSM, oct-HSM'
+  
 
 
