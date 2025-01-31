@@ -4,6 +4,7 @@ type: control
 description: For designated users, they will be prompted to use their multi-factor authentication(MFA) process on logins.
 integration_type:
 - azure_subscription
+- entraid_directory
 parameters: []
 policy:
   language: sql

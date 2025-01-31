@@ -4,6 +4,7 @@ type: control
 description: Deprecated accounts should be removed from your subscriptions. Deprecated accounts are accounts that have been blocked from signing in.
 integration_type:
 - azure_subscription
+- entraid_directory
 parameters: []
 policy:
   language: sql

@@ -4,6 +4,7 @@ type: control
 description: Restrict tenant creation to administrators only.
 integration_type:
 - azure_subscription
+- entraid_directory
 parameters: []
 policy:
   language: sql

@@ -4,6 +4,7 @@ type: control
 description: External accounts with write privileges should be removed from your subscription in order to prevent unmonitored access.
 integration_type:
 - azure_subscription
+- entraid_directory
 parameters: []
 policy:
   language: sql

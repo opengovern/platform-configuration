@@ -4,6 +4,7 @@ type: control
 description: Ensure that IAM user does not have built in contributor role. This rule is non-compliant if IAM user have built in contributor role.
 integration_type:
 - azure_subscription
+- entraid_directory
 parameters: []
 policy:
   language: sql
