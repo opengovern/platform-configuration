@@ -3,29 +3,30 @@ parameters:
   - key: awsRdsBaselineRestorableTimeInHrs
     value: 72
 
-  - key: awsMandatoryTags
-    value: '{"name": "env"}'
+  - key: azureMandatoryTags
+    value: '{"name","owner"}'
 
+  - key: awsMandatoryTags
+    value: '{"name","owner"}'
+  - key: awsWebTierTags
+    value: '{"app_tier": "web"}'
   - key: awsAppTierTags
-    value: '{"name": "env"}'
+    value: '{"app_tier": "app"}'
 
   - key: awsDatabaseTierTags
-    value: '{"name": "env"}'
+    value: '{"app_tier": "db"}'
 
   - key: azureRsaCertificateMinSize
     value: 2048
 
   - key: azureDatabaseTierTags
-    value: '{"name": "env"}'
+    value: '{"app_tier": "db"}'
 
-    - key: azureWebTierTags
-    value: '{"name": "env"}'
-
-  - key: azureDatabaseTierTags
-    value: '{"name": "env"}'
+  - key: azureWebTierTags
+    value: '{"app_tier": "web"}'
 
   - key: azureAppTierTags
-    value: '{"name": "env"}'
+    value: '{"app_tier": "app"}'
     
   - key: awsIamUserKeyRotateDays
     value: 90
