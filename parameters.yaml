@@ -13,6 +13,9 @@ parameters:
   - key: awsDatabaseTierTags
     value: '{"name", "env"}'
 
+  - key: azureRsaCertificateMinSize
+    value: 2048
+
   - key: azureDatabaseTierTags
     value: '{"name", "env"}'
 
