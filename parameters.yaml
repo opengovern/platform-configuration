@@ -33,9 +33,6 @@ parameters:
 
   - key: awsIamServerCertificateAge
     value: 90
-
-  - key: entraidClientSecretExpireDays
-    value: 90
     
   - key: azureSufficientDaysBeforeCertificateExpiry
     value: 90
