@@ -9,24 +9,24 @@ parameters:
   - key: awsMandatoryTags
     value: '{"name","owner"}'
   - key: awsWebTierTags
-    value: '{"app_tier": "web"}'
+    value: '{"tier": "web"}'
   - key: awsAppTierTags
-    value: '{"app_tier": "app"}'
+    value: '{"tier": "app"}'
 
   - key: awsDatabaseTierTags
-    value: '{"app_tier": "db"}'
+    value: '{"tier": "db"}'
 
   - key: azureRsaCertificateMinSize
     value: 2048
 
   - key: azureDatabaseTierTags
-    value: '{"app_tier": "db"}'
+    value: '{"tier": "db"}'
 
   - key: azureWebTierTags
-    value: '{"app_tier": "web"}'
+    value: '{"tier": "web"}'
 
   - key: azureAppTierTags
-    value: '{"app_tier": "app"}'
+    value: '{"tier": "app"}'
     
   - key: awsIamUserKeyRotateDays
     value: 90
