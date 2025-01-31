@@ -1,3 +1,4 @@
+type: parameters
 parameters:
   # A key with no controls (global)
   - key: awsRdsBaselineRestorableTimeInHrs
