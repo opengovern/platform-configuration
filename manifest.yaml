@@ -197,7 +197,7 @@ plugins:
     package_type: "plugin"
     default: false
     artifact_details:
-      package_url: "https://github.com/opengovern/og-describer-fly/releases/download/v0.5.0/fly-plugin.zip"
+      package_url: "https://github.com/opengovern/og-describer-fly/releases/download/v0.5.1/fly-plugin.zip"
   - id: 14
     integration_type: "tailscale_account"
     name: "Tailscale"
@@ -213,7 +213,7 @@ plugins:
     package_type: "plugin"
     default: false
     artifact_details:
-      package_url: "https://github.com/opengovern/og-describer-tailscale/releases/download/v0.4.1/tailscale-plugin.zip"
+      package_url: "https://github.com/opengovern/og-describer-tailscale/releases/download/v0.4.2/tailscale-plugin.zip"
   
   - id: 15
     integration_type: "heroku_account"
