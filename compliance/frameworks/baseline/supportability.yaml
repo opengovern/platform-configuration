@@ -24,7 +24,7 @@ control-group:
     - BASELINE
   control-group:
   - id: aws_baseline_supportability_compute
-    title: AWS Baseline Supportability - Compute
+    title: AWS Compute
     description: Ensure AWS compute resources are configured for supportability.
     section-code: aws_baseline_supportability_compute
     tags:
@@ -39,7 +39,7 @@ control-group:
     - aws_ec2_instances_with_multiple_elastic_network_interfaces
     - aws_check_for_ecs_container_instance_agent_version
   - id: aws_baseline_supportability_kubernetes_management
-    title: AWS Baseline Supportability - Kubernetes Management
+    title: AWS - Kubernetes
     description: Ensure AWS EKS clusters are configured for supportability.
     section-code: aws_baseline_supportability_kubernetes_management
     tags:
@@ -54,7 +54,7 @@ control-group:
     - aws_use_oidc_provider_for_authenticating_kubernetes_api_calls
     - aws_enable_cloudwatch_container_insights
   - id: aws_baseline_supportability_networking
-    title: AWS Baseline Supportability - Networking
+    title: AWS - Networking
     description: Ensure AWS networking resources are configured for supportability.
     section-code: aws_baseline_supportability_networking
     tags:
@@ -66,7 +66,7 @@ control-group:
     - aws_unused_elastic_network_interfaces
     - aws_use_aws_managed_policy_to_manage_networking_resources
   - id: aws_baseline_supportability_certificates
-    title: AWS Baseline Supportability - Certificates
+    title: AWS - Certificates
     description: Ensure AWS certificates are managed properly.
     section-code: aws_baseline_supportability_certificates
     tags:
@@ -79,7 +79,7 @@ control-group:
     - aws_acm_certificates_validity
     - aws_acm_certificates_with_wildcard_domain_names
   - id: aws_baseline_supportability_logging_and_monitoring
-    title: AWS Baseline Supportability - Logging and Monitoring
+    title: AWS - Logging and Monitoring
     description: Ensure AWS logging and monitoring is configured for supportability.
     section-code: aws_baseline_supportability_logging_and_monitoring
     tags:
@@ -98,7 +98,7 @@ control-group:
     - aws_lifecycle_policy_in_use
     - aws_enable_aurora_cluster_copy_tags_to_snapshots
   - id: aws_baseline_supportability_database
-    title: AWS Baseline Supportability - Database
+    title: AWS - Database
     description: Ensure AWS RDS instances are configured for supportability.
     section-code: aws_baseline_supportability_database
     tags:
@@ -110,7 +110,7 @@ control-group:
     - aws_rds_database_instances_have_a_minimum_acceptable_backup_policy
     - aws_rds_database_instances_must_have_a_minimum_acceptable_restore_time
   - id: aws_baseline_supportability_iam_and_security
-    title: AWS Baseline Supportability - IAM and Security
+    title: AWS - IAM and Security
     description: Ensure AWS IAM policies and security are configured for supportability.
     section-code: aws_baseline_supportability_iam_and_security
     tags:
@@ -123,7 +123,7 @@ control-group:
     - aws_use_aws_managed_policy_to_access_amazon_ecr_repositories
     - aws_use_aws_managed_policy_to_manage_aws_resources
 - id: azure_baseline_supportability
-  title: Azure Baseline Supportability
+  title: Azure
   description: Supportability checks for Azure resources.
   section-code: azure_baseline_supportability
   tags:
@@ -133,7 +133,7 @@ control-group:
     - BASELINE
   control-group:
   - id: azure_baseline_supportability_key_vault_and_certificates
-    title: Azure Baseline Supportability - Key Vault and Certificates
+    title: Azure - Key Vault and Certificates
     description: Ensure Azure Key Vault and certificates are configured for supportability.
     section-code: azure_baseline_supportability_key_vault_and_certificates
     tags:
@@ -146,7 +146,7 @@ control-group:
     - azure_configure_minimum_tls_version
     - azure_enable_transparent_data_encryption_for_sql_managed_instance_using_customer_managed_keys
   - id: azure_baseline_supportability_kubernetes_management
-    title: Azure Baseline Supportability - Kubernetes Management
+    title: Azure - Kubernetes
     description: Ensure Azure Kubernetes Service (AKS) clusters are configured for supportability.
     section-code: azure_baseline_supportability_kubernetes_management
     tags:
@@ -161,7 +161,7 @@ control-group:
     - azure_use_user_assigned_managed_identities_for_aks_clusters
     - azure_kubernetes_api_version
   - id: azure_baseline_supportability_networking
-    title: Azure Baseline Supportability - Networking
+    title: Azure - Networking
     description: Ensure Azure networking resources are configured for supportability.
     section-code: azure_baseline_supportability_networking
     tags:
@@ -172,7 +172,7 @@ control-group:
     controls:
     - azure_use_network_contributor_role_for_managing_azure_network_resources
   - id: azure_baseline_supportability_general_practices
-    title: Azure Baseline Supportability - General Practices
+    title: Azure - General Practices
     description: Ensure general practices for Azure resources are in place.
     section-code: azure_baseline_supportability_general_practices
     tags:
