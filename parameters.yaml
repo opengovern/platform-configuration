@@ -16,6 +16,9 @@ parameters:
   - key: fileSystemRetentionDays
     value: 35
 
+  - key: productionServerSystemRetentionDays
+    value: 35
+
   - key: awsDatabaseTierTags
     value: '{"tier": "db"}'
 
