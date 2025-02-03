@@ -1,5 +1,5 @@
-id: aws_enable_deletion_protection
-title: Enable Deletion Protection
+id: aws_glb_enable_deletion_protection
+title: Enable Deletion Protection on Gateway Load Balancers
 type: control
 description: Ensure that Deletion Protection is enabled for Amazon Gateway Load Balancers.
 integration_type:
