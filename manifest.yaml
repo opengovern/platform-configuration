@@ -143,7 +143,7 @@ integrations:
         install: true
         enable: false
       artifact_details:
-        package_url: "https://github.com/opengovern/og-describer-linode/releases/download/v0.14.0/linode-plugin.zip"
+        package_url: "https://github.com/opengovern/og-describer-linode/releases/download/v0.15.0/linode-plugin.zip"
       order: 8
 
     - integration_type: "cohereai_project"
