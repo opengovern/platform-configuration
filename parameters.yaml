@@ -12,6 +12,9 @@ parameters:
     value: '{"tier": "web"}'
   - key: awsAppTierTags
     value: '{"tier": "app"}'
+  
+  - key: fileSystemRetentionDays
+    value: 35
 
   - key: awsDatabaseTierTags
     value: '{"tier": "db"}'
