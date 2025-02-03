@@ -1,10 +1,9 @@
 id: aws_ec2_instances_have_backup_with_lifecyclepolicy_above_35_days
-title: EC2 Instances Backup Retention > 35 Days
+title: Production EC2 Instances Backup Retention > 35 Days
 type: control
-description: Ensure all EC2 are covered by a backup plan with a minimum of Life Cycle Policy 35 days
+description: Ensure all EC2 instances are covered by a backup plan with a minimum of Life Cycle Policy.
 integration_type:
 - aws_cloud_account
-parameters: []
 policy:
   language: sql
   primary_resource: aws_ec2_instance
@@ -16,12 +15,11 @@ policy:
       FROM
         aws_backup_recovery_point
       WHERE
-        now() - creation_date < '35 days'::interval AND
-        (lifecycle ->> 'DeleteAfterDays')::INT >= 35 AND
-        resource_type = 'EC2' AND
-        status = 'COMPLETED'
+        now() - creation_date < '{{.productionServerSystemRetentionDays}} days'::interval
+        AND (lifecycle ->> 'DeleteAfterDays')::INT >= {{.productionServerSystemRetentionDays}}
+        AND resource_type = 'EC2'
+        AND status = 'COMPLETED'
     )
-    
     SELECT
       i.arn AS resource,
       platform_integration_id AS platform_integration_id,
@@ -31,7 +29,7 @@ policy:
         ELSE 'ok'
       END AS status,
       CASE
-        WHEN p.recovery_point_arn IS NULL THEN 'lacks a backup configuration with a minimum of 35 days'
+        WHEN p.recovery_point_arn IS NULL THEN 'lacks a backup configuration with a minimum of {{.productionServerSystemRetentionDays}} days'
         ELSE ''
       END AS reason,
       region,
