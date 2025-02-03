@@ -14,7 +14,7 @@ defaults:
   tracks-drift-events: false
 control-group:
 - id: aws_baseline_reliability
-  title: AWS Baseline Reliability
+  title: AWS
   description: AWS reliability framework focusing on resiliency, failover, and disaster recovery.
   section-code: aws_baseline_reliability
   tags:
@@ -85,7 +85,7 @@ control-group:
     - aws_rds_database_instances_have_a_minimum_acceptable_backup_policy
     - aws_rds_database_instances_must_have_a_minimum_acceptable_restore_time
 - id: azure_baseline_reliability
-  title: Azure Baseline Reliability
+  title: Azure
   description: Azure reliability framework focusing on resiliency, failover, and disaster recovery.
   section-code: azure_baseline_reliability
   tags:
