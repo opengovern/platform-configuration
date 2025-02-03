@@ -51,11 +51,10 @@ parameters:
 
   - key: awsIamUserPasswordExpirationDays
     value: 7
+
   - key: azureAllowedKeyTypes
     value: 'EC-HSM, RSA, EC, RSA-HSM, oct-HSM'
-  - key: azureMandatoryTags
-    value: ["name","environment"]
-    
-  
+
+
 
 
