@@ -21,6 +21,7 @@ integrations:
         enable: true
       artifact_details:
         package_url: "https://github.com/opengovern/og-describer-aws/releases/download/v0.10.0/aws-plugin.zip"
+      order: 1
     - integration_type: "azure_subscription"
       name: "Microsoft Azure Subscription"
       tier: "Community"
@@ -37,6 +38,7 @@ integrations:
         enable: false
       artifact_details:
         package_url: "https://github.com/opengovern/og-describer-azure/releases/download/v0.7.2/azure-plugin.zip"
+      order: 2
     - integration_type: "entraid_directory"
       name: "Microsoft EntraID Directory"
       tier: "Community"
@@ -53,6 +55,7 @@ integrations:
       package_type: "plugin"
       artifact_details:
         package_url: "https://github.com/opengovern/og-describer-entraid/releases/download/v0.7.1/entraid-plugin.zip"
+      order: 3
     - integration_type: "github_account"
       name: "GitHub"
       tier: "Community"
@@ -70,6 +73,8 @@ integrations:
         enable: true
       artifact_details:
         package_url: "https://github.com/opengovern/og-describer-github/releases/download/v0.57.0/github-plugin.zip"
+      order: 4
+      
     - integration_type: "digitalocean_team"
       name: "DigitalOcean"
       tier: "Community"
@@ -86,6 +91,7 @@ integrations:
       package_type: "plugin"
       artifact_details:
         package_url: "https://github.com/opengovern/og-describer-digitalocean/releases/download/v0.5.0/digitalocean-plugin.zip"
+      order: 5
     - integration_type: "cloudflare_account"
       name: "Cloudflare"
       tier: "Community"
@@ -102,6 +108,8 @@ integrations:
       package_type: "plugin"
       artifact_details:
         package_url: "https://github.com/opengovern/og-describer-cloudflare/releases/download/v0.10.0/cloudflare-plugin.zip"
+      order: 6
+
     - integration_type: "openai_integration"
       name: "OpenAI"
       tier: "Community"
@@ -118,6 +126,8 @@ integrations:
         enable: false
       artifact_details:
         package_url: "https://github.com/opengovern/og-describer-openai/releases/download/v0.8.2/openai-plugin.zip"
+      order: 7
+
     - integration_type: "linode_account"
       name: "Linode (Akamai)"
       tier: "Community"
@@ -134,6 +144,8 @@ integrations:
         enable: false
       artifact_details:
         package_url: "https://github.com/opengovern/og-describer-linode/releases/download/v0.14.0/linode-plugin.zip"
+      order: 8
+
     - integration_type: "cohereai_project"
       name: "CohereAI"
       tier: "Community"
@@ -150,6 +162,8 @@ integrations:
         enable: false
       artifact_details:
         package_url: "https://github.com/opengovern/og-describer-cohereai/releases/download/v0.7.0/cohereai-plugin.zip"
+      order: 9
+      
     - integration_type: "google_workspace_account"
       name: "Google Workspace"
       tier: "Community"
@@ -167,6 +181,7 @@ integrations:
         enable: false
       artifact_details:
         package_url: "https://github.com/opengovern/og-describer-googleworkspace/releases/download/v0.10.0/googleworkspace-plugin.zip"
+      order: 10
     - integration_type: "render_account"
       name: "Render"
       tier: "Community"
@@ -183,6 +198,7 @@ integrations:
         enable: false
       artifact_details:
         package_url: "https://github.com/opengovern/og-describer-render/releases/download/v0.7.1/render-plugin.zip"
+      order: 11
     - integration_type: "doppler_account"
       name: "Doppler"
       tier: "Community"
@@ -199,6 +215,7 @@ integrations:
         enable: false
       artifact_details:
         package_url: "https://github.com/opengovern/og-describer-doppler/releases/download/v0.7.0/doppler-plugin.zip"
+      order: 12
     - integration_type: "fly_account"
       name: "Fly.io"
       tier: "Community"
@@ -216,6 +233,7 @@ integrations:
         enable: false
       artifact_details:
         package_url: "https://github.com/opengovern/og-describer-fly/releases/download/v0.5.1/fly-plugin.zip"
+      order: 13
     - integration_type: "tailscale_account"
       name: "Tailscale"
       tier: "Community"
@@ -233,6 +251,8 @@ integrations:
         enable: false
       artifact_details:
         package_url: "https://github.com/opengovern/og-describer-tailscale/releases/download/v0.4.2/tailscale-plugin.zip"
+      order: 14
+
     - integration_type: "heroku_account"
       name: "Heroku"
       tier: "Community"
@@ -250,6 +270,7 @@ integrations:
         enable: false
       artifact_details:
         package_url: "https://github.com/opengovern/og-describer-heroku/releases/download/v0.5.1/heroku-plugin.zip"
+      order: 15
     - integration_type: "oci_repository"
       name: "OCI Repository"
       tier: "Premium"
@@ -260,6 +281,7 @@ integrations:
       source_code: ""
       package_type: "classic"
       artifact_details: {}
+      order: 16
     - integration_type: "slack_account"
       name: "Slack"
       tier: "Premium"
@@ -273,6 +295,7 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 17
     - integration_type: "jira_cloud"
       name: "Atlassian JIRA Cloud"
       tier: "Premium"
@@ -285,6 +308,7 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 18
     - integration_type: "chainguard_dev_account"
       name: "Chainguard.dev"
       tier: "Premium"
@@ -297,6 +321,7 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 19
     - integration_type: "godaddy_account"
       name: "GoDaddy"
       tier: "Premium"
@@ -309,6 +334,7 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 20
     - integration_type: "servicenow_account"
       name: "ServiceNow"
       tier: "Premium"
@@ -321,6 +347,8 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 21
+
     - integration_type: "okta_account"
       name: "Okta"
       tier: "Premium"
@@ -334,6 +362,7 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 22
     - integration_type: "aws_costs"
       name: "Amazon Web Services (AWS) Costs"
       tier: "Premium"
@@ -347,6 +376,7 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 23
     - integration_type: "azure_costs"
       name: "Microsoft Azure Costs"
       tier: "Premium"
@@ -360,6 +390,7 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 24
     - integration_type: "semgrep_account"
       name: "Semgrep"
       tier: "Premium"
@@ -372,6 +403,8 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 25
+
     - integration_type: "huggingface_account"
       name: "HuggingFace"
       tier: "Premium"
@@ -384,6 +417,8 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 26
+
     - integration_type: "kubernetes"
       name: "Kubernetes"
       tier: "Community"
@@ -397,6 +432,8 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 27
+
     - integration_type: "jamf_account"
       name: "Jamf"
       tier: "Premium"
@@ -409,6 +446,8 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 28
+
     - integration_type: "jumpcloud_account"
       name: "JumpCloud"
       tier: "Premium"
@@ -422,6 +461,8 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 29
+
     - integration_type: "gitlab_account"
       name: "GitLab"
       tier: "Community"
@@ -435,6 +476,8 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 30
+
     - integration_type: "oracle_cloud_account"
       name: "Oracle Cloud"
       tier: "Premium"
@@ -447,6 +490,8 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 31
+
     - integration_type: "teleport_account"
       name: "Teleport"
       tier: "Premium"
@@ -460,6 +505,8 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 32
+
     - integration_type: "monday_com_account"
       name: "Monday.com"
       tier: "Premium"
@@ -472,6 +519,8 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 33
+
     - integration_type: "rubrik_account"
       name: "Rubrik"
       tier: "Premium"
@@ -484,6 +533,8 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 34
+
     - integration_type: "commvault_account"
       name: "CommVault"
       tier: "Premium"
@@ -496,6 +547,8 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 35
+
     - integration_type: "bitbucket_cloud"
       name: "Bitbucket Cloud"
       tier: "Premium"
@@ -509,6 +562,8 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 36
+
     - integration_type: "veracode_account"
       name: "Veracode"
       tier: "Premium"
@@ -521,6 +576,8 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 37
+
     - integration_type: "splunk_enterprise_security"
       name: "Splunk Enterprise Security"
       tier: "Premium"
@@ -533,6 +590,8 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 38
+
     - integration_type: "microsoft_sentinel"
       name: "Microsoft Sentinel"
       tier: "Premium"
@@ -545,6 +604,8 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 39
+
     - integration_type: "rapid7_insightidr"
       name: "Rapid7 InsightIDR"
       tier: "Premium"
@@ -557,6 +618,8 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 40
+
     - integration_type: "datadog_cloud_siem"
       name: "Datadog Cloud SIEM"
       tier: "Premium"
@@ -570,6 +633,8 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 41
+
     - integration_type: "intruder_io"
       name: "IntruderIO"
       tier: "Premium"
@@ -583,6 +648,8 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 42
+
     - integration_type: "cobalt_io"
       name: "CobaltIO"
       tier: "Premium"
@@ -595,6 +662,8 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 43
+
     - integration_type: "appdynamics_saas"
       name: "Cisco AppDynamics (SaaS)"
       tier: "Premium"
@@ -608,6 +677,9 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 44
+
+
     - integration_type: "cisco_duo"
       name: "Cisco Duo"
       tier: "Premium"
@@ -621,6 +693,8 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 45
+
     - integration_type: "cisco_meraki"
       name: "Cisco Meraki"
       tier: "Premium"
@@ -633,3 +707,4 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
+      order: 46
