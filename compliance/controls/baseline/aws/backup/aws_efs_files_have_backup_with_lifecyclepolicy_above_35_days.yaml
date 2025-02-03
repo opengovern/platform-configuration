@@ -1,5 +1,5 @@
 id: aws_efs_files_have_backup_with_lifecyclepolicy_above_35_days
-title: Production EFS Filesystem Backups: Minimum Retention of 35 Days
+title: Production EFS Filesystem Backups has a mininum of 35 Days
 type: control
 description: Ensure all EFS files are covered by a backup plan with a minimum of Life Cycle Policy 35 days
 integration_type:
