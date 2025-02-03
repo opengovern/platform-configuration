@@ -1,5 +1,5 @@
 id: aws_use_aws_backup_service_in_use_for_amazon_rds
-title: Use AWS Backup Service in Use for Amazon RDS
+title: AWS Backup Service required for Amazon RDS
 type: control
 description: Ensure that Amazon Backup service is used to manage AWS RDS database snapshots.
 integration_type:
