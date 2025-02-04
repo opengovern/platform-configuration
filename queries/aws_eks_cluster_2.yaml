@@ -25,3 +25,5 @@ tags:
       - aws
     cloud_service:
       - Elastic Kubernetes Service
+    platform_queries_bookmark:
+      - 'true'
