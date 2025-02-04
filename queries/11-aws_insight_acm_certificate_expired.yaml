@@ -19,6 +19,7 @@ tags:
       - Technical Debt
       - Resiliency
       - Cost Management
+      - Sample Category
     cloud_asset_management:
       - 'true'
     cloud_ops:
