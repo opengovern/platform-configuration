@@ -1,0 +1,39 @@
+id: users_with_cloud_access_and_mfa
+type: query
+title: MFA Status of Azure Users
+description: This query checks the MFA status of all users with access to Azure. Use this to identify users who need to enable MFA.
+integration_type:
+  - entraid_directory
+  - azure_subscription
+query: |
+    SELECT u.user_principal_name AS "UserPrincipalName",
+       u.display_name AS "UserDisplayName",
+       r.is_mfa_capable AS "MFA Capable",
+       r.is_mfa_registered AS "IsMfaRegistered",
+       r.is_system_preferred_authentication_method_enabled AS "IsSystemPreferredAuthenticationMethodEnabled",
+       COUNT(DISTINCT a.subscription_id) AS "Number of Subscriptions"
+    FROM entraid_user u
+        JOIN entraid_user_registration_details r
+            ON u.id = r.id
+        JOIN azure_role_assignment a
+            ON u.id = a.principal_id
+    WHERE a.subscription_id IS NOT NULL 
+    GROUP BY u.user_principal_name,
+             u.display_name,
+             r.is_mfa_capable,
+             r.is_mfa_registered,
+             r.is_system_preferred_authentication_method_enabled
+    ORDER BY COUNT(DISTINCT a.subscription_id) DESC;
+
+
+tags:
+    cloud_access:
+      - 'true'
+    cloud_ops:
+      - 'true'
+    cloud_provider:
+      - azure
+    cloud_service:
+      - Cognitive Services
+    platform_queries_bookmark:
+      - 'true'
