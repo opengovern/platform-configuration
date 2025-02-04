@@ -34,5 +34,4 @@ tags:
       - azure
     cloud_service:
       - Cognitive Services
-    platform_queries_bookmark:
-      - 'true'
+

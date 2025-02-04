@@ -22,5 +22,4 @@ tags:
       - aws
     cloud_service:
       - Elastic Block Store (EBS)
-    platform_queries_bookmark:
-      - 'true'
+

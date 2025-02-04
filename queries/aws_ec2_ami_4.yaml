@@ -26,5 +26,3 @@ tags:
       - aws
     cloud_service:
       - EC2 AMI
-    platform_queries_bookmark:
-      - 'true'
