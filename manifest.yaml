@@ -20,7 +20,7 @@ integrations:
         install: true
         enable: true
       artifact_details:
-        package_url: "https://github.com/opengovern/og-describer-aws/releases/download/v0.11.0/aws-plugin.zip"
+        package_url: "https://github.com/opengovern/og-describer-aws/releases/download/v0.11.1/aws-plugin.zip"
       order: 1
     - integration_type: "azure_subscription"
       name: "Microsoft Azure Subscription"
@@ -37,7 +37,7 @@ integrations:
         install: false
         enable: false
       artifact_details:
-        package_url: "https://github.com/opengovern/og-describer-azure/releases/download/v0.10.2/azure-plugin.zip"
+        package_url: "https://github.com/opengovern/og-describer-azure/releases/download/v0.10.3/azure-plugin.zip"
       order: 2
     - integration_type: "entraid_directory"
       name: "Microsoft EntraID Directory"
@@ -143,7 +143,7 @@ integrations:
         install: true
         enable: false
       artifact_details:
-        package_url: "https://github.com/opengovern/og-describer-linode/releases/download/v0.15.0/linode-plugin.zip"
+        package_url: "https://github.com/opengovern/og-describer-linode/releases/download/v0.16.0/linode-plugin.zip"
       order: 8
 
     - integration_type: "cohereai_project"
