@@ -1,4 +1,4 @@
-id: aws_backup_job_2
+id: aws_incomplete_backup_job
 type: query
 title: List All Incomplete AWS Backup Jobs
 description: Allows users to query AWS Backup Jobs, providing detailed information about the status of backups jobs.
