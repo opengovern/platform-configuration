@@ -1,6 +1,6 @@
 id: aws_ebs_volume_1
 type: query
-title: Find All Unencrypted EBS Volumes in AWS
+title: Unencrypted Disks/EBS Volumes
 description: Allows users to query AWS Elastic Block Store (EBS) volumes for detailed information about their configuration, status, and associated tags.
 integration_type:
   - aws_cloud_account
