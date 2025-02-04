@@ -25,5 +25,3 @@ tags:
       - aws
     cloud_service:
       - Elastic File System
-    platform_queries_bookmark:
-      - 'true'
