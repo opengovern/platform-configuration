@@ -1,0 +1,22 @@
+id: aws_efs_file_system_3
+type: query
+title: Find detailed info about AWS EFS file systems
+description: Allows users to query AWS Elastic File System (EFS) file systems, providing detailed information about each file system such as its ID, ARN, creation token, performance mode, and lifecycle state.
+integration_type:
+  - aws_cloud_account
+query: |
+    SELECT
+      file_system_id,
+      size_in_bytes ->> 'Value' AS data_size,
+      size_in_bytes ->> 'Timestamp' AS data_size_timestamp,
+      size_in_bytes ->> 'ValueInIA' AS data_size_infrequent_access_storage,
+      size_in_bytes ->> 'ValueInStandard' AS data_size_standard_storage
+    FROM
+      aws_efs_file_system;
+tags:
+    cloud_asset_management:
+      - 'true'
+    cloud_provider:
+      - aws
+    cloud_service:
+      - Elastic File System

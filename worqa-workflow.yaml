@@ -1,0 +1,147 @@
+name: Test OpenComply Helm on Linode LKE
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  create-and-run-helm:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Install prerequisites
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+          sudo pip install linode-cli
+          
+          # Install kubectl
+          curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+          chmod +x kubectl
+          sudo mv kubectl /usr/local/bin/kubectl
+
+          # Install helm
+          curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+
+      - name: Set up environment (random cluster suffix)
+        run: |
+          # Generate a short random hex string
+          RANDOM_SUFFIX=$(openssl rand -hex 3)
+          echo "RANDOM_SUFFIX=$RANDOM_SUFFIX" >> $GITHUB_ENV
+
+      - name: Check for existing LKE cluster with 'github-charts-dev' prefix
+        run: |
+          # If there's any cluster whose label starts with github-charts-dev, fail
+          EXISTING_CLUSTERS=$(linode-cli lke clusters-list --text --no-headers || true)
+          if echo "$EXISTING_CLUSTERS" | awk '{print $2}' | grep -q '^github-charts-dev'; then
+            echo "Error: A cluster with label prefix 'github-charts-dev' already exists."
+            exit 1
+          fi
+
+      - name: Create LKE cluster
+        id: create_cluster
+        env:
+          LINODE_CLI_TOKEN: ${{ secrets.LINODE_CLI_TOKEN }}
+        run: |
+          set -e
+          CLUSTER_LABEL="github-charts-dev-${RANDOM_SUFFIX}"
+          echo "Creating LKE cluster with label: $CLUSTER_LABEL"
+
+          # Create cluster (as per your specified config)
+          CREATE_OUTPUT=$(linode-cli lke cluster-create \
+            --label "$CLUSTER_LABEL" \
+            --region us-east \
+            --k8s_version 1.31 \
+            --control_plane.high_availability false \
+            --node_pools.type g6-dedicated-4 \
+            --node_pools.count 3 \
+            --tags github-charts-dev \
+            --json)
+
+          echo "$CREATE_OUTPUT"
+
+          # Extract cluster ID from JSON output
+          CLUSTER_ID=$(echo "$CREATE_OUTPUT" | jq -r '.[0].id')
+          echo "CLUSTER_ID=$CLUSTER_ID" >> $GITHUB_ENV
+          echo "CLUSTER_LABEL=$CLUSTER_LABEL" >> $GITHUB_ENV
+
+      - name: Wait for cluster readiness
+        run: |
+          set -e
+          CLUSTER_ID=${{ env.CLUSTER_ID }}
+          # Wait up to 600s for all nodes to transition into 'ready' state
+          end=$((SECONDS+600))
+          READY_COUNT=0
+          while [ $SECONDS -lt $end ]; do
+            NODE_STATUSES=$(linode-cli lke cluster-view "$CLUSTER_ID" --json | jq -r '.[0].pools[].nodes[].status')
+            READY_COUNT=$(echo "$NODE_STATUSES" | grep -c "ready" || true)
+            echo "Nodes status: $NODE_STATUSES"
+            if [ "$READY_COUNT" -ge 3 ]; then
+              echo "All 3 nodes are ready."
+              break
+            fi
+            sleep 10
+          done
+
+          if [ "$READY_COUNT" -lt 3 ]; then
+            echo "Not all nodes became ready in time."
+            exit 1
+          fi
+
+      - name: Retrieve kubeconfig
+        run: |
+          CLUSTER_ID=${{ env.CLUSTER_ID }}
+          linode-cli lke kubeconfig-view "$CLUSTER_ID" --json | \
+            jq -r '.[].kubeconfig' > kubeconfig.yaml
+          echo "KUBECONFIG_PATH=$(pwd)/kubeconfig.yaml" >> $GITHUB_ENV
+
+      - name: Install OpenComply via Helm
+        run: |
+          export KUBECONFIG=${{ env.KUBECONFIG_PATH }}
+          helm repo add opencomply https://charts.opencomply.io --force-update
+          helm install -n opencomply opencomply opencomply/opencomply \
+            --create-namespace \
+            --timeout 10m
+
+      - name: Validate Pods and Jobs
+        id: validate
+        run: |
+          set -e
+          export KUBECONFIG=${{ env.KUBECONFIG_PATH }}
+
+          # Ensure all pods in opencomply namespace become Ready
+          kubectl wait pods -n opencomply --all --for=condition=Ready --timeout=300s
+
+          # Ensure any Jobs complete successfully
+          JOBS=$(kubectl get jobs -n opencomply -o jsonpath='{.items[*].metadata.name}')
+          for job in $JOBS; do
+            echo "Waiting for job: $job to complete"
+            kubectl wait job/$job -n opencomply --for=condition=Complete --timeout=300s
+          done
+          echo "All pods and jobs are in healthy/completed states."
+
+      - name: Cleanup LKE cluster on success
+        if: ${{ success() }}
+        run: |
+          CLUSTER_ID=${{ env.CLUSTER_ID }}
+          CLUSTER_LABEL=${{ env.CLUSTER_LABEL }}
+          echo "Deleting LKE cluster: $CLUSTER_LABEL ($CLUSTER_ID)"
+          linode-cli lke cluster-delete "$CLUSTER_ID"
+
+          # If you have additional volumes or disks with the same tag or label,
+          # you can remove them here. For example, something like this:
+          echo "Cleaning up leftover volumes (if any) tagged 'github-charts-dev' or labeled '$CLUSTER_LABEL'..."
+          VOLUMES=$(linode-cli volumes list --json)
+          # Example: delete any volume that has the cluster label or 'github-charts-dev' in tags
+          echo "$VOLUMES" | jq -c '.[]' | while read -r vol; do
+            VOL_ID=$(echo "$vol" | jq -r '.id')
+            LABEL=$(echo "$vol" | jq -r '.label')
+            TAGS=$(echo "$vol" | jq -r '.tags | join(",")')
+            if [[ "$LABEL" == "$CLUSTER_LABEL" || "$TAGS" == *"github-charts-dev"* ]]; then
+              echo "Deleting leftover volume: $LABEL ($VOL_ID)"
+              linode-cli volumes delete "$VOL_ID"
+            fi
+          done
