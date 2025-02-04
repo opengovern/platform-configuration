@@ -1,4 +1,4 @@
-id: aws_efs_file_system_3
+id: aws_eks_with_load_balancers
 type: query
 title: Find detailed info about AWS EFS file systems
 description: Allows users to query AWS Elastic File System (EFS) file systems, providing detailed information about each file system such as its ID, ARN, creation token, performance mode, and lifecycle state.
