@@ -5,7 +5,7 @@ description: List Snapshots older than 365 days
 integration_type:
   - aws_cloud_account
 query: |
-    SELECT snapshot_id, arn, start_time, account_id, platform_account_id, platform_resource_id
+    SELECT snapshot_id, arn, start_time, account_id, platform_integration_id, platform_resource_id
     FROM aws_ebs_snapshot
     WHERE start_time < NOW() - INTERVAL '1 year';
 tags:

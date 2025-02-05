@@ -9,7 +9,7 @@ query: |
       name AS user_name,
       SPLIT_PART(attachments, '/', 2) AS attached_policies,
       aws_iam_user.account_id,
-      aws_iam_user.platform_account_id,
+      aws_iam_user.platform_integration_id,
       aws_iam_user.platform_resource_id
     FROM
       aws_iam_user

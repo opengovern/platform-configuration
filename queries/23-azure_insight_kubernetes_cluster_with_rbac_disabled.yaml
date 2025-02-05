@@ -14,7 +14,7 @@ query: |
       enable_rbac,
       sku,
       subscription_id,
-      platform_account_id,
+      platform_integration_id,
       platform_resource_id
     FROM
       azure_kubernetes_cluster

@@ -11,7 +11,7 @@ query: |
       state,
       region,
       account_id,
-      platform_account_id,
+      platform_integration_id,
       platform_resource_id
     FROM
       aws_vpc

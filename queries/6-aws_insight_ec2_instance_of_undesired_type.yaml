@@ -11,7 +11,7 @@ query: |
       instance_type,
       instance_state,
       account_id,
-      platform_account_id,
+      platform_integration_id,
       platform_resource_id
     FROM
       aws_ec2_instance

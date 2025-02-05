@@ -11,7 +11,7 @@ query: |
       soft_delete_enabled,
       soft_delete_retention_in_days,
       subscription_id,
-      platform_account_id,
+      platform_integration_id,
       platform_resource_id
     FROM
       azure_key_vault

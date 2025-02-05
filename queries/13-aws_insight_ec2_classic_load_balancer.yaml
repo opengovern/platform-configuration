@@ -9,7 +9,7 @@ query: |
       NAME, 
       ARN, 
       ACCOUNT_ID, 
-      PLATFORM_ACCOUNT_ID, 
+      platform_integration_id, 
       PLATFORM_RESOURCE_ID 
     FROM 
       AWS_EC2_CLASSIC_LOAD_BALANCER

@@ -9,7 +9,7 @@ query: |
       user_arn, 
       password_last_used, 
       account_id, 
-      platform_account_id, 
+      platform_integration_id, 
       platform_resource_id 
     FROM 
       aws_iam_credential_report 
