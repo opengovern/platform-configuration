@@ -72,7 +72,7 @@ integrations:
         install: true
         enable: true
       artifact_details:
-        package_url: "https://github.com/opengovern/og-describer-github/releases/download/v0.57.0/github-plugin.zip"
+        package_url: "https://github.com/opengovern/og-describer-github/releases/download/v0.58.0/github-plugin.zip"
       order: 4
       
     - integration_type: "digitalocean_team"
@@ -271,6 +271,21 @@ integrations:
       artifact_details:
         package_url: "https://github.com/opengovern/og-describer-heroku/releases/download/v0.5.1/heroku-plugin.zip"
       order: 15
+    - integration_type: "jira_cloud"
+      name: "Atlassian JIRA Cloud"
+      tier: "Premium"
+      tags:
+        usage:
+          - "General"
+      description: "Connect to JIRA for tickets, projects."
+      icon: "jira.svg"
+      availability: "Planned for Dec 2024"
+      source_code: "https://github.com/opengovern/plugin-jira"
+      package_type: "plugin"
+      artifact_details: {
+        package_url: "https://github.com/opengovern/plugin-jira/releases/download/v0.0.2/jira-plugin.zip"
+      }
+      order: 16
     - integration_type: "oci_repository"
       name: "OCI Repository"
       tier: "Premium"
@@ -281,7 +296,7 @@ integrations:
       source_code: ""
       package_type: "classic"
       artifact_details: {}
-      order: 16
+      order: 17
     - integration_type: "slack_account"
       name: "Slack"
       tier: "Premium"
@@ -292,19 +307,6 @@ integrations:
       description: "Connect Slack to manage channels and messages."
       icon: "slack.svg"
       availability: "PREVIEW"
-      source_code: ""
-      package_type: "plugin"
-      artifact_details: {}
-      order: 17
-    - integration_type: "jira_cloud"
-      name: "Atlassian JIRA Cloud"
-      tier: "Premium"
-      tags:
-        usage:
-          - "General"
-      description: "Connect to JIRA for tickets, projects."
-      icon: "jira.svg"
-      availability: "Planned for Dec 2024"
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
