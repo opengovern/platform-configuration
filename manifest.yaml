@@ -283,7 +283,7 @@ integrations:
       source_code: "https://github.com/opengovern/plugin-jira"
       package_type: "plugin"
       artifact_details: 
-        package_url: "https://github.com/opengovern/plugin-jira/releases/download/v0.1.0/jira-plugin.zip"
+        package_url: "https://github.com/opengovern/plugin-jira/releases/download/v0.1.1/jira-plugin.zip"
       
       order: 16
     - integration_type: "oci_repository"
