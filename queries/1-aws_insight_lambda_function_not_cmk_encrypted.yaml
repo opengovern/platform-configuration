@@ -2,8 +2,6 @@ id: aws_insight_lambda_function_not_cmk_encrypted
 type: query
 title: Unencrypted Lambda
 description: List of lambda functions which are not encrypted with CMK
-integration_type:
-  - aws_cloud_account
 query: |
     SELECT
       name,
