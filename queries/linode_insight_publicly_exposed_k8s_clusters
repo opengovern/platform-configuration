@@ -1,0 +1,41 @@
+id: linode_insight_publicly_exposed_k8s_clusters
+type: query
+title: Publicly Exposed Kubernetes Clusters in Linode
+description: >
+  List of publicly exposed Kubernetes clusters in Linode with indicators for exposure on:
+  - Port 80 (HTTP)
+  - Port 443 (HTTPS)
+  - ClickHouse (via ports 9440 and/or 9000)
+  - ElasticSearch (via ports 9200 and/or 9300)
+query: |
+  SELECT 
+    c.id AS cluster_id,
+    c.label AS cluster_label,
+    CASE 
+      WHEN COUNT(CASE WHEN config.port = 80 THEN 1 END) > 0 
+      THEN 'Yes' ELSE 'No' 
+    END AS "Port 80",
+    CASE 
+      WHEN COUNT(CASE WHEN config.port = 443 THEN 1 END) > 0 
+      THEN 'Yes' ELSE 'No' 
+    END AS "Port 443",
+    CASE 
+      WHEN COUNT(CASE WHEN config.port IN (9440, 9000) THEN 1 END) > 0 
+      THEN 'Yes' ELSE 'No' 
+    END AS "ClickHouse",
+    CASE 
+      WHEN COUNT(CASE WHEN config.port IN (9200, 9300) THEN 1 END) > 0 
+      THEN 'Yes' ELSE 'No' 
+    END AS "ElasticSearch"
+  FROM linode_kubernetes_node AS n
+  JOIN linode_kubernetes_cluster AS c
+    ON n.cluster_id::integer = c.id
+  JOIN linode_node_balancer AS nb
+    ON nb.account = n.account
+  JOIN linode_node_balancer_config AS config
+    ON config.nodebalancer_id = nb.id
+  WHERE config.port IN (80, 443, 9440, 9000, 9200, 9300)
+  GROUP BY c.id, c.label;
+tags:
+  category:
+    - Security
