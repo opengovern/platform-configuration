@@ -286,6 +286,21 @@ integrations:
         package_url: "https://github.com/opengovern/plugin-jira/releases/download/v0.2.4/jira-plugin.zip"
       
       order: 16
+    - integration_type: "semgrep_account"
+      name: "Semgrep"
+      tier: "Premium"
+      tags:
+        usage:
+          - "Code Security"
+      description: "Integrate Semgrep for code and security."
+      icon: "semgrep.svg"
+      availability: "Planned for Dec 2024"
+      source_code: "https://github.com/opengovern/plugin-semgrep"
+      package_type: "plugin"
+      artifact_details: {
+        package_url: "https://github.com/opengovern/plugin-semgrep/releases/download/v0.0.3/semgrep-plugin.zip"
+      }
+      order: 17
     - integration_type: "oci_repository"
       name: "OCI Repository"
       tier: "Premium"
@@ -296,7 +311,7 @@ integrations:
       source_code: ""
       package_type: "classic"
       artifact_details: {}
-      order: 17
+      order: 18
     - integration_type: "slack_account"
       name: "Slack"
       tier: "Premium"
@@ -310,7 +325,7 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
-      order: 18
+      order: 19
     - integration_type: "chainguard_dev_account"
       name: "Chainguard.dev"
       tier: "Premium"
@@ -323,7 +338,7 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
-      order: 19
+      order: 20
     - integration_type: "godaddy_account"
       name: "GoDaddy"
       tier: "Premium"
@@ -336,7 +351,7 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
-      order: 20
+      order: 21
     - integration_type: "servicenow_account"
       name: "ServiceNow"
       tier: "Premium"
@@ -349,7 +364,7 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
-      order: 21
+      order: 22
 
     - integration_type: "okta_account"
       name: "Okta"
@@ -364,7 +379,7 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
-      order: 22
+      order: 23
     - integration_type: "aws_costs"
       name: "Amazon Web Services (AWS) Costs"
       tier: "Premium"
@@ -378,7 +393,7 @@ integrations:
       source_code: ""
       package_type: "plugin"
       artifact_details: {}
-      order: 23
+      order: 24
     - integration_type: "azure_costs"
       name: "Microsoft Azure Costs"
       tier: "Premium"
@@ -388,19 +403,6 @@ integrations:
           - "Cloud Security"
       description: "Monitor Azure cloud costs and usage."
       icon: "azure_costs.svg"
-      availability: "Planned for Dec 2024"
-      source_code: ""
-      package_type: "plugin"
-      artifact_details: {}
-      order: 24
-    - integration_type: "semgrep_account"
-      name: "Semgrep"
-      tier: "Premium"
-      tags:
-        usage:
-          - "Code Security"
-      description: "Integrate Semgrep for code and security."
-      icon: "semgrep.svg"
       availability: "Planned for Dec 2024"
       source_code: ""
       package_type: "plugin"
