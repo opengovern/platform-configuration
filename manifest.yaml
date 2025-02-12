@@ -298,7 +298,7 @@ integrations:
       source_code: "https://github.com/opengovern/plugin-semgrep"
       package_type: "plugin"
       artifact_details: {
-        package_url: "https://github.com/opengovern/plugin-semgrep/releases/download/v0.0.3/semgrep-plugin.zip"
+        package_url: "https://github.com/opengovern/plugin-semgrep/releases/download/v0.0.4/semgrep-plugin.zip"
       }
       order: 17
     - integration_type: "oci_repository"
