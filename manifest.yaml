@@ -432,10 +432,14 @@ integrations:
           - "Containers"
       description: "Gain visibility into Kubernetes objects."
       icon: "kubernetes.svg"
-      availability: "Planned for Jan 2025"
-      source_code: ""
+      availability: "Experimental"
+      source_code: "https://github.com/opengovern/og-describer-kubernetes"
       package_type: "plugin"
-      artifact_details: {}
+      defaults:
+        install: false
+        enable: false
+      artifact_details:
+        package_url: "https://github.com/opengovern/og-describer-kubernetes/releases/download/v0.3.0/kubernetes-plugin.zip"
       order: 27
 
     - integration_type: "jamf_account"
