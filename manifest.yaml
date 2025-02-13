@@ -90,7 +90,7 @@ integrations:
       source_code: "https://github.com/opengovern/og-describer-digitalocean"
       package_type: "plugin"
       artifact_details:
-        package_url: "https://github.com/opengovern/og-describer-digitalocean/releases/download/v0.5.0/digitalocean-plugin.zip"
+        package_url: "https://github.com/opengovern/og-describer-digitalocean/releases/download/v0.5.1/digitalocean-plugin.zip"
       order: 5
     - integration_type: "cloudflare_account"
       name: "Cloudflare"
