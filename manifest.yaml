@@ -37,7 +37,7 @@ integrations:
         install: false
         enable: false
       artifact_details:
-        package_url: "https://github.com/opengovern/og-describer-azure/releases/download/v0.11.13/azure-plugin.zip"
+        package_url: "https://github.com/opengovern/og-describer-azure/releases/download/v0.11.14/azure-plugin.zip"
       order: 2
     - integration_type: "entraid_directory"
       name: "Microsoft EntraID Directory"
