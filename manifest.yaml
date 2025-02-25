@@ -72,7 +72,7 @@ integrations:
         install: true
         enable: true
       artifact_details:
-        package_url: "https://github.com/opengovern/og-describer-github/releases/download/v0.63.2/github-plugin.zip"
+        package_url: "https://github.com/opengovern/og-describer-github/releases/download/v0.63.3/github-plugin.zip"
       order: 4
       
     - integration_type: "digitalocean_team"
