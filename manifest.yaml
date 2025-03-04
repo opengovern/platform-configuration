@@ -54,7 +54,7 @@ integrations:
       source_code: "https://github.com/opengovern/og-describer-entraid"
       package_type: "plugin"
       artifact_details:
-        package_url: "https://github.com/opengovern/og-describer-entraid/releases/download/v0.7.3/entraid-plugin.zip"
+        package_url: "https://github.com/opengovern/og-describer-entraid/releases/download/v0.7.4/entraid-plugin.zip"
       order: 3
     - integration_type: "github_account"
       name: "GitHub"
