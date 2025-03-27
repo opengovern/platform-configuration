@@ -38,28 +38,28 @@ query: |
     FROM aws_s3_bucket s3
     JOIN aws_account acc
       ON s3.platform_integration_id = acc.platform_integration_id
-)
-SELECT
-    adr.zone_id,
-    adr.name,
-    adr.fqdn,
-    adr.type,
-    adr.content AS value,
-    sb.bucket_name,
-    sb.url AS matched_s3_url
-FROM azure_dns_record_set adr
-JOIN S3Buckets sb ON sb.url ILIKE '%' || adr.content || '%'  -- Partial match for DNS value inside S3 URL
-UNION ALL
-SELECT
-    cdr.zone_id,
-    cdr.name,
-    NULL AS fqdn,
-    cdr.type,
-    cdr.content AS value,
-    sb.bucket_name,
-    sb.url AS matched_s3_url
-FROM cloudflare_dns_record cdr
-JOIN S3Buckets sb ON sb.url ILIKE '%' || cdr.content || '%';  -- Partial match for DNS value inside S3 URL
+        )
+        SELECT
+            adr.zone_id,
+            adr.name,
+            adr.fqdn,
+            adr.type,
+            adr.content AS value,
+            sb.bucket_name,
+            sb.url AS matched_s3_url
+        FROM azure_dns_record_set adr
+        JOIN S3Buckets sb ON sb.url ILIKE '%' || adr.content || '%'  -- Partial match for DNS value inside S3 URL
+        UNION ALL
+        SELECT
+            cdr.zone_id,
+            cdr.name,
+            NULL AS fqdn,
+            cdr.type,
+            cdr.content AS value,
+            sb.bucket_name,
+            sb.url AS matched_s3_url
+        FROM cloudflare_dns_record cdr
+        JOIN S3Buckets sb ON sb.url ILIKE '%' || cdr.content || '%';  -- Partial match for DNS value inside S3 URL
 
 tags:
   category:
