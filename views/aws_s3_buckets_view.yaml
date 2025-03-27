@@ -1,0 +1,56 @@
+id: s3_buckets
+title: All AWS S3 Buckets
+description: All AWS S3 Buckets
+type: view
+query: |
+    SELECT
+    -- Account Number from the joined aws_account table
+    acc.account_id AS account_number,
+
+    -- Use coalesce to handle NULL region, default to us-east-1
+    COALESCE(NULLIF(s3.region, ''), 'us-east-1') AS region,
+
+    -- Bucket Name from the aws_s3_bucket table
+    s3.name AS bucket_name,
+
+    -- Determine 'is_potentially_public' status
+    NOT (
+        s3.block_public_acls = TRUE
+        AND s3.block_public_policy = TRUE
+        AND s3.ignore_public_acls = TRUE
+        AND s3.restrict_public_buckets = TRUE
+    ) AS is_potentially_public,
+
+    -- Determine the primary URL
+    CASE
+        WHEN s3.website_configuration IS NOT NULL
+             AND s3.website_configuration::text != 'null'
+             AND s3.website_configuration::text != '{}'
+        THEN
+            -- Website endpoint
+            CASE
+                WHEN COALESCE(NULLIF(s3.region, ''), 'us-east-1') = 'us-east-1'
+                THEN 'http://' || s3.name || '.s3-website-us-east-1.amazonaws.com'
+                ELSE 'http://' || s3.name || '.s3-website.' 
+                              || COALESCE(NULLIF(s3.region, ''), 'us-east-1') 
+                              || '.amazonaws.com'
+            END
+        ELSE
+            -- Regular S3 endpoint
+            CASE
+                WHEN COALESCE(NULLIF(s3.region, ''), 'us-east-1') = 'us-east-1'
+                THEN 'https://' || s3.name || '.s3.amazonaws.com'
+                ELSE 'https://' || s3.name || '.s3.'
+                              || COALESCE(NULLIF(s3.region, ''), 'us-east-1') 
+                              || '.amazonaws.com'
+            END
+    END AS url
+
+FROM
+    aws_s3_bucket s3
+JOIN
+    aws_account acc
+      ON s3.platform_integration_id = acc.platform_integration_id;
+tags:
+  category:
+    - Network

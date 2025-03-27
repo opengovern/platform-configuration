@@ -1,0 +1,66 @@
+id: s3_buckets)dns_records
+title: All DNS Records for S3 Buckets
+description: All DNS Records (in azure and cloudflare) for S3 Buckets
+type: view
+query: |
+   WITH S3Buckets AS (
+    SELECT
+        acc.account_id AS account_number,
+        COALESCE(NULLIF(s3.region, ''), 'us-east-1') AS region,
+        s3.name AS bucket_name,
+        NOT (
+            s3.block_public_acls = TRUE
+            AND s3.block_public_policy = TRUE
+            AND s3.ignore_public_acls = TRUE
+            AND s3.restrict_public_buckets = TRUE
+        ) AS is_potentially_public,
+        CASE
+            WHEN s3.website_configuration IS NOT NULL
+                 AND s3.website_configuration::text != 'null'
+                 AND s3.website_configuration::text != '{}'
+            THEN
+                CASE
+                    WHEN COALESCE(NULLIF(s3.region, ''), 'us-east-1') = 'us-east-1'
+                    THEN 'http://' || s3.name || '.s3-website-us-east-1.amazonaws.com'
+                    ELSE 'http://' || s3.name || '.s3-website.' 
+                                || COALESCE(NULLIF(s3.region, ''), 'us-east-1') 
+                                || '.amazonaws.com'
+                END
+            ELSE
+                CASE
+                    WHEN COALESCE(NULLIF(s3.region, ''), 'us-east-1') = 'us-east-1'
+                    THEN 'https://' || s3.name || '.s3.amazonaws.com'
+                    ELSE 'https://' || s3.name || '.s3.'
+                                || COALESCE(NULLIF(s3.region, ''), 'us-east-1') 
+                                || '.amazonaws.com'
+                END
+        END AS url
+    FROM aws_s3_bucket s3
+    JOIN aws_account acc
+      ON s3.platform_integration_id = acc.platform_integration_id
+)
+SELECT
+    adr.zone_id,
+    adr.name,
+    adr.fqdn,
+    adr.type,
+    adr.content AS value,
+    sb.bucket_name,
+    sb.url AS matched_s3_url
+FROM azure_dns_record_set adr
+JOIN S3Buckets sb ON sb.url ILIKE '%' || adr.content || '%'  -- Partial match for DNS value inside S3 URL
+UNION ALL
+SELECT
+    cdr.zone_id,
+    cdr.name,
+    NULL AS fqdn,
+    cdr.type,
+    cdr.content AS value,
+    sb.bucket_name,
+    sb.url AS matched_s3_url
+FROM cloudflare_dns_record cdr
+JOIN S3Buckets sb ON sb.url ILIKE '%' || cdr.content || '%';  -- Partial match for DNS value inside S3 URL
+
+tags:
+  category:
+    - Network
