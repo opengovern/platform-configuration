@@ -1,4 +1,4 @@
-id: s3_buckets)dns_records
+id: s3_buckets_dns_records
 title: All DNS Records for S3 Buckets
 description: All DNS Records (in azure and cloudflare) for S3 Buckets
 type: view
