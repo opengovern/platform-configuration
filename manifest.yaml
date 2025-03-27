@@ -197,7 +197,7 @@ integrations:
         install: true
         enable: false
       artifact_details:
-        package_url: "https://github.com/opengovern/og-describer-render/releases/download/v0.8.1/render-plugin.zip"
+        package_url: "https://github.com/opengovern/og-describer-render/releases/download/v0.8.5/render-plugin.zip"
       order: 11
     - integration_type: "doppler_account"
       name: "Doppler"
