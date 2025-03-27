@@ -1,0 +1,25 @@
+id: dns_records
+title: All DNS Records
+description: All DNS Records (in azure and cloudflare)
+type: view
+query: |
+    SELECT
+        adr.zone_id,
+        adr.name,
+        adr.fqdn,
+        adr.type,
+        adr.content AS value
+    FROM
+        azure_dns_record_set adr
+    UNION ALL
+    SELECT
+        cdr.zone_id,
+        cdr.name,
+        NULL AS fqdn, -- fqdn is not directly available in cloudflare_dns_record
+        cdr.type,
+        cdr.content AS value
+    FROM
+        cloudflare_dns_record cdr;
+tags:
+  category:
+    - Network
