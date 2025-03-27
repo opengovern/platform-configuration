@@ -46,11 +46,11 @@ query: |
             END
     END AS url
 
-FROM
-    aws_s3_bucket s3
-JOIN
-    aws_account acc
-      ON s3.platform_integration_id = acc.platform_integration_id;
+    FROM
+        aws_s3_bucket s3
+    JOIN
+        aws_account acc
+          ON s3.platform_integration_id = acc.platform_integration_id;
 tags:
   category:
     - Network
