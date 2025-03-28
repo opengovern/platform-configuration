@@ -232,7 +232,7 @@ integrations:
         install: false
         enable: false
       artifact_details:
-        package_url: "https://github.com/opengovern/og-describer-fly/releases/download/v0.8.0/fly-plugin.zip"
+        package_url: "https://github.com/opengovern/og-describer-fly/releases/download/v0.8.1/fly-plugin.zip"
       order: 13
     - integration_type: "tailscale_account"
       name: "Tailscale"
