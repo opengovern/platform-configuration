@@ -346,7 +346,7 @@ integrations:
         usage:
           - "General"
       description: "Discover certificates, domains, and statuses."
-      icon: ""
+      icon: "godaddy.svg"
       availability: "Planned for Dec 2024"
       source_code: ""
       package_type: "plugin"
