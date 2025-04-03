@@ -1,0 +1,14 @@
+id: list_all_unique_packages
+type: query
+title: List all unique packages
+description: Get the list of all unique packages
+query: |
+    SELECT DISTINCT
+        (jsonb_array_elements(packages)->>'ecosystem') AS ecosystem,
+        (jsonb_array_elements(packages)->>'name') AS package_name,
+        (jsonb_array_elements(packages)->>'version') AS version
+    FROM 
+        artifact_package_list;
+tags:
+    platform_queries_bookmark:
+        - 'true'

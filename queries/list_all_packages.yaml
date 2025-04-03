@@ -1,0 +1,12 @@
+id: list_all_container_packages
+type: query
+title: Get the list of all packages in all docker containers
+description: Get the list of all packages in all docker containers
+query: |
+    SELECT
+        * 
+    FROM 
+        artifact_package_list;
+tags:
+    platform_queries_bookmark:
+        - 'true'
