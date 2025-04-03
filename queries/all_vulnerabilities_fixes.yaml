@@ -1,0 +1,44 @@
+id: all_vulnerabilities_fixes
+type: query
+title: All Vulnerabilities And Fixes
+description: All Images Vulnerabilities and their details and fixes
+integration_type:
+  - github_account
+query: |
+  WITH ArtifactPackagesWithVulns AS (
+    SELECT DISTINCT
+        p.image_url,
+        p.artifact_id,
+        p.ecosystem,
+        p.package_name,
+        p.version,
+        v.vulnerabilities
+    FROM (
+        SELECT DISTINCT
+            image_url,
+            artifact_id,
+            (jsonb_array_elements(packages)->>'ecosystem') AS ecosystem,
+            (jsonb_array_elements(packages)->>'name') AS package_name,
+            (jsonb_array_elements(packages)->>'version') AS version
+        FROM artifact_package_list
+    ) AS p
+    JOIN packages_with_vulnerabilities v ON
+        p.ecosystem = v.ecosystem AND
+        p.package_name = v.package_name AND
+        p.version = v.version
+    WHERE v.vulnerabilities IS NOT NULL AND v.vulnerabilities <> '[]'::jsonb
+  )
+  SELECT
+    apv.image_url,
+    apv.artifact_id,
+    apv.ecosystem,
+    apv.package_name,
+    apv.version,
+    vuln_id,
+    ovd.*
+  FROM ArtifactPackagesWithVulns apv
+    CROSS JOIN LATERAL jsonb_array_elements_text(apv.vulnerabilities) AS v_list(vuln_id)
+    LEFT JOIN osv_vulnerability_details ovd ON v_list.vuln_id = ovd.id;
+tags:
+  platform_queries_bookmark:
+    - 'true'

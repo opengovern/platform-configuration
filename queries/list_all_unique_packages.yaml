@@ -2,6 +2,8 @@ id: list_all_unique_packages
 type: query
 title: List all unique packages
 description: Get the list of all unique packages
+integration_type:
+    - github_account
 query: |
     SELECT DISTINCT
         (jsonb_array_elements(packages)->>'ecosystem') AS ecosystem,

@@ -2,6 +2,8 @@ id: list_all_container_packages_vulnerabilities
 type: query
 title: List all packages vulnerabilities in all containers
 description: Get the list of all vulnerabilities in all packages in all containers
+integration_type:
+    - github_account
 query: |
     SELECT DISTINCT
         p.image_url,
