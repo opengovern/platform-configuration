@@ -1,7 +1,7 @@
-id: list_all_container_packages_vulnerabilities_for_image
+id: image_vulnerabilities
 type: query
-title: List all packages vulnerabilities in all containers for image
-description: Get the list of all vulnerabilities in all packages in all containers for image in parameters
+title: Image Vulnerabilities
+description: Get the list of all vulnerabilities for an image
 integration_type:
     - github_account
 query: |

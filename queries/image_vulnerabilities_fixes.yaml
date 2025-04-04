@@ -1,7 +1,7 @@
-id: all_vulnerabilities_fixes_for_image
+id: image_vulnerabilities_fixes
 type: query
-title: All Vulnerabilities And Fixes For Image in parameters
-description: All Images Vulnerabilities and their details and fixes for image in parameters
+title: Image Vulnerabilities Fixes
+description: Images Vulnerabilities and their details and fixes
 integration_type:
   - github_account
 query: |
