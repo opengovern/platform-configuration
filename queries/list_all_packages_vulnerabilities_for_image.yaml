@@ -1,0 +1,32 @@
+id: list_all_container_packages_vulnerabilities_for_image
+type: query
+title: List all packages vulnerabilities in all containers for image
+description: Get the list of all vulnerabilities in all packages in all containers for image in parameters
+integration_type:
+    - github_account
+query: |
+    SELECT DISTINCT
+        p.image_url,
+        p.artifact_id,
+        p.ecosystem,
+        p.package_name,
+        p.version,
+        v.vulnerabilities -- Replace with the actual vulnerability column(s)
+    FROM (
+        SELECT DISTINCT
+            image_url,
+            artifact_id,
+            (jsonb_array_elements(packages)->>'ecosystem') AS ecosystem,
+            (jsonb_array_elements(packages)->>'name') AS package_name,
+            (jsonb_array_elements(packages)->>'version') AS version
+        FROM artifact_package_list
+        WHERE artifact_url = '{{.artifactUrl}}'
+        ) AS p
+    JOIN packages_with_vulnerabilities v ON
+        p.ecosystem = v.ecosystem AND
+        p.package_name = v.package_name AND
+        p.version = v.version
+    WHERE v.vulnerabilities is not null and v.vulnerabilities <> '[]';
+tags:
+    platform_queries_bookmark:
+        - 'true'
