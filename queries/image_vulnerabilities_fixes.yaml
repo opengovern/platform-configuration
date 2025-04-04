@@ -21,7 +21,7 @@ query: |
               (jsonb_array_elements(packages)->>'name') AS package_name,
               (jsonb_array_elements(packages)->>'version') AS version
           FROM artifact_package_list
-          WHERE artifact_url = '{{.artifactUrl}}'
+          WHERE artifact_id = '{{.artifactId}}'
       ) AS p
       JOIN packages_with_vulnerabilities v ON
           p.ecosystem = v.ecosystem AND
