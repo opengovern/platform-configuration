@@ -1,9 +1,9 @@
 {
   "layout_config": [
     {
-      "componentId": "table",
       "id": "table1-1",
       "data": {
+        "componentId": "table",
         "title": "Table",
         "query": "SELECT * FROM entraid_users"
       },
@@ -12,10 +12,10 @@
       "columnOffset": { "4": 0 }
     },
     {
-      "componentId": "table",
       "id": "table1-2",
       "data": {
         "title": "Table",
+        "componentId": "table",
         "query": "SELECT * FROM github_repositories"
       },
       "rowSpan": 4,
