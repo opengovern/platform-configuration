@@ -5,6 +5,7 @@
       "data": {
         "componentId": "table",
         "title": "Table",
+        "description": "This is a table component",
         "props": {
           "query": "SELECT * FROM entraid_user"
         }
@@ -18,6 +19,8 @@
       "data": {
         "title": "Table",
         "componentId": "table",
+        "description": "This is a table component",
+
         "props": {
           "query": "SELECT * FROM github_repository"
         }
