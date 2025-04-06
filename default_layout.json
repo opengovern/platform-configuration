@@ -1,24 +1,30 @@
-[
-  {
-    "componentId": "table",
-    "id": "table1-1",
-    "data": {
-      "title": "Table",
-      "query": "SELECT * FROM entraid_users"
+{
+  "layout_config": [
+    {
+      "componentId": "table",
+      "id": "table1-1",
+      "data": {
+        "title": "Table",
+        "query": "SELECT * FROM entraid_users"
+      },
+      "rowSpan": 4,
+      "columnSpan": 4,
+      "columnOffset": { "4": 0 }
     },
-    "rowSpan": 4,
-    "columnSpan": 4,
-    "columnOffset": { "4": 0 }
-  },
-  {
-    "componentId": "table",
-    "id": "table1-2",
-    "data": {
-      "title": "Table",
-      "query": "SELECT * FROM github_repositories"
-    },
-    "rowSpan": 4,
-    "columnSpan": 4,
-    "columnOffset": { "4": 0 }
-  }
-]
+    {
+      "componentId": "table",
+      "id": "table1-2",
+      "data": {
+        "title": "Table",
+        "query": "SELECT * FROM github_repositories"
+      },
+      "rowSpan": 4,
+      "columnSpan": 4,
+      "columnOffset": { "4": 0 }
+    }
+  ],
+  "name": "default_layout",
+  "is_private" : false
+
+
+}
