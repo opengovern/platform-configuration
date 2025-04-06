@@ -1,20 +1,24 @@
 [
-    {
-        "componentId": "table",
-        "Name": "Table",
-        "query": "SELECT * FROM entraid_users",
-        "startX": 0,
-        "startY": 0,
-        "width": 12,
-        "height": 6
+  {
+    "componentId": "table",
+    "id": "table1-1",
+    "data": {
+      "title": "Table",
+      "query": "SELECT * FROM entraid_users"
     },
-    {
-      "componentId": "table",
-      "Name": "Table",
-      "query": "SELECT * FROM github_repos",
-      "startX": 0,
-      "startY": 0,
-      "width": 6,
-      "height": 4
-    }
+    "rowSpan": 4,
+    "columnSpan": 4,
+    "columnOffset": { "4": 0 }
+  },
+  {
+    "componentId": "table",
+    "id": "table1-2",
+    "data": {
+      "title": "Table",
+      "query": "SELECT * FROM github_repositories"
+    },
+    "rowSpan": 4,
+    "columnSpan": 4,
+    "columnOffset": { "4": 0 }
+  }
 ]
