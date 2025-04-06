@@ -6,7 +6,7 @@
         "componentId": "table",
         "title": "Table",
         "props": {
-          "query": "SELECT * FROM entraid_users"
+          "query": "SELECT * FROM entraid_user"
         }
       },
       "rowSpan": 4,
@@ -19,7 +19,7 @@
         "title": "Table",
         "componentId": "table",
         "props": {
-          "query": "SELECT * FROM entraid_users"
+          "query": "SELECT * FROM github_repository"
         }
       },
       "rowSpan": 4,
