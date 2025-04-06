@@ -5,7 +5,9 @@
       "data": {
         "componentId": "table",
         "title": "Table",
-        "query": "SELECT * FROM entraid_users"
+        "props": {
+          "query": "SELECT * FROM entraid_users"
+        }
       },
       "rowSpan": 4,
       "columnSpan": 4,
@@ -16,7 +18,9 @@
       "data": {
         "title": "Table",
         "componentId": "table",
-        "query": "SELECT * FROM github_repositories"
+        "props": {
+          "query": "SELECT * FROM entraid_users"
+        }
       },
       "rowSpan": 4,
       "columnSpan": 4,
@@ -24,7 +28,5 @@
     }
   ],
   "name": "default_layout",
-  "is_private" : false
-
-
+  "is_private": false
 }
