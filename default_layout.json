@@ -1,5 +1,36 @@
 {
   "layout_config": [
+     {
+     "id": "kpi-2",
+     "data": {
+       "componentId": "kpi",
+       "title": "OpenSecurity Compliance and Security KPIs",
+       "description": "A collection of Key Performance Indicators for monitoring compliance status, security posture, and operational health within the OpenSecurity framework. Queries are referenced by name.",
+       "props": {
+         "kpis": [
+           {
+             "info": "Entra Id Users",
+             "count_kpi": "entraid_users",
+             "list_kpi": "entraid_users"
+           },
+           {
+             "info": "Github repositories",
+             "count_kpi": "github_repositories",
+             "list_kpi": "github_repositories"
+           },
+           {
+             "info": "Package vulnerabilities",
+             "count_kpi": "package_vulnerabilities",
+             "list_kpi": "package_vulnerabilities"
+           }
+        
+         ]
+       }
+     },
+     "rowSpan": 2,
+     "columnSpan": 3,
+     "columnOffset": { "4": 0 }
+   },
     {
       "id": "table1-1",
       "data": {
@@ -14,23 +45,8 @@
       "rowSpan": 4,
       "columnSpan": 4,
       "columnOffset": { "4": 0 }
-    },
-    {
-      "id": "table1-2",
-      "data": {
-        "title": "Table1",
-        "componentId": "table",
-        "description": "This is a table component1",
-
-        "props": {
-          "query_id": "all_docker_base_images",
-          "display_rows": 10
-        }
-      },
-      "rowSpan": 4,
-      "columnSpan": 4,
-      "columnOffset": { "4": 0 }
     }
+  
   ],
   "name": "default_layout",
   "is_private": false

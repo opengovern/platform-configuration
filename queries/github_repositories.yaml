@@ -1,0 +1,16 @@
+id: github_repositories
+title: All Github Repositories
+description: This query retrieves all Github repositories.
+type: query
+integration_type:
+  - github_account
+query: |
+  SELECT COUNT(*) from github_repository;
+tags:
+  cloud_provider:
+    - github_account
+  cloud_service:
+    - DevOps
+  platform_queries_bookmark:
+    - 'true'
+

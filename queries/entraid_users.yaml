@@ -1,0 +1,16 @@
+id: entraid_users
+title: All Users from entraid
+description: This query retrieves all users from entraid.
+type: query
+integration_type:
+  - entraid_directory
+query: |
+  SELECT COUNT(*) from entraid_user;
+tags:
+  cloud_provider:
+    - entraid
+  cloud_service:
+    - DevOps
+  platform_queries_bookmark:
+    - 'true'
+

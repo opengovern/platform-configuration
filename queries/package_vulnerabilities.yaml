@@ -1,0 +1,18 @@
+id: package_vulnerabilities
+title: All  Package Vulnerabilities
+description: This query retrieves all  package vulnerabilities.
+type: query
+integration_type:
+  - github_account
+query: |
+  SELECT COUNT(*)
+FROM packages_with_vulnerabilities
+WHERE jsonb_array_length(vulnerabilities) > 0;
+tags:
+  cloud_provider:
+    - github_account
+  cloud_service:
+    - DevOps
+  platform_queries_bookmark:
+    - 'true'
+
