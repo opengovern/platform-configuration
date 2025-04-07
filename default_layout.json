@@ -17,9 +17,9 @@
     {
       "id": "table1-2",
       "data": {
-        "title": "Table",
+        "title": "Table1",
         "componentId": "table",
-        "description": "This is a table component",
+        "description": "This is a table component1",
 
         "props": {
           "query": "SELECT * FROM github_repository"
