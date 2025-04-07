@@ -7,7 +7,7 @@
         "title": "Table",
         "description": "This is a table component",
         "props": {
-          "query": "all_github_container_package",
+          "query_id": "all_github_container_package",
           "display_rows": 10
         }
       },
