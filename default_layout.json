@@ -7,7 +7,7 @@
         "title": "Table",
         "description": "This is a table component",
         "props": {
-          "query": "SELECT * FROM entraid_user",
+          "query": "all_github_container_package",
           "display_rows": 10
         }
       },
@@ -23,7 +23,7 @@
         "description": "This is a table component1",
 
         "props": {
-          "query": "SELECT * FROM github_repository",
+          "query_id": "all_docker_base_images",
           "display_rows": 10
         }
       },
