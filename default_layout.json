@@ -7,7 +7,8 @@
         "title": "Table",
         "description": "This is a table component",
         "props": {
-          "query": "SELECT * FROM entraid_user"
+          "query": "SELECT * FROM entraid_user",
+          "display_rows": 10
         }
       },
       "rowSpan": 4,
@@ -22,7 +23,8 @@
         "description": "This is a table component1",
 
         "props": {
-          "query": "SELECT * FROM github_repository"
+          "query": "SELECT * FROM github_repository",
+          "display_rows": 10
         }
       },
       "rowSpan": 4,
