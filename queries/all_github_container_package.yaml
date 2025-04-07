@@ -15,3 +15,5 @@ query: |
 tags:
     platform_queries_bookmark:
       - 'true'
+    cache_enabled:
+      - 'true'
