@@ -29,5 +29,5 @@ query: |
 tags:
     platform_queries_bookmark:
         - 'true'
-    cache_enabled:
+    platform_cache_enabled:
         - 'true'
