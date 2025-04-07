@@ -46,5 +46,3 @@ query: |
 tags:
   platform_queries_bookmark:
     - 'true'
-  platform_cache_enabled:
-    - 'true'
