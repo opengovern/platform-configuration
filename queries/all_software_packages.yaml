@@ -1,0 +1,16 @@
+id: all_software_packages
+type: query
+title: List of all software packages
+description: List of all software packages
+integration_type:
+    - github_account
+query: |
+    SELECT
+        * 
+    FROM 
+        software_packages;
+tags:
+    platform_queries_bookmark:
+        - 'true'
+    platform_cache_enabled:
+        - 'true'

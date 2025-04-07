@@ -1,7 +1,7 @@
-id: list_all_unique_packages
+id: all_unique_packages
 type: query
-title: List all unique packages
-description: Get the list of all unique packages
+title: All unique packages
+description: All unique packages
 integration_type:
     - github_account
 query: |
@@ -10,7 +10,7 @@ query: |
         (jsonb_array_elements(packages)->>'name') AS package_name,
         (jsonb_array_elements(packages)->>'version') AS version
     FROM 
-        artifact_package_list;
+        software_packages;
 tags:
     platform_queries_bookmark:
         - 'true'

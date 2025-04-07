@@ -20,7 +20,7 @@ query: |
             (jsonb_array_elements(packages)->>'ecosystem') AS ecosystem,
             (jsonb_array_elements(packages)->>'name') AS package_name,
             (jsonb_array_elements(packages)->>'version') AS version
-        FROM artifact_package_list
+        FROM software_packages
     ) AS p
     JOIN packages_with_vulnerabilities v ON
         p.ecosystem = v.ecosystem AND
@@ -38,7 +38,7 @@ query: |
     ovd.*
   FROM ArtifactPackagesWithVulns apv
     CROSS JOIN LATERAL jsonb_array_elements_text(apv.vulnerabilities) AS v_list(vuln_id)
-    LEFT JOIN osv_vulnerability_details ovd ON v_list.vuln_id = ovd.id;
+    LEFT JOIN vulnerability_details ovd ON v_list.vuln_id = ovd.id;
 tags:
   platform_queries_bookmark:
     - 'true'
