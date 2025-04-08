@@ -1,6 +1,30 @@
 {
   "layout_config": [
      {
+            "id": "shortcut",
+            "data": {
+                "componentId": "shortcut",
+                "title": "Shortcuts",
+                "description": "",
+                "props": {}
+            },
+            "rowSpan": 2,
+            "columnSpan": 3,
+            "columnOffset": { "4": 0 }
+        },
+        {
+            "id": "integration",
+            "data": {
+                "componentId": "integration",
+                "title": "Integrations",
+                "description": "",
+                "props": {}
+            },
+            "rowSpan": 8,
+            "columnSpan": 1,
+            "columnOffset": { "4": 3 }
+        },
+     {
      "id": "kpi-2",
      "data": {
        "componentId": "kpi",
