@@ -72,6 +72,8 @@
     }
   
   ],
-  "name": "default_layout",
+  "name": "Default Dashbord",
+  "description": "This is a default dashboard",
+  "is_default": true,
   "is_private": false
 }
