@@ -1,14 +1,21 @@
-ID: "sbom-vulnerability-check"
-Name: "Sbom Vulnerability Check"
-Description: "Check if all container artifacts are free of vulnerabilities using SYFT"
-ImageURL: "ghcr.io/opengovern/og-task-sbom-vulnerability:v0.0.28"
-Command: "/og-task-sbom-vulnerability"
-ResultType: "sbom_vulnerabilities"
-WorkloadType: "deployment"
-EnvVars: {}
-Interval: 240
-Timeout: 120 # Minutes
-ScaleConfig:
-  LagThreshold: "1"
-  MinReplica: 0
-  MaxReplica: 5
+id: "sbom-vulnerability-check"
+name: "Sbom Vulnerability Check"
+description: "Check if all container artifacts are free of vulnerabilities using SYFT"
+image_url: "ghcr.io/opengovern/og-task-sbom-vulnerability:v0.0.28"
+command: "/og-task-sbom-vulnerability"
+result_type: "sbom_vulnerabilities"
+workload_type: "deployment"
+env_vars: {}
+scale_config:
+  lag_threshold: "1"
+  min_replica: 0
+  max_replica: 5
+run_schedule:
+  - params:
+      "query_id": "list_all_unique_packages"
+    interval:
+      months: 1
+      days: 0
+      hours: 0
+      minutes: 0
+    timeout: 120

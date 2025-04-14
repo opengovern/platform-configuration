@@ -1,14 +1,21 @@
-ID: "container-vulnerability-scanner"
-Name: "Container Vulnerability Scanner"
-Description: "Check if all container artifacts are free of vulnerabilities"
-ImageURL: "ghcr.io/opengovern/og-task-container-vulnerability:local-v0.0.71"
-Command: "/og-task-container-vulnerability"
-ResultType: "oci_container_vulnerabilities"
-WorkloadType: "deployment"
-EnvVars: {}
-Interval: 0 # Minutes
-Timeout: 120 # Minutes
-ScaleConfig:
-  LagThreshold: "1"
-  MinReplica: 0
-  MaxReplica: 5
+id: "container-vulnerability-scanner"
+name: "Container Vulnerability Scanner"
+description: "Check if all container artifacts are free of vulnerabilities"
+is_enabled: false
+image_url: "ghcr.io/opengovern/og-task-container-vulnerability:local-v0.0.71"
+command: "/og-task-container-vulnerability"
+result_type: "oci_container_vulnerabilities"
+workload_type: "deployment"
+env_vars: {}
+scale_config:
+  lag_threshold: "1"
+  min_replica: 0
+  max_replica: 5
+run_schedule:
+  - params: {}
+    interval:
+      months: 0
+      days: 2
+      hours: 0
+      minutes: 0
+    timeout: 120
