@@ -4,9 +4,6 @@ description: "Get CVE Details with NVE Lookup"
 is_enabled: true
 image_url: "ghcr.io/opengovern/og-task-nve-lookup:v0.0.9"
 command: "/og-task-nve-lookup"
-result_type: "cve_details"
-workload_type: "deployment"
-env_vars: {}
 scale_config:
   lag_threshold: "1"
   min_replica: 0

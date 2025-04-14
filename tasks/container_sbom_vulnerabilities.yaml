@@ -4,9 +4,6 @@ description: "Check if all container artifacts are free of vulnerabilities using
 is_enabled: true
 image_url: "ghcr.io/opengovern/og-task-sbom-vulnerability:v0.0.28"
 command: "/og-task-sbom-vulnerability"
-result_type: "sbom_vulnerabilities"
-workload_type: "deployment"
-env_vars: {}
 scale_config:
   lag_threshold: "1"
   min_replica: 0
