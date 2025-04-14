@@ -1,14 +1,18 @@
-ID: "container-syft"
-Name: "Container SYFT"
-Description: "Check if all container artifacts are free of vulnerabilities using SYFT"
-ImageURL: "ghcr.io/opengovern/og-task-syft:v0.10.25"
-Command: "/og-task-syft"
-ResultType: "artifact_sbom"
-WorkloadType: "deployment"
-EnvVars: {}
-Interval: 120
-Timeout: 120 # Minutes
-ScaleConfig:
-  LagThreshold: "1"
-  MinReplica: 0
-  MaxReplica: 5
+id: "container-syft"
+name: "Container SYFT"
+description: "Check if all container artifacts are free of vulnerabilities using SYFT"
+is_enabled: true
+image_url: "ghcr.io/opengovern/og-task-syft:v0.10.25"
+command: "/og-task-syft"
+result_type: "artifact_sbom"
+workload_type: "deployment"
+env_vars: {}
+scale_config:
+  lag_threshold: "1"
+  min_replica: 0
+  max_replica: 5
+run_schedule:
+  - params:
+      "query_to_execute": "SELECT id, name, digest, platform_integration_id FROM github_container_package;"
+    frequency: "1d"
+    timeout: 120

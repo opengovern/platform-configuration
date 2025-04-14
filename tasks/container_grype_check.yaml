@@ -13,9 +13,5 @@ scale_config:
   max_replica: 5
 run_schedule:
   - params: {}
-    interval:
-      months: 0
-      days: 2
-      hours: 0
-      minutes: 0
+    frequency: "2d"
     timeout: 120

@@ -14,9 +14,5 @@ scale_config:
 run_schedule:
   - params:
       "query_id": "list_all_unique_packages"
-    interval:
-      months: 1
-      days: 0
-      hours: 0
-      minutes: 0
+    frequency: "1m"
     timeout: 120
