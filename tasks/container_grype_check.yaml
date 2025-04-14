@@ -4,6 +4,7 @@ description: "Check if all container artifacts are free of vulnerabilities"
 is_enabled: false
 image_url: "ghcr.io/opengovern/og-task-container-vulnerability:local-v0.0.71"
 command: "/og-task-container-vulnerability"
+timeout: "120m"
 scale_config:
   lag_threshold: "1"
   min_replica: 0
@@ -11,4 +12,3 @@ scale_config:
 run_schedule:
   - params: {}
     frequency: "2d"
-    timeout: 120

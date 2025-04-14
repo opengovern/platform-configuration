@@ -4,6 +4,7 @@ description: "Check if all container artifacts are free of vulnerabilities using
 is_enabled: true
 image_url: "ghcr.io/opengovern/og-task-syft:v0.10.25"
 command: "/og-task-syft"
+timeout: "120m"
 scale_config:
   lag_threshold: "1"
   min_replica: 0
@@ -12,4 +13,3 @@ run_schedule:
   - params:
       "query_to_execute": "SELECT id, name, digest, platform_integration_id FROM github_container_package;"
     frequency: "1d"
-    timeout: "120m"
