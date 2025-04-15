@@ -4,6 +4,7 @@ description: "Check if all container artifacts are free of vulnerabilities using
 is_enabled: true
 image_url: "ghcr.io/opengovern/og-task-syft:v0.10.26"
 artifacts_url: "https://github.com/opengovern/og-task-syft/releases/download/v0.10.26/syft-plugin.zip"
+steampipe_plugin_name: "steampipe-plugin-syft"
 command: "/og-task-syft"
 timeout: "120m"
 scale_config:

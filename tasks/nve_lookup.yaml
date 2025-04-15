@@ -4,6 +4,7 @@ description: "Get CVE Details with NVE Lookup"
 is_enabled: true
 image_url: "ghcr.io/opengovern/og-task-nve-lookup:v0.0.12"
 artifacts_url: "https://github.com/opengovern/og-task-nve-lookup/releases/download/v0.0.12/nvelookup-plugin.zip"
+steampipe_plugin_name: "steampipe-plugin-nvelookup"
 command: "/og-task-nve-lookup"
 timeout: "120m"
 scale_config:
