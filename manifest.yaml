@@ -20,7 +20,7 @@ integrations:
         install: true
         enable: true
       artifact_details:
-        package_url: "https://github.com/opengovern/og-describer-aws/releases/download/v0.11.3/aws-plugin.zip"
+        package_url: "https://github.com/opengovern/og-describer-aws/releases/download/v0.11.7/aws-plugin.zip"
       order: 1
     - integration_type: "azure_subscription"
       name: "Microsoft Azure Subscription"
@@ -37,7 +37,7 @@ integrations:
         install: false
         enable: false
       artifact_details:
-        package_url: "https://github.com/opengovern/og-describer-azure/releases/download/v0.15.0/azure-plugin.zip"
+        package_url: "https://github.com/opengovern/og-describer-azure/releases/download/v0.15.1/azure-plugin.zip"
       order: 2
     - integration_type: "entraid_directory"
       name: "Microsoft EntraID Directory"
@@ -54,7 +54,7 @@ integrations:
       source_code: "https://github.com/opengovern/og-describer-entraid"
       package_type: "plugin"
       artifact_details:
-        package_url: "https://github.com/opengovern/og-describer-entraid/releases/download/v0.7.4/entraid-plugin.zip"
+        package_url: "https://github.com/opengovern/og-describer-entraid/releases/download/v0.7.7/entraid-plugin.zip"
       order: 3
     - integration_type: "github_account"
       name: "GitHub"
@@ -72,7 +72,7 @@ integrations:
         install: true
         enable: true
       artifact_details:
-        package_url: "https://github.com/opengovern/og-describer-github/releases/download/v0.66.4/github-plugin.zip"
+        package_url: "https://github.com/opengovern/og-describer-github/releases/download/v0.66.5/github-plugin.zip"
       order: 4
       
     - integration_type: "digitalocean_team"
@@ -439,7 +439,7 @@ integrations:
         install: false
         enable: false
       artifact_details:
-        package_url: "https://github.com/opengovern/plugin-kubernetes/releases/download/v0.6.6/kubernetes-plugin.zip"
+        package_url: "https://github.com/opengovern/plugin-kubernetes/releases/download/v0.6.7/kubernetes-plugin.zip"
       order: 27
 
     - integration_type: "jamf_account"
