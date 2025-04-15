@@ -2,7 +2,8 @@ id: "sbom-vulnerability-check"
 name: "Sbom Vulnerability Check"
 description: "Check if all container artifacts are free of vulnerabilities using SYFT"
 is_enabled: true
-image_url: "ghcr.io/opengovern/og-task-sbom-vulnerability:v0.0.28"
+image_url: "ghcr.io/opengovern/og-task-sbom-vulnerability:v0.0.34"
+artifacts_url: "https://github.com/opengovern/og-task-sbom-vulnerability/releases/download/v0.0.34/sbomvulnerability-plugin.zip"
 command: "/og-task-sbom-vulnerability"
 timeout: "120m"
 scale_config:
