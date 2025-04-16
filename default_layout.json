@@ -84,5 +84,6 @@
   "name": "Default Dashbord",
   "description": "This is a default dashboard",
   "is_default": true,
-  "is_private": false
+  "is_private": false,
+  "id": "default_layout"
 }
