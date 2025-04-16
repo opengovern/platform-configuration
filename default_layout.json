@@ -1,5 +1,5 @@
 {
-  "layout_config": [
+  "widgets": [
      {
             "id": "shortcut",
             "data": {
@@ -43,6 +43,15 @@
              "list_kpi": "github_repositories"
            },
            {
+             "info": "Package vulnerabilities",
+             "count_kpi": "package_vulnerabilities",
+             "list_kpi": "package_vulnerabilities"
+           },
+           {
+             "info": "Package vulnerabilities",
+             "count_kpi": "package_vulnerabilities",
+             "list_kpi": "package_vulnerabilities"
+           },{
              "info": "Package vulnerabilities",
              "count_kpi": "package_vulnerabilities",
              "list_kpi": "package_vulnerabilities"
