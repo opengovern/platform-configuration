@@ -46,16 +46,8 @@
              "info": "Package vulnerabilities",
              "count_kpi": "package_vulnerabilities",
              "list_kpi": "package_vulnerabilities"
-           },
-           {
-             "info": "Package vulnerabilities",
-             "count_kpi": "package_vulnerabilities",
-             "list_kpi": "package_vulnerabilities"
-           },{
-             "info": "Package vulnerabilities",
-             "count_kpi": "package_vulnerabilities",
-             "list_kpi": "package_vulnerabilities"
            }
+          
         
          ]
        }
