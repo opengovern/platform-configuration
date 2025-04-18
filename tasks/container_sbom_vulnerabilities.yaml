@@ -13,5 +13,5 @@ scale_config:
   max_replica: 5
 run_schedule:
   - params:
-      "query_id": "list_all_unique_packages"
+      "query_id": "all_unique_packages"
     frequency: "30d"
