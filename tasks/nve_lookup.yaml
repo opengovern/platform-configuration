@@ -12,6 +12,7 @@ scale_config:
   min_replica: 0
   max_replica: 5
 params: ["query_to_execute", "query_id", "query_limit"]
+configs: ["nve_api_key"]
 run_schedule:
   - params:
       "query_to_execute": "SELECT * FROM vulnerability_details;"
