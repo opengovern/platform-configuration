@@ -11,6 +11,7 @@ scale_config:
   lag_threshold: "1"
   min_replica: 0
   max_replica: 5
+params: ["query_to_execute", "query_id", "query_limit"]
 run_schedule:
   - params:
       "query_to_execute": "SELECT id, name, digest, platform_integration_id FROM github_container_package;"
