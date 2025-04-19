@@ -439,7 +439,7 @@ integrations:
         install: false
         enable: false
       artifact_details:
-        package_url: "https://github.com/opengovern/plugin-kubernetes/releases/download/v0.6.15/kubernetes-plugin.zip"
+        package_url: "https://github.com/opengovern/plugin-kubernetes/releases/download/v0.6.17/kubernetes-plugin.zip"
       order: 27
 
     - integration_type: "jamf_account"
