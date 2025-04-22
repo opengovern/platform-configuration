@@ -9,6 +9,7 @@ query: |
       id,
       name,
       digest,
+      image_uri,
       platform_integration_id
     FROM
       github_container_package;
