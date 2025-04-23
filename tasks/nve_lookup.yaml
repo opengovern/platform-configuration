@@ -14,6 +14,7 @@ scale_config:
 params: ["query_to_execute", "query_id", "query_limit"]
 configs: ["nve_api_key"]
 run_schedule:
-  - params:
+  - id: "scan-all-packages"
+    params:
       "query_to_execute": "SELECT * FROM vulnerability_details;"
     frequency: "1d"

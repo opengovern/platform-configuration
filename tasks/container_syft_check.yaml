@@ -14,6 +14,7 @@ scale_config:
 params: ["query_to_execute", "query_id", "query_limit"]
 configs: ["github_username", "github_token"]
 run_schedule:
-  - params:
+  - id: "scan-all-containers"
+    params:
       "query_to_execute": "SELECT id, name, digest, image_uri, platform_integration_id FROM github_container_package;"
     frequency: "1d"

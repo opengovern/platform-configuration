@@ -14,6 +14,7 @@ scale_config:
 params: ["query_to_execute", "query_id", "query_limit"]
 configs: []
 run_schedule:
-  - params:
+  - id: "scan-all-packages"
+    params:
       "query_id": "all_unique_packages"
     frequency: "30d"
