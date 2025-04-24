@@ -2,7 +2,7 @@ id: "kubernetes-plugin-describer"
 name: "Kubernetes Plugin Describer"
 description: "Kubernetes Plugin Describer"
 is_enabled: true
-image_url: "ghcr.io/opengovern/og-describer-kubernetes:local-v0.6.38"
+image_url: "ghcr.io/opengovern/og-describer-kubernetes:local-v0.6.40"
 artifacts_url: ""
 steampipe_plugin_name: ""
 command: "/og-describer-kubernetes"
