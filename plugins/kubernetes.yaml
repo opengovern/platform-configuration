@@ -1,0 +1,21 @@
+api-version: v1
+type: plugin
+plugin:
+  name: "kubernetes"
+  version: "0.6.37"
+  supported-platform-versions:
+    - ">=2.0.0, <3.0.0"
+  metadata:
+    author: "clearcompass Engineering Team"
+    contact: "engineering@clearcompass.so"
+    published-date: "2025-04-25"
+    description: "opensecurity plugin for discovering and analyzing Kubernetes resources."
+    website: "https://clearcompass.so/"
+    license: "Apache-2.0"
+  components:
+    platform-binary:
+      uri: "https://github.com/opengovern/plugin-kubernetes/releases/download/v0.6.43/kubernetes-plugin.zip"
+      path-in-archive: "integration-plugin"
+    cloudql-binary:
+      uri: "https://github.com/opengovern/plugin-kubernetes/releases/download/v0.6.43/kubernetes-plugin.zip"
+      path-in-archive: "cloudql-plugin"
