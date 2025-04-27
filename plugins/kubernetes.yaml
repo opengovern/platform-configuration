@@ -2,7 +2,7 @@ api-version: v1
 type: plugin
 plugin:
   name: "kubernetes"
-  version: "0.6.37"
+  version: "0.6.43"
   supported-platform-versions:
     - ">=2.0.0, <3.0.0"
   metadata:

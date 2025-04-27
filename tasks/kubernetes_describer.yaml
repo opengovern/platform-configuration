@@ -1,3 +1,4 @@
+type: task
 id: "kubernetes-plugin-describer"
 name: "Kubernetes Plugin Describer"
 description: "Kubernetes Plugin Describer"

@@ -1,3 +1,4 @@
+type: task
 id: "nve-lookup"
 name: "NVE Lookup"
 description: "Get CVE Details with NVE Lookup"

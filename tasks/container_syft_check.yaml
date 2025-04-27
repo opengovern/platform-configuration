@@ -1,3 +1,4 @@
+type: task
 id: "container-syft"
 name: "Container SYFT"
 description: "Check if all container artifacts are free of vulnerabilities using SYFT"
