@@ -1,0 +1,40 @@
+id: k8s_pods_running_in_default_namespace
+title: Kubernetes Pods Running in Default Namespace
+type: query
+primary_table: k8_pod
+description: Finds pods running in the 'default' namespace. Using the default namespace is often discouraged as it can lead to less organized clusters and make applying granular policies (like NetworkPolicy or RBAC) more difficult.
+metadata:
+  reasoning: The 'default' namespace lacks specific isolation or purpose. Deploying applications here can mix unrelated workloads, complicate resource management, and make it harder to apply targeted security controls (e.g., NetworkPolicies often rely on namespace selectors). Using dedicated namespaces enforces better organization and security posture.
+  value: Improve cluster organization, facilitate granular policy application, and enhance security posture by avoiding the use of the 'default' namespace for application workloads.
+integration_type:
+  - kubernetes_cluster
+query: |
+  SELECT DISTINCT
+    p.platform_integration_id,
+    p.namespace || '/' || p.title AS resource,
+    'alarm' AS status, -- Flagging use of default namespace for review
+    'Pod ''' || p.title || ''' is running in the ''default'' namespace.' AS reason,
+    jsonb_build_object(
+      'pod_title', p.title,
+      'namespace', p.namespace,
+      'node_name', p.node_name,
+      'pod_phase', p.phase,
+      'pod_ip', p.pod_ip,
+      'creation_timestamp', p.creation_timestamp -- Using the common metadata field
+    ) AS finding_details
+  FROM
+    k8_pod AS p
+  WHERE
+    p.namespace = 'default'
+  ORDER BY
+    p.platform_integration_id ASC,
+    resource ASC;
+tags:
+  asset: Kubernetes
+  value: # Use list format for multiple values
+    - Improve Organization
+    - Enhance Security Posture
+  outcome: Facilitate Policy Enforcement
+classification:
+  - [ "Security", "Workload Configuration" ]
+  - [ "Infrastructure", "Kubernetes", "Configuration" ]

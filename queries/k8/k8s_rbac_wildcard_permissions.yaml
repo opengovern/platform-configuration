@@ -1,0 +1,74 @@
+id: k8s_rbac_wildcard_permissions
+title: Kubernetes Roles/ClusterRoles Granting Wildcard Permissions
+type: query
+primary_table: k8_cluster_role # Primarily checking ClusterRoles, but adaptable for Roles
+description: Finds ClusterRoles (or Roles) containing rules that grant wildcard ('*') permissions for verbs, apiGroups, or resources. Wildcard permissions grant excessive access and violate the principle of least privilege. Allows excluding specific Role/ClusterRole titles via parameter. This query checks ClusterRoles.
+metadata:
+  reasoning: Using wildcards ('*') in RBAC rules for verbs, apiGroups, or resources grants overly broad permissions. This makes it difficult to understand the actual access granted and significantly increases the potential impact if the role is assigned to a compromised or malicious entity. Least privilege dictates granting only the specific permissions required.
+  value: Enforce least privilege, improve RBAC auditability, and reduce security risk by avoiding wildcard permissions in Role and ClusterRole definitions, excluding known/approved roles.
+integration_type:
+  - kubernetes_cluster
+parameters:
+  - key: excluded_role_titles
+    # Comma-separated list of ClusterRole (or Role) titles (exact match) to exclude from findings.
+    # Use this to exempt specific system roles or approved roles that use wildcards.
+    # Example: "cluster-admin,admin,edit,view,system:controller:some-controller"
+    value: "cluster-admin,admin,edit,view" # Default: Exclude common built-in roles often using wildcards
+query: |
+  WITH excluded_roles AS (
+    SELECT trim(title) AS title
+    FROM unnest(string_to_array('{{.excluded_role_titles}}', ',')) AS title
+    WHERE trim(title) != ''
+  ),
+  roles_with_wildcards AS (
+    SELECT
+      cr.platform_integration_id,
+      cr.title,
+      jsonb_agg(r) FILTER (WHERE
+        jsonb_path_exists(r -> 'Verbs', '$[*] ? (@ == "*")') OR
+        jsonb_path_exists(r -> 'ApiGroups', '$[*] ? (@ == "*")') OR
+        jsonb_path_exists(r -> 'Resources', '$[*] ? (@ == "*")')
+      ) AS wildcard_rules
+    FROM
+      k8_cluster_role cr,
+      jsonb_array_elements(COALESCE(cr.rules, '[]'::jsonb)) AS r
+    GROUP BY cr.platform_integration_id, cr.title
+    HAVING jsonb_agg(r) FILTER (WHERE
+        jsonb_path_exists(r -> 'Verbs', '$[*] ? (@ == "*")') OR
+        jsonb_path_exists(r -> 'ApiGroups', '$[*] ? (@ == "*")') OR
+        jsonb_path_exists(r -> 'Resources', '$[*] ? (@ == "*")')
+      ) IS NOT NULL -- Ensure at least one rule matched the wildcard condition
+  )
+  SELECT
+    rww.platform_integration_id,
+    rww.title AS resource, -- ClusterRole title is the resource
+    CASE
+      WHEN rww.title IN (SELECT title FROM excluded_roles) THEN 'ok'
+      ELSE 'alarm'
+    END AS status,
+    'ClusterRole ''' || rww.title || ''' contains rule(s) with wildcard permissions.' ||
+      CASE
+        WHEN rww.title IN (SELECT title FROM excluded_roles) THEN ' (Excluded by parameter).'
+        ELSE '.'
+      END
+     AS reason,
+     -- Flag if excluded
+    (rww.title IN (SELECT title FROM excluded_roles)) AS is_excluded_by_parameter,
+    jsonb_build_object(
+      'cluster_role_title', rww.title,
+      'rules_with_wildcards', rww.wildcard_rules
+    ) AS finding_details
+  FROM
+    roles_with_wildcards rww
+  ORDER BY
+    status ASC, -- Show alarms first
+    rww.platform_integration_id ASC,
+    resource ASC;
+tags:
+  asset: Kubernetes
+  value: Enforce Least Privilege
+  outcome: Reduce Security Risk
+  standard: CIS Kubernetes Benchmark
+classification:
+  - [ "Security", "IAM", "Excessive Permissions" ]
+  - [ "Infrastructure", "Kubernetes", "Access Control" ]

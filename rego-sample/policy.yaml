@@ -1,14 +1,11 @@
-id: aws_ec2_ami_not_older_than_n_days
-title: ensure_images_ami_are_not_older_than_n_days
-description: ensure_that_your_amis_are_not_older_than_a_configured_maximum_age
-integration_type:
-  - aws_cloud_account
 policy:
+  id: aws_ec2_ami_policy
   language: rego
+  primary_table: aws_ec2_ami
   default_parameters:
     - key: snapshot_max_age
-      value: "90"
-  primary_table: aws_ec2_ami
+      required: true
+      default_value: "90"
   example_data:
     - |
       package opencomply
@@ -75,5 +72,3 @@ policy:
       }
   trigger: |
     data.aws_ec2_ami_not_older_than_n_days.result
-severity: low
-tags: {}
