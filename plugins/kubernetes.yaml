@@ -13,6 +13,7 @@ metadata:
   license: "Apache-2.0"
   description: "Kubernetes Integration to opensecurity"
   website: "https://clearcompass.so"
+  icon: "kubernetes.svg"
 components:
   discovery:
     task_id: "kubernetes-plugin-describer"
