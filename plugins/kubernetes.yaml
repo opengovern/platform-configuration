@@ -17,8 +17,8 @@ components:
   discovery:
     task_id: "kubernetes-plugin-describer"
   platform_binary:
-    uri: "https://github.com/opengovern/plugin-kubernetes/releases/download/v0.6.37/kubernetes-plugin.zip"
+    uri: "https://github.com/opengovern/plugin-kubernetes/releases/download/v0.6.43/kubernetes-plugin.zip"
     path_in_archive: "integration-plugin"
   cloudql_binary:
-    uri: "https://github.com/opengovern/plugin-kubernetes/releases/download/v0.6.37/kubernetes-plugin.zip"
+    uri: "https://github.com/opengovern/plugin-kubernetes/releases/download/v0.6.43/kubernetes-plugin.zip"
     path_in_archive: "cloudql-plugin"
