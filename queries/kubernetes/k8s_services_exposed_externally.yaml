@@ -1,0 +1,40 @@
+id: k8s_services_exposed_externally
+title: Kubernetes Services Exposed Externally (LoadBalancer/NodePort)
+type: query
+primary_table: k8_service
+description: Finds services of type LoadBalancer or NodePort, which expose applications externally to the cluster. While necessary for external access, these should be reviewed to ensure only intended services are exposed.
+metadata:
+  reasoning: Services of type LoadBalancer provision an external cloud load balancer, and NodePort services open a specific port on all cluster nodes. Both methods expose the service outside the cluster's internal network, increasing the attack surface. Unintended external exposure can lead to unauthorized access or attacks.
+  value: Ensure only necessary services are exposed externally, minimizing the cluster's attack surface and reducing the risk of unauthorized access.
+integration_type:
+  - kubernetes_cluster
+query: |
+  SELECT
+    s.platform_integration_id,
+    s.namespace || '/' || s.title AS resource, -- Use namespace/name as unique resource identifier
+    'alarm' AS status, -- Flag all external services for review
+    'Service ''' || s.title || ''' in namespace ''' || s.namespace || ''' is type ' || s.type || ', exposing it externally.' AS reason,
+    jsonb_build_object(
+      'service_title', s.title,
+      'namespace', s.namespace,
+      'service_type', s.type,
+      'cluster_ip', s.cluster_ip,
+      'ports', s.ports,
+      'load_balancer_ip', s.load_balancer_ip,
+      'load_balancer_ingress', s.load_balancer_ingress,
+      'external_ips', s.external_ips
+    ) AS finding_details
+  FROM
+    k8_service AS s
+  WHERE s.type IN ('LoadBalancer', 'NodePort')
+  ORDER BY
+    s.platform_integration_id ASC,
+    resource ASC;
+tags:
+  asset: Kubernetes
+  value: Reduce Attack Surface
+  outcome: Control Network Exposure
+classification:
+  - [ "Security", "Public Exposure" ]
+  - [ "Infrastructure", "Kubernetes", "Networking" ]
+  - [ "Infrastructure", "Networking", "Load Balancers" ]

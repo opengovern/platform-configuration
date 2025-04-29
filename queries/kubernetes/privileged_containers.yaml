@@ -1,0 +1,91 @@
+id: k8s_pod_privileged_containers_with_exclusions
+title: Kubernetes Pods with Privileged Containers (with Namespace/Resource Exclusions)
+type: query
+primary_table: k8_pod
+description: Finds container workloads running with securityContext.privileged=true, excluding pods matching specified namespace and name patterns. Allows granular exclusion of known privileged pods (e.g., 'kube-proxy-%' in 'kube-system'). Privileged containers bypass standard container isolation and security controls, significantly increasing risk.
+metadata:
+  reasoning: Privileged containers bypass kernel namespacing and control group restrictions, gaining access to host devices and elevated kernel capabilities. This significantly increases risk if breached. Excluding known, necessary privileged pods helps focus on unexpected findings.
+  value: Limit blast radius and reduce risk by identifying unexpected privileged containers, while allowing for defined exceptions in specific namespaces to reduce noise.
+integration_type:
+  - kubernetes_cluster
+parameters:
+  - key: excluded_namespace_resource_patterns
+    # Comma-separated list of exclusions in 'namespace_pattern/resource_pattern' format.
+    # Uses SQL LIKE syntax for both patterns (e.g., % for wildcard).
+    # Example: "kube-system/kube-proxy-%,monitoring/node-exporter-%,infra-ns/special-agent-%"
+    # Set to "" to report all privileged pods.
+    value: "kube-system/kube-proxy-%,kube-system/calico-node-%" # Default excludes common system pods
+query: |
+  WITH exclusions AS (
+    -- Parse the parameter string into namespace and resource patterns
+    SELECT
+      trim(split_part(pattern, '/', 1)) AS ns_pattern,
+      trim(split_part(pattern, '/', 2)) AS res_pattern
+    FROM unnest(string_to_array('{{.excluded_namespace_resource_patterns}}', ',')) AS pattern
+    WHERE pattern LIKE '%/%' -- Ensure the item contains the separator
+      AND trim(split_part(pattern, '/', 1)) != ''
+      AND trim(split_part(pattern, '/', 2)) != ''
+  ),
+  privileged_pods AS (
+    -- Find all pods with privileged containers first
+    SELECT DISTINCT
+      p.platform_integration_id,
+      p.namespace,
+      p.title,
+      p.node_name,
+      c ->> 'Name' as container_name,
+      c ->> 'Image' as container_image,
+      c -> 'SecurityContext' as container_security_context
+    FROM
+      k8_pod AS p,
+      jsonb_array_elements(COALESCE(p.containers, '[]'::jsonb)) AS c
+    WHERE
+      c -> 'SecurityContext' ->> 'Privileged' = 'true'
+  )
+  -- Now, apply exclusions and format the output
+  SELECT
+    pp.platform_integration_id,
+    pp.namespace || '/' || pp.title AS resource,
+    CASE
+      WHEN EXISTS (
+        SELECT 1 FROM exclusions ex
+        WHERE pp.namespace LIKE ex.ns_pattern AND pp.title LIKE ex.res_pattern
+      ) THEN 'ok' -- Status is ok if it matches an exclusion
+      ELSE 'alarm' -- Otherwise, it's an alarm
+    END AS status,
+    'Pod ''' || pp.title || ''' in namespace ''' || pp.namespace || ''' has privileged container ''' || pp.container_name || '''.' ||
+      CASE
+        WHEN EXISTS (
+          SELECT 1 FROM exclusions ex
+          WHERE pp.namespace LIKE ex.ns_pattern AND pp.title LIKE ex.res_pattern
+        ) THEN ' (Excluded by parameter).'
+        ELSE ''
+      END
+     AS reason,
+    -- Flag if excluded
+    EXISTS (
+      SELECT 1 FROM exclusions ex
+      WHERE pp.namespace LIKE ex.ns_pattern AND pp.title LIKE ex.res_pattern
+    ) AS is_excluded_by_parameter,
+    jsonb_build_object(
+      'pod_title', pp.title,
+      'namespace', pp.namespace,
+      'container_name', pp.container_name,
+      'container_image', pp.container_image,
+      'container_security_context', pp.container_security_context,
+      'node_name', pp.node_name
+    ) AS finding_details
+  FROM
+    privileged_pods pp
+  ORDER BY
+    status ASC, -- Show alarms first
+    pp.platform_integration_id ASC,
+    resource ASC,
+    pp.container_name ASC; -- Include container name in ordering
+tags:
+  asset: Kubernetes
+  value: Reduce Security Risk
+  outcome: Limit Blast Radius
+classification:
+  - [ "Security", "Workload Configuration" ]
+  - [ "Security", "Vulnerabilities", "Containers" ]

@@ -1,0 +1,40 @@
+id: k8s_pod_privileged_containers
+title: Kubernetes Pods with Privileged Containers
+type: query
+primary_table: k8_pod
+description: Finds container workloads running with the securityContext.privileged=true setting enabled across all clusters. Privileged containers bypass standard container isolation and security controls, significantly increasing risk and potential blast radius if compromised.
+metadata:
+  reasoning: Privileged containers bypass kernel namespacing and control group restrictions, gaining access to host devices and elevated kernel capabilities. This significantly increases the risk and potential impact of a container escape if the workload is breached, expanding the blast radius.
+  value: Limit the blast radius of potential workload compromises and reduce overall security risk by enforcing standard container isolation and removing privileged access.
+integration_type:
+  - kubernetes_cluster
+query: |
+  SELECT DISTINCT
+    p.platform_integration_id,
+    p.namespace || '/' || p.title AS resource, -- Use namespace/name as unique resource identifier
+    'alarm' as status,
+    'Pod ''' || p.title || ''' in namespace ''' || p.namespace || ''' has privileged container ''' || (c ->> 'Name') || '''.' AS reason,
+    jsonb_build_object(
+      'pod_title', p.title,
+      'namespace', p.namespace,
+      'container_name', c ->> 'Name',
+      'container_image', c ->> 'Image',
+      'container_security_context', c -> 'SecurityContext',
+      'node_name', p.node_name
+    ) AS finding_details
+  FROM
+    k8_pod AS p,
+    jsonb_array_elements(COALESCE(p.containers, '[]'::jsonb)) AS c -- Use jsonb_array_elements for safety
+  WHERE
+    -- Check if securityContext exists and privileged is explicitly true
+    c -> 'SecurityContext' ->> 'Privileged' = 'true'
+  ORDER BY
+    p.platform_integration_id ASC,
+    resource ASC;
+tags:
+  asset: Kubernetes
+  value: Reduce Security Risk
+  outcome: Limit Blast Radius
+classification:
+  - [ "Security", "Workload Configuration" ]
+  - [ "Security", "Vulnerabilities", "Containers" ]

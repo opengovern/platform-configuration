@@ -1,0 +1,40 @@
+id: k8s_ingress_without_tls
+title: Kubernetes Ingress Without TLS Configuration
+type: query
+primary_table: k8_ingress
+description: Finds Ingress resources that define routing rules but do not have a corresponding TLS configuration section. This indicates potential HTTP traffic exposure for paths defined in the Ingress, lacking encryption.
+metadata:
+  reasoning: Ingress resources managing external access should enforce TLS (HTTPS) to encrypt traffic between clients and the cluster. Ingresses without TLS configuration handle traffic over unencrypted HTTP, exposing sensitive data in transit and enabling potential man-in-the-middle attacks.
+  value: Protect data confidentiality and integrity for external traffic by ensuring all Ingress resources enforce TLS encryption.
+integration_type:
+  - kubernetes_cluster
+query: |
+  SELECT
+    i.platform_integration_id,
+    i.namespace || '/' || i.title AS resource,
+    'alarm' AS status,
+    'Ingress ''' || i.title || ''' in namespace ''' || i.namespace || ''' defines rules but lacks TLS configuration.' AS reason,
+    jsonb_build_object(
+      'ingress_title', i.title,
+      'namespace', i.namespace,
+      'ingress_class_name', i.ingress_class_name,
+      'rules_defined', i.rules,
+      'tls_configured', i.tls -- Will be null or empty array
+    ) AS finding_details
+  FROM
+    k8_ingress AS i
+  WHERE
+    COALESCE(jsonb_array_length(i.rules), 0) > 0 -- Has rules defined
+    AND COALESCE(jsonb_array_length(i.tls), 0) = 0 -- Has no TLS section defined
+  ORDER BY
+    i.platform_integration_id ASC,
+    resource ASC;
+tags:
+  asset: Kubernetes
+  value: Enhance Data Security
+  outcome: Enforce Encryption
+  standard: CIS Kubernetes Benchmark
+classification:
+  - [ "Security", "Web Security" ]
+  - [ "Security", "Data Protection" ]
+  - [ "Infrastructure", "Kubernetes", "Networking" ]

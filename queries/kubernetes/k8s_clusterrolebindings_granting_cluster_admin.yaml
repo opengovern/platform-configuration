@@ -1,0 +1,60 @@
+id: k8s_clusterrolebindings_granting_cluster_admin
+title: Kubernetes ClusterRoleBindings Granting Cluster-Admin Role
+type: query
+primary_table: k8_cluster_role_binding
+description: Finds ClusterRoleBindings that grant the highly privileged 'cluster-admin' ClusterRole to users, groups, or service accounts. Granting cluster-admin provides unrestricted access across the entire cluster and should be strictly controlled. Allows excluding specific binding titles via parameter.
+metadata:
+  reasoning: The 'cluster-admin' role provides superuser access to the entire Kubernetes cluster, allowing the subject to perform any action on any resource. Granting this role unnecessarily violates the principle of least privilege and significantly increases risk if the subject's credentials are compromised or misused.
+  value: Enforce least privilege and minimize security risk by ensuring the powerful 'cluster-admin' role is only granted when absolutely necessary and to trusted entities, excluding known/approved bindings.
+integration_type:
+  - kubernetes_cluster
+is_view: false
+parameters:
+  - key: excluded_binding_titles
+    # Comma-separated list of ClusterRoleBinding titles (exact match) to exclude from findings.
+    # Use this to exempt specific, approved bindings granting cluster-admin. Max 4 suggested, but accepts more.
+    # Example: "system:kube-dns-autoscaler-binding,my-admin-tool-binding"
+    value: "" # Default: Report all cluster-admin bindings
+query: |
+  WITH excluded_bindings AS (
+    SELECT trim(title) AS title
+    FROM unnest(string_to_array('{{.excluded_binding_titles}}', ',')) AS title
+    WHERE trim(title) != ''
+  )
+  SELECT DISTINCT -- Distinct on binding, not subject, as the finding is about the binding itself
+    crb.platform_integration_id,
+    crb.title AS resource, -- The binding title is the resource
+    CASE
+      WHEN crb.title IN (SELECT title FROM excluded_bindings) THEN 'ok'
+      ELSE 'alarm'
+    END AS status,
+    'ClusterRoleBinding ''' || crb.title || ''' grants ''cluster-admin'' role' ||
+      CASE
+        WHEN crb.title IN (SELECT title FROM excluded_bindings) THEN ' (Excluded by parameter).'
+        ELSE '.'
+      END
+     AS reason,
+    -- Flag if excluded
+    (crb.title IN (SELECT title FROM excluded_bindings)) AS is_excluded_by_parameter,
+    jsonb_build_object(
+      'binding_title', crb.title,
+      'role_ref_kind', crb.role_kind,
+      'role_ref_name', crb.role_name,
+      'subjects', crb.subjects -- Show all subjects granted by this binding
+    ) AS finding_details
+  FROM
+    k8_cluster_role_binding crb
+  WHERE crb.role_kind = 'ClusterRole' AND crb.role_name = 'cluster-admin'
+  ORDER BY
+    status ASC, -- Show alarms first
+    crb.platform_integration_id ASC,
+    resource ASC;
+tags:
+  asset: Kubernetes
+  value: Enforce Least Privilege
+  outcome: Reduce Security Risk
+  standard: CIS Kubernetes Benchmark
+classification:
+  - [ "Security", "IAM", "Admin Rights" ]
+  - [ "Security", "IAM", "Excessive Permissions" ]
+  - [ "Infrastructure", "Kubernetes", "Access Control" ]

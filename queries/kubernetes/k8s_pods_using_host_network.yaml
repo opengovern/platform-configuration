@@ -1,0 +1,37 @@
+id: k8s_pods_using_host_network
+title: Kubernetes Pods Using Host Network
+type: query
+primary_table: k8_pod
+description: Finds pods configured with spec.hostNetwork=true. These pods share the host's network namespace, bypassing pod network isolation and potentially exposing host network services or allowing network sniffing.
+metadata:
+  reasoning: Pods running with hostNetwork share the network namespace of the underlying node. This breaks network isolation between pods, allows access to the node's loopback device, potentially exposes node services, and enables sniffing of network traffic on the node. It significantly increases the attack surface and risk.
+  value: Maintain network isolation, reduce attack surface, and prevent potential information disclosure or interference by avoiding hostNetwork where possible.
+integration_type:
+  - kubernetes_cluster
+query: |
+  SELECT DISTINCT
+    p.platform_integration_id,
+    p.namespace || '/' || p.title AS resource,
+    'alarm' AS status,
+    'Pod ''' || p.title || ''' in namespace ''' || p.namespace || ''' is configured to use host network (spec.hostNetwork=true).' AS reason,
+    jsonb_build_object(
+      'pod_title', p.title,
+      'namespace', p.namespace,
+      'node_name', p.node_name,
+      'host_network_setting', p.host_network
+    ) AS finding_details
+  FROM
+    k8_pod AS p
+  WHERE
+    p.host_network = true
+  ORDER BY
+    p.platform_integration_id ASC,
+    resource ASC;
+tags:
+  asset: Kubernetes
+  value: Reduce Attack Surface
+  outcome: Enhance Isolation
+  standard: CIS Kubernetes Benchmark
+classification:
+  - [ "Security", "Workload Configuration" ]
+  - [ "Security", "Vulnerabilities", "Configuration" ]
