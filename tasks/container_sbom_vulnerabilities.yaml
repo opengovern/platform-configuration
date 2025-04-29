@@ -1,12 +1,22 @@
+api_version: v1
 type: task
 id: "sbom-vulnerability-check"
 name: "Sbom Vulnerability Check"
 description: "Check if all container artifacts are free of vulnerabilities using SYFT"
+metadata:
+  author: "ClearCompass Engineering Team" # Required
+  contact: "engineering@clearcompass.so"   # Required
+  published_date: "2025-04-26"           # Required: Format YYYY-MM-DD
+  license: "Apache-2.0"                  # Required: Valid SPDX ID
+  description: "Standalone task describer for Kubernetes resources." # Optional
+  website: "https://clearcompass.so/"      # Optional
+supported_platform_versions:
+  - ">=2.0.0, <3.0.0"
 is_enabled: true
 image_url: "ghcr.io/opengovern/og-task-sbom-vulnerability:v0.0.39"
 artifacts_url: "https://github.com/opengovern/og-task-sbom-vulnerability/releases/download/v0.0.39/sbomvulnerability-plugin.zip"
 steampipe_plugin_name: "steampipe-plugin-sbomvulnerability"
-command: "/og-task-sbom-vulnerability"
+command: ["/og-task-sbom-vulnerability"]
 timeout: "120m"
 scale_config:
   lag_threshold: "1"

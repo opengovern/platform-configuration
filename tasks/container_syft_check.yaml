@@ -1,12 +1,22 @@
+api_version: v1
 type: task
 id: "container-syft"
 name: "Container SYFT"
 description: "Check if all container artifacts are free of vulnerabilities using SYFT"
+metadata:
+  author: "ClearCompass Engineering Team" # Required
+  contact: "engineering@clearcompass.so"   # Required
+  published_date: "2025-04-26"           # Required: Format YYYY-MM-DD
+  license: "Apache-2.0"                  # Required: Valid SPDX ID
+  description: "Standalone task describer for Kubernetes resources." # Optional
+  website: "https://clearcompass.so/"      # Optional
+supported_platform_versions:
+  - ">=2.0.0, <3.0.0"
 is_enabled: true
 image_url: "ghcr.io/opengovern/og-task-syft:v0.10.35"
 artifacts_url: "https://github.com/opengovern/og-task-syft/releases/download/v0.10.35/syft-plugin.zip"
 steampipe_plugin_name: "steampipe-plugin-syft"
-command: "/og-task-syft"
+command: ["/og-task-syft"]
 timeout: "120m"
 scale_config:
   lag_threshold: "1"
