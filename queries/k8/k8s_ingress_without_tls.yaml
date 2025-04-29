@@ -30,10 +30,14 @@ query: |
     i.platform_integration_id ASC,
     resource ASC;
 tags:
-  asset: Kubernetes
-  value: Enhance Data Security
-  outcome: Enforce Encryption
-  standard: CIS Kubernetes Benchmark
+  asset:
+    - Kubernetes
+  value:
+    - Enhance Data Security
+  outcome:
+    - Enforce Encryption
+  standard:
+    - CIS Kubernetes Benchmark
 classification:
   - [ "Security", "Web Security" ]
   - [ "Security", "Data Protection" ]

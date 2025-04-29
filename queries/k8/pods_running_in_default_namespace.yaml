@@ -30,11 +30,13 @@ query: |
     p.platform_integration_id ASC,
     resource ASC;
 tags:
-  asset: Kubernetes
+  asset:
+    - Kubernetes
   value: # Use list format for multiple values
     - Improve Organization
     - Enhance Security Posture
-  outcome: Facilitate Policy Enforcement
+  outcome:
+    - Facilitate Policy Enforcement
 classification:
   - [ "Security", "Workload Configuration" ]
   - [ "Infrastructure", "Kubernetes", "Configuration" ]

@@ -42,12 +42,15 @@ query: |
     p.platform_integration_id ASC,
     resource ASC;
 tags:
-  asset: Kubernetes
-  value: Reduce Attack Surface
+  asset:
+    - Kubernetes
+  value:
+    - Reduce Attack Surface
   outcome: # Use list format for multiple outcomes
     - Enhance Isolation
     - Prevent Container Escape
-  standard: CIS Kubernetes Benchmark
+  standard:
+    - CIS Kubernetes Benchmark
 classification:
   - [ "Security", "Workload Configuration" ]
   - [ "Security", "Vulnerabilities", "Configuration" ]
