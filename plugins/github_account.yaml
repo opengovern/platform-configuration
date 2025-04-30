@@ -1,7 +1,7 @@
 api_version: v1
 type: plugin
-name: "Kubernetes"
-integration_type: "kubernetes"
+name: "GitHub"
+integration_type: "github_account"
 version: "1.2.0"
 supported_platform_versions:
   - ">=2.1.0, <3.0.0"
@@ -13,13 +13,13 @@ metadata:
   license: "Apache-2.0"
   description: "Kubernetes Integration to opensecurity"
   website: "https://clearcompass.so"
-  icon: "kubernetes.svg"
+  icon: "github.svg"
 components:
   discovery:
-    task_id: "kubernetes-plugin-describer"
+    task_id: "github-plugin-describer"
   platform_binary:
-    uri: "https://github.com/opengovern/plugin-kubernetes/releases/download/v0.6.43/kubernetes-plugin.zip"
+    uri: "https://github.com/opengovern/og-describer-github/releases/download/v0.66.7/github-plugin.zip"
     path_in_archive: "integration-plugin"
   cloudql_binary:
-    uri: "https://github.com/opengovern/plugin-kubernetes/releases/download/v0.6.43/kubernetes-plugin.zip"
+    uri: "https://github.com/opengovern/og-describer-github/releases/download/v0.66.7/github-plugin.zip"
     path_in_archive: "cloudql-plugin"
