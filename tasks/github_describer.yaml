@@ -13,7 +13,7 @@ metadata:
 supported_platform_versions:
   - ">=2.0.0, <3.0.0"
 is_enabled: true
-image_url: "ghcr.io/opengovern/og-describer-github@sha256:2952d96d6cc668ed8d18775524d8bee9767bec72b1f974140ec41886954af3c6"
+image_url: "ghcr.io/opengovern/og-describer-github@sha256:1784e50efd4e5f3b910742af4f259f74b13f8663a703ffbe6ad3c71e45e91ecc"
 artifacts_url: ""
 steampipe_plugin_name: ""
 command: ["/og-describer-github"]
