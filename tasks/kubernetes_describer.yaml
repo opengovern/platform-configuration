@@ -4,16 +4,16 @@ id: "kubernetes-plugin-describer"
 name: "Kubernetes Plugin Describer"
 description: "Kubernetes Plugin Describer"
 metadata:
-  author: "ClearCompass Engineering Team" # Required
-  contact: "engineering@clearcompass.so"   # Required
-  published_date: "2025-04-26"           # Required: Format YYYY-MM-DD
-  license: "Apache-2.0"                  # Required: Valid SPDX ID
-  description: "Standalone task describer for Kubernetes resources." # Optional
-  website: "https://clearcompass.so/"      # Optional
+  author: "ClearCompass Engineering Team"
+  contact: "engineering@clearcompass.so"
+  published_date: "2025-04-26"
+  license: "Apache-2.0"
+  description: "Standalone task describer for Kubernetes resources."
+  website: "https://clearcompass.so/"
 supported_platform_versions:
   - ">=2.0.0, <3.0.0"
 is_enabled: true
-image_url: "ghcr.io/opengovern/og-describer-kubernetes@sha256:0a3236596e9b3c204799f9fdbba2569a20e77738f6da2035189562ec60ba3883"
+image_url: "ghcr.io/opengovern/og-describer-kubernetes@sha256:4720bbe6646b94f74e7f908fc12b20bdc7798e29c2b8e42257e769165e9e2e07"
 artifacts_url: ""
 steampipe_plugin_name: ""
 command: ["/og-describer-kubernetes"]
