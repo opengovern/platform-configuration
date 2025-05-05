@@ -72,7 +72,7 @@ integrations:
         install: true
         enable: true
       artifact_details:
-        package_url: "https://github.com/opengovern/og-describer-github/releases/download/v0.66.7/github-plugin.zip"
+        package_url: "https://github.com/opengovern/og-describer-github/releases/download/v0.66.14/github-plugin.zip"
       order: 4
       
     - integration_type: "digitalocean_team"
@@ -439,7 +439,7 @@ integrations:
         install: false
         enable: false
       artifact_details:
-        package_url: "https://github.com/opengovern/plugin-kubernetes/releases/download/v0.6.43/kubernetes-plugin.zip"
+        package_url: "https://github.com/opengovern/plugin-kubernetes/releases/download/v0.6.50/kubernetes-plugin.zip"
       order: 27
 
     - integration_type: "jamf_account"
