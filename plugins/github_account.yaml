@@ -18,8 +18,8 @@ components:
   discovery:
     task_id: "github-plugin-describer"
   platform_binary:
-    uri: "https://github.com/opengovern/og-describer-github/releases/download/v0.66.7/github-plugin.zip"
+    uri: "https://github.com/opengovern/og-describer-github/releases/download/v0.66.14/github-plugin.zip"
     path_in_archive: "integration-plugin"
   cloudql_binary:
-    uri: "https://github.com/opengovern/og-describer-github/releases/download/v0.66.7/github-plugin.zip"
+    uri: "https://github.com/opengovern/og-describer-github/releases/download/v0.66.14/github-plugin.zip"
     path_in_archive: "cloudql-plugin"
